@@ -1,5 +1,5 @@
 
-# wco-dec
+# WCO Declarations Domain
 
  [ ![Download](https://api.bintray.com/packages/hmrc/releases/wco-dec/images/download.svg) ](https://bintray.com/hmrc/releases/wco-dec/_latestVersion)
 
