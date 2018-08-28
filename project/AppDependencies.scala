@@ -14,8 +14,8 @@ object AppDependencies {
   )
 
   val test = Seq(
-    "org.scalatest" %% "scalatest" % "2.2.4" % Test,
-    "org.pegdown"   % "pegdown"    % "1.5.0" % Test
+    "org.scalatest" %% "scalatest" % "3.0.4" % "test",
+    "org.pegdown" % "pegdown" % "1.6.0" % "test"
   )
 
 }
