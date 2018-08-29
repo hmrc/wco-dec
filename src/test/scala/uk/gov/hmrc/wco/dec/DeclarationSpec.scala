@@ -1502,6 +1502,28 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
+    "include government agency goods item additional document write off quantity unit code" in validDeclarationXmlScenario() {
+      val code = randomString(5)
+      val meta = MetaData(declaration = Declaration(
+        goodsShipment = Some(GoodsShipment(
+          governmentAgencyGoodsItems = Seq(GovernmentAgencyGoodsItem(
+            sequenceNumeric = 1,
+            additionalDocuments = Seq(GovernmentAgencyGoodsItemAdditionalDocument(
+              writeOff = Some(WriteOff(
+                quantity = Some(Measure(
+                  unitCode = Some(code),
+                  value = Some(randomBigDecimal(99999))
+                ))
+              ))
+            ))
+          ))
+        ))
+      ))
+      hasExpectedOutput(meta, code) { xml =>
+        (xml \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "AdditionalDocument" \ "WriteOff" \ "QuantityQuantity" \ "@unitCode").text.trim
+      }
+    }
+
     "include Declaration AdditionalInformation Statement Description for cancellation" in validCancellationDeclarationXml() {
       hasExpectedOutput(cancellation, cancellation.declaration.additionalInformations(0).statementDescription.get) { xml =>
         (xml \ "Declaration" \ "AdditionalInformation" \ "StatementDescription").text.trim

@@ -553,7 +553,7 @@ case class GovernmentAgencyGoodsItemAdditionalDocument(@JacksonXmlProperty(local
                                                        writeOff: Option[WriteOff] = None)
 
 case class WriteOff(@JacksonXmlProperty(localName = "QuantityQuantity", namespace = NS.dec)
-                    quantity: Option[BigDecimal] = None, // scale 16 precision 6
+                    quantity: Option[Measure] = None, // scale 16 precision 6
 
                     @JacksonXmlProperty(localName = "AmountAmount", namespace = NS.dec)
                     amount: Option[Amount] = None)
@@ -827,6 +827,7 @@ case class ImportExportParty(@JacksonXmlProperty(localName = "Name", namespace =
                              @JacksonXmlProperty(localName = "Communication", namespace = NS.dec)
                              communications: Seq[Communication] = Seq.empty)
 
+// TODO should probably make "value" non-optional as I think it is required whenever you spit out measure element - check schema
 @JsonDeserialize(using = classOf[MeasureDeserializer])
 case class Measure(@JacksonXmlProperty(localName = "unitCode", isAttribute = true)
                    unitCode: Option[String] = None, // min 1 max 5 chars when specified
