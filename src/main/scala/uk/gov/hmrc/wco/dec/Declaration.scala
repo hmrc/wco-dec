@@ -25,8 +25,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.node.{ObjectNode, TextNode}
 import com.fasterxml.jackson.databind.{DeserializationContext, DeserializationFeature, JsonNode}
-import com.fasterxml.jackson.dataformat.javaprop.{JavaPropsMapper, JavaPropsSchema}
+import com.fasterxml.jackson.dataformat.javaprop.{JavaPropsMapper, JavaPropsParser, JavaPropsSchema}
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
+import com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser
 import com.fasterxml.jackson.dataformat.xml.{JacksonXmlModule, XmlMapper}
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 
@@ -869,14 +870,27 @@ case class RoleBasedParty(@JacksonXmlProperty(localName = "ID", namespace = NS.d
                           @JacksonXmlProperty(localName = "RoleCode", namespace = NS.dec)
                           roleCode: Option[String] = None) // max 3 chars
 
-abstract class StdAttributeAndTextDeserializer[T](attributeName: String, t: Class[T]) extends StdDeserializer[T](t) {
+abstract class StdAttributeAndTextDeserializer[T](attributeName: String, t: Class[T], valueAttributeName: String = "value") extends StdDeserializer[T](t) {
 
   def newInstanceFromTuple(values: (Option[String], Option[String])): T
 
-  override final def deserialize(p: JsonParser, ctx: DeserializationContext): T = {
+  override final def deserialize(p: JsonParser, ctx: DeserializationContext): T = p match {
+    case xml: FromXmlParser => deserializeFromXml(xml, ctx)
+    case props: JavaPropsParser => deserializeFromProps(props, ctx)
+  }
+
+  private def deserializeFromXml(p: FromXmlParser, ctx: DeserializationContext): T = {
     val n: JsonNode = p.getCodec.readTree(p)
     n match {
       case o: ObjectNode => newInstanceFromTuple((nonEmptyOrNone(o.get(attributeName)), nonEmptyOrNone(o.get(""))))
+      case t: TextNode => newInstanceFromTuple((None, nonEmptyOrNone(t)))
+    }
+  }
+
+  private def deserializeFromProps(p: JavaPropsParser, ctx: DeserializationContext): T = {
+    val n: JsonNode = p.getCodec.readTree(p)
+    n match {
+      case o: ObjectNode => newInstanceFromTuple((nonEmptyOrNone(o.get(attributeName)), nonEmptyOrNone(o.get(valueAttributeName))))
       case t: TextNode => newInstanceFromTuple((None, nonEmptyOrNone(t)))
     }
   }

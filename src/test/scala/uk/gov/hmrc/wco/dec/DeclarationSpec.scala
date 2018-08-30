@@ -1626,6 +1626,12 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       MetaData.fromProperties(props).declaration.additionalDocuments.head.id must be(id)
     }
 
+    "deserialize commodity gross mass measure from property path expression" in {
+      val props = Map("declaration.goodsShipment.governmentAgencyGoodsItems[0].commodity.goodsMeasure.grossMassMeasure.value" -> "24")
+      val meta = MetaData.fromProperties(props)
+      meta.declaration.goodsShipment.get.governmentAgencyGoodsItems.head.commodity.get.goodsMeasure.get.grossMassMeasure.get.value.get must be(BigDecimal("24"))
+    }
+
   }
 
   def hasExpectedOutput[T](meta: MetaData, expected: T)(extractor: Elem => T): Elem = {
