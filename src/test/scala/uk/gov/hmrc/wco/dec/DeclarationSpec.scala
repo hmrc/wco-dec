@@ -1634,6 +1634,26 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
 
   }
 
+  val v = randomInt(99).toString
+
+  // collection of property path expressions to explicitly test for reversibility of deserialization and re-serialization
+  val paths = Map(
+    "declaration.goodsShipment.governmentAgencyGoodsItems[0].commodity.invoiceLine.itemChargeAmount.currencyId" -> v,
+    "declaration.additionalDocuments[0].typeCode" -> v
+  )
+
+  paths.foreach { entry =>
+    s"${entry._1}" should {
+      "be deserializable and serializable as properties" in {
+        val meta = MetaData.fromProperties(Map(entry))
+        val map = meta.toProperties
+        withClue(entry._1) {
+          map(entry._1) must be(entry._2)
+        }
+      }
+    }
+  }
+
   def hasExpectedOutput[T](meta: MetaData, expected: T)(extractor: Elem => T): Elem = {
     val xml = XML.loadString(meta.toXml)
     extractor(xml) must be(expected)

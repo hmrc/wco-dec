@@ -50,7 +50,7 @@ trait JacksonMapper {
 
   private val _modxml = new JacksonXmlModule()
   _modxml.setDefaultUseWrapper(false)
-  protected val _schema = JavaPropsSchema.emptySchema().withWriteIndexUsingMarkers(true)
+  protected val _schema = JavaPropsSchema.emptySchema().withWriteIndexUsingMarkers(true).withFirstArrayOffset(0)
   protected val _xml = new XmlMapper(_modxml)
   _xml.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
   _xml.setSerializationInclusion(JsonInclude.Include.NON_EMPTY)
@@ -91,6 +91,8 @@ case class MetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", n
     _xml.writeValue(sw, this)
     sw.toString
   }
+
+  def toProperties: Map[String, String] = _props.writeValueAsProperties(this, _schema).asScala.toMap
 
 }
 
@@ -784,6 +786,8 @@ case class Amount(@JacksonXmlProperty(localName = "currencyID", isAttribute = tr
 
 class AmountDeserializer extends StdAttributeAndTextDeserializer[Amount]("currencyID", classOf[Amount]) {
 
+  override val propsAttributeName: String = "currencyId"
+
   override def newInstanceFromTuple(values: (Option[String], Option[String])): Amount = Amount(values._1, values._2.map(BigDecimal(_)))
 
 }
@@ -872,6 +876,8 @@ case class RoleBasedParty(@JacksonXmlProperty(localName = "ID", namespace = NS.d
 
 abstract class StdAttributeAndTextDeserializer[T](attributeName: String, t: Class[T], valueAttributeName: String = "value") extends StdDeserializer[T](t) {
 
+  val propsAttributeName: String = attributeName
+
   def newInstanceFromTuple(values: (Option[String], Option[String])): T
 
   override final def deserialize(p: JsonParser, ctx: DeserializationContext): T = p match {
@@ -890,7 +896,7 @@ abstract class StdAttributeAndTextDeserializer[T](attributeName: String, t: Clas
   private def deserializeFromProps(p: JavaPropsParser, ctx: DeserializationContext): T = {
     val n: JsonNode = p.getCodec.readTree(p)
     n match {
-      case o: ObjectNode => newInstanceFromTuple((nonEmptyOrNone(o.get(attributeName)), nonEmptyOrNone(o.get(valueAttributeName))))
+      case o: ObjectNode => newInstanceFromTuple((nonEmptyOrNone(o.get(propsAttributeName)), nonEmptyOrNone(o.get(valueAttributeName))))
       case t: TextNode => newInstanceFromTuple((None, nonEmptyOrNone(t)))
     }
   }
