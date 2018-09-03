@@ -1639,7 +1639,9 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
   // collection of property path expressions to explicitly test for reversibility of deserialization and re-serialization
   val paths = Map(
     "declaration.goodsShipment.governmentAgencyGoodsItems[0].commodity.invoiceLine.itemChargeAmount.currencyId" -> v,
-    "declaration.additionalDocuments[0].typeCode" -> v
+    "declaration.additionalDocuments[0].typeCode" -> v,
+    "declaration.goodsShipment.importer.address.postcodeId" -> v,
+    "declaration.goodsShipment.governmentAgencyGoodsItems[0].commodity.dutyTaxFees[0].quotaOrderId" -> v
   )
 
   paths.foreach { entry =>
