@@ -1524,6 +1524,27 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
+    "include goods measure net weight measure" in validDeclarationXmlScenario() {
+      val measure = randomBigDecimal(99999999)
+      val meta = MetaData(declaration = Declaration(
+        goodsShipment = Some(GoodsShipment(
+          governmentAgencyGoodsItems = Seq(GovernmentAgencyGoodsItem(
+            sequenceNumeric = 1,
+            commodity = Some(Commodity(
+              goodsMeasure = Some(GoodsMeasure(
+                netWeightMeasure = Some(Measure(
+                  value = Some(measure)
+                ))
+              ))
+            ))
+          ))
+        ))
+      ))
+      hasExpectedOutput(meta, measure) { xml =>
+        BigDecimal((xml \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "GoodsMeasure" \ "NetNetWeightMeasure").text)
+      }
+    }
+
     "include Declaration AdditionalInformation Statement Description for cancellation" in validCancellationDeclarationXml() {
       hasExpectedOutput(cancellation, cancellation.declaration.additionalInformations(0).statementDescription.get) { xml =>
         (xml \ "Declaration" \ "AdditionalInformation" \ "StatementDescription").text.trim
@@ -1641,7 +1662,8 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "declaration.goodsShipment.governmentAgencyGoodsItems[0].commodity.invoiceLine.itemChargeAmount.currencyId" -> v,
     "declaration.additionalDocuments[0].typeCode" -> v,
     "declaration.goodsShipment.importer.address.postcodeId" -> v,
-    "declaration.goodsShipment.governmentAgencyGoodsItems[0].commodity.dutyTaxFees[0].quotaOrderId" -> v
+    "declaration.goodsShipment.governmentAgencyGoodsItems[0].commodity.dutyTaxFees[0].quotaOrderId" -> v,
+    "declaration.typeCode" -> ""
   )
 
   paths.foreach { entry =>

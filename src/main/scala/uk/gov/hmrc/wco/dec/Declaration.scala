@@ -694,8 +694,8 @@ case class Payment(@JacksonXmlProperty(localName = "MethodCode", namespace = NS.
 case class GoodsMeasure(@JacksonXmlProperty(localName = "GrossMassMeasure", namespace = NS.dec)
                         grossMassMeasure: Option[Measure] = None,
 
-                        @JacksonXmlProperty(localName = "NetWeightMeasure", namespace = NS.dec)
-                        netNetWeightMeasure: Option[Measure] = None,
+                        @JacksonXmlProperty(localName = "NetNetWeightMeasure", namespace = NS.dec)
+                        netWeightMeasure: Option[Measure] = None,
 
                         @JacksonXmlProperty(localName = "TariffQuantity", namespace = NS.dec)
                         tariffQuantity: Option[Measure] = None)
