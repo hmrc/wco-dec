@@ -44,6 +44,8 @@ private[wco] object NS {
   final val dms = "urn:wco:datamodel:WCO:DocumentMetaData-DMS:2"
   final val dec = "urn:wco:datamodel:WCO:DEC-DMS:2"
   final val ds = "urn:wco:datamodel:WCO:Declaration_DS:DMS:2"
+  final val res = "urn:wco:datamodel:WCO:RES-DMS:2"
+  final val rs = "urn:wco:datamodel:WCO:Response_DS:DMS:2"
 }
 
 trait JacksonMapper {
@@ -84,7 +86,8 @@ case class MetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", n
                     agencyAssignedCustomizationVersionCode: Option[String] = None, // max 3 chars
 
                     @JacksonXmlProperty(localName = "Declaration", namespace = NS.dec)
-                    declaration: Declaration = Declaration()) extends JacksonMapper {
+                    declaration: Declaration = Declaration()
+                   ) extends JacksonMapper {
 
   def toXml: String = {
     val sw = new StringWriter()
@@ -95,6 +98,41 @@ case class MetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", n
   def toProperties: Map[String, String] = _props.writeValueAsProperties(this, _schema).asScala.toMap
 
 }
+
+@JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
+@JacksonXmlRootElement(namespace = NS.dms, localName = "MetaData")
+case class ResponseMetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", namespace = NS.dms)
+                    wcoDataModelVersionCode: Option[String] = None, // max 6 chars
+
+                    @JacksonXmlProperty(localName = "WCOTypeName", namespace = NS.dms)
+                    wcoTypeName: Option[String] = None, // no constraint
+
+                    @JacksonXmlProperty(localName = "ResponsibleCountryCode", namespace = NS.dms)
+                    responsibleCountryCode: Option[String] = None, // max 2 chars - ISO 3166-1 alpha2 code
+
+                    @JacksonXmlProperty(localName = "ResponsibleAgencyName", namespace = NS.dms)
+                    responsibleAgencyName: Option[String] = None, // max 70 chars
+
+                    @JacksonXmlProperty(localName = "AgencyAssignedCustomizationCode", namespace = NS.dms)
+                    agencyAssignedCustomizationCode: Option[String] = None, // max 6 chars
+
+                    @JacksonXmlProperty(localName = "AgencyAssignedCustomizationVersionCode", namespace = NS.dms)
+                    agencyAssignedCustomizationVersionCode: Option[String] = None, // max 3 chars
+
+                    @JacksonXmlProperty(localName = "Response", namespace = NS.res)
+                    response: Seq[Response] = Seq.empty
+                   )extends JacksonMapper {
+
+  def toXml: String = {
+    val sw = new StringWriter()
+    _xml.writeValue(sw, this)
+    sw.toString
+  }
+
+  def toProperties: Map[String, String] = _props.writeValueAsProperties(this, _schema).asScala.toMap
+}
+
+
 
 object MetaData extends JacksonMapper {
 
@@ -615,6 +653,9 @@ case class AdditionalInformation(@JacksonXmlProperty(localName = "StatementCode"
 
                                  @JacksonXmlProperty(localName = "StatementDescription", namespace = NS.dec)
                                  statementDescription: Option[String] = None, // max 512 chars
+
+                                @JacksonXmlProperty(localName = "LimitDateTime", namespace = NS.dec)
+                                 limitDateTime: Option[String] = None, // max 35 chars
 
                                  @JacksonXmlProperty(localName = "StatementTypeCode", namespace = NS.dec)
                                  statementTypeCode: Option[String] = None, // max 3 chars

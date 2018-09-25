@@ -33,6 +33,9 @@ trait XmlBehaviours {
 
   val importDeclarationCancellationSchemas = Seq("/CANCEL_METADATA.xsd","/CANCEL.xsd")
 
+  val responseSchemaResources = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_RES_2_DMS.xsd")
+
+
   def validXmlScenario(schemas: Seq[String] = Seq.empty)(test: => Elem): Unit = {
     validateAgainstSchemaResources(test.mkString, schemas)
   }
@@ -40,6 +43,9 @@ trait XmlBehaviours {
     validXmlScenario(importDeclarationSchemaResources)(test)
   }
 
+  def validResponseXmlScenario()(test: => Elem): Unit = {
+    validXmlScenario(responseSchemaResources)(test)
+  }
   def validCancellationDeclarationXml()(test: => Elem): Unit = {
     validXmlScenario(importDeclarationCancellationSchemas)(test)
 

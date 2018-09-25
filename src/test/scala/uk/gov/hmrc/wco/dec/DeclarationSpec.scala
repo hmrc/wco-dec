@@ -35,7 +35,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include WCOTypeName" in validDeclarationXmlScenario() {
       val name = randomString(712)
       val meta = MetaData(wcoTypeName = Some(name), declaration = randomValidDeclaration)
-      hasExpectedOutput(meta, name) { xml =>
+      hasExpectedOutput(meta, name) { xml => println("XML is " + xml)
         (xml \ "WCOTypeName").text.trim
       }
     }
@@ -1677,14 +1677,4 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       }
     }
   }
-
-  def hasExpectedOutput[T](meta: MetaData, expected: T)(extractor: Elem => T): Elem = {
-    val xml = XML.loadString(meta.toXml)
-    extractor(xml) must be(expected)
-    xml
-  }
-
-  def hasExpectedInput[T](meta: MetaData, expected: T)(extractor: MetaData => T): Unit =
-    extractor(MetaData.fromXml(meta.toXml)) must be(expected)
-
 }
