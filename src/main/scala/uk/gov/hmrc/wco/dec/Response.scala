@@ -108,8 +108,8 @@ case class Error(
                   @JacksonXmlProperty(localName = "ValidationCode", namespace = NS.res)
                   validationCode: Option[String] = None, // max 512 chars
 
-                  @JacksonXmlProperty(localName = "Pointer", namespace = NS.dec)
-                  pointers: Seq[Pointer] = Seq.empty
+                  @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
+                  pointers: Seq[ResponsePointer] = Seq.empty
                 )
 
 case class Status(
@@ -122,16 +122,16 @@ case class Status(
                    @JacksonXmlProperty(localName = "ReleaseDateTime", namespace = NS.res)
                    releaseDateTime: Option[DateTimeElement] = None, //maxLength value="35"
 
-                   @JacksonXmlProperty(localName = "Pointer", namespace = NS.dec)
-                   pointers: Seq[Pointer] = Seq.empty
+                   @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
+                   pointers: Seq[ResponsePointer] = Seq.empty
                  )
 
 case class ResponseDeclaration(
                                 @JacksonXmlProperty(localName = "AcceptanceDateTime", namespace = NS.res)
-                                acceptanceDateTime: Option[DateTimeElement] = None,
+                                acceptanceDateTime: Option[ResponseDateTimeElement] = None,
 
                                 @JacksonXmlProperty(localName = "CancellationDateTime", namespace = NS.res)
-                                cancellationDateTime: Option[DateTimeElement] = None,
+                                cancellationDateTime: Option[ResponseDateTimeElement] = None,
 
                                 @JacksonXmlProperty(localName = "FunctionalReferenceID", namespace = NS.res)
                                 functionalReferenceId: Option[String] = None, // max 35 chars
@@ -140,7 +140,7 @@ case class ResponseDeclaration(
                                 id: Option[String] = None, // max 70 chars
 
                                 @JacksonXmlProperty(localName = "RejectionDateTime", namespace = NS.res)
-                                rejectionDateTime: Option[DateTimeElement] = None,
+                                rejectionDateTime: Option[ResponseDateTimeElement] = None,
 
                                 @JacksonXmlProperty(localName = "VersionID", namespace = NS.res)
                                 versionID: Option[String] = None, // max 9 chars

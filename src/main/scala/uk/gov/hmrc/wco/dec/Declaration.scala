@@ -68,60 +68,21 @@ trait JacksonMapper {
 @JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
 @JacksonXmlRootElement(namespace = NS.dms, localName = "MetaData")
 case class MetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", namespace = NS.dms)
-                    wcoDataModelVersionCode: Option[String] = None, // max 6 chars
-
+                    wcoDataModelVersionCode: Option[String] = None,
                     @JacksonXmlProperty(localName = "WCOTypeName", namespace = NS.dms)
-                    wcoTypeName: Option[String] = None, // no constraint
-
+                    wcoTypeName: Option[String] = None,
                     @JacksonXmlProperty(localName = "ResponsibleCountryCode", namespace = NS.dms)
-                    responsibleCountryCode: Option[String] = None, // max 2 chars - ISO 3166-1 alpha2 code
-
+                    responsibleCountryCode: Option[String] = None,
                     @JacksonXmlProperty(localName = "ResponsibleAgencyName", namespace = NS.dms)
-                    responsibleAgencyName: Option[String] = None, // max 70 chars
-
+                    responsibleAgencyName: Option[String] = None,
                     @JacksonXmlProperty(localName = "AgencyAssignedCustomizationCode", namespace = NS.dms)
-                    agencyAssignedCustomizationCode: Option[String] = None, // max 6 chars
-
+                    agencyAssignedCustomizationCode: Option[String] = None,
                     @JacksonXmlProperty(localName = "AgencyAssignedCustomizationVersionCode", namespace = NS.dms)
-                    agencyAssignedCustomizationVersionCode: Option[String] = None, // max 3 chars
-
+                    agencyAssignedCustomizationVersionCode: Option[String] = None,
                     @JacksonXmlProperty(localName = "Declaration", namespace = NS.dec)
-                    declaration: Declaration = Declaration()
-                   ) extends JacksonMapper {
-
-  def toXml: String = {
-    val sw = new StringWriter()
-    _xml.writeValue(sw, this)
-    sw.toString
-  }
-
-  def toProperties: Map[String, String] = _props.writeValueAsProperties(this, _schema).asScala.toMap
-
-}
-
-@JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
-@JacksonXmlRootElement(namespace = NS.dms, localName = "MetaData")
-case class ResponseMetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", namespace = NS.dms)
-                    wcoDataModelVersionCode: Option[String] = None, // max 6 chars
-
-                    @JacksonXmlProperty(localName = "WCOTypeName", namespace = NS.dms)
-                    wcoTypeName: Option[String] = None, // no constraint
-
-                    @JacksonXmlProperty(localName = "ResponsibleCountryCode", namespace = NS.dms)
-                    responsibleCountryCode: Option[String] = None, // max 2 chars - ISO 3166-1 alpha2 code
-
-                    @JacksonXmlProperty(localName = "ResponsibleAgencyName", namespace = NS.dms)
-                    responsibleAgencyName: Option[String] = None, // max 70 chars
-
-                    @JacksonXmlProperty(localName = "AgencyAssignedCustomizationCode", namespace = NS.dms)
-                    agencyAssignedCustomizationCode: Option[String] = None, // max 6 chars
-
-                    @JacksonXmlProperty(localName = "AgencyAssignedCustomizationVersionCode", namespace = NS.dms)
-                    agencyAssignedCustomizationVersionCode: Option[String] = None, // max 3 chars
-
+                    declaration: Option[Declaration] = None,
                     @JacksonXmlProperty(localName = "Response", namespace = NS.res)
-                    response: Seq[Response] = Seq.empty
-                   )extends JacksonMapper {
+                    response: Option[Seq[Response]] = None) extends JacksonMapper {
 
   def toXml: String = {
     val sw = new StringWriter()
@@ -130,9 +91,8 @@ case class ResponseMetaData(@JacksonXmlProperty(localName = "WCODataModelVersion
   }
 
   def toProperties: Map[String, String] = _props.writeValueAsProperties(this, _schema).asScala.toMap
+
 }
-
-
 
 object MetaData extends JacksonMapper {
 

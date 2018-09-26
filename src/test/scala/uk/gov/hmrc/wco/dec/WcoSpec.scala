@@ -30,7 +30,7 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
     responsibleCountryCode = Some(randomISO3166Alpha2CountryCode),
     responsibleAgencyName = Some(randomString(70)),
     agencyAssignedCustomizationVersionCode = Some(randomString(3)),
-    declaration = Declaration(
+    declaration = Some(Declaration(
       typeCode = Some("INV"), // ONLY acceptable value for a cancellation
       functionCode = Some(13), // ONLY acceptable value for a cancellation
       functionalReferenceId = Some(randomString(35)),
@@ -41,7 +41,7 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
       amendments = Seq(Amendment(
         changeReasonCode = Some(randomString(3))
       ))
-    )
+    ))
   )
 
   protected def randomDomainName: String = randomString(8) + tlds(randomInt(tlds.length))
@@ -64,7 +64,7 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
 
   protected def randomString(length: Int): String = Random.alphanumeric.take(length).mkString
 
-  protected def randomValidDeclaration: Declaration = Declaration()
+  protected def randomValidDeclaration: Option[Declaration] = Some(Declaration())
 
   protected def randomBoolean: Boolean = if(Random.nextInt() % 2 == 0) true else false
 
@@ -107,11 +107,6 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
   def hasExpectedInput[T](meta: MetaData, expected: T)(extractor: MetaData => T): Unit =
     extractor(MetaData.fromXml(meta.toXml)) must be(expected)
 
-  protected def randomValidResponse: Response = Response(randomDeclarationFunctionCode, Some("functionalRefId1"))
-
-/*
-    Response(randomDeclarationFunctionCode, Some("functionalRefId1"),
-      issueDateTime =  Some(ResponseDateTimeElement(DateTimeString(randomDateTimeFormatCode, randomDateTimeString))))
-*/
+  protected def randomValidResponse: Response = Response(randomDeclarationFunctionCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
 
 }

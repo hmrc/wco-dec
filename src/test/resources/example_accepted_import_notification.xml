@@ -97,4 +97,3 @@
 		</resp:Declaration>
 	</resp:Response>
 </md:MetaData>
-headers=List((Content-Type,application/xml), (Authorization,BASIC value-not-logged), (User-Agent,Customs Declaration Service), (X-Conversation-ID,xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx))
