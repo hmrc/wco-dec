@@ -70,5 +70,54 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
+
+    "include FunctionCode" in validResponseXmlScenario() {
+      val version = randomString(6)
+      val expectedCode = randomDeclarationFunctionCode
+      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = Some(Seq(
+        Response(expectedCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
+      )))
+
+      hasExpectedOutput(meta, expectedCode) { xml =>
+        (xml \ "Response" \ "FunctionCode").text.trim.toInt
+      }
+    }
+
+    "include FunctionalReferenceID" in validResponseXmlScenario() {
+      val version = randomString(6)
+      val expectedCode = randomDeclarationFunctionCode
+      val refId = "functionalRefId1"
+      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = Some(Seq(
+        Response(expectedCode, Some(refId), declaration = Some(ResponseDeclaration()))
+      )))
+
+      hasExpectedOutput(meta, refId) { xml =>
+        (xml \ "Response" \ "FunctionCode").text.trim.toInt
+        (xml \ "Response" \ "FunctionalReferenceID").text.trim
+      }
+    }
+
+    "include IssueDateTime" in validResponseXmlScenario() {
+      val version = randomString(6)
+      val expectedCode = randomDeclarationFunctionCode
+      val refId = "functionalRefId1"
+
+      val formatCode = randomDateTimeFormatCode
+      val dateTime = randomDateTimeString
+
+       val issueTime = Some(ResponseDateTimeElement(DateTimeString(formatCode, dateTime)))
+
+      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = Some(Seq(
+        Response(expectedCode, Some(refId), issueTime, declaration = Some(ResponseDeclaration()))
+      )))
+
+      hasExpectedOutput(meta, Seq(formatCode, dateTime)) { xml =>
+        Seq(
+          (xml \ "Response" \ "IssueDateTime" \ "DateTimeString" \ "@formatCode").text.trim,
+          (xml \ "Response" \ "IssueDateTime" \ "DateTimeString").text.trim
+        )
+      }
+    }
+
   }
 }
