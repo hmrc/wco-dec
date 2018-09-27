@@ -174,7 +174,8 @@
                                     <WCOCodeRemarks>EDIFACT codes (4451)</WCOCodeRemarks>
                                     <WCOID>369</WCOID>
                                     <WCOName>Additional statement type</WCOName>
-                                    <WCODescription>Code qualifying the subject of the additional statement
+                                    <WCODescription>
+                                        Code qualifying the subject of the additional statement
                                     </WCODescription>
                                     <WCOFormat>an..3</WCOFormat>
                                 </xs:documentation>
