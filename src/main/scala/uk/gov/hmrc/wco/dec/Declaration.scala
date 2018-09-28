@@ -44,6 +44,8 @@ private[wco] object NS {
   final val dms = "urn:wco:datamodel:WCO:DocumentMetaData-DMS:2"
   final val dec = "urn:wco:datamodel:WCO:DEC-DMS:2"
   final val ds = "urn:wco:datamodel:WCO:Declaration_DS:DMS:2"
+  final val res = "urn:wco:datamodel:WCO:RES-DMS:2"
+  final val rs = "urn:wco:datamodel:WCO:Response_DS:DMS:2"
 }
 
 trait JacksonMapper {
@@ -84,7 +86,10 @@ case class MetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", n
                     agencyAssignedCustomizationVersionCode: Option[String] = None, // max 3 chars
 
                     @JacksonXmlProperty(localName = "Declaration", namespace = NS.dec)
-                    declaration: Declaration = Declaration()) extends JacksonMapper {
+                    declaration: Option[Declaration] = None,
+
+                    @JacksonXmlProperty(localName = "Response", namespace = NS.res)
+                    response: Seq[Response] = Seq.empty) extends JacksonMapper {
 
   def toXml: String = {
     val sw = new StringWriter()
@@ -615,6 +620,9 @@ case class AdditionalInformation(@JacksonXmlProperty(localName = "StatementCode"
 
                                  @JacksonXmlProperty(localName = "StatementDescription", namespace = NS.dec)
                                  statementDescription: Option[String] = None, // max 512 chars
+
+                                @JacksonXmlProperty(localName = "LimitDateTime", namespace = NS.dec)
+                                 limitDateTime: Option[String] = None, // max 35 chars
 
                                  @JacksonXmlProperty(localName = "StatementTypeCode", namespace = NS.dec)
                                  statementTypeCode: Option[String] = None, // max 3 chars
