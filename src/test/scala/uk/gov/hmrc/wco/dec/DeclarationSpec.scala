@@ -16,8 +16,6 @@
 
 package uk.gov.hmrc.wco.dec
 
-import scala.xml.{Elem, XML}
-
 class DeclarationSpec extends WcoSpec with XmlBehaviours {
 
   val cancellation: MetaData = randomCancelDeclaration

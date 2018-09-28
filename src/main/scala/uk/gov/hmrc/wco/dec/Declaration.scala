@@ -68,21 +68,28 @@ trait JacksonMapper {
 @JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
 @JacksonXmlRootElement(namespace = NS.dms, localName = "MetaData")
 case class MetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", namespace = NS.dms)
-                    wcoDataModelVersionCode: Option[String] = None,
+                    wcoDataModelVersionCode: Option[String] = None, // max 6 chars
+
                     @JacksonXmlProperty(localName = "WCOTypeName", namespace = NS.dms)
-                    wcoTypeName: Option[String] = None,
+                    wcoTypeName: Option[String] = None, // no constraint
+
                     @JacksonXmlProperty(localName = "ResponsibleCountryCode", namespace = NS.dms)
-                    responsibleCountryCode: Option[String] = None,
+                    responsibleCountryCode: Option[String] = None, // max 2 chars - ISO 3166-1 alpha2 code
+
                     @JacksonXmlProperty(localName = "ResponsibleAgencyName", namespace = NS.dms)
-                    responsibleAgencyName: Option[String] = None,
+                    responsibleAgencyName: Option[String] = None, // max 70 chars
+
                     @JacksonXmlProperty(localName = "AgencyAssignedCustomizationCode", namespace = NS.dms)
-                    agencyAssignedCustomizationCode: Option[String] = None,
+                    agencyAssignedCustomizationCode: Option[String] = None, // max 6 chars
+
                     @JacksonXmlProperty(localName = "AgencyAssignedCustomizationVersionCode", namespace = NS.dms)
-                    agencyAssignedCustomizationVersionCode: Option[String] = None,
+                    agencyAssignedCustomizationVersionCode: Option[String] = None, // max 3 chars
+
                     @JacksonXmlProperty(localName = "Declaration", namespace = NS.dec)
                     declaration: Option[Declaration] = None,
+
                     @JacksonXmlProperty(localName = "Response", namespace = NS.res)
-                    response: Option[Seq[Response]] = None) extends JacksonMapper {
+                    response: Seq[Response] = Seq.empty) extends JacksonMapper {
 
   def toXml: String = {
     val sw = new StringWriter()
