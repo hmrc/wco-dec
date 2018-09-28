@@ -36,28 +36,23 @@ trait XmlBehaviours {
   val responseSchemaResources = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_RES_2_DMS.xsd")
 
 
-  def validXmlScenario(schemas: Seq[String] = Seq.empty)(test: => Elem): Unit = {
+  def validXmlScenario(schemas: Seq[String] = Seq.empty)(test: => Elem): Unit =
     validateAgainstSchemaResources(test.mkString, schemas)
-  }
-  def validDeclarationXmlScenario()(test: => Elem): Unit = {
-    validXmlScenario(importDeclarationSchemaResources)(test)
-  }
 
-  def validResponseXmlScenario()(test: => Elem): Unit = {
-    validXmlScenario(responseSchemaResources)(test)
-  }
-  def validCancellationDeclarationXml()(test: => Elem): Unit = {
+  def validDeclarationXmlScenario()(test: => Elem): Unit = validXmlScenario(importDeclarationSchemaResources)(test)
+
+  def validResponseXmlScenario()(test: => Elem): Unit = validXmlScenario(responseSchemaResources)(test)
+
+  def validCancellationDeclarationXml()(test: => Elem): Unit =
     validXmlScenario(importDeclarationCancellationSchemas)(test)
 
-  }
-  protected def isValidImportDeclarationXml(xml: String): Boolean = {
+  protected def isValidImportDeclarationXml(xml: String): Boolean =
     try {
       validateAgainstSchemaResources(xml, importDeclarationSchemaResources)
       true
     } catch {
       case _: SAXException => false
     }
-  }
 
   private def validateAgainstSchemaResources(xml: String, schemas: Seq[String]): Unit = {
     val schema: Schema = {
@@ -65,6 +60,7 @@ trait XmlBehaviours {
       SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI).newSchema(sources)
     }
     val validator = schema.newValidator()
+
     validator.validate(new StreamSource(new StringReader(xml)))
   }
 

@@ -48,7 +48,8 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
 
   protected def randomEmail: String = randomEmail(randomFirstName, randomLastName)
 
-  protected def randomEmail(firstName: String, lastName: String): String = s"${firstName.toLowerCase}.${lastName.toLowerCase}@$randomDomainName"
+  protected def randomEmail(firstName: String, lastName: String): String =
+    s"${firstName.toLowerCase}.${lastName.toLowerCase}@$randomDomainName"
 
   protected def randomFirstName: String = firstNames(randomInt(firstNames.length))
 
@@ -72,7 +73,8 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
 
   protected def randomDateTimeFormatCode: String = dateTimeFormatCodes(randomInt(dateTimeFormatCodes.length))
 
-  protected def randomDateTimeString: String = s"20$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$randomZ$random0To9$random0To9"
+  protected def randomDateTimeString: String =
+    s"20$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$random0To9$randomZ$random0To9$random0To9"
 
   protected def randomISO4217CurrencyCode: String = iso4217(randomInt(iso4217.length))
 
@@ -107,6 +109,7 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
   def hasExpectedInput[T](meta: MetaData, expected: T)(extractor: MetaData => T): Unit =
     extractor(MetaData.fromXml(meta.toXml)) must be(expected)
 
-  protected def randomValidResponse: Response = Response(randomDeclarationFunctionCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
+  protected def randomValidResponse: Response =
+    Response(randomDeclarationFunctionCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
 
 }
