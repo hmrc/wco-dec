@@ -61,7 +61,7 @@ case class ResponseAmendment(
 
 case class Response(
   @JacksonXmlProperty(localName = "FunctionCode", namespace = NS.res)
-  functionCode:Int, // numeric max 2
+  functionCode: Int, // numeric max 2
 
   @JacksonXmlProperty(localName = "FunctionalReferenceID", namespace = NS.res)
   functionalReferenceId: Option[String] = None, // max 35 chars
@@ -91,14 +91,13 @@ case class Response(
   status: Seq[ResponseStatus] = Seq.empty,
 
   @JacksonXmlProperty(localName = "Declaration", namespace = NS.res)
-  declaration:Option[ResponseDeclaration] = None
+  declaration: Option[ResponseDeclaration] = None
 )
 
 case class ResponseAppealOffice(
   @JacksonXmlProperty(localName = "ID", namespace = NS.res)
   id: Option[String] = None // max 17 chars
 )
-
 
 case class ResponseBank(
   @JacksonXmlProperty(localName = "ReferenceID", namespace = NS.res)
@@ -170,15 +169,15 @@ case class ResponseDeclaration(
   versionID: Option[String] = None, // max 9 chars
 
   @JacksonXmlProperty(localName = "DutyTaxFee", namespace = NS.res)
-  dutyTaxFees:Seq[ResponseDutyTaxFee] = Seq.empty,
+  dutyTaxFees: Seq[ResponseDutyTaxFee] = Seq.empty,
 
   @JacksonXmlProperty(localName = "GoodsShipment", namespace = NS.res)
-  goodsShipment:Option[ResponseGoodsShipment] = None
+  goodsShipment: Option[ResponseGoodsShipment] = None
 )
 
 case class ResponseDutyTaxFee(
   @JacksonXmlProperty(localName = "Payment", namespace = NS.res)
-  payment:Option[ResponsePayment]
+  payment: Option[ResponsePayment]
 )
 
 case class ResponsePayment(
@@ -195,7 +194,7 @@ case class ResponsePayment(
   paymentAmount: Option[Amount] = None,
 
   @JacksonXmlProperty(localName = "ObligationGuarantee", namespace = NS.res)
-  obligationGuarantees:Seq[ResponseObligationGuarantee] = Seq.empty
+  obligationGuarantees: Seq[ResponseObligationGuarantee] = Seq.empty
 )
 
 case class ResponseObligationGuarantee(
@@ -205,7 +204,7 @@ case class ResponseObligationGuarantee(
 
 case class ResponseGoodsShipment(
   @JacksonXmlProperty(localName = "GovernmentAgencyGoodsItem", namespace = NS.res)
-  governmentAgencyGoodsItems : Seq[ResponseGovernmentAgencyGoodsItem] = Seq.empty
+  governmentAgencyGoodsItems: Seq[ResponseGovernmentAgencyGoodsItem] = Seq.empty
 )
 
 case class ResponseGovernmentAgencyGoodsItem(
