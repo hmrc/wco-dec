@@ -31,7 +31,7 @@ case class ResponseAdditionalInformation(
   statementDescription: Option[String] = None, // max 512 chars
 
   @JacksonXmlProperty(localName = "LimitDateTime", namespace = NS.res)
-  limitDateTime: Option[ResponseDateTimeElement] = None, // max 35 chars
+  limitDateTime: Option[ResponseDateTimeElement] = None, // alphanumeric max 35 chars
 
   @JacksonXmlProperty(localName = "StatementTypeCode", namespace = NS.res)
   statementTypeCode: Option[String] = None, // max 3 chars
@@ -42,7 +42,7 @@ case class ResponseAdditionalInformation(
 
 case class ResponsePointer(
   @JacksonXmlProperty(localName = "SequenceNumeric", namespace = NS.res)
-  sequenceNumeric: Option[Int] = None, // min 0 max 99999
+  sequenceNumeric: Option[Int] = None, // max 5 chars
 
   @JacksonXmlProperty(localName = "DocumentSectionCode", namespace = NS.res)
   documentSectionCode: Option[String] = None, // max 3 chars
@@ -61,13 +61,13 @@ case class ResponseAmendment(
 
 case class Response(
   @JacksonXmlProperty(localName = "FunctionCode", namespace = NS.res)
-  functionCode:Int, // max length 2 pattern ([0-9])*"
+  functionCode: Int, // numeric max 2
 
   @JacksonXmlProperty(localName = "FunctionalReferenceID", namespace = NS.res)
   functionalReferenceId: Option[String] = None, // max 35 chars
 
   @JacksonXmlProperty(localName = "IssueDateTime", namespace = NS.res)
-  issueDateTime: Option[ResponseDateTimeElement] = None,
+  issueDateTime: Option[ResponseDateTimeElement] = None, // max 35 chars
 
   @JacksonXmlProperty(localName = "AdditionalInformation", namespace = NS.res)
   additionalInformations: Seq[ResponseAdditionalInformation] = Seq.empty,
@@ -91,14 +91,13 @@ case class Response(
   status: Seq[ResponseStatus] = Seq.empty,
 
   @JacksonXmlProperty(localName = "Declaration", namespace = NS.res)
-  declaration:Option[ResponseDeclaration] = None
+  declaration: Option[ResponseDeclaration] = None
 )
 
 case class ResponseAppealOffice(
   @JacksonXmlProperty(localName = "ID", namespace = NS.res)
   id: Option[String] = None // max 17 chars
 )
-
 
 case class ResponseBank(
   @JacksonXmlProperty(localName = "ReferenceID", namespace = NS.res)
@@ -144,7 +143,7 @@ case class ResponseStatus(
   nameCode: Option[String] = None, //maxLength value="3"
 
   @JacksonXmlProperty(localName = "ReleaseDateTime", namespace = NS.res)
-  releaseDateTime: Option[ResponseDateTimeElement] = None, //maxLength value="35"
+  releaseDateTime: Option[ResponseDateTimeElement] = None, // alphanumeric max 35 chars
 
   @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
   pointers: Seq[ResponsePointer] = Seq.empty
@@ -152,7 +151,7 @@ case class ResponseStatus(
 
 case class ResponseDeclaration(
   @JacksonXmlProperty(localName = "AcceptanceDateTime", namespace = NS.res)
-  acceptanceDateTime: Option[ResponseDateTimeElement] = None,
+  acceptanceDateTime: Option[ResponseDateTimeElement] = None, // alphanumeric max 35 chars
 
   @JacksonXmlProperty(localName = "CancellationDateTime", namespace = NS.res)
   cancellationDateTime: Option[ResponseDateTimeElement] = None,
@@ -161,7 +160,7 @@ case class ResponseDeclaration(
   functionalReferenceId: Option[String] = None, // max 35 chars
 
   @JacksonXmlProperty(localName = "ID", namespace = NS.res)
-  id: Option[String] = None, // max 70 chars
+  id: Option[String] = None, // max 35 chars
 
   @JacksonXmlProperty(localName = "RejectionDateTime", namespace = NS.res)
   rejectionDateTime: Option[ResponseDateTimeElement] = None,
@@ -170,15 +169,15 @@ case class ResponseDeclaration(
   versionID: Option[String] = None, // max 9 chars
 
   @JacksonXmlProperty(localName = "DutyTaxFee", namespace = NS.res)
-  dutyTaxFees:Seq[ResponseDutyTaxFee] = Seq.empty,
+  dutyTaxFees: Seq[ResponseDutyTaxFee] = Seq.empty,
 
   @JacksonXmlProperty(localName = "GoodsShipment", namespace = NS.res)
-  goodsShipment:Option[ResponseGoodsShipment] = None
+  goodsShipment: Option[ResponseGoodsShipment] = None
 )
 
 case class ResponseDutyTaxFee(
   @JacksonXmlProperty(localName = "Payment", namespace = NS.res)
-  payment:Option[ResponsePayment]
+  payment: Option[ResponsePayment]
 )
 
 case class ResponsePayment(
@@ -195,7 +194,7 @@ case class ResponsePayment(
   paymentAmount: Option[Amount] = None,
 
   @JacksonXmlProperty(localName = "ObligationGuarantee", namespace = NS.res)
-  obligationGuarantees:Seq[ResponseObligationGuarantee] = Seq.empty
+  obligationGuarantees: Seq[ResponseObligationGuarantee] = Seq.empty
 )
 
 case class ResponseObligationGuarantee(
@@ -205,12 +204,12 @@ case class ResponseObligationGuarantee(
 
 case class ResponseGoodsShipment(
   @JacksonXmlProperty(localName = "GovernmentAgencyGoodsItem", namespace = NS.res)
-  governmentAgencyGoodsItems : Seq[ResponseGovernmentAgencyGoodsItem] = Seq.empty
+  governmentAgencyGoodsItems: Seq[ResponseGovernmentAgencyGoodsItem] = Seq.empty
 )
 
 case class ResponseGovernmentAgencyGoodsItem(
   @JacksonXmlProperty(localName = "SequenceNumeric", namespace = NS.res)
-  sequenceNumeric: Int, // unsigned max 99999
+  sequenceNumeric: Int, // max 5 chars
 
   @JacksonXmlProperty(localName = "Commodity", namespace = NS.res)
   commodity: Option[ResponseCommodity] = None

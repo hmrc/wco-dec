@@ -1,0 +1,44 @@
+<MetaData xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2"
+          xmlns:response="urn:wco:datamodel:WCO:RES-DMS:2"
+          xmlns:responseDs="urn:wco:datamodel:WCO:Response_DS:DMS:2">
+    <WCODataModelVersionCode>12</WCODataModelVersionCode>
+    <WCOTypeName>RES</WCOTypeName>
+    <ResponsibleCountryCode/>
+    <ResponsibleAgencyName/>
+    <AgencyAssignedCustomizationCode/>
+    <AgencyAssignedCustomizationVersionCode/>
+    <response:Response>
+        <response:FunctionCode>9</response:FunctionCode>
+        <response:FunctionalReferenceID>a5b4aeb03a384a5faf1b9afeff5dac97</response:FunctionalReferenceID>
+        <response:IssueDateTime>
+            <responseDs:DateTimeString formatCode="304" >20180119155357Z</responseDs:DateTimeString>
+        </response:IssueDateTime>
+        <response:AdditionalInformation>
+            <response:StatementCode>yDu4nOSXrh</response:StatementCode>
+            <response:StatementDescription>0BlV386UJo</response:StatementDescription>
+            <response:StatementTypeCode>Fsz</response:StatementTypeCode>
+            <response:Pointer>
+                <response:SequenceNumeric>1</response:SequenceNumeric>
+                <response:DocumentSectionCode>tk3</response:DocumentSectionCode>
+                <response:TagID>euF5</response:TagID>
+            </response:Pointer>
+        </response:AdditionalInformation>
+        <response:Error>
+            <response:Description>dsfASd23</response:Description>
+            <response:ValidationCode>sdfasd2</response:ValidationCode>
+            <response:Pointer>
+                <response:SequenceNumeric>2</response:SequenceNumeric>
+                <response:DocumentSectionCode>kt3</response:DocumentSectionCode>
+                <response:TagID>ueF5</response:TagID>
+            </response:Pointer>
+        </response:Error>
+        <response:Declaration>
+            <response:AcceptanceDateTime>
+                <responseDs:DateTimeString formatCode="304" >20180119155357Z</responseDs:DateTimeString>
+            </response:AcceptanceDateTime>
+            <response:FunctionalReferenceID>FunctionalReferenceID</response:FunctionalReferenceID>
+            <response:ID>Id1</response:ID>
+            <response:VersionID>Version1</response:VersionID>
+        </response:Declaration>
+    </response:Response>
+</MetaData>
