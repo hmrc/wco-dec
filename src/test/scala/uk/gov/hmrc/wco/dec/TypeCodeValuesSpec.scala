@@ -20,7 +20,7 @@ class TypeCodeValuesSpec extends WcoSpec {
 
   "load" should {
 
-    "parse customs-offices" ignore {
+    "parse customs-offices" in {
       TypeCodeValues.load("customs-offices").filter(_.value == "GBABD001").head.display must be("Aberdeen, Ruby House")
     }
 

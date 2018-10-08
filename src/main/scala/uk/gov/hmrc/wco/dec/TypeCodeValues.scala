@@ -17,12 +17,19 @@
 package uk.gov.hmrc.wco.dec
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import scala.collection.JavaConverters._
+import com.fasterxml.jackson.module.scala.DefaultScalaModule
 
 object TypeCodeValues {
 
-    def load(name: String): Seq[TypeCodeValue] = ???
+  private val _mapper = new ObjectMapper()
+  _mapper.registerModule(DefaultScalaModule)
+
+  def load(name: String): Seq[TypeCodeValue] = _mapper.readValue[Array[TypeCodeValue]](
+    getClass.getResourceAsStream(s"./$name.json"), classOf[Array[TypeCodeValue]]
+  )
 
 }
 
-case class TypeCodeValue(value: String, display: String, additionalDisplay: Option[String])
+case class TypeCodeValue(value: String,
+                         display: String,
+                         additionalDisplay: Option[String])
