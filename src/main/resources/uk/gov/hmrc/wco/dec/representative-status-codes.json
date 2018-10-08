@@ -1,0 +1,13 @@
+{ 
+    "representative-status-codes":[
+      {
+        "value":"2",
+        "display":"Direct representation"
+      },
+      {
+        "value":"3",
+        "display":"Indirect representation"
+      }
+    ]
+    }
+    

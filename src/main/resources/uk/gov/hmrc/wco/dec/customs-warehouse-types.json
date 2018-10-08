@@ -1,0 +1,29 @@
+{ 
+    "customs-warehouse-types":[
+      {
+        "value":"R",
+        "display":"Public customs warehouse type I"
+      },
+      {
+        "value":"S",
+        "display":"Public customs warehouse type II"
+      },
+      {
+        "value":"T",
+        "display":"Public customs warehouse type III"
+      },
+      {
+        "value":"U",
+        "display":"Private customs warehouse"
+      },
+      {
+        "value":"Y",
+        "display":"Non-customs warehouse"
+      },
+      {
+        "value":"Z",
+        "display":"Free zone"
+      }
+    ]
+    }
+    

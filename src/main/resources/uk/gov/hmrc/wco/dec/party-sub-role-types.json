@@ -1,0 +1,36 @@
+{ 
+    "party-sub-role-types":[
+      {
+        "value":"CS",
+        "display":"Consolidator"
+      },
+      {
+        "value":"MF",
+        "display":"Manufacturer"
+      },
+      {
+        "value":"FW",
+        "display":"Freight Forwarder"
+      },
+      {
+        "value":"WH",
+        "display":"Warehouse Keeper"
+      },
+      {
+        "value":"FR1",
+        "display":"Importer"
+      },
+      {
+        "value":"FR2",
+        "display":"Customer"
+      },
+      {
+        "value":"FR3",
+        "display":"Tax Representative"
+      },
+      {
+        "value":"FR4",
+        "display":"Holder of the deferred payment authorisation"
+      }
+    ]
+    }

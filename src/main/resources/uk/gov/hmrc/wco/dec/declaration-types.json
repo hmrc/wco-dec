@@ -1,0 +1,21 @@
+{ 
+    "declaration-types":[
+      {
+        "value":"C",
+        "display":"Simplified declaration with regular use (pre-authorised)"
+      },
+      {
+        "value":"F",
+        "display":"Simplified declaration with regular use (pre-authorised)"
+      },
+      {
+        "value":"Y",
+        "display":"Supplementary declaration covered by types C and F"
+      },
+      {
+        "value":"Z",
+        "display":"Supplementary declarations for Entry in Declarants Records"
+      }
+    ]
+    }
+    

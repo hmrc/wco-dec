@@ -1,0 +1,572 @@
+[{
+    "value":"GBABD001"
+  ,"display":"Aberdeen, Ruby House"
+},
+{
+    "value":"GBAVO001"
+  ,"display":"Avonmouth, Customs House"
+},
+{
+    "value":"GBBTH001"
+  ,"display":"Bathgate, Pyramids Business Centre"
+},
+{
+    "value":"GBBEL001"
+  ,"display":"Belfast, Beaufort House"
+},
+{
+    "value":"GBBEL002"
+  ,"display":"Belfast, Carne House"
+},
+{
+    "value":"GBBEL003"
+  ,"display":"Belfast, Custom House"
+},
+{
+    "value":"GBBEL004"
+  ,"display":"Belfast, Dorchester House (NIRU)"
+},
+{
+    "value":"GBBHM001"
+  ,"display":"Birmingham, 2 Broadway"
+},
+{
+    "value":"GBBHM002"
+  ,"display":"Birmingham, City Centre House"
+},
+{
+    "value":"GBBLB001"
+  ,"display":"Blackburn, Chaucers Walk"
+},
+{
+    "value":"GBBLT001"
+  ,"display":"Bolton, Stonecross House"
+},
+{
+    "value":"GBBOE001"
+  ,"display":"Bootle, Litherland House"
+},
+{
+    "value":"GBBOE002"
+  ,"display":"Bootle, St. John’s House"
+},
+{
+    "value":"GBBOE003"
+  ,"display":"Bootle, St. John’s"
+},
+{
+    "value":"GBBOH001"
+  ,"display":"Bournemouth, Holland House"
+},
+{
+    "value":"GBBRD001"
+  ,"display":"Bradford, Centenary Court"
+},
+{
+    "value":"GBBRD002"
+  ,"display":"Bradford, No.1 The Interchange"
+},
+{
+    "value":"GBRIH001"
+  ,"display":"Brierley Hill, Merry Hill Contact Centre"
+},
+{
+    "value":"GBBSH001"
+  ,"display":"Brighton, Crown House"
+},
+{
+    "value":"GBBRS001"
+  ,"display":"Bristol, 101 Victoria Street"
+},
+{
+    "value":"GBBRS002"
+  ,"display":"Bristol, Temple Quay House"
+},
+{
+    "value":"GBBRS003"
+  ,"display":"Bristol, The Crescent centre"
+},
+{
+    "value":"GBCMG001"
+  ,"display":"Cambridge, Eastbrook"
+},
+{
+    "value":"GBCNB001"
+  ,"display":"Canterbury, Charter House (re Sun Alliance House)"
+},
+{
+    "value":"GBCDF001"
+  ,"display":"Cardiff, Brunel House"
+},
+{
+    "value":"GBCDF002"
+  ,"display":"Cardiff, Ty Glas (EORI Team)"
+},
+{
+    "value":"GBCVT001"
+  ,"display":"Coventry, Sherbourne House"
+},
+{
+    "value":"GBCRG001"
+  ,"display":"Craigavon, Marlborough House"
+},
+{
+    "value":"GBCWY001"
+  ,"display":"Crawley, Origin One"
+},
+{
+    "value":"GBCRO001"
+  ,"display":"Croydon, 1 Ruskin Square"
+},
+{
+    "value":"GBCRO002"
+  ,"display":"Croydon, Southern House"
+},
+{
+    "value":"GBCLD001"
+  ,"display":"Cumbernauld, Accounts Office"
+},
+{
+    "value":"GBDXY001"
+  ,"display":"Derby, Northgate House"
+},
+{
+    "value":"GBDVR001"
+  ,"display":"Dover, Priory Court"
+},
+{
+    "value":"GBDUN001"
+  ,"display":"Dundee, Caledonian House"
+},
+{
+    "value":"GBDUN002"
+  ,"display":"Dundee, Sidlaw House"
+},
+{
+    "value":"GBEKB001"
+  ,"display":"East Kilbride, Plaza Tower"
+},
+{
+    "value":"GBEKB002"
+  ,"display":"East Kilbride, Queensway House"
+},
+{
+    "value":"GBEDI001"
+  ,"display":"Edinburgh, Elgin House"
+},
+{
+    "value":"GBEDI002"
+  ,"display":"Edinburgh, Grayfield House"
+},
+{
+    "value":"GBEDI003"
+  ,"display":"Edinburgh, Meldrum House"
+},
+{
+    "value":"GBENK001"
+  ,"display":"Enniskillen, Abbey House"
+},
+{
+    "value":"GBERI001"
+  ,"display":"Erith, Chaucer House"
+},
+{
+    "value":"GBEXE001"
+  ,"display":"Exeter, Longbrook House"
+},
+{
+    "value":"GBGTC001"
+  ,"display":"Gartcosh, Scottish Crime Campus"
+},
+{
+    "value":"GBGLW001"
+  ,"display":"Glasgow, Cotton House"
+},
+{
+    "value":"GBGLW002"
+  ,"display":"Glasgow, Portcullis House"
+},
+{
+    "value":"GBGLO001"
+  ,"display":"Gloucester, Twyver House"
+},
+{
+    "value":"GBGVS001"
+  ,"display":"Gravesend, Custom House"
+},
+{
+    "value":"GBGSY001"
+  ,"display":"Grimsby, Imperial House"
+},
+{
+    "value":"GBHRW001"
+  ,"display":"Harwich, Custom House"
+},
+{
+    "value":"GBHUL001"
+  ,"display":"Hull, Cherry Court"
+},
+{
+    "value":"GBHUL002"
+  ,"display":"Hull, Custom House"
+},
+{
+    "value":"GBINV001"
+  ,"display":"Inverness, River House"
+},
+{
+    "value":"GBIPS001"
+  ,"display":"Ipswich, Haven House"
+},
+{
+    "value":"GBIPS002"
+  ,"display":"Ipswich, St Clare House"
+},
+{
+    "value":"GBLBA001"
+  ,"display":"Leeds, Peter Bennett House (Customs Authorisations & Reviews Team)"
+},
+{
+    "value":"GBLBA002"
+  ,"display":"Leeds, 1 Munroe Court"
+},
+{
+    "value":"GBLBA003"
+  ,"display":"Leeds, Castle House"
+},
+{
+    "value":"GBLBA004"
+  ,"display":"Leeds, Windsor House"
+},
+{
+    "value":"GBLCS001"
+  ,"display":"Leicester, Saxon House"
+},
+{
+    "value":"GBLCN001"
+  ,"display":"Lincoln, Lawress Hall"
+},
+{
+    "value":"GBLIS001"
+  ,"display":"Lisburn, Moira House"
+},
+{
+    "value":"GBLIV001"
+  ,"display":"Liverpool, Graeme House"
+},
+{
+    "value":"GBLIV002"
+  ,"display":"Liverpool, Imperial Court"
+},
+{
+    "value":"GBLIV003"
+  ,"display":"Liverpool, Regian House"
+},
+{
+    "value":"GBTON001"
+  ,"display":"Livingston, Barbara Ritchie House"
+},
+{
+    "value":"GBLON001"
+  ,"display":"London, 10 South Colonnade"
+},
+{
+    "value":"GBLON002"
+  ,"display":"London, 100 Parliament Street"
+},
+{
+    "value":"GBLON003"
+  ,"display":"London, Bush House"
+},
+{
+    "value":"GBLON004"
+  ,"display":"London, Custom House"
+},
+{
+    "value":"GBLON005"
+  ,"display":"London, Custom House Annexe"
+},
+{
+    "value":"GBLON006"
+  ,"display":"London, Dorset House"
+},
+{
+    "value":"GBLON007"
+  ,"display":"London, Euston Tower"
+},
+{
+    "value":"GBLON008"
+  ,"display":"London, International House"
+},
+{
+    "value":"GBLON009"
+  ,"display":"London, Jubilee House"
+},
+{
+    "value":"GBLDY001"
+  ,"display":"Londonderry, Foyle House"
+},
+{
+    "value":"GBLUT001"
+  ,"display":"Luton, King House"
+},
+{
+    "value":"GBMDT001"
+  ,"display":"Maidstone, Medvale House"
+},
+{
+    "value":"GBMNC001"
+  ,"display":"Manchester, Albert Bridge House"
+},
+{
+    "value":"GBMNC002"
+  ,"display":"Manchester, Manchester Airport"
+},
+{
+    "value":"GBMID001"
+  ,"display":"Middlesbrough, 100 Russell Street"
+},
+{
+    "value":"GBMID002"
+  ,"display":"Middlesbrough, Eustace House"
+},
+{
+    "value":"GBNTE001"
+  ,"display":"Netherton, Comben House"
+},
+{
+    "value":"GBNCL001"
+  ,"display":"Newcastle, Benton Park View"
+},
+{
+    "value":"GBNCL002"
+  ,"display":"Newcastle, Block D, Tyneview Park"
+},
+{
+    "value":"GBNHP001"
+  ,"display":"Northampton, Princess House"
+},
+{
+    "value":"GBNTG001"
+  ,"display":"Nottingham, Barkley House"
+},
+{
+    "value":"GBNTG002"
+  ,"display":"Nottingham, Castle Meadow Campus"
+},
+{
+    "value":"GBNTG003"
+  ,"display":"Nottingham, Ferrers House"
+},
+{
+    "value":"GBNTG004"
+  ,"display":"Nottingham, FitzRoy House (AEO Central Site)"
+},
+{
+    "value":"GBNTG005"
+  ,"display":"Nottingham, Howard House"
+},
+{
+    "value":"GBNTG006"
+  ,"display":"Nottingham, Yorke House"
+},
+{
+    "value":"GBOXF001"
+  ,"display":"Oxford, Trinity House"
+},
+{
+    "value":"GBPET001"
+  ,"display":"Peterborough, Churchgate"
+},
+{
+    "value":"GBPET002"
+  ,"display":"Peterborough, Peterborough (Woodston) Storage Centre"
+},
+{
+    "value":"GBPTE001"
+  ,"display":"Peterlee, Emerald Court"
+},
+{
+    "value":"GBPTD001"
+  ,"display":"Porthmadog, Ty Moelwyn"
+},
+{
+    "value":"GBPME001"
+  ,"display":"Portsmouth, Lynx House"
+},
+{
+    "value":"GBPME002"
+  ,"display":"Portsmouth, Wingfield House"
+},
+{
+    "value":"GBPRE001"
+  ,"display":"Preston, Charles House"
+},
+{
+    "value":"GBPRE002"
+  ,"display":"Preston, Diadem House"
+},
+{
+    "value":"GBPRE003"
+  ,"display":"Preston, St Mark’s House"
+},
+{
+    "value":"GBPRE004"
+  ,"display":"Preston, St Mary’s House"
+},
+{
+    "value":"GBPRE005"
+  ,"display":"Preston, The Guild Centre"
+},
+{
+    "value":"GBPRE006"
+  ,"display":"Preston, Unicentre"
+},
+{
+    "value":"GBRDN001"
+  ,"display":"Reading, Sapphire Plaza"
+},
+{
+    "value":"GBREH001"
+  ,"display":"Redhill, Warwick House"
+},
+{
+    "value":"GBRRU001"
+  ,"display":"Redruth, Piran House"
+},
+{
+    "value":"GBSHE001"
+  ,"display":"Sheffield, Concept House"
+},
+{
+    "value":"GBSHI001"
+  ,"display":"Shipley, Accounts Office"
+},
+{
+    "value":"GBSOL001"
+  ,"display":"Solihull, Regent House"
+},
+{
+    "value":"GBSOL002"
+  ,"display":"Solihull, Royal House"
+},
+{
+    "value":"GBSOL003"
+  ,"display":"Solihull, Sapphire East"
+},
+{
+    "value":"GBSOU001"
+  ,"display":"Southampton, Compass House"
+},
+{
+    "value":"GBSAA001"
+  ,"display":"Southend on Sea, Alexander House"
+},
+{
+    "value":"GBSHY001"
+  ,"display":"St Helens, College Street"
+},
+{
+    "value":"GBSNN001"
+  ,"display":"Swindon, Wiltshire Court"
+},
+{
+    "value":"GBSTS001"
+  ,"display":"Staines, Forum House"
+},
+{
+    "value":"GBSTS002"
+  ,"display":"Staines, Heliting House"
+},
+{
+    "value":"GBSTT001"
+  ,"display":"Stockton-on-Tees, George Stephenson House"
+},
+{
+    "value":"GBSOT001"
+  ,"display":"Stoke-on-Trent, Blackburn House"
+},
+{
+    "value":"GBSUN001"
+  ,"display":"Sunderland, Waterside House"
+},
+{
+    "value":"GBSUR001"
+  ,"display":"Surbiton, Tolworth Tower"
+},
+{
+    "value":"GBSFY001"
+  ,"display":"Salford, Ralli Quays (NTAS)"
+},
+{
+    "value":"GBSFY002"
+  ,"display":"Salford, Trinity Bridge House"
+},
+{
+    "value":"GBSWA001"
+  ,"display":"Swansea, Ty Nant"
+},
+{
+    "value":"GBTEF001"
+  ,"display":"Telford, Abbey House"
+},
+{
+    "value":"GBTEF002"
+  ,"display":"Telford, Parkside Court"
+},
+{
+    "value":"GBTEF003"
+  ,"display":"Telford, Plaza 2 - Floor 2"
+},
+{
+    "value":"GBUXB001"
+  ,"display":"Uxbridge, Valiant House"
+},
+{
+    "value":"GBWRN001"
+  ,"display":"Warrington, Mersey Bank House"
+},
+{
+    "value":"GBWNN001"
+  ,"display":"Washington, Waterview Park"
+},
+{
+    "value":"GBWAF001"
+  ,"display":"Watford, Cambridge House"
+},
+{
+    "value":"GBWBY001"
+  ,"display":"Wembley, Olympic House"
+},
+{
+    "value":"GBWKG001"
+  ,"display":"Woking, Dukes Court"
+},
+{
+    "value":"GBWOV001"
+  ,"display":"Wolverhampton, Crown House"
+},
+{
+    "value":"GBWTR001"
+  ,"display":"Worcester, County Hall"
+},
+{
+    "value":"GBWOR001"
+  ,"display":"Workington, West Cumbria House"
+},
+{
+    "value":"GBWOT001"
+  ,"display":"Worthing, Durrington Bridge House"
+},
+{
+    "value":"GBWOT002"
+  ,"display":"Worthing, HMRC Barrington Road"
+},
+{
+    "value":"GBWXH001"
+  ,"display":"Wrexham, Plas Gororau"
+},
+{
+    "value":"GBYRK001"
+  ,"display":"York, Swinson House"
+}]

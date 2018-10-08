@@ -1,0 +1,17 @@
+{ 
+    "document-category":[
+      {
+        "value":"X",
+        "display":"Temporary storage"
+      },
+      {
+        "value":"Y",
+        "display":"Simplified declaration"
+      },
+      {
+        "value":"Z",
+        "display":"Previous document"
+      }
+    ]
+    }
+    

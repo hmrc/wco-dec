@@ -1,0 +1,36 @@
+{ 
+"transport-mode-types":[
+  {
+	"value":"1",
+	"display":"Maritime (sea) transport"
+  },
+  {
+	"value":"2",
+	"display":"Rail transport"
+  },
+  {
+	"value":"3",
+	"display":"Road transport"
+  },
+  {
+	"value":"4",
+	"display":"Air transport"
+  },
+  {
+	"value":"5",
+	"display":"Postal (mail) consignment"
+  },
+  {
+	"value":"7",
+	"display":"Fixed transport installations"
+  },
+  {
+	"value":"8",
+	"display":"Inland waterway transport"
+  },
+  {
+	"value":"9",
+	"display":"Mode unknown (i.e. own propulsion)"
+  }
+]
+}

@@ -1,0 +1,67 @@
+{ 
+    "declared-guarantee-types":[
+    {
+    "value":"0",
+    "display":"For guarantee waiver (Article 95(2) of the Code)"
+    },
+    {
+    "value":"1",
+    "display":"For comprehensive guarantee (Article 89(5) of the Code"
+    },
+    {
+    "value":"2",
+    "display":"For individual guarantee in the form of an undertaking by a guarantor (Article 92(1)(b) of the Code)"
+    },
+    {
+    "value":"3",
+    "display":"For individual guarantee in cash or other means of payment recognised by the customs authorities as being equivalent to a cash deposit, made in euro or in the currency of the member state in which the guarantee is required (Article 92(1)(a) of the Code"
+    },
+    {
+    "value":"4",
+    "display":"For individual guarantee in the form of vouchers (Article 92(1)(b) of the Code and Article 160)"
+    },
+    {
+    "value":"5",
+    "display":"For guarantee waiver where the amount of import or export duty to be secured does not exceed the statistical value threshold for declarations laid down in accordance with Article 3(4) of Regulation (EC) No 471/2009 of the European Parliament and of the Council (15) (Article 89(9) of the Code)"
+    },
+    {
+    "value":"7",
+    "display":"For individual guarantee in another form which provides equivalent assurance that the amount of import or export duty corresponding to the customs debt and other charges will be paid (Article 92(1)(c) of the Code)"
+    },
+    {
+    "value":"8",
+    "display":"For guarantee not required for certain public bodies (Article 89(7) of the Code)"
+    },
+    {
+      "value":"B",
+      "display":"For guarantee furnished for goods dispatched under TIR procedure"
+    },
+    {
+      "value":"C",
+      "display":"For guarantee not required for goods carried by fix transport installations (Article 89(8)(b) of the Code)"
+    },
+    {
+      "value":"D",
+      "display":"For guarantee not required for goods placed under the temporary admission procedure in accordance with Article 81(a) of Delegated Regulation (EU) 2015/2446 (Article 89(8)(c) of the Code)"
+    },
+    {
+      "value":"E",
+      "display":"For guarantee not required for goods placed under the temporary admission procedure in accordance with Article 81(a) of Delegated Regulation (EU) 2015/2446 (Article 89(8)(c) of the Code)"
+    },
+    {
+      "value":"F",
+      "display":"For guarantee not required for goods placed under the temporary admission procedure in accordance with Article 81(c) of Delegated Regulation (EU) 2015/2446 (Article 89(8)(c) of the Code)"
+    },
+    {
+      "value":"G",
+      "display":"For guarantee not required for goods placed under the temporary admission procedure in accordance with Article 81(d) of Delegated Regulation (EU) 2015/2446 (Article 89(8)(c) of the Code)"
+    },
+    {
+      "value":"H",
+      "display":"For guarantee not required for goods placed under the Union transit procedure in accordance with Article 89(8)(d) of the Code"
+    },
+    {
+      "value":"Y",
+      "display":"Cash Accounts (to be used for payment or security purposes)"
+    }]
+}
