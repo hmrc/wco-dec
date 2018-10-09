@@ -20,7 +20,7 @@ class TypeCodeValuesSpec extends WcoSpec {
 
   "load" should {
 
-    "allowed-additional-documents" in {
+    "parse allowed-additional-documents" in {
       TypeCodeValues.load("allowed-additional-documents").filter(_.value == "A004").head.display must be("Certificate of authenticity Tobacco. EC Reg 1031/2008 amending Annex 1 to Council Regulation 2658/87.")
     }
 
