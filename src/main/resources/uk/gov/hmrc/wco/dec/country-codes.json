@@ -1,5 +1,4 @@
-{ 
-    "country-codes":[
+[
     {
        "value":"AX"
       ,"display":"Åland Islands"
@@ -1004,4 +1003,3 @@
        "value":"ZW"
       ,"display":"Zimbabwe"
     }]
-}

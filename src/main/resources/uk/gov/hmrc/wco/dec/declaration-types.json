@@ -1,5 +1,4 @@
-{ 
-    "declaration-types":[
+[
       {
         "value":"C",
         "display":"Simplified declaration with regular use (pre-authorised)"
@@ -17,5 +16,3 @@
         "display":"Supplementary declarations for Entry in Declarants Records"
       }
     ]
-    }
-    

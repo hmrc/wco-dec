@@ -1,5 +1,4 @@
-{ 
-    "representative-status-codes":[
+[
       {
         "value":"2",
         "display":"Direct representation"
@@ -9,5 +8,3 @@
         "display":"Indirect representation"
       }
     ]
-    }
-    

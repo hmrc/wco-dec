@@ -1,5 +1,4 @@
-{ 
-    "customs-warehouse-types":[
+[
       {
         "value":"R",
         "display":"Public customs warehouse type I"
@@ -25,5 +24,3 @@
         "display":"Free zone"
       }
     ]
-    }
-    

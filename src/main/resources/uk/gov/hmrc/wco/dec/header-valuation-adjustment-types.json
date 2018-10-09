@@ -1,0 +1,133 @@
+[
+    {
+       "value":"AB"
+      ,"display":"Commissions and brokerage, except buying commissions, declared as a monetary amount"
+    },
+    {
+       "value":"AC"
+      ,"display":"Commissions and brokerage, except buying commissions, declared as a percentage addition"
+    },
+    {
+       "value":"AD"
+      ,"display":"Containers and packing"
+    },
+    {
+       "value":"AE"
+      ,"display":"Materials, components, parts and similar items incorporated in the imported goods"
+    },
+    {
+       "value":"AF"
+      ,"display":"Tools, dies, moulds and similar items used in the production of the imported goods, declared as a monetary amount"
+    },
+    {
+       "value":"AG"
+      ,"display":"Materials consumed in the production of the imported goods"
+    },
+    {
+       "value":"AH"
+      ,"display":"Engineering, development, artwork, design work and plans and sketches undertaken elsewhere than in the EU and necessary for the production of the imported goods, declared as a monetary amount"
+    },
+    {
+       "value":"AI"
+      ,"display":"Royalties and license fees, declared as a monetary amount, for percentage adjustments use code AM instead"
+    },
+    {
+       "value":"AJ"
+      ,"display":"Proceeds of any subsequent resale, disposal or use accruing to the seller"
+    },
+    {
+       "value":"AK"
+      ,"display":"Insurance costs"
+    },
+    {
+       "value":"AL"
+      ,"display":"Indirect payments and other payments (Article 70 of the code)"
+    },
+    {
+       "value":"AM"
+      ,"display":"Royalties and license fees, declared as a percentage adjustment, for additions declared as a monetary amount rather than a percentage use code AI"
+    },
+    {
+       "value":"AP"
+      ,"display":"Transport costs, loading and handling charges up to the place of introduction in the EU. The amount declared should exclude any airfreight charges declared under codes AR or AS. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their value. If the declarant would prefer the charges to be apportioned by gross mass rather than value then they should use code AQ instead of AP."
+    },
+    {
+       "value":"AQ"
+      ,"display":"Transport costs, loading and handling charges up to the place of introduction in the EU. The amount declared should exclude any airfreight charges declared under codes AR or AS. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their gross mass. If the declarant would prefer the charges to be apportioned by value rather than gross mass then they should use code AP instead of AQ"
+    },
+    {
+       "value":"AR"
+      ,"display":"Air transport costs up to the place of introduction in the EU. This code is only to be used when claiming a reduction in the value for duty for the section of the flight that is considered to be within the EU. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their value. If the declarant would prefer the charges to be apportioned by gross mass rather than value then they should use code AS instead of AR"
+    },
+    {
+       "value":"AS"
+      ,"display":"Air transport costs up to the place of introduction in the EU. This code is only to be used when claiming a reduction in the value for duty for the section of the flight that is considered to be within the EU. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their gross mass. If the declarant would prefer the charges to be apportioned by value rather than gross mass then they should use code AR instead of AS"
+    },
+    {
+       "value":"AT"
+      ,"display":"Other charges not elsewhere declared"
+    },
+    {
+       "value":"AV"
+      ,"display":"Adjustment for VAT value, for example, freight charges within the EU. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their value. If the declarant would prefer the charges to be apportioned by gross mass rather than value then they should use code AW instead of AV"
+    },
+    {
+       "value":"AW"
+      ,"display":"Adjustment for VAT value, for example, freight charges within the EU. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their gross mass. If the declarant would prefer the charges to be apportioned by value rather than gross mass then they should use code AV instead of AW"
+    },
+    {
+       "value":"AX"
+      ,"display":"Tools, dies, moulds and similar items used in the production of the imported goods, declared as a percentage addition"
+    },
+    {
+       "value":"AZ"
+      ,"display":"Engineering, development, artwork, design work and plans and sketches undertaken elsewhere than in the EU and necessary for the production of the imported goods, declared as a percentage addition"
+    },
+    {
+       "value":"BA"
+      ,"display":"Costs of transport and insurance after arrival at the place of introduction, which have been included in the declared value. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their value. If the declarant would prefer the charges to be apportioned by gross mass rather than value then they should use code BU instead of BA"
+    },
+    {
+       "value":"BB"
+      ,"display":"Charges for construction, erection, assembly, maintenance or technical assistance undertaken after importation"
+    },
+    {
+       "value":"BD"
+      ,"display":"Interest charges declared as a monetary amount"
+    },
+    {
+       "value":"BF"
+      ,"display":"Buying commissions, to be declared as a percentage adjustment"
+    },
+    {
+       "value":"BH"
+      ,"display":"Discount (amount) not elsewhere declared. The amount of the discount and the appropriate currency should be shown against this code. If the discount is given as a percentage rather than an actual amount then the discount should be declared using code BI instead of BH"
+    },
+    {
+       "value":"BI"
+      ,"display":"Discount (percentage) not elsewhere declared. The percentage of the discount should be shown against this code. If the discount is given as an actual amount rather than a percentage then the discount should be declared using code BH instead of BI"
+    },
+    {
+       "value":"BL"
+      ,"display":"Interest charges declared as a percentage adjustment"
+    },
+    {
+       "value":"BM"
+      ,"display":"Buying commissions, to be declared as a monetary amount"
+    },
+    {
+       "value":"BR"
+      ,"display":"Air transport costs up to the place of introduction in the EU which have been included in the declared invoice price. This code is only to be used when claiming a reduction in the value for duty for the section of the flight that is considered to be within the EU. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their value. If the declarant would prefer the charges to be apportioned by gross mass rather than value then they should use code BS instead of BR. If the freight charges were not included in the declared invoice value then they must be declared as an addition using code AR or AS rather than BR."
+    },
+    {
+       "value":"BS"
+      ,"display":"Air transport costs up to the place of introduction in the EU which have been included in the declared invoice price. This code is only to be used when claiming a reduction in the value for duty for the section of the flight that is considered to be within the EU. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their gross mass. If the declarant would prefer the charges to be apportioned by value rather than gross mass then they should use code BR instead of BS. If the freight charges were not included in the declared invoice value then they must be declared as an addition using code AR or AS rather than BS."
+    },
+    {
+       "value":"BT"
+      ,"display":"Other deductions not elsewhere declared"
+    },
+    {
+       "value":"BU"
+      ,"display":"Costs of transport and insurance after arrival at the place of introduction, which have been included in the declared value. For multi-item declarations, costs declared under this code will be apportioned across the items in proportion to their gross mass. If the declarant would prefer the charges to be apportioned by value rather than gross mass then they should use code BA instead of BU"
+    }]

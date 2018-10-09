@@ -1,5 +1,4 @@
-{ 
-"transport-mode-types":[
+[
   {
 	"value":"1",
 	"display":"Maritime (sea) transport"
@@ -33,4 +32,3 @@
 	"display":"Mode unknown (i.e. own propulsion)"
   }
 ]
-}

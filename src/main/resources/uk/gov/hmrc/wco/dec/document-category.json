@@ -1,5 +1,4 @@
-{ 
-    "document-category":[
+[
       {
         "value":"X",
         "display":"Temporary storage"
@@ -13,5 +12,3 @@
         "display":"Previous document"
       }
     ]
-    }
-    

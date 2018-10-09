@@ -1,5 +1,4 @@
-{ 
-    "party-sub-role-types":[
+[
       {
         "value":"CS",
         "display":"Consolidator"
@@ -33,4 +32,3 @@
         "display":"Holder of the deferred payment authorisation"
       }
     ]
-    }

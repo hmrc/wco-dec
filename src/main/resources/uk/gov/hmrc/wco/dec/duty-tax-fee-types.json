@@ -1,5 +1,4 @@
-{ 
-    "duty-tax-fee-types":[
+[
     {
        "value":"A20"
       ,"display":"Additional duties"
@@ -288,4 +287,3 @@
        "value":"99D"
       ,"display":"Electricity"
     }]
-}

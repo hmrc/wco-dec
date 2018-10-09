@@ -1,5 +1,4 @@
-{ 
-    "currency-codes":[
+[
     {
        "value":"AFN"
       ,"display":"Afghani"
@@ -612,4 +611,3 @@
        "value":"ZWL"
       ,"display":"Zimbabwe Dollar"
     }]
-}

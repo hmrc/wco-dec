@@ -1,5 +1,4 @@
-{ 
-    "declaration-types":[
+[
         {
            "value":"270"
           ,"display":"Delivery note"
@@ -152,4 +151,3 @@
            "value":"ZZZ"
           ,"display":"Other"
         }]
-}

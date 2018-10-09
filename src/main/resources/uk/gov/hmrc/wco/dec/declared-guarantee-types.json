@@ -1,5 +1,4 @@
-{ 
-    "declared-guarantee-types":[
+[
     {
     "value":"0",
     "display":"For guarantee waiver (Article 95(2) of the Code)"
@@ -64,4 +63,3 @@
       "value":"Y",
       "display":"Cash Accounts (to be used for payment or security purposes)"
     }]
-}
