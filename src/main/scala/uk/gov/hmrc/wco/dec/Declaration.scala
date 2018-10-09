@@ -195,7 +195,7 @@ case class Declaration(@JacksonXmlProperty(localName = "AcceptanceDateTime", nam
                        goodsShipment: Option[GoodsShipment] = None,
 
                        @JacksonXmlProperty(localName = "ObligationGuarantee", namespace = NS.dec)
-                       obligationGuarantees: Seq[ObligationGuarantee] = Seq.empty,
+                       obligationGuarantees: Seq[ObligationGuarantee] = Seq.empty, // max 9 if procedure code requires security details codes ... or 99 procedure code requires reference IDs
 
                        @JacksonXmlProperty(localName = "PresentationOffice", namespace = NS.dec)
                        presentationOffice: Option[Office] = None,
@@ -387,7 +387,7 @@ case class Consignment(@JacksonXmlProperty(localName = "ContainerCode", namespac
                        loadingLocation: Option[LoadingLocation] = None,
 
                        @JacksonXmlProperty(localName = "TransportEquipment", namespace = NS.dec)
-                       transportEquipments: Seq[TransportEquipment] = Seq.empty)
+                       transportEquipments: Seq[TransportEquipment] = Seq.empty) // max 9999
 
 case class LoadingLocation(@JacksonXmlProperty(localName = "Name", namespace = NS.dec)
                            name: Option[String] = None, // max 256 chars
@@ -649,7 +649,7 @@ case class Commodity(@JacksonXmlProperty(localName = "Description", namespace = 
                      invoiceLine: Option[InvoiceLine] = None,
 
                      @JacksonXmlProperty(localName = "TransportEquipment", namespace = NS.dec)
-                     transportEquipments: Seq[TransportEquipment] = Seq.empty)
+                     transportEquipments: Seq[TransportEquipment] = Seq.empty) // max 9999
 
 case class DangerousGoods(@JacksonXmlProperty(localName = "UNDGID", namespace = NS.dec)
                           undgid: Option[String] = None) // max 4 chars; an UN Dangerous Goods Identifier
@@ -763,7 +763,7 @@ case class ObligationGuarantee(@JacksonXmlProperty(localName = "AmountAmount", n
                                referenceId: Option[String] = None, // max 35 chars
 
                                @JacksonXmlProperty(localName = "SecurityDetailsCode", namespace = NS.dec)
-                               securityDetailsCode: Option[String] = None, // max 3 chars
+                               securityDetailsCode: Option[String] = None, // max 3 chars (actually alpha 1 in tariff)
 
                                @JacksonXmlProperty(localName = "AccessCode", namespace = NS.dec)
                                accessCode: Option[String] = None, // max 4 chars
