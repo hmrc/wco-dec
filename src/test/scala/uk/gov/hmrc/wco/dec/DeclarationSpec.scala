@@ -76,8 +76,8 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val meta = MetaData(declaration = Some(Declaration(
         acceptanceDateTime = Some(DateTimeElement(DateTimeString(formatCode, dateTime)))
       )))
-      hasExpectedOutput(meta, Seq(formatCode, dateTime)) { xml =>
-        Seq(
+      hasExpectedOutput(meta, List(formatCode, dateTime)) { xml =>
+        List(
           (xml \ "Declaration" \ "AcceptanceDateTime" \ "DateTimeString" \ "@formatCode").text.trim,
           (xml \ "Declaration" \ "AcceptanceDateTime" \ "DateTimeString").text.trim
         )
@@ -120,8 +120,8 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val meta = MetaData(declaration = Some(Declaration(
         issueDateTime = Some(DateTimeElement(DateTimeString(formatCode, dateTime))))
       ))
-      hasExpectedOutput(meta, Seq(formatCode, dateTime)) { xml =>
-        Seq(
+      hasExpectedOutput(meta, List(formatCode, dateTime)) { xml =>
+        List(
           (xml \ "Declaration" \ "IssueDateTime" \ "DateTimeString" \ "@formatCode").text.trim,
           (xml \ "Declaration" \ "IssueDateTime" \ "DateTimeString").text.trim
         )
@@ -184,8 +184,8 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val meta = MetaData(declaration = Some(Declaration(
         invoiceAmount = Some(Amount(Some(currency), Some(amount))))
       ))
-      hasExpectedOutput(meta, Seq(currency, amount.toString)) { xml =>
-        Seq(
+      hasExpectedOutput(meta, List(currency, amount.toString)) { xml =>
+        List(
           (xml \ "Declaration" \ "InvoiceAmount" \ "@currencyID").text.trim,
           (xml \ "Declaration" \ "InvoiceAmount").text.trim
         )
@@ -379,7 +379,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Additional Document ID" in validDeclarationXmlScenario() {
       val id = randomString(70)
       val meta = MetaData(declaration = Some(Declaration(
-        additionalDocuments = Seq(AdditionalDocument(
+        additionalDocuments = List(AdditionalDocument(
           id = Some(id)
         ))
       )))
@@ -391,7 +391,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Additional Document CategoryCode" in validDeclarationXmlScenario() {
       val code = randomString(3)
       val meta = MetaData(declaration = Some(Declaration(
-        additionalDocuments = Seq(AdditionalDocument(
+        additionalDocuments = List(AdditionalDocument(
           categoryCode = Some(code)
         ))
       )))
@@ -403,7 +403,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Additional Document TypeCode" in validDeclarationXmlScenario() {
       val code = randomString(3)
       val meta = MetaData(declaration = Some(Declaration(
-        additionalDocuments = Seq(AdditionalDocument(
+        additionalDocuments = List(AdditionalDocument(
           typeCode = Some(code)
         ))
       )))
@@ -415,7 +415,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Additional Information Statement Code" in validDeclarationXmlScenario() {
       val code = randomString(17)
       val meta = MetaData(declaration = Some(Declaration(
-        additionalInformations = Seq(AdditionalInformation(
+        additionalInformations = List(AdditionalInformation(
           statementCode = Some(code)
         ))
       )))
@@ -427,7 +427,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Additional Information Statement Description" in validDeclarationXmlScenario() {
       val description = randomString(512)
       val meta = MetaData(declaration = Some(Declaration(
-        additionalInformations = Seq(AdditionalInformation(
+        additionalInformations = List(AdditionalInformation(
           statementDescription = Some(description)
         ))
       )))
@@ -439,7 +439,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Additional Information Statement Type Code" in validDeclarationXmlScenario() {
       val code = randomString(3)
       val meta = MetaData(declaration = Some(Declaration(
-        additionalInformations = Seq(AdditionalInformation(
+        additionalInformations = List(AdditionalInformation(
           statementTypeCode = Some(code)
         ))
       )))
@@ -451,8 +451,8 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Additional Information Pointer Sequence Numeric" in validDeclarationXmlScenario() {
       val num = randomInt(100000)
       val meta = MetaData(declaration = Some(Declaration(
-        additionalInformations = Seq(AdditionalInformation(
-          pointers = Seq(Pointer(
+        additionalInformations = List(AdditionalInformation(
+          pointers = List(Pointer(
             sequenceNumeric = Some(num)
           ))
         ))
@@ -465,8 +465,8 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Additional Information Pointer Document Section Code" in validDeclarationXmlScenario() {
       val code = randomString(3)
       val meta = MetaData(declaration = Some(Declaration(
-        additionalInformations = Seq(AdditionalInformation(
-          pointers = Seq(Pointer(
+        additionalInformations = List(AdditionalInformation(
+          pointers = List(Pointer(
             documentSectionCode = Some(code)
           ))
         ))
@@ -479,8 +479,8 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Additional Information Pointer Tag ID" in validDeclarationXmlScenario() {
       val id = randomString(3)
       val meta = MetaData(declaration = Some(Declaration(
-        additionalInformations = Seq(AdditionalInformation(
-          pointers = Seq(Pointer(
+        additionalInformations = List(AdditionalInformation(
+          pointers = List(Pointer(
             tagId = Some(id)
           ))
         ))
@@ -612,7 +612,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Authorisation Holder ID" in validDeclarationXmlScenario() {
       val id = randomString(17)
       val meta = MetaData(declaration = Some(Declaration(
-        authorisationHolders = Seq(AuthorisationHolder(
+        authorisationHolders = List(AuthorisationHolder(
           id = Some(id)
         ))
       )))
@@ -624,7 +624,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Authorisation Holder category code" in validDeclarationXmlScenario() {
       val code = randomString(4)
       val meta = MetaData(declaration = Some(Declaration(
-        authorisationHolders = Seq(AuthorisationHolder(
+        authorisationHolders = List(AuthorisationHolder(
           categoryCode = Some(code)
         ))
       )))
@@ -696,7 +696,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Currency Exchange currency type code" in validDeclarationXmlScenario() {
       val code = randomISO4217CurrencyCode
       val meta = MetaData(declaration = Some(Declaration(
-        currencyExchanges = Seq(CurrencyExchange(
+        currencyExchanges = List(CurrencyExchange(
           currencyTypeCode = Some(code)
         ))
       )))
@@ -708,7 +708,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Currency Exchange rate numeric" in validDeclarationXmlScenario() {
       val rate = randomBigDecimal
       val meta = MetaData(declaration = Some(Declaration(
-        currencyExchanges = Seq(CurrencyExchange(
+        currencyExchanges = List(CurrencyExchange(
           rateNumeric = Some(rate)
         ))
       )))
@@ -833,7 +833,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val name = randomString(70)
       val meta = MetaData(declaration = Some(Declaration(
         declarant = Some(ImportExportParty(
-          contacts = Seq(Contact(
+          contacts = List(Contact(
             name = Some(name)
           ))
         ))
@@ -847,7 +847,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val id = randomString(50)
       val meta = MetaData(declaration = Some(Declaration(
         declarant = Some(ImportExportParty(
-          communications = Seq(Communication(
+          communications = List(Communication(
             id = Some(id)
           ))
         ))
@@ -861,7 +861,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val code = randomString(3)
       val meta = MetaData(declaration = Some(Declaration(
         declarant = Some(ImportExportParty(
-          communications = Seq(Communication(
+          communications = List(Communication(
             typeCode = Some(code)
           ))
         ))
@@ -995,7 +995,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val name = randomString(70)
       val meta = MetaData(declaration = Some(Declaration(
         exporter = Some(ImportExportParty(
-          contacts = Seq(Contact(
+          contacts = List(Contact(
             name = Some(name)
           ))
         ))
@@ -1009,7 +1009,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val id = randomString(50)
       val meta = MetaData(declaration = Some(Declaration(
         exporter = Some(ImportExportParty(
-          communications = Seq(Communication(
+          communications = List(Communication(
             id = Some(id)
           ))
         ))
@@ -1023,7 +1023,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val code = randomString(3)
       val meta = MetaData(declaration = Some(Declaration(
         exporter = Some(ImportExportParty(
-          communications = Seq(Communication(
+          communications = List(Communication(
             typeCode = Some(code)
           ))
         ))
@@ -1036,7 +1036,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Obligation Guarantee Amount" in validDeclarationXmlScenario() {
       val amount = randomBigDecimal
       val meta = MetaData(declaration = Some(Declaration(
-        obligationGuarantees = Seq(ObligationGuarantee(
+        obligationGuarantees = List(ObligationGuarantee(
           amount = Some(amount)
         ))
       )))
@@ -1048,7 +1048,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Obligation Guarantee ID" in validDeclarationXmlScenario() {
       val id = randomString(70)
       val meta = MetaData(declaration = Some(Declaration(
-        obligationGuarantees = Seq(ObligationGuarantee(
+        obligationGuarantees = List(ObligationGuarantee(
           id = Some(id)
         ))
       )))
@@ -1060,7 +1060,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Obligation Guarantee Reference ID" in validDeclarationXmlScenario() {
       val id = randomString(35)
       val meta = MetaData(declaration = Some(Declaration(
-        obligationGuarantees = Seq(ObligationGuarantee(
+        obligationGuarantees = List(ObligationGuarantee(
           referenceId = Some(id)
         ))
       )))
@@ -1072,7 +1072,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Obligation Guarantee Security Details Code" in validDeclarationXmlScenario() {
       val code = randomString(3)
       val meta = MetaData(declaration = Some(Declaration(
-        obligationGuarantees = Seq(ObligationGuarantee(
+        obligationGuarantees = List(ObligationGuarantee(
           securityDetailsCode = Some(code)
         ))
       )))
@@ -1084,7 +1084,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Obligation Guarantee Access Code" in validDeclarationXmlScenario() {
       val code = randomString(4)
       val meta = MetaData(declaration = Some(Declaration(
-        obligationGuarantees = Seq(ObligationGuarantee(
+        obligationGuarantees = List(ObligationGuarantee(
           accessCode = Some(code)
         ))
       )))
@@ -1096,7 +1096,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "include Obligation Guarantee Guarantee Office ID" in validDeclarationXmlScenario() {
       val id = randomString(17)
       val meta = MetaData(declaration = Some(Declaration(
-        obligationGuarantees = Seq(ObligationGuarantee(
+        obligationGuarantees = List(ObligationGuarantee(
           guaranteeOffice = Some(Office(
             id = Some(id)
           ))
@@ -1141,8 +1141,8 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
           ))
         ))
       )))
-      hasExpectedOutput(meta, Seq(formatCode, dateTime)) { xml =>
-        Seq(
+      hasExpectedOutput(meta, List(formatCode, dateTime)) { xml =>
+        List(
           (xml \ "Declaration" \ "GoodsShipment" \ "ExitDateTime" \ "DateTimeString" \ "@formatCode").text.trim,
           (xml \ "Declaration" \ "GoodsShipment" \ "ExitDateTime" \ "DateTimeString").text.trim
         )
@@ -1165,7 +1165,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val id = randomString(17)
       val meta = MetaData(declaration = Some(Declaration(
         goodsShipment = Some(GoodsShipment(
-          aeoMutualRecognitionParties = Seq(RoleBasedParty(
+          aeoMutualRecognitionParties = List(RoleBasedParty(
             id = Some(id)
           ))
         ))
@@ -1179,7 +1179,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val code = randomString(3)
       val meta = MetaData(declaration = Some(Declaration(
         goodsShipment = Some(GoodsShipment(
-          aeoMutualRecognitionParties = Seq(RoleBasedParty(
+          aeoMutualRecognitionParties = List(RoleBasedParty(
             roleCode = Some(code)
           ))
         ))
@@ -1318,7 +1318,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val meta = MetaData(declaration = Some(Declaration(
         goodsShipment = Some(GoodsShipment(
           buyer = Some(ImportExportParty(
-            contacts = Seq(Contact(
+            contacts = List(Contact(
               name = Some(name)
             ))
           ))
@@ -1334,7 +1334,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val meta = MetaData(declaration = Some(Declaration(
         goodsShipment = Some(GoodsShipment(
           buyer = Some(ImportExportParty(
-            communications = Seq(Communication(
+            communications = List(Communication(
               id = Some(id)
             ))
           ))
@@ -1350,7 +1350,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val meta = MetaData(declaration = Some(Declaration(
         goodsShipment = Some(GoodsShipment(
           buyer = Some(ImportExportParty(
-            communications = Seq(Communication(
+            communications = List(Communication(
               typeCode = Some(code)
             ))
           ))
@@ -1503,9 +1503,9 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val code = randomString(5)
       val meta = MetaData(declaration = Some(Declaration(
         goodsShipment = Some(GoodsShipment(
-          governmentAgencyGoodsItems = Seq(GovernmentAgencyGoodsItem(
+          governmentAgencyGoodsItems = List(GovernmentAgencyGoodsItem(
             sequenceNumeric = 1,
-            additionalDocuments = Seq(GovernmentAgencyGoodsItemAdditionalDocument(
+            additionalDocuments = List(GovernmentAgencyGoodsItemAdditionalDocument(
               writeOff = Some(WriteOff(
                 quantity = Some(Measure(
                   unitCode = Some(code),
@@ -1525,7 +1525,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val measure = randomBigDecimal(99999999)
       val meta = MetaData(declaration = Some(Declaration(
         goodsShipment = Some(GoodsShipment(
-          governmentAgencyGoodsItems = Seq(GovernmentAgencyGoodsItem(
+          governmentAgencyGoodsItems = List(GovernmentAgencyGoodsItem(
             sequenceNumeric = 1,
             commodity = Some(Commodity(
               goodsMeasure = Some(GoodsMeasure(

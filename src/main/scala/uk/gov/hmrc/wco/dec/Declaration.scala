@@ -89,7 +89,7 @@ case class MetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", n
                     declaration: Option[Declaration] = None,
 
                     @JacksonXmlProperty(localName = "Response", namespace = NS.res)
-                    response: Seq[Response] = Seq.empty) extends JacksonMapper {
+                    response: List[Response] = List.empty) extends JacksonMapper {
 
   def toXml: String = {
     val sw = new StringWriter()
@@ -162,25 +162,25 @@ case class Declaration(@JacksonXmlProperty(localName = "AcceptanceDateTime", nam
                        submitter: Option[NamedEntityWithAddress] = None,
 
                        @JacksonXmlProperty(localName = "AdditionalDocument", namespace = NS.dec)
-                       additionalDocuments: Seq[AdditionalDocument] = Seq.empty, // max 2
+                       additionalDocuments: List[AdditionalDocument] = List.empty, // max 2
 
                        @JacksonXmlProperty(localName = "AdditionalInformation", namespace = NS.dec)
-                       additionalInformations: Seq[AdditionalInformation] = Seq.empty, // this is not actually permitted here according to the tariff although still supported by XML schema
+                       additionalInformations: List[AdditionalInformation] = List.empty, // this is not actually permitted here according to the tariff although still supported by XML schema
 
                        @JacksonXmlProperty(localName = "Agent", namespace = NS.dec)
                        agent: Option[Agent] = None,
 
                        @JacksonXmlProperty(localName = "Amendment", namespace = NS.dec)
-                       amendments: Seq[Amendment] = Seq.empty,
+                       amendments: List[Amendment] = List.empty,
 
                        @JacksonXmlProperty(localName = "AuthorisationHolder", namespace = NS.dec)
-                       authorisationHolders: Seq[AuthorisationHolder] = Seq.empty, // max 99
+                       authorisationHolders: List[AuthorisationHolder] = List.empty, // max 99
 
                        @JacksonXmlProperty(localName = "BorderTransportMeans", namespace = NS.dec)
                        borderTransportMeans: Option[BorderTransportMeans] = None,
 
                        @JacksonXmlProperty(localName = "CurrencyExchange", namespace = NS.dec)
-                       currencyExchanges: Seq[CurrencyExchange] = Seq.empty,
+                       currencyExchanges: List[CurrencyExchange] = List.empty,
 
                        @JacksonXmlProperty(localName = "Declarant", namespace = NS.dec)
                        declarant: Option[ImportExportParty] = None,
@@ -195,7 +195,7 @@ case class Declaration(@JacksonXmlProperty(localName = "AcceptanceDateTime", nam
                        goodsShipment: Option[GoodsShipment] = None,
 
                        @JacksonXmlProperty(localName = "ObligationGuarantee", namespace = NS.dec)
-                       obligationGuarantees: Seq[ObligationGuarantee] = Seq.empty,
+                       obligationGuarantees: List[ObligationGuarantee] = List.empty,
 
                        @JacksonXmlProperty(localName = "PresentationOffice", namespace = NS.dec)
                        presentationOffice: Option[Office] = None,
@@ -207,7 +207,7 @@ case class Amendment(@JacksonXmlProperty(localName = "ChangeReasonCode", namespa
                      changeReasonCode: Option[String] = None, // max 3 chars
 
                      @JacksonXmlProperty(localName = "Pointer", namespace = NS.dec)
-                     pointers: Seq[Pointer] = Seq.empty)
+                     pointers: List[Pointer] = List.empty)
 
 case class CurrencyExchange(@JacksonXmlProperty(localName = "CurrencyTypeCode", namespace = NS.dec)
                             currencyTypeCode: Option[String] = None, // max 3 chars [a-zA-Z] ISO 4217 3-alpha code
@@ -276,7 +276,7 @@ case class GoodsShipment(@JacksonXmlProperty(localName = "ExitDateTime", namespa
                          transactionNatureCode: Option[Int] = None, // unsigned int max 99
 
                          @JacksonXmlProperty(localName = "AEOMutualRecognitionParty", namespace = NS.dec)
-                         aeoMutualRecognitionParties: Seq[RoleBasedParty] = Seq.empty, // max 99
+                         aeoMutualRecognitionParties: List[RoleBasedParty] = List.empty, // max 99
 
                          @JacksonXmlProperty(localName = "Buyer", namespace = NS.dec)
                          buyer: Option[ImportExportParty] = None,
@@ -297,13 +297,13 @@ case class GoodsShipment(@JacksonXmlProperty(localName = "ExitDateTime", namespa
                          destination: Option[Destination] = None,
 
                          @JacksonXmlProperty(localName = "DomesticDutyTaxParty", namespace = NS.dec)
-                         domesticDutyTaxParties: Seq[RoleBasedParty] = Seq.empty, // max 99
+                         domesticDutyTaxParties: List[RoleBasedParty] = List.empty, // max 99
 
                          @JacksonXmlProperty(localName = "ExportCountry", namespace = NS.dec)
                          exportCountry: Option[ExportCountry] = None,
 
                          @JacksonXmlProperty(localName = "GovernmentAgencyGoodsItem", namespace = NS.dec)
-                         governmentAgencyGoodsItems: Seq[GovernmentAgencyGoodsItem] = Seq.empty,
+                         governmentAgencyGoodsItems: List[GovernmentAgencyGoodsItem] = List.empty,
 
                          @JacksonXmlProperty(localName = "Importer", namespace = NS.dec)
                          importer: Option[ImportExportParty] = None,
@@ -312,16 +312,16 @@ case class GoodsShipment(@JacksonXmlProperty(localName = "ExitDateTime", namespa
                          invoice: Option[Invoice] = None,
 
                          @JacksonXmlProperty(localName = "Payer", namespace = NS.dec)
-                         payers: Seq[NamedEntityWithAddress] = Seq.empty,
+                         payers: List[NamedEntityWithAddress] = List.empty,
 
                          @JacksonXmlProperty(localName = "PreviousDocument", namespace = NS.dec)
-                         previousDocuments: Seq[PreviousDocument] = Seq.empty, // max 9999
+                         previousDocuments: List[PreviousDocument] = List.empty, // max 9999
 
                          @JacksonXmlProperty(localName = "Seller", namespace = NS.dec)
                          seller: Option[ImportExportParty] = None,
 
                          @JacksonXmlProperty(localName = "Surety", namespace = NS.dec)
-                         sureties: Seq[NamedEntityWithAddress] = Seq.empty,
+                         sureties: List[NamedEntityWithAddress] = List.empty,
 
                          @JacksonXmlProperty(localName = "TradeTerms", namespace = NS.dec)
                          tradeTerms: Option[TradeTerms] = None,
@@ -381,13 +381,13 @@ case class Consignment(@JacksonXmlProperty(localName = "ContainerCode", namespac
                        goodsLocation: Option[GoodsLocation] = None,
 
                        @JacksonXmlProperty(localName = "Itinerary", namespace = NS.dec)
-                       itineraries: Seq[Itinerary] = Seq.empty,
+                       itineraries: List[Itinerary] = List.empty,
 
                        @JacksonXmlProperty(localName = "LoadingLocation", namespace = NS.dec)
                        loadingLocation: Option[LoadingLocation] = None,
 
                        @JacksonXmlProperty(localName = "TransportEquipment", namespace = NS.dec)
-                       transportEquipments: Seq[TransportEquipment] = Seq.empty)
+                       transportEquipments: List[TransportEquipment] = List.empty)
 
 case class LoadingLocation(@JacksonXmlProperty(localName = "Name", namespace = NS.dec)
                            name: Option[String] = None, // max 256 chars
@@ -453,7 +453,7 @@ case class TransportEquipment(@JacksonXmlProperty(localName = "SequenceNumeric",
                               id: Option[String] = None, // max 17 chars
 
                               @JacksonXmlProperty(localName = "Seal", namespace = NS.dec)
-                              seals: Seq[Seal] = Seq.empty) // not valid when TransportEquipment defined as part of Commodity
+                              seals: List[Seal] = List.empty) // not valid when TransportEquipment defined as part of Commodity
 
 case class Seal(@JacksonXmlProperty(localName = "SequenceNumeric", namespace = NS.dec)
                 sequenceNumeric: Int, // unsigned max 99999
@@ -477,13 +477,13 @@ case class GovernmentAgencyGoodsItem(@JacksonXmlProperty(localName = "CustomsVal
                                      transactionNatureCode: Option[Int] = None, // unsigned max 99
 
                                      @JacksonXmlProperty(localName = "AdditionalDocument", namespace = NS.dec)
-                                     additionalDocuments: Seq[GovernmentAgencyGoodsItemAdditionalDocument] = Seq.empty, // max 99
+                                     additionalDocuments: List[GovernmentAgencyGoodsItemAdditionalDocument] = List.empty, // max 99
 
                                      @JacksonXmlProperty(localName = "AdditionalInformation")
-                                     additionalInformations: Seq[AdditionalInformation] = Seq.empty, // max 99
+                                     additionalInformations: List[AdditionalInformation] = List.empty, // max 99
 
                                      @JacksonXmlProperty(localName = "AEOMutualRecognitionParty", namespace = NS.dec)
-                                     aeoMutualRecognitionParties: Seq[RoleBasedParty] = Seq.empty, // max 99
+                                     aeoMutualRecognitionParties: List[RoleBasedParty] = List.empty, // max 99
 
                                      @JacksonXmlProperty(localName = "Buyer", namespace = NS.dec)
                                      buyer: Option[ImportExportParty] = None,
@@ -504,28 +504,28 @@ case class GovernmentAgencyGoodsItem(@JacksonXmlProperty(localName = "CustomsVal
                                      destination: Option[Destination] = None,
 
                                      @JacksonXmlProperty(localName = "DomesticDutyTaxParty", namespace = NS.dec)
-                                     domesticDutyTaxParties: Seq[RoleBasedParty] = Seq.empty, // max 99
+                                     domesticDutyTaxParties: List[RoleBasedParty] = List.empty, // max 99
 
                                      @JacksonXmlProperty(localName = "ExportCountry", namespace = NS.dec)
                                      exportCountry: Option[ExportCountry] = None,
 
                                      @JacksonXmlProperty(localName = "GovernmentProcedure", namespace = NS.dec)
-                                     governmentProcedures: Seq[GovernmentProcedure] = Seq.empty, // max 99
+                                     governmentProcedures: List[GovernmentProcedure] = List.empty, // max 99
 
                                      @JacksonXmlProperty(localName = "Manufacturer", namespace = NS.dec)
-                                     manufacturers: Seq[NamedEntityWithAddress] = Seq.empty,
+                                     manufacturers: List[NamedEntityWithAddress] = List.empty,
 
                                      @JacksonXmlProperty(localName = "Origin", namespace = NS.dec)
-                                     origins: Seq[Origin] = Seq.empty,
+                                     origins: List[Origin] = List.empty,
 
                                      @JacksonXmlProperty(localName = "Packaging", namespace = NS.dec)
-                                     packagings: Seq[Packaging] = Seq.empty, // max 99
+                                     packagings: List[Packaging] = List.empty, // max 99
 
                                      @JacksonXmlProperty(localName = "PreviousDocument", namespace = NS.dec)
-                                     previousDocuments: Seq[PreviousDocument] = Seq.empty, // max 99
+                                     previousDocuments: List[PreviousDocument] = List.empty, // max 99
 
                                      @JacksonXmlProperty(localName = "RefundRecipientParty", namespace = NS.dec)
-                                     refundRecipientParties: Seq[NamedEntityWithAddress] = Seq.empty,
+                                     refundRecipientParties: List[NamedEntityWithAddress] = List.empty,
 
                                      @JacksonXmlProperty(localName = "Seller", namespace = NS.dec)
                                      seller: Option[ImportExportParty] = None,
@@ -628,19 +628,19 @@ case class AdditionalInformation(@JacksonXmlProperty(localName = "StatementCode"
                                  statementTypeCode: Option[String] = None, // max 3 chars (reality: doesn't appear in the tariff)
 
                                  @JacksonXmlProperty(localName = "Pointer", namespace = NS.dec)
-                                 pointers: Seq[Pointer] = Seq.empty) // pointers not permitted when used as part of GovernmentAgencyGoodsItem
+                                 pointers: List[Pointer] = List.empty) // pointers not permitted when used as part of GovernmentAgencyGoodsItem
 
 case class Commodity(@JacksonXmlProperty(localName = "Description", namespace = NS.dec)
                      description: Option[String] = None, // max 512 chars
 
                      @JacksonXmlProperty(localName = "Classification", namespace = NS.dec)
-                     classifications: Seq[Classification] = Seq.empty, // max 1 with ID of CUS code type; required 1 with ID of nomenclature/commodity code type; max 99 with ID of TARIC code type; max 99 when ID of additional TARIC code type; max 99 when ID of national additional code type;
+                     classifications: List[Classification] = List.empty, // max 1 with ID of CUS code type; required 1 with ID of nomenclature/commodity code type; max 99 with ID of TARIC code type; max 99 when ID of additional TARIC code type; max 99 when ID of national additional code type;
 
                      @JacksonXmlProperty(localName = "DangerousGoods")
-                     dangerousGoods: Seq[DangerousGoods] = Seq.empty,
+                     dangerousGoods: List[DangerousGoods] = List.empty,
 
                      @JacksonXmlProperty(localName = "DutyTaxFee", namespace = NS.dec)
-                     dutyTaxFees: Seq[DutyTaxFee] = Seq.empty, // max 99
+                     dutyTaxFees: List[DutyTaxFee] = List.empty, // max 99
 
                      @JacksonXmlProperty(localName = "GoodsMeasure", namespace = NS.dec)
                      goodsMeasure: Option[GoodsMeasure] = None,
@@ -649,7 +649,7 @@ case class Commodity(@JacksonXmlProperty(localName = "Description", namespace = 
                      invoiceLine: Option[InvoiceLine] = None,
 
                      @JacksonXmlProperty(localName = "TransportEquipment", namespace = NS.dec)
-                     transportEquipments: Seq[TransportEquipment] = Seq.empty)
+                     transportEquipments: List[TransportEquipment] = List.empty)
 
 case class DangerousGoods(@JacksonXmlProperty(localName = "UNDGID", namespace = NS.dec)
                           undgid: Option[String] = None) // max 4 chars; an UN Dangerous Goods Identifier
@@ -718,7 +718,7 @@ case class CustomsValuation(@JacksonXmlProperty(localName = "MethodCode", namesp
                             freightChargeAmount: Option[BigDecimal] = None, // scale 16 precision 3; not valid when used as child of GovernmentAgencyGoodsItem
 
                             @JacksonXmlProperty(localName = "ChargeDeduction", namespace = NS.dec)
-                            chargeDeductions: Seq[ChargeDeduction] = Seq.empty) // max 99
+                            chargeDeductions: List[ChargeDeduction] = List.empty) // max 99
 
 case class ChargeDeduction(@JacksonXmlProperty(localName = "ChargesTypeCode", namespace = NS.dec)
                            chargesTypeCode: Option[String] = None, // max 3 chars (max 2 alpha in tariff)
@@ -841,10 +841,10 @@ case class ImportExportParty(@JacksonXmlProperty(localName = "Name", namespace =
                              address: Option[Address] = None,
 
                              @JacksonXmlProperty(localName = "Contact", namespace = NS.dec)
-                             contacts: Seq[Contact] = Seq.empty,
+                             contacts: List[Contact] = List.empty,
 
                              @JacksonXmlProperty(localName = "Communication", namespace = NS.dec)
-                             communications: Seq[Communication] = Seq.empty)
+                             communications: List[Communication] = List.empty)
 
 // TODO should probably make "value" non-optional as I think it is required whenever you spit out measure element - check schema
 @JsonDeserialize(using = classOf[MeasureDeserializer])

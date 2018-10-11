@@ -39,7 +39,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
   val amountValue = randomBigDecimal(100)
   val amount = Amount(Some(currencyId), Some(amountValue))
   val obligationGuarantee = ResponseObligationGuarantee(Some(referenceId))
-  val responsePayment = ResponsePayment(Some(referenceId), Some(amount), issueTime, Some(amount), Seq(obligationGuarantee))
+  val responsePayment = ResponsePayment(Some(referenceId), Some(amount), issueTime, Some(amount), List(obligationGuarantee))
 
   val responseDutyTaxFee = ResponseDutyTaxFee(Some(responsePayment))
 
@@ -53,16 +53,16 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
   val commodityDutyTaxFees = ResponseCommodityDutyTaxFee(Some(amount), Some(amount), Some(dutyRegimeCode), Some(measure),
     Some(taxRateNumeric), Some(typeCode), Some(payment))
-  val responseCommodity = ResponseCommodity(Seq(commodityDutyTaxFees))
+  val responseCommodity = ResponseCommodity(List(commodityDutyTaxFees))
   val responseGovernmentAgencyGoodsItem = ResponseGovernmentAgencyGoodsItem(sequenceNumeric, Some(responseCommodity))
 
-  val governmentAgencyGoodsItems = Seq(responseGovernmentAgencyGoodsItem)
+  val governmentAgencyGoodsItems = List(responseGovernmentAgencyGoodsItem)
 
   val responseGoodsShipment = ResponseGoodsShipment(governmentAgencyGoodsItems)
 
   "to XML" should {
     "include WCODataModelVersionCode" in validResponseXmlScenario() {
-      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = Seq(randomValidResponse))
+      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = List(randomValidResponse))
       hasExpectedOutput(meta, version) { xml =>
         (xml \ "WCODataModelVersionCode").text.trim
       }
@@ -70,7 +70,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include WCOTypeName" in validResponseXmlScenario() {
       val name = randomString(72)
-      val meta = MetaData(wcoTypeName = Some(name), response = Seq(randomValidResponse))
+      val meta = MetaData(wcoTypeName = Some(name), response = List(randomValidResponse))
       hasExpectedOutput(meta, name) { xml =>
         (xml \ "WCOTypeName").text.trim
       }
@@ -78,7 +78,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include ResponsibleCountryCode" in validResponseXmlScenario() {
       val code = randomISO3166Alpha2CountryCode
-      val meta = MetaData(responsibleCountryCode = Some(code), response = Seq(randomValidResponse))
+      val meta = MetaData(responsibleCountryCode = Some(code), response = List(randomValidResponse))
       hasExpectedOutput(meta, code) { xml =>
         (xml \ "ResponsibleCountryCode").text.trim
       }
@@ -86,7 +86,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include ResponsibleAgencyName" in validResponseXmlScenario() {
       val agency = randomString(70)
-      val meta = MetaData(responsibleAgencyName = Some(agency), response = Seq(randomValidResponse))
+      val meta = MetaData(responsibleAgencyName = Some(agency), response = List(randomValidResponse))
       hasExpectedOutput(meta, agency) { xml =>
         (xml \ "ResponsibleAgencyName").text.trim
       }
@@ -94,7 +94,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include AgencyAssignedCustomizationCode" in validResponseXmlScenario() {
       val code = randomString(6)
-      val meta = MetaData(agencyAssignedCustomizationCode = Some(code), response = Seq(randomValidResponse))
+      val meta = MetaData(agencyAssignedCustomizationCode = Some(code), response = List(randomValidResponse))
       hasExpectedOutput(meta, code) { xml =>
         (xml \ "AgencyAssignedCustomizationCode").text.trim
       }
@@ -102,14 +102,14 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include AgencyAssignedCustomizationVersionCode" in validResponseXmlScenario() {
       val code = randomString(3)
-      val meta = MetaData(agencyAssignedCustomizationVersionCode = Some(code), response = Seq(randomValidResponse))
+      val meta = MetaData(agencyAssignedCustomizationVersionCode = Some(code), response = List(randomValidResponse))
       hasExpectedOutput(meta, code) { xml =>
         (xml \ "AgencyAssignedCustomizationVersionCode").text.trim
       }
     }
 
     "include FunctionCode" in validResponseXmlScenario() {
-      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = Seq(
+      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = List(
         Response(expectedCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
       ))
 
@@ -119,7 +119,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include FunctionalReferenceID" in validResponseXmlScenario() {
-      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = Seq(
+      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = List(
         Response(expectedCode, Some(refId), declaration = Some(ResponseDeclaration()))
       ))
 
@@ -130,12 +130,12 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include IssueDateTime" in validResponseXmlScenario() {
-      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = Seq(
+      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = List(
         Response(expectedCode, Some(refId), issueTime, declaration = Some(ResponseDeclaration()))
       ))
 
-      hasExpectedOutput(meta, Seq(formatCode, dateTime)) { xml =>
-        Seq(
+      hasExpectedOutput(meta, List(formatCode, dateTime)) { xml =>
+        List(
           (xml \ "Response" \ "IssueDateTime" \ "DateTimeString" \ "@formatCode").text.trim,
           (xml \ "Response" \ "IssueDateTime" \ "DateTimeString").text.trim
         )
@@ -151,18 +151,18 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       val statementTypeCode = randomString(3)
       val responsePointer = ResponsePointer(Some(sequenceNumeric), Some(sectionCode), Some(tagId))
       val responseAdditionalInformation = ResponseAdditionalInformation(Some(statementCode),
-        Some(statementDescription), issueTime, Some(statementTypeCode), Seq(responsePointer))
+        Some(statementDescription), issueTime, Some(statementTypeCode), List(responsePointer))
 
-      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = Seq(
-        Response(expectedCode, additionalInformations = Seq(responseAdditionalInformation),
+      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = List(
+        Response(expectedCode, additionalInformations = List(responseAdditionalInformation),
           declaration = Some(ResponseDeclaration()))
       ))
 
-      val expectedResponseAdditionalInformation: Seq[String] =
-        Seq(statementCode, statementDescription, dateTime, statementTypeCode, sequenceNumeric.toString(), sectionCode, tagId)
+      val expectedResponseAdditionalInformation: List[String] =
+        List(statementCode, statementDescription, dateTime, statementTypeCode, sequenceNumeric.toString(), sectionCode, tagId)
 
       hasExpectedOutput(meta, expectedResponseAdditionalInformation) { xml =>
-        Seq(
+        List(
           (xml \ "Response" \ "AdditionalInformation" \ "StatementCode").text.trim,
           (xml \ "Response" \ "AdditionalInformation" \ "StatementDescription").text.trim,
           (xml \ "Response" \ "AdditionalInformation" \ "LimitDateTime").text.trim,
@@ -176,18 +176,18 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include ResponseAmendments" in validResponseXmlScenario() {
       val changeReasonCode = randomString(3)
-      val responseAmendments: Seq[ResponseAmendment] = Seq(ResponseAmendment(Some(changeReasonCode), Seq(responsePointer)))
+      val responseAmendments: List[ResponseAmendment] = List(ResponseAmendment(Some(changeReasonCode), List(responsePointer)))
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = Seq(Response(expectedCode, amendments = responseAmendments, declaration = Some(ResponseDeclaration())))
+        response = List(Response(expectedCode, amendments = responseAmendments, declaration = Some(ResponseDeclaration())))
       )
 
-      val expectedResponseAmendment: Seq[String] =
-        Seq(changeReasonCode, sequenceNumeric.toString, documentSectionCode, tagId)
+      val expectedResponseAmendment: List[String] =
+        List(changeReasonCode, sequenceNumeric.toString, documentSectionCode, tagId)
 
       hasExpectedOutput(meta, expectedResponseAmendment) { xml =>
-        Seq(
+        List(
           (xml \ "Response" \ "Amendment" \ "ChangeReasonCode").text.trim,
           (xml \ "Response" \ "Amendment" \ "Pointer" \ "SequenceNumeric").text.trim,
           (xml \ "Response" \ "Amendment" \ "Pointer" \ "DocumentSectionCode").text.trim,
@@ -202,7 +202,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = Seq(Response(expectedCode, appealOffice = Some(appealOffice), declaration = Some(ResponseDeclaration())))
+        response = List(Response(expectedCode, appealOffice = Some(appealOffice), declaration = Some(ResponseDeclaration())))
       )
 
       hasExpectedOutput(meta, id) { xml =>
@@ -217,13 +217,13 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = Seq(Response(expectedCode, bank = Some(bank), declaration = Some(ResponseDeclaration())))
+        response = List(Response(expectedCode, bank = Some(bank), declaration = Some(ResponseDeclaration())))
       )
 
-      val expectedResponseBank: Seq[String] = Seq(referenceId, id)
+      val expectedResponseBank: List[String] = List(referenceId, id)
 
       hasExpectedOutput(meta, expectedResponseBank) { xml =>
-        Seq(
+        List(
           (xml \ "Response" \ "Bank" \ "ReferenceID").text.trim,
           (xml \ "Response" \ "Bank" \ "ID").text.trim
         )
@@ -235,17 +235,17 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       val communicationId = randomString(50)
       val typeCode = randomString(3)
       val communication = ResponseCommunication(Some(communicationId), Some(typeCode))
-      val contactOffice = ResponseContactOffice(Some(officeId), Seq(communication))
+      val contactOffice = ResponseContactOffice(Some(officeId), List(communication))
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = Seq(Response(expectedCode, contactOffices = Seq(contactOffice), declaration = Some(ResponseDeclaration())))
+        response = List(Response(expectedCode, contactOffices = List(contactOffice), declaration = Some(ResponseDeclaration())))
       )
 
-      val expectedContactOffice: Seq[String] = Seq(officeId, communicationId, typeCode)
+      val expectedContactOffice: List[String] = List(officeId, communicationId, typeCode)
 
       hasExpectedOutput(meta, expectedContactOffice) { xml =>
-        Seq(
+        List(
           (xml \ "Response" \ "ContactOffice" \ "ID").text.trim,
           (xml \ "Response" \ "ContactOffice" \ "Communication" \ "ID").text.trim,
           (xml \ "Response" \ "ContactOffice" \ "Communication" \ "TypeCode").text.trim
@@ -256,18 +256,18 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     "include Error" in validResponseXmlScenario() {
       val description = randomString(10)
       val validationCode = randomString(8)
-      val error: ResponseError = ResponseError(Some(description), Some(validationCode), Seq(responsePointer))
+      val error: ResponseError = ResponseError(Some(description), Some(validationCode), List(responsePointer))
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = Seq(Response(expectedCode, errors = Seq(error), declaration = Some(ResponseDeclaration())))
+        response = List(Response(expectedCode, errors = List(error), declaration = Some(ResponseDeclaration())))
       )
 
-      val expectedError: Seq[String] = Seq(description, validationCode, responsePointer.sequenceNumeric.get.toString,
+      val expectedError: List[String] = List(description, validationCode, responsePointer.sequenceNumeric.get.toString,
         responsePointer.documentSectionCode.get, responsePointer.tagId.get)
 
       hasExpectedOutput(meta, expectedError) { xml =>
-        Seq(
+        List(
           (xml \ "Response" \ "Error" \ "Description").text.trim,
           (xml \ "Response" \ "Error" \ "ValidationCode").text.trim,
           (xml \ "Response" \ "Error" \ "Pointer" \ "SequenceNumeric").text.trim,
@@ -279,18 +279,18 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include Status" in validResponseXmlScenario() {
       val nameCode = randomString(3)
-      val status: ResponseStatus = ResponseStatus(issueTime, Some(nameCode), issueTime, Seq(responsePointer))
+      val status: ResponseStatus = ResponseStatus(issueTime, Some(nameCode), issueTime, List(responsePointer))
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = Seq(Response(expectedCode, status = Seq(status), declaration = Some(ResponseDeclaration())))
+        response = List(Response(expectedCode, status = List(status), declaration = Some(ResponseDeclaration())))
       )
 
-      val expectedStatus: Seq[String] = Seq(dateTime, nameCode, dateTime, responsePointer.sequenceNumeric.get.toString,
+      val expectedStatus: List[String] = List(dateTime, nameCode, dateTime, responsePointer.sequenceNumeric.get.toString,
         responsePointer.documentSectionCode.get, responsePointer.tagId.get)
 
       hasExpectedOutput(meta, expectedStatus) { xml =>
-        Seq(
+        List(
           (xml \ "Response" \ "Status" \ "EffectiveDateTime").text.trim,
           (xml \ "Response" \ "Status" \ "NameCode").text.trim,
           (xml \ "Response" \ "Status" \ "ReleaseDateTime").text.trim,
@@ -313,14 +313,14 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = Seq(Response(expectedCode, declaration = Some(responseDeclaration)))
+        response = List(Response(expectedCode, declaration = Some(responseDeclaration)))
       )
 
-      val expectedResponseDeclaration: Seq[String] =
-        Seq(dateTime, dateTime, functionalReferenceId, id, dateTime, versionId)
+      val expectedResponseDeclaration: List[String] =
+        List(dateTime, dateTime, functionalReferenceId, id, dateTime, versionId)
 
       hasExpectedOutput(meta, expectedResponseDeclaration) { xml =>
-        Seq(
+        List(
           (xml \ "Response" \ "Declaration" \ "AcceptanceDateTime").text.trim,
           (xml \ "Response" \ "Declaration" \ "CancellationDateTime").text.trim,
           (xml \ "Response" \ "Declaration" \ "FunctionalReferenceID").text.trim,
@@ -333,19 +333,19 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include DutyTaxFee" in validResponseXmlScenario() {
       val responseDeclaration: ResponseDeclaration = ResponseDeclaration(
-        dutyTaxFees = Seq(responseDutyTaxFee)
+        dutyTaxFees = List(responseDutyTaxFee)
       )
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = Seq(Response(expectedCode, declaration = Some(responseDeclaration)))
+        response = List(Response(expectedCode, declaration = Some(responseDeclaration)))
       )
 
-      val expectedResponseDeclaration: Seq[String] =
-        Seq(referenceId, amountValue.toString, dateTime, amountValue.toString, referenceId)
+      val expectedResponseDeclaration: List[String] =
+        List(referenceId, amountValue.toString, dateTime, amountValue.toString, referenceId)
 
       hasExpectedOutput(meta, expectedResponseDeclaration) { xml =>
-        Seq(
+        List(
           (xml \ "Response" \ "Declaration" \ "DutyTaxFee" \ "Payment" \ "ReferenceID").text.trim,
           (xml \ "Response" \ "Declaration" \ "DutyTaxFee" \ "Payment" \ "TaxAssessedAmount").text.trim,
           (xml \ "Response" \ "Declaration" \ "DutyTaxFee" \ "Payment" \ "DueDateTime").text.trim,
@@ -362,15 +362,15 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = Seq(Response(expectedCode, declaration = Some(responseDeclaration)))
+        response = List(Response(expectedCode, declaration = Some(responseDeclaration)))
       )
 
-      val expectedResponseDeclaration: Seq[String] = Seq(sequenceNumeric.toString, amountValue.toString,
+      val expectedResponseDeclaration: List[String] = List(sequenceNumeric.toString, amountValue.toString,
         amountValue.toString, dutyRegimeCode, measureValue.toString, taxRateNumeric.toString, typeCode,
         amountValue.toString, amountValue.toString)
 
       hasExpectedOutput(meta, expectedResponseDeclaration) { xml =>
-        Seq(
+        List(
           (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "SequenceNumeric").text.trim,
           (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "AdValoremTaxBaseAmount").text.trim,
           (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "DeductAmount").text.trim,

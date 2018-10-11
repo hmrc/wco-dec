@@ -37,7 +37,7 @@ case class ResponseAdditionalInformation(
   statementTypeCode: Option[String] = None, // max 3 chars
 
   @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
-  pointers: Seq[ResponsePointer] = Seq.empty
+  pointers: List[ResponsePointer] = List.empty
 )
 
 case class ResponsePointer(
@@ -56,7 +56,7 @@ case class ResponseAmendment(
   changeReasonCode: Option[String] = None, // max 3 chars
 
   @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
-  pointers: Seq[ResponsePointer] = Seq.empty
+  pointers: List[ResponsePointer] = List.empty
 )
 
 case class Response(
@@ -70,10 +70,10 @@ case class Response(
   issueDateTime: Option[ResponseDateTimeElement] = None, // max 35 chars
 
   @JacksonXmlProperty(localName = "AdditionalInformation", namespace = NS.res)
-  additionalInformations: Seq[ResponseAdditionalInformation] = Seq.empty,
+  additionalInformations: List[ResponseAdditionalInformation] = List.empty,
 
   @JacksonXmlProperty(localName = "Amendment", namespace = NS.res)
-  amendments: Seq[ResponseAmendment] = Seq.empty,
+  amendments: List[ResponseAmendment] = List.empty,
 
   @JacksonXmlProperty(localName = "AppealOffice", namespace = NS.res)
   appealOffice: Option[ResponseAppealOffice] = None,
@@ -82,13 +82,13 @@ case class Response(
   bank: Option[ResponseBank] = None,
 
   @JacksonXmlProperty(localName = "ContactOffice", namespace = NS.res)
-  contactOffices: Seq[ResponseContactOffice] = Seq.empty,
+  contactOffices: List[ResponseContactOffice] = List.empty,
 
   @JacksonXmlProperty(localName = "Error", namespace = NS.res)
-  errors: Seq[ResponseError] = Seq.empty,
+  errors: List[ResponseError] = List.empty,
 
   @JacksonXmlProperty(localName = "Status", namespace = NS.res)
-  status: Seq[ResponseStatus] = Seq.empty,
+  status: List[ResponseStatus] = List.empty,
 
   @JacksonXmlProperty(localName = "Declaration", namespace = NS.res)
   declaration: Option[ResponseDeclaration] = None
@@ -112,7 +112,7 @@ case class ResponseContactOffice(
   id: Option[String] = None, // max 17 chars
 
   @JacksonXmlProperty(localName = "Communication", namespace = NS.res)
-  communications: Seq[ResponseCommunication] = Seq.empty
+  communications: List[ResponseCommunication] = List.empty
 )
 
 case class ResponseCommunication(
@@ -132,7 +132,7 @@ case class ResponseError(
   validationCode: Option[String] = None, // max 8 chars
 
   @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
-  pointers: Seq[ResponsePointer] = Seq.empty
+  pointers: List[ResponsePointer] = List.empty
 )
 
 case class ResponseStatus(
@@ -146,7 +146,7 @@ case class ResponseStatus(
   releaseDateTime: Option[ResponseDateTimeElement] = None, // alphanumeric max 35 chars
 
   @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
-  pointers: Seq[ResponsePointer] = Seq.empty
+  pointers: List[ResponsePointer] = List.empty
 )
 
 case class ResponseDeclaration(
@@ -169,7 +169,7 @@ case class ResponseDeclaration(
   versionID: Option[String] = None, // max 9 chars
 
   @JacksonXmlProperty(localName = "DutyTaxFee", namespace = NS.res)
-  dutyTaxFees: Seq[ResponseDutyTaxFee] = Seq.empty,
+  dutyTaxFees: List[ResponseDutyTaxFee] = List.empty,
 
   @JacksonXmlProperty(localName = "GoodsShipment", namespace = NS.res)
   goodsShipment: Option[ResponseGoodsShipment] = None
@@ -194,7 +194,7 @@ case class ResponsePayment(
   paymentAmount: Option[Amount] = None,
 
   @JacksonXmlProperty(localName = "ObligationGuarantee", namespace = NS.res)
-  obligationGuarantees: Seq[ResponseObligationGuarantee] = Seq.empty
+  obligationGuarantees: List[ResponseObligationGuarantee] = List.empty
 )
 
 case class ResponseObligationGuarantee(
@@ -204,7 +204,7 @@ case class ResponseObligationGuarantee(
 
 case class ResponseGoodsShipment(
   @JacksonXmlProperty(localName = "GovernmentAgencyGoodsItem", namespace = NS.res)
-  governmentAgencyGoodsItems: Seq[ResponseGovernmentAgencyGoodsItem] = Seq.empty
+  governmentAgencyGoodsItems: List[ResponseGovernmentAgencyGoodsItem] = List.empty
 )
 
 case class ResponseGovernmentAgencyGoodsItem(
@@ -217,7 +217,7 @@ case class ResponseGovernmentAgencyGoodsItem(
 
 case class ResponseCommodity(
   @JacksonXmlProperty(localName = "DutyTaxFee", namespace = NS.res)
-  dutyTaxFees: Seq[ResponseCommodityDutyTaxFee] = Seq.empty
+  dutyTaxFees: List[ResponseCommodityDutyTaxFee] = List.empty
 )
 
 case class ResponseCommodityDutyTaxFee(
