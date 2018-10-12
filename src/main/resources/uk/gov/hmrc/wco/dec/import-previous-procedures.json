@@ -1,14 +1,14 @@
 [
     {
       "value":"23",
-      "display":"23"
+      "display":"Release to a customs warehouse of re-imported goods in an unaltered state simultaneously claiming Returned Goods Relief where the goods were temporarily exported to a third country."
     },
     {
       "value":"71",
-      "display":"71"
+      "display":"Release to a customs warehouse where the goods are being transferred between different customs warehouses"
     },
     {
       "value":"00",
-      "display":"00"
+      "display":"Release to a customs warehouse where the goods have not been subject to any previous procedure"
     }
   ]

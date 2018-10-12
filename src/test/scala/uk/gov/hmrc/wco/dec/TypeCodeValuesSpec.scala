@@ -90,7 +90,7 @@ class TypeCodeValuesSpec extends WcoSpec {
     }
 
     "parse import-previous-procedures" in {
-      TypeCodeValues.load("import-previous-procedures").filter(_.value == "00").head.display must be("00")
+      TypeCodeValues.load("import-previous-procedures").filter(_.value == "00").head.display must be("Release to a customs warehouse where the goods have not been subject to any previous procedure")
     }
 
     "parse incoterm-codes" in {
