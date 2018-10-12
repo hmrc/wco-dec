@@ -1,0 +1,4121 @@
+[
+  {
+     "value":"AAE"
+    ,"display":"Rabah Bitat/Les Salines"
+    ,"additionalDisplay":"Annaba, Algeria"
+  },
+  {
+     "value":"AAN"
+    ,"display":"Al Ain Intl"
+    ,"additionalDisplay":"Al Ain Intl, United Arab Emirates"
+  },
+  {
+     "value":"AAX"
+    ,"display":"Araxa Airport"
+    ,"additionalDisplay":"Araxa, Brazil"
+  },
+  {
+     "value":"ABD"
+    ,"display":"Abadan Intl"
+    ,"additionalDisplay":"Abadan, Iran"
+  },
+  {
+     "value":"ABE"
+    ,"display":"Lehigh Valley Intl"
+    ,"additionalDisplay":"Allentown, PA, United States"
+  },
+  {
+     "value":"ABJ"
+    ,"display":"Felix Houphouet Boigny"
+    ,"additionalDisplay":"Abidjan, Ivory Coast"
+  },
+  {
+     "value":"ABQ"
+    ,"display":"Albuquerque Intl"
+    ,"additionalDisplay":"Albuquerque, United States"
+  },
+  {
+     "value":"ABR"
+    ,"display":"Aberdeen Regional"
+    ,"additionalDisplay":"Aberdeen, United States"
+  },
+  {
+     "value":"ABU"
+    ,"display":"Haliwen"
+    ,"additionalDisplay":"Atambua, Indonesia"
+  },
+  {
+     "value":"ABV"
+    ,"display":"Abuja - Nnamdi Azikiwe International"
+    ,"additionalDisplay":"Abuja, Nigeria"
+  },
+  {
+     "value":"ACA"
+    ,"display":"General Juan N Alvarez Intl"
+    ,"additionalDisplay":"Acapulco, Mexico"
+  },
+  {
+     "value":"ACC"
+    ,"display":"Kotoka"
+    ,"additionalDisplay":"Accra, Ghana"
+  },
+  {
+     "value":"ACH"
+    ,"display":"St. Gallen - Altenrhein Airport"
+    ,"additionalDisplay":"Altenrhein, Switzerland"
+  },
+  {
+     "value":"ACY"
+    ,"display":"Atlantic City Intl"
+    ,"additionalDisplay":"Atlantic City, United States"
+  },
+  {
+     "value":"ADA"
+    ,"display":"Adana Sakirpasa"
+    ,"additionalDisplay":"Adana, Turkey"
+  },
+  {
+     "value":"ADB"
+    ,"display":"Adnan Menderes"
+    ,"additionalDisplay":"Ismir, Turkey"
+  },
+  {
+     "value":"ADD"
+    ,"display":"Bole"
+    ,"additionalDisplay":"Addis Ababa, Ethiopia"
+  },
+  {
+     "value":"ADE"
+    ,"display":"Aden International"
+    ,"additionalDisplay":"Aden, Yemen"
+  },
+  {
+     "value":"ADF"
+    ,"display":"Adıyaman Airport"
+    ,"additionalDisplay":"Adiyaman, Turkey"
+  },
+  {
+     "value":"ADJ"
+    ,"display":"Amman Civil Airport (Marka International)"
+    ,"additionalDisplay":"Amman, Jordan"
+  },
+  {
+     "value":"ADL"
+    ,"display":"Adelaide"
+    ,"additionalDisplay":"Adelaide, Australia"
+  },
+  {
+     "value":"ADZ"
+    ,"display":"Gustavo Rojas Pinilla International Airport"
+    ,"additionalDisplay":"San Andres Island, Colombia"
+  },
+  {
+     "value":"AEP"
+    ,"display":"Airport Jorge Newbery"
+    ,"additionalDisplay":"Buenos Aires, Argentina"
+  },
+  {
+     "value":"AER"
+    ,"display":"Sochi International"
+    ,"additionalDisplay":"Sochi, Russia"
+  },
+  {
+     "value":"AES"
+    ,"display":"Vigra"
+    ,"additionalDisplay":"Aalesund, Norway"
+  },
+  {
+     "value":"AGA"
+    ,"display":"Al Massira Airport"
+    ,"additionalDisplay":"Agadir, Morocco"
+  },
+  {
+     "value":"AGU"
+    ,"display":"Lic. Jesús Terán Peredo International"
+    ,"additionalDisplay":"Aguascalientes, Mexico"
+  },
+  {
+     "value":"AHB"
+    ,"display":"Abha Regional"
+    ,"additionalDisplay":"Abha, Saudi Arabia"
+  },
+  {
+     "value":"AHU"
+    ,"display":"Cherif Al Idrissi Airport"
+    ,"additionalDisplay":"Al Hoceima, Morocco"
+  },
+  {
+     "value":"AJY"
+    ,"display":"Mano Dayak Intl"
+    ,"additionalDisplay":"Agadez, Niger"
+  },
+  {
+     "value":"AKA"
+    ,"display":"Ankang Wulipu"
+    ,"additionalDisplay":"Ankang, China"
+  },
+  {
+     "value":"AKL"
+    ,"display":"Auckland Intl"
+    ,"additionalDisplay":"Auckland, New Zealand"
+  },
+  {
+     "value":"ALA"
+    ,"display":"Almaty Intl"
+    ,"additionalDisplay":"Almaty, Kazakhstan"
+  },
+  {
+     "value":"ALB"
+    ,"display":"Albany Intl"
+    ,"additionalDisplay":"Albany, United States"
+  },
+  {
+     "value":"ALF"
+    ,"display":"Alta Airport"
+    ,"additionalDisplay":"Alta, Norway"
+  },
+  {
+     "value":"ALG"
+    ,"display":"Houari Boumediene"
+    ,"additionalDisplay":"Algiers, Algeria"
+  },
+  {
+     "value":"ALP"
+    ,"display":"Aleppo International"
+    ,"additionalDisplay":"Aleppo, Syria"
+  },
+  {
+     "value":"ALT"
+    ,"display":"Alenquer Airport"
+    ,"additionalDisplay":"Alenquer, Brazil"
+  },
+  {
+     "value":"ALY"
+    ,"display":"El Nouzha"
+    ,"additionalDisplay":"Alexandria, Egypt"
+  },
+  {
+     "value":"AMA"
+    ,"display":"Rick Husband Amarillo International Airport"
+    ,"additionalDisplay":"Amarillo, Texas, TX, United States"
+  },
+  {
+     "value":"AMD"
+    ,"display":"Sardar Vallabhbhai Patel Intl"
+    ,"additionalDisplay":"Ahmedabad, India"
+  },
+  {
+     "value":"AMM"
+    ,"display":"Queen Alia Intl"
+    ,"additionalDisplay":"Amman, Jordan"
+  },
+  {
+     "value":"ANC"
+    ,"display":"Ted Stevens Anchorage Intl"
+    ,"additionalDisplay":"Anchorage, United States"
+  },
+  {
+     "value":"ANF"
+    ,"display":"Cerro Moreno"
+    ,"additionalDisplay":"Antofagasta, Chile"
+  },
+  {
+     "value":"ANK"
+    ,"display":"Etimesgut"
+    ,"additionalDisplay":"Ankara, Turkey"
+  },
+  {
+     "value":"ANU"
+    ,"display":"V.C. Bird Intl"
+    ,"additionalDisplay":"Antigua, Antigua and Barbuda"
+  },
+  {
+     "value":"AOJ"
+    ,"display":"Aomori Airport"
+    ,"additionalDisplay":"Aomori, Honshu, Japan"
+  },
+  {
+     "value":"APW"
+    ,"display":"Faleolo Intl Airport"
+    ,"additionalDisplay":"Apia, Upolu Island, Samoa"
+  },
+  {
+     "value":"AQJ"
+    ,"display":"King Hussein International Airport"
+    ,"additionalDisplay":"Aqaba, Jordan"
+  },
+  {
+     "value":"ARH"
+    ,"display":"Talagi"
+    ,"additionalDisplay":"Archangelisk, Pakistan"
+  },
+  {
+     "value":"ASB"
+    ,"display":"Ashgabat - Saparmurat Türkmenbaşy Intl"
+    ,"additionalDisplay":"Ashgabat, Turkmenistan"
+  },
+  {
+     "value":"ASI"
+    ,"display":"RAF Ascension Island"
+    ,"additionalDisplay":"Ascension, Ascension"
+  },
+  {
+     "value":"ASM"
+    ,"display":"Asmara International"
+    ,"additionalDisplay":"Asmara, Ethiopia"
+  },
+  {
+     "value":"ASP"
+    ,"display":"Alice Springs Airport"
+    ,"additionalDisplay":"Alice Springs, Northern Territory, Australia"
+  },
+  {
+     "value":"ASR"
+    ,"display":"Erkilet International"
+    ,"additionalDisplay":"Kayseri, Turkey"
+  },
+  {
+     "value":"ASU"
+    ,"display":"Silvio Pettirossi"
+    ,"additionalDisplay":"Asuncion, Paraguay"
+  },
+  {
+     "value":"ASW"
+    ,"display":"Aswan International"
+    ,"additionalDisplay":"Aswan, Egypt"
+  },
+  {
+     "value":"ATL"
+    ,"display":"Hartsfield-Jackson"
+    ,"additionalDisplay":"Atlanta, United States"
+  },
+  {
+     "value":"ATQ"
+    ,"display":"Sri Guru Ram Dass Jee International Airport"
+    ,"additionalDisplay":"Amritsar, Punjab, India"
+  },
+  {
+     "value":"ATW"
+    ,"display":"Appleton International"
+    ,"additionalDisplay":"Appleton, United States"
+  },
+  {
+     "value":"ATZ"
+    ,"display":"Assiut Airport"
+    ,"additionalDisplay":"Assiut, Egypt"
+  },
+  {
+     "value":"AUA"
+    ,"display":"Reina Beatrix"
+    ,"additionalDisplay":"Aruba, Aruba"
+  },
+  {
+     "value":"AUH"
+    ,"display":"Abu Dhabi Intl"
+    ,"additionalDisplay":"Abu Dhabi, Ajnam/Fujairah"
+  },
+  {
+     "value":"AUS"
+    ,"display":"Austin-Bergstrom Intl"
+    ,"additionalDisplay":"Austin, United States"
+  },
+  {
+     "value":"AVP"
+    ,"display":"Wilkes-Barre/Scranton International Airport"
+    ,"additionalDisplay":"Wilkes-Barre/Scranton, United States"
+  },
+  {
+     "value":"AXA"
+    ,"display":"Clayton J. Lloyd Intl"
+    ,"additionalDisplay":"Anguilla, Anguilla"
+  },
+  {
+     "value":"AYT"
+    ,"display":"Antalya Airport"
+    ,"additionalDisplay":"Antalya, Turkey"
+  },
+  {
+     "value":"AZO"
+    ,"display":"Kalamazoo/Battle Creek Intl Airport"
+    ,"additionalDisplay":"Kalamazoo/Battle Creek, MI, United States"
+  },
+  {
+     "value":"BAH"
+    ,"display":"Bahrain International"
+    ,"additionalDisplay":"Bahrain, Bahrain"
+  },
+  {
+     "value":"BAJ"
+    ,"display":"Bali"
+    ,"additionalDisplay":"Bali, Papua New Guinea"
+  },
+  {
+     "value":"BAK"
+    ,"display":"Heydar Aliyev Intl"
+    ,"additionalDisplay":"Baku, Azerbaijan"
+  },
+  {
+     "value":"BAN"
+    ,"display":"Basongo"
+    ,"additionalDisplay":"Basongo, Congo DR"
+  },
+  {
+     "value":"BAQ"
+    ,"display":"Ernesto Cortissoz"
+    ,"additionalDisplay":"Barranquilla, Colombia"
+  },
+  {
+     "value":"BBI"
+    ,"display":"Biju Patnaik International Airport"
+    ,"additionalDisplay":"Bhubaneswar, Odisha, India"
+  },
+  {
+     "value":"BDA"
+    ,"display":"L.F. Wade International"
+    ,"additionalDisplay":"Bermuda, Bermuda"
+  },
+  {
+     "value":"BDL"
+    ,"display":"Bradley International"
+    ,"additionalDisplay":"Windsor Locks, United States"
+  },
+  {
+     "value":"BDO"
+    ,"display":"Husein International"
+    ,"additionalDisplay":"Bandung, Indonesia"
+  },
+  {
+     "value":"BDU"
+    ,"display":"Bardufoss"
+    ,"additionalDisplay":"Bardufoss, Norway"
+  },
+  {
+     "value":"BEG"
+    ,"display":"Belgrade Nikola Tesla"
+    ,"additionalDisplay":"Belgrade, Serbia"
+  },
+  {
+     "value":"BEI"
+    ,"display":"Beica"
+    ,"additionalDisplay":"Beica, Ethiopia"
+  },
+  {
+     "value":"BEL"
+    ,"display":"Val de Cans"
+    ,"additionalDisplay":"Belem, Brazil"
+  },
+  {
+     "value":"BEN"
+    ,"display":"Benina Int"
+    ,"additionalDisplay":"Benghazi, Libya"
+  },
+  {
+     "value":"BEY"
+    ,"display":"Beirut-Rafic Hariri Intl"
+    ,"additionalDisplay":"Beirut, Lebanon"
+  },
+  {
+     "value":"BFN"
+    ,"display":"Bram Fischer Intl"
+    ,"additionalDisplay":"Bloemfontein, South Africa"
+  },
+  {
+     "value":"BGA"
+    ,"display":"Palonegro Intl"
+    ,"additionalDisplay":"Bucaramanga, Colombia"
+  },
+  {
+     "value":"BGF"
+    ,"display":"Bangui M’Poko International Airport"
+    ,"additionalDisplay":"Bangui, Central African Republic"
+  },
+  {
+     "value":"BGI"
+    ,"display":"Granley Adams Int"
+    ,"additionalDisplay":"Bridgetown, Barbados"
+  },
+  {
+     "value":"BGL"
+    ,"display":"Balewa"
+    ,"additionalDisplay":"Baglung, Nepal"
+  },
+  {
+     "value":"BGO"
+    ,"display":"Flesland"
+    ,"additionalDisplay":"Bergen, Norway"
+  },
+  {
+     "value":"BGR"
+    ,"display":"Bangor Intl Airport"
+    ,"additionalDisplay":"Bangor, Maine, ME, United States"
+  },
+  {
+     "value":"BGW"
+    ,"display":"Baghdad International"
+    ,"additionalDisplay":"Baghdad, Iraq"
+  },
+  {
+     "value":"BHM"
+    ,"display":"Birmingham Shuttlesworth Intl"
+    ,"additionalDisplay":"Birmingham, AL, United States"
+  },
+  {
+     "value":"BHZ"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Belo Horizonte, Brazil"
+  },
+  {
+     "value":"BIL"
+    ,"display":"Billings Logan Intl"
+    ,"additionalDisplay":"Billings, United States"
+  },
+  {
+     "value":"BJL"
+    ,"display":"Yundum International"
+    ,"additionalDisplay":"Banjul, Gambia"
+  },
+  {
+     "value":"BJM"
+    ,"display":"Bujumbura Int+l"
+    ,"additionalDisplay":"Bujumbura, Burundi"
+  },
+  {
+     "value":"BJS"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Beijing, China"
+  },
+  {
+     "value":"BJV"
+    ,"display":"Bodrum - Milas Airport"
+    ,"additionalDisplay":"Milas - Bodrum, Turkey"
+  },
+  {
+     "value":"BJX"
+    ,"display":"Del Bajio Intl"
+    ,"additionalDisplay":"Leon, Mexico"
+  },
+  {
+     "value":"BKI"
+    ,"display":"Kota Kinabalu Intl"
+    ,"additionalDisplay":"Kota Kinabalu, Malaysia"
+  },
+  {
+     "value":"BKK"
+    ,"display":"Suvarnabhumi"
+    ,"additionalDisplay":"Bangkok, Thailand"
+  },
+  {
+     "value":"BKO"
+    ,"display":"Bamako-Senou Intl"
+    ,"additionalDisplay":"Bamako, Mali"
+  },
+  {
+     "value":"BLA"
+    ,"display":"Gen Jose Antonio Anzoategui"
+    ,"additionalDisplay":"Barcelona, Venezuela"
+  },
+  {
+     "value":"BLI"
+    ,"display":"Bellingham Intl"
+    ,"additionalDisplay":"Bellingham, WA, United States"
+  },
+  {
+     "value":"BLR"
+    ,"display":"Kempegowda Intl"
+    ,"additionalDisplay":"Bangalore, India"
+  },
+  {
+     "value":"BLT"
+    ,"display":"Blackwater"
+    ,"additionalDisplay":"Blackwater, Australia"
+  },
+  {
+     "value":"BLZ"
+    ,"display":"Chileka"
+    ,"additionalDisplay":"Blantyre, Malawi"
+  },
+  {
+     "value":"BME"
+    ,"display":"Broome Intl"
+    ,"additionalDisplay":"Broome, Australia"
+  },
+  {
+     "value":"BNA"
+    ,"display":"Nashville International"
+    ,"additionalDisplay":"Nashville, United States"
+  },
+  {
+     "value":"BNE"
+    ,"display":"Brisbane"
+    ,"additionalDisplay":"Brisbane, Australia"
+  },
+  {
+     "value":"BNN"
+    ,"display":"Brønnøysund"
+    ,"additionalDisplay":"Bronnoysund, Norway"
+  },
+  {
+     "value":"BNU"
+    ,"display":"Blumenau Airport"
+    ,"additionalDisplay":"Blumenau, Brazil"
+  },
+  {
+     "value":"BOG"
+    ,"display":"El Dorado Intl"
+    ,"additionalDisplay":"Bogota, Colombia"
+  },
+  {
+     "value":"BOM"
+    ,"display":"Chhatrapati Shivaji Intl"
+    ,"additionalDisplay":"Mumbai, India"
+  },
+  {
+     "value":"BON"
+    ,"display":"Flamingo International"
+    ,"additionalDisplay":"Bonaire, Netherlands Antilles"
+  },
+  {
+     "value":"BOO"
+    ,"display":"Bodo Airport"
+    ,"additionalDisplay":"Bodo, Norway"
+  },
+  {
+     "value":"BOS"
+    ,"display":"Logan International"
+    ,"additionalDisplay":"Boston, United States"
+  },
+  {
+     "value":"BQN"
+    ,"display":"Rafael Hernandez"
+    ,"additionalDisplay":"Aguadilla, Puerto Rico"
+  },
+  {
+     "value":"BRA"
+    ,"display":"Barreiras Airport"
+    ,"additionalDisplay":"Barreiras, Brazil"
+  },
+  {
+     "value":"BRC"
+    ,"display":"San Carlos de Bariloche Intl"
+    ,"additionalDisplay":"San Carlos de Bariloche, Argentina"
+  },
+  {
+     "value":"BRN"
+    ,"display":"Belp"
+    ,"additionalDisplay":"Berne, Switzerland"
+  },
+  {
+     "value":"BSB"
+    ,"display":"Pres. Juscelino Kubitschek Intl"
+    ,"additionalDisplay":"Brasilia, Brazil"
+  },
+  {
+     "value":"BSL"
+    ,"display":"EuroAirport Swiss"
+    ,"additionalDisplay":"Basel/Mulhouse/Freiburg, Switzerland"
+  },
+  {
+     "value":"BSN"
+    ,"display":"Bossangoa"
+    ,"additionalDisplay":"Bossangoa, Central African Rep"
+  },
+  {
+     "value":"BSR"
+    ,"display":"Basra Intl"
+    ,"additionalDisplay":"Basra, Basrah, Iraq"
+  },
+  {
+     "value":"BST"
+    ,"display":"Bost"
+    ,"additionalDisplay":"Bost, Afghanistan"
+  },
+  {
+     "value":"BTV"
+    ,"display":"Burlington Intl"
+    ,"additionalDisplay":"Burlington, VT, United States"
+  },
+  {
+     "value":"BTZ"
+    ,"display":"Bursa"
+    ,"additionalDisplay":"Bursa, Turkey"
+  },
+  {
+     "value":"BUC"
+    ,"display":"Burketown"
+    ,"additionalDisplay":"Burketown, Australia"
+  },
+  {
+     "value":"BUE"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Buenos Aires, Argentina"
+  },
+  {
+     "value":"BUF"
+    ,"display":"Buffalo Niagara Intl"
+    ,"additionalDisplay":"Buffalo, United States"
+  },
+  {
+     "value":"BUQ"
+    ,"display":"Joshua Mqabuko Nkomo Intl"
+    ,"additionalDisplay":"Bulawayo, Zimbabwe"
+  },
+  {
+     "value":"BVB"
+    ,"display":"Boa Vista International"
+    ,"additionalDisplay":"Boa Vista, Brazil"
+  },
+  {
+     "value":"BWI"
+    ,"display":"Washington Int"
+    ,"additionalDisplay":"Baltimore, United States"
+  },
+  {
+     "value":"BWN"
+    ,"display":"Brunei International"
+    ,"additionalDisplay":"Bandar Seri Begawan, Brunei"
+  },
+  {
+     "value":"BZE"
+    ,"display":"Philip SW Goldson Int"
+    ,"additionalDisplay":"Belize City, Belize"
+  },
+  {
+     "value":"BZN"
+    ,"display":"Yellowstone Intl"
+    ,"additionalDisplay":"Bozeman, MT, United States"
+  },
+  {
+     "value":"BZV"
+    ,"display":"Maya Maya"
+    ,"additionalDisplay":"Brazzaville, Congo (Rep)"
+  },
+  {
+     "value":"BZY"
+    ,"display":"Balti Intl"
+    ,"additionalDisplay":"Beltsi (Balti), Moldova"
+  },
+  {
+     "value":"CAB"
+    ,"display":"Cabinda"
+    ,"additionalDisplay":"Cabinda, Angola"
+  },
+  {
+     "value":"CAI"
+    ,"display":"Cairo International"
+    ,"additionalDisplay":"Cairo, Egypt"
+  },
+  {
+     "value":"CAK"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Akron/Canton, United States"
+  },
+  {
+     "value":"CAN"
+    ,"display":"Guangzhou Baiyun Intl"
+    ,"additionalDisplay":"Guangzhou, China"
+  },
+  {
+     "value":"CAP"
+    ,"display":"Cap-Haitien"
+    ,"additionalDisplay":"Cap Haitien, Haiti"
+  },
+  {
+     "value":"CAS"
+    ,"display":"Anfa"
+    ,"additionalDisplay":"Casablanca, Morocco"
+  },
+  {
+     "value":"CAY"
+    ,"display":"Felix Eboue Airport"
+    ,"additionalDisplay":"Cayenne, French Guiana"
+  },
+  {
+     "value":"CBB"
+    ,"display":"Jorge Wilstermann Intl"
+    ,"additionalDisplay":"Cochabamba, Bolivia"
+  },
+  {
+     "value":"CBR"
+    ,"display":"Canberra"
+    ,"additionalDisplay":"Canberra, Australia"
+  },
+  {
+     "value":"CCJ"
+    ,"display":"Calicut Intl"
+    ,"additionalDisplay":"Calicut, India"
+  },
+  {
+     "value":"CCP"
+    ,"display":"Carriel Sur"
+    ,"additionalDisplay":"Concepcion, Chile"
+  },
+  {
+     "value":"CCS"
+    ,"display":"Simon Bolivar"
+    ,"additionalDisplay":"Caracas, Venezuela"
+  },
+  {
+     "value":"CCU"
+    ,"display":"Netaji Subhas Chandra"
+    ,"additionalDisplay":"Calcutta, India"
+  },
+  {
+     "value":"CCU"
+    ,"display":"Netaji Subhas Chandra Bose Intl"
+    ,"additionalDisplay":"Kolkata (Calcutta), India"
+  },
+  {
+     "value":"CCZ"
+    ,"display":"Chub Cay Intl"
+    ,"additionalDisplay":"Chub Cay, Bahamas"
+  },
+  {
+     "value":"CEB"
+    ,"display":"Mactan-Cebu Intl"
+    ,"additionalDisplay":"Cebu, Philippines"
+  },
+  {
+     "value":"CEN"
+    ,"display":"Ciudad Obregon Intl"
+    ,"additionalDisplay":"Ciudad Obregon, Mexico"
+  },
+  {
+     "value":"CFG"
+    ,"display":"Jamie Gonzalez"
+    ,"additionalDisplay":"Cienfuegos, Cuba"
+  },
+  {
+     "value":"CGB"
+    ,"display":"Marechal Rondon Intl"
+    ,"additionalDisplay":"Cuiaba, Brazil"
+  },
+  {
+     "value":"CGH"
+    ,"display":"Congonhas"
+    ,"additionalDisplay":"Sao Paulo, Brazil"
+  },
+  {
+     "value":"CGK"
+    ,"display":"Soekarno-Hatta Intl"
+    ,"additionalDisplay":"Jakarta, Indonesia"
+  },
+  {
+     "value":"CGO"
+    ,"display":"Zhengzhou Xinzheng Intl"
+    ,"additionalDisplay":"Zhengzhou, China"
+  },
+  {
+     "value":"CGP"
+    ,"display":"Shah Amanat Intl"
+    ,"additionalDisplay":"Chittagong, Bangladesh"
+  },
+  {
+     "value":"CGQ"
+    ,"display":"Changchun Longjia Intl"
+    ,"additionalDisplay":"Changchun, China"
+  },
+  {
+     "value":"CGR"
+    ,"display":"Campo Grande Intl"
+    ,"additionalDisplay":"Campo Grande, Brazil"
+  },
+  {
+     "value":"CHC"
+    ,"display":"Christchurch Intl"
+    ,"additionalDisplay":"Christchurch, New Zealand"
+  },
+  {
+     "value":"CHI"
+    ,"display":"Chicago FSS"
+    ,"additionalDisplay":"Chicago, United States"
+  },
+  {
+     "value":"CHL"
+    ,"display":"Challis"
+    ,"additionalDisplay":"Challis, Bangladesh"
+  },
+  {
+     "value":"CHS"
+    ,"display":"Charleston Intl"
+    ,"additionalDisplay":"Charleston, United States"
+  },
+  {
+     "value":"CJB"
+    ,"display":"Coimbatore Intl"
+    ,"additionalDisplay":"Coimbatore, India"
+  },
+  {
+     "value":"CJS"
+    ,"display":"Abraham Gonzalez Intl"
+    ,"additionalDisplay":"Ciudad Juárez, Mexico"
+  },
+  {
+     "value":"CJU"
+    ,"display":"Jeju Intl Airport"
+    ,"additionalDisplay":"Jeju, South Korea"
+  },
+  {
+     "value":"CKG"
+    ,"display":"Chongqing Jiangbei Intl"
+    ,"additionalDisplay":"Chongqing, China"
+  },
+  {
+     "value":"CKS"
+    ,"display":"Carajas Airport"
+    ,"additionalDisplay":"Carajas, Brazil"
+  },
+  {
+     "value":"CKY"
+    ,"display":"Conakry Intl"
+    ,"additionalDisplay":"Conakry, Guinea"
+  },
+  {
+     "value":"CLE"
+    ,"display":"Hopkins International"
+    ,"additionalDisplay":"Cleveland, United States"
+  },
+  {
+     "value":"CLM"
+    ,"display":"William R Fairchild Int"
+    ,"additionalDisplay":"Port Angeles, United States"
+  },
+  {
+     "value":"CLO"
+    ,"display":"Alfonso B Aragon"
+    ,"additionalDisplay":"Cali, Colombia"
+  },
+  {
+     "value":"CLT"
+    ,"display":"Douglas"
+    ,"additionalDisplay":"Charlotte, United States"
+  },
+  {
+     "value":"CMB"
+    ,"display":"Bandaranaike"
+    ,"additionalDisplay":"Colombo, Sri Lanka"
+  },
+  {
+     "value":"CME"
+    ,"display":"Ciudad del Carmen International"
+    ,"additionalDisplay":"Ciudad del Carmen, Mexico"
+  },
+  {
+     "value":"CMH"
+    ,"display":"Port Columbus Intl"
+    ,"additionalDisplay":"Columbus, United States"
+  },
+  {
+     "value":"CMM"
+    ,"display":"Carmelita Airport"
+    ,"additionalDisplay":"Carmelita, Guatemala"
+  },
+  {
+     "value":"CMN"
+    ,"display":"Mohamed V"
+    ,"additionalDisplay":"Casablanca, Morocco"
+  },
+  {
+     "value":"CNA"
+    ,"display":"Cananea National"
+    ,"additionalDisplay":"Cananea, Mexico"
+  },
+  {
+     "value":"CNF"
+    ,"display":"Tancredo Neves Intl"
+    ,"additionalDisplay":"Belo Horizonte, Brazil"
+  },
+  {
+     "value":"CNS"
+    ,"display":"Cairns"
+    ,"additionalDisplay":"Cairns, Australia"
+  },
+  {
+     "value":"CNX"
+    ,"display":"Chiang Mai Intl"
+    ,"additionalDisplay":"Chiang Mai, Thailand"
+  },
+  {
+     "value":"COC"
+    ,"display":"Comodoro Pierrestegui Airport"
+    ,"additionalDisplay":"Concordia, Argentina"
+  },
+  {
+     "value":"COK"
+    ,"display":"Cochin Intl"
+    ,"additionalDisplay":"Cochin, India"
+  },
+  {
+     "value":"COO"
+    ,"display":"Cadjehoun"
+    ,"additionalDisplay":"Cotonou, Benin"
+  },
+  {
+     "value":"COR"
+    ,"display":"Ingeniero Aeronáutico Ambrosio L.V. Taravella Intl"
+    ,"additionalDisplay":"Cordoba, Argentina"
+  },
+  {
+     "value":"CPT"
+    ,"display":"Cape Town Intl"
+    ,"additionalDisplay":"Cape Town, South Africa"
+  },
+  {
+     "value":"CRK"
+    ,"display":"Clark Intl"
+    ,"additionalDisplay":"Kapampangan, Philippines"
+  },
+  {
+     "value":"CRP"
+    ,"display":"Corpus Christi Intl"
+    ,"additionalDisplay":"Corpus Christi, United States"
+  },
+  {
+     "value":"CTG"
+    ,"display":"Rafael Núñez"
+    ,"additionalDisplay":"Cartagena, Colombia"
+  },
+  {
+     "value":"CTS"
+    ,"display":"New Chitose"
+    ,"additionalDisplay":"Chitose, Japan"
+  },
+  {
+     "value":"CTU"
+    ,"display":"Chengdu Shuangliu Intl"
+    ,"additionalDisplay":"Chengdu, China"
+  },
+  {
+     "value":"CUL"
+    ,"display":"Bachigualato Federal Intl"
+    ,"additionalDisplay":"Culiacan, Mexico"
+  },
+  {
+     "value":"CUN"
+    ,"display":"Cancun Intl"
+    ,"additionalDisplay":"Cancun, Mexico"
+  },
+  {
+     "value":"CUR"
+    ,"display":"Curacao International"
+    ,"additionalDisplay":"Curacao, Netherlands Antilles"
+  },
+  {
+     "value":"CUU"
+    ,"display":"Gen Fierro Villalobos"
+    ,"additionalDisplay":"Chihuahua, Mexico"
+  },
+  {
+     "value":"CVG"
+    ,"display":"Northern Kentucky"
+    ,"additionalDisplay":"Cincinnati, United States"
+  },
+  {
+     "value":"CVM"
+    ,"display":"Gen Pedro J Mendez Intl"
+    ,"additionalDisplay":"Ciudad Victoria, Mexico"
+  },
+  {
+     "value":"CWB"
+    ,"display":"Alfonso Pena"
+    ,"additionalDisplay":"Curitiba, Brazil"
+  },
+  {
+     "value":"CXI"
+    ,"display":"Cassidy Intl"
+    ,"additionalDisplay":"Christmas Line, Kiribati"
+  },
+  {
+     "value":"CZA"
+    ,"display":"Chichen Itza Intl"
+    ,"additionalDisplay":"Chichen Itza, Mexico"
+  },
+  {
+     "value":"CZL"
+    ,"display":"Mohamed Boudiaf Intl"
+    ,"additionalDisplay":"Constantine, Algeria"
+  },
+  {
+     "value":"CZM"
+    ,"display":"Cozumel Intl"
+    ,"additionalDisplay":"Cozumel, Mexico"
+  },
+  {
+     "value":"CZX"
+    ,"display":"Changzhou Benniu"
+    ,"additionalDisplay":"Changzhou, China"
+  },
+  {
+     "value":"DAB"
+    ,"display":"Daytona Beach Intl"
+    ,"additionalDisplay":"Daytona Beach, FL, United States"
+  },
+  {
+     "value":"DAC"
+    ,"display":"Hazrat Shahjalal Intl"
+    ,"additionalDisplay":"Dhaka, Bangladesh"
+  },
+  {
+     "value":"DAD"
+    ,"display":"Da Nang Intl"
+    ,"additionalDisplay":"Da Nang, Viet-Nam"
+  },
+  {
+     "value":"DAL"
+    ,"display":"Love Field"
+    ,"additionalDisplay":"Dallas, United States"
+  },
+  {
+     "value":"DAM"
+    ,"display":"Damascus Intl"
+    ,"additionalDisplay":"Damascus, Syria"
+  },
+  {
+     "value":"DAR"
+    ,"display":"Julius Nyerere Intl"
+    ,"additionalDisplay":"Dar Es Salaam, Tanzania"
+  },
+  {
+     "value":"DAY"
+    ,"display":"Dayton Intl"
+    ,"additionalDisplay":"Dayton, OH, United States"
+  },
+  {
+     "value":"DCA"
+    ,"display":"Ronald Reagan National"
+    ,"additionalDisplay":"Washington, United States"
+  },
+  {
+     "value":"DEL"
+    ,"display":"Indira Gandhi Intl"
+    ,"additionalDisplay":"Delhi, India"
+  },
+  {
+     "value":"DEN"
+    ,"display":"Denver International"
+    ,"additionalDisplay":"Denver, United States"
+  },
+  {
+     "value":"DET"
+    ,"display":"Coleman A Young Intl"
+    ,"additionalDisplay":"Detroit, United States"
+  },
+  {
+     "value":"DFW"
+    ,"display":"Fort Worth"
+    ,"additionalDisplay":"Dallas, United States"
+  },
+  {
+     "value":"DHA"
+    ,"display":"King Abdulaziz"
+    ,"additionalDisplay":"Dhahran, Saudi Arabia"
+  },
+  {
+     "value":"DJE"
+    ,"display":"Djerba-Zarzis Intl"
+    ,"additionalDisplay":"Djerba, Tunisia"
+  },
+  {
+     "value":"DKR"
+    ,"display":"Leopold Sedar Senghor Intl"
+    ,"additionalDisplay":"Dakar, Senegal"
+  },
+  {
+     "value":"DLA"
+    ,"display":"Douala Intl"
+    ,"additionalDisplay":"Douala, Cameroon"
+  },
+  {
+     "value":"DLC"
+    ,"display":"Dalian Zhoushuizi Intl"
+    ,"additionalDisplay":"Dalian, China"
+  },
+  {
+     "value":"DLH"
+    ,"display":"Duluth Intl"
+    ,"additionalDisplay":"Duluth/Superior, United States"
+  },
+  {
+     "value":"DLM"
+    ,"display":"Dalaman"
+    ,"additionalDisplay":"Dalaman, Turkey"
+  },
+  {
+     "value":"DME"
+    ,"display":"Domodedovo"
+    ,"additionalDisplay":"Moscow, Russia"
+  },
+  {
+     "value":"DMM"
+    ,"display":"King Fahd Intl"
+    ,"additionalDisplay":"Dammam, Saudi Arabia"
+  },
+  {
+     "value":"DNZ"
+    ,"display":"Denizli Çardak"
+    ,"additionalDisplay":"Denizli, Turkey"
+  },
+  {
+     "value":"DOH"
+    ,"display":"Hamad Intl"
+    ,"additionalDisplay":"Doha, Qatar"
+  },
+  {
+     "value":"DOM"
+    ,"display":"Douglas-Charles Airport"
+    ,"additionalDisplay":"Dominica, Dominica"
+  },
+  {
+     "value":"DPS"
+    ,"display":"Ngurah Rai"
+    ,"additionalDisplay":"Denpasar Bali, Indonesia"
+  },
+  {
+     "value":"DRW"
+    ,"display":"Darwin Intl"
+    ,"additionalDisplay":"Darwin, Australia"
+  },
+  {
+     "value":"DSM"
+    ,"display":"Des Moine Intl"
+    ,"additionalDisplay":"Des Moines, United States"
+  },
+  {
+     "value":"DTT"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Detroit, United States"
+  },
+  {
+     "value":"DUD"
+    ,"display":"Dunedin Intl"
+    ,"additionalDisplay":"Dunedin, New Zealand"
+  },
+  {
+     "value":"DUR"
+    ,"display":"King Shaka Intl"
+    ,"additionalDisplay":"Durban, South Africa"
+  },
+  {
+     "value":"DWC"
+    ,"display":"Al Maktoum"
+    ,"additionalDisplay":"Jebel Ali, UAE"
+  },
+  {
+     "value":"DXB"
+    ,"display":"Dubai Intl"
+    ,"additionalDisplay":"Dubai, Dubai"
+  },
+  {
+     "value":"DYU"
+    ,"display":"Dushanbe Intl"
+    ,"additionalDisplay":"Dushanbe, Tajikistan"
+  },
+  {
+     "value":"DZA"
+    ,"display":"Dzaoudzi-Pamandzi Intl"
+    ,"additionalDisplay":"Dzaoudzi, Mayotte"
+  },
+  {
+     "value":"EAP"
+    ,"display":"Basel/Mulhouse"
+    ,"additionalDisplay":"Basel, Switzerland"
+  },
+  {
+     "value":"EAU"
+    ,"display":"Chippewa Valley"
+    ,"additionalDisplay":"Eau Claire, United States"
+  },
+  {
+     "value":"EBB"
+    ,"display":"Entebbe Intl"
+    ,"additionalDisplay":"Entebbe, Uganda"
+  },
+  {
+     "value":"EFD"
+    ,"display":"Ellington Field"
+    ,"additionalDisplay":"Houston, United States"
+  },
+  {
+     "value":"EGS"
+    ,"display":"Egilsstadir"
+    ,"additionalDisplay":"Egilsstadir, Iceland"
+  },
+  {
+     "value":"EIS"
+    ,"display":"Terrance B Lettsome"
+    ,"additionalDisplay":"Beef Island, Virgin Islands (British)"
+  },
+  {
+     "value":"ELP"
+    ,"display":"El Paso Intl"
+    ,"additionalDisplay":"El Paso, United States"
+  },
+  {
+     "value":"ELS"
+    ,"display":"East London"
+    ,"additionalDisplay":"East London, South Africa"
+  },
+  {
+     "value":"ENT"
+    ,"display":"Enewetak Auxiliary Airfield"
+    ,"additionalDisplay":"Enewetak Island, US minor islands"
+  },
+  {
+     "value":"ERC"
+    ,"display":"Erzincan"
+    ,"additionalDisplay":"Erzincan, Turkey"
+  },
+  {
+     "value":"ERI"
+    ,"display":"Erie Intl"
+    ,"additionalDisplay":"Erie, United States"
+  },
+  {
+     "value":"ERZ"
+    ,"display":"Erzurum"
+    ,"additionalDisplay":"Erzurum, Turkey"
+  },
+  {
+     "value":"ESB"
+    ,"display":"Esenboga"
+    ,"additionalDisplay":"Ankara, Turkey"
+  },
+  {
+     "value":"ETH"
+    ,"display":"J. Hozman"
+    ,"additionalDisplay":"Elat, Israel"
+  },
+  {
+     "value":"EVE"
+    ,"display":"Harstad/Narvik"
+    ,"additionalDisplay":"Evenes, Norway"
+  },
+  {
+     "value":"EVN"
+    ,"display":"Zvartnots Intl"
+    ,"additionalDisplay":"Eriwan (Yerevan, Jerevan), Armenia"
+  },
+  {
+     "value":"EWR"
+    ,"display":"Newark Liberty Intl"
+    ,"additionalDisplay":"New York - Newark, United States"
+  },
+  {
+     "value":"EYW"
+    ,"display":"Key West Intl"
+    ,"additionalDisplay":"Key West, United States"
+  },
+  {
+     "value":"EZE"
+    ,"display":"Ministro Pistarini"
+    ,"additionalDisplay":"Buenos Aires, Argentina"
+  },
+  {
+     "value":"FAE"
+    ,"display":"Vagar"
+    ,"additionalDisplay":"Sorvagur, Faroe Islands"
+  },
+  {
+     "value":"FAI"
+    ,"display":"Fairbanks Intl"
+    ,"additionalDisplay":"Fairbanks, United States"
+  },
+  {
+     "value":"FAT"
+    ,"display":"Fresno Yosemite Intl"
+    ,"additionalDisplay":"Fresno, CA, United States"
+  },
+  {
+     "value":"FBM"
+    ,"display":"Lubumbashi Intl"
+    ,"additionalDisplay":"Lubumbashi, Congo (DRC)"
+  },
+  {
+     "value":"FCA"
+    ,"display":"Glacier Park Intl"
+    ,"additionalDisplay":"Kalispell, MT, United States"
+  },
+  {
+     "value":"FCM"
+    ,"display":"Flying cloud"
+    ,"additionalDisplay":"Minneapolis, United States"
+  },
+  {
+     "value":"FDF"
+    ,"display":"Lamentin Intl"
+    ,"additionalDisplay":"Fort-De-France, Martinique"
+  },
+  {
+     "value":"FEZ"
+    ,"display":"Fes-Saiss"
+    ,"additionalDisplay":"Fes, Morocco"
+  },
+  {
+     "value":"FIH"
+    ,"display":"N’Djili"
+    ,"additionalDisplay":"Kinshasa, Congo DR"
+  },
+  {
+     "value":"FJR"
+    ,"display":"Fujairah International"
+    ,"additionalDisplay":"Fujairah, United Arab Emirates"
+  },
+  {
+     "value":"FKI"
+    ,"display":"Bangoka Intl"
+    ,"additionalDisplay":"Kisangani, Congo (DRC)"
+  },
+  {
+     "value":"FKS"
+    ,"display":"Fukushima Airport"
+    ,"additionalDisplay":"Fukushima, Japan"
+  },
+  {
+     "value":"FLL"
+    ,"display":"Fort Lauderdale/ Hollywood Intl"
+    ,"additionalDisplay":"Fort Lauderdale/ Hollywood, United States"
+  },
+  {
+     "value":"FLN"
+    ,"display":"Hercilio Luz"
+    ,"additionalDisplay":"Florianopolis, Brazil"
+  },
+  {
+     "value":"FNA"
+    ,"display":"Lungi International"
+    ,"additionalDisplay":"Freetown, Sierra leone"
+  },
+  {
+     "value":"FNJ"
+    ,"display":"Sunan"
+    ,"additionalDisplay":"Pyongyang, North Korea"
+  },
+  {
+     "value":"FNT"
+    ,"display":"Bishop Intl"
+    ,"additionalDisplay":"Flint, MI, United States"
+  },
+  {
+     "value":"FOC"
+    ,"display":"Fuzhou Changle Intl"
+    ,"additionalDisplay":"Fuzhou, China"
+  },
+  {
+     "value":"FOR"
+    ,"display":"Pinto Martins"
+    ,"additionalDisplay":"Fortaleza, Brazil"
+  },
+  {
+     "value":"FPO"
+    ,"display":"Grand Bahama Intl"
+    ,"additionalDisplay":"Grand Bahama, Bahamas"
+  },
+  {
+     "value":"FRO"
+    ,"display":"Floro"
+    ,"additionalDisplay":"Flora, Norway"
+  },
+  {
+     "value":"FRU"
+    ,"display":"Manas Intl"
+    ,"additionalDisplay":"Bishkek, Kyrgyzstan"
+  },
+  {
+     "value":"FSP"
+    ,"display":"St. Pierre, NF"
+    ,"additionalDisplay":"Saint-Pierre, Canada"
+  },
+  {
+     "value":"FUK"
+    ,"display":"Fukuoka"
+    ,"additionalDisplay":"Fukuoka, Japan"
+  },
+  {
+     "value":"FWA"
+    ,"display":"Fort Wayne Intl"
+    ,"additionalDisplay":"Fort Wayne, United States"
+  },
+  {
+     "value":"GAU"
+    ,"display":"Lokpriya Gopinath Bordoloi Intl"
+    ,"additionalDisplay":"Guwahati, India"
+  },
+  {
+     "value":"GBE"
+    ,"display":"Sir Seretse Khama Int"
+    ,"additionalDisplay":"Gaborone, Botswana"
+  },
+  {
+     "value":"GBP"
+    ,"display":"Gamboola"
+    ,"additionalDisplay":"Gamboola, Australia"
+  },
+  {
+     "value":"GCM"
+    ,"display":"Owen Roberts Intl"
+    ,"additionalDisplay":"Grand Cayman, Cayman Islands"
+  },
+  {
+     "value":"GDL"
+    ,"display":"Miguel Hidal"
+    ,"additionalDisplay":"Guadalajara, Mexico"
+  },
+  {
+     "value":"GEG"
+    ,"display":"Spokane Intl"
+    ,"additionalDisplay":"Spokane, United States"
+  },
+  {
+     "value":"GEN"
+    ,"display":"Gardermoen"
+    ,"additionalDisplay":"Oslo, Norway"
+  },
+  {
+     "value":"GEO"
+    ,"display":"Cheddi Jagan Intl"
+    ,"additionalDisplay":"Georgetown, Guyana"
+  },
+  {
+     "value":"GIG"
+    ,"display":"Galeao Intl"
+    ,"additionalDisplay":"Rio de Janeiro, Brazil"
+  },
+  {
+     "value":"GND"
+    ,"display":"Maurice Bishop Intl"
+    ,"additionalDisplay":"Grenada, Grenada"
+  },
+  {
+     "value":"GNN"
+    ,"display":"Ghinnir (Ginir) Intl"
+    ,"additionalDisplay":"Ghinnir (Ginir), Ethiopia"
+  },
+  {
+     "value":"GOI"
+    ,"display":"Goa Intl"
+    ,"additionalDisplay":"Goa, India"
+  },
+  {
+     "value":"GOU"
+    ,"display":"Garoua Intl"
+    ,"additionalDisplay":"Garoua, Cameroon"
+  },
+  {
+     "value":"GP"
+    ,"display":"Bongo"
+    ,"additionalDisplay":"Bongo, Gabon"
+  },
+  {
+     "value":"GPT"
+    ,"display":"Gulfport/Biloxi Intl"
+    ,"additionalDisplay":"Gulfport/Biloxi, United States"
+  },
+  {
+     "value":"GRB"
+    ,"display":"Austin Straubel Intl"
+    ,"additionalDisplay":"Green Bay, WI, United States"
+  },
+  {
+     "value":"GRR"
+    ,"display":"Gerald R Ford Intl"
+    ,"additionalDisplay":"Grand Rapids, United States"
+  },
+  {
+     "value":"GRU"
+    ,"display":"Guarulhos Intl"
+    ,"additionalDisplay":"Sao Paulo, Brazil"
+  },
+  {
+     "value":"GSO"
+    ,"display":"Piedmont Triad Intl"
+    ,"additionalDisplay":"Greensboro/Winston Salem, NC, United States"
+  },
+  {
+     "value":"GSP"
+    ,"display":"Greenville/Spartanburg Intl"
+    ,"additionalDisplay":"Greenville-Spartanburg, United States"
+  },
+  {
+     "value":"GTF"
+    ,"display":"Great Falls Intl"
+    ,"additionalDisplay":"Great Falls, United States"
+  },
+  {
+     "value":"GUA"
+    ,"display":"La Aurora"
+    ,"additionalDisplay":"Guatemala City, Guatemala"
+  },
+  {
+     "value":"GUM"
+    ,"display":"AB Won Pat Intl"
+    ,"additionalDisplay":"Guam, US minor islands"
+  },
+  {
+     "value":"GVA"
+    ,"display":"Geneve-Cointrin"
+    ,"additionalDisplay":"Geneva, Switzerland"
+  },
+  {
+     "value":"GWD"
+    ,"display":"Gwadar Intl"
+    ,"additionalDisplay":"Gwadar, Pakistan"
+  },
+  {
+     "value":"GYD"
+    ,"display":"Heydar Aliyev Intl"
+    ,"additionalDisplay":"Baku, Azerbaijan"
+  },
+  {
+     "value":"GYE"
+    ,"display":"Jose Joaquin de Olmedo Intl"
+    ,"additionalDisplay":"Guayaquil, Ecuador"
+  },
+  {
+     "value":"GZA"
+    ,"display":"Yasser Arafat Intl"
+    ,"additionalDisplay":"Gaza City, Palestinian Territory"
+  },
+  {
+     "value":"GZT"
+    ,"display":"Gaziantep Oğuzeli Intl"
+    ,"additionalDisplay":"Gaziantep, Turkey"
+  },
+  {
+     "value":"HAH"
+    ,"display":"Prince Said Ibrahim Intl"
+    ,"additionalDisplay":"Moroni - Prince Said Ibrahim, Comoros (Comores)"
+  },
+  {
+     "value":"HAN"
+    ,"display":"Noibai"
+    ,"additionalDisplay":"Hanoi, Viet-Nam"
+  },
+  {
+     "value":"HAU"
+    ,"display":"Haugesund"
+    ,"additionalDisplay":"Haugesund, Norway"
+  },
+  {
+     "value":"HAV"
+    ,"display":"Jose Marti Intl"
+    ,"additionalDisplay":"Havana, Cuba"
+  },
+  {
+     "value":"HBA"
+    ,"display":"Hobart Intl"
+    ,"additionalDisplay":"Hobart, Australia"
+  },
+  {
+     "value":"HCM"
+    ,"display":"Eyl"
+    ,"additionalDisplay":"Eyl, Somalia"
+  },
+  {
+     "value":"HDY"
+    ,"display":"Hatyai (Hat Yai) Intl"
+    ,"additionalDisplay":"Hat Yai, Thailand"
+  },
+  {
+     "value":"HFA"
+    ,"display":"Haifa"
+    ,"additionalDisplay":"Haifa, Israel"
+  },
+  {
+     "value":"HFT"
+    ,"display":"Hammerfest"
+    ,"additionalDisplay":"Hammerfest, Norway"
+  },
+  {
+     "value":"HGH"
+    ,"display":"Hangzhou Xiaoshan Intl"
+    ,"additionalDisplay":"Hangzhou, China"
+  },
+  {
+     "value":"HIJ"
+    ,"display":"Hiroshima"
+    ,"additionalDisplay":"Hiroshima, Japan"
+  },
+  {
+     "value":"HIR"
+    ,"display":"Honiara"
+    ,"additionalDisplay":"Honiara, Solomon Islands"
+  },
+  {
+     "value":"HKD"
+    ,"display":"Hakodate"
+    ,"additionalDisplay":"Hakodate, Japan"
+  },
+  {
+     "value":"HKG"
+    ,"display":"Hong Kong Intl"
+    ,"additionalDisplay":"Hong Kong, Hong Kong"
+  },
+  {
+     "value":"HKK"
+    ,"display":"Hokitika"
+    ,"additionalDisplay":"Hokitika, New Zealand"
+  },
+  {
+     "value":"HKT"
+    ,"display":"Phuket Intl"
+    ,"additionalDisplay":"Phuket, Thailand"
+  },
+  {
+     "value":"HLA"
+    ,"display":"Lanseria Intl"
+    ,"additionalDisplay":"Lanseria, South Africa"
+  },
+  {
+     "value":"HLP"
+    ,"display":"Halim Perdanakusuma Intl"
+    ,"additionalDisplay":"Jakarta, Indonesia"
+  },
+  {
+     "value":"HLZ"
+    ,"display":"Hamilton"
+    ,"additionalDisplay":"Hamilton, New Zealand"
+  },
+  {
+     "value":"HMO"
+    ,"display":"Gen. Pesqueira Garcia Intl"
+    ,"additionalDisplay":"Hermosillo, Mexico"
+  },
+  {
+     "value":"HND"
+    ,"display":"Haneda"
+    ,"additionalDisplay":"Tokyo, Japan"
+  },
+  {
+     "value":"HNL"
+    ,"display":"Honolulu Intl"
+    ,"additionalDisplay":"Honolulu, United States"
+  },
+  {
+     "value":"HOA"
+    ,"display":"Hola"
+    ,"additionalDisplay":"Hola, Kenya"
+  },
+  {
+     "value":"HOG"
+    ,"display":"Frank Pais"
+    ,"additionalDisplay":"Holguin, Cuba"
+  },
+  {
+     "value":"HOU"
+    ,"display":"William P Hobby"
+    ,"additionalDisplay":"Houston, United States"
+  },
+  {
+     "value":"HRB"
+    ,"display":"Harbin Taiping Intl"
+    ,"additionalDisplay":"Harbin (Haerbin), PR China"
+  },
+  {
+     "value":"HRE"
+    ,"display":"Harare Intl"
+    ,"additionalDisplay":"Harare, Zimbabwe"
+  },
+  {
+     "value":"HRG"
+    ,"display":"Hurghada International"
+    ,"additionalDisplay":"Hurghada, Egypt"
+  },
+  {
+     "value":"HRK"
+    ,"display":"Kharkov Intl"
+    ,"additionalDisplay":"Kharkiv, Ukraine"
+  },
+  {
+     "value":"HRL"
+    ,"display":"Valley Intl"
+    ,"additionalDisplay":"Harlington/South Padre Island, TX, United States"
+  },
+  {
+     "value":"HSV"
+    ,"display":"Huntsville Intl"
+    ,"additionalDisplay":"Huntsville, United States"
+  },
+  {
+     "value":"HUF"
+    ,"display":"Terre Haute Intl"
+    ,"additionalDisplay":"Terre Haute, United States"
+  },
+  {
+     "value":"HUG"
+    ,"display":"Huehuetenango"
+    ,"additionalDisplay":"Huehuetenango, Guatemala"
+  },
+  {
+     "value":"HUI"
+    ,"display":"Phu Bai Intl"
+    ,"additionalDisplay":"Hue - Phu Bai, Viet Nam"
+  },
+  {
+     "value":"HUX"
+    ,"display":"Bahías de Huatulco Intl"
+    ,"additionalDisplay":"Huatulco, Mexico"
+  },
+  {
+     "value":"HVA"
+    ,"display":"Analalava"
+    ,"additionalDisplay":"Analalava, Madagascar"
+  },
+  {
+     "value":"HYD"
+    ,"display":"Rajiv Gandhi Intl"
+    ,"additionalDisplay":"Hyderabad, India"
+  },
+  {
+     "value":"IAD"
+    ,"display":"Dulles Intl"
+    ,"additionalDisplay":"Washington, United States"
+  },
+  {
+     "value":"IAG"
+    ,"display":"Niagara Falls Intl"
+    ,"additionalDisplay":"Niagara Falls, United States"
+  },
+  {
+     "value":"IAH"
+    ,"display":"George Bush Intercontinental"
+    ,"additionalDisplay":"Houston, United States"
+  },
+  {
+     "value":"ICN"
+    ,"display":"Incheon Intl"
+    ,"additionalDisplay":"Seoul, South Korea"
+  },
+  {
+     "value":"IEV"
+    ,"display":"Kyiv Intl (Zhuliany)"
+    ,"additionalDisplay":"Kiev, Ukraine"
+  },
+  {
+     "value":"IGR"
+    ,"display":"Cataratas del Iguazú Intl"
+    ,"additionalDisplay":"Iguazu, Cataratas, Argentina"
+  },
+  {
+     "value":"IGU"
+    ,"display":"Cataratas"
+    ,"additionalDisplay":"Iguassu Falls, Brazil"
+  },
+  {
+     "value":"IKT"
+    ,"display":"Intl Airport Irkutsk"
+    ,"additionalDisplay":"Irkutsk, Russia"
+  },
+  {
+     "value":"ILM"
+    ,"display":"Wilmington Intl"
+    ,"additionalDisplay":"Wilmington, United States"
+  },
+  {
+     "value":"INB"
+    ,"display":"Independence"
+    ,"additionalDisplay":"Independence, Belize"
+  },
+  {
+     "value":"INC"
+    ,"display":"Yinchuan Hedong Intl"
+    ,"additionalDisplay":"Yinchuan, China"
+  },
+  {
+     "value":"IND"
+    ,"display":"Indianapolis Intl"
+    ,"additionalDisplay":"Indianapolis, United States"
+  },
+  {
+     "value":"INI"
+    ,"display":"Constantine the Great"
+    ,"additionalDisplay":"Nis, Serbia"
+  },
+  {
+     "value":"IPC"
+    ,"display":"Mataveri Intl"
+    ,"additionalDisplay":"Easter Island, Chile"
+  },
+  {
+     "value":"IQT"
+    ,"display":"Francisco Secada Vignetta Intl"
+    ,"additionalDisplay":"Iquitos, Peru"
+  },
+  {
+     "value":"ISB"
+    ,"display":"Benazir Bhutto Intl"
+    ,"additionalDisplay":"Islamabad, Pakistan"
+  },
+  {
+     "value":"IST"
+    ,"display":"Ataturk"
+    ,"additionalDisplay":"Istanbul, Turkey"
+  },
+  {
+     "value":"ITM"
+    ,"display":"Itami"
+    ,"additionalDisplay":"Osaka, Japan"
+  },
+  {
+     "value":"ITO"
+    ,"display":"Hilo Intl"
+    ,"additionalDisplay":"Hilo, United States"
+  },
+  {
+     "value":"IXC"
+    ,"display":"Chandigarh Intl"
+    ,"additionalDisplay":"Chandigarh, India"
+  },
+  {
+     "value":"IZM"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"lsmir, Turkey"
+  },
+  {
+     "value":"JAA"
+    ,"display":"Jalalabad"
+    ,"additionalDisplay":"Jalalabad, Afghanistan"
+  },
+  {
+     "value":"JAI"
+    ,"display":"Jaipur Intl"
+    ,"additionalDisplay":"Jaipur, India"
+  },
+  {
+     "value":"JAK"
+    ,"display":"Jacmel"
+    ,"additionalDisplay":"Jacmel, Haiti"
+  },
+  {
+     "value":"JAN"
+    ,"display":"Jackson International"
+    ,"additionalDisplay":"Jackson, United States"
+  },
+  {
+     "value":"JAX"
+    ,"display":"Jacksonville Intl"
+    ,"additionalDisplay":"Jacksonville, United States"
+  },
+  {
+     "value":"JED"
+    ,"display":"King Abdulaziz Int"
+    ,"additionalDisplay":"Jeddah, Saudi Arabia"
+  },
+  {
+     "value":"JEE"
+    ,"display":"Jeremie Airport"
+    ,"additionalDisplay":"Jeremie, Haiti"
+  },
+  {
+     "value":"JFK"
+    ,"display":"John F Kennedy Intl"
+    ,"additionalDisplay":"New York, United States"
+  },
+  {
+     "value":"JHB"
+    ,"display":"Senai Intl"
+    ,"additionalDisplay":"Johor Bahru, Malaysia"
+  },
+  {
+     "value":"JHG"
+    ,"display":"Jinghong - Gasa Airport"
+    ,"additionalDisplay":"Jinghong, China"
+  },
+  {
+     "value":"JIB"
+    ,"display":"Ambouli"
+    ,"additionalDisplay":"Djibouti, Djibouti"
+  },
+  {
+     "value":"JIJ"
+    ,"display":"Wilwal Intl"
+    ,"additionalDisplay":"Jijiga, Ethiopia"
+  },
+  {
+     "value":"JJN"
+    ,"display":"Quanzhou Jinjiang Intl"
+    ,"additionalDisplay":"Jinjiang, China"
+  },
+  {
+     "value":"JKT"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Jakarta, Indonesia"
+  },
+  {
+     "value":"JMU"
+    ,"display":"Jiamusi Dongjiao Intl"
+    ,"additionalDisplay":"Jiamusi - Jiamusi Airport, China"
+  },
+  {
+     "value":"JNB"
+    ,"display":"O R Tambo Intl"
+    ,"additionalDisplay":"Johannesburg, South Africa"
+  },
+  {
+     "value":"JNU"
+    ,"display":"Juneau Intl"
+    ,"additionalDisplay":"Juneau, United States"
+  },
+  {
+     "value":"JOS"
+    ,"display":"Yakubu Gowon Airport"
+    ,"additionalDisplay":"Jos, Nigeria"
+  },
+  {
+     "value":"JPA"
+    ,"display":"Castro Pinto Airport"
+    ,"additionalDisplay":"João Pessoa, Brazil"
+  },
+  {
+     "value":"JRO"
+    ,"display":"Kilimanjaro Intl"
+    ,"additionalDisplay":"Kilimanjaro, Tanzania"
+  },
+  {
+     "value":"JRS"
+    ,"display":"Atarot"
+    ,"additionalDisplay":"Jerusalem, Israel"
+  },
+  {
+     "value":"JUB"
+    ,"display":"Juba Intl"
+    ,"additionalDisplay":"Juba, South Sudan"
+  },
+  {
+     "value":"JUJ"
+    ,"display":"Gobernador Horacio Guzman Intl"
+    ,"additionalDisplay":"Jujuy, Argentina"
+  },
+  {
+     "value":"JUL"
+    ,"display":"Inca Manco Capac Intl"
+    ,"additionalDisplay":"Juliaca, Peru"
+  },
+  {
+     "value":"KAM"
+    ,"display":"Kamaran"
+    ,"additionalDisplay":"Kamaran, Yemen"
+  },
+  {
+     "value":"KAN"
+    ,"display":"Aminu Kano Int Apt"
+    ,"additionalDisplay":"Kano, Nigeria"
+  },
+  {
+     "value":"KBL"
+    ,"display":"Khwaja Rawash"
+    ,"additionalDisplay":"Kabul, Afghanistan"
+  },
+  {
+     "value":"KBP"
+    ,"display":"Boryspil"
+    ,"additionalDisplay":"Kiev, Ukraine"
+  },
+  {
+     "value":"KCH"
+    ,"display":"Kuching Intl"
+    ,"additionalDisplay":"Kuching, Malaysia"
+  },
+  {
+     "value":"KCM"
+    ,"display":"Kahramanmaras"
+    ,"additionalDisplay":"Kahramanmaras, Turkey"
+  },
+  {
+     "value":"KEE"
+    ,"display":"Kelle"
+    ,"additionalDisplay":"Kelle, Congo (Rep)"
+  },
+  {
+     "value":"KEF"
+    ,"display":"Keflavik Intl"
+    ,"additionalDisplay":"Reykjavik, Iceland"
+  },
+  {
+     "value":"KGC"
+    ,"display":"Kingscote"
+    ,"additionalDisplay":"Kingscote, Australia"
+  },
+  {
+     "value":"KGL"
+    ,"display":"Kigali Intl"
+    ,"additionalDisplay":"Kigali, Rwanda"
+  },
+  {
+     "value":"KHH"
+    ,"display":"Kaohsiung Intl"
+    ,"additionalDisplay":"Kaohsiung, Taiwan"
+  },
+  {
+     "value":"KHI"
+    ,"display":"Jinnah Intl"
+    ,"additionalDisplay":"Karachi, Pakistan"
+  },
+  {
+     "value":"KHV"
+    ,"display":"Novyy"
+    ,"additionalDisplay":"Khabarovsk, Russia"
+  },
+  {
+     "value":"KIE"
+    ,"display":"Aropa"
+    ,"additionalDisplay":"Kieta, Papua New Guinea"
+  },
+  {
+     "value":"KIJ"
+    ,"display":"Niigata"
+    ,"additionalDisplay":"Niigata, Japan"
+  },
+  {
+     "value":"KIM"
+    ,"display":"Kimberly"
+    ,"additionalDisplay":"Kimberly, South Africa"
+  },
+  {
+     "value":"KIN"
+    ,"display":"Norman Manley"
+    ,"additionalDisplay":"Kingston, Jamaica"
+  },
+  {
+     "value":"KIS"
+    ,"display":"Kisumu"
+    ,"additionalDisplay":"Kisumu, Kenya"
+  },
+  {
+     "value":"KIV"
+    ,"display":"Chisinau - Chişinău International Airport"
+    ,"additionalDisplay":"Chisinau, Moldova"
+  },
+  {
+     "value":"KIW"
+    ,"display":"Southdowns"
+    ,"additionalDisplay":"Kitwe, Zambia"
+  },
+  {
+     "value":"KIX"
+    ,"display":"Kansai Intl"
+    ,"additionalDisplay":"Osaka, Japan"
+  },
+  {
+     "value":"KKN"
+    ,"display":"Høybuktmoen"
+    ,"additionalDisplay":"Kirkenes, Norway"
+  },
+  {
+     "value":"KMG"
+    ,"display":"Kunming Changshui Intl"
+    ,"additionalDisplay":"Kunming, China"
+  },
+  {
+     "value":"KMI"
+    ,"display":"Miyazaki"
+    ,"additionalDisplay":"Miyazaki, Japan"
+  },
+  {
+     "value":"KMJ"
+    ,"display":"Kumamoto"
+    ,"additionalDisplay":"Kumamoto, Japan"
+  },
+  {
+     "value":"KMQ"
+    ,"display":"Komatsu"
+    ,"additionalDisplay":"Komatsu, Japan"
+  },
+  {
+     "value":"KMS"
+    ,"display":"Kumasi"
+    ,"additionalDisplay":"Kumasi, Ghana"
+  },
+  {
+     "value":"KOA"
+    ,"display":"Kona Intl"
+    ,"additionalDisplay":"Kona, HI, United States"
+  },
+  {
+     "value":"KOJ"
+    ,"display":"Kagoshima"
+    ,"additionalDisplay":"Kagoshima, Japan"
+  },
+  {
+     "value":"KOL"
+    ,"display":"Koumala"
+    ,"additionalDisplay":"Koumala, Central African Rep"
+  },
+  {
+     "value":"KRS"
+    ,"display":"Kjevik"
+    ,"additionalDisplay":"Kristiansand, Norway"
+  },
+  {
+     "value":"KRT"
+    ,"display":"Khartoum Intl"
+    ,"additionalDisplay":"Khartoum, Sudan"
+  },
+  {
+     "value":"KSU"
+    ,"display":"Kvernberget"
+    ,"additionalDisplay":"Kristiansund, Norway"
+  },
+  {
+     "value":"KTA"
+    ,"display":"Karratha"
+    ,"additionalDisplay":"Karratha, Australia"
+  },
+  {
+     "value":"KTM"
+    ,"display":"Tribhuvan"
+    ,"additionalDisplay":"Kathmandu, Nepal"
+  },
+  {
+     "value":"KTN"
+    ,"display":"Ketchikan Intl"
+    ,"additionalDisplay":"Ketchikan, AK, United States"
+  },
+  {
+     "value":"KUH"
+    ,"display":"Kushiro"
+    ,"additionalDisplay":"Kushiro, Japan"
+  },
+  {
+     "value":"KUL"
+    ,"display":"Kuala Lumpur Intl"
+    ,"additionalDisplay":"Kuala Lumpur, Malaysia"
+  },
+  {
+     "value":"KWI"
+    ,"display":"Kuwait International"
+    ,"additionalDisplay":"Kuwait, Kuwait"
+  },
+  {
+     "value":"KWL"
+    ,"display":"Guilin Liangjiang Intl"
+    ,"additionalDisplay":"Guilin, China"
+  },
+  {
+     "value":"LAD"
+    ,"display":"Quatro de Fevereiro"
+    ,"additionalDisplay":"Luanda, Angola"
+  },
+  {
+     "value":"LAN"
+    ,"display":"Capital Region Intl"
+    ,"additionalDisplay":"Lansing, United States"
+  },
+  {
+     "value":"LAP"
+    ,"display":"Manuel Marquez de Leon Intl"
+    ,"additionalDisplay":"La Paz, Mexico"
+  },
+  {
+     "value":"LAS"
+    ,"display":"Mccarran Intl"
+    ,"additionalDisplay":"Las Vegas, United States"
+  },
+  {
+     "value":"LAX"
+    ,"display":"Los Angeles Intl"
+    ,"additionalDisplay":"Los Angeles, United States"
+  },
+  {
+     "value":"LBB"
+    ,"display":"Preston Smith Intl"
+    ,"additionalDisplay":"Lubbock, TX, United States"
+  },
+  {
+     "value":"LBU"
+    ,"display":"Labuan"
+    ,"additionalDisplay":"Labuan, Malaysia"
+  },
+  {
+     "value":"LBV"
+    ,"display":"Libreville Intl"
+    ,"additionalDisplay":"Libreville, Gabon"
+  },
+  {
+     "value":"LED"
+    ,"display":"Pulkovo"
+    ,"additionalDisplay":"St Petersburg, Russia"
+  },
+  {
+     "value":"LEK"
+    ,"display":"Labe"
+    ,"additionalDisplay":"Labe, Guinea"
+  },
+  {
+     "value":"LEX"
+    ,"display":"Blue Grass"
+    ,"additionalDisplay":"Lexington, United States"
+  },
+  {
+     "value":"LFW"
+    ,"display":"Lome-Tokoin"
+    ,"additionalDisplay":"Lome, Togo"
+  },
+  {
+     "value":"LGA"
+    ,"display":"La Guardia"
+    ,"additionalDisplay":"New York, United States"
+  },
+  {
+     "value":"LGK"
+    ,"display":"Langkawi Intl"
+    ,"additionalDisplay":"Langkawi, Malaysia"
+  },
+  {
+     "value":"LHE"
+    ,"display":"Allama Iqbal Intl"
+    ,"additionalDisplay":"Lahore, Pakistan"
+  },
+  {
+     "value":"LIM"
+    ,"display":"J Chavez lntl"
+    ,"additionalDisplay":"Lima, Peru"
+  },
+  {
+     "value":"LKL"
+    ,"display":"Lakselv"
+    ,"additionalDisplay":"Lakselv, Norway"
+  },
+  {
+     "value":"LKO"
+    ,"display":"Chaudhary Charan Singh Intl"
+    ,"additionalDisplay":"Lucknow, India"
+  },
+  {
+     "value":"LLW"
+    ,"display":"Lilongwe Intl"
+    ,"additionalDisplay":"Lilongwe, Malawi"
+  },
+  {
+     "value":"LMM"
+    ,"display":"Fort Valley Federal Intl"
+    ,"additionalDisplay":"Los Mochis, Mexico"
+  },
+  {
+     "value":"LOS"
+    ,"display":"Murtala Muhammed"
+    ,"additionalDisplay":"Lagos, Nigeria"
+  },
+  {
+     "value":"LOU"
+    ,"display":"Bowman field"
+    ,"additionalDisplay":"Louiseville, United States"
+  },
+  {
+     "value":"LPA"
+    ,"display":"Arpt de Gran Canaria"
+    ,"additionalDisplay":"Las Palmas, Canary Islands"
+  },
+  {
+     "value":"LPB"
+    ,"display":"El Alto"
+    ,"additionalDisplay":"La Paz, Bolivia"
+  },
+  {
+     "value":"LRM"
+    ,"display":"La Romana Intl"
+    ,"additionalDisplay":"La Romana, Dominican Republic"
+  },
+  {
+     "value":"LSA"
+    ,"display":"Losuia"
+    ,"additionalDisplay":"Losuia, Papua New Guinea"
+  },
+  {
+     "value":"LUN"
+    ,"display":"Kenneth Kaunda Intl"
+    ,"additionalDisplay":"Lusaka, Zambia"
+  },
+  {
+     "value":"LWO"
+    ,"display":"Lviv Danylo Halytskyi Intl"
+    ,"additionalDisplay":"Lvov (Lwow, Lemberg), Ukraine"
+  },
+  {
+     "value":"LXR"
+    ,"display":"Luxor Intl"
+    ,"additionalDisplay":"Luxor, Egypt"
+  },
+  {
+     "value":"LYP"
+    ,"display":"Faisalabad Intl"
+    ,"additionalDisplay":"Faisalabad, Pakistan"
+  },
+  {
+     "value":"LYR"
+    ,"display":"Longyearbyen - Svalbard"
+    ,"additionalDisplay":"Longyearbyen - Svalbard, Norway"
+  },
+  {
+     "value":"MAA"
+    ,"display":"Chennai"
+    ,"additionalDisplay":"Chennai, India"
+  },
+  {
+     "value":"MAF"
+    ,"display":"Midland Intl Air and Space Port"
+    ,"additionalDisplay":"Midland/Odessa, TX, United States"
+  },
+  {
+     "value":"MAI"
+    ,"display":"Mangochi"
+    ,"additionalDisplay":"Mangochi, Malawi"
+  },
+  {
+     "value":"MAO"
+    ,"display":"Eduardo Gomes Intl"
+    ,"additionalDisplay":"Manaus, Brazil"
+  },
+  {
+     "value":"MAR"
+    ,"display":"La Chinita Intl"
+    ,"additionalDisplay":"Maracaibo, Venezuela"
+  },
+  {
+     "value":"MBA"
+    ,"display":"Moi Intl"
+    ,"additionalDisplay":"Mombasa, Kenya"
+  },
+  {
+     "value":"MBJ"
+    ,"display":"Sangster Intl"
+    ,"additionalDisplay":"Montego Bay, Jamaica"
+  },
+  {
+     "value":"MBS"
+    ,"display":"MBS Intl"
+    ,"additionalDisplay":"Saginaw, United States"
+  },
+  {
+     "value":"MCA"
+    ,"display":"Macenta"
+    ,"additionalDisplay":"Macenta, Guinea"
+  },
+  {
+     "value":"MCl"
+    ,"display":"Kansas City Intl"
+    ,"additionalDisplay":"Kansas City, United States"
+  },
+  {
+     "value":"MCO"
+    ,"display":"Orlando International"
+    ,"additionalDisplay":"Orlando, United States"
+  },
+  {
+     "value":"MCP"
+    ,"display":"Alberto Alcolumbre Intl"
+    ,"additionalDisplay":"Macapa, Brazil"
+  },
+  {
+     "value":"MCT"
+    ,"display":"Seeb"
+    ,"additionalDisplay":"Muscat, Oman"
+  },
+  {
+     "value":"MDC"
+    ,"display":"Sam Ratulangi Intl"
+    ,"additionalDisplay":"Manado, Indonesia"
+  },
+  {
+     "value":"MDE"
+    ,"display":"Jose Marie Cordova"
+    ,"additionalDisplay":"Medellín, Colombia"
+  },
+  {
+     "value":"MDL"
+    ,"display":"Mandalay - Annisaton"
+    ,"additionalDisplay":"Mandalay-Annisaton, Myanmar"
+  },
+  {
+     "value":"MDQ"
+    ,"display":"Mar del Plata"
+    ,"additionalDisplay":"Mar del Plata, Argentina"
+  },
+  {
+     "value":"MDT"
+    ,"display":"Harrisburg Intl"
+    ,"additionalDisplay":"Harrisburg, United States"
+  },
+  {
+     "value":"MDW"
+    ,"display":"Midway"
+    ,"additionalDisplay":"Chicago, United States"
+  },
+  {
+     "value":"MDZ"
+    ,"display":"El Plumerillo"
+    ,"additionalDisplay":"Mendoza, Argentina"
+  },
+  {
+     "value":"MEB"
+    ,"display":"Essendon"
+    ,"additionalDisplay":"Melbourne, Australia"
+  },
+  {
+     "value":"MED"
+    ,"display":"Mohammad Bin Abdulaziz Medina Airport"
+    ,"additionalDisplay":"Madinah, Mohammad Bin Abdulaziz, Saudi Arabia"
+  },
+  {
+     "value":"MEL"
+    ,"display":"Tullamarine"
+    ,"additionalDisplay":"Melbourne, Australia"
+  },
+  {
+     "value":"MEM"
+    ,"display":"Memphis Intl"
+    ,"additionalDisplay":"Memphis, United States"
+  },
+  {
+     "value":"MEX"
+    ,"display":"Juarez International"
+    ,"additionalDisplay":"Mexico City, Mexico"
+  },
+  {
+     "value":"MGA"
+    ,"display":"Augusto C Sandino"
+    ,"additionalDisplay":"Managua, Nicaragua"
+  },
+  {
+     "value":"MGQ"
+    ,"display":"Aden Adde International"
+    ,"additionalDisplay":"Mogadishu, Somalia"
+  },
+  {
+     "value":"MHD"
+    ,"display":"Mashhad Intl"
+    ,"additionalDisplay":"Mashad, Iran"
+  },
+  {
+     "value":"MIA"
+    ,"display":"Miami Intl"
+    ,"additionalDisplay":"Miami, United States"
+  },
+  {
+     "value":"MIC"
+    ,"display":"Crystal"
+    ,"additionalDisplay":"Minneapolis, United States"
+  },
+  {
+     "value":"MID"
+    ,"display":"Manuel Crescencio Rejon Intl"
+    ,"additionalDisplay":"Merida, Mexico"
+  },
+  {
+     "value":"MIR"
+    ,"display":"Monastir Habib Bourguiba Intl"
+    ,"additionalDisplay":"Monastir, Tunisia"
+  },
+  {
+     "value":"MKC"
+    ,"display":"Charles B Wheeler"
+    ,"additionalDisplay":"Kansas City, United States"
+  },
+  {
+     "value":"MKE"
+    ,"display":"General Mitchell"
+    ,"additionalDisplay":"Milwaukee, United States"
+  },
+  {
+     "value":"MLE"
+    ,"display":"Velana Intl"
+    ,"additionalDisplay":"Male, Maldives"
+  },
+  {
+     "value":"MLI"
+    ,"display":"Quad City Intl"
+    ,"additionalDisplay":"Moline, United States"
+  },
+  {
+     "value":"MLW"
+    ,"display":"Spriggs Payne Airport"
+    ,"additionalDisplay":"Monrovia, Liberia"
+  },
+  {
+     "value":"MNL"
+    ,"display":"Ninoy Aquino Intl"
+    ,"additionalDisplay":"Manila, Philippines"
+  },
+  {
+     "value":"MOL"
+    ,"display":"Aro"
+    ,"additionalDisplay":"Molde, Norway"
+  },
+  {
+     "value":"MON"
+    ,"display":"Mount Cook Airport"
+    ,"additionalDisplay":"Mount Cook, New Zealand"
+  },
+  {
+     "value":"MOW"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Moscow, Russia"
+  },
+  {
+     "value":"MPM"
+    ,"display":"Maputo - Maputo International"
+    ,"additionalDisplay":"Maputo, Mozambique"
+  },
+  {
+     "value":"MRU"
+    ,"display":"S.Seewoosagur Ram lnt"
+    ,"additionalDisplay":"Mauritius, Mauritius"
+  },
+  {
+     "value":"MRV"
+    ,"display":"Mineralnye Vody"
+    ,"additionalDisplay":"Mineralnye Vody, Russia"
+  },
+  {
+     "value":"MSP"
+    ,"display":"St Paul Intl"
+    ,"additionalDisplay":"Minneapolis, United States"
+  },
+  {
+     "value":"MSQ"
+    ,"display":"Minsk Intl 2"
+    ,"additionalDisplay":"Minsk, Belarus"
+  },
+  {
+     "value":"MSY"
+    ,"display":"Louis Armstrong"
+    ,"additionalDisplay":"New Orleans, United States"
+  },
+  {
+     "value":"MTY"
+    ,"display":"Gen Mariano Escobedo"
+    ,"additionalDisplay":"Monterrey, Mexico"
+  },
+  {
+     "value":"MUB"
+    ,"display":"Maun"
+    ,"additionalDisplay":"Maun, Botswana"
+  },
+  {
+     "value":"MUH"
+    ,"display":"Marsa Matruh Intl"
+    ,"additionalDisplay":"Marsa, Egypt"
+  },
+  {
+     "value":"MUR"
+    ,"display":"Marudi"
+    ,"additionalDisplay":"Marudi, Malaysia"
+  },
+  {
+     "value":"MUS"
+    ,"display":"Minami Torishima"
+    ,"additionalDisplay":"Marcus Island, Japan"
+  },
+  {
+     "value":"MUX"
+    ,"display":"Multan Intl"
+    ,"additionalDisplay":"Multan, Pakistan"
+  },
+  {
+     "value":"MVD"
+    ,"display":"Carrasco"
+    ,"additionalDisplay":"Montevideo, Uruguay"
+  },
+  {
+     "value":"MVR"
+    ,"display":"Maroua Salak"
+    ,"additionalDisplay":"Maroua, Cameroon"
+  },
+  {
+     "value":"MYY"
+    ,"display":"Miri"
+    ,"additionalDisplay":"Miri, Malaysia"
+  },
+  {
+     "value":"NAG"
+    ,"display":"Dr Babasaheb Ambedkar Intl"
+    ,"additionalDisplay":"Nagpur, India"
+  },
+  {
+     "value":"NAN"
+    ,"display":"Nadi Intl"
+    ,"additionalDisplay":"Nadi, Fiji"
+  },
+  {
+     "value":"NAS"
+    ,"display":"Lynden Pindling Intl"
+    ,"additionalDisplay":"Nassau, Bahamas"
+  },
+  {
+     "value":"NAT"
+    ,"display":"Aluizio Alves Intl"
+    ,"additionalDisplay":"Natal, Brazil"
+  },
+  {
+     "value":"NBO"
+    ,"display":"Jomo Kenyatta"
+    ,"additionalDisplay":"Nairobi, Kenya"
+  },
+  {
+     "value":"NDB"
+    ,"display":"Nouadhibou Intl"
+    ,"additionalDisplay":"Nouadhibou, Mauritania"
+  },
+  {
+     "value":"NDJ"
+    ,"display":"N’Djamena Intl"
+    ,"additionalDisplay":"N’Djamena, Chad"
+  },
+  {
+     "value":"NEW"
+    ,"display":"Lakefront"
+    ,"additionalDisplay":"New Orleans, United States"
+  },
+  {
+     "value":"NGO"
+    ,"display":"Chubu Centrair Intl"
+    ,"additionalDisplay":"Nagoya, Japan"
+  },
+  {
+     "value":"NIM"
+    ,"display":"Diori Hamani Intl"
+    ,"additionalDisplay":"Niamey, Nigeria"
+  },
+  {
+     "value":"NKC"
+    ,"display":"Nouakchott-Oumtounsy Intl"
+    ,"additionalDisplay":"Nouakchott, Mauritania"
+  },
+  {
+     "value":"NKG"
+    ,"display":"Nanjing Lukou Intl"
+    ,"additionalDisplay":"Nanking/Nanjing, China"
+  },
+  {
+     "value":"NLA"
+    ,"display":"Simon Mwansa Kapwepwe Intl"
+    ,"additionalDisplay":"Ndola, Zambia"
+  },
+  {
+     "value":"NOG"
+    ,"display":"Nogales Intl"
+    ,"additionalDisplay":"Nogales, Mexico"
+  },
+  {
+     "value":"NOU"
+    ,"display":"La Tontouta Intl"
+    ,"additionalDisplay":"Nouméa, New Caledonia"
+  },
+  {
+     "value":"NPL"
+    ,"display":"New Plymouth"
+    ,"additionalDisplay":"New Plymouth, New Zealand"
+  },
+  {
+     "value":"NRT"
+    ,"display":"Narita"
+    ,"additionalDisplay":"Tokyo, Japan"
+  },
+  {
+     "value":"NYC"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"New York, United States"
+  },
+  {
+     "value":"OAK"
+    ,"display":"Oakland Intl"
+    ,"additionalDisplay":"Oakland, United States"
+  },
+  {
+     "value":"ODS"
+    ,"display":"Odessa Intl"
+    ,"additionalDisplay":"Odessa, Ukraine"
+  },
+  {
+     "value":"OHD"
+    ,"display":"St Paul the Apostle"
+    ,"additionalDisplay":"Ohrid, Macedonia"
+  },
+  {
+     "value":"OIT"
+    ,"display":"Oita"
+    ,"additionalDisplay":"Oita, Japan"
+  },
+  {
+     "value":"OKA"
+    ,"display":"Naha"
+    ,"additionalDisplay":"Okinawa, Japan"
+  },
+  {
+     "value":"OKC"
+    ,"display":"Will Rogers World"
+    ,"additionalDisplay":"Oklahoma City, United States"
+  },
+  {
+     "value":"OMO"
+    ,"display":"Mostar"
+    ,"additionalDisplay":"Mostar, Bosnia and Herzegovina"
+  },
+  {
+     "value":"ONT"
+    ,"display":"Ontario Intl"
+    ,"additionalDisplay":"Ontario, United States"
+  },
+  {
+     "value":"OOL"
+    ,"display":"Gold Coast"
+    ,"additionalDisplay":"Gold Coast, Australia"
+  },
+  {
+     "value":"OPF"
+    ,"display":"Opa Locka"
+    ,"additionalDisplay":"Miami, United States"
+  },
+  {
+     "value":"ORD"
+    ,"display":"O Hare International"
+    ,"additionalDisplay":"Chicago, United States"
+  },
+  {
+     "value":"ORF"
+    ,"display":"Norfolk Intl"
+    ,"additionalDisplay":"Norfolk, United States"
+  },
+  {
+     "value":"ORG"
+    ,"display":"Zorg En Hoop"
+    ,"additionalDisplay":"Paramaribo, Surinam"
+  },
+  {
+     "value":"ORN"
+    ,"display":"Ahmed Ben Bella"
+    ,"additionalDisplay":"Oran, Algeria"
+  },
+  {
+     "value":"OSA"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Osaka, Japan"
+  },
+  {
+     "value":"OSL"
+    ,"display":"Oslo Gardermoen"
+    ,"additionalDisplay":"Oslo, Norway"
+  },
+  {
+     "value":"OUA"
+    ,"display":"Ouagadougou"
+    ,"additionalDisplay":"Ouagadougou, Burkina Faso"
+  },
+  {
+     "value":"OUD"
+    ,"display":"Oujda"
+    ,"additionalDisplay":"Oujda, Morocco"
+  },
+  {
+     "value":"OVB"
+    ,"display":"Novosibirsk - Tolmachevo"
+    ,"additionalDisplay":"Novosibirsk, Russia"
+  },
+  {
+     "value":"OZZ"
+    ,"display":"Ouarzazate"
+    ,"additionalDisplay":"Ouarzazate, Morocco"
+  },
+  {
+     "value":"PAP"
+    ,"display":"Toussaint L’Ouverture Intl"
+    ,"additionalDisplay":"Port Au Prince, Haiti"
+  },
+  {
+     "value":"PBH"
+    ,"display":"Paro"
+    ,"additionalDisplay":"Paro, Bhutan"
+  },
+  {
+     "value":"PBM"
+    ,"display":"Zanderij Intl"
+    ,"additionalDisplay":"Paramaribo, Surinam"
+  },
+  {
+     "value":"PDG"
+    ,"display":"Minangkabau Intl"
+    ,"additionalDisplay":"Padang, Indonesia"
+  },
+  {
+     "value":"PDX"
+    ,"display":"Portland Intl"
+    ,"additionalDisplay":"Portland, United States"
+  },
+  {
+     "value":"PEK"
+    ,"display":"Beijing Capital intl"
+    ,"additionalDisplay":"Beijing, China"
+  },
+  {
+     "value":"PEN"
+    ,"display":"Penang International"
+    ,"additionalDisplay":"Penang, Malaysia"
+  },
+  {
+     "value":"PER"
+    ,"display":"Perth"
+    ,"additionalDisplay":"Perth, Australia"
+  },
+  {
+     "value":"PET"
+    ,"display":"João Simões Lopes Neto Intl"
+    ,"additionalDisplay":"Pelotas, Brazil"
+  },
+  {
+     "value":"PEW"
+    ,"display":"Bacha Khan Intl"
+    ,"additionalDisplay":"Peshawar, Pakistan"
+  },
+  {
+     "value":"PHC"
+    ,"display":"Port Harcourt Intl"
+    ,"additionalDisplay":"Port Harcourt, Nigeria"
+  },
+  {
+     "value":"PHE"
+    ,"display":"Port Hedland intl"
+    ,"additionalDisplay":"Port Hedland, Australia"
+  },
+  {
+     "value":"PHL"
+    ,"display":"Philadelphia Intl"
+    ,"additionalDisplay":"Philadelphia, United States"
+  },
+  {
+     "value":"PHX"
+    ,"display":"Sky Harbour Intl"
+    ,"additionalDisplay":"Phoenix, United States"
+  },
+  {
+     "value":"PIU"
+    ,"display":"Concha Iberico Intl"
+    ,"additionalDisplay":"Piura, Peru"
+  },
+  {
+     "value":"PKR"
+    ,"display":"Pokhara"
+    ,"additionalDisplay":"Pokhara, Nepal"
+  },
+  {
+     "value":"PLO"
+    ,"display":"Port Lincoln"
+    ,"additionalDisplay":"Port Lincoln, Australia"
+  },
+  {
+     "value":"PlT"
+    ,"display":"Pittsburgh Intl"
+    ,"additionalDisplay":"Pittsburgh, United States"
+  },
+  {
+     "value":"PLZ"
+    ,"display":"Port Elizabeth"
+    ,"additionalDisplay":"Port Elizabeth, South Africa"
+  },
+  {
+     "value":"PMR"
+    ,"display":"Palmerston North"
+    ,"additionalDisplay":"Palmerston North, New Zealand"
+  },
+  {
+     "value":"PNE"
+    ,"display":"North East Philadelphia"
+    ,"additionalDisplay":"Philadelphia North, United States"
+  },
+  {
+     "value":"PNH"
+    ,"display":"Phnom Penh Intl"
+    ,"additionalDisplay":"Phnom Penh, Cambodia"
+  },
+  {
+     "value":"PNR"
+    ,"display":"Pointe Noire"
+    ,"additionalDisplay":"Pointe Noire, Congo (Rep)"
+  },
+  {
+     "value":"POA"
+    ,"display":"Salgado Filho"
+    ,"additionalDisplay":"Porto Alegre, Brazil"
+  },
+  {
+     "value":"POG"
+    ,"display":"Port Gentil Intl"
+    ,"additionalDisplay":"Port Gentil, Gabon"
+  },
+  {
+     "value":"POL"
+    ,"display":"Pemba"
+    ,"additionalDisplay":"Pemba, Mozambique"
+  },
+  {
+     "value":"POM"
+    ,"display":"Jacksons Intl"
+    ,"additionalDisplay":"Port Moresby, Papua New Guinea"
+  },
+  {
+     "value":"POP"
+    ,"display":"Gregorio Luperon Intl"
+    ,"additionalDisplay":"Puerto Plata, Dominican Republic"
+  },
+  {
+     "value":"POS"
+    ,"display":"Piarco"
+    ,"additionalDisplay":"Port of Spain, Trinidad & Tobago"
+  },
+  {
+     "value":"PPT"
+    ,"display":"Faaa"
+    ,"additionalDisplay":"Papeete, French Polynesia"
+  },
+  {
+     "value":"PRA"
+    ,"display":"Justo Jose de Urquiza"
+    ,"additionalDisplay":"Parana, Argentina"
+  },
+  {
+     "value":"PRI"
+    ,"display":"Praslin Island"
+    ,"additionalDisplay":"Praslin Island, Seychelles"
+  },
+  {
+     "value":"PRN"
+    ,"display":"Pristina Intl"
+    ,"additionalDisplay":"Pristina, Serbia"
+  },
+  {
+     "value":"PRY"
+    ,"display":"Wonderboom Apt"
+    ,"additionalDisplay":"Pretoria, South Africa"
+  },
+  {
+     "value":"PSE"
+    ,"display":"Mercedita"
+    ,"additionalDisplay":"Ponce, Puerto Rico"
+  },
+  {
+     "value":"PTG"
+    ,"display":"Polokwane Intl"
+    ,"additionalDisplay":"Polokwane, South Africa"
+  },
+  {
+     "value":"PTP"
+    ,"display":"Pointe-a-Pitre Intl"
+    ,"additionalDisplay":"Grande-Terre, Guadeloupe"
+  },
+  {
+     "value":"PTY"
+    ,"display":"Tocumen International"
+    ,"additionalDisplay":"Panama City, Panama"
+  },
+  {
+     "value":"PUJ"
+    ,"display":"Punta Cana Intl"
+    ,"additionalDisplay":"Punta, Dominican Republic"
+  },
+  {
+     "value":"PUQ"
+    ,"display":"Carlos Ibanez del Campo Intl"
+    ,"additionalDisplay":"Punta Arenas, Chile"
+  },
+  {
+     "value":"PUS"
+    ,"display":"Gimhae Intl"
+    ,"additionalDisplay":"Pusan, South Korea"
+  },
+  {
+     "value":"PVD"
+    ,"display":"T. F. Intl"
+    ,"additionalDisplay":"Providence, United States"
+  },
+  {
+     "value":"PVG"
+    ,"display":"Shanghai Pudong Intl"
+    ,"additionalDisplay":"Shanghai, China"
+  },
+  {
+     "value":"PVR"
+    ,"display":"Licenciado Gustavo Diaz Ordaz Intl"
+    ,"additionalDisplay":"Puerto Vallarta, Mexico"
+  },
+  {
+     "value":"PWM"
+    ,"display":"Portland Intl"
+    ,"additionalDisplay":"Portland, United States"
+  },
+  {
+     "value":"PXM"
+    ,"display":"Puerto Escondido Intl"
+    ,"additionalDisplay":"Puerto, Mexico"
+  },
+  {
+     "value":"QRW"
+    ,"display":"Warri"
+    ,"additionalDisplay":"Warri, Nigeria"
+  },
+  {
+     "value":"RAI"
+    ,"display":"Nelson Mandela Intl"
+    ,"additionalDisplay":"Praia, Cape Verde"
+  },
+  {
+     "value":"RAK"
+    ,"display":"Marrakech - Menara"
+    ,"additionalDisplay":"Marrakech, Morocco"
+  },
+  {
+     "value":"RAR"
+    ,"display":"Rarotonga Intl"
+    ,"additionalDisplay":"Rarotonga, Cook Island"
+  },
+  {
+     "value":"RBA"
+    ,"display":"Sale"
+    ,"additionalDisplay":"Rabat, Morocco"
+  },
+  {
+     "value":"RDU"
+    ,"display":"Raleigh-Durham Intl"
+    ,"additionalDisplay":"Durham, United States"
+  },
+  {
+     "value":"REC"
+    ,"display":"Guararapes Int"
+    ,"additionalDisplay":"Recife, Brazil"
+  },
+  {
+     "value":"REK"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Reykjavik, Iceland"
+  },
+  {
+     "value":"RFD"
+    ,"display":"Chicago Rockford Intl"
+    ,"additionalDisplay":"Rockford, United States"
+  },
+  {
+     "value":"RGN"
+    ,"display":"Mingaladon"
+    ,"additionalDisplay":"Yangon, Burma"
+  },
+  {
+     "value":"RIC"
+    ,"display":"Richmond Intl"
+    ,"additionalDisplay":"Richmond, United States"
+  },
+  {
+     "value":"RIO"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Rio de Janeiro, Brazil"
+  },
+  {
+     "value":"RIY"
+    ,"display":"Riyan"
+    ,"additionalDisplay":"Riyan Mukalla, Yemen"
+  },
+  {
+     "value":"RKT"
+    ,"display":"Ras al Khaimah (Ras al Khaymah) Intl"
+    ,"additionalDisplay":"Ras-Al-Khaimah, United Arab Emirates"
+  },
+  {
+     "value":"RMF"
+    ,"display":"Marsa Alam Intl"
+    ,"additionalDisplay":"Marsa, Egypt"
+  },
+  {
+     "value":"RNO"
+    ,"display":"Reno-Tahoe Intl"
+    ,"additionalDisplay":"Reno, United States"
+  },
+  {
+     "value":"ROB"
+    ,"display":"Roberts Intl"
+    ,"additionalDisplay":"Monrovia, Liberia"
+  },
+  {
+     "value":"ROC"
+    ,"display":"Greater Rochester Intl"
+    ,"additionalDisplay":"Rochester, United States"
+  },
+  {
+     "value":"ROS"
+    ,"display":"Rosario-Islas Malvinas Intl"
+    ,"additionalDisplay":"Rosario, Argentina"
+  },
+  {
+     "value":"RSW"
+    ,"display":"Southwest Florida Intl"
+    ,"additionalDisplay":"Fort, United States"
+  },
+  {
+     "value":"RTB"
+    ,"display":"Juan Manuel Galvez Intl"
+    ,"additionalDisplay":"Roatan, Honduras"
+  },
+  {
+     "value":"RUH"
+    ,"display":"King Khalid Intl"
+    ,"additionalDisplay":"Riyadh, Saudi Arabia"
+  },
+  {
+     "value":"RUN"
+    ,"display":"Roland Garros Airport"
+    ,"additionalDisplay":"Saint Denis/Gillot, Reunion"
+  },
+  {
+     "value":"RYK"
+    ,"display":"Shaikh Zayed Intl"
+    ,"additionalDisplay":"Rahim, Pakistan"
+  },
+  {
+     "value":"SAH"
+    ,"display":"Sana’a International"
+    ,"additionalDisplay":"Sana’a, Yemen"
+  },
+  {
+     "value":"SAL"
+    ,"display":"Oscar Arnulfo Romero Intl"
+    ,"additionalDisplay":"San Salvadore, EI Salvador"
+  },
+  {
+     "value":"SAN"
+    ,"display":"Lindbergh Field Intl"
+    ,"additionalDisplay":"San Diego, United States"
+  },
+  {
+     "value":"SAO"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Sao Paulo, Brazil"
+  },
+  {
+     "value":"SAP"
+    ,"display":"Ramon villeda Morales"
+    ,"additionalDisplay":"San Pedro Sula, Honduras"
+  },
+  {
+     "value":"SAT"
+    ,"display":"San Antonio Intl"
+    ,"additionalDisplay":"San, United States"
+  },
+  {
+     "value":"SAV"
+    ,"display":"Savannah/Hilton Head Intl"
+    ,"additionalDisplay":"Savannah, United States"
+  },
+  {
+     "value":"SAW"
+    ,"display":"Sabiha Gokcen"
+    ,"additionalDisplay":"Istanbul, Turkey"
+  },
+  {
+     "value":"SBN"
+    ,"display":"South Bend Intl"
+    ,"additionalDisplay":"South, United States"
+  },
+  {
+     "value":"SBY"
+    ,"display":"Salisbury Ocean City Wicomico County"
+    ,"additionalDisplay":"Salisbury, United States"
+  },
+  {
+     "value":"SCL"
+    ,"display":"Santiago International"
+    ,"additionalDisplay":"Santiago, Chile"
+  },
+  {
+     "value":"SCU"
+    ,"display":"Antonio Maceo Airport"
+    ,"additionalDisplay":"Santiago, Cuba"
+  },
+  {
+     "value":"SCZ"
+    ,"display":"Suceava Intl"
+    ,"additionalDisplay":"Santa Cruz Island, Solomon Islands"
+  },
+  {
+     "value":"SDA"
+    ,"display":"Baghdad International"
+    ,"additionalDisplay":"Baghdad, Iraq"
+  },
+  {
+     "value":"SDF"
+    ,"display":"Standiford Field"
+    ,"additionalDisplay":"Louisville, United States"
+  },
+  {
+     "value":"SDJ"
+    ,"display":"Sendai"
+    ,"additionalDisplay":"Sendai, Japan"
+  },
+  {
+     "value":"SDQ"
+    ,"display":"Las Americas"
+    ,"additionalDisplay":"Santo Domingo, Dominican Republic"
+  },
+  {
+     "value":"SDV"
+    ,"display":"Sde Dov"
+    ,"additionalDisplay":"Tel Aviv Yafo, Israel"
+  },
+  {
+     "value":"SEA"
+    ,"display":"Seattle Tacoma Intl"
+    ,"additionalDisplay":"Seattle, United States"
+  },
+  {
+     "value":"SEB"
+    ,"display":"Sehba"
+    ,"additionalDisplay":"Sehba, Libya"
+  },
+  {
+     "value":"SEL"
+    ,"display":"Kimpo Intl"
+    ,"additionalDisplay":"Seoul, South Korea"
+  },
+  {
+     "value":"SEZ"
+    ,"display":"Seychelles Intl"
+    ,"additionalDisplay":"Mahe Island, Seychelles"
+  },
+  {
+     "value":"SFA"
+    ,"display":"Sfax-Thyna Intl"
+    ,"additionalDisplay":"Sfax, Tunisia"
+  },
+  {
+     "value":"SFD"
+    ,"display":"Las Flecheras"
+    ,"additionalDisplay":"San Fernando De Apure, Venezuela"
+  },
+  {
+     "value":"SFJ"
+    ,"display":"Sondre Stromfjord"
+    ,"additionalDisplay":"Sondre, Greenland"
+  },
+  {
+     "value":"SFN"
+    ,"display":"Sauce Viejo Airport"
+    ,"additionalDisplay":"Sante Fe, Argentina"
+  },
+  {
+     "value":"SFO"
+    ,"display":"San Francisco Intl"
+    ,"additionalDisplay":"San Francisco, United States"
+  },
+  {
+     "value":"SGF"
+    ,"display":"Springfield-Branson Rg"
+    ,"additionalDisplay":"Springfield, United States"
+  },
+  {
+     "value":"SGN"
+    ,"display":"Tan Son Nhat Intl"
+    ,"additionalDisplay":"Ho Chi Minh City, Viet-Nam"
+  },
+  {
+     "value":"SGP"
+    ,"display":"Shay Gap"
+    ,"additionalDisplay":"Shay Gap, Australia"
+  },
+  {
+     "value":"SHA"
+    ,"display":"Hongqiao"
+    ,"additionalDisplay":"Shanghai, China"
+  },
+  {
+     "value":"SHE"
+    ,"display":"Shenyang Taoxian Intl"
+    ,"additionalDisplay":"Sheyang, Indonesia"
+  },
+  {
+     "value":"SHJ"
+    ,"display":"Sharjah Intl"
+    ,"additionalDisplay":"Sharjah, Ajnam/Fujairah"
+  },
+  {
+     "value":"SIA"
+    ,"display":"Xiguan"
+    ,"additionalDisplay":"Xi’an, China"
+  },
+  {
+     "value":"SID"
+    ,"display":"Amilcar Cabral Intl"
+    ,"additionalDisplay":"Sal, Cape Verde"
+  },
+  {
+     "value":"SIG"
+    ,"display":"Isla Grande"
+    ,"additionalDisplay":"San Juan, Puerto Rico"
+  },
+  {
+     "value":"SIN"
+    ,"display":"Changi"
+    ,"additionalDisplay":"Singapore, Singapore"
+  },
+  {
+     "value":"SIP"
+    ,"display":"Simferopol Intl"
+    ,"additionalDisplay":"Simferopol, Ukraine"
+  },
+  {
+     "value":"SJC"
+    ,"display":"San Jose Intl"
+    ,"additionalDisplay":"San Jose, United States"
+  },
+  {
+     "value":"SJD"
+    ,"display":"Los Cabos Intl"
+    ,"additionalDisplay":"Los, Mexico"
+  },
+  {
+     "value":"SJJ"
+    ,"display":"Butmir"
+    ,"additionalDisplay":"Sarajevo, Bosnia Herzegovina"
+  },
+  {
+     "value":"SJO"
+    ,"display":"Juan Santamaria Intl"
+    ,"additionalDisplay":"San Jose, Costa Rica"
+  },
+  {
+     "value":"SJS"
+    ,"display":"San Jose de Chiquitos"
+    ,"additionalDisplay":"San Jose de Chiquitos, Bolivia"
+  },
+  {
+     "value":"SJU"
+    ,"display":"Luis Munoz Marin Intl"
+    ,"additionalDisplay":"San Juan, Puerto Rico"
+  },
+  {
+     "value":"SKB"
+    ,"display":"Robert L Bradshaw Intl"
+    ,"additionalDisplay":"St Kitts, St Kitts & Nevis"
+  },
+  {
+     "value":"SKD"
+    ,"display":"Samarkand Intl"
+    ,"additionalDisplay":"Samarkand, Uzbekistan"
+  },
+  {
+     "value":"SKP"
+    ,"display":"Alexander the Great"
+    ,"additionalDisplay":"Skopie, Macedonia"
+  },
+  {
+     "value":"SKT"
+    ,"display":"Sialkot"
+    ,"additionalDisplay":"Sialkot, Pakistan"
+  },
+  {
+     "value":"SKZ"
+    ,"display":"Sukkur"
+    ,"additionalDisplay":"Sukkur, Pakistan"
+  },
+  {
+     "value":"SLA"
+    ,"display":"Salta, Gen Belgrano"
+    ,"additionalDisplay":"Salta, Argentina"
+  },
+  {
+     "value":"SLC"
+    ,"display":"Salt Lake City Intl"
+    ,"additionalDisplay":"Salt Lake City, United States"
+  },
+  {
+     "value":"SLL"
+    ,"display":"Salalah Intl"
+    ,"additionalDisplay":"Salalah, Oman"
+  },
+  {
+     "value":"SLP"
+    ,"display":"Ponciano Arriaga Intl"
+    ,"additionalDisplay":"San Luis Potosi, Mexico"
+  },
+  {
+     "value":"SLU"
+    ,"display":"George F L Charles"
+    ,"additionalDisplay":"St Lucia, St Lucia"
+  },
+  {
+     "value":"SLZ"
+    ,"display":"Mal Cunha Machado"
+    ,"additionalDisplay":"Sao Luiz, Brazil"
+  },
+  {
+     "value":"SMF"
+    ,"display":"Sacramento Intl"
+    ,"additionalDisplay":"Sacramento, United States"
+  },
+  {
+     "value":"SOC"
+    ,"display":"Adisumarmo"
+    ,"additionalDisplay":"Solo City, Indonesia"
+  },
+  {
+     "value":"SPK"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Sapporo, Japan"
+  },
+  {
+     "value":"SPN"
+    ,"display":"Saipan Intl"
+    ,"additionalDisplay":"Saipan, US minor islands"
+  },
+  {
+     "value":"SRZ"
+    ,"display":"El Trompillo"
+    ,"additionalDisplay":"Santa Cruz, Bolivia"
+  },
+  {
+     "value":"SSA"
+    ,"display":"Luis Eduardo Magalhaes"
+    ,"additionalDisplay":"Salvador, Brazil"
+  },
+  {
+     "value":"SSG"
+    ,"display":"Saint Isabel"
+    ,"additionalDisplay":"Malabo, Equatorial Guinea"
+  },
+  {
+     "value":"SSH"
+    ,"display":"Sharm El Sheikh"
+    ,"additionalDisplay":"Sharm, Egypt"
+  },
+  {
+     "value":"STL"
+    ,"display":"Lambert-St Louis Intl"
+    ,"additionalDisplay":"St Louis, United States"
+  },
+  {
+     "value":"STT"
+    ,"display":"Cyril E King Intl"
+    ,"additionalDisplay":"St Thomas, Virgin Islands (US)"
+  },
+  {
+     "value":"SUB"
+    ,"display":"Juanda"
+    ,"additionalDisplay":"Surabaya, Indonesia"
+  },
+  {
+     "value":"SVD"
+    ,"display":"E.T. Joshua"
+    ,"additionalDisplay":"St Vincent, Dominica"
+  },
+  {
+     "value":"SVG"
+    ,"display":"Sola"
+    ,"additionalDisplay":"Stavanger, Norway"
+  },
+  {
+     "value":"SVO"
+    ,"display":"Sheremetyevo"
+    ,"additionalDisplay":"Moscow, Russia"
+  },
+  {
+     "value":"SWF"
+    ,"display":"Stewart Intl"
+    ,"additionalDisplay":"Newburgh, United States"
+  },
+  {
+     "value":"SXM"
+    ,"display":"Princess Juliana"
+    ,"additionalDisplay":"St Maarten, Netherlands Antilles"
+  },
+  {
+     "value":"SYD"
+    ,"display":"Kingsford Smith"
+    ,"additionalDisplay":"Sydney, Australia"
+  },
+  {
+     "value":"SYR"
+    ,"display":"Syracuse Hancock Intl"
+    ,"additionalDisplay":"Syracuse, United States"
+  },
+  {
+     "value":"SYZ"
+    ,"display":"Shiraz Intl"
+    ,"additionalDisplay":"Shiraz, Iran"
+  },
+  {
+     "value":"SZB"
+    ,"display":"Sultan Abdul Aziz Shah"
+    ,"additionalDisplay":"Kuala Lumpur, Malaysia"
+  },
+  {
+     "value":"SZF"
+    ,"display":"Samsun"
+    ,"additionalDisplay":"Samsun, Turkey"
+  },
+  {
+     "value":"SZX"
+    ,"display":"Shenzhen Bao’an"
+    ,"additionalDisplay":"Shenzhen, China"
+  },
+  {
+     "value":"TAB"
+    ,"display":"A. N. R. Robinson Intl"
+    ,"additionalDisplay":"Scarborough, Trinidad and Tobago"
+  },
+  {
+     "value":"TAI"
+    ,"display":"Taiz Intl"
+    ,"additionalDisplay":"Taiz, Yemen"
+  },
+  {
+     "value":"TAK"
+    ,"display":"Takamatsu"
+    ,"additionalDisplay":"Takamatsu, Japan"
+  },
+  {
+     "value":"TAM"
+    ,"display":"Gen F Javier Mina"
+    ,"additionalDisplay":"Tampico, Mexico"
+  },
+  {
+     "value":"TAO"
+    ,"display":"Qingdao Liuting Intl"
+    ,"additionalDisplay":"Qingdao, China"
+  },
+  {
+     "value":"TAS"
+    ,"display":"Tashkent Intl"
+    ,"additionalDisplay":"Tashkent, Uzbekistan"
+  },
+  {
+     "value":"TBS"
+    ,"display":"Novo Alexeyevka"
+    ,"additionalDisplay":"Tbilisi, Georgia"
+  },
+  {
+     "value":"TEL"
+    ,"display":"Telupid"
+    ,"additionalDisplay":"Telupid, Malaysia"
+  },
+  {
+     "value":"TGD"
+    ,"display":"Golubovci"
+    ,"additionalDisplay":"Podgorica, Serbia"
+  },
+  {
+     "value":"TGU"
+    ,"display":"Toncontin"
+    ,"additionalDisplay":"Tegucigalpa, Honduras"
+  },
+  {
+     "value":"THE"
+    ,"display":"Petronio Portella"
+    ,"additionalDisplay":"Teresina, Brazil"
+  },
+  {
+     "value":"THO"
+    ,"display":"Thorshofn"
+    ,"additionalDisplay":"Thorshofn, Iceland"
+  },
+  {
+     "value":"THR"
+    ,"display":"Mehrabad"
+    ,"additionalDisplay":"Tehran, Iran"
+  },
+  {
+     "value":"TIA"
+    ,"display":"Nene Tereza/Rinas Intl"
+    ,"additionalDisplay":"Tirana, Albania"
+  },
+  {
+     "value":"TIF"
+    ,"display":"Taif Regional"
+    ,"additionalDisplay":"Taif, Saudi Arabia"
+  },
+  {
+     "value":"TIJ"
+    ,"display":"Tijuana - Rodriguez Intl"
+    ,"additionalDisplay":"Tijuana, Mexico"
+  },
+  {
+     "value":"TIP"
+    ,"display":"Tripoli Intl"
+    ,"additionalDisplay":"Tripoli, Libya"
+  },
+  {
+     "value":"TIV"
+    ,"display":"Tivat"
+    ,"additionalDisplay":"Tivat, Montenegro"
+  },
+  {
+     "value":"TKO"
+    ,"display":"Tlokoeng"
+    ,"additionalDisplay":"Tlokoeng, Lesotho"
+  },
+  {
+     "value":"TKY"
+    ,"display":"Turkey Creek"
+    ,"additionalDisplay":"Turkey Creek, Australia"
+  },
+  {
+     "value":"TLH"
+    ,"display":"Tallahassee Intl"
+    ,"additionalDisplay":"Tallahassee, United States"
+  },
+  {
+     "value":"TLV"
+    ,"display":"Ben Gurion intl"
+    ,"additionalDisplay":"Tel Aviv Yafo, Israel"
+  },
+  {
+     "value":"TMS"
+    ,"display":"Sao Tome Intl"
+    ,"additionalDisplay":"Sao Tome, Sao Tome & Principe"
+  },
+  {
+     "value":"TNA"
+    ,"display":"Jinan Yaoqiang Intl"
+    ,"additionalDisplay":"Jinan, China"
+  },
+  {
+     "value":"TNG"
+    ,"display":"Tangier Ibn Battouta"
+    ,"additionalDisplay":"Tangier, Morocco"
+  },
+  {
+     "value":"TNR"
+    ,"display":"Ivato Intl"
+    ,"additionalDisplay":"Antananarivo, Madagascar"
+  },
+  {
+     "value":"TOS"
+    ,"display":"Tromso/Langnes"
+    ,"additionalDisplay":"Tromso, Norway"
+  },
+  {
+     "value":"TPA"
+    ,"display":"Tampa Intl"
+    ,"additionalDisplay":"Tampa, United States"
+  },
+  {
+     "value":"TPE"
+    ,"display":"Taiwan Taoyuan Intl"
+    ,"additionalDisplay":"Taipei, Taiwan"
+  },
+  {
+     "value":"TRD"
+    ,"display":"Vaemes"
+    ,"additionalDisplay":"Trondheim, Norway"
+  },
+  {
+     "value":"TRF"
+    ,"display":"Sandefjord Airport"
+    ,"additionalDisplay":"Torp, Norway"
+  },
+  {
+     "value":"TRV"
+    ,"display":"Trivandrum Intl"
+    ,"additionalDisplay":"Trivandrum, India"
+  },
+  {
+     "value":"TRW"
+    ,"display":"Bonriki"
+    ,"additionalDisplay":"Tarawa, Kiribati"
+  },
+  {
+     "value":"TRZ"
+    ,"display":"Tiruchirapalli Intl"
+    ,"additionalDisplay":"Tiruchirapalli, India"
+  },
+  {
+     "value":"TSE"
+    ,"display":"Astana International"
+    ,"additionalDisplay":"Astana, Kazakhstan"
+  },
+  {
+     "value":"TSN"
+    ,"display":"Tianjin Binhai Intl"
+    ,"additionalDisplay":"Tianjin, China"
+  },
+  {
+     "value":"TUC"
+    ,"display":"General Benjamín Matienzo"
+    ,"additionalDisplay":"Tucuman, Argentina"
+  },
+  {
+     "value":"TUL"
+    ,"display":"Tulsa Intl"
+    ,"additionalDisplay":"Tulsa, United States"
+  },
+  {
+     "value":"TUN"
+    ,"display":"Carthage"
+    ,"additionalDisplay":"Tunis, Tunisia"
+  },
+  {
+     "value":"TUR"
+    ,"display":"Tucurui"
+    ,"additionalDisplay":"Tucurui, Brazil"
+  },
+  {
+     "value":"TUS"
+    ,"display":"Tucson Intl"
+    ,"additionalDisplay":"Tucson, United States"
+  },
+  {
+     "value":"TUU"
+    ,"display":"Tabuk Regional"
+    ,"additionalDisplay":"Tabuk, Saudi Arabia"
+  },
+  {
+     "value":"TWU"
+    ,"display":"Tawau"
+    ,"additionalDisplay":"Tawau, Malaysia"
+  },
+  {
+     "value":"TYN"
+    ,"display":"Taiyuan Wusu Intl"
+    ,"additionalDisplay":"Taiyuan, China"
+  },
+  {
+     "value":"TYO"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Tokyo, Japan"
+  },
+  {
+     "value":"TZX"
+    ,"display":"Trabzon"
+    ,"additionalDisplay":"Trabzon, Turkey"
+  },
+  {
+     "value":"UAK"
+    ,"display":"Narsarsuaq"
+    ,"additionalDisplay":"Narsarsuaq, Greenland"
+  },
+  {
+     "value":"UGC"
+    ,"display":"Urgench Intl"
+    ,"additionalDisplay":"Urgench, Uzbekistan"
+  },
+  {
+     "value":"UIO"
+    ,"display":"Mariscal Sucre Intl"
+    ,"additionalDisplay":"Quito, Ecuador"
+  },
+  {
+     "value":"UKB"
+    ,"display":"Kobe"
+    ,"additionalDisplay":"Kobe, Japan"
+  },
+  {
+     "value":"ULN"
+    ,"display":"Chinggis Khaan Intl"
+    ,"additionalDisplay":"Ulaangom, Mongolia"
+  },
+  {
+     "value":"UPG"
+    ,"display":"Hasanudin"
+    ,"additionalDisplay":"Ujung Pandang, Indonesia"
+  },
+  {
+     "value":"URC"
+    ,"display":"Urumqi Diwopu Intl"
+    ,"additionalDisplay":"Urumqi, China"
+  },
+  {
+     "value":"USH"
+    ,"display":"Malvinas Argentinas Intl"
+    ,"additionalDisplay":"Ushuaia, Argentina"
+  },
+  {
+     "value":"UTP"
+    ,"display":"Utapao (Pattaya) Intl"
+    ,"additionalDisplay":"Utapao, Thailand"
+  },
+  {
+     "value":"UVF"
+    ,"display":"Hewanorra"
+    ,"additionalDisplay":"St Lucia, St Lucia"
+  },
+  {
+     "value":"VCP"
+    ,"display":"Viracopos/Campinas"
+    ,"additionalDisplay":"Sao Paulo, Brazil"
+  },
+  {
+     "value":"VDA"
+    ,"display":"Ovda"
+    ,"additionalDisplay":"Eilat, Israel"
+  },
+  {
+     "value":"VER"
+    ,"display":"Heriberto Jara Intl"
+    ,"additionalDisplay":"Veracruz, Mexico"
+  },
+  {
+     "value":"VIL"
+    ,"display":"Dakhla"
+    ,"additionalDisplay":"Dakhla, Mauritania"
+  },
+  {
+     "value":"VKO"
+    ,"display":"Vnukovo International"
+    ,"additionalDisplay":"Moscow, Russia"
+  },
+  {
+     "value":"VLI"
+    ,"display":"Bauerfield"
+    ,"additionalDisplay":"Port Vila, Vanuatu"
+  },
+  {
+     "value":"VNS"
+    ,"display":"Lal Bahadur Shastri"
+    ,"additionalDisplay":"Varanasi, India"
+  },
+  {
+     "value":"VNY"
+    ,"display":"Van Nuys"
+    ,"additionalDisplay":"Los Angeles, United States"
+  },
+  {
+     "value":"VRA"
+    ,"display":"Juan Gualberto Gomez"
+    ,"additionalDisplay":"Varadero, Cuba"
+  },
+  {
+     "value":"VSA"
+    ,"display":"Carlos Rovirosa Perez Intl"
+    ,"additionalDisplay":"Villahermosa, Mexico"
+  },
+  {
+     "value":"WAR"
+    ,"display":"Waris"
+    ,"additionalDisplay":"Waris, Indonesia"
+  },
+  {
+     "value":"WAS"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Washington, United States"
+  },
+  {
+     "value":"WDH"
+    ,"display":"Hosea Kutako Intl"
+    ,"additionalDisplay":"Windhoek, Namibia"
+  },
+  {
+     "value":"WEL"
+    ,"display":"Welkom"
+    ,"additionalDisplay":"Welkom, South Africa"
+  },
+  {
+     "value":"WIL"
+    ,"display":"Wilson Airport"
+    ,"additionalDisplay":"Nairobi, Kenya"
+  },
+  {
+     "value":"WLG"
+    ,"display":"Wellington intl"
+    ,"additionalDisplay":"Wellington, New Zealand"
+  },
+  {
+     "value":"WUH"
+    ,"display":"Wuhan Tianhe Intl"
+    ,"additionalDisplay":"Wuhan, China"
+  },
+  {
+     "value":"WVB"
+    ,"display":"Walvis Bay Intl"
+    ,"additionalDisplay":"Walvis, South Africa"
+  },
+  {
+     "value":"XIY"
+    ,"display":"Xi’an - Xianyang Intl"
+    ,"additionalDisplay":"Xi’an, China"
+  },
+  {
+     "value":"XMN"
+    ,"display":"Xiamen Gaoqi Intl"
+    ,"additionalDisplay":"Xiamen, China"
+  },
+  {
+     "value":"YAN"
+    ,"display":"Yangambi"
+    ,"additionalDisplay":"Yangambi, Congo DR"
+  },
+  {
+     "value":"YAO"
+    ,"display":"Yaounde"
+    ,"additionalDisplay":"Yaounde, Cameroon"
+  },
+  {
+     "value":"YEG"
+    ,"display":"Edmonton Intl"
+    ,"additionalDisplay":"Edmonton, Canada"
+  },
+  {
+     "value":"YFC"
+    ,"display":"Fredericton Intl"
+    ,"additionalDisplay":"Fredericton, Canada"
+  },
+  {
+     "value":"YHM"
+    ,"display":"John C Munro Hamilton Intl"
+    ,"additionalDisplay":"Hamilton, Canada"
+  },
+  {
+     "value":"YHZ"
+    ,"display":"Halifax Stanfield Intl"
+    ,"additionalDisplay":"Halifax, Canada"
+  },
+  {
+     "value":"YLW"
+    ,"display":"Kelowna Intl"
+    ,"additionalDisplay":"Kelowna, Canada"
+  },
+  {
+     "value":"YMM"
+    ,"display":"Fort McMurray Intl"
+    ,"additionalDisplay":"Fort McMurray, Canada"
+  },
+  {
+     "value":"YMX"
+    ,"display":"Mirabel"
+    ,"additionalDisplay":"Montreal, Canada"
+  },
+  {
+     "value":"YNB"
+    ,"display":"Prince Abdul Mohsin bin Abdulaziz"
+    ,"additionalDisplay":"Yanbu, Saudi Arabia"
+  },
+  {
+     "value":"YOW"
+    ,"display":"MacDonald-Cartier International"
+    ,"additionalDisplay":"Ottawa, Canada"
+  },
+  {
+     "value":"YQB"
+    ,"display":"Jean Lesage Intl"
+    ,"additionalDisplay":"Quebec, Canada"
+  },
+  {
+     "value":"YQG"
+    ,"display":"Windsor Intl"
+    ,"additionalDisplay":"Windsor, Canada"
+  },
+  {
+     "value":"YQM"
+    ,"display":"Greater Moncton Intl"
+    ,"additionalDisplay":"Moncton, Canada"
+  },
+  {
+     "value":"YQR"
+    ,"display":"Regina Intl"
+    ,"additionalDisplay":"Regina, Canada"
+  },
+  {
+     "value":"YQT"
+    ,"display":"Thunder Bay Intl"
+    ,"additionalDisplay":"Thunder, Canada"
+  },
+  {
+     "value":"YQX"
+    ,"display":"Gander international"
+    ,"additionalDisplay":"Gander, Canada"
+  },
+  {
+     "value":"YTO"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"Toronto, Canada"
+  },
+  {
+     "value":"YTZ"
+    ,"display":"Toronto Island/Billy Bishop"
+    ,"additionalDisplay":"Toronto, Canada"
+  },
+  {
+     "value":"YUL"
+    ,"display":"Pierre Elliott Intl"
+    ,"additionalDisplay":"Montreal, Canada"
+  },
+  {
+     "value":"YUM"
+    ,"display":"Yuma Intl"
+    ,"additionalDisplay":"Yuma, United States"
+  },
+  {
+     "value":"YVR"
+    ,"display":"Vancouver Intl"
+    ,"additionalDisplay":"Vancouver, Canada"
+  },
+  {
+     "value":"YWG"
+    ,"display":"James Armstrong Richardson"
+    ,"additionalDisplay":"Winnipeg, Canada"
+  },
+  {
+     "value":"YXE"
+    ,"display":"John G Diefenbaker Intl"
+    ,"additionalDisplay":"Saskatoon, Canada"
+  },
+  {
+     "value":"YXU"
+    ,"display":"Metropolitan Area"
+    ,"additionalDisplay":"London, Canada"
+  },
+  {
+     "value":"YXY"
+    ,"display":"Erik Nielsen Whitehorse Intl"
+    ,"additionalDisplay":"Whitehorse, Canada"
+  },
+  {
+     "value":"YYC"
+    ,"display":"Calgary Intl"
+    ,"additionalDisplay":"Calgary, Canada"
+  },
+  {
+     "value":"YYJ"
+    ,"display":"Victoria Intl"
+    ,"additionalDisplay":"Victoria, Canada"
+  },
+  {
+     "value":"YYT"
+    ,"display":"St. John’s Intl"
+    ,"additionalDisplay":"St John’s, Canada"
+  },
+  {
+     "value":"YYZ"
+    ,"display":"Pearson International"
+    ,"additionalDisplay":"Toronto, Canada"
+  },
+  {
+     "value":"ZAR"
+    ,"display":"Zaria"
+    ,"additionalDisplay":"Zaria, Nigeria"
+  },
+  {
+     "value":"ZCL"
+    ,"display":"Leobardo C Ruiz Intl"
+    ,"additionalDisplay":"Zacatecas, Mexico"
+  },
+  {
+     "value":"ZIH"
+    ,"display":"Ixtapa-Zihuatanejo Intl"
+    ,"additionalDisplay":"Ixtapa, Mexico"
+  },
+  {
+     "value":"ZLO"
+    ,"display":"Playa de Oro Intl"
+    ,"additionalDisplay":"Manzanillo, Mexico"
+  },
+  {
+     "value":"ZRH"
+    ,"display":"Zurich"
+    ,"additionalDisplay":"Zurich, Switzerland"
+  },
+  {
+     "value":"ZRM"
+    ,"display":"Sarmi Orai"
+    ,"additionalDisplay":"Sarmi, Indonesia"
+  },
+  {
+     "value":"ZSA"
+    ,"display":"San Salvador Intl"
+    ,"additionalDisplay":"San Salvador Island, Bahamas"
+  },
+  {
+     "value":"ZYL"
+    ,"display":"Osmani Intl"
+    ,"additionalDisplay":"Sylhet, Bangladesh"
+  }]

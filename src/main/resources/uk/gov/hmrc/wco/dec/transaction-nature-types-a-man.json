@@ -1,0 +1,37 @@
+[
+    {
+       "value":"1",
+       "display":"Transactions involving actual or intended transfer of ownership from residents to non- residents against financial or other compensation (except the transactions listed under 2, 7, 8)"
+    },
+    {
+       "value":"2",
+       "display":"Return and replacement of goods free of charge after registration of the original transaction"
+    },
+    {
+       "value":"3",
+       "display":"Transactions involving transfer of ownership without financial or in-kind compensation (for example, aid shipments)"
+    },
+    {
+       "value":"4",
+       "display":"Operations with a view to processing (2) under contract (no transfer of ownership to the processor)"
+    },
+    {
+       "value":"5",
+       "display":"Operations following processing under contract (no transfer of ownership to the processor)"
+    },
+    {
+       "value":"6",
+       "display":"Particular transactions recorded for national purposes"
+    },
+    {
+       "value":"7",
+       "display":"Operations under joint defence projects or other joint intergovernmental production programmes"
+    },
+    {
+       "value":"8",
+       "display":"Transactions involving the supply of building materials and technical equipment under a general construction or civil engineering contract for which no separate invoicing of the goods is required and an invoice for the total contract is issued"
+    },
+    {
+       "value":"9",
+       "display":"Other transactions which cannot be classified under other codes"
+    }]

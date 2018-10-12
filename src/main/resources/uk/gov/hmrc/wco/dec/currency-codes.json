@@ -1,0 +1,613 @@
+[
+    {
+       "value":"AFN"
+      ,"display":"Afghani"
+    },
+    {
+       "value":"ALL"
+      ,"display":"Lek"
+    },
+    {
+       "value":"AMD"
+      ,"display":"Armenian Dram"
+    },
+    {
+       "value":"ANG"
+      ,"display":"Netherlands Antillean Guilder"
+    },
+    {
+       "value":"AOA"
+      ,"display":"Kwanza"
+    },
+    {
+       "value":"ARS"
+      ,"display":"Argentine Peso"
+    },
+    {
+       "value":"AUD"
+      ,"display":"Australian Dollar"
+    },
+    {
+       "value":"AWG"
+      ,"display":"Aruban Florin"
+    },
+    {
+       "value":"AZN"
+      ,"display":"Azerbaijanian Manat"
+    },
+    {
+       "value":"BAM"
+      ,"display":"Convertible Mark"
+    },
+    {
+       "value":"BBD"
+      ,"display":"Barbados Dollar"
+    },
+    {
+       "value":"BDT"
+      ,"display":"Taka"
+    },
+    {
+       "value":"BGN"
+      ,"display":"Bulgarian Lev"
+    },
+    {
+       "value":"BHD"
+      ,"display":"Bahraini Dinar"
+    },
+    {
+       "value":"BIF"
+      ,"display":"Burundi Franc"
+    },
+    {
+       "value":"BMD"
+      ,"display":"Bermudian Dollar"
+    },
+    {
+       "value":"BND"
+      ,"display":"Brunei Dollar"
+    },
+    {
+       "value":"BOB"
+      ,"display":"Boliviano"
+    },
+    {
+       "value":"BRL"
+      ,"display":"Brazilian Real"
+    },
+    {
+       "value":"BSD"
+      ,"display":"Bahamian Dollar"
+    },
+    {
+       "value":"BWP"
+      ,"display":"Pula"
+    },
+    {
+       "value":"BYN"
+      ,"display":"Belarusian Ruble"
+    },
+    {
+       "value":"BZD"
+      ,"display":"Belize Dollar"
+    },
+    {
+       "value":"CAD"
+      ,"display":"Canadian Dollar"
+    },
+    {
+       "value":"CDF"
+      ,"display":"Congolese Franc"
+    },
+    {
+       "value":"CHF"
+      ,"display":"Swiss Franc"
+    },
+    {
+       "value":"CLP"
+      ,"display":"Chilean Peso"
+    },
+    {
+       "value":"CNY"
+      ,"display":"Yuan Renminbi"
+    },
+    {
+       "value":"COP"
+      ,"display":"Colombian Peso"
+    },
+    {
+       "value":"CRC"
+      ,"display":"Costa Rican Colon"
+    },
+    {
+       "value":"CUP"
+      ,"display":"Cuban Peso"
+    },
+    {
+       "value":"CVE"
+      ,"display":"Cabo Verde Escudo"
+    },
+    {
+       "value":"CZK"
+      ,"display":"Czech Koruna"
+    },
+    {
+       "value":"DJF"
+      ,"display":"Djibouti Franc"
+    },
+    {
+       "value":"DKK"
+      ,"display":"Danish Krone"
+    },
+    {
+       "value":"DOP"
+      ,"display":"Dominican Peso"
+    },
+    {
+       "value":"DZD"
+      ,"display":"Algerian Dinar"
+    },
+    {
+       "value":"EGP"
+      ,"display":"Egyptian Pound"
+    },
+    {
+       "value":"ERN"
+      ,"display":"Nakfa"
+    },
+    {
+       "value":"ETB"
+      ,"display":"Ethiopian Birr"
+    },
+    {
+       "value":"EUR"
+      ,"display":"Euro"
+    },
+    {
+       "value":"FJD"
+      ,"display":"Fiji Dollar"
+    },
+    {
+       "value":"FKP"
+      ,"display":"Falkland Islands Pound"
+    },
+    {
+       "value":"GBP"
+      ,"display":"Pounds Sterling"
+    },
+    {
+       "value":"GEL"
+      ,"display":"Lari"
+    },
+    {
+       "value":"GHS"
+      ,"display":"Ghananian Cedi"
+    },
+    {
+       "value":"GIP"
+      ,"display":"Gibraltar Pound"
+    },
+    {
+       "value":"GMD"
+      ,"display":"Dalasi"
+    },
+    {
+       "value":"GNF"
+      ,"display":"Guinean Franc"
+    },
+    {
+       "value":"GTQ"
+      ,"display":"Quetzal"
+    },
+    {
+       "value":"GYD"
+      ,"display":"Guyana Dollar"
+    },
+    {
+       "value":"HKD"
+      ,"display":"Hong Kong Dollar"
+    },
+    {
+       "value":"HNL"
+      ,"display":"Lempira"
+    },
+    {
+       "value":"HRK"
+      ,"display":"Kuna"
+    },
+    {
+       "value":"HTG"
+      ,"display":"Gourde"
+    },
+    {
+       "value":"HUF"
+      ,"display":"Forint"
+    },
+    {
+       "value":"IDR"
+      ,"display":"Rupiah"
+    },
+    {
+       "value":"ILS"
+      ,"display":"Israeli Shekel"
+    },
+    {
+       "value":"INR"
+      ,"display":"Indian Rupee"
+    },
+    {
+       "value":"IQD"
+      ,"display":"Iraqi Dinar"
+    },
+    {
+       "value":"IRR"
+      ,"display":"Iranian Rial"
+    },
+    {
+       "value":"ISK"
+      ,"display":"Iceland Krona"
+    },
+    {
+       "value":"JMD"
+      ,"display":"Jamaican Dollar"
+    },
+    {
+       "value":"JOD"
+      ,"display":"Jordanian Dinar"
+    },
+    {
+       "value":"JPY"
+      ,"display":"Yen"
+    },
+    {
+       "value":"KES"
+      ,"display":"Kenyan Shilling"
+    },
+    {
+       "value":"KGS"
+      ,"display":"Som"
+    },
+    {
+       "value":"KHR"
+      ,"display":"Riel"
+    },
+    {
+       "value":"KMF"
+      ,"display":"Comoro Franc"
+    },
+    {
+       "value":"KPW"
+      ,"display":"North Korean Won"
+    },
+    {
+       "value":"KRW"
+      ,"display":"Korean Won"
+    },
+    {
+       "value":"KWD"
+      ,"display":"Kuwaiti Dina"
+    },
+    {
+       "value":"KYD"
+      ,"display":"Cayman Islands Dollar"
+    },
+    {
+       "value":"KZT"
+      ,"display":"Tenge"
+    },
+    {
+       "value":"LAK"
+      ,"display":"Kip"
+    },
+    {
+       "value":"LBP"
+      ,"display":"Lebanese Pound"
+    },
+    {
+       "value":"LKR"
+      ,"display":"Sri Lanka Rupee"
+    },
+    {
+       "value":"LRD"
+      ,"display":"Liberian Dollar"
+    },
+    {
+       "value":"LYD"
+      ,"display":"Libyan Dinar"
+    },
+    {
+       "value":"MAD"
+      ,"display":"Moroccan Dirham"
+    },
+    {
+       "value":"MDL"
+      ,"display":"Moldovan Leu"
+    },
+    {
+       "value":"MGA"
+      ,"display":"Malagasy Ariary"
+    },
+    {
+       "value":"MKD"
+      ,"display":"Denar"
+    },
+    {
+       "value":"MMK"
+      ,"display":"Kyat"
+    },
+    {
+       "value":"MNT"
+      ,"display":"Tugrik"
+    },
+    {
+       "value":"MOP"
+      ,"display":"Pataca"
+    },
+    {
+       "value":"MRO"
+      ,"display":"Ouguiya"
+    },
+    {
+       "value":"MUR"
+      ,"display":"Mauritius Rupee"
+    },
+    {
+       "value":"MVR"
+      ,"display":"Rufiyaa"
+    },
+    {
+       "value":"MWK"
+      ,"display":"Malawi Kwacha"
+    },
+    {
+       "value":"MXN"
+      ,"display":"Mexican Peso"
+    },
+    {
+       "value":"MYR"
+      ,"display":"Malaysian Ringgit"
+    },
+    {
+       "value":"MZN"
+      ,"display":"Mozambique Metical"
+    },
+    {
+       "value":"NAD"
+      ,"display":"Namibia Dollar"
+    },
+    {
+       "value":"NGN"
+      ,"display":"Naira"
+    },
+    {
+       "value":"NIO"
+      ,"display":"Cordoba Oro"
+    },
+    {
+       "value":"NOK"
+      ,"display":"Norwegian Krone"
+    },
+    {
+       "value":"NPR"
+      ,"display":"Nepalese Rupee"
+    },
+    {
+       "value":"NZD"
+      ,"display":"New Zealand Dollar"
+    },
+    {
+       "value":"OMR"
+      ,"display":"Rial Omani"
+    },
+    {
+       "value":"PAB"
+      ,"display":"Balboa"
+    },
+    {
+       "value":"PEN"
+      ,"display":"Sol"
+    },
+    {
+       "value":"PGK"
+      ,"display":"Kina"
+    },
+    {
+       "value":"PHP"
+      ,"display":"Philippine Peso"
+    },
+    {
+       "value":"PKR"
+      ,"display":"Pakistan Rupee"
+    },
+    {
+       "value":"PLN"
+      ,"display":"Zloty"
+    },
+    {
+       "value":"PYG"
+      ,"display":"Guarani"
+    },
+    {
+       "value":"QAR"
+      ,"display":"Qatari Rial"
+    },
+    {
+       "value":"RON"
+      ,"display":"Romanian Leu"
+    },
+    {
+       "value":"RSD"
+      ,"display":"Serbian Dinar"
+    },
+    {
+       "value":"RUB"
+      ,"display":"Russian Ruble"
+    },
+    {
+       "value":"RWF"
+      ,"display":"Rwanda Franc"
+    },
+    {
+       "value":"SAR"
+      ,"display":"Saudi Riyal"
+    },
+    {
+       "value":"SBD"
+      ,"display":"Solomon Islands Dollar"
+    },
+    {
+       "value":"SCR"
+      ,"display":"Seychelles Rupee"
+    },
+    {
+       "value":"SDG"
+      ,"display":"Sudanese Pound"
+    },
+    {
+       "value":"SEK"
+      ,"display":"Swedish Krona"
+    },
+    {
+       "value":"SGD"
+      ,"display":"Singapore Dollar"
+    },
+    {
+       "value":"SHP"
+      ,"display":"St Helena Pound"
+    },
+    {
+       "value":"SLL"
+      ,"display":"Leone"
+    },
+    {
+       "value":"SOS"
+      ,"display":"Somali Shilling"
+    },
+    {
+       "value":"SRD"
+      ,"display":"Surinam Dolla"
+    },
+    {
+       "value":"SSP"
+      ,"display":"South Sudanese Pound"
+    },
+    {
+       "value":"STD"
+      ,"display":"Dobra"
+    },
+    {
+       "value":"SVC"
+      ,"display":"El Salvador Colon"
+    },
+    {
+       "value":"SYP"
+      ,"display":"Syrian Pound"
+    },
+    {
+       "value":"SZL"
+      ,"display":"Lilangeni"
+    },
+    {
+       "value":"THB"
+      ,"display":"Baht"
+    },
+    {
+       "value":"TJS"
+      ,"display":"Somoni"
+    },
+    {
+       "value":"TMT"
+      ,"display":"Turkmenistan New Manat"
+    },
+    {
+       "value":"TND"
+      ,"display":"Tunisian Dinar"
+    },
+    {
+       "value":"TOP"
+      ,"display":"Pa’anga"
+    },
+    {
+       "value":"TRY"
+      ,"display":"Turkish Lira"
+    },
+    {
+       "value":"TTD"
+      ,"display":"Trinidad and Tobago Dollar"
+    },
+    {
+       "value":"TWD"
+      ,"display":"New Taiwan Dollar"
+    },
+    {
+       "value":"TZS"
+      ,"display":"Tanzanian Shilling"
+    },
+    {
+       "value":"UAH"
+      ,"display":"Hryvnia"
+    },
+    {
+       "value":"USD"
+      ,"display":"US Dollar"
+    },
+    {
+       "value":"UYI"
+      ,"display":"Uruguay Peso en Unidades"
+    },
+    {
+       "value":"UZS"
+      ,"display":"Uzbekistan Sum"
+    },
+    {
+       "value":"VEF"
+      ,"display":"Bolívar"
+    },
+    {
+       "value":"VND"
+      ,"display":"Dong"
+    },
+    {
+       "value":"VUV"
+      ,"display":"Vatu"
+    },
+    {
+       "value":"WST"
+      ,"display":"Tala"
+    },
+    {
+       "value":"XAF"
+      ,"display":"CFA Franc"
+    },
+    {
+       "value":"XCD"
+      ,"display":"East Caribbean Dollar"
+    },
+    {
+       "value":"XOF"
+      ,"display":"CFA Franc BCEAO"
+    },
+    {
+       "value":"XPF"
+      ,"display":"CFP Franc"
+    },
+    {
+       "value":"YER"
+      ,"display":"Yemeni Rial"
+    },
+    {
+       "value":"YUM"
+      ,"display":"Yugoslavian Dinar"
+    },
+    {
+       "value":"ZAR"
+      ,"display":"Rand"
+    },
+    {
+       "value":"ZMW"
+      ,"display":"Zambian Kwacha"
+    },
+    {
+       "value":"ZWL"
+      ,"display":"Zimbabwe Dollar"
+    }]

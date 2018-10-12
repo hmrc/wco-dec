@@ -1,0 +1,17 @@
+[
+    {
+       "value":"1",
+       "display":"Party relationship, whether there is price influence or not."
+    },
+    {
+       "value":"2",
+       "display":"Restrictions as to the disposal or use of the goods by the buyer in accordance with Article 70(3)(a) of the Code."
+    },
+    {
+       "value":"3",
+       "display":"Sale or price is subject to some condition or consideration in accordance with Article 70(3)(b) of the Code."
+    },
+    {
+       "value":"4",
+       "display":"The sale is subject to an arrangement under which part of the proceeds of any subsequent resale, disposal or use accrues directly or indirectly to the seller."
+    }]

@@ -1,0 +1,641 @@
+[
+    {
+       "value":"100"
+      ,"display":"Authorisation by customs declaration only: special procedure authorisation granted on the declaration at the time of entry to the procedure."
+    },
+    {
+       "value":"600"
+      ,"display":"Simplification of the drawing up of customs declarations for goods falling under different tariff subheadings. The following conditions must be met in order to use this simplification:\n- the total display of the goods declared must not exceed £6,000\n- goods may not be subject to any prohibitions or restrictions\n- goods must not be subject to any licences\n- claims to quota may not be made\n- claims to preference are not allowed\n- goods must not be subject to CAP or ADD charges"
+    },
+    {
+       "value":"10200"
+      ,"display":"Full authorisation holders only: discharge of Inward Processing (Article 241(1) EU reg. number 2015/2446 (DA))."
+    },
+    {
+       "value":"10300"
+      ,"display":"Discharge of inward processing (specific commercial policy measures): Where goods placed under the inward processing procedure are subject to specific commercial policy measures and such measures continue to be applicable at the time when the goods, whether in the form of processed products or not, are placed under a subsequent customs procedure (refer to notice 3001)."
+    },
+    {
+       "value":"10500"
+      ,"display":"Full authorisation holders only: Discharge of temporary admission (article 238 EU reg. number 2015/2446 (DA))."
+    },
+    {
+       "value":"10700"
+      ,"display":"Request to use the original tariff classification of the goods in situations provided for in article 86(2) of the code."
+    },
+    {
+       "value":"40100"
+      ,"display":"‘Longer period of validity of the proof of the customs status of Union goods’."
+    },
+    {
+       "value":"AUC01"
+      ,"display":"To be used by EIDR authorised auction houses only to declare the date of auction sale (tax point) and the hammer price for revenue calculation purposes."
+    },
+    {
+       "value":"BULKD"
+      ,"display":"Bulking of consignments of documents, refer to import prohibitions and restrictions and additional procedure code (data element 1/11) 1LV for details. Use of this code also requires both the:\n- manifest reference as a ‘previous document in data element 2/1 using code 785\n- number of packages for each goods item in data element 6/10 (item level) and the total number of packages in data element 6/18 (at header level)"
+    },
+    {
+       "value":"CAP01"
+      ,"display":"Certify that the eggs will be marketed unaltered immediately after importation."
+    },
+    {
+       "value":"CAP02"
+      ,"display":"Certify that the eggs will be marketed unaltered immediately after importation."
+    },
+    {
+       "value":"CAP02"
+      ,"display":"Declare that the goods imported contain no sugar other than that naturally occurring in the goods."
+    },
+    {
+       "value":"CAP03"
+      ,"display":"Declare that all the goods covered by this entry will be weighed and sampled at… under the supervision of the Sugar Association of London/ Lancashire/ Greenock, and the declarant is requesting acceptance of Sugar Association weights and polarisations. The declarant is also undertaking to give notice to the proper HMRC officer before weighing and sampling is commenced and to furnish with all despatch an account by the Sugar Association showing the weights and polarisations of the goods imported."
+    },
+    {
+       "value":"CAP04"
+      ,"display":"Declare that the olive oil content does not exceed 3%."
+    },
+    {
+       "value":"CAP05"
+      ,"display":"Declare goods subject to safeguard charge where the invoice unit price will be used."
+    },
+    {
+       "value":"CAP06"
+      ,"display":"Declare goods subject to safeguard charge – reference price used (this AI code must be combined with AI code OVR01)."
+    },
+    {
+       "value":"CAP09"
+      ,"display":"Declare that the banana weighing certificates, required in accordance with Commission Implementing Regulation (EU) 2015/2447, Article 251) are attached."
+    },
+    {
+       "value":"CAP10"
+      ,"display":"This code is used to waive their attendance at any physical examination, substitution or a conformity checks. The declarant may provide contact details to be informed of examination outcomes and sampling."
+    },
+    {
+       "value":"CAP11"
+      ,"display":"These goods are being imported or exported either with a CAPpaper licence, or without any licence. Authentication of a copy of the declaration is required, under Regulation 1301/2006 article 5, to support an application for an import tariff quota licence."
+    },
+    {
+       "value":"CAP29"
+      ,"display":"Declare that peas or lupin seeds are to be placed under control."
+    },
+    {
+       "value":"CCL14"
+      ,"display":"Request for the 14-day election procedure by consignees registered for levy purposes. See additional procedure code (data element 1/11) 1CL."
+    },
+    {
+       "value":"CCLFC"
+      ,"display":"Relief from the full rate of levy is being claimed. See additional procedure code (data element 1/11) 1CL."
+    },
+    {
+       "value":"CCLFL"
+      ,"display":"Full rate of levy is being declared and paid at import. See additional procedure code (data element 1/11) 1CL"
+    },
+    {
+       "value":"CCLPR"
+      ,"display":"Where partial relief from climate change levy is claimed for approved entities. See additional procedure code (data element 1/11) 1CL."
+    },
+    {
+       "value":"CCR01"
+      ,"display":"Imports by charities free of duty and VAT. See additional procedure code (data element 1/11) C10, C20, C49 and C50."
+    },
+    {
+       "value":"ECO01"
+      ,"display":"Goods of any kind the processing of goods not listed in annex 71-02 to delegated regulation (EU) 2015/2446."
+    },
+    {
+       "value":"ECO02"
+      ,"display":"Goods of any kind – Repair."
+    },
+    {
+       "value":"ECO03"
+      ,"display":"Processing of goods directly or indirectly put at the disposal of the holder of the authorisation, carried out according to specifications on behalf of a person established outside of the customs territory of the Union, generally against payment of processing costs alone."
+    },
+    {
+       "value":"ECO04"
+      ,"display":"The processing of durum wheat into pasta."
+    },
+    {
+       "value":"ECO05"
+      ,"display":"The placing of goods under inward processing within the limits of the quantity determined on the basis of a balance in accordance with article 18 EU Reg number 510/2014."
+    },
+    {
+       "value":"ECO06"
+      ,"display":"The processing of goods which are listed in annex 71-02 to delegated regulation (EU) 2015/2446, in case of unavailability of goods produced in the union sharing the same 8-digit combined nomenclature code, the same commercial quality and technical characteristics as the goods intended to be imported for the processing operations envisaged."
+    },
+    {
+       "value":"ECO07"
+      ,"display":"The processing of goods which are listed in annex 71-02 to delegated regulation (EU) 2015/2446, provided there are differences in price between goods produced in the union and those intended to be imported, where comparable goods can’t be used because their price wouldn’t make the proposed commercial operation economically viable."
+    },
+    {
+       "value":"ECO08"
+      ,"display":"The processing of goods which are listed in annex 71-02 to delegated regulation (EU) 2015/2446, provided there are contractual obligations, where comparable goods don’t conform to the contractual requirements of the third-country purchaser of the processed products, or where, in accordance with the contract, the processed products must be obtained from the goods intended to be placed under inward processing in order to comply with provisions concerning the protection of industrial or commercial property rights."
+    },
+    {
+       "value":"ECO09"
+      ,"display":"The processing of goods which are listed in annex 71-02 to delegated regulation (EU) 2015/2446, provided the aggregate display of the goods to be placed under the inward processing procedure per applicant and calendar year for each eight-digit combined nomenclature code doesn’t exceed €150,000."
+    },
+    {
+       "value":"ECO10"
+      ,"display":"The processing of goods to ensure their compliance with technical requirements for their release for free circulation. Only for use with goods not subject to an agricultural or commercial policy measure, or provisional or definitive anti-dumping, or provisional or definitive countervailing duty."
+    },
+    {
+       "value":"ECO11"
+      ,"display":"The processing of goods of a non-commercial nature. Any electronics type of components, parts, assemblies (including sub-assemblies), or materials (whether or not electronic), which are vital to the electronic working performance of the processed product."
+    },
+    {
+       "value":"ECO12"
+      ,"display":"The processing of goods obtained under a previous authorisation, the issuing of which was subject to an examination of the economic conditions."
+    },
+    {
+       "value":"ECO13"
+      ,"display":"The processing of solid and fluid fractions of palm oil, coconut oil, fluid fractions of coconut oil, palm kernel oil, fluid fractions of palm kernel oil, babassu oil (see ECO12 for relevant CN codes) or castor oil (falling within CN code 1515 30 90) into products which aren’t destined for the food sector."
+    },
+    {
+       "value":"ECO14"
+      ,"display":"The processing into products to be incorporated in or used for civil aircraft for which an airworthiness certificate has been issued."
+    },
+    {
+       "value":"ECO15"
+      ,"display":"The processing into products benefiting from the autonomous suspension of import duty on certain weapons and military equipment in accordance with council regulation (EC) number 150/2003."
+    },
+    {
+       "value":"ECO16"
+      ,"display":"The processing of goods into samples: Products falling within CN codes 2707 10, 2707 20, 2707 30, 2707 50, 2707 91 00, 2707 99 30, 2707 99 91, 2707 99 99 and 2710 00."
+    },
+    {
+       "value":"ECO17"
+      ,"display":"The processing of any electronic type of components, parts, assemblies or any other materials into information technology products."
+    },
+    {
+       "value":"ECO18"
+      ,"display":"The processing of goods falling within combined nomenclature codes 2707 or 2710 into products falling within combined nomenclature codes 2707, 2710 or 2902."
+    },
+    {
+       "value":"ECO19"
+      ,"display":"The reduction to waste and scrap, destruction, recovery of parts or components."
+    },
+    {
+       "value":"ECO20"
+      ,"display":"Denaturing."
+    },
+    {
+       "value":"ECO21"
+      ,"display":"Usual forms of handling referred to in article 220, EU reg. number 952/2013."
+    },
+    {
+       "value":"ECO22"
+      ,"display":"The aggregate display of goods to be placed under the inward processing procedure per applicant and calendar year for each eight-digit combined nomenclature code doesn’t exceed €150,000 with regard to goods which are covered by annex 71-02 to delegated regulation (EU) 2015/2446 and €300,000 for other goods, except where the goods intended to be placed under the inward-processing procedure would be subject to a provisional or definitive anti-dumping duty, a countervailing duty, a safeguard measure or an additional duty resulting from a suspension of concessions if they were declared for release for free circulation."
+    },
+    {
+       "value":"ECONE"
+      ,"display":"Excise registered consignee."
+    },
+    {
+       "value":"ECONR"
+      ,"display":"Excise registered consignor."
+    },
+    {
+       "value":"GEN01"
+      ,"display":"Where applicable: duty relief claimed on basis of an INF1."
+    },
+    {
+       "value":"GEN02"
+      ,"display":"Where applicable: relief not claimed on the basis of an INF1."
+    },
+    {
+       "value":"GEN03"
+      ,"display":"Relief claimed under returned goods relief. Waiver of time limit claimed."
+    },
+    {
+       "value":"GEN04"
+      ,"display":"Entered under the single rate entry procedure set out in Notice 200."
+    },
+    {
+       "value":"GEN06"
+      ,"display":"Biological Sample imported under the arrangements of BO 42324/53. Only to be opened under MOD (PE supervision)"
+    },
+    {
+       "value":"GEN08"
+      ,"display":"This importation of scrap metal is for smelting only."
+    },
+    {
+       "value":"GEN09"
+      ,"display":"Total dry extract does not exceed the permitted quantity."
+    },
+    {
+       "value":"GEN10"
+      ,"display":"I/We request delivery on deposit under the C&E Management Act 1979 Section 119 and Tariff Notes Chapter 7 special directive 4 pending determination of the quantity on which duty is to be charged"
+    },
+    {
+       "value":"GEN11"
+      ,"display":"Trailer imported under the terms of our general undertaking dated"
+    },
+    {
+       "value":"GEN13"
+      ,"display":"NIRU certificate/ approval letter."
+    },
+    {
+       "value":"GEN14"
+      ,"display":"Supporting evidence for UN goods is attached."
+    },
+    {
+       "value":"GEN15"
+      ,"display":"Decorations and awards – evidence concerning award attached or declaration has been made on form C920"
+    },
+    {
+       "value":"GEN16"
+      ,"display":"Goods for test. Approval note from NIRUattached. See additional procedure code (data element 1/11) C33."
+    },
+    {
+       "value":"GEN17"
+      ,"display":"To be advised"
+    },
+    {
+       "value":"GEN18"
+      ,"display":"CCL Defra facility. See additional procedure code (data element 1/11) 1CL."
+    },
+    {
+       "value":"GEN19"
+      ,"display":"Where goods under inward processing were exported for further processing, and are now being re-imported."
+    },
+    {
+       "value":"GEN21"
+      ,"display":"Authorisation holder – enter the name and address of the approved state body / organisation who will be using the goods or is responsible for arranging for the goods to be used on their behalf, if other than named in box 8 of the entry Declaration"
+    },
+    {
+       "value":"GEN24"
+      ,"display":"Temporary admission: goods for approval. Enter the details of the prospective buyer of the goods where different from the importer (data element 3/15 or 3/16). See additional procedure code D24."
+    },
+    {
+       "value":"GEN27"
+      ,"display":"Holders of a full Temporary Admission authorisation only. Only to be completed where the person using the goods is not the Temporary Admission authorisation holder (D.E. 3/16 and 3/39)."
+    },
+    {
+       "value":"GEN28"
+      ,"display":"Temporary admissions: state how long the goods will be used and the intended date for re-exportation. See additional procedure codes (data element 1/11) D01-D03, D05-D13, D15-D22, D25-D26 and D28-D30."
+    },
+    {
+       "value":"GEN29"
+      ,"display":"Temporary admissions: enter the article under which the temporary admission relief is claimed."
+    },
+    {
+       "value":"GEN30"
+      ,"display":"Temporary admissions: state the purpose of the importation including the sequence and locations where the goods are to be used. See additional procedure codes (data element 1/11) D03, D05, D06, D08-D13, D18-D22, D24 and D27-D29."
+    },
+    {
+       "value":"GEN31"
+      ,"display":"Temporary admissions: used to declare non-EU ownership of goods claiming temporary admission. See additional procedure codes (data element 1/11) D08, D12, D13, D16 and D17."
+    },
+    {
+       "value":"GEN32"
+      ,"display":"Temporary admissions: state what goods will be manufactured using the goods entered to temporary admission. See additional procedure codes (data element 1/11) D16 and D17."
+    },
+    {
+       "value":"GEN33"
+      ,"display":"Temporary admission for exhibitions. See additional procedure code (data element 1/11) D23."
+    },
+    {
+       "value":"GEN34"
+      ,"display":"Temporary admission for exhibition/ auction. See additional procedure code (data element 1/11) D25 and D26."
+    },
+    {
+       "value":"GEN35"
+      ,"display":"Temporary admission for spare parts and accessories. Temporary admission for exhibitions. See additional procedure code (data element 1/11) D27."
+    },
+    {
+       "value":"GEN36"
+      ,"display":"For use with temporary admission additional procedure codes (data element 1/11) D28 and D29."
+    },
+    {
+       "value":"GEN3C"
+      ,"display":"Relief claimed under returned goods relief. RGR time limit extension to 6 years claimed by crown servants. Crown servants include diplomatic staff, armed forces, embassy and consular personnel. See customs information paper 2017 28 for details."
+    },
+    {
+       "value":"GEN41"
+      ,"display":"To be advised"
+    },
+    {
+       "value":"GEN42"
+      ,"display":"To be advised"
+    },
+    {
+       "value":"GEN43"
+      ,"display":"ESA scientific apparatus under the arrangements of PRIV 4/15/6. See additional procedure code (data element 1/11) 1ES"
+    },
+    {
+       "value":"GEN44"
+      ,"display":"PRIV33/BAS/381. See additional procedure code (data element 1/11) 1ES."
+    },
+    {
+       "value":"GEN45"
+      ,"display":"Consignment/work number."
+    },
+    {
+       "value":"GEN47"
+      ,"display":"Authorisation by customs declaration only: place where goods are to be put to the prescribed end use. See additional procedure codes (data element 1/11) 1ES."
+    },
+    {
+       "value":"GEN48"
+      ,"display":"Authorisation by customs declaration only: description of process, processed goods and the commodity code(s) if processing is a criterion for using the relevant commodity code. See additional procedure codes (data element 1/11) 1ES."
+    },
+    {
+       "value":"GEN49"
+      ,"display":"For goods imported under commodity code 3604 only (to be combined with a PREMS AIstatement)."
+    },
+    {
+       "value":"GEN51"
+      ,"display":"AEO/ETSF authorisation/approval holders may move goods entered to CHIEF at the frontier to an ETSF for examination, only with Border Force authority"
+    },
+    {
+       "value":"GEN52"
+      ,"display":"For use when relief or suspension of duty is claimed for goods to be used at a trade fair or similar event."
+    },
+    {
+       "value":"GEN86"
+      ,"display":"Use with A.86(3) UCC debt rules only: declaration that the IP authorisation holder is using the article 86(3) EU reg. number 952/2013 (UCC) customs debt rules."
+    },
+    {
+       "value":"GMSPR"
+      ,"display":"General marketing standard (GMS) products either processed, prepared or being imported for processing."
+    },
+    {
+       "value":"IRQ0A"
+      ,"display":"Request for Delivery Verification Certificate and/or International Information Document"
+    },
+    {
+       "value":"IRQ0B"
+      ,"display":"Request for either:\n- certified declaration export control document\n- C1314 to support claim for repayment from the RPA of export levy\n- certification by customs on form C&E 1154 when required for submission to the Rural Payments Agency (RPA)"
+    },
+    {
+       "value":"IRQ0C"
+      ,"display":"Request for goods entered for warehousing to be removed under duty suspension for receipt and examination at an approved tax warehouse. This should not be used for a customs warehouse. See additional procedure code (data element 1/11) 1EX. This must be combined with the PREMS statement providing the details of the tax warehouse."
+    },
+    {
+       "value":"IRQ0D"
+      ,"display":"I/We request delivery on deposit of duty under Section 119 of the Customs and Excise management Act 1979, in view of the attached undertaking on Form C&E 894."
+    },
+    {
+       "value":"IRQ0E"
+      ,"display":"Request for certification of additional copy invoices for butter/cheese from Holland"
+    },
+    {
+       "value":"IRQ0F"
+      ,"display":"Request for certification of attached End Use/Destination control copy T5."
+    },
+    {
+       "value":"IRQ0G"
+      ,"display":"Request for return of CT receipt"
+    },
+    {
+       "value":"IRQ0H"
+      ,"display":"Request for release of goods with disputed classification against security"
+    },
+    {
+       "value":"MORC1"
+      ,"display":"Hydrocarbon ‘Tied Oils’ scheme: supervising office details of the mineral oils relief centre. See additional procedure code (data element 1/11) 1TO."
+    },
+    {
+       "value":"NCGDS"
+      ,"display":"SDP simplified declarations: for non-controlled goods only. Full licensing declaration to be provided on the supplementary declaration. This is only permissible for paper licences."
+    },
+    {
+       "value":"NCSMA"
+      ,"display":"Goods owned by NICSMA and to be transported direct to NATO installations. See additional procedure code (data element 1/11) 1NC. Goods owned by a contractor and/ or to be transported to a contractor’s premises. See additional procedure code (data element 1/11)."
+    },
+    {
+       "value":"OSD01"
+      ,"display":"Onward supply dispatch using requested procedure code 01."
+    },
+    {
+       "value":"OSR42"
+      ,"display":"Onward supply relief using requested procedure code 42."
+    },
+    {
+       "value":"OVR01"
+      ,"display":"Duty calculation override. This code is only to be used where the amount of duty payable is being manually calculated, as required by the customs procedure or other AIstatement. See CDS volume 3 import declaration completion guide and appendix 1: data element 1/10: requested and previous procedure codes for details on how to declare the tax lines in data element 4/4 – 4/7 when code OVR01 is used."
+    },
+    {
+       "value":"PAL01"
+      ,"display":"Temporary admission relief for packings, EU reg. number 2015/2446, article 228. See annex C, para 3.10, notice 3001."
+    },
+    {
+       "value":"PAL02"
+      ,"display":"Temporary admission relief for pallets, EU reg. number 2015/2446, articles 208 and 209. See annex C, para 2.14.2, notice 3001."
+    },
+    {
+       "value":"PAL03"
+      ,"display":"Temporary admission relief for containers, EU reg. number 2015/2446, articles 210 and 211. See annex C, para 2.14.2, notice 3001."
+    },
+    {
+       "value":"PAL05"
+      ,"display":"Code used to declare that the pallets or containers being re-imported by (foreign consignors name) were previously in free circulation in the EU, and: are owned by the importer, are being returned within 3 years of the original export, are being returned to the importers who or on whose behalf they were previously exported for import free of duty, are being returned to the importers who originally declared the goods to export for import free of VAT, the VAT and any customs duty previously chargeable on the pallets or containers or material used in their manufacture has been accounted for and not later refunded and the pallets or containers are eligible for RGR."
+    },
+    {
+       "value":"PAR06"
+      ,"display":"Any imitation coin in this consignment is for smelting only. I request release under Section 119 of the Customs & Excise Management Act 1979 without payment of duty, under the importers general undertaking: TN Addendum B, paragraph 6."
+    },
+    {
+       "value":"PAR07"
+      ,"display":"Any imitation coin in this consignment is for smelting only. I request release under Section 119 of the Customs & Excise Management Act 1979 without payment of duty, imported under Treasury Direction – BO 28861/69."
+    },
+    {
+       "value":"PAR09"
+      ,"display":"Declaration that horse is not docked"
+    },
+    {
+       "value":"PAR10"
+      ,"display":"This consignment contains produce of phytosanitary relevance"
+    },
+    {
+       "value":"PAR11"
+      ,"display":"The wood in this consignment has been treated to a temperature of 176 degrees centigrade for 20 mins"
+    },
+    {
+       "value":"POD06"
+      ,"display":"Authorisation by customs declaration only: Throughout period for the customs procedure. A standard throughout period of up to 6 months is permitted. If the processing period is likely to exceed this period, the applicant must inform NIRU and ask for an extension. POD06 may only be used where AI code 00100 is also declared in DE 2/2."
+    },
+    {
+       "value":"POD07"
+      ,"display":""
+    },
+    {
+       "value":"POD07 - POD24"
+      ,"display":"Period greater than 6 months"
+    },
+    {
+       "value":"POD08"
+      ,"display":""
+    },
+    {
+       "value":"POD09"
+      ,"display":""
+    },
+    {
+       "value":"POD10"
+      ,"display":""
+    },
+    {
+       "value":"POD11"
+      ,"display":""
+    },
+    {
+       "value":"POD12"
+      ,"display":""
+    },
+    {
+       "value":"POD13"
+      ,"display":""
+    },
+    {
+       "value":"POD14"
+      ,"display":""
+    },
+    {
+       "value":"POD15"
+      ,"display":""
+    },
+    {
+       "value":"POD16"
+      ,"display":""
+    },
+    {
+       "value":"POD17"
+      ,"display":""
+    },
+    {
+       "value":"POD18"
+      ,"display":""
+    },
+    {
+       "value":"POD19"
+      ,"display":""
+    },
+    {
+       "value":"POD20"
+      ,"display":""
+    },
+    {
+       "value":"POD21"
+      ,"display":""
+    },
+    {
+       "value":"POD22"
+      ,"display":""
+    },
+    {
+       "value":"POD23"
+      ,"display":""
+    },
+    {
+       "value":"POD24"
+      ,"display":""
+    },
+    {
+       "value":"PRO01"
+      ,"display":"Authorisation by customs declaration only: manufacture or process of alcoholic goods. PRO01 may only be used where AI code 00100 is also declared in data element 2/2."
+    },
+    {
+       "value":"PRO02"
+      ,"display":"Authorisation by customs declaration only: manufacture or process of tobacco goods. PRO02 may only be used where AI code 00100 is also declared in data element /2."
+    },
+    {
+       "value":"PRO03"
+      ,"display":"Authorisation by customs declaration only: manufacture or process of chemicals and pharmaceuticals. PRO03 may only be used where AI code 00100 is also declared in data element 2/2."
+    },
+    {
+       "value":"PRO04"
+      ,"display":"Authorisation by customs declaration only: manufacture or process of motor vehicles and parts. PRO04 may only be used where AIcode 00100 is also declared in data element 2/2."
+    },
+    {
+       "value":"PRO05"
+      ,"display":"Authorisation by customs declaration only: manufacture or process of maritime vessels and parts. PRO05 may only be used where AIcode 00100 is also declared in data element 2/2."
+    },
+    {
+       "value":"PRO06"
+      ,"display":"Authorisation by customs declaration only: manufacture or process of aircraft satellites and parts. PRO06 may only be used where AIcode 00100 is also declared in data element 2/2."
+    },
+    {
+       "value":"PRO07"
+      ,"display":"Authorisation by customs declaration only: manufacture or process of other industrial goods. PRO07 may only be used where AIcode 00100 is also declared in data element 2/2."
+    },
+    {
+       "value":"PRO08"
+      ,"display":"Authorisation by customs declaration only: manufacture or process of milk and milk products. PRO08 may only be used where AIcode 00100 is also declared in data element 2/2."
+    },
+    {
+       "value":"PRO09"
+      ,"display":"Authorisation by customs declaration only: manufacture or process of sugar and sugar products. PRO09 may only be used where AIcode 00100 is also declared in data element 2/2."
+    },
+    {
+       "value":"PRO10"
+      ,"display":"Authorisation by customs declaration only: other agricultural goods"
+    },
+    {
+       "value":"PRO11 - 13"
+      ,"display":"Authorisation by customs declaration only: end use relief, type of process statement to cover PRO11-13 nature of end use. PRO011 - 13 may only be used where AI code 00100 is also declared in data element 2/2."
+    },
+    {
+       "value":"RCD01"
+      ,"display":"Relief/suspension of customs duty claimed. This code is only to be used in conjunction with code 1RC in data element 1/11 (additional procedure code). This AIstatement and additional procedure code 1RC may only be used where there is no alternative additional procedure code available. The use of this AI code and additional procedure code 1RC is a statement that the goods are eligible to a relief/suspension of customs duty. Failure to meet the conditions of the relief/ suspension may result in a demand for any relieved duties and sanctions for non-compliance being issued."
+    },
+    {
+       "value":"RED01"
+      ,"display":"Relief/suspension of excise duty claimed. This code is only to be used in conjunction with code 1RE in data element 1/11 (additional procedure code). This AIstatement and additional procedure code 1RE may only be used where expressly instructed by the additional procedure codes in appendix 2: data element 1/11: additional procedure codes. The use of this AI code and additional procedure code 1RE is a statement that the goods are eligible to a relief/ suspension of excise duty. Failure to meet the conditions of the relief/suspension may result in a demand for any relieved duties and sanctions for non-compliance being issued."
+    },
+    {
+       "value":"REV10"
+      ,"display":"I/We declare that the goods are unfit for human consumption because of the presence of the constituent(s) named in the proportion stated in Box 44."
+    },
+    {
+       "value":"REV11"
+      ,"display":"I/We declare that the goods are unfit for human consumption because of the presence of the constituent(s) named in the proportion stated on the attached certificate"
+    },
+    {
+       "value":"REV13"
+      ,"display":"Wine to be warehoused in the containers, account to be taken at Import Station"
+    },
+    {
+       "value":"REV14"
+      ,"display":"I/We request that the particulars given on the attached certificate (Republic of Ireland Form C&E 75) be accepted for the purpose of the import account"
+    },
+    {
+       "value":"ROY01"
+      ,"display":"Authorisation by customs declaration only: rate of yield. Use code ROY01 if the rate of yield is 1:1 (ROY01 may only be used where AI code 00100 is also declared in DE 2/2)."
+    },
+    {
+       "value":"ROY02"
+      ,"display":"Authorisation by customs declaration only: rate of yield. Use code ROY02 if the rate of yield is to be established from processing records (ROY02 may only be used where AI code 00100 is also declared in data element 2/2)."
+    },
+    {
+       "value":"RVAT1"
+      ,"display":"Relief/suspension of import VAT claimed or claim to a reduced rate/display for import VAT. This code is only to be used in conjunction with code 1RV in data element 1/11 (additional procedure code). This AIstatement and additional procedure code 1RV may only be used where expressly instructed by the additional procedure codes in appendix 2B: data element 1/11, additional procedure codes: national codes. The use of this AI code and additional procedure code 1RV is a statement that the goods are eligible to a relief/suspension/ reduced rate or display for import VAT. Failure to meet the conditions of the relief/suspension/reduction may result in a demand for any revenue relieved or suspended and sanctions for non-compliance being issued."
+    },
+    {
+       "value":"SHNMO"
+      ,"display":"Goods owned by SHNMO and to be transported direct to NATO installations. See additional procedure code (data element 1/11) 1NC."
+    },
+    {
+       "value":"TAPAR"
+      ,"display":"Temporary admission (TA) with partial relief. Only required where the goods are being transferred between different authorisation holders."
+    },
+    {
+       "value":"TOR01"
+      ,"display":"Transfer of residence (ToR) relief for household effects and personal property belonging to natural persons transferring their normal place of residence to the UK only. See additional procedure codes (data element 1/11) C01, C02, C06, C42, C43, C60 and C61."
+    },
+    {
+       "value":"VAT03"
+      ,"display":"The goods entered for the importers/consignees whose VAT registration numbers are shown on the attached invoices Authorisation by Customs Declaration only: Other agricultural goods.\nNote: PRO10 may only be used where AIcode 00100 is also declared in DE 2/2"
+    },
+    {
+       "value":"VAT04"
+      ,"display":"The goods are chargeable with VAT at a positive rate. The tax will either be paid outright or accounted for under the single duty deferment number quoted hereon and each consignee described on the attached Forms C517 (and C517 continued if necessary) will be charged his/her proportion of the tax as shown on the forms."
+    },
+    {
+       "value":"VAT05"
+      ,"display":"General undertaking dated.….lodged with local Excise officer."
+    },
+    {
+       "value":"WHSRP"
+      ,"display":"Claims to preference for goods being entered for customs warehousing/ free zone where a preference claim will be made on their removal."
+    }]

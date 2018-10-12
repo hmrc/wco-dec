@@ -1,0 +1,113 @@
+[
+    {
+       "value":"AB"
+      ,"display":"Commissions and brokerage, except buying commissions, declared as a monetary amount"
+    },
+    {
+       "value":"AC"
+      ,"display":"Commissions and brokerage, except buying commissions, declared as a percentage addition"
+    },
+    {
+       "value":"AD"
+      ,"display":"Containers and packing"
+    },
+    {
+       "value":"AE"
+      ,"display":"Materials, components, parts and similar items incorporated in the imported goods"
+    },
+    {
+       "value":"AF"
+      ,"display":"Tools, dies, moulds and similar items used in the production of the imported goods, declared as a monetary amount"
+    },
+    {
+       "value":"AG"
+      ,"display":"Materials consumed in the production of the imported goods"
+    },
+    {
+       "value":"AH"
+      ,"display":"Engineering, development, artwork, design work and plans and sketches undertaken elsewhere than in the EU and necessary for the production of the imported goods, declared as a monetary amount"
+    },
+    {
+       "value":"AI"
+      ,"display":"Royalties and license fees, declared as a monetary amount, for percentage adjustments use code AM instead"
+    },
+    {
+       "value":"AJ"
+      ,"display":"Proceeds of any subsequent resale, disposal or use accruing to the seller"
+    },
+    {
+       "value":"AL"
+      ,"display":"Indirect payments and other payments (Article 70 of the code)"
+    },
+    {
+       "value":"AM"
+      ,"display":"Royalties and license fees, declared as a percentage adjustment, for additions declared as a monetary amount rather than a percentage use code AI"
+    },
+    {
+       "value":"AN"
+      ,"display":"Additions based on a decision granted in accordance with Article 71 of Delegated Regulation (EU) 2015/2446 in which an additional amount is specified"
+    },
+    {
+       "value":"AO"
+      ,"display":"Additions based on a decision granted in accordance with Article 71 of Delegated Regulation (EU) 2015/2446 in which a percentage adjustment is specified"
+    },
+    {
+       "value":"AT"
+      ,"display":"Other charges not elsewhere declared"
+    },
+    {
+       "value":"AX"
+      ,"display":"Tools, dies, moulds and similar items used in the production of the imported goods, declared as a percentage addition"
+    },
+    {
+       "value":"AZ"
+      ,"display":"Engineering, development, artwork, design work and plans and sketches undertaken elsewhere than in the EU and necessary for the production of the imported goods, declared as a percentage addition"
+    },
+    {
+       "value":"BB"
+      ,"display":"Charges for construction, erection, assembly, maintenance or technical assistance undertaken after importation"
+    },
+    {
+       "value":"BC"
+      ,"display":"Import duties or other charges payable in the Union for reason of the import or sale of goods"
+    },
+    {
+       "value":"BD"
+      ,"display":"Interest charges declared as a monetary amount"
+    },
+    {
+       "value":"BE"
+      ,"display":"Charges for the right to reproduce the imported goods in the EU"
+    },
+    {
+       "value":"BF"
+      ,"display":"Buying commissions, to be declared as a percentage adjustment"
+    },
+    {
+       "value":"BG"
+      ,"display":"Deductions based on a decision granted in accordance with Article 71 of Delegated Regulation (EU) 2015/2446 in which a deduction amount is specified"
+    },
+    {
+       "value":"BH"
+      ,"display":"Discount (amount) not elsewhere declared. The amount of the discount and the appropriate currency should be shown against this code. If the discount is given as a percentage rather than an actual amount then the discount should be declared using code BI instead of BH"
+    },
+    {
+       "value":"BI"
+      ,"display":"Discount (percentage) not elsewhere declared. The percentage of the discount should be shown against this code. If the discount is given as an actual amount rather than a percentage then the discount should be declared using code BH instead of BI"
+    },
+    {
+       "value":"BK"
+      ,"display":"Deductions based on a decision granted in accordance with Article 71 of Delegated Regulation (EU) 2015/2446 in which a percentage adjustment is specified"
+    },
+    {
+       "value":"BL"
+      ,"display":"Interest charges declared as a percentage adjustment"
+    },
+    {
+       "value":"BM"
+      ,"display":"Buying commissions, to be declared as a monetary amount"
+    },
+    {
+       "value":"BT"
+      ,"display":"Other deductions not elsewhere declared"
+    }]

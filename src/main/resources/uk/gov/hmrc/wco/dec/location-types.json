@@ -1,0 +1,18 @@
+[
+    {
+       "value":"A"
+      ,"display":"Frontier or Frontier linked locations such as Airports, ITSFs etc."
+    },
+    {
+       "value":"B"
+      ,"display":"Inland locations such as customs warehouses"
+    },
+    {
+       "value":"C"
+      ,"display":"Certificate of Agreement Airfields"
+    },
+    {
+       "value":"D"
+      ,"display":"Other types of locations such as pipelines, continental shelf, wind farms, etc."
+    }
+]

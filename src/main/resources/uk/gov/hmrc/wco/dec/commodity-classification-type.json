@@ -1,0 +1,22 @@
+[
+    {
+      "value":"CV",
+      "display":"Customs article number"
+    },
+    {
+      "value":"GN",
+      "display":"National product group code"
+    },
+    {
+      "value":"TSP",
+      "display":"Combined nomenclature code"
+    },
+    {
+      "value":"TRC",
+      "display":"TARIC code"
+    },
+    {
+      "value":"TRA",
+      "display":"TARIC additional code"
+    }
+  ]

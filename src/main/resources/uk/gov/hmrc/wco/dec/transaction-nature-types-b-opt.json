@@ -1,0 +1,61 @@
+[
+    {
+       "value":"11",
+       "display":"Outright purchase/sale"
+    },
+    {
+       "value":"12",
+       "display":"Supply for sale on approval or after trial, for consignment or with the intermediation of a commission agent"
+    },
+    {
+       "value":"13",
+       "display":"Barter trade (compensation in kind)"
+    },
+    {
+       "value":"14",
+       "display":"Financial leasing (hire-purchase)"
+    },
+    {
+       "value":"19",
+       "display":"Other"
+    },
+    {
+       "value":"21",
+       "display":"Return of goods"
+    },
+    {
+       "value":"22",
+       "display":"Replacement for returned goods"
+    },
+    {
+       "value":"23",
+       "display":"Replacement (for example, under warranty) for goods not being returned"
+    },
+    {
+       "value":"29",
+       "display":"Other"
+    },
+    {
+       "value":"41",
+       "display":"Goods expected to return to the initial country of export"
+    },
+    {
+       "value":"42",
+       "display":"Goods not expected to return to the initial country of export"
+    },
+    {
+       "value":"51",
+       "display":"Goods returning to the initial country of export"
+    },
+    {
+       "value":"52",
+       "display":"Goods not returning to the initial country of export"
+    },
+    {
+       "value":"91",
+       "display":"Hire, loan, and operational leasing longer than 24 months"
+    },
+    {
+       "value":"99",
+       "display":"Other"
+    }]

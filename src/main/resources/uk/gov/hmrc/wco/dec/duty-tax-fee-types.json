@@ -1,0 +1,289 @@
+[
+    {
+       "value":"A20"
+      ,"display":"Additional duties"
+    },
+    {
+       "value":"A30"
+      ,"display":"Definitive anti-dumping duties (ADD)"
+    },
+    {
+       "value":"A35"
+      ,"display":"Provisional anti-dumping duties (ADD)"
+    },
+    {
+       "value":"A40"
+      ,"display":"Definitive countervailing duties"
+    },
+    {
+       "value":"A45"
+      ,"display":"Provisional countervailing duties"
+    },
+    {
+       "value":"B00"
+      ,"display":"VAT"
+    },
+    {
+       "value":"C00"
+      ,"display":"Export taxes"
+    },
+    {
+       "value":"C10"
+      ,"display":"Export taxes on agricultural products"
+    },
+    {
+       "value":"E00"
+      ,"display":"Duties collected on behalf of other countries"
+    },
+    {
+       "value":"411"
+      ,"display":"Sparkling wine of fresh grape, 8.5% and above, but not exceeding 15%"
+    },
+    {
+       "value":"412"
+      ,"display":"Sparkling wine of fresh grape, exceeding 5.5% but less than 8.5%"
+    },
+    {
+       "value":"413"
+      ,"display":"Still wine exceeding 5.5% not exceeding 15%"
+    },
+    {
+       "value":"415"
+      ,"display":"Still or sparkling exceeding 15% but not exceeding 22%"
+    },
+    {
+       "value":"419"
+      ,"display":"Wine of greater than 22% vol"
+    },
+    {
+       "value":"421"
+      ,"display":"Sparkling made-wine exceeding 8.5% and above but not exceeding 15%"
+    },
+    {
+       "value":"422"
+      ,"display":"Sparkling made-wine exceeding 5.5% but less than 8.5%"
+    },
+    {
+       "value":"423"
+      ,"display":"Still made-wine exceeding 5.5% not exceeding 15%"
+    },
+    {
+       "value":"425"
+      ,"display":"Made-wine of between 15% to 22% volume"
+    },
+    {
+       "value":"429"
+      ,"display":"Made-wine of greater than 22% volume"
+    },
+    {
+       "value":"431"
+      ,"display":"Wine based beverage of less than 1.2% volume"
+    },
+    {
+       "value":"433"
+      ,"display":"Wine, spirit based beverage exceeding 1.2% vol not exceeding 4% vol."
+    },
+    {
+       "value":"435"
+      ,"display":"Wine, spirit based beverage exceeding 4% vol not exceeding 5.5% vol"
+    },
+    {
+       "value":"438"
+      ,"display":"Spirit-based coolers"
+    },
+    {
+       "value":"440"
+      ,"display":"Beer made in the UK"
+    },
+    {
+       "value":"441"
+      ,"display":"Imported beer"
+    },
+    {
+       "value":"442"
+      ,"display":"Beer made in the UK"
+    },
+    {
+       "value":"443"
+      ,"display":"Imported beer"
+    },
+    {
+       "value":"444"
+      ,"display":"UK beer"
+    },
+    {
+       "value":"445"
+      ,"display":"UK beer"
+    },
+    {
+       "value":"446"
+      ,"display":"Imported beer"
+    },
+    {
+       "value":"447"
+      ,"display":"Imported beer"
+    },
+    {
+       "value":"451"
+      ,"display":"Spirits"
+    },
+    {
+       "value":"461"
+      ,"display":"Whisky - wholly malt"
+    },
+    {
+       "value":"462"
+      ,"display":"Whisky - wholly grain"
+    },
+    {
+       "value":"463"
+      ,"display":"Whisky - blended"
+    },
+    {
+       "value":"473"
+      ,"display":"Beer based beverage exceeding 1.2% volume"
+    },
+    {
+       "value":"481"
+      ,"display":"Cider and perry"
+    },
+    {
+       "value":"483"
+      ,"display":"Cider and perry exceeding 7.5% but less than 8.5%"
+    },
+    {
+       "value":"485"
+      ,"display":"Sparkling cider and perry, strength exceeding 5.5% but less than 8.5%"
+    },
+    {
+       "value":"511"
+      ,"display":"Unrebated light oil, aviation gasoline"
+    },
+    {
+       "value":"515"
+      ,"display":"Unrebated light oil, leaded motor spirit"
+    },
+    {
+       "value":"520"
+      ,"display":"Unrebated light oil, other"
+    },
+    {
+       "value":"521"
+      ,"display":"Rebated light oil, furnace fuel"
+    },
+    {
+       "value":"522"
+      ,"display":"Rebated light oil, unleaded fuel"
+    },
+    {
+       "value":"525"
+      ,"display":"Ultra-low sulphur petrol"
+    },
+    {
+       "value":"540"
+      ,"display":"Excise - full, other (unmarked) heavy oil (other than kerosene)"
+    },
+    {
+       "value":"541"
+      ,"display":"Unrebated heavy oil"
+    },
+    {
+       "value":"542"
+      ,"display":"Kerosene as off-road motor vehicle fuel"
+    },
+    {
+       "value":"545"
+      ,"display":"Ultra-low sulphur diesel"
+    },
+    {
+       "value":"551"
+      ,"display":"Rebated heavy oil, kerosene"
+    },
+    {
+       "value":"556"
+      ,"display":"Rebated heavy oil, gas oil"
+    },
+    {
+       "value":"560"
+      ,"display":"Ultra-low sulphur gas oil"
+    },
+    {
+       "value":"561"
+      ,"display":"Rebated heavy oil, fuel oil"
+    },
+    {
+       "value":"570"
+      ,"display":"Rebated heavy oil, other"
+    },
+    {
+       "value":"571"
+      ,"display":"Biodiesel for non-road use"
+    },
+    {
+       "value":"572"
+      ,"display":"Biodiesel blended with kerosene"
+    },
+    {
+       "value":"589"
+      ,"display":"Biodiesel - pure biodiesel"
+    },
+    {
+       "value":"590"
+      ,"display":"Biodiesel - blended"
+    },
+    {
+       "value":"591"
+      ,"display":"Natural gas"
+    },
+    {
+       "value":"592"
+      ,"display":"Other gas"
+    },
+    {
+       "value":"593"
+      ,"display":"Other rct ex dty sulph free diesel and rpt ex dty sulph free diesel"
+    },
+    {
+       "value":"594"
+      ,"display":"Other rct ex dty sulph free petrol and rpt ex dty sulph free petrol"
+    },
+    {
+       "value":"595"
+      ,"display":"Bioethanol"
+    },
+    {
+       "value":"611"
+      ,"display":"Cigarettes"
+    },
+    {
+       "value":"615"
+      ,"display":"Cigars"
+    },
+    {
+       "value":"619"
+      ,"display":"Hand rolling tobacco"
+    },
+    {
+       "value":"623"
+      ,"display":"Other smoking tobacco"
+    },
+    {
+       "value":"627"
+      ,"display":"Chewing tobacco"
+    },
+    {
+       "value":"99A"
+      ,"display":"Solid fuels such as coal and lignite, coke and semi-coke of coal or lignite, and petroleum coke"
+    },
+    {
+       "value":"99B"
+      ,"display":"Any petroleum gas, or other gaseous hydrocarbon supplied in a liquid state"
+    },
+    {
+       "value":"99C"
+      ,"display":"Gas supplied by a gas utility or any gas supplied in a gaseous state that is of a kind supplied by a gas utility Great Britain"
+    },
+    {
+       "value":"99D"
+      ,"display":"Electricity"
+    }]

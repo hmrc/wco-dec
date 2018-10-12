@@ -1,0 +1,65 @@
+[
+    {
+       "value":"CFR"
+      ,"display":"Cost and freight"
+    },
+    {
+       "value":"CIF"
+      ,"display":"Cost, insurance and freight"
+    },
+    {
+       "value":"CIP"
+      ,"display":"Carriage and insurance paid to"
+    },
+    {
+       "value":"CPT"
+      ,"display":"Carriage paid to"
+    },
+    {
+       "value":"DAF"
+      ,"display":"Delivered at frontier"
+    },
+    {
+       "value":"DAP"
+      ,"display":"Delivered at place"
+    },
+    {
+       "value":"DAT"
+      ,"display":"Delivered at terminal"
+    },
+    {
+       "value":"DDP"
+      ,"display":"Delivered duty paid"
+    },
+    {
+       "value":"DDU"
+      ,"display":"Delivered duty unpaid"
+    },
+    {
+       "value":"DEQ"
+      ,"display":"Delivered ex quay"
+    },
+    {
+       "value":"DES"
+      ,"display":"Delivered ex ship"
+    },
+    {
+       "value":"EXW"
+      ,"display":"Ex works"
+    },
+    {
+       "value":"FAS"
+      ,"display":"Free alongside ship"
+    },
+    {
+       "value":"FCA"
+      ,"display":"Free carrier"
+    },
+    {
+       "value":"FOB"
+      ,"display":"Free on board"
+    },
+    {
+       "value":"XXX"
+      ,"display":"Delivery terms other than those listed above"
+    }]

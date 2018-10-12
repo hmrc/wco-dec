@@ -1,0 +1,605 @@
+[
+    {
+       "value":"A04"
+      ,"display":"Goods which are placed under or removed from an inward processing procedure (VAT only)"
+    },
+    {
+       "value":"B02"
+      ,"display":"Processed products returning after repair under guarantee in accordance with article 260 of the code (goods repaired free of charge)"
+    },
+    {
+       "value":"B03"
+      ,"display":"Processed products returning after replacement under guarantee in accordance with article 261 of the code (standard exchange system)"
+    },
+    {
+       "value":"B06"
+      ,"display":"Processed products returning - VAT only"
+    },
+    {
+       "value":"C01"
+      ,"display":"Personal property belonging to natural persons transferring their normal place of residence to the union"
+    },
+    {
+       "value":"C02"
+      ,"display":"Trousseaux and household effects imported on the occasion of a marriage"
+    },
+    {
+       "value":"C03"
+      ,"display":"Presents customarily given on the occasion of a marriage"
+    },
+    {
+       "value":"C04"
+      ,"display":"Personal property acquired by inheritance by a natural person having his normal place of residence in the customs territory of the union"
+    },
+    {
+       "value":"C06"
+      ,"display":"School outfits, educational materials and related household effects"
+    },
+    {
+       "value":"C07"
+      ,"display":"Consignments of negligible value"
+    },
+    {
+       "value":"C08"
+      ,"display":"Consignments sent from one private individual to another"
+    },
+    {
+       "value":"C09"
+      ,"display":"Capital goods and other equipment imported on the transfer of activities from a third country into the union"
+    },
+    {
+       "value":"C10"
+      ,"display":"Capital goods and other equipment belonging to persons engaged in a liberal profession and to legal persons engaged in a non-profit making activity"
+    },
+    {
+       "value":"C11"
+      ,"display":"Educational, scientific and cultural materials; scientific instruments and apparatus as listed in annex 1 to regulation (EC) no 1186/2009"
+    },
+    {
+       "value":"C12"
+      ,"display":"Educational, scientific and cultural materials; scientific instruments and apparatus as listed in annex 11 to regulation (EC) no 1186/2009"
+    },
+    {
+       "value":"C13"
+      ,"display":"Educational, scientific and cultural materials; scientific instruments and apparatus imported exclusively for non-commercial purposes (including spare parts, components, accessories and tools)"
+    },
+    {
+       "value":"C14"
+      ,"display":"Equipment imported for non-commercial purposes by or on behalf of a scientific research establishment or organisation based outside the union"
+    },
+    {
+       "value":"C15"
+      ,"display":"Laboratory animals and biological or chemical substances intended for research"
+    },
+    {
+       "value":"C16"
+      ,"display":"Therapeutic substances of human origin and blood-grouping and tissue-typing reagents"
+    },
+    {
+       "value":"C17"
+      ,"display":"Instruments and apparatus used in medical research, establishing medical diagnoses or carrying out medical treatment"
+    },
+    {
+       "value":"C18"
+      ,"display":"Reference substances for the quality control of medicinal products"
+    },
+    {
+       "value":"C19"
+      ,"display":"Pharmaceutical products used at international sports events"
+    },
+    {
+       "value":"C20"
+      ,"display":"Goods for charitable or philanthropic organisations - basic necessities imported by State organisations or other approved organisations"
+    },
+    {
+       "value":"C21"
+      ,"display":"Articles in annex 111 to regulation (EC) no 1186/2009, intended for the blind"
+    },
+    {
+       "value":"C22"
+      ,"display":"Articles in annex IV to regulation (EC) no 1186/2009, intended for the blind imported by blind persons themselves for their own use (including spare parts, components, accessories and tools)"
+    },
+    {
+       "value":"C23"
+      ,"display":"Articles in annex IV to regulation (EC) no 1186/2009, intended for the blind imported by certain institutions or organisations (including spare parts, components, accessories and tools)"
+    },
+    {
+       "value":"C24"
+      ,"display":"Articles, intended for other handicapped persons (other than blind persons) imported by handicapped persons themselves for their own use (including spare parts, components, accessories and tools)"
+    },
+    {
+       "value":"C25"
+      ,"display":"Articles, intended for other handicapped persons (other than blind persons) imported by certain institutions or organisations (including spare parts, components, accessories and tools)"
+    },
+    {
+       "value":"C26"
+      ,"display":"Goods imported for the benefit of disaster victims"
+    },
+    {
+       "value":"C27"
+      ,"display":"Decorations conferred by governments of third countries on persons whose normal place of residence is in the customs territory of the union"
+    },
+    {
+       "value":"C28"
+      ,"display":"Goods imported into the customs territory of the union by persons who have paid an official visit to a third country and who have received them on this occasion as gifts from the host authorities"
+    },
+    {
+       "value":"C29"
+      ,"display":"Goods to be used by monarchs or heads of state"
+    },
+    {
+       "value":"C30"
+      ,"display":"Samples of goods of negligible value imported for trade promotion purposes"
+    },
+    {
+       "value":"C31"
+      ,"display":"Printed advertising matter"
+    },
+    {
+       "value":"C32"
+      ,"display":"Small representative samples of goods manufactured outside the customs territory of the union, intended for a trade fair or similar event"
+    },
+    {
+       "value":"C33"
+      ,"display":"Goods imported for examination, analysis or test purposes"
+    },
+    {
+       "value":"C34"
+      ,"display":"Consignments, sent to organisations protecting copyrights or industrial and commercial patent rights"
+    },
+    {
+       "value":"C35"
+      ,"display":"Tourist information literature"
+    },
+    {
+       "value":"C36"
+      ,"display":"Miscellaneous documents and articles"
+    },
+    {
+       "value":"C37"
+      ,"display":"Ancilliary materials for the stowage and protection of goods during their transport"
+    },
+    {
+       "value":"C38"
+      ,"display":"Litter, fodder and feeding stuffs for animals during their transport"
+    },
+    {
+       "value":"C39"
+      ,"display":"Fuel and lubricants present in land motor vehicles and special containers"
+    },
+    {
+       "value":"C40"
+      ,"display":"Materials for cemeteries for, and memorials to, war victims"
+    },
+    {
+       "value":"C41"
+      ,"display":"Coffins, funerary urns and ornamental funerary articles"
+    },
+    {
+       "value":"C42"
+      ,"display":"Personal property entered for free circulation before the person concerned establishes his normal place of residence in the customs territory of the union (duty relief subject to an undertaking)"
+    },
+    {
+       "value":"C43"
+      ,"display":"Personal property belonging to a natural person having intention to transfer his normal place of residence to the union (duty free admission subject to an undertaking)"
+    },
+    {
+       "value":"C44"
+      ,"display":"Personal property acquired by inheritance by legal persons engaged in a non-profit making activity who are established in the customs territory of the union"
+    },
+    {
+       "value":"C45"
+      ,"display":"Agricultural, stock-farming, bee-keeping, horticultural and forestry products from properties located in a third country adjoining the customs territory of the union"
+    },
+    {
+       "value":"C46"
+      ,"display":"Products of fishing or fish-farming activities carried out in the lakes or waterways bordering a member state and a third country by union fishermen and products of hunting activities carried out on such lakes or waterways by union sportsmen"
+    },
+    {
+       "value":"C47"
+      ,"display":"Seeds, fertilisers and products for treatment of soil and crops intended for use on property located in the customs territory of the union adjoining a third country"
+    },
+    {
+       "value":"C48"
+      ,"display":"Goods contained in the personal luggage and exempted from VAT"
+    },
+    {
+       "value":"C49"
+      ,"display":"Goods for charitable or philanthropic organisations — goods of every description sent free of charge and to be used for fund-raising at occasional charity events for the benefit of needy persons"
+    },
+    {
+       "value":"C50"
+      ,"display":"Goods for charitable or philanthropic organisations — equipment and office materials sent free of charge"
+    },
+    {
+       "value":"C51"
+      ,"display":"Cups, medals and similar articles of an essentially symbolic nature which having been awarded in a third country to persons having their normal place of residence in the customs territory of the union"
+    },
+    {
+       "value":"C52"
+      ,"display":"Cups, medals and similar articles of an essentially symbolic nature which are given free of charge by authorities or persons established in a third country to be presented in the customs territory of the union to a person having their normal place of residence in the EU"
+    },
+    {
+       "value":"C53"
+      ,"display":"Awards, trophies and souvenirs of a symbolic nature and of limited value intended for distribution free of charge to persons normally resident in third countries at business conferences or similar international events"
+    },
+    {
+       "value":"C54"
+      ,"display":"Goods imported into the customs territory of the Union by persons coming to pay an official visit in the customs territory of the union and who intend to offer them on that occasion as gifts to the host authorities"
+    },
+    {
+       "value":"C55"
+      ,"display":"Goods sent as gifts from one official body, carrying on an activity located in a third country, to another official body, carrying on an activity, located within the customs territory of the union and approved by the competent authorities to receive such articles free of duty"
+    },
+    {
+       "value":"C56"
+      ,"display":"articles for advertising purposes, of no intrinsic commercial value, sent free of charge by suppliers to their customers, which apart from their advertising function, are not capable of being used otherwise"
+    },
+    {
+       "value":"C57"
+      ,"display":"Goods imported solely in order to be demonstrated or in order to demonstrate machines and apparatus, manufactured outside the customs territory of the union and displayed at a trade fair or similar event"
+    },
+    {
+       "value":"C58"
+      ,"display":"Various materials of little value such as paints, varnishes, wallpaper, for example, used in the building, fitting-out and decoration of temporary stands occupied by representatives of third countries at a trade fair or similar event, which are destroyed by being used"
+    },
+    {
+       "value":"C59"
+      ,"display":"Printed matter, catalogues, prospectuses, price lists, advertising posters, calendars, whether or not illustrated, unframed photographs and other articles supplied free of charge in order to advertise goods manufactured outside the customs territory of the union and displayed at a trade fair or similar event"
+    },
+    {
+       "value":"C60"
+      ,"display":"Trousseaux and household effects imported on the occasion of a marriage entered for free circulation in the first 2 months before the wedding (duty relief subject to the lodging of appropriate security)"
+    },
+    {
+       "value":"C61"
+      ,"display":"Presents customarily given on the occasion of a marriage entered for free circulation in the last 2 months before the wedding (duty relief subject to the lodging of appropriate security)"
+    },
+    {
+       "value":"D01"
+      ,"display":"Pallets (including pallet accessories and equipment)"
+    },
+    {
+       "value":"D02"
+      ,"display":"Containers (including container accessories and equipment)"
+    },
+    {
+       "value":"D03"
+      ,"display":"Means of road, rail, air, sea and inland waterway transport"
+    },
+    {
+       "value":"D04"
+      ,"display":"Personal effects and goods for sports purposes imported by travellers"
+    },
+    {
+       "value":"D05"
+      ,"display":"Welfare material for seafarers"
+    },
+    {
+       "value":"D06"
+      ,"display":"Disaster relief material"
+    },
+    {
+       "value":"D07"
+      ,"display":"Medical, surgical and laboratory equipment"
+    },
+    {
+       "value":"D08"
+      ,"display":"Animals"
+    },
+    {
+       "value":"D09"
+      ,"display":"Goods for use in frontier zone"
+    },
+    {
+       "value":"D10"
+      ,"display":"Sound, image or data carrying media"
+    },
+    {
+       "value":"D11"
+      ,"display":"Publicity material"
+    },
+    {
+       "value":"D12"
+      ,"display":"Professional equipment"
+    },
+    {
+       "value":"D13"
+      ,"display":"Pedagogic material and scientific equipment"
+    },
+    {
+       "value":"D15"
+      ,"display":"Packings, empty"
+    },
+    {
+       "value":"D16"
+      ,"display":"Moulds, dies, blocks, drawings, sketches, measuring, checking and testing instruments and other similar articles"
+    },
+    {
+       "value":"D17"
+      ,"display":"Special tools and instruments"
+    },
+    {
+       "value":"D18"
+      ,"display":"Goods subject to tests, experiments or demonstrations"
+    },
+    {
+       "value":"D19"
+      ,"display":"Goods imported, subject to satisfactory acceptance tests, in connection with a sales contract"
+    },
+    {
+       "value":"D20"
+      ,"display":"Goods used to carry out tests, experiments or demonstrations without financial gain (6 months)"
+    },
+    {
+       "value":"D21"
+      ,"display":"Samples"
+    },
+    {
+       "value":"D22"
+      ,"display":"Replacement means of production (6 months)"
+    },
+    {
+       "value":"D23"
+      ,"display":"Goods for events or for sale"
+    },
+    {
+       "value":"D24"
+      ,"display":"Goods for approval (6 months)"
+    },
+    {
+       "value":"D25"
+      ,"display":"Works of art, collectors’ items and antiques"
+    },
+    {
+       "value":"D26"
+      ,"display":"Goods imported with a view to their sale by auction"
+    },
+    {
+       "value":"D27"
+      ,"display":"Spare parts, accessories and equipment"
+    },
+    {
+       "value":"D28"
+      ,"display":"Goods imported in particular situations having no economic effect"
+    },
+    {
+       "value":"D29"
+      ,"display":"Goods imported for a period not exceeding 3 months"
+    },
+    {
+       "value":"D30"
+      ,"display":"Means of transport for persons established outside the customs territory of the union or for persons preparing for the transfer of their normal place of residence outside that Territory"
+    },
+    {
+       "value":"D51"
+      ,"display":"temporary admission with partial relief from duties"
+    },
+    {
+       "value":"E01"
+      ,"display":"Use of the unit price for the determination of the customs value for certain perishable goods (article 74(2)(c) of the code and article 142(6))"
+    },
+    {
+       "value":"E02"
+      ,"display":"Standard import values (for example: commission regulation (EU) no 543/2011)"
+    },
+    {
+       "value":"F01"
+      ,"display":"Relief from import duties for returned goods (article 203 of the code)"
+    },
+    {
+       "value":"F02"
+      ,"display":"Relief from import duties for returned goods (special circumstances provided for in article 159 of delegated regulation (EU) 2015/2446: agriculture goods)"
+    },
+    {
+       "value":"F03"
+      ,"display":"Relief from import duties for returned goods (special circumstances provided for in article 158 (2) of delegated regulation (EU) 215/2446 repair or restoration)"
+    },
+    {
+       "value":"F04"
+      ,"display":"Processed products which return to the EU after having been previously re-exported subsequent to an inward processing procedure (article 205 (1) of the code)"
+    },
+    {
+       "value":"F05"
+      ,"display":"Relief from import duties and from VAT or excise duties, or both, for returned goods (article 203 of the code and art. 143(1)(e) (directive 2006/112/EC)"
+    },
+    {
+       "value":"F06"
+      ,"display":"A movement of excise goods under an excise duty suspension arrangement from the place of importation in accordance with article 17(1)(b) of directive 2008/118/EC"
+    },
+    {
+       "value":"F07"
+      ,"display":"Processed products which returned to the EU after having been previously re-exported subsequent to an inward processing procedure where the import duty is determined in accordance with article 86(3) of the code (article 205(2) of the code)"
+    },
+    {
+       "value":"F15)"
+      ,"display":"Goods introduced in the context of trade with special fiscal territories and territories with which the EU has formed a Customs Union (article 1 (3) of the code)"
+    },
+    {
+       "value":"F21"
+      ,"display":"Exemption from import duties of products of sea-fishing and other products taken from the territorial sea of a country or territory outside the customs territory of the Union by vessels solely registered or recorded in a member state and flying the flag of that state"
+    },
+    {
+       "value":"F22"
+      ,"display":"Exemption from import duties of products obtained from products of sea fishing and other products taken from the territorial sea of a country or territory outside the customs territory of the union on board factory-ships registered or recorded in a member state and flying the flag of the state"
+    },
+    {
+       "value":"F44"
+      ,"display":"Inward processing; customs debt under article 86(3) of the code"
+    },
+    {
+       "value":"F45"
+      ,"display":"Exemption from import VAT for goods claiming relief from import duty under council reg. (EC) no. 1186/2009"
+    },
+    {
+       "value":"1AT"
+      ,"display":"ATA carnet"
+    },
+    {
+       "value":"1BN"
+      ,"display":"Fresh bananas without a weight certificate"
+    },
+    {
+       "value":"1CD"
+      ,"display":"Controlled drugs using simplified procedures"
+    },
+    {
+       "value":"1CG"
+      ,"display":"Controlled Goods using simplified procedures"
+    },
+    {
+       "value":"1CL"
+      ,"display":"Taxable commodities for climate change levy, with or without a claim to levy relief"
+    },
+    {
+       "value":"1DP"
+      ,"display":"Goods imported under diplomatic privilege (official use)"
+    },
+    {
+       "value":"1ES"
+      ,"display":"Goods imported for or on behalf of the European Space Agency (ESA) or by Astrium Ltd for use in INTELSAT project"
+    },
+    {
+       "value":"1EX"
+      ,"display":"Mineral (Hydrocarbon) oil imported for heating use for which excise duty relief is claimed on entry to an excise warehouse"
+    },
+    {
+       "value":"1IE"
+      ,"display":"IP prior import equivalence (IM/EX)"
+    },
+    {
+       "value":"1IL"
+      ,"display":"Single recipient low value in excess of £15 but not exceeding £135"
+    },
+    {
+       "value":"1LV"
+      ,"display":"Low value bulking imports (LVBI) in excess of £15 but not exceeding £135"
+    },
+    {
+       "value":"1MO"
+      ,"display":"Goods imported by the MoD (MoD VAT postponed accounting)"
+    },
+    {
+       "value":"1MP"
+      ,"display":"Compensating products obtained from milk and milk products (EX/IM)"
+    },
+    {
+       "value":"1NC"
+      ,"display":"Equipment imported for certain NATO contracts and projects"
+    },
+    {
+       "value":"1NN"
+      ,"display":"Goods imported for non-NATO authorised countries (official use)"
+    },
+    {
+       "value":"1NO"
+      ,"display":"Goods imported for US and other NATO visiting forces (official use)"
+    },
+    {
+       "value":"1NP"
+      ,"display":"Goods imported for NATO visiting forces entitled personnel (personal use)"
+    },
+    {
+       "value":"1NV"
+      ,"display":"Tariff chapters 8703 (motor cars) and 8711 (motor cycles) permanently imported"
+    },
+    {
+       "value":"1PF"
+      ,"display":"Goods of an aggregate value not exceeding £630 (700 euros) intended solely for personal or family use"
+    },
+    {
+       "value":"1PO"
+      ,"display":"Goods entered to IP imported using the international mail procedure"
+    },
+    {
+       "value":"1RC"
+      ,"display":"Relief from Customs Duty"
+    },
+    {
+       "value":"1RE"
+      ,"display":"Relief from excise duty"
+    },
+    {
+       "value":"1RL"
+      ,"display":"Duty and VAT relief (RGR with end use)"
+    },
+    {
+       "value":"1RV"
+      ,"display":"Relief from VAT (reduced value for VAT or exemption is claimed)"
+    },
+    {
+       "value":"1SC"
+      ,"display":"Consignments entered under the provisions of the split consignment facility"
+    },
+    {
+       "value":"1SW"
+      ,"display":"Goods imported under the shipwork end-use procedure"
+    },
+    {
+       "value":"1TO"
+      ,"display":"Hydrocarbon oils imported under the tied oil scheme for excise duty relief"
+    },
+    {
+       "value":"1VW"
+      ,"display":"Goods liable to VAT only, declared for customs warehousing, or removed from customs warehousing"
+    },
+    {
+       "value":"1XT"
+      ,"display":"More than 1 previous procedure involving temporary admission"
+    },
+    {
+       "value":"1XW"
+      ,"display":"More than 1 previous procedure involving customs warehousing"
+    },
+    {
+       "value":"2CD"
+      ,"display":"Controlled drugs released to a special procedure using simplified procedures"
+    },
+    {
+       "value":"2CG"
+      ,"display":"Controlled goods released to a special procedure using simplified procedures"
+    },
+    {
+       "value":"2DP"
+      ,"display":"Goods imported under diplomatic privilege (personal use)"
+    },
+    {
+       "value":"2LV"
+      ,"display":"Low value bulking imports (LVBI) not exceeding £15"
+    },
+    {
+       "value":"2MO"
+      ,"display":"Goods imported by the MoD to fulfil contracts (VAT paid)"
+    },
+    {
+       "value":"3HG"
+      ,"display":"HG3 non-compliance notice (inward processing)"
+    },
+    {
+       "value":"46P"
+      ,"display":"Prior import equivalence for OP"
+    },
+    {
+       "value":"48P"
+      ,"display":"Prior import equivalence to replace defective goods for OP"
+    },
+    {
+       "value":"63P"
+      ,"display":"Release to RGR with onward supply"
+    },
+    {
+       "value":"68P"
+      ,"display":"Re-imported goods placed in a non-customs warehouse where both excise duty and VAT (where this applies) are suspended"
+    },
+    {
+       "value":"95P"
+      ,"display":"Goods from a special fiscal territory placed under a non-customs warehousing procedure where both VAT and excise duty are suspended"
+    },
+    {
+       "value":"000"
+      ,"display":"No other additional procedure code applies"
+    },
+    {
+       "value":"0GD"
+      ,"display":"Goods consigned to other government departments and agencies (where not otherwise covered under data element 1/11 national additional procedure codes)"
+    }]

@@ -1,0 +1,145 @@
+[
+  {
+     "value":"AD"
+    ,"display":"Andorra"
+  },
+  {
+     "value":"AT"
+    ,"display":"Austria"
+  },
+  {
+     "value":"BE"
+    ,"display":"Belgium"
+  },
+  {
+     "value":"BG"
+    ,"display":"Bulgaria"
+  },
+  {
+     "value":"HR"
+    ,"display":"Croatia"
+  },
+  {
+     "value":"CY"
+    ,"display":"Cyprus"
+  },
+  {
+     "value":"CZ"
+    ,"display":"Czech Republic"
+  },
+  {
+     "value":"DK"
+    ,"display":"Denmark"
+  },
+  {
+     "value":"EE"
+    ,"display":"Estonia"
+  },
+  {
+     "value":"FI"
+    ,"display":"Finland (Including the Åland Islands)"
+  },
+  {
+     "value":"FR"
+    ,"display":"France (Including Monaco, the French overseas departments (French Guiana, Guadeloupe, Martinique and Réunion) and the French northern part of St Martin)"
+  },
+  {
+     "value":"DE"
+    ,"display":"Germany (Including the island of Heligoland; excluding the territory of Büsingen)"
+  },
+  {
+     "value":"GR"
+    ,"display":"Greece"
+  },
+  {
+     "value":"GG"
+    ,"display":"Guernsey"
+  },
+  {
+     "value":"HU"
+    ,"display":"Hungary"
+  },
+  {
+     "value":"IS"
+    ,"display":"Iceland"
+  },
+  {
+     "value":"IE"
+    ,"display":"Ireland"
+  },
+  {
+     "value":"IT"
+    ,"display":"Italy (Including Livigno: excluding the municipality of Campione d’Italia)"
+  },
+  {
+     "value":"LV"
+    ,"display":"Latvia"
+  },
+  {
+     "value":"LI"
+    ,"display":"Leichtenstein"
+  },
+  {
+     "value":"LT"
+    ,"display":"Lithuania"
+  },
+  {
+     "value":"LU"
+    ,"display":"Luxembourg"
+  },
+  {
+     "value":"MT"
+    ,"display":"Malta (Including Gozo and Comino)"
+  },
+  {
+     "value":"YT"
+    ,"display":"Mayotte (Grande-Terre and Pamandzi)"
+  },
+  {
+     "value":"NL"
+    ,"display":"Netherlands (the)"
+  },
+  {
+     "value":"NO"
+    ,"display":"Norway (Including Svalbard Archipelago and Jan Mayen Island)"
+  },
+  {
+     "value":"PL"
+    ,"display":"Poland"
+  },
+  {
+     "value":"PT"
+    ,"display":"Portugal (Including Azores and Madeira)"
+  },
+  {
+     "value":"RO"
+    ,"display":"Romania"
+  },
+  {
+     "value":"SM"
+    ,"display":"San Marino"
+  },
+  {
+     "value":"SK"
+    ,"display":"Slovakia"
+  },
+  {
+     "value":"SI"
+    ,"display":"Slovenia"
+  },
+  {
+     "value":"ES"
+    ,"display":"Spain (Including the Balearic Islands and the Canary Islands; excluding Ceuta (XC) and Melilla (XL))"
+  },
+  {
+     "value":"SE"
+    ,"display":"Sweden"
+  },
+  {
+     "value":"TR"
+    ,"display":"Turkey"
+  },
+  {
+     "value":"GB"
+    ,"display":"United Kingdom of Great Britain and Northern Ireland (the)"
+  }]

@@ -1,0 +1,209 @@
+[
+    {
+       "value":"ACE"
+      ,"display":"Authorised consignee for Union transit"
+    },
+    {
+       "value":"ACP"
+      ,"display":"Authorised issuer to establish the proof of the customs status of Union goods"
+    },
+    {
+       "value":"ACR"
+      ,"display":"Authorised consignor for Union transit"
+    },
+    {
+       "value":"ACT"
+      ,"display":"Authorised consignee for TIR procedure"
+    },
+    {
+       "value":"AEOC"
+      ,"display":"Authorised Economic Operator - customs simplifications"
+    },
+    {
+       "value":"AEOF"
+      ,"display":"Authorised Economic Operator - customs simplifications/security and safety"
+    },
+    {
+       "value":"AEOS"
+      ,"display":"Authorised Economic Operator - security and safety"
+    },
+    {
+       "value":"APEX"
+      ,"display":"Approved exporter"
+    },
+    {
+       "value":"AWB"
+      ,"display":"Authorised weigher of bananas"
+    },
+    {
+       "value":"BOI"
+      ,"display":"Binding Origin Information"
+    },
+    {
+       "value":"BTI"
+      ,"display":"Binding Tariff Information"
+    },
+    {
+       "value":"CCL"
+      ,"display":"Authorisation for centralised clearance"
+    },
+    {
+       "value":"CGU"
+      ,"display":"Comprehensive guarantee"
+    },
+    {
+       "value":"CSDR"
+      ,"display":"Community system of duty reliefs"
+    },
+    {
+       "value":"CSE"
+      ,"display":"Customs simplified exports"
+    },
+    {
+       "value":"CVA"
+      ,"display":"Simplification of the determination of amounts being part of the customs value of goods"
+    },
+    {
+       "value":"CW1"
+      ,"display":"Operation of storage facilities for the customs warehousing of goods in a public customs warehouse type I"
+    },
+    {
+       "value":"CW2"
+      ,"display":"Operation of storage facilities for the customs warehousing of goods in a public customs warehouse type II."
+    },
+    {
+       "value":"CWP"
+      ,"display":"Operation of storage facilities for the customs warehousing of goods in a private customs warehouse"
+    },
+    {
+       "value":"DEP"
+      ,"display":"Designated export place"
+    },
+    {
+       "value":"DPO"
+      ,"display":"Deferment of payment authorisation"
+    },
+    {
+       "value":"EIR"
+      ,"display":"Authorisation for the use of customs declaration through an entry of data in the declarant’s records, including for the export procedure (CSE)"
+    },
+    {
+       "value":"EORI"
+      ,"display":"Economic Operator Registration and Identification"
+    },
+    {
+       "value":"EPSS"
+      ,"display":"Excise payment security system"
+    },
+    {
+       "value":"ETD"
+      ,"display":"Electronic transport document (authorised for use as a customs declaration)"
+    },
+    {
+       "value":"EUS"
+      ,"display":"End use authorisation"
+    },
+    {
+       "value":"EXEE"
+      ,"display":"Registered consignee (Excise)"
+    },
+    {
+       "value":"EXOR"
+      ,"display":"Registered consignor (Excise)"
+    },
+    {
+       "value":"EXW"
+      ,"display":"Excise warehouse"
+    },
+    {
+       "value":"EXWH"
+      ,"display":"Excise warehouse - Hydrocarbon Oils"
+    },
+    {
+       "value":"FAS"
+      ,"display":"Flexible accounting system"
+    },
+    {
+       "value":"FZ"
+      ,"display":"Free zone (only for the use of the Isle of Man)"
+    },
+    {
+       "value":"GGA"
+      ,"display":"General guarantee account"
+    },
+    {
+       "value":"GVS"
+      ,"display":"General valuation statement"
+    },
+    {
+       "value":"IPO"
+      ,"display":"Inward processing procedure authorisation"
+    },
+    {
+       "value":"LVBI"
+      ,"display":"Low value bulking of imports"
+    },
+    {
+       "value":"MOU"
+      ,"display":"Memorandum of understanding"
+    },
+    {
+       "value":"OPO"
+      ,"display":"Outward processing procedure authorisation"
+    },
+    {
+       "value":"REM"
+      ,"display":"Remission of the amounts of import or export duty"
+    },
+    {
+       "value":"REP"
+      ,"display":"Repayment of the amounts of import or export duty"
+    },
+    {
+       "value":"REX"
+      ,"display":"Registered exporter"
+    },
+    {
+       "value":"RSS"
+      ,"display":"Regular shipping services authorisation"
+    },
+    {
+       "value":"SAS"
+      ,"display":"Authorisation for self assessment"
+    },
+    {
+       "value":"SASP"
+      ,"display":"Single authorisation for simplified procedures"
+    },
+    {
+       "value":"SDE"
+      ,"display":"Simplified declaration authorisation (SDP)"
+    },
+    {
+       "value":"SIVA"
+      ,"display":"Simplified Import VAT Accounting"
+    },
+    {
+       "value":"SSE"
+      ,"display":"Authorisation for the use of seals of a special type"
+    },
+    {
+       "value":"TEA"
+      ,"display":"Temporary admission authorisation"
+    },
+    {
+       "value":"TEAH"
+      ,"display":"Temporary admission authorisation - auction houses (no guarantee for VAT required)"
+    },
+    {
+       "value":"TRD"
+      ,"display":"Authorisation to use transit declaration with a reduced dataset"
+    },
+    {
+       "value":"TST"
+      ,"display":"Authorisation to operate storage facilities for the temporary storage of goods"
+    },
+    {
+       "value":"UKCS"
+      ,"display":"UK Continental shelf"
+    }]

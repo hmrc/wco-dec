@@ -1,0 +1,89 @@
+[
+    {
+       "value":"100",
+       "display":"Normal third country tariff duty (including ceilings). This code stands for all cases where no preference, but the normal third country rate is applied."
+    },
+    {
+       "value":"110",
+       "display":"Tariff suspension. Temporary suspensions from the autonomous customs duties are granted for certain goods of the agricultural, chemical, aeronautical and microelectronic sector. Others are shown as footnotes to certain Combined Nomenclature (CN) codes."
+    },
+    {
+       "value":"118",
+       "display":"Tariff suspension subject to the production of a special certificate."
+    },
+    {
+       "value":"119",
+       "display":"Tariff suspension subject to Airworthiness Certificates. Suspension of duty (not including VAT) for importations of civil aircraft parts which must be accompanied by an airworthiness certificate. A document code A119 must be entered in data element 2/3 and endorsed ‘Import with Airworthiness Certificate’."
+    },
+    {
+       "value":"120",
+       "display":"Tariff quota, notably General Agreement on Tariffs and Trade (GATT) quota. GATT quotas are shown as footnotes to the CN. Examples can be found in Chapter 3 and for codes 0802, 0805 and 0806."
+    },
+    {
+       "value":"125",
+       "display":"Tariff quota, notably GATT quota, subject to the production of a special certificate. GATTquotas exist for handicraft products and those produced on hand looms. The preferential quota is only applied on the production of the relevant certificate, which must be entered in data element 2/3 against the relevant document code as shown in Appendix 5: data element 2/3: documents and other reference codes. Other cases could be created, for example for goods to be denatured before being admitted to a quota."
+    },
+    {
+       "value":"128",
+       "display":"Tariff quota following outward processing."
+    },
+    {
+       "value":"150",
+       "display":"Admission to certain CN subheadings subject to a certificate confirming the special nature of the goods. The relevant certificates are mentioned in Annex 9 of Council Regulation 2658/87/EEC."
+    },
+    {
+       "value":"200",
+       "display":"Generalised System of Preferences (GSP) rate without conditions or limits (including ceilings) Application of the GSP duty rate without conditions or limits (form A)"
+    },
+    {
+       "value":"218",
+       "display":"Tariff suspension subject to a certificate confirming the special nature of the goods. It is unlikely that a tariff suspension for GSP only and subject to a certificate confirming the special nature of the goods will be created."
+    },
+    {
+       "value":"220",
+       "display":"Tariff Quota. The GSP rate is only applicable within the limits of a Tariff Quota. In these cases, the serial number for the quota is shown beside the preferential rate in the printed version of the TARif Intégré Communautaire; Integrated Tariff of the European Communities (TARIC)."
+    },
+    {
+       "value":"225",
+       "display":"Tariff Quota subject to a certificate confirming the special nature of the goods. In this case, the use of a Tariff Quota under GSP would depend on the issue of a certificate confirming the special nature of the goods."
+    },
+    {
+       "value":"250",
+       "display":"Application of GSP rates subject to a certificate confirming the special nature of the goods"
+    },
+    {
+       "value":"300",
+       "display":"Tariff preference without conditions or limits (including ceilings). Application of the relevant preferential rate without conditions or limits (Certificates EUR1, EUR-MED, or equivalent proofs of preferential origin)."
+    },
+    {
+       "value":"310",
+       "display":"Tariff suspension under preferential agreements. A temporary suspension of the autonomous duty rates under preferential agreements."
+    },
+    {
+       "value":"318",
+       "display":"Tariff suspension subject to a certificate confirming the special nature of the goods"
+    },
+    {
+       "value":"320",
+       "display":"Tariff Quota. The preferential rate is only applicable within the limits of a quota. In these cases the serial number of the quota is mentioned beside the preferential duty rate in the printed version of the TARIC."
+    },
+    {
+       "value":"325",
+       "display":"Tariff Quota subject to a certificate confirming the special nature of the goods. Claim to other tariff preferences within the limits of a preference quota subject to a certificate being presented confirming the special nature of the product. For example, Volume 2 additional information section states that a Certificate of Designation of Origin and a EUR1 is required for claims to a preferential quota for Western Balkan wine."
+    },
+    {
+       "value":"350",
+       "display":"Application of preferential duty rates subject to a certificate confirming the special nature of the goods. The relevant certificates are mentioned in Articles 16 to 34 of EU Reg. No. 2015/2447."
+    },
+    {
+       "value":"400",
+       "display":"Non imposition of customs duties under the provisions of Customs Union Agreements concluded by the EU with Turkey for certain products in headings 1704, 1803, 1804, 1805, 1806, 1901, 190211, 190219, 1903, 1904, 1905, 2101, 2102, 2103, 2104, 2105, 210610, 210620, 2202, 2205 and for all products in Chapters 25-97 (with the exception of Coal and Steel (see the list in Notice 812) and products in Tariff headings 3502, 4501 5301 and 5302) which are covered by forms Admission Temporaire Roulette (ATR) (see code 420 below for those agricultural products which are exceptionally covered by forms ATR for the purposes of annual tariff quotas), Andorra for all products in Chapters 25-97 ) and for San Marino for all products (with the exception of coal and steel) in Chapters 1 to 97 of the UK Trade Tariff."
+    },
+    {
+       "value":"420",
+       "display":"Tariff Quota. Non imposition of duty within the limits of annual Tariff Quotas for certain products in headings 1704, 1806, 1901, 1902, 1904, 1905 and 2106 which are imported from Turkey under cover of forms ATR ."
+    },
+    {
+       "value":"500",
+       "display":"\tThis code is used when apply preferences in the context of trade with special fiscal territories (a part of the customs territory of the Union where the provisions of Council Directive 2006/112/EC of 28 November 2006 on the common system of value added tax or Council Directive 2008/118/EC of 16 December 2008 concerning the general arrangements for excise duty and repealing Directive 92/12/EEC do not apply - Mount Athos, the Canary Islands, the French overseas departments, the Åland Islands, the Channel Islands."
+    }]

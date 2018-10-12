@@ -1,0 +1,153 @@
+[
+        {
+           "value":"270"
+          ,"display":"Delivery note"
+        },
+        {
+           "value":"271"
+          ,"display":"Packing list"
+        },
+        {
+           "value":"325"
+          ,"display":"Proforma invoice"
+        },
+        {
+           "value":"337"
+          ,"display":"Temporary storage declaration"
+        },
+        {
+           "value":"355"
+          ,"display":"Entry summary declaration (ENS)"
+        },
+        {
+           "value":"380"
+          ,"display":"Commercial invoice"
+        },
+        {
+           "value":"703"
+          ,"display":"House waybill"
+        },
+        {
+           "value":"704"
+          ,"display":"Master Bill of Lading"
+        },
+        {
+           "value":"705"
+          ,"display":"Bill of Lading"
+        },
+        {
+           "value":"714"
+          ,"display":"House Bill of Lading"
+        },
+        {
+           "value":"720"
+          ,"display":"Rail consignment note"
+        },
+        {
+           "value":"730"
+          ,"display":"Road consignment note"
+        },
+        {
+           "value":"740"
+          ,"display":"Air Waybill"
+        },
+        {
+           "value":"741"
+          ,"display":"Master Air Waybill"
+        },
+        {
+           "value":"750"
+          ,"display":"Despatch note (post parcels)"
+        },
+        {
+           "value":"760"
+          ,"display":"Multimodal/combined transport document"
+        },
+        {
+           "value":"785"
+          ,"display":"cargo manifest"
+        },
+        {
+           "value":"787"
+          ,"display":"Bordereau"
+        },
+        {
+           "value":"820"
+          ,"display":"Union/Common Transit Declaration - mixed consignments (T)"
+        },
+        {
+           "value":"821"
+          ,"display":"External Union/Common Transit Declaration (T1)"
+        },
+        {
+           "value":"822"
+          ,"display":"Internal Union/Common Transit Declaration (T2)"
+        },
+        {
+           "value":"823"
+          ,"display":"Control document T5"
+        },
+        {
+           "value":"825"
+          ,"display":"Proof of the customs status of Union goods (T2L)"
+        },
+        {
+           "value":"952"
+          ,"display":"TIR Carnet"
+        },
+        {
+           "value":"955"
+          ,"display":"ATA Carnet"
+        },
+        {
+           "value":"CLE"
+          ,"display":"Reference/date of entry in the declarant’s records (EIDR)*"
+        },
+        {
+           "value":"IF3"
+          ,"display":"Information sheet (INF3)"
+        },
+        {
+           "value":"MNS"
+          ,"display":"Cargo manifest - simplified procedure"
+        },
+        {
+           "value":"MRN"
+          ,"display":"Declaration/notification (MRN)"
+        },
+        {
+           "value":"T2F"
+          ,"display":"Internal Union Transit Declaration - Article 227 of the code"
+        },
+        {
+           "value":"T2G"
+          ,"display":"Proof of the sustoms status of Union goods (T2LF)"
+        },
+        {
+           "value":"T2M"
+          ,"display":"T2M proof"
+        },
+        {
+           "value":"SDE"
+          ,"display":"Simplified declaration** for simplified declaration procedure (SDP)"
+        },
+        {
+           "value":"CSE"
+          ,"display":"Customs supervised export"
+        },
+        {
+           "value":"MCR"
+          ,"display":"Master unique consignment reference (MUCR)"
+        },
+        {
+           "value":"DCR"
+          ,"display":"Declaration unique consignment reference (DUCR)"
+        },
+        {
+           "value":"DCS"
+          ,"display":"Declaration unique consignment reference part number (DUCR Part)"
+        },
+        {
+           "value":"ZZZ"
+          ,"display":"Other"
+        }]
