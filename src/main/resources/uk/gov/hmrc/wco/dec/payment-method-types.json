@@ -1,0 +1,73 @@
+[
+    {
+       "value":"A"
+      ,"display":"Immediate payment in cash"
+    },
+    {
+       "value":"B"
+      ,"display":"Immediate payment by corporate credit card"
+    },
+    {
+       "value":"C"
+      ,"display":"Immediate payment by cheque"
+    },
+    {
+       "value":"D"
+      ,"display":"This code is not currently in use"
+    },
+    {
+       "value":"E"
+      ,"display":"Deferred payment (deferment account)"
+    },
+    {
+       "value":"G"
+      ,"display":"Postponed payment: VAT system (Article 211 of EU Directive 2006/112/EC)"
+    },
+    {
+       "value":"H"
+      ,"display":"Immediate payment by electronic credit transfer (faster payment, CHAPS, Bacs)"
+    },
+    {
+       "value":"M"
+      ,"display":"Security deposit: immediate payment (cash deposit)"
+    },
+    {
+       "value":"N"
+      ,"display":"Security deposit: immediate payment (CDS cash account deposit)"
+    },
+    {
+       "value":"O"
+      ,"display":"Export refunds and/or common agricultural policy licence, security held by Rural Payments Agency"
+    },
+    {
+       "value":"P"
+      ,"display":"Immediate payment from CDS cash account"
+    },
+    {
+       "value":"R"
+      ,"display":"Security deposit: deferred payment (deferment account deposit)"
+    },
+    {
+       "value":"S"
+      ,"display":"Importers general guarantee account (importer self-representation)"
+    },
+    {
+       "value":"T"
+      ,"display":"Agent’s general guarantee account"
+    },
+    {
+       "value":"U"
+      ,"display":"Security: importers guarantee account - standing authority (direct/indirect representation)"
+    },
+    {
+       "value":"V"
+      ,"display":"Security: importers guarantee account - individual/specific authority (direct/indirect representation)"
+    },
+    {
+       "value":"X"
+      ,"display":"SASP"
+    },
+    {
+       "value":"Z"
+      ,"display":"Importers individual guarantee (for example, C&E 250)"
+    }]

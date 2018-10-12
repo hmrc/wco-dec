@@ -1,0 +1,1513 @@
+[
+    {
+       "value":"43"
+      ,"display":"Bag, super bulk"
+    },
+    {
+       "value":"44"
+      ,"display":"Bag, polybag"
+    },
+    {
+       "value":"1A"
+      ,"display":"Drum, steel"
+    },
+    {
+       "value":"1B"
+      ,"display":"Drum, aluminium"
+    },
+    {
+       "value":"1D"
+      ,"display":"Drum, plywood"
+    },
+    {
+       "value":"1F"
+      ,"display":"Container, flexible"
+    },
+    {
+       "value":"1G"
+      ,"display":"Drum, fibre"
+    },
+    {
+       "value":"1W"
+      ,"display":"Drum, wooden"
+    },
+    {
+       "value":"2C"
+      ,"display":"Barrel, wooden"
+    },
+    {
+       "value":"3A"
+      ,"display":"Jerrican, steel"
+    },
+    {
+       "value":"3H"
+      ,"display":"Jerrican, plastic"
+    },
+    {
+       "value":"4A"
+      ,"display":"Box, steel"
+    },
+    {
+       "value":"4B"
+      ,"display":"Box, aluminium"
+    },
+    {
+       "value":"4C"
+      ,"display":"Box, natural wood"
+    },
+    {
+       "value":"4D"
+      ,"display":"Box, plywood"
+    },
+    {
+       "value":"4F"
+      ,"display":"Box, reconstituted wood"
+    },
+    {
+       "value":"4G"
+      ,"display":"Box fibreboard"
+    },
+    {
+       "value":"4H"
+      ,"display":"Box, plastic"
+    },
+    {
+       "value":"5H"
+      ,"display":"Bag, woven plastic"
+    },
+    {
+       "value":"5L"
+      ,"display":"Bag, textile"
+    },
+    {
+       "value":"5M"
+      ,"display":"Bag, paper"
+    },
+    {
+       "value":"6H"
+      ,"display":"Composite packaging, plastic receptacle"
+    },
+    {
+       "value":"6P"
+      ,"display":"Composite packaging, glass receptacle"
+    },
+    {
+       "value":"7A"
+      ,"display":"Case, car"
+    },
+    {
+       "value":"7B"
+      ,"display":"Case, wooden"
+    },
+    {
+       "value":"8A"
+      ,"display":"Pallett, wooden"
+    },
+    {
+       "value":"8B"
+      ,"display":"Crate, wooden"
+    },
+    {
+       "value":"8C"
+      ,"display":"Bundle, wooden"
+    },
+    {
+       "value":"AA"
+      ,"display":"Intermediate bulk container, rigid plastic"
+    },
+    {
+       "value":"AB"
+      ,"display":"Receptacle, fibre"
+    },
+    {
+       "value":"AC"
+      ,"display":"Receptacle, paper"
+    },
+    {
+       "value":"AD"
+      ,"display":"Receptacle, wooden"
+    },
+    {
+       "value":"AE"
+      ,"display":"Aerosol"
+    },
+    {
+       "value":"AF"
+      ,"display":"Pallet, modular, collars 80cm x 60cm"
+    },
+    {
+       "value":"AG"
+      ,"display":"Pallet, shrinkwrapped"
+    },
+    {
+       "value":"AH"
+      ,"display":"Pallet, 100cm x 110cm"
+    },
+    {
+       "value":"AI"
+      ,"display":"Clamshell"
+    },
+    {
+       "value":"AJ"
+      ,"display":"Cone"
+    },
+    {
+       "value":"AL"
+      ,"display":"Ball"
+    },
+    {
+       "value":"AM"
+      ,"display":"Ampoule, non-protected"
+    },
+    {
+       "value":"AP"
+      ,"display":"Ampoule, protected"
+    },
+    {
+       "value":"AT"
+      ,"display":"Atomizer"
+    },
+    {
+       "value":"AV"
+      ,"display":"Capsule"
+    },
+    {
+       "value":"B4"
+      ,"display":"Belt"
+    },
+    {
+       "value":"BA"
+      ,"display":"Barrel"
+    },
+    {
+       "value":"BB"
+      ,"display":"Bobbin"
+    },
+    {
+       "value":"BC"
+      ,"display":"Bottlecrate / bottlerack"
+    },
+    {
+       "value":"BD"
+      ,"display":"Board"
+    },
+    {
+       "value":"BE"
+      ,"display":"Bundle"
+    },
+    {
+       "value":"BF"
+      ,"display":"Balloon, non-protected"
+    },
+    {
+       "value":"BG"
+      ,"display":"Bag"
+    },
+    {
+       "value":"BH"
+      ,"display":"Bunch"
+    },
+    {
+       "value":"BI"
+      ,"display":"Bin"
+    },
+    {
+       "value":"BJ"
+      ,"display":"Bucket"
+    },
+    {
+       "value":"BK"
+      ,"display":"Basket"
+    },
+    {
+       "value":"BL"
+      ,"display":"Bale, compressed"
+    },
+    {
+       "value":"BM"
+      ,"display":"Basin"
+    },
+    {
+       "value":"BN"
+      ,"display":"Bale, non-compressed"
+    },
+    {
+       "value":"BO"
+      ,"display":"Bottle, non-protected, cylindrical"
+    },
+    {
+       "value":"BP"
+      ,"display":"Balloon, protected"
+    },
+    {
+       "value":"BQ"
+      ,"display":"Bottle, protected cylindrical"
+    },
+    {
+       "value":"BR"
+      ,"display":"Bar"
+    },
+    {
+       "value":"BS"
+      ,"display":"Bottle, non-protected, bulbous"
+    },
+    {
+       "value":"BT"
+      ,"display":"Bolt"
+    },
+    {
+       "value":"BU"
+      ,"display":"Butt"
+    },
+    {
+       "value":"BV"
+      ,"display":"Bottle, protected bulbous"
+    },
+    {
+       "value":"BW"
+      ,"display":"Box, for liquids"
+    },
+    {
+       "value":"BX"
+      ,"display":"Box"
+    },
+    {
+       "value":"BY"
+      ,"display":"Board, in bundle/bunch/truss"
+    },
+    {
+       "value":"BZ"
+      ,"display":"Bars, in bundle/bunch/truss"
+    },
+    {
+       "value":"CA"
+      ,"display":"Can, rectangular"
+    },
+    {
+       "value":"CB"
+      ,"display":"Crate, beer"
+    },
+    {
+       "value":"CC"
+      ,"display":"Churn"
+    },
+    {
+       "value":"CD"
+      ,"display":"Can, with handle and spout"
+    },
+    {
+       "value":"CE"
+      ,"display":"Creel"
+    },
+    {
+       "value":"CF"
+      ,"display":"Coffer"
+    },
+    {
+       "value":"CG"
+      ,"display":"Cage"
+    },
+    {
+       "value":"CH"
+      ,"display":"Chest"
+    },
+    {
+       "value":"CI"
+      ,"display":"Canister"
+    },
+    {
+       "value":"CJ"
+      ,"display":"Coffin"
+    },
+    {
+       "value":"CK"
+      ,"display":"Cask"
+    },
+    {
+       "value":"CL"
+      ,"display":"Coil"
+    },
+    {
+       "value":"CM"
+      ,"display":"Card"
+    },
+    {
+       "value":"CN"
+      ,"display":"Container, not otherwise specified as transport equipment"
+    },
+    {
+       "value":"CO"
+      ,"display":"Carboy, non-protected"
+    },
+    {
+       "value":"CP"
+      ,"display":"Carboy, protected"
+    },
+    {
+       "value":"CQ"
+      ,"display":"Cartridge"
+    },
+    {
+       "value":"CR"
+      ,"display":"Crate"
+    },
+    {
+       "value":"CS"
+      ,"display":"Case"
+    },
+    {
+       "value":"CT"
+      ,"display":"Carton"
+    },
+    {
+       "value":"CU"
+      ,"display":"Cup"
+    },
+    {
+       "value":"CV"
+      ,"display":"Cover"
+    },
+    {
+       "value":"CW"
+      ,"display":"Cage, roll"
+    },
+    {
+       "value":"CX"
+      ,"display":"Can, cylindrical"
+    },
+    {
+       "value":"CY"
+      ,"display":"Cylinder"
+    },
+    {
+       "value":"CZ"
+      ,"display":"Canvas"
+    },
+    {
+       "value":"DA"
+      ,"display":"Crate, multiple layer, plastic"
+    },
+    {
+       "value":"DB"
+      ,"display":"Crate, multiple layer, wooden"
+    },
+    {
+       "value":"DC"
+      ,"display":"Crate, multiple layer, cardboard"
+    },
+    {
+       "value":"DG"
+      ,"display":"Cage, Commonwealth Handling Equipment Pool (CHEP)"
+    },
+    {
+       "value":"DH"
+      ,"display":"Box, Commonwealth Handling Equipment Pool (CHEP), Eurobox"
+    },
+    {
+       "value":"DI"
+      ,"display":"Drum, iron"
+    },
+    {
+       "value":"DJ"
+      ,"display":"Demijohn, non-protected"
+    },
+    {
+       "value":"DK"
+      ,"display":"Crate, bulk, cardboard"
+    },
+    {
+       "value":"DL"
+      ,"display":"Crate, bulk, plastic"
+    },
+    {
+       "value":"DM"
+      ,"display":"Crate, bulk, wooden"
+    },
+    {
+       "value":"DN"
+      ,"display":"Dispenser"
+    },
+    {
+       "value":"DP"
+      ,"display":"Demijohn, protected"
+    },
+    {
+       "value":"DR"
+      ,"display":"Drum"
+    },
+    {
+       "value":"DS"
+      ,"display":"Tray, one layer no cover, plastic"
+    },
+    {
+       "value":"DT"
+      ,"display":"Tray, one layer no cover, wooden"
+    },
+    {
+       "value":"DU"
+      ,"display":"Tray, one layer no cover, polystyrene"
+    },
+    {
+       "value":"DV"
+      ,"display":"Tray, one layer no cover, cardboard"
+    },
+    {
+       "value":"DW"
+      ,"display":"Tray, two layers no cover, plastic tray"
+    },
+    {
+       "value":"DX"
+      ,"display":"Tray, two layers no cover, wooden"
+    },
+    {
+       "value":"DY"
+      ,"display":"Tray, two layers no cover, cardboard"
+    },
+    {
+       "value":"EC"
+      ,"display":"Bag, plastic"
+    },
+    {
+       "value":"ED"
+      ,"display":"Case, with pallet base"
+    },
+    {
+       "value":"EE"
+      ,"display":"Case, with pallet base, wooden"
+    },
+    {
+       "value":"EF"
+      ,"display":"Case, with pallet base, cardboard"
+    },
+    {
+       "value":"EG"
+      ,"display":"Case, with pallet base, plastic"
+    },
+    {
+       "value":"EH"
+      ,"display":"Case, with pallet base, metal"
+    },
+    {
+       "value":"EI"
+      ,"display":"Case, isothermic"
+    },
+    {
+       "value":"EN"
+      ,"display":"Envelope"
+    },
+    {
+       "value":"FB"
+      ,"display":"Flexibag"
+    },
+    {
+       "value":"FC"
+      ,"display":"Crate, fruit"
+    },
+    {
+       "value":"FD"
+      ,"display":"Crate, framed"
+    },
+    {
+       "value":"FE"
+      ,"display":"Flexitank"
+    },
+    {
+       "value":"FI"
+      ,"display":"Firkin"
+    },
+    {
+       "value":"FL"
+      ,"display":"Flask"
+    },
+    {
+       "value":"FO"
+      ,"display":"Footlocker"
+    },
+    {
+       "value":"FP"
+      ,"display":"Filmpack"
+    },
+    {
+       "value":"FR"
+      ,"display":"Frame"
+    },
+    {
+       "value":"FT"
+      ,"display":"Foodtainer"
+    },
+    {
+       "value":"FW"
+      ,"display":"Cart, flatbed"
+    },
+    {
+       "value":"FX"
+      ,"display":"Bag, flexible container"
+    },
+    {
+       "value":"GB"
+      ,"display":"Bottle, gas"
+    },
+    {
+       "value":"GI"
+      ,"display":"Girder"
+    },
+    {
+       "value":"GL"
+      ,"display":"Container, gallon"
+    },
+    {
+       "value":"GR"
+      ,"display":"Receptacle, glass"
+    },
+    {
+       "value":"GU"
+      ,"display":"Tray, containing horizontally stacked flat items"
+    },
+    {
+       "value":"GY"
+      ,"display":"Bag, gunny"
+    },
+    {
+       "value":"GZ"
+      ,"display":"Girders, in bundle/bunch/truss"
+    },
+    {
+       "value":"HA"
+      ,"display":"Basket, with handle, plastic"
+    },
+    {
+       "value":"HB"
+      ,"display":"Basket, with handle, wooden"
+    },
+    {
+       "value":"HC"
+      ,"display":"Basket, with handle, cardboard"
+    },
+    {
+       "value":"HG"
+      ,"display":"Hogshead"
+    },
+    {
+       "value":"HN"
+      ,"display":"Hanger"
+    },
+    {
+       "value":"HR"
+      ,"display":"Hamper"
+    },
+    {
+       "value":"IA"
+      ,"display":"Package, display, wooden"
+    },
+    {
+       "value":"IB"
+      ,"display":"Package, display, cardboard"
+    },
+    {
+       "value":"IC"
+      ,"display":"Package, display, plastic"
+    },
+    {
+       "value":"ID"
+      ,"display":"Package, display, metal"
+    },
+    {
+       "value":"IE"
+      ,"display":"Package, show"
+    },
+    {
+       "value":"IF"
+      ,"display":"Package, flow"
+    },
+    {
+       "value":"IG"
+      ,"display":"Package, paper wrapped"
+    },
+    {
+       "value":"IH"
+      ,"display":"Drum, plastic"
+    },
+    {
+       "value":"IK"
+      ,"display":"Package, cardboard, with bottle grip-holes"
+    },
+    {
+       "value":"IL"
+      ,"display":"Tray, rigid, lidded stackable (CEN TS 14482:2002)"
+    },
+    {
+       "value":"IN"
+      ,"display":"Ingot"
+    },
+    {
+       "value":"IZ"
+      ,"display":"Ingots, in bundle/bunch/truss"
+    },
+    {
+       "value":"JB"
+      ,"display":"Bag, jumbo"
+    },
+    {
+       "value":"JC"
+      ,"display":"Jerrican, rectangular"
+    },
+    {
+       "value":"JG"
+      ,"display":"Jug"
+    },
+    {
+       "value":"JR"
+      ,"display":"Jar"
+    },
+    {
+       "value":"JT"
+      ,"display":"Jutebag"
+    },
+    {
+       "value":"JY"
+      ,"display":"Jerrican, cylindrical"
+    },
+    {
+       "value":"KG"
+      ,"display":"Keg"
+    },
+    {
+       "value":"KI"
+      ,"display":"Kit"
+    },
+    {
+       "value":"LE"
+      ,"display":"Luggage"
+    },
+    {
+       "value":"LG"
+      ,"display":"Log"
+    },
+    {
+       "value":"LT"
+      ,"display":"Lot"
+    },
+    {
+       "value":"LU"
+      ,"display":"Lug"
+    },
+    {
+       "value":"LV"
+      ,"display":"Liftvan"
+    },
+    {
+       "value":"LZ"
+      ,"display":"Logs, in bundle/bunch/truss"
+    },
+    {
+       "value":"MA"
+      ,"display":"Crate, metal"
+    },
+    {
+       "value":"MB"
+      ,"display":"Bag, multiply"
+    },
+    {
+       "value":"MC"
+      ,"display":"Crate, milk"
+    },
+    {
+       "value":"ME"
+      ,"display":"Container, metal"
+    },
+    {
+       "value":"MR"
+      ,"display":"Receptacle, metal"
+    },
+    {
+       "value":"MS"
+      ,"display":"Sack, multi-wall"
+    },
+    {
+       "value":"MT"
+      ,"display":"Mat"
+    },
+    {
+       "value":"MW"
+      ,"display":"Receptacle, plastic wrapped"
+    },
+    {
+       "value":"MX"
+      ,"display":"Matchbox"
+    },
+    {
+       "value":"NA"
+      ,"display":"Not available"
+    },
+    {
+       "value":"NE"
+      ,"display":"Unpacked or unpackaged"
+    },
+    {
+       "value":"NF"
+      ,"display":"Unpacked or unpackaged, single unit"
+    },
+    {
+       "value":"NG"
+      ,"display":"Unpacked or unpackaged, multiple units"
+    },
+    {
+       "value":"NS"
+      ,"display":"Nest"
+    },
+    {
+       "value":"NT"
+      ,"display":"Net"
+    },
+    {
+       "value":"NU"
+      ,"display":"Net, tube, plastic"
+    },
+    {
+       "value":"NV"
+      ,"display":"Net, tube, textile"
+    },
+    {
+       "value":"OA"
+      ,"display":"Pallet, CHEP 40cm x 60cm"
+    },
+    {
+       "value":"OB"
+      ,"display":"allet, CHEP 80cm x 120cm"
+    },
+    {
+       "value":"OC"
+      ,"display":"Pallet, CHEP 100cm x 120cm"
+    },
+    {
+       "value":"OD"
+      ,"display":"Pallet, AS 4068-1993"
+    },
+    {
+       "value":"OE"
+      ,"display":"Pallet, ISO T11"
+    },
+    {
+       "value":"OF"
+      ,"display":"Platform, unspecified weight or dimension"
+    },
+    {
+       "value":"OK"
+      ,"display":"Block"
+    },
+    {
+       "value":"OT"
+      ,"display":"Octabin"
+    },
+    {
+       "value":"OU"
+      ,"display":"Container, outer"
+    },
+    {
+       "value":"P2"
+      ,"display":"Pan"
+    },
+    {
+       "value":"PA"
+      ,"display":"Packet"
+    },
+    {
+       "value":"PB"
+      ,"display":"Pallet, box Combined open-ended box and pallet"
+    },
+    {
+       "value":"PC"
+      ,"display":"Parcel"
+    },
+    {
+       "value":"PD"
+      ,"display":"Pallet, modular, collars 80cm x 100cm"
+    },
+    {
+       "value":"PE"
+      ,"display":"Pallet, modular, collars 80cm x 120cm"
+    },
+    {
+       "value":"PF"
+      ,"display":"Pen"
+    },
+    {
+       "value":"PG"
+      ,"display":"Plate"
+    },
+    {
+       "value":"PH"
+      ,"display":"Pitcher"
+    },
+    {
+       "value":"PI"
+      ,"display":"Pipe"
+    },
+    {
+       "value":"PJ"
+      ,"display":"Punnet"
+    },
+    {
+       "value":"PK"
+      ,"display":"Package"
+    },
+    {
+       "value":"PL"
+      ,"display":"Pail"
+    },
+    {
+       "value":"PN"
+      ,"display":"Plank"
+    },
+    {
+       "value":"PO"
+      ,"display":"Pouch"
+    },
+    {
+       "value":"PP"
+      ,"display":"Piece"
+    },
+    {
+       "value":"PR"
+      ,"display":"Receptacle, plastic"
+    },
+    {
+       "value":"PT"
+      ,"display":"Pot"
+    },
+    {
+       "value":"PU"
+      ,"display":"Tray"
+    },
+    {
+       "value":"PV"
+      ,"display":"Pipes, in bundle/bunch/truss"
+    },
+    {
+       "value":"PX"
+      ,"display":"Pallet"
+    },
+    {
+       "value":"PY"
+      ,"display":"Plates, in bundle/bunch/truss"
+    },
+    {
+       "value":"PZ"
+      ,"display":"Planks, in bundle/bunch/truss"
+    },
+    {
+       "value":"QA"
+      ,"display":"Drum, steel, non-removable head"
+    },
+    {
+       "value":"QB"
+      ,"display":"Drum, steel, removable head"
+    },
+    {
+       "value":"QC"
+      ,"display":"Drum, aluminium, non-removable head"
+    },
+    {
+       "value":"QD"
+      ,"display":"Drum, aluminium, removable head"
+    },
+    {
+       "value":"QF"
+      ,"display":"Drum, plastic, non-removable head"
+    },
+    {
+       "value":"QG"
+      ,"display":"Drum, plastic, removable head"
+    },
+    {
+       "value":"QH"
+      ,"display":"Barrel, wooden, bung type"
+    },
+    {
+       "value":"QJ"
+      ,"display":"Barrel, wooden, removable head"
+    },
+    {
+       "value":"QK"
+      ,"display":"Jerrican, steel, non-removable head"
+    },
+    {
+       "value":"QL"
+      ,"display":"Jerrican, steel, removable head"
+    },
+    {
+       "value":"QM"
+      ,"display":"Jerrican, plastic, non-removable head"
+    },
+    {
+       "value":"QN"
+      ,"display":"Jerrican, plastic, removable head"
+    },
+    {
+       "value":"QP"
+      ,"display":"Box, wooden, natural wood, ordinary"
+    },
+    {
+       "value":"QQ"
+      ,"display":"Box, wooden, natural wood, with sift proof walls"
+    },
+    {
+       "value":"QR"
+      ,"display":"Box, plastic, expanded"
+    },
+    {
+       "value":"QS"
+      ,"display":"Box, plastic, solid"
+    },
+    {
+       "value":"RD"
+      ,"display":"Rod"
+    },
+    {
+       "value":"RG"
+      ,"display":"Ring"
+    },
+    {
+       "value":"RJ"
+      ,"display":"Rack, clothing hanger"
+    },
+    {
+       "value":"RK"
+      ,"display":"Rack"
+    },
+    {
+       "value":"RL"
+      ,"display":"Reel"
+    },
+    {
+       "value":"RO"
+      ,"display":"Roll"
+    },
+    {
+       "value":"RT"
+      ,"display":"Rednet"
+    },
+    {
+       "value":"RZ"
+      ,"display":"Rods, in bundle/bunch/truss"
+    },
+    {
+       "value":"SA"
+      ,"display":"Sack"
+    },
+    {
+       "value":"SB"
+      ,"display":"Slab"
+    },
+    {
+       "value":"SC"
+      ,"display":"Crate, shallow"
+    },
+    {
+       "value":"SD"
+      ,"display":"Spindle"
+    },
+    {
+       "value":"SE"
+      ,"display":"Sea-chest"
+    },
+    {
+       "value":"SH"
+      ,"display":"Sachet"
+    },
+    {
+       "value":"SI"
+      ,"display":"Skid"
+    },
+    {
+       "value":"SK"
+      ,"display":"Case, skeleton"
+    },
+    {
+       "value":"SL"
+      ,"display":"Slipsheet"
+    },
+    {
+       "value":"SM"
+      ,"display":"Sheetmetal"
+    },
+    {
+       "value":"SO"
+      ,"display":"Spool"
+    },
+    {
+       "value":"SP"
+      ,"display":"Sheet, plastic wrapping"
+    },
+    {
+       "value":"SS"
+      ,"display":"Case, steel"
+    },
+    {
+       "value":"ST"
+      ,"display":"Sheet"
+    },
+    {
+       "value":"SU"
+      ,"display":"Suitcase"
+    },
+    {
+       "value":"SV"
+      ,"display":"Envelope, steel"
+    },
+    {
+       "value":"SW"
+      ,"display":"Shrink-wrapped"
+    },
+    {
+       "value":"SX"
+      ,"display":"Set"
+    },
+    {
+       "value":"SY"
+      ,"display":"Sleeve"
+    },
+    {
+       "value":"SZ"
+      ,"display":"Sheets, in bundle/bunch/truss"
+    },
+    {
+       "value":"T1"
+      ,"display":"Tablet"
+    },
+    {
+       "value":"TB"
+      ,"display":"Tub"
+    },
+    {
+       "value":"TC"
+      ,"display":"Tea-chest"
+    },
+    {
+       "value":"TD"
+      ,"display":"Tube, collapsible"
+    },
+    {
+       "value":"TE"
+      ,"display":"Tyre"
+    },
+    {
+       "value":"TG"
+      ,"display":"Tank container, generic"
+    },
+    {
+       "value":"TI"
+      ,"display":"Tierce"
+    },
+    {
+       "value":"TK"
+      ,"display":"Tank, rectangular"
+    },
+    {
+       "value":"TL"
+      ,"display":"Tub, with lid"
+    },
+    {
+       "value":"TN"
+      ,"display":"Tin"
+    },
+    {
+       "value":"TO"
+      ,"display":"Tun"
+    },
+    {
+       "value":"TR"
+      ,"display":"Trunk"
+    },
+    {
+       "value":"TS"
+      ,"display":"Truss"
+    },
+    {
+       "value":"TT"
+      ,"display":"Bag, tote"
+    },
+    {
+       "value":"TU"
+      ,"display":"Tube"
+    },
+    {
+       "value":"TV"
+      ,"display":"Tube, with nozzle"
+    },
+    {
+       "value":"TW"
+      ,"display":"Pallet, triwall"
+    },
+    {
+       "value":"TY"
+      ,"display":"Tank, cylindrical"
+    },
+    {
+       "value":"TZ"
+      ,"display":"Tubes, in bundle/bunch/truss"
+    },
+    {
+       "value":"UC"
+      ,"display":"Uncaged"
+    },
+    {
+       "value":"UN"
+      ,"display":"Unit"
+    },
+    {
+       "value":"VA"
+      ,"display":"Vat"
+    },
+    {
+       "value":"VG"
+      ,"display":"Bulk, gas (at 1031mbar and 15°C)"
+    },
+    {
+       "value":"VI"
+      ,"display":"Vial"
+    },
+    {
+       "value":"VK"
+      ,"display":"Vanpack"
+    },
+    {
+       "value":"VL"
+      ,"display":"Bulk, liquid"
+    },
+    {
+       "value":"VN"
+      ,"display":"Vehicle"
+    },
+    {
+       "value":"VO"
+      ,"display":"Bulk, solid, large particles (“nodules”)"
+    },
+    {
+       "value":"VP"
+      ,"display":"Vacuum-packed"
+    },
+    {
+       "value":"VQ"
+      ,"display":"Bulk, liquefied gas (at abnormal temperature/pressure)"
+    },
+    {
+       "value":"VR"
+      ,"display":"Bulk, solid, granular particles (grains)"
+    },
+    {
+       "value":"VS"
+      ,"display":"Bulk, scrap metal"
+    },
+    {
+       "value":"VY"
+      ,"display":"Bulk, solid, fine particles (“powders”)"
+    },
+    {
+       "value":"WA"
+      ,"display":"Intermediate bulk container"
+    },
+    {
+       "value":"WB"
+      ,"display":"Wickerbottle"
+    },
+    {
+       "value":"WC"
+      ,"display":"Intermediate bulk container, steel"
+    },
+    {
+       "value":"WD"
+      ,"display":"Intermediate bulk container, aluminium"
+    },
+    {
+       "value":"WF"
+      ,"display":"Intermediate bulk container, metal"
+    },
+    {
+       "value":"WG"
+      ,"display":"Intermediate bulk container, steel, pressurised > 10 kpa"
+    },
+    {
+       "value":"WH"
+      ,"display":"Intermediate bulk container, aluminium, pressurised > 10 kpa"
+    },
+    {
+       "value":"WJ"
+      ,"display":"Intermediate bulk container, metal, pressure 10 kpa"
+    },
+    {
+       "value":"WK"
+      ,"display":"Intermediate bulk container, steel, liquid"
+    },
+    {
+       "value":"WL"
+      ,"display":"Intermediate bulk container, aluminium, liquid"
+    },
+    {
+       "value":"WM"
+      ,"display":"Intermediate bulk container, metal, liquid"
+    },
+    {
+       "value":"WN"
+      ,"display":"Intermediate bulk container, woven plastic, without coat/liner"
+    },
+    {
+       "value":"WP"
+      ,"display":"Intermediate bulk container, woven plastic, coated"
+    },
+    {
+       "value":"WQ"
+      ,"display":"Intermediate bulk container, woven plastic, with liner"
+    },
+    {
+       "value":"WR"
+      ,"display":"Intermediate bulk container, woven plastic, coated and liner"
+    },
+    {
+       "value":"WS"
+      ,"display":"Intermediate bulk container, plastic film"
+    },
+    {
+       "value":"WT"
+      ,"display":"Intermediate bulk container, textile with out coat/liner"
+    },
+    {
+       "value":"WU"
+      ,"display":"Intermediate bulk container, natural wood, with inner liner"
+    },
+    {
+       "value":"WV"
+      ,"display":"Intermediate bulk container, textile, coated"
+    },
+    {
+       "value":"WW"
+      ,"display":"Intermediate bulk container, textile, with liner"
+    },
+    {
+       "value":"WX"
+      ,"display":"Intermediate bulk container, textile, coated and liner"
+    },
+    {
+       "value":"WY"
+      ,"display":"Intermediate bulk container, plywood, with inner liner"
+    },
+    {
+       "value":"WZ"
+      ,"display":"Intermediate bulk container, reconstituted wood, with inner liner"
+    },
+    {
+       "value":"XA"
+      ,"display":"Bag, woven plastic, without inner coat/liner"
+    },
+    {
+       "value":"XB"
+      ,"display":"Bag, woven plastic, sift proof"
+    },
+    {
+       "value":"XC"
+      ,"display":"Bag, woven plastic, water resistant"
+    },
+    {
+       "value":"XD"
+      ,"display":"Bag, plastics film"
+    },
+    {
+       "value":"XF"
+      ,"display":"Bag, textile, without inner coat/liner"
+    },
+    {
+       "value":"XG"
+      ,"display":"Bag, textile, sift proof"
+    },
+    {
+       "value":"XH"
+      ,"display":"Bag, textile, water resistant"
+    },
+    {
+       "value":"XJ"
+      ,"display":"Bag, paper, multi-wall"
+    },
+    {
+       "value":"XK"
+      ,"display":"Bag, paper, multi-wall, water resistant"
+    },
+    {
+       "value":"YA"
+      ,"display":"Composite packaging, plastic receptacle in steel drum"
+    },
+    {
+       "value":"YB"
+      ,"display":"Composite packaging, plastic receptacle in steel crate box"
+    },
+    {
+       "value":"YC"
+      ,"display":"Composite packaging, plastic receptacle in aluminium drum"
+    },
+    {
+       "value":"YD"
+      ,"display":"Composite packaging, plastic receptacle in aluminium crate"
+    },
+    {
+       "value":"YF"
+      ,"display":"Composite packaging, plastic receptacle in wooden box"
+    },
+    {
+       "value":"YG"
+      ,"display":"Composite packaging, plastic receptacle in plywood drum"
+    },
+    {
+       "value":"YH"
+      ,"display":"Composite packaging, plastic receptacle in plywood box"
+    },
+    {
+       "value":"YJ"
+      ,"display":"Composite packaging, plastic receptacle in fibre drum"
+    },
+    {
+       "value":"YK"
+      ,"display":"Composite packaging, plastic receptacle in fibreboard box"
+    },
+    {
+       "value":"YL"
+      ,"display":"Composite packaging, plastic receptacle in plastic drum"
+    },
+    {
+       "value":"YM"
+      ,"display":"Composite packaging, plastic receptacle in solid plastic box"
+    },
+    {
+       "value":"YN"
+      ,"display":"Composite packaging, glass receptacle in steel drum"
+    },
+    {
+       "value":"YP"
+      ,"display":"Composite packaging, glass receptacle in steel crate box"
+    },
+    {
+       "value":"YQ"
+      ,"display":"Composite packaging, glass receptacle in aluminium drum"
+    },
+    {
+       "value":"YR"
+      ,"display":"Composite packaging, glass receptacle in aluminium crate"
+    },
+    {
+       "value":"YS"
+      ,"display":"Composite packaging, glass receptacle in wooden box"
+    },
+    {
+       "value":"YT"
+      ,"display":"Composite packaging, glass receptacle in plywood drum"
+    },
+    {
+       "value":"YV"
+      ,"display":"Composite packaging, glass receptacle in wickerwork hamper"
+    },
+    {
+       "value":"YW"
+      ,"display":"Composite packaging, glass receptacle in fibre drum"
+    },
+    {
+       "value":"YX"
+      ,"display":"Composite packaging, glass receptacle in fibreboard box"
+    },
+    {
+       "value":"YY"
+      ,"display":"Composite packaging, glass receptacle in expandable plastic pack"
+    },
+    {
+       "value":"YZ"
+      ,"display":"Composite packaging, glass receptacle in solid plastic pack"
+    },
+    {
+       "value":"ZA"
+      ,"display":"Intermediate bulk container, paper, multi-wall"
+    },
+    {
+       "value":"ZB"
+      ,"display":"Bag, large"
+    },
+    {
+       "value":"ZC"
+      ,"display":"Intermediate bulk container, paper, multi-wall, water resistant"
+    },
+    {
+       "value":"ZD"
+      ,"display":"Intermediate bulk container, rigid plastic, with structural equipment, solids"
+    },
+    {
+       "value":"ZF"
+      ,"display":"Intermediate bulk container, rigid plastic, freestanding, solids"
+    },
+    {
+       "value":"ZG"
+      ,"display":"Intermediate bulk container, rigid plastic, with structural equipment, pressurised"
+    },
+    {
+       "value":"ZH"
+      ,"display":"Intermediate bulk container, rigid plastic, freestanding, pressurised"
+    },
+    {
+       "value":"ZJ"
+      ,"display":"Intermediate bulk container, rigid plastic, with structural equipment, liquids"
+    },
+    {
+       "value":"ZK"
+      ,"display":"Intermediate bulk container, rigid plastic, freestanding, liquids"
+    },
+    {
+       "value":"ZL"
+      ,"display":"Intermediate bulk container, composite, rigid plastic, solids"
+    },
+    {
+       "value":"ZM"
+      ,"display":"Intermediate bulk container, composite, flexible plastic, solids"
+    },
+    {
+       "value":"ZN"
+      ,"display":"Intermediate bulk container, composite, rigid plastic, pressurised"
+    },
+    {
+       "value":"ZP"
+      ,"display":"Intermediate bulk container, composite, flexible plastic, pressurised"
+    },
+    {
+       "value":"ZQ"
+      ,"display":"Intermediate bulk container, composite, rigid plastic, liquids"
+    },
+    {
+       "value":"ZR"
+      ,"display":"Intermediate bulk container, composite, flexible plastic, liquids"
+    },
+    {
+       "value":"ZS"
+      ,"display":"Intermediate bulk container, composite"
+    },
+    {
+       "value":"ZT"
+      ,"display":"Intermediate bulk container, fibreboard"
+    },
+    {
+       "value":"ZU"
+      ,"display":"Intermediate bulk container, flexible"
+    },
+    {
+       "value":"ZV"
+      ,"display":"Intermediate bulk container, metal, other than steel"
+    },
+    {
+       "value":"ZW"
+      ,"display":"Intermediate bulk container, natural wood"
+    },
+    {
+       "value":"ZX"
+      ,"display":"Intermediate bulk container, plywood"
+    },
+    {
+       "value":"ZY"
+      ,"display":"Intermediate bulk container, reconstituted wood"
+    },
+    {
+       "value":"ZZ"
+      ,"display":"Mutually defined"
+    }]

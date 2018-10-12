@@ -1,0 +1,33 @@
+[
+    {
+       "value":"10",
+       "display":"IMO ship identification number"
+    },
+    {
+       "value":"11",
+       "display":"Name of the sea-going vessel"
+    },
+    {
+       "value":"20",
+       "display":"Wagon number"
+    },
+    {
+       "value":"30",
+       "display":"Registration number of the road vehicle"
+    },
+    {
+       "value":"40",
+       "display":"IATA flight number"
+    },
+    {
+       "value":"41",
+       "display":"Registration number of the aircraft"
+    },
+    {
+       "value":"80",
+       "display":"European Vessel Identification Number (ENI code)"
+    },
+    {
+       "value":"81",
+       "display":"Name of the inland waterways vessel"
+    }]

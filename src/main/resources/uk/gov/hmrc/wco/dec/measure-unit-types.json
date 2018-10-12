@@ -1,0 +1,301 @@
+[
+    {
+       "value":"ASV# "
+      ,"display":"% volume"
+    },
+    {
+       "value":"ASV#X"
+      ,"display":"Volume hectolitre"
+    },
+    {
+       "value":"CCT# "
+      ,"display":"Carrying capacity in metric tonnes"
+    },
+    {
+       "value":"CEN# "
+      ,"display":"100 items"
+    },
+    {
+       "value":"CTM# "
+      ,"display":"Carats (one metric carat = 2 × 10$ – 4kg)"
+    },
+    {
+       "value":"DAP# "
+      ,"display":"Decatonne, corrected according to polarisation"
+    },
+    {
+       "value":"DHS# "
+      ,"display":"Kilogram of dihydrostreptomycin"
+    },
+    {
+       "value":"DTN# "
+      ,"display":"Hectokilogram"
+    },
+    {
+       "value":"DTN#E"
+      ,"display":"Hectokilogram net of drained weight"
+    },
+    {
+       "value":"DTN#F"
+      ,"display":"Hectokilogram of common wheat"
+    },
+    {
+       "value":"DTN#G"
+      ,"display":"Hectokilogram gross"
+    },
+    {
+       "value":"DTN#L"
+      ,"display":"Hectokilogram of live weight"
+    },
+    {
+       "value":"DTN#M"
+      ,"display":"Hectokilogram net of dry matter"
+    },
+    {
+       "value":"DTN#R"
+      ,"display":"Hectokilogram of the standard quality"
+    },
+    {
+       "value":"DTN#S"
+      ,"display":"Hectokilogram of sugar with a yield in white sugar of 92%"
+    },
+    {
+       "value":"DTN#Z"
+      ,"display":"Hectokilogram per 1% by weight of sucrose"
+    },
+    {
+       "value":"EUR# "
+      ,"display":"Euro (used for statistical surveillance)"
+    },
+    {
+       "value":"FC1# "
+      ,"display":"Factor"
+    },
+    {
+       "value":"FC1#X"
+      ,"display":"Factor hectolitre"
+    },
+    {
+       "value":"GBP*# "
+      ,"display":"Pounds (£) sterling"
+    },
+    {
+       "value":"GFI# "
+      ,"display":"Gram of fissile isotopes"
+    },
+    {
+       "value":"GP1# "
+      ,"display":"Gross production"
+    },
+    {
+       "value":"GP1#X"
+      ,"display":"Gross production hectolitre"
+    },
+    {
+       "value":"GRM# "
+      ,"display":"Gram"
+    },
+    {
+       "value":"GRT# "
+      ,"display":"Gross tonnage"
+    },
+    {
+       "value":"HLT# "
+      ,"display":"Hectolitre"
+    },
+    {
+       "value":"HMT# "
+      ,"display":"Hectometre"
+    },
+    {
+       "value":"KAC# "
+      ,"display":"Kilogram net if acesulfame potassium"
+    },
+    {
+       "value":"KCC# "
+      ,"display":"Kilogram of choline chloride"
+    },
+    {
+       "value":"KCL# "
+      ,"display":"Tonne of potassium chloride"
+    },
+    {
+       "value":"KGM# "
+      ,"display":"Kilogram"
+    },
+    {
+       "value":"KGM#A"
+      ,"display":"Kilogram total alcohol"
+    },
+    {
+       "value":"KGM#E"
+      ,"display":"Kilogram net of drained weight"
+    },
+    {
+       "value":"KGM#G"
+      ,"display":"Kilogram gross"
+    },
+    {
+       "value":"KGM#P"
+      ,"display":"Kilogram of lactic matter"
+    },
+    {
+       "value":"KGM#S"
+      ,"display":"Kilogram of sugar with a yield in white sugar of 92%"
+    },
+    {
+       "value":"KGM#T"
+      ,"display":"Kilogram of dry lactic matter"
+    },
+    {
+       "value":"KLT# "
+      ,"display":"1,000 litres"
+    },
+    {
+       "value":"KMA# "
+      ,"display":"Kilogram of methylamines"
+    },
+    {
+       "value":"KMT# "
+      ,"display":"Kilometre"
+    },
+    {
+       "value":"KNI# "
+      ,"display":"Kilogram of nitrogen"
+    },
+    {
+       "value":"KNS# "
+      ,"display":"Kilogram of hydrogen peroxide"
+    },
+    {
+       "value":"KPH# "
+      ,"display":"Kilogram of potassium hydroxide (caustic potash)"
+    },
+    {
+       "value":"KPO# "
+      ,"display":"Kilogram of potassium oxide"
+    },
+    {
+       "value":"KPP# "
+      ,"display":"Kilogram of diphosphorus pentaoxide"
+    },
+    {
+       "value":"KSD# "
+      ,"display":"Kilogram of substance 90% dry"
+    },
+    {
+       "value":"KSH# "
+      ,"display":"Kilogram of sodium hydroxide (caustic soda)"
+    },
+    {
+       "value":"KUR# "
+      ,"display":"Kilogram of uranium"
+    },
+    {
+       "value":"KW1# "
+      ,"display":"Kilowatt hour"
+    },
+    {
+       "value":"LHC# "
+      ,"display":"Standard litre (of hydrocarbon oil)"
+    },
+    {
+       "value":"LPA# "
+      ,"display":"Litre pure (100%) alcohol"
+    },
+    {
+       "value":"LTR# "
+      ,"display":"Litre"
+    },
+    {
+       "value":"LTR#A"
+      ,"display":"Litre total alcohol"
+    },
+    {
+       "value":"MIL# "
+      ,"display":"1,000 items"
+    },
+    {
+       "value":"MTK# "
+      ,"display":"Square metre"
+    },
+    {
+       "value":"MTQ# "
+      ,"display":"Cubic metre"
+    },
+    {
+       "value":"MTQ#C"
+      ,"display":"Cubic metre 1,000"
+    },
+    {
+       "value":"MTR# "
+      ,"display":"Metre"
+    },
+    {
+       "value":"MWH# "
+      ,"display":"100 kilowatt hours"
+    },
+    {
+       "value":"NAR# "
+      ,"display":"Number of items"
+    },
+    {
+       "value":"NAR#B"
+      ,"display":"Number of items per flask"
+    },
+    {
+       "value":"NCL# "
+      ,"display":"Number of cells"
+    },
+    {
+       "value":"NPR# "
+      ,"display":"Number of pairs"
+    },
+    {
+       "value":"RET#"
+      ,"display":"Retail price"
+    },
+    {
+       "value":"TCE# "
+      ,"display":"Tonne of CO2 equivalent"
+    },
+    {
+       "value":"TJO# "
+      ,"display":"Terajoule (gross calorific value)"
+    },
+    {
+       "value":"TNE# "
+      ,"display":"Tonne"
+    },
+    {
+       "value":"TNE#E"
+      ,"display":"Tonne net of drained weight"
+    },
+    {
+       "value":"TNE#I"
+      ,"display":"Tonne of biodiesel content"
+    },
+    {
+       "value":"TNE#J"
+      ,"display":"Tonne of fuel content (usually in form of tallow, stearin, paraffin wax or other waxes, including the wick)"
+    },
+    {
+       "value":"TNE#K"
+      ,"display":"Tonne of bioethanol content"
+    },
+    {
+       "value":"TNE#M"
+      ,"display":"Tonne net of dry matter"
+    },
+    {
+       "value":"TNE#R"
+      ,"display":"Tonne of the standard quality"
+    },
+    {
+       "value":"TNE#Z"
+      ,"display":"Tonne per 1% by weight of sucrose"
+    },
+    {
+       "value":"WAT# "
+      ,"display":"Number of watt"
+    }]

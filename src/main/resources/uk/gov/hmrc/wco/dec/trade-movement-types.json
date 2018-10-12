@@ -1,10 +1,10 @@
 [
       {
         "value":"CO",
-        "display":"?"
+        "display":"All the goods being declared are from a Special Fiscal Territory of the EU or a country with which the EU has formed a Customs Union."
       },
       {
         "value":"IM",
-        "display":"?"
+        "display":"For trade with countries and territories situated outside of the Customs Territory of the Union. For placing non-Union goods under a customs procedure in the context of trade between member states"
       }
     ]

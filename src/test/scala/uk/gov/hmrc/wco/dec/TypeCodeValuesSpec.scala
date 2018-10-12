@@ -20,6 +20,11 @@ class TypeCodeValuesSpec extends WcoSpec {
 
   "load" should {
 
+    "parse airport-codes" in {
+      TypeCodeValues.load("airport-codes").filter(_.value == "ABR").head.display must be("Aberdeen Regional");
+      TypeCodeValues.load("airport-codes").filter(_.value == "ABR").head.additionalDisplay must be(Some("Aberdeen, United States"))
+    }
+
     "parse allowed-additional-documents" in {
       TypeCodeValues.load("allowed-additional-documents").filter(_.value == "A004").head.display must be("Certificate of authenticity Tobacco. EC Reg 1031/2008 amending Annex 1 to Council Regulation 2658/87.")
     }
@@ -96,20 +101,73 @@ class TypeCodeValuesSpec extends WcoSpec {
       TypeCodeValues.load("location-types").filter(_.value == "C").head.display must be("Certificate of Agreement Airfields")
     }
 
+    "parse measure-unit-types" in {
+      TypeCodeValues.load("measure-unit-types").filter(_.value == "DTN#E").head.display must be("Hectokilogram net of drained weight")
+    }
+
+    "parse non-third-countries" in {
+      TypeCodeValues.load("non-third-countries").filter(_.value == "AD").head.display must be("Andorra")
+    }
+
+    "parse package-types" in {
+      TypeCodeValues.load("package-types").filter(_.value == "1D").head.display must be("Drum, plywood")
+    }
+
+    "parse party-role-authorization-types" in {
+      TypeCodeValues.load("party-role-authorization-types").filter(_.value == "ACR").head.display must be("Authorised consignor for Union transit")
+    }
+
     "parse party-sub-role-types" in {
       TypeCodeValues.load("party-sub-role-types").filter(_.value == "WH").head.display must be("Warehouse Keeper")
     }
 
-    "parse representative-status-codes" in {
-      TypeCodeValues.load("representative-status-codes").filter(_.value == "3").head.display must be("Indirect representation")
+    "parse party-role-status-types" in {
+      TypeCodeValues.load("party-role-status-types").filter(_.value == "3").head.display must be("Indirect representation")
+    }
+
+    "parse payment-method-types" in {
+      TypeCodeValues.load("payment-method-types").filter(_.value == "B").head.display must be("Immediate payment by corporate credit card")
+    }
+
+    "parse preference-types" in {
+      TypeCodeValues.load("preference-types").filter(_.value == "118").head.display must be("Tariff suspension subject to the production of a special certificate.")
+    }
+
+    "parse special-mention-types" in {
+      TypeCodeValues.load("special-mention-types").filter(_.value == "10200").head.display must be("Full authorisation holders only: discharge of Inward Processing (Article 241(1) EU reg. number 2015/2446 (DA)).")
+    }
+
+    "parse special-procedure-types" in {
+      TypeCodeValues.load("special-procedure-types").filter(_.value == "B06").head.display must be("Processed products returning - VAT only")
     }
 
     "parse trade-movement-types" in {
-      TypeCodeValues.load("trade-movement-types").filter(_.value == "CO").head.display must be("?")
+      TypeCodeValues.load("trade-movement-types").filter(_.value == "CO").head.display must be("All the goods being declared are from a Special Fiscal Territory of the EU or a country with which the EU has formed a Customs Union.")
+    }
+
+    "parse transaction-nature-types-a-man" in {
+      TypeCodeValues.load("transaction-nature-types-a-man").filter(_.value == "2").head.display must be("Return and replacement of goods free of charge after registration of the original transaction")
+    }
+
+    "parse transaction-nature-types-b-opt" in {
+      TypeCodeValues.load("transaction-nature-types-b-opt").filter(_.value == "11").head.display must be("Outright purchase/sale")
+    }
+
+    "parse transport-means-identification-types" in {
+      TypeCodeValues.load("transport-means-identification-types").filter(_.value == "10").head.display must be("IMO ship identification number")
     }
 
     "parse transport-mode-types" in {
       TypeCodeValues.load("transport-mode-types").filter(_.value == "2").head.display must be("Rail transport")
+    }
+
+    "parse valuation-indicator-types" in {
+      TypeCodeValues.load("valuation-indicator-types").filter(_.value == "1").head.display must be("Party relationship, whether there is price influence or not.")
+    }
+
+    "parse valuation-method-types" in {
+      TypeCodeValues.load("valuation-method-types").filter(_.value == "3").head.display must be("Valuation Method 3 - Transaction value of similar goods");
+      TypeCodeValues.load("valuation-method-types").filter(_.value == "3").head.additionalDisplay must be(Some("N934 if instructed to complete a form DV1 by Customs, otherwise not applicable"))
     }
   }
 }

@@ -1,0 +1,31 @@
+[
+    {
+       "value":"1"
+      ,"display":"Valuation Method 1 - Transaction value"
+      ,"additionalDisplay":"N935 (and, if appropriate, C602 for any continuation sheet)"
+    },
+    {
+       "value":"2"
+      ,"display":"Valuation Method 2 - Transaction value of identical goods"
+      ,"additionalDisplay":"N934 if instructed to complete a form DV1 by Customs, otherwise not applicable"
+    },
+    {
+       "value":"3"
+      ,"display":"Valuation Method 3 - Transaction value of similar goods"
+      ,"additionalDisplay":"N934 if instructed to complete a form DV1 by Customs, otherwise not applicable"
+    },
+    {
+       "value":"4"
+      ,"display":"Valuation Method 4 - The Deductive Method"
+      ,"additionalDisplay":"N934 if instructed to complete a form DV1 by Customs, otherwise not applicable"
+    },
+    {
+       "value":"5"
+      ,"display":"Valuation Method 5 - The Computed Value Method"
+      ,"additionalDisplay":"N934 if instructed to complete a form DV1 by Customs, otherwise not applicable"
+    },
+    {
+       "value":"6"
+      ,"display":"Valuation Method 6 - The ‘Fall-back’ Method"
+      ,"additionalDisplay":"N934 if instructed to complete a form DV1 by Customs, otherwise not applicable"
+    }]
