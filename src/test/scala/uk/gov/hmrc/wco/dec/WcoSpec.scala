@@ -109,7 +109,10 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
   def hasExpectedInput[T](meta: MetaData, expected: T)(extractor: MetaData => T): Unit =
     extractor(MetaData.fromXml(meta.toXml)) must be(expected)
 
-  protected def randomValidResponse: Response =
-    Response(randomDeclarationFunctionCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
+  protected def randomValidResponse: Response = Response(functionCode = randomDeclarationFunctionCode,
+      functionalReferenceId =  Some("functionalRefId1"),
+      additionalInformations = None,
+    amendments = None,
+      declaration = Some(ResponseDeclaration()))
 
 }

@@ -39,7 +39,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
   val amountValue = randomBigDecimal(100)
   val amount = Amount(Some(currencyId), Some(amountValue))
   val obligationGuarantee = ResponseObligationGuarantee(Some(referenceId))
-  val responsePayment = ResponsePayment(Some(referenceId), Some(amount), issueTime, Some(amount), List(obligationGuarantee))
+  val responsePayment = ResponsePayment(Some(referenceId), Some(amount), issueTime, Some(amount), Some(Seq(obligationGuarantee)))
 
   val responseDutyTaxFee = ResponseDutyTaxFee(Some(responsePayment))
 
@@ -53,10 +53,10 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
   val commodityDutyTaxFees = ResponseCommodityDutyTaxFee(Some(amount), Some(amount), Some(dutyRegimeCode), Some(measure),
     Some(taxRateNumeric), Some(typeCode), Some(payment))
-  val responseCommodity = ResponseCommodity(List(commodityDutyTaxFees))
-  val responseGovernmentAgencyGoodsItem = ResponseGovernmentAgencyGoodsItem(sequenceNumeric, Some(responseCommodity))
+  val responseCommodity = ResponseCommodity(Some(Seq(commodityDutyTaxFees)))
+  val responseGovernmentAgencyGoodsItem = ResponseGovernmentAgencyGoodsItem(sequenceNumeric=sequenceNumeric, Some(responseCommodity))
 
-  val governmentAgencyGoodsItems = List(responseGovernmentAgencyGoodsItem)
+  val governmentAgencyGoodsItems = Some(Seq(responseGovernmentAgencyGoodsItem))
 
   val responseGoodsShipment = ResponseGoodsShipment(governmentAgencyGoodsItems)
 
@@ -151,10 +151,10 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       val statementTypeCode = randomString(3)
       val responsePointer = ResponsePointer(Some(sequenceNumeric), Some(sectionCode), Some(tagId))
       val responseAdditionalInformation = ResponseAdditionalInformation(Some(statementCode),
-        Some(statementDescription), issueTime, Some(statementTypeCode), List(responsePointer))
+        Some(statementDescription), issueTime, Some(statementTypeCode), Some(Seq(responsePointer)))
 
       val meta = MetaData(wcoDataModelVersionCode = Some(version), response = List(
-        Response(expectedCode, additionalInformations = List(responseAdditionalInformation),
+        Response(expectedCode, additionalInformations = Some(List(responseAdditionalInformation)),
           declaration = Some(ResponseDeclaration()))
       ))
 
@@ -176,7 +176,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include ResponseAmendments" in validResponseXmlScenario() {
       val changeReasonCode = randomString(3)
-      val responseAmendments: List[ResponseAmendment] = List(ResponseAmendment(Some(changeReasonCode), List(responsePointer)))
+      val responseAmendments  = Some(Seq(ResponseAmendment(Some(changeReasonCode), Some(Seq(responsePointer)))))
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
@@ -235,11 +235,11 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       val communicationId = randomString(50)
       val typeCode = randomString(3)
       val communication = ResponseCommunication(Some(communicationId), Some(typeCode))
-      val contactOffice = ResponseContactOffice(Some(officeId), List(communication))
+      val contactOffice = Some(Seq(ResponseContactOffice(Some(officeId), Some(Seq(communication)))))
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = List(Response(expectedCode, contactOffices = List(contactOffice), declaration = Some(ResponseDeclaration())))
+        response = List(Response(expectedCode, contactOffices = contactOffice, declaration = Some(ResponseDeclaration())))
       )
 
       val expectedContactOffice: List[String] = List(officeId, communicationId, typeCode)
@@ -256,11 +256,11 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     "include Error" in validResponseXmlScenario() {
       val description = randomString(10)
       val validationCode = randomString(8)
-      val error: ResponseError = ResponseError(Some(description), Some(validationCode), List(responsePointer))
+      val errors = Some(Seq(ResponseError(Some(description), Some(validationCode), Some(Seq(responsePointer)))))
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = List(Response(expectedCode, errors = List(error), declaration = Some(ResponseDeclaration())))
+        response = List(Response(expectedCode, errors = errors, declaration = Some(ResponseDeclaration())))
       )
 
       val expectedError: List[String] = List(description, validationCode, responsePointer.sequenceNumeric.get.toString,
@@ -279,11 +279,11 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include Status" in validResponseXmlScenario() {
       val nameCode = randomString(3)
-      val status: ResponseStatus = ResponseStatus(issueTime, Some(nameCode), issueTime, List(responsePointer))
+      val status = Some(Seq(ResponseStatus(issueTime, Some(nameCode), issueTime, Some(Seq(responsePointer)))))
 
       val meta = MetaData(
         wcoDataModelVersionCode = Some(version),
-        response = List(Response(expectedCode, status = List(status), declaration = Some(ResponseDeclaration())))
+        response = List(Response(expectedCode, status = status, declaration = Some(ResponseDeclaration())))
       )
 
       val expectedStatus: List[String] = List(dateTime, nameCode, dateTime, responsePointer.sequenceNumeric.get.toString,
@@ -333,7 +333,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include DutyTaxFee" in validResponseXmlScenario() {
       val responseDeclaration: ResponseDeclaration = ResponseDeclaration(
-        dutyTaxFees = List(responseDutyTaxFee)
+        dutyTaxFees = Some(Seq(responseDutyTaxFee))
       )
 
       val meta = MetaData(
@@ -382,6 +382,42 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
           (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "Payment" \ "PaymentAmount").text.trim
         )
       }
+    }
+  }
+
+  "fromXml" should {
+    " create Metadata Object" in {
+
+      val responseDeclaration = ResponseDeclaration(goodsShipment = Some(responseGoodsShipment))
+
+      val meta = MetaData(
+        wcoDataModelVersionCode = Some(version),
+        response = List(Response(expectedCode, declaration = Some(responseDeclaration)))
+      )
+
+      val expectedResponseDeclaration: List[String] = List(sequenceNumeric.toString, amountValue.toString,
+        amountValue.toString, dutyRegimeCode, measureValue.toString, taxRateNumeric.toString, typeCode,
+        amountValue.toString, amountValue.toString)
+
+     val xml =  hasExpectedOutput(meta, expectedResponseDeclaration) { xml =>
+        List(
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "SequenceNumeric").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "AdValoremTaxBaseAmount").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "DeductAmount").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "DutyRegimeCode").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "SpecificTaxBaseQuantity").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "TaxRateNumeric").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "TypeCode").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "Payment" \ "TaxAssessedAmount").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "Payment" \ "PaymentAmount").text.trim
+        )
+      }
+
+      println(xml)
+     val expected = MetaData.fromXml(xml.toString)
+
+      hasExpectedInput(meta, meta) { result => result}
+
     }
   }
 }

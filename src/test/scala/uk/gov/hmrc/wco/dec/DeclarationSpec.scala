@@ -1516,9 +1516,17 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
           ))
         ))
       )))
+
+      hasExpectedInput(meta, "1") {
+            println(meta)
+        xml => meta.declaration.get.goodsShipment.get.governmentAgencyGoodsItems.head.sequenceNumeric.toString
+      }
+
       hasExpectedOutput(meta, code) { xml =>
         (xml \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "AdditionalDocument" \ "WriteOff" \ "QuantityQuantity" \ "@unitCode").text.trim
       }
+
+
     }
 
     "include goods measure net weight measure" in validDeclarationXmlScenario() {
