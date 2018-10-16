@@ -1628,6 +1628,15 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
+    "read null collections as empty" in {
+      val meta = MetaData()
+      val xml = meta.toXml
+      println(xml)
+      val deserialized = MetaData.fromXml(xml)
+      println(deserialized)
+      deserialized.response.isEmpty must be(true)
+    }
+
   }
 
   "from properties" should {

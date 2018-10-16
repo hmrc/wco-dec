@@ -2,7 +2,7 @@ import sbt._
 
 object AppDependencies {
 
-  val jacksonVersion = "2.9.6"
+  val jacksonVersion = "2.9.7"
 
   val compile = Seq(
     "com.fasterxml.jackson.core" % "jackson-core" % jacksonVersion,
