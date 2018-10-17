@@ -19,13 +19,13 @@ package uk.gov.hmrc.wco.dec
 import java.io.StringWriter
 import java.util.Properties
 
-import com.fasterxml.jackson.annotation.{JsonIgnoreProperties, JsonInclude, JsonSetter, Nulls}
+import com.fasterxml.jackson.annotation.{JsonIgnoreProperties, JsonInclude}
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind._
 import com.fasterxml.jackson.databind.`type`.CollectionLikeType
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
-import com.fasterxml.jackson.databind.deser.{BeanDeserializerModifier, ContextualDeserializer}
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
+import com.fasterxml.jackson.databind.deser.{BeanDeserializerModifier, ContextualDeserializer}
 import com.fasterxml.jackson.databind.module.SimpleModule
 import com.fasterxml.jackson.databind.node.{ObjectNode, TextNode}
 import com.fasterxml.jackson.dataformat.javaprop.{JavaPropsMapper, JavaPropsParser, JavaPropsSchema}
@@ -924,24 +924,25 @@ abstract class StdAttributeAndTextDeserializer[T](attributeName: String, t: Clas
 }
 
 object CustomSeqModule extends SimpleModule {
-
   setDeserializerModifier(SeqDeserializationModifier)
-
 }
 
 object SeqDeserializationModifier extends BeanDeserializerModifier {
 
-  override def modifyCollectionLikeDeserializer(config: DeserializationConfig,
-                                                `type`: CollectionLikeType,
-                                                beanDesc: BeanDescription,
-                                                deserializer: JsonDeserializer[_]): JsonDeserializer[_] = new JsonDeserializer[Seq[_]] with ContextualDeserializer {
+  override def modifyCollectionLikeDeserializer(
+    config: DeserializationConfig,
+    `type`: CollectionLikeType,
+    beanDesc: BeanDescription,
+    deserializer: JsonDeserializer[_]
+  ): JsonDeserializer[_] = new JsonDeserializer[Seq[_]] with ContextualDeserializer {
 
-      override def deserialize(p: JsonParser, ctx: DeserializationContext): Seq[_] = deserializer.deserialize(p, ctx).asInstanceOf
+    override def deserialize(p: JsonParser, ctx: DeserializationContext): Seq[_] =
+      deserializer.deserialize(p, ctx).asInstanceOf[Seq[_]]
 
-      override def createContextual(ctx: DeserializationContext, prop: BeanProperty): JsonDeserializer[_] =
-        modifyCollectionLikeDeserializer(config, `type`, beanDesc, deserializer.asInstanceOf[ContextualDeserializer].createContextual(ctx, prop))
+    override def createContextual(ctx: DeserializationContext, prop: BeanProperty): JsonDeserializer[_] =
+      modifyCollectionLikeDeserializer(config, `type`, beanDesc, deserializer.asInstanceOf[ContextualDeserializer].createContextual(ctx, prop))
 
-      override def getNullValue(ctx: DeserializationContext): Seq[_] = Seq.empty
-    }
+    override def getNullValue(ctx: DeserializationContext): Seq[_] = Seq.empty
+  }
 
 }

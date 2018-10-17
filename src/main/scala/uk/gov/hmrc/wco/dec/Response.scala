@@ -177,7 +177,7 @@ case class ResponseDeclaration(
 
 case class ResponseDutyTaxFee(
   @JacksonXmlProperty(localName = "Payment", namespace = NS.res)
-  payment: Option[ResponsePayment]
+  payment: Option[ResponsePayment] = None
 )
 
 case class ResponsePayment(
@@ -228,7 +228,7 @@ case class ResponseCommodityDutyTaxFee(
   deductAmount: Option[Amount] = None,
 
   @JacksonXmlProperty(localName = "DutyRegimeCode", namespace = NS.res)
-  dutyRegimeCode: Option[String], // max 3 chars
+  dutyRegimeCode: Option[String] = None, // max 3 chars
 
   @JacksonXmlProperty(localName = "SpecificTaxBaseQuantity", namespace = NS.res)
   specificTaxBaseQuantity: Option[Measure] = None,

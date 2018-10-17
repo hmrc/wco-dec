@@ -384,4 +384,36 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
     }
   }
+
+  "fromXml" should {
+    " create Metadata Object" in {
+
+      val responseDeclaration = ResponseDeclaration(goodsShipment = Some(responseGoodsShipment))
+
+      val meta = MetaData(
+      wcoDataModelVersionCode = Some(version),
+        response = List(Response(expectedCode, declaration = Some(responseDeclaration)))
+      )
+
+      val expectedResponseDeclaration: List[String] = List(sequenceNumeric.toString, amountValue.toString,
+        amountValue.toString, dutyRegimeCode, measureValue.toString, taxRateNumeric.toString, typeCode,
+        amountValue.toString, amountValue.toString)
+
+      hasExpectedOutput(meta, expectedResponseDeclaration) { xml =>
+        List(
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "SequenceNumeric").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "AdValoremTaxBaseAmount").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "DeductAmount").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "DutyRegimeCode").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "SpecificTaxBaseQuantity").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "TaxRateNumeric").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "TypeCode").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "Payment" \ "TaxAssessedAmount").text.trim,
+          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "Payment" \ "PaymentAmount").text.trim
+        )
+      }
+
+      hasExpectedInput(meta, meta) { result => result}
+    }
+  }
 }
