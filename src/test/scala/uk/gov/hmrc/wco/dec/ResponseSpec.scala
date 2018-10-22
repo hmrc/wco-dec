@@ -16,8 +16,7 @@
 
 package uk.gov.hmrc.wco.dec
 
-class ResponseSpec extends WcoSpec with XmlBehaviours {
-
+object ResponseSpec extends WcoSpec {
   val version = randomString(6)
   val refId = "functionalRefId1"
   val declarationFunctionCode = randomDeclarationFunctionCode
@@ -56,6 +55,10 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
   val responseGovernmentAgencyGoodsItem = ResponseGovernmentAgencyGoodsItem(sequenceNumeric, Some(responseCommodity))
   val governmentAgencyGoodsItems = Seq(responseGovernmentAgencyGoodsItem)
   val responseGoodsShipment = ResponseGoodsShipment(governmentAgencyGoodsItems)
+}
+
+class ResponseSpec extends WcoSpec with XmlBehaviours {
+  import ResponseSpec._
 
   "to XML" should {
     "include WCODataModelVersionCode" in validResponseXmlScenario() {
@@ -374,7 +377,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
   }
 
   "fromXml" should {
-    " create Metadata Object" in {
+    "create Metadata Object" in {
 
       val responseDeclaration = ResponseDeclaration(goodsShipment = Some(responseGoodsShipment))
 
@@ -399,8 +402,45 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
           (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "Payment" \ "PaymentAmount").text.trim
         )
       }
+      println(meta.toXml)
 
-      hasExpectedInput(meta, meta) { result => result}
+      hasExpectedInput(meta, meta) { result => result }
+    }
+
+    "create MetaData object from XML in String" in {
+      val inputXML = "<MetaData xmlns=\"urn:wco:datamodel:WCO:DocumentMetaData-DMS:2\">" +
+                      "<wstxns1:Response xmlns:wstxns1=\"urn:wco:datamodel:WCO:RES-DMS:2\">" +
+                        "<wstxns1:FunctionCode>" + declarationFunctionCode + "</wstxns1:FunctionCode>" +
+                        "<wstxns1:Declaration>" +
+                          "<wstxns1:GoodsShipment>" +
+                            "<wstxns1:GovernmentAgencyGoodsItem>" +
+                              "<wstxns1:SequenceNumeric>" + responseGovernmentAgencyGoodsItem.sequenceNumeric + "</wstxns1:SequenceNumeric>" +
+                              "<wstxns1:Commodity>" +
+                                "<wstxns1:DutyTaxFee>" +
+                                  "<wstxns1:AdValoremTaxBaseAmount currencyID=\"GBP\">" + amountValue + "</wstxns1:AdValoremTaxBaseAmount>" +
+                                  "<wstxns1:DeductAmount currencyID=\"GBP\">" + amountValue + "</wstxns1:DeductAmount>" +
+                                  "<wstxns1:DutyRegimeCode>" + dutyRegimeCode + "</wstxns1:DutyRegimeCode>" +
+                                  "<wstxns1:SpecificTaxBaseQuantity unitCode=\"" + unitCode + "\">" + measureValue + "</wstxns1:SpecificTaxBaseQuantity>" +
+                                  "<wstxns1:TaxRateNumeric>" + taxRateNumeric + "</wstxns1:TaxRateNumeric>" +
+                                  "<wstxns1:TypeCode>" + typeCode + "</wstxns1:TypeCode>" +
+                                  "<wstxns1:Payment>" +
+                                    "<wstxns1:TaxAssessedAmount currencyID=\"GBP\">" + amountValue + "</wstxns1:TaxAssessedAmount>" +
+                                    "<wstxns1:PaymentAmount currencyID=\"GBP\">" + amountValue + "</wstxns1:PaymentAmount>" +
+                                  "</wstxns1:Payment>" +
+                                "</wstxns1:DutyTaxFee>" +
+                              "</wstxns1:Commodity>" +
+                            "</wstxns1:GovernmentAgencyGoodsItem>" +
+                          "</wstxns1:GoodsShipment>" +
+                        "</wstxns1:Declaration>" +
+                      "</wstxns1:Response>" +
+                    "</MetaData>"
+
+      val responseDeclaration = ResponseDeclaration(goodsShipment = Some(responseGoodsShipment))
+      val expectedMetaData = MetaData(response = List(
+        Response(declarationFunctionCode, declaration = Some(responseDeclaration)))
+      )
+
+      MetaData.fromXml(inputXML) must be(expectedMetaData)
     }
   }
 }

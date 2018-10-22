@@ -23,23 +23,6 @@ case class ResponseDateTimeElement(
   dateTimeString: DateTimeString
 )
 
-case class ResponseAdditionalInformation(
-  @JacksonXmlProperty(localName = "StatementCode", namespace = NS.res)
-  statementCode: Option[String] = None, // max 17 chars
-
-  @JacksonXmlProperty(localName = "StatementDescription", namespace = NS.res)
-  statementDescription: Option[String] = None, // max 512 chars
-
-  @JacksonXmlProperty(localName = "LimitDateTime", namespace = NS.res)
-  limitDateTime: Option[ResponseDateTimeElement] = None, // alphanumeric max 35 chars
-
-  @JacksonXmlProperty(localName = "StatementTypeCode", namespace = NS.res)
-  statementTypeCode: Option[String] = None, // max 3 chars
-
-  @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
-  pointers: Seq[ResponsePointer] = Seq.empty
-)
-
 case class ResponsePointer(
   @JacksonXmlProperty(localName = "SequenceNumeric", namespace = NS.res)
   sequenceNumeric: Option[Int] = None, // max 5 chars
@@ -92,6 +75,23 @@ case class Response(
 
   @JacksonXmlProperty(localName = "Declaration", namespace = NS.res)
   declaration: Option[ResponseDeclaration] = None
+)
+
+case class ResponseAdditionalInformation(
+  @JacksonXmlProperty(localName = "StatementCode", namespace = NS.res)
+  statementCode: Option[String] = None, // max 17 chars
+
+  @JacksonXmlProperty(localName = "StatementDescription", namespace = NS.res)
+  statementDescription: Option[String] = None, // max 512 chars
+
+  @JacksonXmlProperty(localName = "LimitDateTime", namespace = NS.res)
+  limitDateTime: Option[ResponseDateTimeElement] = None, // alphanumeric max 35 chars
+
+  @JacksonXmlProperty(localName = "StatementTypeCode", namespace = NS.res)
+  statementTypeCode: Option[String] = None, // max 3 chars
+
+  @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
+  pointers: Seq[ResponsePointer] = Seq.empty
 )
 
 case class ResponseAppealOffice(
