@@ -23,6 +23,7 @@ object ResponseSpec extends WcoSpec {
   val dateTimeFormatCode = randomDateTimeFormatCode
   val dateTime = randomDateTimeString
   val issueTime = Some(ResponseDateTimeElement(DateTimeString(dateTimeFormatCode, dateTime)))
+  val exemplaryValidResponse = Response(declarationFunctionCode, Some(refId))
 
   val sequenceNumeric = random0To9
   val documentSectionCode = 1.toString
@@ -394,7 +395,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     "value provided" should {
       "read WCODataModelVersionCode" in {
         val inputXML = ResponseSpecInputXML.wcoDataModelVersionCode
-        val responseDeclaration = Seq(randomValidResponse)
+        val responseDeclaration = Seq(exemplaryValidResponse)
         val expectedMetaData = MetaData(wcoDataModelVersionCode = Some(version), response = responseDeclaration)
 
         MetaData.fromXml(inputXML) must be(expectedMetaData)
