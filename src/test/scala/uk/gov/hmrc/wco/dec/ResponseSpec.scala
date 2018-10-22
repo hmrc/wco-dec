@@ -154,7 +154,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
         Some(statementDescription), issueTime, Some(statementTypeCode), Seq(responsePointer))
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, additionalInformations = Seq(responseAdditionalInformation),
+        Response(declarationFunctionCode, additionalInformation = Seq(responseAdditionalInformation),
           declaration = Some(ResponseDeclaration()))
       ))
 
@@ -376,71 +376,102 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
   }
 
-  "fromXml" should {
-    "create Metadata Object" in {
+  "fromXml" when {
+    "value not provided" should {
+      "fill optional field with None" in {
 
-      val responseDeclaration = ResponseDeclaration(goodsShipment = Some(responseGoodsShipment))
-
-      val meta = MetaData(response = List(
-        Response(declarationFunctionCode, declaration = Some(responseDeclaration)))
-      )
-
-      val expectedResponseDeclaration: List[String] = List(sequenceNumeric.toString, amountValue.toString,
-        amountValue.toString, dutyRegimeCode, measureValue.toString, taxRateNumeric.toString, typeCode,
-        amountValue.toString, amountValue.toString)
-
-      hasExpectedOutput(meta, expectedResponseDeclaration) { xml =>
-        List(
-          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "SequenceNumeric").text.trim,
-          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "AdValoremTaxBaseAmount").text.trim,
-          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "DeductAmount").text.trim,
-          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "DutyRegimeCode").text.trim,
-          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "SpecificTaxBaseQuantity").text.trim,
-          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "TaxRateNumeric").text.trim,
-          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "TypeCode").text.trim,
-          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "Payment" \ "TaxAssessedAmount").text.trim,
-          (xml \ "Response" \ "Declaration" \ "GoodsShipment" \ "GovernmentAgencyGoodsItem" \ "Commodity" \ "DutyTaxFee" \ "Payment" \ "PaymentAmount").text.trim
-        )
       }
-      println(meta.toXml)
 
-      hasExpectedInput(meta, meta) { result => result }
+      "fill optional sequence field with empty sequence" in {
+
+      }
+
+      "fill nested optional sequence field with empty sequence" in {
+
+      }
     }
 
-    "create MetaData object from XML in String" in {
-      val inputXML = "<MetaData xmlns=\"urn:wco:datamodel:WCO:DocumentMetaData-DMS:2\">" +
-                      "<wstxns1:Response xmlns:wstxns1=\"urn:wco:datamodel:WCO:RES-DMS:2\">" +
-                        "<wstxns1:FunctionCode>" + declarationFunctionCode + "</wstxns1:FunctionCode>" +
-                        "<wstxns1:Declaration>" +
-                          "<wstxns1:GoodsShipment>" +
-                            "<wstxns1:GovernmentAgencyGoodsItem>" +
-                              "<wstxns1:SequenceNumeric>" + responseGovernmentAgencyGoodsItem.sequenceNumeric + "</wstxns1:SequenceNumeric>" +
-                              "<wstxns1:Commodity>" +
-                                "<wstxns1:DutyTaxFee>" +
-                                  "<wstxns1:AdValoremTaxBaseAmount currencyID=\"GBP\">" + amountValue + "</wstxns1:AdValoremTaxBaseAmount>" +
-                                  "<wstxns1:DeductAmount currencyID=\"GBP\">" + amountValue + "</wstxns1:DeductAmount>" +
-                                  "<wstxns1:DutyRegimeCode>" + dutyRegimeCode + "</wstxns1:DutyRegimeCode>" +
-                                  "<wstxns1:SpecificTaxBaseQuantity unitCode=\"" + unitCode + "\">" + measureValue + "</wstxns1:SpecificTaxBaseQuantity>" +
-                                  "<wstxns1:TaxRateNumeric>" + taxRateNumeric + "</wstxns1:TaxRateNumeric>" +
-                                  "<wstxns1:TypeCode>" + typeCode + "</wstxns1:TypeCode>" +
-                                  "<wstxns1:Payment>" +
-                                    "<wstxns1:TaxAssessedAmount currencyID=\"GBP\">" + amountValue + "</wstxns1:TaxAssessedAmount>" +
-                                    "<wstxns1:PaymentAmount currencyID=\"GBP\">" + amountValue + "</wstxns1:PaymentAmount>" +
-                                  "</wstxns1:Payment>" +
-                                "</wstxns1:DutyTaxFee>" +
-                              "</wstxns1:Commodity>" +
-                            "</wstxns1:GovernmentAgencyGoodsItem>" +
-                          "</wstxns1:GoodsShipment>" +
-                        "</wstxns1:Declaration>" +
-                      "</wstxns1:Response>" +
-                    "</MetaData>"
+    "value provided" should {
+      "read WCODataModelVersionCode" in {
+        val inputXML = ResponseSpecInputXML.wcoDataModelVersionCode
+        val responseDeclaration = Seq(randomValidResponse)
+        val expectedMetaData = MetaData(wcoDataModelVersionCode = Some(version), response = responseDeclaration)
 
-      val responseDeclaration = ResponseDeclaration(goodsShipment = Some(responseGoodsShipment))
-      val expectedMetaData = MetaData(response = List(
-        Response(declarationFunctionCode, declaration = Some(responseDeclaration)))
-      )
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
+      }
 
-      MetaData.fromXml(inputXML) must be(expectedMetaData)
+      "read WCOTypeName" in {
+
+      }
+
+      "read ResponsibleCountryCode" in {
+
+      }
+
+      "read ResponsibleAgencyName" in {
+
+      }
+
+      "read AgencyAssignedCustomizationCode" in {
+
+      }
+
+      "read AgencyAssignedCustomizationVersionCode" in {
+
+      }
+
+      "read Response/FunctionCode" in {
+
+      }
+
+      "read Response/FunctionalReferenceID" in {
+
+      }
+
+      "read Response/IssueDateTime" in {
+
+      }
+
+      "read Response/AdditionalInformation" in {
+
+      }
+
+      "read Response/Amendment" in {
+
+      }
+
+      "read Response/AppealOffice" in {
+
+      }
+
+      "read Response/Bank" in {
+
+      }
+
+      "read Response/ContactOffice" in {
+
+      }
+
+      "read Response/Error" in {
+
+      }
+
+      "read Response/Status" in {
+
+      }
+
+      "read Response/Declaration without DutyTaxFee and GoodsShipment" in {
+
+      }
+
+      "read Response/Declaration/DutyTaxFee" in {
+
+      }
+
+      "read Response/Declaration/GoodsShipment" in {
+
+      }
+
     }
   }
 }

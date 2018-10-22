@@ -53,7 +53,7 @@ case class Response(
   issueDateTime: Option[ResponseDateTimeElement] = None, // max 35 chars
 
   @JacksonXmlProperty(localName = "AdditionalInformation", namespace = NS.res)
-  additionalInformations: Seq[ResponseAdditionalInformation] = Seq.empty,
+  additionalInformation: Seq[ResponseAdditionalInformation] = Seq.empty,
 
   @JacksonXmlProperty(localName = "Amendment", namespace = NS.res)
   amendments: Seq[ResponseAmendment] = Seq.empty,
