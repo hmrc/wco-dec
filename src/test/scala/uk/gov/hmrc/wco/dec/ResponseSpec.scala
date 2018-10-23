@@ -378,7 +378,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
   }
 
   "fromXml" when {
-    "value not provided" should {
+    "no tag present" should {
       "fill optional field with None" in {
 
       }
@@ -392,7 +392,21 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "value provided" should {
+    "value is not provided" should {
+      "fill optional field with None" in {
+
+      }
+
+      "fill optional sequence field with empty sequence" in {
+
+      }
+
+      "fill nested optional sequence field with empty sequence" in {
+
+      }
+    }
+
+    "value is provided" should {
       "read WCODataModelVersionCode" in {
         val inputXML = ResponseSpecInputXML.wcoDataModelVersionCode
         val responseDeclaration = Seq(exemplaryValidResponse)

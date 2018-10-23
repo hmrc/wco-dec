@@ -4,6 +4,19 @@ import uk.gov.hmrc.wco.dec.ResponseSpec._
 
 object ResponseSpecInputXML {
 
+  lazy val noTagForOptionalField = ""
+
+  lazy val noTagForOptionalSequence = ""
+
+  lazy val noTagForNestedOptionalSequence = ""
+
+  lazy val emptyOptionalField = ""
+
+  lazy val emptyOptionalSequence = ""
+
+  lazy val emptyNestedOptionalSequence = ""
+
+
   lazy val wcoDataModelVersionCode =  "<MetaData xmlns=\"urn:wco:datamodel:WCO:DocumentMetaData-DMS:2\">" +
                                         "<WCODataModelVersionCode>" + version + "</WCODataModelVersionCode>" +
                                         exemplaryValidResponse +
