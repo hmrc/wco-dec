@@ -17,20 +17,42 @@
 package uk.gov.hmrc.wco.dec
 
 object ResponseSpec extends WcoSpec {
-  val version = randomString(6)
-  val refId = "functionalRefId1"
-  val declarationFunctionCode = randomDeclarationFunctionCode
+  val wcoDataModelVersionCode = randomString(6)
+  val wcoTypeName = randomString(72)
+  val responsibleCountryCode = randomISO3166Alpha2CountryCode
+  val responsibleAgencyName = randomString(70)
+  val agencyAssignedCustomizationCode = randomString(6)
+  val agencyAssignedCustomizationVersionCode = randomString(3)
+
+
+  val functionCode = randomDeclarationFunctionCode
+  val functionalReferenceId = "functionalRefId1"
+
   val dateTimeFormatCode = randomDateTimeFormatCode
   val dateTime = randomDateTimeString
   val issueTime = Some(ResponseDateTimeElement(DateTimeString(dateTimeFormatCode, dateTime)))
-  val exemplaryValidResponse = Response(declarationFunctionCode, Some(refId))
+
+  val statementCode = randomString(10)
+  val statementDescription = randomString(10)
+  val statementTypeCode = randomString(3)
 
   val sequenceNumeric = random0To9
   val documentSectionCode = 1.toString
   val tagId = randomString(4)
   val responsePointer = ResponsePointer(Some(sequenceNumeric), Some(documentSectionCode), Some(tagId))
 
-  val functionalReferenceId = randomString(35)
+  val changeReasonCode = randomString(3)
+  val appealOfficeId = randomString(17)
+  val bankReferenceId = randomString(17)
+  val bankId = randomString(17)
+  val contactOfficeId = randomString(17)
+  val contactOfficeCommunicationId = randomString(50)
+  val contactOfficeCommunicationTypeCode = randomString(3)
+  val errorDescription = randomString(10)
+  val errorValidationCode = randomString(8)
+  val nameCode = randomString(3)
+
+
   val id = randomString(70)
   val versionId = randomString(9)
 
@@ -56,6 +78,8 @@ object ResponseSpec extends WcoSpec {
   val responseGovernmentAgencyGoodsItem = ResponseGovernmentAgencyGoodsItem(sequenceNumeric, Some(responseCommodity))
   val governmentAgencyGoodsItems = Seq(responseGovernmentAgencyGoodsItem)
   val responseGoodsShipment = ResponseGoodsShipment(governmentAgencyGoodsItems)
+
+  val exemplaryValidResponse = Response(functionCode, Some(functionalReferenceId))
 }
 
 class ResponseSpec extends WcoSpec with XmlBehaviours {
@@ -63,68 +87,63 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
   "to XML" should {
     "include WCODataModelVersionCode" in validResponseXmlScenario() {
-      val meta = MetaData(wcoDataModelVersionCode = Some(version), response = Seq(randomValidResponse))
-      hasExpectedOutput(meta, version) { xml =>
+      val meta = MetaData(wcoDataModelVersionCode = Some(wcoDataModelVersionCode), response = Seq(randomValidResponse))
+      hasExpectedOutput(meta, wcoDataModelVersionCode) { xml =>
         (xml \ "WCODataModelVersionCode").text.trim
       }
     }
 
     "include WCOTypeName" in validResponseXmlScenario() {
-      val name = randomString(72)
-      val meta = MetaData(wcoTypeName = Some(name), response = Seq(randomValidResponse))
-      hasExpectedOutput(meta, name) { xml =>
+      val meta = MetaData(wcoTypeName = Some(wcoTypeName), response = Seq(randomValidResponse))
+      hasExpectedOutput(meta, wcoTypeName) { xml =>
         (xml \ "WCOTypeName").text.trim
       }
     }
 
     "include ResponsibleCountryCode" in validResponseXmlScenario() {
-      val code = randomISO3166Alpha2CountryCode
-      val meta = MetaData(responsibleCountryCode = Some(code), response = Seq(randomValidResponse))
-      hasExpectedOutput(meta, code) { xml =>
+      val meta = MetaData(responsibleCountryCode = Some(responsibleCountryCode), response = Seq(randomValidResponse))
+      hasExpectedOutput(meta, responsibleCountryCode) { xml =>
         (xml \ "ResponsibleCountryCode").text.trim
       }
     }
 
     "include ResponsibleAgencyName" in validResponseXmlScenario() {
-      val agency = randomString(70)
-      val meta = MetaData(responsibleAgencyName = Some(agency), response = Seq(randomValidResponse))
-      hasExpectedOutput(meta, agency) { xml =>
+      val meta = MetaData(responsibleAgencyName = Some(responsibleAgencyName), response = Seq(randomValidResponse))
+      hasExpectedOutput(meta, responsibleAgencyName) { xml =>
         (xml \ "ResponsibleAgencyName").text.trim
       }
     }
 
     "include AgencyAssignedCustomizationCode" in validResponseXmlScenario() {
-      val code = randomString(6)
-      val meta = MetaData(agencyAssignedCustomizationCode = Some(code), response = Seq(randomValidResponse))
-      hasExpectedOutput(meta, code) { xml =>
+      val meta = MetaData(agencyAssignedCustomizationCode = Some(agencyAssignedCustomizationCode), response = Seq(randomValidResponse))
+      hasExpectedOutput(meta, agencyAssignedCustomizationCode) { xml =>
         (xml \ "AgencyAssignedCustomizationCode").text.trim
       }
     }
 
     "include AgencyAssignedCustomizationVersionCode" in validResponseXmlScenario() {
-      val code = randomString(3)
-      val meta = MetaData(agencyAssignedCustomizationVersionCode = Some(code), response = Seq(randomValidResponse))
-      hasExpectedOutput(meta, code) { xml =>
+      val meta = MetaData(agencyAssignedCustomizationVersionCode = Some(agencyAssignedCustomizationVersionCode), response = Seq(randomValidResponse))
+      hasExpectedOutput(meta, agencyAssignedCustomizationVersionCode) { xml =>
         (xml \ "AgencyAssignedCustomizationVersionCode").text.trim
       }
     }
 
     "include FunctionCode" in validResponseXmlScenario() {
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
+        Response(functionCode, Some(functionalReferenceId), declaration = Some(ResponseDeclaration()))
       ))
 
-      hasExpectedOutput(meta, declarationFunctionCode) { xml =>
+      hasExpectedOutput(meta, functionCode) { xml =>
         (xml \ "Response" \ "FunctionCode").text.trim.toInt
       }
     }
 
     "include FunctionalReferenceID" in validResponseXmlScenario() {
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, Some(refId), declaration = Some(ResponseDeclaration()))
+        Response(functionCode, Some(functionalReferenceId), declaration = Some(ResponseDeclaration()))
       ))
 
-      hasExpectedOutput(meta, refId) { xml =>
+      hasExpectedOutput(meta, functionalReferenceId) { xml =>
         (xml \ "Response" \ "FunctionCode").text.trim.toInt
         (xml \ "Response" \ "FunctionalReferenceID").text.trim
       }
@@ -132,7 +151,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include IssueDateTime" in validResponseXmlScenario() {
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, Some(refId), issueTime, declaration = Some(ResponseDeclaration()))
+        Response(functionCode, Some(functionalReferenceId), issueTime, declaration = Some(ResponseDeclaration()))
       ))
 
       hasExpectedOutput(meta, Seq(dateTimeFormatCode, dateTime)) { xml =>
@@ -144,23 +163,16 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include ResponseAdditionalInformation" in validResponseXmlScenario() {
-      val sequenceNumeric = 1
-      val sectionCode = randomString(3)
-      val tagId = randomString(4)
-      val statementCode = randomString(10)
-      val statementDescription = randomString(10)
-      val statementTypeCode = randomString(3)
-      val responsePointer = ResponsePointer(Some(sequenceNumeric), Some(sectionCode), Some(tagId))
       val responseAdditionalInformation = ResponseAdditionalInformation(Some(statementCode),
         Some(statementDescription), issueTime, Some(statementTypeCode), Seq(responsePointer))
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, additionalInformation = Seq(responseAdditionalInformation),
+        Response(functionCode, additionalInformation = Seq(responseAdditionalInformation),
           declaration = Some(ResponseDeclaration()))
       ))
 
       val expectedResponseAdditionalInformation: Seq[String] =
-        Seq(statementCode, statementDescription, dateTime, statementTypeCode, sequenceNumeric.toString(), sectionCode, tagId)
+        Seq(statementCode, statementDescription, dateTime, statementTypeCode, sequenceNumeric.toString(), documentSectionCode, tagId)
 
       hasExpectedOutput(meta, expectedResponseAdditionalInformation) { xml =>
         Seq(
@@ -176,11 +188,10 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include ResponseAmendments" in validResponseXmlScenario() {
-      val changeReasonCode = randomString(3)
       val responseAmendments: Seq[ResponseAmendment] = Seq(ResponseAmendment(Some(changeReasonCode), Seq(responsePointer)))
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, amendments = responseAmendments, declaration = Some(ResponseDeclaration())))
+        Response(functionCode, amendments = responseAmendments, declaration = Some(ResponseDeclaration())))
       )
 
       val expectedResponseAmendment: Seq[String] =
@@ -197,28 +208,25 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include AppealOffice" in validResponseXmlScenario() {
-      val id = randomString(17)
-      val appealOffice = ResponseAppealOffice(Some(id))
+      val appealOffice = ResponseAppealOffice(Some(appealOfficeId))
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, appealOffice = Some(appealOffice), declaration = Some(ResponseDeclaration())))
+        Response(functionCode, appealOffice = Some(appealOffice), declaration = Some(ResponseDeclaration())))
       )
 
-      hasExpectedOutput(meta, id) { xml =>
+      hasExpectedOutput(meta, appealOfficeId) { xml =>
         (xml \ "Response" \ "AppealOffice" \ "ID").text.trim
       }
     }
 
     "include Bank" in validResponseXmlScenario() {
-      val referenceId = randomString(17)
-      val id = randomString(17)
-      val bank = ResponseBank(Some(referenceId), Some(id))
+      val bank = ResponseBank(Some(bankReferenceId), Some(bankId))
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, bank = Some(bank), declaration = Some(ResponseDeclaration())))
+        Response(functionCode, bank = Some(bank), declaration = Some(ResponseDeclaration())))
       )
 
-      val expectedResponseBank: Seq[String] = Seq(referenceId, id)
+      val expectedResponseBank: Seq[String] = Seq(bankReferenceId, bankId)
 
       hasExpectedOutput(meta, expectedResponseBank) { xml =>
         Seq(
@@ -229,17 +237,14 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include ContactOffice" in validResponseXmlScenario() {
-      val officeId = randomString(17)
-      val communicationId = randomString(50)
-      val typeCode = randomString(3)
-      val communication = ResponseCommunication(Some(communicationId), Some(typeCode))
-      val contactOffice = ResponseContactOffice(Some(officeId), Seq(communication))
+      val communication = ResponseCommunication(Some(contactOfficeCommunicationId), Some(contactOfficeCommunicationTypeCode))
+      val contactOffice = ResponseContactOffice(Some(contactOfficeId), Seq(communication))
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, contactOffices = Seq(contactOffice), declaration = Some(ResponseDeclaration())))
+        Response(functionCode, contactOffices = Seq(contactOffice), declaration = Some(ResponseDeclaration())))
       )
 
-      val expectedContactOffice: Seq[String] = Seq(officeId, communicationId, typeCode)
+      val expectedContactOffice: Seq[String] = Seq(contactOfficeId, contactOfficeCommunicationId, contactOfficeCommunicationTypeCode)
 
       hasExpectedOutput(meta, expectedContactOffice) { xml =>
         Seq(
@@ -251,15 +256,13 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include Error" in validResponseXmlScenario() {
-      val description = randomString(10)
-      val validationCode = randomString(8)
-      val error: ResponseError = ResponseError(Some(description), Some(validationCode), Seq(responsePointer))
+      val error: ResponseError = ResponseError(Some(errorDescription), Some(errorValidationCode), Seq(responsePointer))
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, errors = Seq(error), declaration = Some(ResponseDeclaration())))
+        Response(functionCode, errors = Seq(error), declaration = Some(ResponseDeclaration())))
       )
 
-      val expectedError: Seq[String] = Seq(description, validationCode, responsePointer.sequenceNumeric.get.toString,
+      val expectedError: Seq[String] = Seq(errorDescription, errorValidationCode, responsePointer.sequenceNumeric.get.toString,
         responsePointer.documentSectionCode.get, responsePointer.tagId.get)
 
       hasExpectedOutput(meta, expectedError) { xml =>
@@ -274,11 +277,10 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include Status" in validResponseXmlScenario() {
-      val nameCode = randomString(3)
       val status: ResponseStatus = ResponseStatus(issueTime, Some(nameCode), issueTime, Seq(responsePointer))
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, status = Seq(status), declaration = Some(ResponseDeclaration())))
+        Response(functionCode, status = Seq(status), declaration = Some(ResponseDeclaration())))
       )
 
       val expectedStatus: Seq[String] = Seq(dateTime, nameCode, dateTime, responsePointer.sequenceNumeric.get.toString,
@@ -307,7 +309,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       )
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, declaration = Some(responseDeclaration)))
+        Response(functionCode, declaration = Some(responseDeclaration)))
       )
 
       val expectedResponseDeclaration: Seq[String] =
@@ -331,7 +333,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       )
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, declaration = Some(responseDeclaration)))
+        Response(functionCode, declaration = Some(responseDeclaration)))
       )
 
       val expectedResponseDeclaration: Seq[String] =
@@ -354,7 +356,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       )
 
       val meta = MetaData(response = Seq(
-        Response(declarationFunctionCode, declaration = Some(responseDeclaration)))
+        Response(functionCode, declaration = Some(responseDeclaration)))
       )
 
       val expectedResponseDeclaration: Seq[String] = Seq(sequenceNumeric.toString, amountValue.toString,
@@ -408,71 +410,179 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "value is provided" should {
       "read WCODataModelVersionCode" in {
-        val inputXML = ResponseSpecInputXML.wcoDataModelVersionCode
-        val responseDeclaration = Seq(exemplaryValidResponse)
-        val expectedMetaData = MetaData(wcoDataModelVersionCode = Some(version), response = responseDeclaration)
+        val inputXML = ResponseSpecInputXML.testWCODataModelVersionCode
+        val metaDataResponse = Seq(exemplaryValidResponse)
+        val expectedMetaData =
+          MetaData(wcoDataModelVersionCode = Some(wcoDataModelVersionCode), response = metaDataResponse)
 
         MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read WCOTypeName" in {
+        val inputXML = ResponseSpecInputXML.testWCOTypeName
+        val metaDataResponse = Seq(exemplaryValidResponse)
+        val expectedMetaData = MetaData(wcoTypeName = Some(wcoTypeName), response = metaDataResponse)
 
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read ResponsibleCountryCode" in {
+        val inputXML = ResponseSpecInputXML.testResponsibleCountryCode
+        val metaDataResponse = Seq(exemplaryValidResponse)
+        val expectedMetaData =
+          MetaData(responsibleCountryCode = Some(responsibleCountryCode), response = metaDataResponse)
 
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read ResponsibleAgencyName" in {
+        val inputXML = ResponseSpecInputXML.testResponsibleAgencyName
+        val metaDataResponse = Seq(exemplaryValidResponse)
+        val expectedMetaData =
+          MetaData(responsibleAgencyName = Some(responsibleAgencyName), response = metaDataResponse)
 
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read AgencyAssignedCustomizationCode" in {
+        val inputXML = ResponseSpecInputXML.testAgencyAssignedCustomizationCode
+        val metaDataResponse = Seq(exemplaryValidResponse)
+        val expectedMetaData = MetaData(
+          agencyAssignedCustomizationCode = Some(agencyAssignedCustomizationCode), response = metaDataResponse)
 
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read AgencyAssignedCustomizationVersionCode" in {
+        val inputXML = ResponseSpecInputXML.testAgencyAssignedCustomizationVersionCode
+        val metaDataResponse = Seq(exemplaryValidResponse)
+        val expectedMetaData = MetaData(
+          agencyAssignedCustomizationVersionCode = Some(agencyAssignedCustomizationVersionCode),
+          response = metaDataResponse)
 
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
-      "read Response/FunctionCode" in {
+      "read Response mandatory fields" in {
+        val inputXML = ResponseSpecInputXML.testResponseMandatoryFields
+        val metaDataResponse = Seq(
+          Response(functionCode, Some(functionalReferenceId), declaration = Some(ResponseDeclaration()))
+        )
+        val expectedMetaData = MetaData(response = metaDataResponse)
 
-      }
-
-      "read Response/FunctionalReferenceID" in {
-
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read Response/IssueDateTime" in {
+        val inputXML = ResponseSpecInputXML.testResponseIssueDateTime
+        val metaDataResponse = Seq(
+          Response(functionCode, Some(functionalReferenceId), issueTime, declaration = Some(ResponseDeclaration()))
+        )
+        val expectedMetaData = MetaData(response = metaDataResponse)
 
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read Response/AdditionalInformation" in {
+        val inputXML = ResponseSpecInputXML.testResponseAdditionalInformation
+        val responseAdditionalInformation = ResponseAdditionalInformation(
+          Some(statementCode), Some(statementDescription), issueTime, Some(statementTypeCode), Seq(responsePointer))
 
+        val metaDataResponse = Seq(
+          Response(functionCode, Some(functionalReferenceId),
+            additionalInformation = Seq(responseAdditionalInformation),
+            declaration = Some(ResponseDeclaration()))
+        )
+        val expectedMetaData = MetaData(response = metaDataResponse)
+
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read Response/Amendment" in {
+        val inputXML = ResponseSpecInputXML.testResponseAmendments
+        val responseAmendment = ResponseAmendment(Some(changeReasonCode), Seq(responsePointer))
 
+        val metaDataResponse = Seq(
+          Response(functionCode, Some(functionalReferenceId),
+            amendments = Seq(responseAmendment),
+            declaration = Some(ResponseDeclaration()))
+        )
+        val expectedMetaData = MetaData(response = metaDataResponse)
+
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read Response/AppealOffice" in {
+        val inputXML = ResponseSpecInputXML.testResponseAppealOffice
+        val responseAppealOffice = ResponseAppealOffice(Some(appealOfficeId))
 
+        val metaDataResponse = Seq(
+          Response(functionCode, Some(functionalReferenceId),
+            appealOffice = Some(responseAppealOffice),
+            declaration = Some(ResponseDeclaration()))
+        )
+        val expectedMetaData = MetaData(response = metaDataResponse)
+
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read Response/Bank" in {
+        val inputXML = ResponseSpecInputXML.testResponseBank
+        val responseBank= ResponseBank(Some(bankReferenceId), Some(bankId))
 
+        val metaDataResponse = Seq(
+          Response(functionCode, Some(functionalReferenceId),
+            bank = Some(responseBank),
+            declaration = Some(ResponseDeclaration()))
+        )
+        val expectedMetaData = MetaData(response = metaDataResponse)
+
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read Response/ContactOffice" in {
+        val inputXML = ResponseSpecInputXML.testResponseContactOffice
+        val responseContactOffice = ResponseContactOffice(
+          Some(contactOfficeId),
+          Seq(ResponseCommunication(Some(contactOfficeCommunicationId), Some(contactOfficeCommunicationTypeCode)))
+        )
 
+        val metaDataResponse = Seq(
+          Response(functionCode, Some(functionalReferenceId),
+            contactOffices = Seq(responseContactOffice),
+            declaration = Some(ResponseDeclaration()))
+        )
+        val expectedMetaData = MetaData(response = metaDataResponse)
+
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read Response/Error" in {
+        val inputXML = ResponseSpecInputXML.testResponseErrors
+        val responseError = ResponseError(Some(errorDescription), Some(errorValidationCode), Seq(responsePointer))
 
+        val metaDataResponse = Seq(
+          Response(functionCode, Some(functionalReferenceId),
+            errors = Seq(responseError),
+            declaration = Some(ResponseDeclaration()))
+        )
+        val expectedMetaData = MetaData(response = metaDataResponse)
+
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read Response/Status" in {
+        val inputXML = ResponseSpecInputXML.testResponseStatus
+        val responseStatus = ResponseStatus(issueTime, Some(nameCode), issueTime, Seq(responsePointer))
 
+        val metaDataResponse = Seq(
+          Response(functionCode, Some(functionalReferenceId),
+            status = Seq(responseStatus),
+            declaration = Some(ResponseDeclaration()))
+        )
+        val expectedMetaData = MetaData(response = metaDataResponse)
+
+        MetaData.fromXml(inputXML) must be(expectedMetaData)
       }
 
       "read Response/Declaration without DutyTaxFee and GoodsShipment" in {
