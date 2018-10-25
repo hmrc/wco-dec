@@ -382,29 +382,55 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
   "fromXml" when {
     "no tag present" should {
       "fill optional field with None" in {
-
+        val inputXML = ResponseSpecInputXML.testNoTagForOptionalField
+        val actualMetaData = MetaData.fromXml(inputXML)
+        actualMetaData.response.nonEmpty must be(true)
+        actualMetaData.response.head.issueDateTime must be (None)
       }
 
       "fill optional sequence field with empty sequence" in {
-
+        val inputXML = ResponseSpecInputXML.testEmptyOptionalSequence
+        val actualMetaData = MetaData.fromXml(inputXML)
+        actualMetaData.response.nonEmpty must be(true)
+        actualMetaData.response.head.additionalInformation must be (Seq.empty)
       }
 
       "fill nested optional sequence field with empty sequence" in {
-
+        val inputXML = ResponseSpecInputXML.testEmptyNestedOptionalSequence
+        val actualMetaData = MetaData.fromXml(inputXML)
+        actualMetaData.response.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.get.dutyTaxFees.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.head.obligationGuarantees.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.head.obligationGuarantees must be(Seq.empty)
       }
     }
 
     "value is not provided" should {
       "fill optional field with None" in {
-
+        val inputXML = ResponseSpecInputXML.testEmptyOptionalField
+        val actualMetaData = MetaData.fromXml(inputXML)
+        actualMetaData.response.nonEmpty must be(true)
+        actualMetaData.response.head.functionalReferenceId must be (None)
       }
 
       "fill optional sequence field with empty sequence" in {
-
+        val inputXML = ResponseSpecInputXML.testEmptyOptionalSequence
+        val actualMetaData = MetaData.fromXml(inputXML)
+        actualMetaData.response.nonEmpty must be(true)
+        actualMetaData.response.head.functionalReferenceId must be (None)
       }
 
       "fill nested optional sequence field with empty sequence" in {
-
+        val inputXML = ResponseSpecInputXML.testEmptyNestedOptionalSequence
+        val actualMetaData = MetaData.fromXml(inputXML)
+        actualMetaData.response.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.get.dutyTaxFees.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.head.obligationGuarantees.nonEmpty must be(true)
+        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.head.obligationGuarantees must be(Seq.empty)
       }
     }
 
