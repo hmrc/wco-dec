@@ -1,0 +1,30 @@
+package uk.gov.hmrc.wco.dec.input
+
+sealed trait TestName
+case object TestNoTagForOptionalField extends TestName
+case object TestNoTagForOptionalSequence extends TestName
+case object TestNoTagForOptionalNestedSequence extends TestName
+case object TestNoValueForOptionalField extends TestName
+case object TestNoValueForOptionalSequence extends TestName
+case object TestNoValueForOptionalNestedSequence extends TestName
+
+case object TestWCODataModelVersionCode extends TestName
+case object TestWCOTypeName extends TestName
+case object TestResponsibleCountryCode extends TestName
+case object TestResponsibleAgencyName extends TestName
+case object TestAgencyAssignedCustomizationCode extends TestName
+case object TestAgencyAssignedCustomizationVersionCode extends TestName
+
+case object TestFunctionCode extends TestName
+case object TestFunctionalReferenceID extends TestName
+case object TestIssueDateTime extends TestName
+case object TestAdditionalInformation extends TestName
+case object TestAmendment extends TestName
+case object TestAppealOffice extends TestName
+case object TestBank extends TestName
+case object TestContactOffice extends TestName
+case object TestError extends TestName
+case object TestStatus extends TestName
+case object TestRespDeclaration extends TestName
+case object TestRespDeclarationDutyTaxFee extends TestName
+case object TestRespDeclarationGoodsShipment extends TestName

@@ -16,68 +16,58 @@
 
 package uk.gov.hmrc.wco.dec
 
+import uk.gov.hmrc.wco.dec.input._
+
 object ResponseSpec extends WcoSpec {
-  val wcoDataModelVersionCode = randomString(6)
-  val wcoTypeName = randomString(72)
-  val responsibleCountryCode = randomISO3166Alpha2CountryCode
-  val responsibleAgencyName = randomString(70)
-  val agencyAssignedCustomizationCode = randomString(6)
-  val agencyAssignedCustomizationVersionCode = randomString(3)
+  val wcoDataModelVersionCode: String = randomString(6)
+  val wcoTypeName: String = randomString(72)
+  val responsibleCountryCode: String = randomISO3166Alpha2CountryCode
+  val responsibleAgencyName: String = randomString(70)
+  val agencyAssignedCustomizationCode: String = randomString(6)
+  val agencyAssignedCustomizationVersionCode: String = randomString(3)
 
+  val functionCode: Int = randomDeclarationFunctionCode
+  val functionalReferenceId: String = "functionalRefId1"
 
-  val functionCode = randomDeclarationFunctionCode
-  val functionalReferenceId = "functionalRefId1"
+  val dateTimeFormatCode: String = randomDateTimeFormatCode
+  val dateTime: String = randomDateTimeString
+  val issueTime: ResponseDateTimeElement = ResponseDateTimeElement(DateTimeString(dateTimeFormatCode, dateTime))
 
-  val dateTimeFormatCode = randomDateTimeFormatCode
-  val dateTime = randomDateTimeString
-  val issueTime = Some(ResponseDateTimeElement(DateTimeString(dateTimeFormatCode, dateTime)))
+  val statementCode: String = randomString(10)
+  val statementDescription: String = randomString(10)
+  val statementTypeCode: String = randomString(3)
 
-  val statementCode = randomString(10)
-  val statementDescription = randomString(10)
-  val statementTypeCode = randomString(3)
+  val sequenceNumeric: Int = random0To9
+  val documentSectionCode: String = 1.toString
+  val tagId: String = randomString(4)
+  val responsePointer: ResponsePointer = ResponsePointer(Some(sequenceNumeric), Some(documentSectionCode), Some(tagId))
 
-  val sequenceNumeric = random0To9
-  val documentSectionCode = 1.toString
-  val tagId = randomString(4)
-  val responsePointer = ResponsePointer(Some(sequenceNumeric), Some(documentSectionCode), Some(tagId))
+  val changeReasonCode: String = randomString(3)
+  val appealOfficeId: String = randomString(17)
+  val bankReferenceId: String = randomString(17)
+  val bankId: String = randomString(17)
+  val contactOfficeId: String = randomString(17)
+  val contactOfficeCommunicationId: String = randomString(50)
+  val contactOfficeCommunicationTypeCode: String = randomString(3)
+  val errorDescription: String = randomString(10)
+  val errorValidationCode: String = randomString(8)
+  val nameCode: String = randomString(3)
 
-  val changeReasonCode = randomString(3)
-  val appealOfficeId = randomString(17)
-  val bankReferenceId = randomString(17)
-  val bankId = randomString(17)
-  val contactOfficeId = randomString(17)
-  val contactOfficeCommunicationId = randomString(50)
-  val contactOfficeCommunicationTypeCode = randomString(3)
-  val errorDescription = randomString(10)
-  val errorValidationCode = randomString(8)
-  val nameCode = randomString(3)
+  val declarationId: String = randomString(70)
+  val declarationVersionId: String = randomString(9)
 
+  val refId: String = randomString(35)
+  val currencyId: String = "GBP"
+  val amountValue: BigDecimal = randomBigDecimal(100)
+  val amount: Amount = Amount(Some(currencyId), Some(amountValue))
 
-  val id = randomString(70)
-  val versionId = randomString(9)
+  val dutyRegimeCode: String = randomString(3)
+  val unitCode: String = randomString(5)
+  val measureValue: BigDecimal = randomBigDecimal(100)
+  val measure: Measure = Measure(Some(unitCode), Some(measureValue))
 
-  val referenceId = randomString(35)
-  val currencyId = "GBP"
-  val amountValue = randomBigDecimal(100)
-  val amount = Amount(Some(currencyId), Some(amountValue))
-  val obligationGuarantee = ResponseObligationGuarantee(Some(referenceId))
-  val responsePayment = ResponsePayment(Some(referenceId), Some(amount), issueTime, Some(amount), Seq(obligationGuarantee))
-  val responseDutyTaxFee = ResponseDutyTaxFee(Some(responsePayment))
-
-  val dutyRegimeCode = randomString(3)
-  val unitCode = randomString(5)
-  val measureValue = randomBigDecimal(100)
-  val taxRateNumeric = randomBigDecimal(100)
-  val typeCode = randomString(3)
-  val payment = ResponseDutyTaxFeePayment(Some(amount), Some(amount))
-
-  val measure = Measure(Some(unitCode), Some(measureValue))
-  val commodityDutyTaxFees = ResponseCommodityDutyTaxFee(Some(amount), Some(amount), Some(dutyRegimeCode), Some(measure),
-    Some(taxRateNumeric), Some(typeCode), Some(payment))
-  val responseCommodity = ResponseCommodity(Seq(commodityDutyTaxFees))
-  val responseGovernmentAgencyGoodsItem = ResponseGovernmentAgencyGoodsItem(sequenceNumeric, Some(responseCommodity))
-  val governmentAgencyGoodsItems = Seq(responseGovernmentAgencyGoodsItem)
-  val responseGoodsShipment = ResponseGoodsShipment(governmentAgencyGoodsItems)
+  val taxRateNumeric: BigDecimal = randomBigDecimal(100)
+  val typeCode: String = randomString(3)
 
   val exemplaryValidResponse = Response(functionCode, Some(functionalReferenceId))
 }
@@ -151,7 +141,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include IssueDateTime" in validResponseXmlScenario() {
       val meta = MetaData(response = Seq(
-        Response(functionCode, Some(functionalReferenceId), issueTime, declaration = Some(ResponseDeclaration()))
+        Response(functionCode, Some(functionalReferenceId), Some(issueTime), declaration = Some(ResponseDeclaration()))
       ))
 
       hasExpectedOutput(meta, Seq(dateTimeFormatCode, dateTime)) { xml =>
@@ -164,7 +154,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include ResponseAdditionalInformation" in validResponseXmlScenario() {
       val responseAdditionalInformation = ResponseAdditionalInformation(Some(statementCode),
-        Some(statementDescription), issueTime, Some(statementTypeCode), Seq(responsePointer))
+        Some(statementDescription), Some(issueTime), Some(statementTypeCode), Seq(responsePointer))
 
       val meta = MetaData(response = Seq(
         Response(functionCode, additionalInformation = Seq(responseAdditionalInformation),
@@ -172,7 +162,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       ))
 
       val expectedResponseAdditionalInformation: Seq[String] =
-        Seq(statementCode, statementDescription, dateTime, statementTypeCode, sequenceNumeric.toString(), documentSectionCode, tagId)
+        Seq(statementCode, statementDescription, dateTime, statementTypeCode, sequenceNumeric.toString, documentSectionCode, tagId)
 
       hasExpectedOutput(meta, expectedResponseAdditionalInformation) { xml =>
         Seq(
@@ -277,7 +267,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include Status" in validResponseXmlScenario() {
-      val status: ResponseStatus = ResponseStatus(issueTime, Some(nameCode), issueTime, Seq(responsePointer))
+      val status: ResponseStatus = ResponseStatus(Some(issueTime), Some(nameCode), Some(issueTime), Seq(responsePointer))
 
       val meta = MetaData(response = Seq(
         Response(functionCode, status = Seq(status), declaration = Some(ResponseDeclaration())))
@@ -300,12 +290,12 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "include ResponseDeclaration" in validResponseXmlScenario() {
       val responseDeclaration: ResponseDeclaration = ResponseDeclaration(
-        acceptanceDateTime = issueTime,
-        cancellationDateTime = issueTime,
+        acceptanceDateTime = Some(issueTime),
+        cancellationDateTime = Some(issueTime),
         functionalReferenceId = Some(functionalReferenceId),
-        id = Some(id),
-        rejectionDateTime = issueTime,
-        versionID = Some(versionId)
+        id = Some(declarationId),
+        rejectionDateTime = Some(issueTime),
+        versionID = Some(declarationVersionId)
       )
 
       val meta = MetaData(response = Seq(
@@ -313,7 +303,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       )
 
       val expectedResponseDeclaration: Seq[String] =
-        Seq(dateTime, dateTime, functionalReferenceId, id, dateTime, versionId)
+        Seq(dateTime, dateTime, functionalReferenceId, declarationId, dateTime, declarationVersionId)
 
       hasExpectedOutput(meta, expectedResponseDeclaration) { xml =>
         Seq(
@@ -328,6 +318,10 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include DutyTaxFee" in validResponseXmlScenario() {
+      val obligationGuarantee = ResponseObligationGuarantee(Some(refId))
+      val responsePayment = ResponsePayment(Some(refId), Some(amount), Some(issueTime), Some(amount), Seq(obligationGuarantee))
+      val responseDutyTaxFee = ResponseDutyTaxFee(Some(responsePayment))
+
       val responseDeclaration: ResponseDeclaration = ResponseDeclaration(
         dutyTaxFees = Seq(responseDutyTaxFee)
       )
@@ -337,7 +331,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       )
 
       val expectedResponseDeclaration: Seq[String] =
-        Seq(referenceId, amountValue.toString, dateTime, amountValue.toString, referenceId)
+        Seq(refId, amountValue.toString, dateTime, amountValue.toString, refId)
 
       hasExpectedOutput(meta, expectedResponseDeclaration) { xml =>
         Seq(
@@ -351,6 +345,14 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
     }
 
     "include GoodsShipment" in validResponseXmlScenario() {
+      val payment = ResponseDutyTaxFeePayment(Some(amount), Some(amount))
+      val commodityDutyTaxFees = ResponseCommodityDutyTaxFee(
+        Some(amount), Some(amount), Some(dutyRegimeCode), Some(measure), Some(taxRateNumeric), Some(typeCode),
+        Some(payment))
+      val responseCommodity = ResponseCommodity(Seq(commodityDutyTaxFees))
+      val responseGovernmentAgencyGoodsItem = ResponseGovernmentAgencyGoodsItem(sequenceNumeric, Some(responseCommodity))
+      val responseGoodsShipment = ResponseGoodsShipment(Seq(responseGovernmentAgencyGoodsItem))
+
       val responseDeclaration = ResponseDeclaration(
         goodsShipment = Some(responseGoodsShipment)
       )
@@ -382,247 +384,321 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
   "fromXml" when {
     "no tag present" should {
       "fill optional field with None" in {
-        val inputXML = ResponseSpecInputXML.testNoTagForOptionalField
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoTagForOptionalField)
         val actualMetaData = MetaData.fromXml(inputXML)
-        actualMetaData.response.nonEmpty must be(true)
-        actualMetaData.response.head.issueDateTime must be (None)
+
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.issueDateTime must be(None)
       }
 
       "fill optional sequence field with empty sequence" in {
-        val inputXML = ResponseSpecInputXML.testEmptyOptionalSequence
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoTagForOptionalSequence)
         val actualMetaData = MetaData.fromXml(inputXML)
-        actualMetaData.response.nonEmpty must be(true)
-        actualMetaData.response.head.additionalInformation must be (Seq.empty)
+
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.additionalInformation must be(empty)
       }
 
       "fill nested optional sequence field with empty sequence" in {
-        val inputXML = ResponseSpecInputXML.testEmptyNestedOptionalSequence
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoTagForOptionalNestedSequence)
         val actualMetaData = MetaData.fromXml(inputXML)
-        actualMetaData.response.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.get.dutyTaxFees.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.head.obligationGuarantees.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.head.obligationGuarantees must be(Seq.empty)
+
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.declaration mustNot be(empty)
+        val dutyTaxFees = actualMetaData.response.head.declaration.get.dutyTaxFees
+        dutyTaxFees mustNot be(empty)
+        dutyTaxFees.head.payment must be(defined)
+        dutyTaxFees.head.payment.get.obligationGuarantees must be(empty)
       }
     }
 
     "value is not provided" should {
       "fill optional field with None" in {
-        val inputXML = ResponseSpecInputXML.testEmptyOptionalField
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoValueForOptionalField)
         val actualMetaData = MetaData.fromXml(inputXML)
-        actualMetaData.response.nonEmpty must be(true)
-        actualMetaData.response.head.functionalReferenceId must be (None)
+
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.issueDateTime must be(None)
       }
 
       "fill optional sequence field with empty sequence" in {
-        val inputXML = ResponseSpecInputXML.testEmptyOptionalSequence
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoValueForOptionalSequence)
+        val expectedAdditionalInformation = ResponseAdditionalInformation()
         val actualMetaData = MetaData.fromXml(inputXML)
-        actualMetaData.response.nonEmpty must be(true)
-        actualMetaData.response.head.functionalReferenceId must be (None)
+
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.additionalInformation mustNot be(empty)
+        actualMetaData.response.head.additionalInformation.head must equal(expectedAdditionalInformation)
       }
 
       "fill nested optional sequence field with empty sequence" in {
-        val inputXML = ResponseSpecInputXML.testEmptyNestedOptionalSequence
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoValueForOptionalNestedSequence)
         val actualMetaData = MetaData.fromXml(inputXML)
-        actualMetaData.response.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.get.dutyTaxFees.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.head.obligationGuarantees.nonEmpty must be(true)
-        actualMetaData.response.head.declaration.get.dutyTaxFees.head.payment.head.obligationGuarantees must be(Seq.empty)
+
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.declaration mustNot be(empty)
+        val dutyTaxFees = actualMetaData.response.head.declaration.get.dutyTaxFees
+        dutyTaxFees mustNot be(empty)
+        dutyTaxFees.head.payment must be(defined)
+        dutyTaxFees.head.payment.get.obligationGuarantees mustNot be(empty)
+        dutyTaxFees.head.payment.get.obligationGuarantees.head must equal(ResponseObligationGuarantee())
       }
     }
 
     "value is provided" should {
-      "read WCODataModelVersionCode" in {
-        val inputXML = ResponseSpecInputXML.testWCODataModelVersionCode
-        val metaDataResponse = Seq(exemplaryValidResponse)
-        val expectedMetaData =
-          MetaData(wcoDataModelVersionCode = Some(wcoDataModelVersionCode), response = metaDataResponse)
+      "fill WCODataModelVersionCode" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestWCODataModelVersionCode)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.wcoDataModelVersionCode must be(defined)
+        actualMetaData.wcoDataModelVersionCode.get must equal(wcoDataModelVersionCode)
       }
 
-      "read WCOTypeName" in {
-        val inputXML = ResponseSpecInputXML.testWCOTypeName
-        val metaDataResponse = Seq(exemplaryValidResponse)
-        val expectedMetaData = MetaData(wcoTypeName = Some(wcoTypeName), response = metaDataResponse)
+      "fill WCOTypeName" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestWCOTypeName)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.wcoTypeName must be(defined)
+        actualMetaData.wcoTypeName.get must equal(wcoTypeName)
       }
 
-      "read ResponsibleCountryCode" in {
-        val inputXML = ResponseSpecInputXML.testResponsibleCountryCode
-        val metaDataResponse = Seq(exemplaryValidResponse)
-        val expectedMetaData =
-          MetaData(responsibleCountryCode = Some(responsibleCountryCode), response = metaDataResponse)
+      "fill ResponsibleCountryCode" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestResponsibleCountryCode)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.responsibleCountryCode must be(defined)
+        actualMetaData.responsibleCountryCode.get must equal(responsibleCountryCode)
+
       }
 
-      "read ResponsibleAgencyName" in {
-        val inputXML = ResponseSpecInputXML.testResponsibleAgencyName
-        val metaDataResponse = Seq(exemplaryValidResponse)
-        val expectedMetaData =
-          MetaData(responsibleAgencyName = Some(responsibleAgencyName), response = metaDataResponse)
+      "fill ResponsibleAgencyName" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestResponsibleAgencyName)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.responsibleAgencyName must be(defined)
+        actualMetaData.responsibleAgencyName.get must equal(responsibleAgencyName)
       }
 
-      "read AgencyAssignedCustomizationCode" in {
-        val inputXML = ResponseSpecInputXML.testAgencyAssignedCustomizationCode
-        val metaDataResponse = Seq(exemplaryValidResponse)
-        val expectedMetaData = MetaData(
-          agencyAssignedCustomizationCode = Some(agencyAssignedCustomizationCode), response = metaDataResponse)
+      "fill AgencyAssignedCustomizationCode" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAgencyAssignedCustomizationCode)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.agencyAssignedCustomizationCode must be(defined)
+        actualMetaData.agencyAssignedCustomizationCode.get must equal(agencyAssignedCustomizationCode)
       }
 
-      "read AgencyAssignedCustomizationVersionCode" in {
-        val inputXML = ResponseSpecInputXML.testAgencyAssignedCustomizationVersionCode
-        val metaDataResponse = Seq(exemplaryValidResponse)
-        val expectedMetaData = MetaData(
-          agencyAssignedCustomizationVersionCode = Some(agencyAssignedCustomizationVersionCode),
-          response = metaDataResponse)
+      "fill AgencyAssignedCustomizationVersionCode" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAgencyAssignedCustomizationVersionCode)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.agencyAssignedCustomizationVersionCode must be(defined)
+        actualMetaData.agencyAssignedCustomizationVersionCode.get must equal(agencyAssignedCustomizationVersionCode)
       }
 
-      "read Response mandatory fields" in {
-        val inputXML = ResponseSpecInputXML.testResponseMandatoryFields
-        val metaDataResponse = Seq(
-          Response(functionCode, Some(functionalReferenceId), declaration = Some(ResponseDeclaration()))
-        )
-        val expectedMetaData = MetaData(response = metaDataResponse)
+      "fill Response/FunctionCode" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestFunctionCode)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.functionCode must equal(functionCode)
       }
 
-      "read Response/IssueDateTime" in {
-        val inputXML = ResponseSpecInputXML.testResponseIssueDateTime
-        val metaDataResponse = Seq(
-          Response(functionCode, Some(functionalReferenceId), issueTime, declaration = Some(ResponseDeclaration()))
-        )
-        val expectedMetaData = MetaData(response = metaDataResponse)
+      "fill Response/FunctionalReferenceID" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestFunctionalReferenceID)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.functionalReferenceId mustNot be(empty)
+        actualMetaData.response.head.functionalReferenceId.get must equal(functionalReferenceId)
       }
 
-      "read Response/AdditionalInformation" in {
-        val inputXML = ResponseSpecInputXML.testResponseAdditionalInformation
-        val responseAdditionalInformation = ResponseAdditionalInformation(
-          Some(statementCode), Some(statementDescription), issueTime, Some(statementTypeCode), Seq(responsePointer))
+      "fill Response/IssueDateTime" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestIssueDateTime)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        val metaDataResponse = Seq(
-          Response(functionCode, Some(functionalReferenceId),
-            additionalInformation = Seq(responseAdditionalInformation),
-            declaration = Some(ResponseDeclaration()))
-        )
-        val expectedMetaData = MetaData(response = metaDataResponse)
-
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.issueDateTime mustNot be(empty)
+        actualMetaData.response.head.issueDateTime.get must equal(issueTime)
       }
 
-      "read Response/Amendment" in {
-        val inputXML = ResponseSpecInputXML.testResponseAmendments
-        val responseAmendment = ResponseAmendment(Some(changeReasonCode), Seq(responsePointer))
+      "fill Response/AdditionalInformation" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAdditionalInformation)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        val metaDataResponse = Seq(
-          Response(functionCode, Some(functionalReferenceId),
-            amendments = Seq(responseAmendment),
-            declaration = Some(ResponseDeclaration()))
-        )
-        val expectedMetaData = MetaData(response = metaDataResponse)
-
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.additionalInformation mustNot be(empty)
+        actualMetaData.response.head.additionalInformation.head.statementCode must be(defined)
+        actualMetaData.response.head.additionalInformation.head.statementCode.get must equal(statementCode)
+        actualMetaData.response.head.additionalInformation.head.statementDescription must be(defined)
+        actualMetaData.response.head.additionalInformation.head.statementDescription.get must equal(statementDescription)
+        actualMetaData.response.head.additionalInformation.head.limitDateTime.get must equal(issueTime)
+        actualMetaData.response.head.additionalInformation.head.statementTypeCode must be(defined)
+        actualMetaData.response.head.additionalInformation.head.statementTypeCode.get must equal(statementTypeCode)
+        actualMetaData.response.head.additionalInformation.head.pointers mustNot be(empty)
+        val actualPointer = actualMetaData.response.head.additionalInformation.head.pointers.head
+        assertResponsePointers(responsePointer, actualPointer)
       }
 
-      "read Response/AppealOffice" in {
-        val inputXML = ResponseSpecInputXML.testResponseAppealOffice
-        val responseAppealOffice = ResponseAppealOffice(Some(appealOfficeId))
+      "fill Response/Amendment" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAmendment)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        val metaDataResponse = Seq(
-          Response(functionCode, Some(functionalReferenceId),
-            appealOffice = Some(responseAppealOffice),
-            declaration = Some(ResponseDeclaration()))
-        )
-        val expectedMetaData = MetaData(response = metaDataResponse)
-
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.amendments mustNot be(empty)
+        actualMetaData.response.head.amendments.head.changeReasonCode must be(defined)
+        actualMetaData.response.head.amendments.head.changeReasonCode.get must equal(changeReasonCode)
+        actualMetaData.response.head.amendments.head.pointers mustNot be(empty)
+        val actualPointer = actualMetaData.response.head.amendments.head.pointers.head
+        assertResponsePointers(responsePointer, actualPointer)
       }
 
-      "read Response/Bank" in {
-        val inputXML = ResponseSpecInputXML.testResponseBank
-        val responseBank= ResponseBank(Some(bankReferenceId), Some(bankId))
+      "fill Response/AppealOffice" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAppealOffice)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        val metaDataResponse = Seq(
-          Response(functionCode, Some(functionalReferenceId),
-            bank = Some(responseBank),
-            declaration = Some(ResponseDeclaration()))
-        )
-        val expectedMetaData = MetaData(response = metaDataResponse)
-
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.appealOffice must be(defined)
+        actualMetaData.response.head.appealOffice.get.id must be(defined)
+        actualMetaData.response.head.appealOffice.get.id.get must equal(appealOfficeId)
       }
 
-      "read Response/ContactOffice" in {
-        val inputXML = ResponseSpecInputXML.testResponseContactOffice
-        val responseContactOffice = ResponseContactOffice(
+      "fill Response/Bank" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestBank)
+        val actualMetaData = MetaData.fromXml(inputXML)
+
+        val expectedResponseBank = ResponseBank(Some(bankReferenceId), Some(bankId))
+
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.bank must be(defined)
+        actualMetaData.response.head.bank.get must equal(expectedResponseBank)
+      }
+
+      "fill Response/ContactOffice" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestContactOffice)
+        val actualMetaData = MetaData.fromXml(inputXML)
+
+        val expectedResponseContactOffice = ResponseContactOffice(
           Some(contactOfficeId),
           Seq(ResponseCommunication(Some(contactOfficeCommunicationId), Some(contactOfficeCommunicationTypeCode)))
         )
 
-        val metaDataResponse = Seq(
-          Response(functionCode, Some(functionalReferenceId),
-            contactOffices = Seq(responseContactOffice),
-            declaration = Some(ResponseDeclaration()))
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.contactOffices mustNot be(empty)
+        actualMetaData.response.head.contactOffices.head must equal(expectedResponseContactOffice)
+      }
+
+      "fill Response/Error" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestError)
+        val actualMetaData = MetaData.fromXml(inputXML)
+
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.errors mustNot be(empty)
+        actualMetaData.response.head.errors.head.description must be(defined)
+        actualMetaData.response.head.errors.head.description.get must equal(errorDescription)
+        actualMetaData.response.head.errors.head.validationCode must be(defined)
+        actualMetaData.response.head.errors.head.validationCode.get must equal(errorValidationCode)
+        actualMetaData.response.head.errors.head.pointers mustNot be(empty)
+        val actualPointer = actualMetaData.response.head.errors.head.pointers.head
+        assertResponsePointers(responsePointer, actualPointer)
+      }
+
+      "fill Response/Status" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestStatus)
+        val actualMetaData = MetaData.fromXml(inputXML)
+
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.status mustNot be(empty)
+        actualMetaData.response.head.status.head.effectiveDateTime mustNot be(empty)
+        actualMetaData.response.head.status.head.effectiveDateTime.get must equal(issueTime)
+        actualMetaData.response.head.status.head.nameCode mustNot be(empty)
+        actualMetaData.response.head.status.head.nameCode.get must equal(nameCode)
+        actualMetaData.response.head.status.head.releaseDateTime mustNot be(empty)
+        actualMetaData.response.head.status.head.releaseDateTime.get must equal(issueTime)
+        actualMetaData.response.head.status.head.pointers mustNot be(empty)
+        val actualPointer = actualMetaData.response.head.status.head.pointers.head
+        assertResponsePointers(responsePointer, actualPointer)
+      }
+
+      "fill Response/Declaration without DutyTaxFee and GoodsShipment" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestRespDeclaration)
+        val actualMetaData = MetaData.fromXml(inputXML)
+
+        val expectedResponseDeclaration = ResponseDeclaration(
+          acceptanceDateTime = Some(issueTime),
+          cancellationDateTime = Some(issueTime),
+          functionalReferenceId = Some(functionalReferenceId),
+          id = Some(declarationId),
+          rejectionDateTime = Some(issueTime),
+          versionID = Some(declarationVersionId)
         )
-        val expectedMetaData = MetaData(response = metaDataResponse)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.declaration must be(defined)
+        actualMetaData.response.head.declaration.get must equal(expectedResponseDeclaration)
       }
 
-      "read Response/Error" in {
-        val inputXML = ResponseSpecInputXML.testResponseErrors
-        val responseError = ResponseError(Some(errorDescription), Some(errorValidationCode), Seq(responsePointer))
+      "fill Response/Declaration/DutyTaxFee" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestRespDeclarationDutyTaxFee)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        val metaDataResponse = Seq(
-          Response(functionCode, Some(functionalReferenceId),
-            errors = Seq(responseError),
-            declaration = Some(ResponseDeclaration()))
+        val expectedResponseDutyTaxFee = ResponseDutyTaxFee(
+          Some(ResponsePayment(
+            referenceId = Some(refId),
+            taxAssessedAmount = Some(amount),
+            dueDateTime = Some(issueTime),
+            paymentAmount = Some(amount),
+            obligationGuarantees = Seq(ResponseObligationGuarantee(
+              referenceId = Some(refId)
+            ))
+          ))
         )
-        val expectedMetaData = MetaData(response = metaDataResponse)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.declaration must be(defined)
+        actualMetaData.response.head.declaration.get.dutyTaxFees mustNot be(empty)
+        actualMetaData.response.head.declaration.get.dutyTaxFees.head must equal(expectedResponseDutyTaxFee)
       }
 
-      "read Response/Status" in {
-        val inputXML = ResponseSpecInputXML.testResponseStatus
-        val responseStatus = ResponseStatus(issueTime, Some(nameCode), issueTime, Seq(responsePointer))
+      "fill Response/Declaration/GoodsShipment" in {
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestRespDeclarationGoodsShipment)
+        val actualMetaData = MetaData.fromXml(inputXML)
 
-        val metaDataResponse = Seq(
-          Response(functionCode, Some(functionalReferenceId),
-            status = Seq(responseStatus),
-            declaration = Some(ResponseDeclaration()))
+        val expectedResponseGoodsShipment = ResponseGoodsShipment(
+          Seq(ResponseGovernmentAgencyGoodsItem(
+            sequenceNumeric = sequenceNumeric,
+            Some(ResponseCommodity(
+              Seq(ResponseCommodityDutyTaxFee(
+                adValoremTaxBaseAmount = Some(amount),
+                deductAmount = Some(amount),
+                dutyRegimeCode = Some(dutyRegimeCode),
+                specificTaxBaseQuantity = Some(measure),
+                taxRateNumeric = Some(taxRateNumeric),
+                typeCode = Some(typeCode),
+                payment = Some(ResponseDutyTaxFeePayment(
+                  taxAssessedAmount = Some(amount),
+                  paymentAmount = Some(amount)
+                ))
+              ))
+            ))
+          ))
         )
-        val expectedMetaData = MetaData(response = metaDataResponse)
 
-        MetaData.fromXml(inputXML) must be(expectedMetaData)
+        actualMetaData.response mustNot be(empty)
+        actualMetaData.response.head.declaration must be(defined)
+        actualMetaData.response.head.declaration.get.goodsShipment must be(defined)
+        actualMetaData.response.head.declaration.get.goodsShipment.get must equal(expectedResponseGoodsShipment)
       }
-
-      "read Response/Declaration without DutyTaxFee and GoodsShipment" in {
-
-      }
-
-      "read Response/Declaration/DutyTaxFee" in {
-
-      }
-
-      "read Response/Declaration/GoodsShipment" in {
-
-      }
-
     }
+  }
+
+  private def assertResponsePointers(expected: ResponsePointer, actual: ResponsePointer): Unit = {
+    actual.sequenceNumeric mustNot be(empty)
+
+    actual.sequenceNumeric.get must equal(expected.sequenceNumeric.get.toString)
+
+    actual.documentSectionCode mustNot be(empty)
+    actual.documentSectionCode.get must equal(expected.documentSectionCode.get)
+    actual.tagId mustNot be(empty)
+    actual.tagId.get must equal(expected.tagId.get)
   }
 }
