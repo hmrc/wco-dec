@@ -121,6 +121,7 @@ case class Declaration(@JacksonXmlProperty(localName = "AcceptanceDateTime", nam
                        acceptanceDateTime: Option[DateTimeElement] = None,
 
                        @JacksonXmlProperty(localName = "FunctionCode", namespace = NS.dec)
+                       @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                        functionCode: Option[Int] = None, // unsigned int in enumeration of [9, 13, 14]
 
                        @JacksonXmlProperty(localName = "FunctionalReferenceID", namespace = NS.dec)
@@ -139,6 +140,7 @@ case class Declaration(@JacksonXmlProperty(localName = "AcceptanceDateTime", nam
                        typeCode: Option[String] = None, // max 3 chars; MUST be "INV" in cancellation use case
 
                        @JacksonXmlProperty(localName = "GoodsItemQuantity", namespace = NS.dec)
+                       @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                        goodsItemQuantity: Option[Int] = None, // unsigned int max 99999
 
                        @JacksonXmlProperty(localName = "DeclarationOfficeID", namespace = NS.dec)
@@ -148,12 +150,14 @@ case class Declaration(@JacksonXmlProperty(localName = "AcceptanceDateTime", nam
                        invoiceAmount: Option[Amount] = None,
 
                        @JacksonXmlProperty(localName = "LoadingListQuantity", namespace = NS.dec)
+                       @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                        loadingListQuantity: Option[Int] = None, // unsigned int max 99999
 
                        @JacksonXmlProperty(localName = "TotalGrossMassMeasure", namespace = NS.dec)
                        totalGrossMassMeasure: Option[Measure] = None,
 
                        @JacksonXmlProperty(localName = "TotalPackageQuantity", namespace = NS.dec)
+                       @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                        totalPackageQuantity: Option[Int] = None, // unsigned int max 99999999
 
                        @JacksonXmlProperty(localName = "SpecificCircumstancesCodeCode", namespace = NS.dec)
@@ -271,12 +275,14 @@ case class BorderTransportMeans(@JacksonXmlProperty(localName = "Name", namespac
                                 registrationNationalityCode: Option[String] = None, // 2 chars [a-zA-Z] when present; presumably ISO 3166-1 alpha2
 
                                 @JacksonXmlProperty(localName = "ModeCode", namespace = NS.dec)
+                                @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                                 modeCode: Option[Int] = None) // 0-9
 
 case class GoodsShipment(@JacksonXmlProperty(localName = "ExitDateTime", namespace = NS.dec)
                          exitDateTime: Option[DateTimeElement] = None,
 
                          @JacksonXmlProperty(localName = "TransactionNatureCode", namespace = NS.dec)
+                         @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                          transactionNatureCode: Option[Int] = None, // unsigned int max 99
 
                          @JacksonXmlProperty(localName = "AEOMutualRecognitionParty", namespace = NS.dec)
@@ -421,6 +427,7 @@ case class TransportMeans(@JacksonXmlProperty(localName = "Name", namespace = NS
                           typeCode: Option[String] = None, // max 4 chars
 
                           @JacksonXmlProperty(localName = "ModeCode", namespace = NS.dec)
+                          @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                           modeCode: Option[Int] = None) // unsigned int max 9
 
 case class GoodsLocation(@JacksonXmlProperty(localName = "Name", namespace = NS.dec)
@@ -478,6 +485,7 @@ case class GovernmentAgencyGoodsItem(@JacksonXmlProperty(localName = "CustomsVal
                                      statisticalValueAmount: Option[Amount] = None,
 
                                      @JacksonXmlProperty(localName = "TransactionNatureCode", namespace = NS.dec)
+                                     @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                                      transactionNatureCode: Option[Int] = None, // unsigned max 99
 
                                      @JacksonXmlProperty(localName = "AdditionalDocument", namespace = NS.dec)
@@ -589,15 +597,18 @@ case class PreviousDocument(@JacksonXmlProperty(localName = "CategoryCode", name
                             typeCode: Option[String] = None, // max 3 chars
 
                             @JacksonXmlProperty(localName = "LineNumeric", namespace = NS.dec)
+                            @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                             lineNumeric: Option[Int] = None) // unsigned int max 99999
 
 case class Packaging(@JacksonXmlProperty(localName = "SequenceNumeric", namespace = NS.dec)
+                     @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                      sequenceNumeric: Option[Int] = None, // unsigned max 99999
 
                      @JacksonXmlProperty(localName = "MarksNumberID", namespace = NS.dec)
                      marksNumbersId: Option[String] = None, // max 512 chars
 
                      @JacksonXmlProperty(localName = "QuantityQuantity", namespace = NS.dec)
+                     @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                      quantity: Option[Int] = None, // max 99999999
 
                      @JacksonXmlProperty(localName = "TypeCode", namespace = NS.dec)
@@ -877,6 +888,7 @@ case class Office(@JacksonXmlProperty(localName = "ID", namespace = NS.dec)
                   id: Option[String]) // max 17 chars
 
 case class Pointer(@JacksonXmlProperty(localName = "SequenceNumeric", namespace = NS.dec)
+                   @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                    sequenceNumeric: Option[Int] = None, // min 0 max 99999
 
                    @JacksonXmlProperty(localName = "DocumentSectionCode", namespace = NS.dec)

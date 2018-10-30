@@ -1637,6 +1637,22 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       deserialized.response.isEmpty must be(true)
     }
 
+    "read packaging sequence numeric" in {
+      val meta = MetaData(declaration = Some(Declaration(
+        goodsShipment = Some(GoodsShipment(
+          governmentAgencyGoodsItems = Seq(GovernmentAgencyGoodsItem(
+            sequenceNumeric = 42,
+            packagings = Seq(Packaging(
+              sequenceNumeric = Some(24)
+            ))
+          ))
+        ))
+      )))
+      val xml = meta.toXml
+      val deserialized = MetaData.fromXml(xml)
+      deserialized.declaration.get.goodsShipment.get.governmentAgencyGoodsItems.head.packagings.head.sequenceNumeric.get must be(24)
+    }
+
   }
 
   "from properties" should {

@@ -16,6 +16,7 @@
 
 package uk.gov.hmrc.wco.dec
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 
 case class ResponseDateTimeElement(
@@ -25,6 +26,7 @@ case class ResponseDateTimeElement(
 
 case class ResponsePointer(
   @JacksonXmlProperty(localName = "SequenceNumeric", namespace = NS.res)
+  @JsonDeserialize(contentAs = classOf[java.lang.Integer])
   sequenceNumeric: Option[Int] = None, // max 5 chars
 
   @JacksonXmlProperty(localName = "DocumentSectionCode", namespace = NS.res)
