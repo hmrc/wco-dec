@@ -693,9 +693,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
   private def assertResponsePointers(expected: ResponsePointer, actual: ResponsePointer): Unit = {
     actual.sequenceNumeric mustNot be(empty)
-
-    actual.sequenceNumeric.get must equal(expected.sequenceNumeric.get.toString)
-
+    actual.sequenceNumeric.get must equal(expected.sequenceNumeric.get)
     actual.documentSectionCode mustNot be(empty)
     actual.documentSectionCode.get must equal(expected.documentSectionCode.get)
     actual.tagId mustNot be(empty)
