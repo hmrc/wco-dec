@@ -16,6 +16,7 @@
 
 package uk.gov.hmrc.wco.dec
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 
 case class ResponseDateTimeElement(
@@ -23,25 +24,9 @@ case class ResponseDateTimeElement(
   dateTimeString: DateTimeString
 )
 
-case class ResponseAdditionalInformation(
-  @JacksonXmlProperty(localName = "StatementCode", namespace = NS.res)
-  statementCode: Option[String] = None, // max 17 chars
-
-  @JacksonXmlProperty(localName = "StatementDescription", namespace = NS.res)
-  statementDescription: Option[String] = None, // max 512 chars
-
-  @JacksonXmlProperty(localName = "LimitDateTime", namespace = NS.res)
-  limitDateTime: Option[ResponseDateTimeElement] = None, // alphanumeric max 35 chars
-
-  @JacksonXmlProperty(localName = "StatementTypeCode", namespace = NS.res)
-  statementTypeCode: Option[String] = None, // max 3 chars
-
-  @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
-  pointers: Seq[ResponsePointer] = Seq.empty
-)
-
 case class ResponsePointer(
   @JacksonXmlProperty(localName = "SequenceNumeric", namespace = NS.res)
+  @JsonDeserialize(contentAs = classOf[java.lang.Integer])
   sequenceNumeric: Option[Int] = None, // max 5 chars
 
   @JacksonXmlProperty(localName = "DocumentSectionCode", namespace = NS.res)
@@ -70,7 +55,7 @@ case class Response(
   issueDateTime: Option[ResponseDateTimeElement] = None, // max 35 chars
 
   @JacksonXmlProperty(localName = "AdditionalInformation", namespace = NS.res)
-  additionalInformations: Seq[ResponseAdditionalInformation] = Seq.empty,
+  additionalInformation: Seq[ResponseAdditionalInformation] = Seq.empty,
 
   @JacksonXmlProperty(localName = "Amendment", namespace = NS.res)
   amendments: Seq[ResponseAmendment] = Seq.empty,
@@ -92,6 +77,23 @@ case class Response(
 
   @JacksonXmlProperty(localName = "Declaration", namespace = NS.res)
   declaration: Option[ResponseDeclaration] = None
+)
+
+case class ResponseAdditionalInformation(
+  @JacksonXmlProperty(localName = "StatementCode", namespace = NS.res)
+  statementCode: Option[String] = None, // max 17 chars
+
+  @JacksonXmlProperty(localName = "StatementDescription", namespace = NS.res)
+  statementDescription: Option[String] = None, // max 512 chars
+
+  @JacksonXmlProperty(localName = "LimitDateTime", namespace = NS.res)
+  limitDateTime: Option[ResponseDateTimeElement] = None, // alphanumeric max 35 chars
+
+  @JacksonXmlProperty(localName = "StatementTypeCode", namespace = NS.res)
+  statementTypeCode: Option[String] = None, // max 3 chars
+
+  @JacksonXmlProperty(localName = "Pointer", namespace = NS.res)
+  pointers: Seq[ResponsePointer] = Seq.empty
 )
 
 case class ResponseAppealOffice(
