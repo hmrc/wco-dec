@@ -35,6 +35,7 @@ trait XmlBehaviours {
 
   val responseSchemaResources = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_RES_2_DMS.xsd")
 
+  val inventoryLinkingMovementResponseSchema = Seq("/inventory-linking-exports-schemas/notification/inventoryLinkingResponseExternal.xsd")
 
   def validXmlScenario(schemas: Seq[String] = Seq.empty)(test: => Elem): Unit =
     validateAgainstSchemaResources(test.mkString, schemas)
@@ -42,6 +43,8 @@ trait XmlBehaviours {
   def validDeclarationXmlScenario()(test: => Elem): Unit = validXmlScenario(importDeclarationSchemaResources)(test)
 
   def validResponseXmlScenario()(test: => Elem): Unit = validXmlScenario(responseSchemaResources)(test)
+
+  def validMovementXmlScenario()(test: => Elem): Unit = validXmlScenario(inventoryLinkingMovementResponseSchema)(test)
 
   def validCancellationDeclarationXml()(test: => Elem): Unit =
     validXmlScenario(importDeclarationCancellationSchemas)(test)
@@ -63,5 +66,4 @@ trait XmlBehaviours {
 
     validator.validate(new StreamSource(new StringReader(xml)))
   }
-
 }
