@@ -19,13 +19,17 @@ package uk.gov.hmrc.wco.dec.inventorylinking
 import uk.gov.hmrc.wco.dec.{WcoSpec, XmlBehaviours}
 
 object MovementRequestToXmlSpec extends WcoSpec {
-  val messageCodeMovementValue: String = "EAA"
+  val messageCodeMovementValues = Seq("EAA", "EAL", "EDL")
+  val ucrTypeValues = Seq("D", "M")
+  val masterOptValues = Seq("A", "F", "R", "X")
+
+  val messageCodeMovement: String = messageCodeMovementValues(randomInt(messageCodeMovementValues.length))
   val agentDetails: AgentDetails = AgentDetails(
     Some(randomString(17)),
     Some(randomString(12)),
     Some(randomString(3))
   )
-  val ucrBlock: UcrBlock = UcrBlock(randomString(35), "D")
+  val ucrBlock: UcrBlock = UcrBlock(randomString(35), ucrTypeValues(randomInt(ucrTypeValues.length)))
   val goodsLocation: String = randomString(17)
   val dateTimeFormatCode: String = randomDateTimeFormatCode
   val dateTime: String = randomDateTimeString
@@ -33,7 +37,7 @@ object MovementRequestToXmlSpec extends WcoSpec {
   val goodsDepartureDateTime: DateTime = DateTime(Some(dateTimeFormatCode), Some(dateTime))
   val shedOPID: String = randomString(3)
   val masterUCR: String = randomString(35)
-  val masterOpt: String = "A"
+  val masterOpt: String = masterOptValues(randomInt(masterOptValues.length))
   val movementReference: String = randomString(25)
   val transportDetails: TransportDetails = TransportDetails(
     Some(randomString(35)),
@@ -49,11 +53,11 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
 
     "contain messageCode" in validInventoryLinkingMovementRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
-        messageCode = messageCodeMovementValue,
+        messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
         goodsLocation = goodsLocation
       )
-      val expectedOutput = messageCodeMovementValue
+      val expectedOutput = messageCodeMovement
 
       hasExpectedOutput(inventoryLinkingMovementRequest, expectedOutput) { xml =>
         (xml \ "messageCode").text.trim
@@ -62,7 +66,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
 
     "contain agentDetails" in validInventoryLinkingMovementRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
-        messageCode = messageCodeMovementValue,
+        messageCode = messageCodeMovement,
         agentDetails = Some(agentDetails),
         ucrBlock = ucrBlock,
         goodsLocation = goodsLocation

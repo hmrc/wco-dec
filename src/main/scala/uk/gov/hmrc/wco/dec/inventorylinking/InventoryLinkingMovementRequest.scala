@@ -37,7 +37,7 @@ object InventoryLinkingMovementRequest extends JacksonMapper {
 case class InventoryLinkingMovementRequest(
 
   @JacksonXmlProperty(localName = "messageCode", namespace = InventoryLinkingMovementRequest.namespace)
-  messageCode: String,
+  messageCode: String,  // Enumeration values: EAA, EAL, EDL
 
   @JacksonXmlProperty(localName = "agentDetails", namespace = InventoryLinkingMovementRequest.namespace)
   agentDetails: Option[AgentDetails] = None,
@@ -46,7 +46,7 @@ case class InventoryLinkingMovementRequest(
   ucrBlock: UcrBlock,
 
   @JacksonXmlProperty(localName = "goodsLocation", namespace = InventoryLinkingMovementRequest.namespace)
-  goodsLocation: String,
+  goodsLocation: String,  // max 17 chars
 
   @JacksonXmlProperty(localName = "goodsArrivalDateTime", namespace = InventoryLinkingMovementRequest.namespace)
   goodsArrivalDateTime: Option[DateTime] = None,
@@ -55,16 +55,16 @@ case class InventoryLinkingMovementRequest(
   goodsDepartureDateTime: Option[DateTime] = None,
 
   @JacksonXmlProperty(localName = "shedOPID", namespace = InventoryLinkingMovementRequest.namespace)
-  shedOPID: Option[String] = None,
+  shedOPID: Option[String] = None,  // max 3 chars
 
   @JacksonXmlProperty(localName = "masterUCR", namespace = InventoryLinkingMovementRequest.namespace)
-  masterUCR: Option[String] = None,
+  masterUCR: Option[String] = None,   // max 35 chars
 
   @JacksonXmlProperty(localName = "masterOpt", namespace = InventoryLinkingMovementRequest.namespace)
-  masterOpt: Option[String] = None,
+  masterOpt: Option[String] = None,   // Enumeration values: A, F, R, X
 
   @JacksonXmlProperty(localName = "movementReference", namespace = InventoryLinkingMovementRequest.namespace)
-  movementReference: Option[String] = None,
+  movementReference: Option[String] = None,   // max 25 chars
 
   @JacksonXmlProperty(localName = "transportDetails", namespace = InventoryLinkingMovementRequest.namespace)
   transportDetails: Option[TransportDetails] = None
@@ -79,28 +79,24 @@ case class InventoryLinkingMovementRequest(
 
 }
 
-case class MessageCodeMovement(
-  @JacksonXmlProperty(localName = "messageCodeMovement", namespace = InventoryLinkingMovementRequest.namespace)
-  codeMovement: String // values EAA, EAL, EDL - enumerations
-)
 
 case class AgentDetails(
   @JacksonXmlProperty(localName = "EORI", namespace = InventoryLinkingMovementRequest.namespace)
-  eori: Option[String] = None,
+  eori: Option[String] = None,  // max 17 chars
 
   @JacksonXmlProperty(localName = "agentLocation", namespace = InventoryLinkingMovementRequest.namespace)
-  agentLocation: Option[String] = None,
+  agentLocation: Option[String] = None,   // max 12 chars
 
   @JacksonXmlProperty(localName = "agentRole", namespace = InventoryLinkingMovementRequest.namespace)
-  agentRole: Option[String] = None
+  agentRole: Option[String] = None  // max 3 chars
 )
 
 case class UcrBlock(
   @JacksonXmlProperty(localName = "ucr", namespace = InventoryLinkingMovementRequest.namespace)
-  ucr: String,
+  ucr: String,  // max 35 chars
 
   @JacksonXmlProperty(localName = "ucrType", namespace = InventoryLinkingMovementRequest.namespace)
-  ucrType: String
+  ucrType: String   // Enumeration values: D, M
 )
 
 @JsonDeserialize(using = classOf[DateTimeDeserializer])
@@ -120,11 +116,11 @@ class DateTimeDeserializer extends StdAttributeAndTextDeserializer[DateTime]("fo
 
 case class TransportDetails(
   @JacksonXmlProperty(localName = "transportID", namespace = InventoryLinkingMovementRequest.namespace)
-  transportID: Option[String] = None,
+  transportID: Option[String] = None,   // max 35 chars
 
   @JacksonXmlProperty(localName = "transportMode", namespace = InventoryLinkingMovementRequest.namespace)
-  transportMode: Option[String] = None,
+  transportMode: Option[String] = None,   // max 1 char
 
   @JacksonXmlProperty(localName = "transportNationality", namespace = InventoryLinkingMovementRequest.namespace)
-  transportNationality: Option[String] = None
+  transportNationality: Option[String] = None   // max 2 chars
 )
