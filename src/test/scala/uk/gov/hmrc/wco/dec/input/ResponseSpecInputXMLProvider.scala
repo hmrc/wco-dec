@@ -20,7 +20,7 @@ import uk.gov.hmrc.wco.dec.ResponseSpec._
 
 object ResponseSpecInputXMLProvider {
 
-  def provideTestXMLFor(testName: TestName): String =
+  def provideTestXMLFor(testName: ResponseSpecTestName): String =
     metaDataOpeningTag + testXMLContentMap(testName) + metaDataClosingTag
 
   private val metaDataOpeningTag =
@@ -278,7 +278,7 @@ object ResponseSpecInputXMLProvider {
     responseClosingTag
 
 
-  private val testXMLContentMap: Map[TestName, String] = Map(
+  private val testXMLContentMap: Map[ResponseSpecTestName, String] = Map(
     TestNoTagForOptionalField -> testNoTagForOptionalField,
     TestNoTagForOptionalSequence -> testNoTagForOptionalSequence,
     TestNoTagForOptionalNestedSequence -> testNoTagForNestedOptionalSequence,
