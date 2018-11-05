@@ -46,39 +46,47 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
   import MovementRequestToXmlSpec._
 
   "MovementRequest serialized to Xml" should {
-    "include message code" in {
-      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
-      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
+
+    "contain messageCode" in validInventoryLinkingMovementRequestXmlScenario() {
+      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
+        messageCode = messageCodeMovementValue,
+        ucrBlock = ucrBlock,
+        goodsLocation = goodsLocation
+      )
       val expectedOutput = messageCodeMovementValue
 
       hasExpectedOutput(inventoryLinkingMovementRequest, expectedOutput) { xml =>
-        (xml \ "messageCode" \ "messageCodeMovement").text.trim
+        (xml \ "messageCode").text.trim
       }
     }
 
-//    TODO: Adjust tests to new model
-//
-//    "contain agentDetails" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
-//
-//      val expectedAgentDetails: Seq[String] =
-//        Seq(agentDetails.eori.get, agentDetails.agentLocation.get, agentDetails.agentRole.get)
-//
-//      hasExpectedOutput(movementRequest, expectedAgentDetails) { xml =>
-//        Seq(
-//          (xml \ "agentDetails" \ "EORI").text.trim,
-//          (xml \ "agentDetails" \ "agentLocation").text.trim,
-//          (xml \ "agentDetails" \ "agentRole").text.trim
-//        )
-//      }
-//    }
+    "contain agentDetails" in validInventoryLinkingMovementRequestXmlScenario() {
+      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
+        messageCode = messageCodeMovementValue,
+        agentDetails = Some(agentDetails),
+        ucrBlock = ucrBlock,
+        goodsLocation = goodsLocation
+      )
+
+      val expectedAgentDetails: Seq[String] =
+        Seq(agentDetails.eori.get, agentDetails.agentLocation.get, agentDetails.agentRole.get)
+
+      hasExpectedOutput(inventoryLinkingMovementRequest, expectedAgentDetails) { xml =>
+        Seq(
+          (xml \ "agentDetails" \ "EORI").text.trim,
+          (xml \ "agentDetails" \ "agentLocation").text.trim,
+          (xml \ "agentDetails" \ "agentRole").text.trim
+        )
+      }
+    }
 //
 //    "contain ucrBlock" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
+//      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
+//      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
 //
 //      val expectedUcrBlock: Seq[String] = Seq(ucrBlock.ucr, ucrBlock.ucrType)
 //
-//      hasExpectedOutput(movementRequest, expectedUcrBlock) { xml =>
+//      hasExpectedOutput(inventoryLinkingMovementRequest, expectedUcrBlock) { xml =>
 //        Seq(
 //          (xml \ "ucrBlock" \ "ucr").text.trim,
 //          (xml \ "ucrBlock" \ "ucrType").text.trim
@@ -87,20 +95,22 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
 //    }
 //
 //    "contain goodsLocation" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
+//      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
+//      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
 //
-//      hasExpectedOutput(movementRequest, goodsLocation) { xml =>
+//      hasExpectedOutput(inventoryLinkingMovementRequest, goodsLocation) { xml =>
 //        (xml \ "goodsLocation").text.trim
 //      }
 //    }
 //
 //    "contain goodsArrivalDateTime" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
+//      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
+//      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
 //
 //      val expectedGoodsArrivalDateTime: Seq[String] =
 //        Seq(goodsArrivalDateTime.formatCode.get, goodsArrivalDateTime.value.get)
 //
-//      hasExpectedOutput(movementRequest, expectedGoodsArrivalDateTime) { xml =>
+//      hasExpectedOutput(inventoryLinkingMovementRequest, expectedGoodsArrivalDateTime) { xml =>
 //        Seq(
 //          (xml \ "goodsArrivalDateTime" \ "@formatCode").text.trim,
 //          (xml \ "goodsArrivalDateTime").text.trim
@@ -109,12 +119,13 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
 //    }
 //
 //    "contain goodsDepartureDateTime" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
+//      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
+//      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
 //
 //      val expectedGoodsDepartureDateTime: Seq[String] =
 //        Seq(goodsDepartureDateTime.formatCode.get, goodsDepartureDateTime.value.get)
 //
-//      hasExpectedOutput(movementRequest, expectedGoodsDepartureDateTime) { xml =>
+//      hasExpectedOutput(inventoryLinkingMovementRequest, expectedGoodsDepartureDateTime) { xml =>
 //        Seq(
 //          (xml \ "goodsDepartureDateTime" \ "@formatCode").text.trim,
 //          (xml \ "goodsDepartureDateTime").text.trim
@@ -123,38 +134,44 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
 //    }
 //
 //    "contain shedOPID" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
+//      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
+//      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
 //
-//      hasExpectedOutput(movementRequest, shedOPID) { xml =>
+//      hasExpectedOutput(inventoryLinkingMovementRequest, shedOPID) { xml =>
 //        (xml \ "shedOPID").text.trim
 //      }
 //    }
 //
 //    "contain masterUCR" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
-//      hasExpectedOutput(movementRequest, masterUCR) { xml =>
+//      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
+//      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
+//
+//      hasExpectedOutput(inventoryLinkingMovementRequest, masterUCR) { xml =>
 //        (xml \ "masterUCR").text.trim
 //      }
 //    }
 //
 //    "contain masterOpt" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
+//      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
+//      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
 //
-//      hasExpectedOutput(movementRequest, masterOpt) { xml =>
+//      hasExpectedOutput(inventoryLinkingMovementRequest, masterOpt) { xml =>
 //        (xml \ "masterOpt").text.trim
 //      }
 //    }
 //
 //    "contain movementReference" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
+//      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
+//      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
 //
-//      hasExpectedOutput(movementRequest, movementReference) { xml =>
+//      hasExpectedOutput(inventoryLinkingMovementRequest, movementReference) { xml =>
 //        (xml \ "movementReference").text.trim
 //      }
 //    }
 //
 //    "contain transportDetails" in validResponseXmlScenario() {
-//      val movementRequest = InventoryLinkingMovementRequest(messageCode = messageCodeMovement)
+//      val messageCodeMovement = MessageCodeMovement(messageCodeMovementValue)
+//      val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(messageCodeMovement)
 //
 //      val expectedTransportDetails: Seq[String] = Seq(
 //        transportDetails.transportID.get,
@@ -162,7 +179,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
 //        transportDetails.transportNationality.get
 //      )
 //
-//      hasExpectedOutput(movementRequest, expectedTransportDetails) { xml =>
+//      hasExpectedOutput(inventoryLinkingMovementRequest, expectedTransportDetails) { xml =>
 //        Seq(
 //          (xml \ "transportDetails" \ "transportID").text.trim,
 //          (xml \ "transportDetails" \ "transportMode").text.trim,

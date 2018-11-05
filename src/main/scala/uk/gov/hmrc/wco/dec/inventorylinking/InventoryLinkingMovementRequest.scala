@@ -25,18 +25,49 @@ import uk.gov.hmrc.wco.dec.StdAttributeAndTextDeserializer
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 object InventoryLinkingMovementRequest extends JacksonMapper {
-  final val inventoryLinking = "http://gov.uk/customs/inventoryLinking/v1"
- 
-  def fromXml(xml: String): InventoryLinkingMovementRequest = _xml.readValue(xml, classOf[InventoryLinkingMovementRequest])
+  final val namespace = "http://gov.uk/customs/inventoryLinking/v1"
+
+  def fromXml(xml: String): InventoryLinkingMovementRequest =
+    _xml.readValue(xml, classOf[InventoryLinkingMovementRequest])
 
 }
 
 @JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
-@JacksonXmlRootElement(localName = "InventoryLinkingMovementRequest", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+@JacksonXmlRootElement(localName = "InventoryLinkingMovementRequest", namespace = InventoryLinkingMovementRequest.namespace)
 case class InventoryLinkingMovementRequest(
 
-  @JacksonXmlProperty(localName = "messageCode", namespace = InventoryLinkingMovementRequest.inventoryLinking)
-  messageCode: MessageCodeMovement
+  @JacksonXmlProperty(localName = "messageCode", namespace = InventoryLinkingMovementRequest.namespace)
+  messageCode: String,
+
+  @JacksonXmlProperty(localName = "agentDetails", namespace = InventoryLinkingMovementRequest.namespace)
+  agentDetails: Option[AgentDetails] = None,
+
+  @JacksonXmlProperty(localName = "ucrBlock", namespace = InventoryLinkingMovementRequest.namespace)
+  ucrBlock: UcrBlock,
+
+  @JacksonXmlProperty(localName = "goodsLocation", namespace = InventoryLinkingMovementRequest.namespace)
+  goodsLocation: String,
+
+  @JacksonXmlProperty(localName = "goodsArrivalDateTime", namespace = InventoryLinkingMovementRequest.namespace)
+  goodsArrivalDateTime: Option[DateTime] = None,
+
+  @JacksonXmlProperty(localName = "goodsDepartureDateTime", namespace = InventoryLinkingMovementRequest.namespace)
+  goodsDepartureDateTime: Option[DateTime] = None,
+
+  @JacksonXmlProperty(localName = "shedOPID", namespace = InventoryLinkingMovementRequest.namespace)
+  shedOPID: Option[String] = None,
+
+  @JacksonXmlProperty(localName = "masterUCR", namespace = InventoryLinkingMovementRequest.namespace)
+  masterUCR: Option[String] = None,
+
+  @JacksonXmlProperty(localName = "masterOpt", namespace = InventoryLinkingMovementRequest.namespace)
+  masterOpt: Option[String] = None,
+
+  @JacksonXmlProperty(localName = "movementReference", namespace = InventoryLinkingMovementRequest.namespace)
+  movementReference: Option[String] = None,
+
+  @JacksonXmlProperty(localName = "transportDetails", namespace = InventoryLinkingMovementRequest.namespace)
+  transportDetails: Option[TransportDetails] = None
 
 ) extends JacksonMapper {
 
@@ -49,26 +80,26 @@ case class InventoryLinkingMovementRequest(
 }
 
 case class MessageCodeMovement(
-  @JacksonXmlProperty(localName = "messageCodeMovement", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+  @JacksonXmlProperty(localName = "messageCodeMovement", namespace = InventoryLinkingMovementRequest.namespace)
   codeMovement: String // values EAA, EAL, EDL - enumerations
 )
 
 case class AgentDetails(
-  @JacksonXmlProperty(localName = "EORI", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+  @JacksonXmlProperty(localName = "EORI", namespace = InventoryLinkingMovementRequest.namespace)
   eori: Option[String] = None,
 
-  @JacksonXmlProperty(localName = "agentLocation", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+  @JacksonXmlProperty(localName = "agentLocation", namespace = InventoryLinkingMovementRequest.namespace)
   agentLocation: Option[String] = None,
 
-  @JacksonXmlProperty(localName = "agentRole", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+  @JacksonXmlProperty(localName = "agentRole", namespace = InventoryLinkingMovementRequest.namespace)
   agentRole: Option[String] = None
 )
 
 case class UcrBlock(
-  @JacksonXmlProperty(localName = "ucr", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+  @JacksonXmlProperty(localName = "ucr", namespace = InventoryLinkingMovementRequest.namespace)
   ucr: String,
 
-  @JacksonXmlProperty(localName = "ucrType", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+  @JacksonXmlProperty(localName = "ucrType", namespace = InventoryLinkingMovementRequest.namespace)
   ucrType: String
 )
 
@@ -88,12 +119,12 @@ class DateTimeDeserializer extends StdAttributeAndTextDeserializer[DateTime]("fo
 }
 
 case class TransportDetails(
-  @JacksonXmlProperty(localName = "transportID", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+  @JacksonXmlProperty(localName = "transportID", namespace = InventoryLinkingMovementRequest.namespace)
   transportID: Option[String] = None,
 
-  @JacksonXmlProperty(localName = "transportMode", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+  @JacksonXmlProperty(localName = "transportMode", namespace = InventoryLinkingMovementRequest.namespace)
   transportMode: Option[String] = None,
 
-  @JacksonXmlProperty(localName = "transportNationality", namespace = InventoryLinkingMovementRequest.inventoryLinking)
+  @JacksonXmlProperty(localName = "transportNationality", namespace = InventoryLinkingMovementRequest.namespace)
   transportNationality: Option[String] = None
 )
