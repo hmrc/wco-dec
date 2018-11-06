@@ -17,6 +17,7 @@
 package uk.gov.hmrc.wco.dec.inventorylinking
 
 import java.io.StringWriter
+import java.util.Properties
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
@@ -24,12 +25,20 @@ import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, Jack
 import uk.gov.hmrc.wco.dec.StdAttributeAndTextDeserializer
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
+import scala.collection.JavaConverters._
+
+
 object InventoryLinkingMovementRequest extends JacksonMapper {
   final val namespace = "http://gov.uk/customs/inventoryLinking/v1"
 
   def fromXml(xml: String): InventoryLinkingMovementRequest =
     _xml.readValue(xml, classOf[InventoryLinkingMovementRequest])
 
+  def fromProperties(props: Map[String, String]): InventoryLinkingMovementRequest = {
+    val p = new Properties()
+    p.putAll(props.asJava)
+    _props.readPropertiesAs(p, _schema, classOf[InventoryLinkingMovementRequest])
+  }
 }
 
 @JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
@@ -76,6 +85,8 @@ case class InventoryLinkingMovementRequest(
     _xml.writeValue(sw, this)
     sw.toString
   }
+
+  def toProperties: Map[String, String] = _props.writeValueAsProperties(this, _schema).asScala.toMap
 
 }
 
