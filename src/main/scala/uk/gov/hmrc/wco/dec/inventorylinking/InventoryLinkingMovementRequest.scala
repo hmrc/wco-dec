@@ -20,9 +20,7 @@ import java.io.StringWriter
 import java.util.Properties
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize
-import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
-import uk.gov.hmrc.wco.dec.StdAttributeAndTextDeserializer
+import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement}
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 import scala.collection.JavaConverters._
@@ -42,7 +40,7 @@ object InventoryLinkingMovementRequest extends JacksonMapper {
 }
 
 @JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
-@JacksonXmlRootElement(localName = "InventoryLinkingMovementRequest", namespace = InventoryLinkingMovementRequest.namespace)
+@JacksonXmlRootElement(localName = "inventoryLinkingMovementRequest", namespace = InventoryLinkingMovementRequest.namespace)
 case class InventoryLinkingMovementRequest(
 
   @JacksonXmlProperty(localName = "messageCode", namespace = InventoryLinkingMovementRequest.namespace)
@@ -58,10 +56,10 @@ case class InventoryLinkingMovementRequest(
   goodsLocation: String,  // max 17 chars
 
   @JacksonXmlProperty(localName = "goodsArrivalDateTime", namespace = InventoryLinkingMovementRequest.namespace)
-  goodsArrivalDateTime: Option[DateTime] = None,
+  goodsArrivalDateTime: Option[String] = None,
 
   @JacksonXmlProperty(localName = "goodsDepartureDateTime", namespace = InventoryLinkingMovementRequest.namespace)
-  goodsDepartureDateTime: Option[DateTime] = None,
+  goodsDepartureDateTime: Option[String] = None,
 
   @JacksonXmlProperty(localName = "shedOPID", namespace = InventoryLinkingMovementRequest.namespace)
   shedOPID: Option[String] = None,  // max 3 chars
@@ -109,21 +107,6 @@ case class UcrBlock(
   @JacksonXmlProperty(localName = "ucrType", namespace = InventoryLinkingMovementRequest.namespace)
   ucrType: String   // Enumeration values: D, M
 )
-
-@JsonDeserialize(using = classOf[DateTimeDeserializer])
-case class DateTime(
-  @JacksonXmlProperty(isAttribute = true)
-  formatCode: Option[String] = None,
-
-  @JacksonXmlText
-  value: Option[String] = None
-)
-
-class DateTimeDeserializer extends StdAttributeAndTextDeserializer[DateTime]("formatCode", classOf[DateTime]) {
-
-  override def newInstanceFromTuple(values: (Option[String], Option[String])): DateTime = DateTime(values._1, values._2)
-
-}
 
 case class TransportDetails(
   @JacksonXmlProperty(localName = "transportID", namespace = InventoryLinkingMovementRequest.namespace)
