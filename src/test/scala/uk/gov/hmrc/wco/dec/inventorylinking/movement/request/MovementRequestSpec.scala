@@ -19,7 +19,6 @@ package uk.gov.hmrc.wco.dec.inventorylinking.movement.request
 import java.time.LocalDateTime
 
 import uk.gov.hmrc.wco.dec.WcoSpec
-import uk.gov.hmrc.wco.dec.inventorylinking.{AgentDetails, TransportDetails, UcrBlock}
 
 object MovementRequestSpec extends WcoSpec {
   val messageCodeMovementValues = Seq("EAA", "EAL", "EDL")
