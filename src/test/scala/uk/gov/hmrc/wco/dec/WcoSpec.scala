@@ -102,7 +102,13 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
 
   def hasExpectedOutput[T](meta: MetaData, expected: T)(extractor: Elem => T): Elem = {
     val xml = XML.loadString(meta.toXml)
-    extractor(xml) must be(expected)
+    extractor(xml) must be (expected)
+    xml
+  }
+
+  def hasExpectedOutput[T](movementResponse: InventoryLinkingMovementResponse, expected: T)(extractor: Elem => T): Elem = {
+    val xml = XML.loadString(movementResponse.toXml)
+    extractor(xml) must be (expected)
     xml
   }
 
