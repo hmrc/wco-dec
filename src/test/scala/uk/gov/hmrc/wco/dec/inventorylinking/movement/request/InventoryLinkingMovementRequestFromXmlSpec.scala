@@ -49,7 +49,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedMessageCode = messageCodeMovement
 
-        actualMovementRequest.messageCode must equal(expectedMessageCode)
+        actualMovementRequest.messageCode must be(expectedMessageCode)
       }
 
       "fill agentDetails" in {

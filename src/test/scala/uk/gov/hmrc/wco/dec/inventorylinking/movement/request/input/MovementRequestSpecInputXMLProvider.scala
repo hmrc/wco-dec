@@ -30,11 +30,11 @@ object MovementRequestSpecInputXMLProvider {
 
   private val mandatoryFields =
     "<messageCode>" + messageCodeMovement + "</messageCode>" +
-    "<ucrBlock>" +
+      "<ucrBlock>" +
       "<ucr>" + ucrBlock.ucr + "</ucr>" +
       "<ucrType>" + ucrBlock.ucrType + "</ucrType>" +
-    "</ucrBlock>" +
-    "<goodsLocation>" + goodsLocation + "</goodsLocation>"
+      "</ucrBlock>" +
+      "<goodsLocation>" + goodsLocation + "</goodsLocation>"
 
 
   private val testNoTagForOptionalField = mandatoryFields

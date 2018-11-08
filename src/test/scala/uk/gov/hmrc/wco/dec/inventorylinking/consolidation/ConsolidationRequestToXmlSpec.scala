@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.wco.dec.inventorylinking
+package uk.gov.hmrc.wco.dec.inventorylinking.consolidation
 
+import uk.gov.hmrc.wco.dec.inventorylinking.InventoryLinkingConsolidationRequest
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequestSpec._
 import uk.gov.hmrc.wco.dec.{WcoSpec, XmlBehaviours}
 
