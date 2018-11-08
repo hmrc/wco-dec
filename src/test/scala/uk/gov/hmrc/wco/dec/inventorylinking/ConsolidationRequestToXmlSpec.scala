@@ -16,7 +16,7 @@
 
 package uk.gov.hmrc.wco.dec.inventorylinking
 
-import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.MovementRequestSpec._
+import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequestSpec._
 import uk.gov.hmrc.wco.dec.{WcoSpec, XmlBehaviours}
 
 

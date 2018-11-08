@@ -19,6 +19,7 @@ package uk.gov.hmrc.wco.dec.inventorylinking.movement.response
 import java.time.LocalDateTime
 
 import uk.gov.hmrc.wco.dec.WcoSpec
+import uk.gov.hmrc.wco.dec.inventorylinking.common.{EntryStatus, GoodsItem, UcrBlock}
 
 object InventoryLinkingMovementResponseSpec extends WcoSpec {
   val messageCodeMovement = "EAA"

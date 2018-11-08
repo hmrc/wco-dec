@@ -21,6 +21,7 @@ import java.util.Properties
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement}
+import uk.gov.hmrc.wco.dec.inventorylinking.common.{AgentDetails, TransportDetails, UcrBlock}
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 import scala.collection.JavaConverters._
@@ -87,34 +88,3 @@ case class InventoryLinkingMovementRequest(
   def toProperties: Map[String, String] = _props.writeValueAsProperties(this, _schema).asScala.toMap
 
 }
-
-
-case class AgentDetails(
-  @JacksonXmlProperty(localName = "EORI", namespace = InventoryLinkingMovementRequest.namespace)
-  eori: Option[String] = None,  // max 17 chars
-
-  @JacksonXmlProperty(localName = "agentLocation", namespace = InventoryLinkingMovementRequest.namespace)
-  agentLocation: Option[String] = None,   // max 12 chars
-
-  @JacksonXmlProperty(localName = "agentRole", namespace = InventoryLinkingMovementRequest.namespace)
-  agentRole: Option[String] = None  // max 3 chars
-)
-
-case class UcrBlock(
-  @JacksonXmlProperty(localName = "ucr", namespace = InventoryLinkingMovementRequest.namespace)
-  ucr: String,  // max 35 chars
-
-  @JacksonXmlProperty(localName = "ucrType", namespace = InventoryLinkingMovementRequest.namespace)
-  ucrType: String   // Enumeration values: D, M
-)
-
-case class TransportDetails(
-  @JacksonXmlProperty(localName = "transportID", namespace = InventoryLinkingMovementRequest.namespace)
-  transportID: Option[String] = None,   // max 35 chars
-
-  @JacksonXmlProperty(localName = "transportMode", namespace = InventoryLinkingMovementRequest.namespace)
-  transportMode: Option[String] = None,   // max 1 char
-
-  @JacksonXmlProperty(localName = "transportNationality", namespace = InventoryLinkingMovementRequest.namespace)
-  transportNationality: Option[String] = None   // max 2 chars
-)

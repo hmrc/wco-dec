@@ -16,12 +16,12 @@
 
 package uk.gov.hmrc.wco.dec.inventorylinking.movement.request
 
-import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.MovementRequestSpec._
+import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequestSpec._
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.input._
 import uk.gov.hmrc.wco.dec.{WcoSpec, XmlBehaviours}
 
 
-class MovementRequestFromXmlSpec extends WcoSpec with XmlBehaviours {
+class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehaviours {
 
   "InventoryLinkingMovementRequest deserialized from XML" when {
 

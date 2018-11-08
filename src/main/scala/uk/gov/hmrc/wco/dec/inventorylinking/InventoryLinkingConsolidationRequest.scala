@@ -22,7 +22,8 @@ import java.util.Properties
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement}
 import uk.gov.hmrc.wco.dec.MetaData
-import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.{InventoryLinkingMovementRequest, UcrBlock}
+import uk.gov.hmrc.wco.dec.inventorylinking.common.UcrBlock
+import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequest
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 import scala.collection.JavaConverters._
@@ -54,7 +55,7 @@ case class InventoryLinkingConsolidationRequest(
   @JacksonXmlProperty(localName = "ucrBlock", namespace = InventoryLinkingMovementRequest.namespace)
   ucrBlock: Option[UcrBlock] = None
 
-)extends JacksonMapper {
+) extends JacksonMapper {
 
   def toXml: String = {
       val sw = new StringWriter()
