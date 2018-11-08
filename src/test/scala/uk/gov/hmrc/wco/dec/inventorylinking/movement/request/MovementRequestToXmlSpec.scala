@@ -16,7 +16,6 @@
 
 package uk.gov.hmrc.wco.dec.inventorylinking.movement.request
 
-import uk.gov.hmrc.wco.dec.inventorylinking._
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.MovementRequestSpec._
 import uk.gov.hmrc.wco.dec.{WcoSpec, XmlBehaviours}
 
@@ -25,7 +24,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
 
   "InventoryLinkingMovementRequest serialized to Xml" should {
 
-    "contain messageCode" in validInventoryLinkingMovementRequestXmlScenario() {
+    "contain messageCode" in validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
@@ -38,7 +37,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain agentDetails" in validInventoryLinkingMovementRequestXmlScenario() {
+    "contain agentDetails" in validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         agentDetails = Some(agentDetails),
@@ -57,7 +56,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain ucrBlock" in  validInventoryLinkingMovementRequestXmlScenario() {
+    "contain ucrBlock" in  validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
@@ -73,7 +72,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain goodsLocation" in  validInventoryLinkingMovementRequestXmlScenario() {
+    "contain goodsLocation" in  validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
@@ -86,7 +85,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain goodsArrivalDateTime" in  validInventoryLinkingMovementRequestXmlScenario() {
+    "contain goodsArrivalDateTime" in  validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
@@ -100,7 +99,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain goodsDepartureDateTime" in  validInventoryLinkingMovementRequestXmlScenario() {
+    "contain goodsDepartureDateTime" in  validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
@@ -114,7 +113,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain shedOPID" in  validInventoryLinkingMovementRequestXmlScenario() {
+    "contain shedOPID" in  validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
@@ -128,7 +127,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain masterUCR" in  validInventoryLinkingMovementRequestXmlScenario() {
+    "contain masterUCR" in  validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
@@ -142,7 +141,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain masterOpt" in  validInventoryLinkingMovementRequestXmlScenario() {
+    "contain masterOpt" in  validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
@@ -156,7 +155,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain movementReference" in  validInventoryLinkingMovementRequestXmlScenario() {
+    "contain movementReference" in  validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,
@@ -170,7 +169,7 @@ class MovementRequestToXmlSpec extends WcoSpec with XmlBehaviours {
       }
     }
 
-    "contain transportDetails" in  validInventoryLinkingMovementRequestXmlScenario() {
+    "contain transportDetails" in  validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingMovementRequest = InventoryLinkingMovementRequest(
         messageCode = messageCodeMovement,
         ucrBlock = ucrBlock,

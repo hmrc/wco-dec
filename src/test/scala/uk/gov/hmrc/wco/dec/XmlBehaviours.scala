@@ -48,10 +48,10 @@ trait XmlBehaviours {
   def validCancellationDeclarationXml()(test: => Elem): Unit =
     validXmlScenario(importDeclarationCancellationSchemas)(test)
 
-  def validInventoryLinkingMovementRequestXmlScenario()(test: => Elem): Unit =
+  def validInventoryLinkingRequestXmlScenario()(test: => Elem): Unit =
     validXmlScenario(inventoryLinkingRequestResources)(test)
 
-  def validInventoryLinkingMovementResponseXmlScenario()(test: => Elem): Unit =
+  def validInventoryLinkingResponseXmlScenario()(test: => Elem): Unit =
     validXmlScenario(inventoryLinkingResponseResources)(test)
 
   protected def isValidImportDeclarationXml(xml: String): Boolean =

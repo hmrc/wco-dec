@@ -24,7 +24,7 @@ class ConsolidationRequestToXmlSpec extends WcoSpec with XmlBehaviours{
 
   "InventoryLinkingConsolidationRequest serialized to Xml" should {
 
-    "contain MessageCode" in validInventoryLinkingMovementRequestXmlScenario() {
+    "contain MessageCode" in validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingConsolidationRequest = InventoryLinkingConsolidationRequest(
         messageCode = messageCodeConsolidation,
         transactionType = transactionType
@@ -37,7 +37,7 @@ class ConsolidationRequestToXmlSpec extends WcoSpec with XmlBehaviours{
 
     }
 
-    "contain transactionType" in validInventoryLinkingMovementRequestXmlScenario(){
+    "contain transactionType" in validInventoryLinkingRequestXmlScenario(){
       val inventoryLinkingConsolidationRequest = InventoryLinkingConsolidationRequest(
         messageCode = messageCodeConsolidation,
         transactionType = transactionType
@@ -50,7 +50,7 @@ class ConsolidationRequestToXmlSpec extends WcoSpec with XmlBehaviours{
 
     }
 
-    "contain masterUcr" in validInventoryLinkingMovementRequestXmlScenario(){
+    "contain masterUcr" in validInventoryLinkingRequestXmlScenario(){
       val inventoryLinkingConsolidationRequest = InventoryLinkingConsolidationRequest(
         messageCode = messageCodeConsolidation,
         transactionType = transactionType,
@@ -64,7 +64,7 @@ class ConsolidationRequestToXmlSpec extends WcoSpec with XmlBehaviours{
 
     }
 
-    "contain ucrBlock" in validInventoryLinkingMovementRequestXmlScenario(){
+    "contain ucrBlock" in validInventoryLinkingRequestXmlScenario(){
       val inventoryLinkingConsolidationRequest = InventoryLinkingConsolidationRequest(
         messageCode = messageCodeConsolidation,
         transactionType = transactionType,
