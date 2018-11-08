@@ -5,7 +5,6 @@
 	elementFormDefault="qualified" version="1.0">
 
 	<xs:include schemaLocation="../common/inventoryLinkingCore.xsd" />
-	<xs:include schemaLocation="../common/inventoryLinkingCommonTypes.xsd" />
 
 	<!-- ================== -->
 	<!-- Movement Responses -->
