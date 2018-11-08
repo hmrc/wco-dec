@@ -22,10 +22,12 @@ import uk.gov.hmrc.wco.dec.WcoSpec
 
 object MovementRequestSpec extends WcoSpec {
   val messageCodeMovementValues = Seq("EAA", "EAL", "EDL")
+  val messageCodeConsolidationValues = Seq("CST", "EAC")
   val ucrTypeValues = Seq("D", "M")
   val masterOptValues = Seq("A", "F", "R", "X")
 
   val messageCodeMovement: String = messageCodeMovementValues(randomInt(messageCodeMovementValues.length))
+  val messageCodeConsolidation : String = messageCodeConsolidationValues(randomInt(messageCodeConsolidationValues.length))
   val agentDetails: AgentDetails = AgentDetails(
     Some(randomString(17)),
     Some(randomString(12)),
@@ -44,4 +46,7 @@ object MovementRequestSpec extends WcoSpec {
     Some(randomString(1)),
     Some(randomString(2))
   )
+
+  val transactionTypeValues = Seq("Associate", "Disassociate", "Shut")
+  val transactionType: String = transactionTypeValues(randomInt(transactionTypeValues.length))
 }
