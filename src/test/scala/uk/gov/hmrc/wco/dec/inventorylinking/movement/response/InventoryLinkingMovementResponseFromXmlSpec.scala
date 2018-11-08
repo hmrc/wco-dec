@@ -24,14 +24,14 @@ class InventoryLinkingMovementResponseFromXmlSpec extends WcoSpec with XmlBehavi
 
   "from Xml" should {
     "fill message code" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestMessageCode)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestMessageCode")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.messageCode must be (messageCodeMovement)
     }
 
     "fill crc" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestCrc)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestCrc")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.crcCode.isDefined must be (true)
@@ -39,7 +39,7 @@ class InventoryLinkingMovementResponseFromXmlSpec extends WcoSpec with XmlBehavi
     }
 
     "fill goods arrival date time" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestArrivalDateTime)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestArrivalDateTime")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.goodsArrivalDateTime.isDefined must be (true)
@@ -47,7 +47,7 @@ class InventoryLinkingMovementResponseFromXmlSpec extends WcoSpec with XmlBehavi
     }
 
     "fill goods location" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestGoodsLocation)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestGoodsLocation")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.goodsLocation.isDefined must be (true)
@@ -55,7 +55,7 @@ class InventoryLinkingMovementResponseFromXmlSpec extends WcoSpec with XmlBehavi
     }
 
     "fill shedOPID" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestShedOPID)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestShedOPID")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.shedOPID.isDefined must be (true)
@@ -63,7 +63,7 @@ class InventoryLinkingMovementResponseFromXmlSpec extends WcoSpec with XmlBehavi
     }
 
     "fill movement request" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestMovementReference)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestMovementReference")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.movementReference.isDefined must be (true)
@@ -71,7 +71,7 @@ class InventoryLinkingMovementResponseFromXmlSpec extends WcoSpec with XmlBehavi
     }
 
     "fill submit role" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestSubmitRole)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestSubmitRole")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.submitRole.isDefined must be (true)
@@ -79,7 +79,7 @@ class InventoryLinkingMovementResponseFromXmlSpec extends WcoSpec with XmlBehavi
     }
 
     "fill ucr block" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestUcrBlock)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestUcrBlock")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.ucrBlock.isDefined must be (true)
@@ -88,7 +88,7 @@ class InventoryLinkingMovementResponseFromXmlSpec extends WcoSpec with XmlBehavi
     }
 
     "fill goods item" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestGoodsItem)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestGoodsItem")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.goodsItem.isDefined must be (true)
@@ -101,7 +101,7 @@ class InventoryLinkingMovementResponseFromXmlSpec extends WcoSpec with XmlBehavi
     }
 
     "fill entry status" in {
-      val inputXml = MovementResponseXMLProvider.provideTestXMLFor(TestEntryStatus)
+      val inputXml = MovementResponseXMLProvider.provideTestXMLFor("TestEntryStatus")
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse.fromXml(inputXml)
 
       inventoryLinkingMovementResponse.entryStatus.isDefined must be (true)

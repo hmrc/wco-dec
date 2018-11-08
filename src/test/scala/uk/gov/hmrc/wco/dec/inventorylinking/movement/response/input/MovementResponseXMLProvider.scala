@@ -18,31 +18,10 @@ package uk.gov.hmrc.wco.dec.inventorylinking.movement.response.input
 
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.response.InventoryLinkingMovementResponseSpec
 
-sealed trait MovementResponseTestName
-
-case object TestMessageCode extends MovementResponseTestName
-
-case object TestCrc extends MovementResponseTestName
-
-case object TestArrivalDateTime extends MovementResponseTestName
-
-case object TestGoodsLocation extends MovementResponseTestName
-
-case object TestShedOPID extends MovementResponseTestName
-
-case object TestMovementReference extends MovementResponseTestName
-
-case object TestSubmitRole extends MovementResponseTestName
-
-case object TestUcrBlock extends MovementResponseTestName
-
-case object TestGoodsItem extends MovementResponseTestName
-
-case object TestEntryStatus extends MovementResponseTestName
 
 object MovementResponseXMLProvider {
 
-  def provideTestXMLFor(testName: MovementResponseTestName): String =
+  def provideTestXMLFor(testName: String): String =
     inventoryMovementResponseOpenTag + testXmlContentMap(testName) + inventoryMovementResponseCloseTag
 
   private val inventoryMovementResponseOpenTag =
@@ -115,16 +94,16 @@ object MovementResponseXMLProvider {
 
   private val testEntryStatus = messageCode + entryStatus
 
-  private val testXmlContentMap: Map[MovementResponseTestName, String] = Map(
-    TestMessageCode -> testMessageCode,
-    TestCrc -> testCrc,
-    TestArrivalDateTime -> testArrivalDateTime,
-    TestGoodsLocation -> testGoodsLocation,
-    TestShedOPID -> testShedOPID,
-    TestMovementReference -> testMovementReference,
-    TestSubmitRole -> testSubmitRole,
-    TestUcrBlock -> testUcrBlock,
-    TestGoodsItem -> testGoodsItem,
-    TestEntryStatus -> testEntryStatus
+  private val testXmlContentMap: Map[String, String] = Map(
+    "TestMessageCode" -> testMessageCode,
+    "TestCrc" -> testCrc,
+    "TestArrivalDateTime" -> testArrivalDateTime,
+    "TestGoodsLocation" -> testGoodsLocation,
+    "TestShedOPID" -> testShedOPID,
+    "TestMovementReference" -> testMovementReference,
+    "TestSubmitRole" -> testSubmitRole,
+    "TestUcrBlock" -> testUcrBlock,
+    "TestGoodsItem" -> testGoodsItem,
+    "TestEntryStatus" -> testEntryStatus
   )
 }

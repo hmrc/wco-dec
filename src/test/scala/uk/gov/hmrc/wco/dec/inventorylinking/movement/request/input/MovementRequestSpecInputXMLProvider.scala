@@ -20,7 +20,7 @@ import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMov
 
 object MovementRequestSpecInputXMLProvider {
 
-  def provideTestXMLFor(testName: MovementRequestTestName): String =
+  def provideTestXMLFor(testName: String): String =
     openingTag + testXMLContentMap(testName) + closingTag
 
   private val openingTag =
@@ -90,20 +90,20 @@ object MovementRequestSpecInputXMLProvider {
       "</transportDetails>"
 
 
-  private val testXMLContentMap: Map[MovementRequestTestName, String] = Map(
-    TestNoTagForOptionalField -> testNoTagForOptionalField,
-    TestNoValueForOptionalField -> testNoValueForOptionalField,
-    TestMessageCode -> testMessageCode,
-    TestAgentDetails -> testAgentDetails,
-    TestUcrBlock -> testUcrBlock,
-    TestGoodsLocation -> testGoodsLocation,
-    TestGoodsArrivalDateTime -> testGoodsArrivalDateTime,
-    TestGoodsDepartureDateTime -> testGoodsDepartureDateTime,
-    TestShedOPID -> testShedOPID,
-    TestMasterUCR -> testMasterUCR,
-    TestMasterOpt -> testMasterOpt,
-    TestMovementReference -> testMovementReference,
-    TestTransportDetails -> testTransportDetails
+  private val testXMLContentMap: Map[String, String] = Map(
+    "TestNoTagForOptionalField" -> testNoTagForOptionalField,
+    "TestNoValueForOptionalField" -> testNoValueForOptionalField,
+    "TestMessageCode" -> testMessageCode,
+    "TestAgentDetails" -> testAgentDetails,
+    "TestUcrBlock" -> testUcrBlock,
+    "TestGoodsLocation" -> testGoodsLocation,
+    "TestGoodsArrivalDateTime" -> testGoodsArrivalDateTime,
+    "TestGoodsDepartureDateTime" -> testGoodsDepartureDateTime,
+    "TestShedOPID" -> testShedOPID,
+    "TestMasterUCR" -> testMasterUCR,
+    "TestMasterOpt" -> testMasterOpt,
+    "TestMovementReference" -> testMovementReference,
+    "TestTransportDetails" -> testTransportDetails
   )
 
 }

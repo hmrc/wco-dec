@@ -27,7 +27,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
 
     "no tag present" should {
       "fill optional field with None" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestNoTagForOptionalField)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestNoTagForOptionalField")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
 
         actualMovementRequest.shedOPID mustNot be(defined)
@@ -36,7 +36,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
 
     "value is not provided" should {
       "fill optional field with None" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestNoValueForOptionalField)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestNoValueForOptionalField")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
 
         actualMovementRequest.shedOPID mustNot be(defined)
@@ -45,7 +45,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
 
     "value is provided" should {
       "fill messageCode" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestMessageCode)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestMessageCode")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedMessageCode = messageCodeMovement
 
@@ -53,7 +53,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill agentDetails" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestAgentDetails)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestAgentDetails")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedAgentDetails = agentDetails
 
@@ -69,7 +69,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill ucrBlock" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestUcrBlock)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestUcrBlock")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedUcrBlock = ucrBlock
 
@@ -78,7 +78,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill goodsLocation" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestGoodsLocation)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestGoodsLocation")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedGoodsLocation = goodsLocation
 
@@ -86,7 +86,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill goodsArrivalDateTime" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestGoodsArrivalDateTime)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestGoodsArrivalDateTime")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedGoodsArrivalDateTime = goodsArrivalDateTime
 
@@ -95,7 +95,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill goodsDepartureDateTime" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestGoodsDepartureDateTime)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestGoodsDepartureDateTime")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedGoodsDepartureDateTime = goodsDepartureDateTime
 
@@ -104,7 +104,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill shedOPID" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestShedOPID)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestShedOPID")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedShedOPID = shedOPID
 
@@ -113,7 +113,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill masterUCR" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestMasterUCR)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestMasterUCR")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedMasterUCR = masterUCR
 
@@ -122,7 +122,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill masterOpt" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestMasterOpt)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestMasterOpt")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedMasterOpt = masterOpt
 
@@ -131,7 +131,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill movementReference" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestMovementReference)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestMovementReference")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedMovementReference = movementReference
 
@@ -140,7 +140,7 @@ class InventoryLinkingMovementRequestFromXmlSpec extends WcoSpec with XmlBehavio
       }
 
       "fill transportDetails" in {
-        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor(TestTransportDetails)
+        val inputXML = MovementRequestSpecInputXMLProvider.provideTestXMLFor("TestTransportDetails")
         val actualMovementRequest = InventoryLinkingMovementRequest.fromXml(inputXML)
         val expectedTransportDetails = transportDetails
 

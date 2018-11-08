@@ -20,7 +20,7 @@ import uk.gov.hmrc.wco.dec.ResponseSpec._
 
 object ResponseSpecInputXMLProvider {
 
-  def provideTestXMLFor(testName: ResponseSpecTestName): String =
+  def provideTestXMLFor(testName: String): String =
     metaDataOpeningTag + testXMLContentMap(testName) + metaDataClosingTag
 
   private val metaDataOpeningTag =
@@ -278,33 +278,33 @@ object ResponseSpecInputXMLProvider {
     responseClosingTag
 
 
-  private val testXMLContentMap: Map[ResponseSpecTestName, String] = Map(
-    TestNoTagForOptionalField -> testNoTagForOptionalField,
-    TestNoTagForOptionalSequence -> testNoTagForOptionalSequence,
-    TestNoTagForOptionalNestedSequence -> testNoTagForNestedOptionalSequence,
-    TestNoValueForOptionalField -> testEmptyOptionalField,
-    TestNoValueForOptionalSequence -> testEmptyOptionalSequence,
-    TestNoValueForOptionalNestedSequence -> testEmptyNestedOptionalSequence,
+  private val testXMLContentMap: Map[String, String] = Map(
+    "TestNoTagForOptionalField" -> testNoTagForOptionalField,
+    "TestNoTagForOptionalSequence" -> testNoTagForOptionalSequence,
+    "TestNoTagForOptionalNestedSequence" -> testNoTagForNestedOptionalSequence,
+    "TestNoValueForOptionalField" -> testEmptyOptionalField,
+    "TestNoValueForOptionalSequence" -> testEmptyOptionalSequence,
+    "TestNoValueForOptionalNestedSequence"-> testEmptyNestedOptionalSequence,
 
-    TestWCODataModelVersionCode -> testWCODataModelVersionCode,
-    TestWCOTypeName -> testWCOTypeName,
-    TestResponsibleCountryCode -> testResponsibleCountryCode,
-    TestResponsibleAgencyName -> testResponsibleAgencyName,
-    TestAgencyAssignedCustomizationCode -> testAgencyAssignedCustomizationCode,
-    TestAgencyAssignedCustomizationVersionCode -> testAgencyAssignedCustomizationVersionCode,
+    "TestWCODataModelVersionCode" -> testWCODataModelVersionCode,
+    "TestWCOTypeName" -> testWCOTypeName,
+    "TestResponsibleCountryCode" -> testResponsibleCountryCode,
+    "TestResponsibleAgencyName" -> testResponsibleAgencyName,
+    "TestAgencyAssignedCustomizationCode" -> testAgencyAssignedCustomizationCode,
+    "TestAgencyAssignedCustomizationVersionCode" -> testAgencyAssignedCustomizationVersionCode,
 
-    TestFunctionCode -> testResponseFunctionCode,
-    TestFunctionalReferenceID -> testResponseFunctionalId,
-    TestIssueDateTime -> testResponseIssueDateTime,
-    TestAdditionalInformation -> testResponseAdditionalInformation,
-    TestAmendment -> testResponseAmendments,
-    TestAppealOffice -> testResponseAppealOffice,
-    TestBank -> testResponseBank,
-    TestContactOffice -> testResponseContactOffice,
-    TestError -> testResponseError,
-    TestStatus -> testResponseStatus,
-    TestRespDeclaration -> testResponseDeclaration,
-    TestRespDeclarationDutyTaxFee -> testResponseDutyTaxFee,
-    TestRespDeclarationGoodsShipment -> testResponseGoodsShipment
+    "TestFunctionCode" -> testResponseFunctionCode,
+    "TestFunctionalReferenceID" -> testResponseFunctionalId,
+    "TestIssueDateTime" -> testResponseIssueDateTime,
+    "TestAdditionalInformation" -> testResponseAdditionalInformation,
+    "TestAmendment" -> testResponseAmendments,
+    "TestAppealOffice" -> testResponseAppealOffice,
+    "TestBank" -> testResponseBank,
+    "TestContactOffice" -> testResponseContactOffice,
+    "TestError" -> testResponseError,
+    "TestStatus" -> testResponseStatus,
+    "TestRespDeclaration" -> testResponseDeclaration,
+    "TestRespDeclarationDutyTaxFee" -> testResponseDutyTaxFee,
+    "TestRespDeclarationGoodsShipment" -> testResponseGoodsShipment
   )
 }
