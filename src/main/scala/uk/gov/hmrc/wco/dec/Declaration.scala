@@ -19,20 +19,16 @@ package uk.gov.hmrc.wco.dec
 import java.io.StringWriter
 import java.util.Properties
 
-import com.fasterxml.jackson.annotation.{JsonIgnoreProperties, JsonInclude}
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind._
-import com.fasterxml.jackson.databind.`type`.CollectionLikeType
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
-import com.fasterxml.jackson.databind.deser.{BeanDeserializerModifier, ContextualDeserializer}
-import com.fasterxml.jackson.databind.module.SimpleModule
 import com.fasterxml.jackson.databind.node.{ObjectNode, TextNode}
-import com.fasterxml.jackson.dataformat.javaprop.{JavaPropsMapper, JavaPropsParser, JavaPropsSchema}
+import com.fasterxml.jackson.dataformat.javaprop.JavaPropsParser
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
 import com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser
-import com.fasterxml.jackson.dataformat.xml.{JacksonXmlModule, XmlMapper}
-import com.fasterxml.jackson.module.scala.DefaultScalaModule
+import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 import scala.collection.JavaConverters._
 
@@ -49,24 +45,6 @@ private[wco] object NS {
   final val ds = "urn:wco:datamodel:WCO:Declaration_DS:DMS:2"
   final val res = "urn:wco:datamodel:WCO:RES-DMS:2"
   final val rs = "urn:wco:datamodel:WCO:Response_DS:DMS:2"
-}
-
-trait JacksonMapper {
-
-  private val _modxml = new JacksonXmlModule()
-  _modxml.setDefaultUseWrapper(false)
-  protected val _schema = JavaPropsSchema.emptySchema().withWriteIndexUsingMarkers(true).withFirstArrayOffset(0)
-  protected val _xml = new XmlMapper(_modxml)
-    .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
-    .setSerializationInclusion(JsonInclude.Include.NON_EMPTY)
-    .setSerializationInclusion(JsonInclude.Include.NON_NULL)
-    .setSerializationInclusion(JsonInclude.Include.NON_ABSENT)
-    .registerModule(DefaultScalaModule)
-    .registerModule(CustomSeqModule)
-  protected val _props = new JavaPropsMapper()
-  _props.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
-  _props.registerModule(DefaultScalaModule)
-
 }
 
 @JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
@@ -935,26 +913,4 @@ abstract class StdAttributeAndTextDeserializer[T](attributeName: String, t: Clas
 
 }
 
-object CustomSeqModule extends SimpleModule {
-  setDeserializerModifier(SeqDeserializationModifier)
-}
 
-object SeqDeserializationModifier extends BeanDeserializerModifier {
-
-  override def modifyCollectionLikeDeserializer(
-    config: DeserializationConfig,
-    `type`: CollectionLikeType,
-    beanDesc: BeanDescription,
-    deserializer: JsonDeserializer[_]
-  ): JsonDeserializer[_] = new JsonDeserializer[Seq[_]] with ContextualDeserializer {
-
-    override def deserialize(p: JsonParser, ctx: DeserializationContext): Seq[_] =
-      deserializer.deserialize(p, ctx).asInstanceOf[Seq[_]]
-
-    override def createContextual(ctx: DeserializationContext, prop: BeanProperty): JsonDeserializer[_] =
-      modifyCollectionLikeDeserializer(config, `type`, beanDesc, deserializer.asInstanceOf[ContextualDeserializer].createContextual(ctx, prop))
-
-    override def getNullValue(ctx: DeserializationContext): Seq[_] = Seq.empty
-  }
-
-}

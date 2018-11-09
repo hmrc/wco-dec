@@ -22,7 +22,8 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.node.{ObjectNode, TextNode}
 import com.fasterxml.jackson.databind.{DeserializationContext, JsonNode}
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
-import uk.gov.hmrc.wco.dec.{JacksonMapper, StdAttributeAndTextDeserializer}
+import uk.gov.hmrc.wco.dec.StdAttributeAndTextDeserializer
+import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 @JacksonXmlRootElement(namespace = "", localName = "declarationManagementInformationResponse")
 case class DeclarationManagementInformationResponse(declaration: Declaration = Declaration())

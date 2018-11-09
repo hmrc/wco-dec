@@ -14,14 +14,15 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.wco.dec
+package uk.gov.hmrc.wco.dec.inventorylinking.movement.response
 
 import java.io.StringWriter
 import java.util.Properties
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement}
+import uk.gov.hmrc.wco.dec.inventorylinking.common.{EntryStatus, GoodsItem, UcrBlock}
+import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 import scala.collection.JavaConverters._
 
@@ -81,35 +82,3 @@ object InventoryLinkingMovementResponse extends JacksonMapper {
     _props.readPropertiesAs(p, _schema, classOf[InventoryLinkingMovementResponse])
   }
 }
-
-case class UcrBlock(
-  @JacksonXmlProperty(localName = "ucr", namespace = InventoryLinkingMovementResponse.namespace)
-  ucr: String, // max length = 35 and pattern (look at schema)
-
-  @JacksonXmlProperty(localName = "ucrType", namespace = InventoryLinkingMovementResponse.namespace)
-  ucrType: String // values D or M
-)
-
-case class GoodsItem(
-  @JacksonXmlProperty(localName = "commodityCode", namespace = InventoryLinkingMovementResponse.namespace)
-  @JsonDeserialize(contentAs = classOf[java.lang.Integer])
-  commodityCode: Option[Int], // positive integer - 8 digits
-
-  @JacksonXmlProperty(localName = "totalPackages", namespace = InventoryLinkingMovementResponse.namespace)
-  @JsonDeserialize(contentAs = classOf[java.lang.Integer])
-  totalPackages: Option[Int], // positive integer - 8 digits
-
-  @JacksonXmlProperty(localName = "totalNetMass", namespace = InventoryLinkingMovementResponse.namespace)
-  totalNetMass: Option[BigDecimal] // fraction digits: 4, value: 0-9999999999999999
-)
-
-case class EntryStatus(
-  @JacksonXmlProperty(localName = "ics", namespace = InventoryLinkingMovementResponse.namespace)
-  ics: Option[String], //min length: 1, max length: 2
-
-  @JacksonXmlProperty(localName = "roe", namespace = InventoryLinkingMovementResponse.namespace)
-  roe: Option[String], //min length: 1, max length: 2
-
-  @JacksonXmlProperty(localName = "soe", namespace = InventoryLinkingMovementResponse.namespace)
-  soe: Option[String] //min length: 1, max length: 2
-)

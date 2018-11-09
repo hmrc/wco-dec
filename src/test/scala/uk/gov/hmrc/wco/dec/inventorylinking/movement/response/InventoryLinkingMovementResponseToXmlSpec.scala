@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.wco.dec.inventoryLinking.movement.response
+package uk.gov.hmrc.wco.dec.inventorylinking.movement.response
 
 import uk.gov.hmrc.wco.dec._
 
 class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviours {
-  import InventoryLinkingMovementResponseSpecHelper._
+  import InventoryLinkingMovementResponseSpec._
 
   "to XML" should {
-    "include message code" in validMovementXmlScenario() {
+    "include message code" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse(messageCodeMovement)
 
       val expectedOutput = "EAA"
@@ -32,7 +32,7 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       }
     }
 
-    "include crc" in validMovementXmlScenario() {
+    "include crc" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse = InventoryLinkingMovementResponse(messageCodeMovement, Some(crc))
 
       val expectedOutput = crc
@@ -42,7 +42,7 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       }
     }
 
-    "include goods arrival date time" in validMovementXmlScenario() {
+    "include goods arrival date time" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse =
         InventoryLinkingMovementResponse(messageCodeMovement, goodsArrivalDateTime = Some(goodsArrivalDateTime))
 
@@ -53,7 +53,7 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       }
     }
 
-    "include goods location" in validMovementXmlScenario() {
+    "include goods location" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse =
         InventoryLinkingMovementResponse(messageCodeMovement, goodsLocation = Some(goodsLocation))
 
@@ -64,7 +64,7 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       }
     }
 
-    "include shedOPID" in validMovementXmlScenario() {
+    "include shedOPID" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse =
         InventoryLinkingMovementResponse(messageCodeMovement, shedOPID = Some(shedOPID))
 
@@ -75,7 +75,7 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       }
     }
 
-    "include movement reference" in validMovementXmlScenario() {
+    "include movement reference" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse =
         InventoryLinkingMovementResponse(messageCodeMovement, movementReference = Some(movementReference))
 
@@ -86,7 +86,7 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       }
     }
 
-    "include submit role" in validMovementXmlScenario() {
+    "include submit role" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse =
         InventoryLinkingMovementResponse(messageCodeMovement, submitRole = Some(submitRole))
 
@@ -97,7 +97,7 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       }
     }
 
-    "include ucr block" in validMovementXmlScenario() {
+    "include ucr block" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse =
         InventoryLinkingMovementResponse(messageCodeMovement, ucrBlock = Some(ucrBlock))
 
@@ -111,7 +111,7 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       }
     }
 
-    "include goods item" in validMovementXmlScenario() {
+    "include goods item" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse =
         InventoryLinkingMovementResponse(messageCodeMovement, goodsItem = Some(goodsItem))
 
@@ -126,7 +126,7 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       }
     }
 
-    "include entry status" in validMovementXmlScenario() {
+    "include entry status" in validInventoryLinkingResponseXmlScenario() {
       val inventoryLinkingMovementResponse =
         InventoryLinkingMovementResponse(messageCodeMovement, entryStatus = Some(entryStatus))
 

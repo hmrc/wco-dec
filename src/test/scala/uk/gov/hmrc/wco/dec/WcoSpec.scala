@@ -18,6 +18,9 @@ package uk.gov.hmrc.wco.dec
 
 import org.scalatest.concurrent.ScalaFutures
 import org.scalatest.{MustMatchers, WordSpec}
+import uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request.InventoryLinkingConsolidationRequest
+import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequest
+import uk.gov.hmrc.wco.dec.inventorylinking.movement.response.InventoryLinkingMovementResponse
 
 import scala.util.Random
 import scala.xml.{Elem, XML}
@@ -109,6 +112,18 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
   def hasExpectedOutput[T](movementResponse: InventoryLinkingMovementResponse, expected: T)(extractor: Elem => T): Elem = {
     val xml = XML.loadString(movementResponse.toXml)
     extractor(xml) must be (expected)
+    xml
+  }
+
+  def hasExpectedOutput[T](movementRequest: InventoryLinkingMovementRequest, expected: T)(extractor: Elem => T): Elem = {
+    val xml = XML.loadString(movementRequest.toXml)
+    extractor(xml) must be(expected)
+    xml
+  }
+
+  def hasExpectedOutput[T](movementRequest: InventoryLinkingConsolidationRequest, expected: T)(extractor: Elem => T): Elem = {
+    val xml = XML.loadString(movementRequest.toXml)
+    extractor(xml) must be(expected)
     xml
   }
 

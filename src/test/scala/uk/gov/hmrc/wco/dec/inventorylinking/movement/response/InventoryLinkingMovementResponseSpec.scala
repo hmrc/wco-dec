@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.wco.dec.inventoryLinking.movement.response
+package uk.gov.hmrc.wco.dec.inventorylinking.movement.response
 
 import java.time.LocalDateTime
 
-import uk.gov.hmrc.wco.dec.{EntryStatus, GoodsItem, UcrBlock, WcoSpec}
+import uk.gov.hmrc.wco.dec.WcoSpec
+import uk.gov.hmrc.wco.dec.inventorylinking.common.{EntryStatus, GoodsItem, UcrBlock}
 
-object InventoryLinkingMovementResponseSpecHelper extends WcoSpec {
+object InventoryLinkingMovementResponseSpec extends WcoSpec {
   val messageCodeMovement = "EAA"
   val crc = randomString(3)
   val goodsArrivalDateTime = LocalDateTime.now().withNano(0).toString
