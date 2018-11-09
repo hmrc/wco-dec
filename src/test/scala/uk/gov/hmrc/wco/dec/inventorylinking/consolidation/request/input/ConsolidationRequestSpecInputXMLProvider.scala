@@ -14,10 +14,9 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.wco.dec.inventorylinking.consolidation
+package uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request.input
 
-import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequestSpec._
-import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.input.MovementRequestSpecInputXMLProvider.mandatoryFields
+import uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request.ConsolidationRequestSpec._
 
 object ConsolidationRequestSpecInputXMLProvider {
 
@@ -30,7 +29,7 @@ object ConsolidationRequestSpecInputXMLProvider {
     "</inventoryLinkingConsolidationRequest>"
 
   private val consolidationMandatoryFields =
-    "<messageCode>" + messageCodeMovement + "</messageCode>" +
+    "<messageCode>" + messageCodeConsolidation + "</messageCode>" +
       "<transactionType>" + transactionType + "</transactionType>"
 
 

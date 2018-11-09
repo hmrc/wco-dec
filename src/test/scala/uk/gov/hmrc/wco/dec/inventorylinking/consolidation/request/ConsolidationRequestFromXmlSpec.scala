@@ -14,12 +14,10 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.wco.dec.inventorylinking.consolidation
+package uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request
 
-import uk.gov.hmrc.wco.dec.inventorylinking.InventoryLinkingConsolidationRequest
-import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequest
-import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequestSpec._
-import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.input.{MovementRequestSpecInputXMLProvider, TestNoValueForOptionalField}
+import uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request.ConsolidationRequestSpec._
+import uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request.input.ConsolidationRequestSpecInputXMLProvider
 import uk.gov.hmrc.wco.dec.{WcoSpec, XmlBehaviours}
 
 class ConsolidationRequestFromXmlSpec extends WcoSpec with XmlBehaviours {
@@ -49,7 +47,7 @@ class ConsolidationRequestFromXmlSpec extends WcoSpec with XmlBehaviours {
       "fill messageCode" in {
         val inputXML = ConsolidationRequestSpecInputXMLProvider.provideTestXMLForConsolidationRequest("TestMessageCode")
         val actualConsolidationRequest = InventoryLinkingConsolidationRequest.fromXml(inputXML)
-        val expectedMessageCode = messageCodeMovement
+        val expectedMessageCode = messageCodeConsolidation
 
         actualConsolidationRequest.messageCode must be(expectedMessageCode)
       }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package uk.gov.hmrc.wco.dec.inventorylinking
+package uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request
 
 import java.io.StringWriter
 import java.util.Properties

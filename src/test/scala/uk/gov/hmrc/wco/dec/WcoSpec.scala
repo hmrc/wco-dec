@@ -18,7 +18,7 @@ package uk.gov.hmrc.wco.dec
 
 import org.scalatest.concurrent.ScalaFutures
 import org.scalatest.{MustMatchers, WordSpec}
-import uk.gov.hmrc.wco.dec.inventorylinking.InventoryLinkingConsolidationRequest
+import uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request.InventoryLinkingConsolidationRequest
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequest
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.response.InventoryLinkingMovementResponse
 
