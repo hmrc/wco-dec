@@ -21,7 +21,6 @@ import java.util.Properties
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement}
-import uk.gov.hmrc.wco.dec.MetaData
 import uk.gov.hmrc.wco.dec.inventorylinking.common.UcrBlock
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequest
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
@@ -33,10 +32,10 @@ object InventoryLinkingConsolidationRequest extends JacksonMapper {
 
   def fromXml(xml: String): InventoryLinkingConsolidationRequest = _xml.readValue(xml, classOf[InventoryLinkingConsolidationRequest])
 
-  def fromProperties(props: Map[String, String]): MetaData = {
+  def fromProperties(props: Map[String, String]): InventoryLinkingConsolidationRequest = {
     val p = new Properties()
     p.putAll(props.asJava)
-    _props.readPropertiesAs(p, _schema, classOf[MetaData])
+    _props.readPropertiesAs(p, _schema, classOf[InventoryLinkingConsolidationRequest])
   }
 }
 
