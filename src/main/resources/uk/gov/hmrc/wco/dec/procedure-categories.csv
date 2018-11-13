@@ -1,0 +1,339 @@
+Current Procedure Code,Previous Procedure Code,Declaration Type,Procedure Category,Procedure Category Description
+01,00,IMA,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,00,IMD,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,00,IMY,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,21,IMA,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,21,IMD,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,21,IMY,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,51,IMA,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,53,IMA,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,54,IMA,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,71,IMA,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,78,IMA,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,78,IMY,H1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,00,IMC,I1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,21,IMC,I1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,00,IMF,I1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,21,IMF,I1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,51,IMC,I1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,53,IMC,I1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,71,IMC,I1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+01,78,IMC,I1,Release for free circulation with simultaneous onward dispatch to another Customs Union Territory
+07,00,IMA,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,00,IMD,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,00,IMY,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,21,IMA,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,21,IMD,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,21,IMY,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,51,IMA,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,53,IMA,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,71,IMA,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,54,IMA,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,78,IMA,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,78,IMY,H1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,00,COA,H5,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,00,COD,H5,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,00,COY,H5,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,51,COA,H5,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,53,COA,H5,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,71,COA,H5,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,78,COA,H5,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,78,COY,H5,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,00,IMC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,00,COC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,00,IMF,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,00,COF,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,21,IMC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,21,COC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,21,IMF,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,21,COF,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,51,IMC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,51,COC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,53,IMC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,53,COC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,71,IMC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,71,COC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,78,IMC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+07,78,COC,I1,Release for Free Circulation with simultaneous Entry to an Excise Warehouse
+40,00,IMA,H1,Release to free circulation 
+40,00,IMD,H1,Release to free circulation 
+40,00,IMY,H1,Release to free circulation 
+40,00,IMZ,H1,Release to free circulation 
+40,51,IMA,H1,Release to free circulation
+40,51,IMZ,H1,Release to free circulation 
+40,53,IMA,H1,Release to free circulation
+40,53,IMZ,H1,Release to free circulation 
+40,71,IMA,H1,Release to free circulation
+40,71,IMZ,H1,Release to free circulation 
+40,54,IMA,H1,Release to free circulation 
+40,78,IMA,H1,Release to free circulation 
+40,78,IMY,H1,Release to free circulation 
+40,78,IMZ,H1,Release to free circulation 
+40,00,COA,H5,Release to free circulation 
+40,00,COD,H5,Release to free circulation 
+40,00,COY,H5,Release to free circulation 
+40,00,COZ,H5,Release to free circulation 
+40,51,COA,H5,Release to free circulation 
+40,51,COZ,H5,Release to free circulation 
+40,53,COA,H5,Release to free circulation 
+40,53,COZ,H5,Release to free circulation 
+40,71,COA,H5,Release to free circulation 
+40,71,COZ,H5,Release to free circulation 
+40,54,COA,H5,Release to free circulation 
+40,78,COA,H5,Release to free circulation 
+40,78,COY,H5,Release to free circulation 
+40,78,COZ,H5,Release to free circulation
+40,00,IMB,I1,Release to free circulation 
+40,00,COB,I1,Release to free circulation 
+40,00,IMC,I1,Release to free circulation 
+40,00,COC,I1,Release to free circulation 
+40,00,IME,I1,Release to free circulation 
+40,00,COE,I1,Release to free circulation 
+40,00,IMF,I1,Release to free circulation 
+40,00,COF,I1,Release to free circulation 
+40,71,IMB,I1,Release to free circulation 
+40,71,COB,I1,Release to free circulation 
+40,78,IMB,I1,Release to free circulation 
+40,78,COB,I1,Release to free circulation 
+40,78,IMC,I1,Release to free circulation 
+40,78,COC,I1,Release to free circulation 
+42,00,IMA,H1,Release for free circulation with simultaneous onward supply to another member state
+42,00,IMD,H1,Release for free circulation with simultaneous onward supply to another member state
+42,00,IMY,H1,Release for free circulation with simultaneous onward supply to another member state
+42,21,IMA,H1,Release for free circulation with simultaneous onward supply to another member state
+42,21,IMD,H1,Release for free circulation with simultaneous onward supply to another member state
+42,21,IMY,H1,Release for free circulation with simultaneous onward supply to another member state
+42,51,IMA,H1,Release for free circulation with simultaneous onward supply to another member state
+42,53,IMA,H1,Release for free circulation with simultaneous onward supply to another member state
+42,54,IMA,H1,Release for free circulation with simultaneous onward supply to another member state
+42,71,IMA,H1,Release for free circulation with simultaneous onward supply to another member state
+42,78,IMA,H1,Release for free circulation with simultaneous onward supply to another member state
+42,78,IMY,H1,Release for free circulation with simultaneous onward supply to another member state
+42,00,IMC,I1,Release for free circulation with simultaneous onward supply to another member state
+42,00,IMF,I1,Release for free circulation with simultaneous onward supply to another member state
+42,21,IMC,I1,Release for free circulation with simultaneous onward supply to another member state
+42,21,IMF,I1,Release for free circulation with simultaneous onward supply to another member state
+42,51,IMC,I1,Release for free circulation with simultaneous onward supply to another member state
+42,53,IMC,I1,Release for free circulation with simultaneous onward supply to another member state
+42,71,IMC,I1,Release for free circulation with simultaneous onward supply to another member state
+42,78,IMC,I1,Release for free circulation with simultaneous onward supply to another member state
+44,00,IMA,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,00,IMD,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,00,IMY,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,00,IMZ,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,21,IMA,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,21,IMD,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,21,IMY,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,22,IMA,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,22,IMD,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,22,IMY,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,51,IMA,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,51,IMZ,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,71,IMA,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,71,IMZ,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,53,IMA,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,53,IMZ,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,54,IMA,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,78,IMA,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,78,IMY,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,78,IMZ,H1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,00,IMB,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,00,IMC,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,00,IME,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,00,IMF,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,21,IMB,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,21,IMC,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,21,IME,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,21,IMF,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,22,IMB,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,22,IMC,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,22,IME,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,22,IMF,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,51,IMB,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,71,IMB,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,53,IMB,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,78,IMB,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+44,78,IMC,I1,Release to free circulation with duty relief granted under the End Use Special Procedure
+51,00,IMA,H4,Entry to Inward Processing
+51,00,COA,H4,Entry to Inward Processing
+51,00,IMD,H4,Entry to Inward Processing
+51,00,COD,H4,Entry to Inward Processing
+51,00,IMY,H4,Entry to Inward Processing
+51,00,COY,H4,Entry to Inward Processing
+51,00,IMZ,H4,Entry to Inward Processing
+51,00,COZ,H4,Entry to Inward Processing
+51,11,IMA,H4,Entry to Inward Processing
+51,11,COA,H4,Entry to Inward Processing
+51,11,IMD,H4,Entry to Inward Processing
+51,11,COD,H4,Entry to Inward Processing
+51,11,IMY,H4,Entry to Inward Processing
+51,11,COY,H4,Entry to Inward Processing
+51,21,IMA,H4,Entry to Inward Processing
+51,21,COA,H4,Entry to Inward Processing
+51,21,IMD,H4,Entry to Inward Processing
+51,21,COD,H4,Entry to Inward Processing
+51,21,IMY,H4,Entry to Inward Processing
+51,21,COY,H4,Entry to Inward Processing
+51,51,IMA,H4,Entry to Inward Processing
+51,51,COA,H4,Entry to Inward Processing
+51,51,IMZ,H4,Entry to Inward Processing
+51,51,COZ,H4,Entry to Inward Processing
+51,53,IMA,H4,Entry to Inward Processing
+51,53,COA,H4,Entry to Inward Processing
+51,53,IMZ,H4,Entry to Inward Processing
+51,53,COZ,H4,Entry to Inward Processing
+51,71,IMA,H4,Entry to Inward Processing
+51,71,COA,H4,Entry to Inward Processing
+51,71,IMZ,H4,Entry to Inward Processing
+51,71,COZ,H4,Entry to Inward Processing
+51,54,IMA,H4,Entry to Inward Processing
+51,78,IMA,H4,Entry to Inward Processing
+51,78,COA,H4,Entry to Inward Processing
+51,78,IMY,H4,Entry to Inward Processing
+51,78,COY,H4,Entry to Inward Processing
+51,78,IMZ,H4,Entry to Inward Processing
+51,78,COZ,H4,Entry to Inward Processing
+51,00,IMC,I1,Entry to Inward Processing
+51,00,COC,I1,Entry to Inward Processing
+51,00,IMF,I1,Entry to Inward Processing
+51,00,COF,I1,Entry to Inward Processing
+51,11,IMC,I1,Entry to Inward Processing
+51,11,COC,I1,Entry to Inward Processing
+51,11,IMF,I1,Entry to Inward Processing
+51,11,COF,I1,Entry to Inward Processing
+51,21,IMC,I1,Entry to Inward Processing
+51,21,COC,I1,Entry to Inward Processing
+51,21,IMF,I1,Entry to Inward Processing
+51,21,COF,I1,Entry to Inward Processing
+51,78,IMC,I1,Entry to Inward Processing
+51,78,COC,I1,Entry to Inward Processing
+53,00,IMA,H3,Entry to Temporary Admission
+53,00,COA,H3,Entry to Temporary Admission
+53,00,IMD,H3,Entry to Temporary Admission
+53,00,COD,H3,Entry to Temporary Admission
+53,00,IMY,H3,Entry to Temporary Admission
+53,00,COY,H3,Entry to Temporary Admission
+53,00,IMZ,H3,Entry to Temporary Admission
+53,00,COZ,H3,Entry to Temporary Admission
+53,51,IMA,H3,Entry to Temporary Admission
+53,51,COA,H3,Entry to Temporary Admission
+53,51,IMZ,H3,Entry to Temporary Admission
+53,51,COZ,H3,Entry to Temporary Admission
+53,53,IMA,H3,Entry to Temporary Admission
+53,53,COA,H3,Entry to Temporary Admission
+53,53,IMZ,H3,Entry to Temporary Admission
+53,53,COZ,H3,Entry to Temporary Admission
+53,71,IMA,H3,Entry to Temporary Admission
+53,71,COA,H3,Entry to Temporary Admission
+53,71,IMZ,H3,Entry to Temporary Admission
+53,71,COZ,H3,Entry to Temporary Admission
+53,54,IMA,H3,Entry to Temporary Admission
+53,78,IMA,H3,Entry to Temporary Admission
+53,78,COA,H3,Entry to Temporary Admission
+53,78,IMY,H3,Entry to Temporary Admission
+53,78,COY,H3,Entry to Temporary Admission
+53,78,IMZ,H3,Entry to Temporary Admission
+53,78,COZ,H3,Entry to Temporary Admission
+53,00,IMC,I1,Entry to Temporary Admission
+53,00,COC,I1,Entry to Temporary Admission
+53,00,IMF,I1,Entry to Temporary Admission
+53,00,COF,I1,Entry to Temporary Admission
+53,78,IMC,I1,Entry to Temporary Admission
+53,78,COC,I1,Entry to Temporary Admission
+61,10,IMA,H1,Re-importation with simultaneous release to Free Circulation
+61,10,IMD,H1,Re-importation with simultaneous release to Free Circulation
+61,10,IMY,H1,Re-importation with simultaneous release to Free Circulation
+61,10,IMZ,H1,Re-importation with simultaneous release to Free Circulation
+61,11,IMA,H1,Re-importation with simultaneous release to Free Circulation
+61,11,IMD,H1,Re-importation with simultaneous release to Free Circulation
+61,11,IMY,H1,Re-importation with simultaneous release to Free Circulation
+61,11,IMZ,H1,Re-importation with simultaneous release to Free Circulation
+61,23,IMA,H1,Re-importation with simultaneous release to Free Circulation
+61,23,IMD,H1,Re-importation with simultaneous release to Free Circulation
+61,23,IMY,H1,Re-importation with simultaneous release to Free Circulation
+61,23,IMZ,H1,Re-importation with simultaneous release to Free Circulation
+61,31,IMA,H1,Re-importation with simultaneous release to Free Circulation
+61,31,IMD,H1,Re-importation with simultaneous release to Free Circulation
+61,31,IMY,H1,Re-importation with simultaneous release to Free Circulation
+61,31,IMZ,H1,Re-importation with simultaneous release to Free Circulation
+61,21,IMA,H1,Re-importation with simultaneous release to Free Circulation
+61,21,IMD,H1,Re-importation with simultaneous release to Free Circulation
+61,21,IMY,H1,Re-importation with simultaneous release to Free Circulation
+61,22,IMA,H1,Re-importation with simultaneous release to Free Circulation
+61,22,IMD,H1,Re-importation with simultaneous release to Free Circulation
+61,22,IMY,H1,Re-importation with simultaneous release to Free Circulation
+61,10,COA,H5,Re-importation with simultaneous release to Free Circulation
+61,10,COD,H5,Re-importation with simultaneous release to Free Circulation
+61,10,COY,H5,Re-importation with simultaneous release to Free Circulation
+61,10,COZ,H5,Re-importation with simultaneous release to Free Circulation
+61,11,COA,H5,Re-importation with simultaneous release to Free Circulation
+61,11,COD,H5,Re-importation with simultaneous release to Free Circulation
+61,11,COY,H5,Re-importation with simultaneous release to Free Circulation
+61,11,COZ,H5,Re-importation with simultaneous release to Free Circulation
+61,23,COA,H5,Re-importation with simultaneous release to Free Circulation
+61,23,COD,H5,Re-importation with simultaneous release to Free Circulation
+61,23,COY,H5,Re-importation with simultaneous release to Free Circulation
+61,23,COZ,H5,Re-importation with simultaneous release to Free Circulation
+61,31,COA,H5,Re-importation with simultaneous release to Free Circulation
+61,31,COD,H5,Re-importation with simultaneous release to Free Circulation
+61,31,COY,H5,Re-importation with simultaneous release to Free Circulation
+61,31,COZ,H5,Re-importation with simultaneous release to Free Circulation
+61,10,IMC,I1,Re-importation with simultaneous release to Free Circulation
+61,10,COC,I1,Re-importation with simultaneous release to Free Circulation
+61,10,IMF,I1,Re-importation with simultaneous release to Free Circulation
+61,10,COF,I1,Re-importation with simultaneous release to Free Circulation
+61,11,IMC,I1,Re-importation with simultaneous release to Free Circulation
+61,11,COC,I1,Re-importation with simultaneous release to Free Circulation
+61,11,IMF,I1,Re-importation with simultaneous release to Free Circulation
+61,11,COF,I1,Re-importation with simultaneous release to Free Circulation
+61,23,IMC,I1,Re-importation with simultaneous release to Free Circulation
+61,23,COC,I1,Re-importation with simultaneous release to Free Circulation
+61,23,IMF,I1,Re-importation with simultaneous release to Free Circulation
+61,23,COF,I1,Re-importation with simultaneous release to Free Circulation
+61,31,IMC,I1,Re-importation with simultaneous release to Free Circulation
+61,31,COC,I1,Re-importation with simultaneous release to Free Circulation
+61,31,IMF,I1,Re-importation with simultaneous release to Free Circulation
+61,31,COF,I1,Re-importation with simultaneous release to Free Circulation
+61,21,IMC,I1,Re-importation with simultaneous release to Free Circulation
+61,21,IMF,I1,Re-importation with simultaneous release to Free Circulation
+61,22,IMC,I1,Re-importation with simultaneous release to Free Circulation
+61,22,IMF,I1,Re-importation with simultaneous release to Free Circulation
+71,00,IMA,H2,Entry to a Customs Warehouse (CW)
+71,00,COA,H2,Entry to a Customs Warehouse (CW)
+71,00,IMD,H2,Entry to a Customs Warehouse (CW)
+71,00,COD,H2,Entry to a Customs Warehouse (CW)
+71,10,IMA,H2,Entry to a Customs Warehouse (CW)
+71,10,COA,H2,Entry to a Customs Warehouse (CW)
+71,10,IMD,H2,Entry to a Customs Warehouse (CW)
+71,10,COD,H2,Entry to a Customs Warehouse (CW)
+71,23,IMA,H2,Entry to a Customs Warehouse (CW)
+71,23,COA,H2,Entry to a Customs Warehouse (CW)
+71,23,IMD,H2,Entry to a Customs Warehouse (CW)
+71,23,COD,H2,Entry to a Customs Warehouse (CW)
+71,21,IMA,H2,Entry to a Customs Warehouse (CW)
+71,21,IMD,H2,Entry to a Customs Warehouse (CW)
+71,51,IMA,H2,Entry to a Customs Warehouse (CW)
+71,51,COA,H2,Entry to a Customs Warehouse (CW)
+71,53,IMA,H2,Entry to a Customs Warehouse (CW)
+71,53,COA,H2,Entry to a Customs Warehouse (CW)
+71,71,IMA,H2,Entry to a Customs Warehouse (CW)
+71,71,COA,H2,Entry to a Customs Warehouse (CW)
+71,78,IMA,H2,Entry to a Customs Warehouse (CW)
+71,78,COA,H2,Entry to a Customs Warehouse (CW)
+71,54,IMA,H2,Entry to a Customs Warehouse (CW)
+71,00,IMC,I1,Entry to a Customs Warehouse (CW)
+71,00,COC,I1,Entry to a Customs Warehouse (CW)
+71,00,IMF,I1,Entry to a Customs Warehouse (CW)
+71,00,COF,I1,Entry to a Customs Warehouse (CW)
+71,10,IMC,I1,Entry to a Customs Warehouse (CW)
+71,10,COC,I1,Entry to a Customs Warehouse (CW)
+71,10,IMF,I1,Entry to a Customs Warehouse (CW)
+71,10,COF,I1,Entry to a Customs Warehouse (CW)
+71,23,IMC,I1,Entry to a Customs Warehouse (CW)
+71,23,COC,I1,Entry to a Customs Warehouse (CW)
+71,23,IMF,I1,Entry to a Customs Warehouse (CW)
+71,23,COF,I1,Entry to a Customs Warehouse (CW)
+71,21,IMC,I1,Entry to a Customs Warehouse (CW)
+71,21,IMF,I1,Entry to a Customs Warehouse (CW)
+71,22,IMC,I1,Entry to a Customs Warehouse (CW)
+71,22,IMF,I1,Entry to a Customs Warehouse (CW)

@@ -1631,9 +1631,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
     "read null collections as empty" in {
       val meta = MetaData()
       val xml = meta.toXml
-      println(xml)
       val deserialized = MetaData.fromXml(xml)
-      println(deserialized)
       deserialized.response.isEmpty must be(true)
     }
 
@@ -1698,5 +1696,59 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
         }
       }
     }
+  }
+
+  "procedure categories" should {
+
+    ProcedureCategoryDerivations.derivations.foreach { derivation =>
+
+      s"be ${derivation.procedureCategory} when procedure is ${derivation.currentCode}${derivation.previousCode} and dec type is ${derivation.declarationTypeCode}" in {
+        val meta = MetaData(declaration = Some(Declaration(
+          typeCode = Some(derivation.declarationTypeCode),
+          goodsShipment = Some(GoodsShipment(
+            governmentAgencyGoodsItems = Seq(GovernmentAgencyGoodsItem(
+              sequenceNumeric = 1,
+              governmentProcedures = Seq(GovernmentProcedure(
+                currentCode = Some(derivation.currentCode),
+                previousCode = Some(derivation.previousCode)
+              ))
+            ))
+          ))
+        )))
+        meta.procedureCategories must be(Set(derivation.procedureCategory))
+      }
+
+    }
+
+    "be H1 when procedure is 4200, declaration type is IMD" in {
+      val meta = MetaData(declaration = Some(Declaration(
+        typeCode = Some("IMD"),
+        goodsShipment = Some(GoodsShipment(
+          governmentAgencyGoodsItems = Seq(GovernmentAgencyGoodsItem(
+            sequenceNumeric = 1,
+            governmentProcedures = Seq(GovernmentProcedure(
+              currentCode = Some("42"),
+              previousCode = Some("00")
+            ))
+          ))
+        ))
+      )))
+      meta.procedureCategories must be(Set(H1))
+    }
+
+  }
+
+  "procedure category derivations" should {
+
+    "deserialize" in {
+      ProcedureCategoryDerivations.derivations.head must be(ProcedureCategoryDerivation(
+        "01", "00", "IMA", H1, Some("Release for free circulation with simultaneous onward dispatch to another Customs Union Territory")
+      ))
+    }
+
+    "contain all rows" in {
+      ProcedureCategoryDerivations.derivations.size must be(338)
+    }
+
   }
 }

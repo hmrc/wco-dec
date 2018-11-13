@@ -19,7 +19,7 @@ package uk.gov.hmrc.wco.dec
 import java.io.StringWriter
 import java.util.Properties
 
-import com.fasterxml.jackson.annotation.{JsonIgnoreProperties, JsonInclude}
+import com.fasterxml.jackson.annotation.{JsonIgnoreProperties, JsonInclude, JsonProperty}
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind._
 import com.fasterxml.jackson.databind.`type`.CollectionLikeType
@@ -28,6 +28,7 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.deser.{BeanDeserializerModifier, ContextualDeserializer}
 import com.fasterxml.jackson.databind.module.SimpleModule
 import com.fasterxml.jackson.databind.node.{ObjectNode, TextNode}
+import com.fasterxml.jackson.dataformat.csv.{CsvMapper, CsvSchema}
 import com.fasterxml.jackson.dataformat.javaprop.{JavaPropsMapper, JavaPropsParser, JavaPropsSchema}
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
 import com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser
@@ -55,22 +56,85 @@ trait JacksonMapper {
 
   private val _modxml = new JacksonXmlModule()
   _modxml.setDefaultUseWrapper(false)
-  protected val _schema = JavaPropsSchema.emptySchema().withWriteIndexUsingMarkers(true).withFirstArrayOffset(0)
-  protected val _xml = new XmlMapper(_modxml)
+  protected val _schema: JavaPropsSchema = JavaPropsSchema.emptySchema().withWriteIndexUsingMarkers(true).withFirstArrayOffset(0)
+  protected val _xml: XmlMapper = new XmlMapper(_modxml)
     .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
     .setSerializationInclusion(JsonInclude.Include.NON_EMPTY)
     .setSerializationInclusion(JsonInclude.Include.NON_NULL)
     .setSerializationInclusion(JsonInclude.Include.NON_ABSENT)
     .registerModule(DefaultScalaModule)
     .registerModule(CustomSeqModule)
-  protected val _props = new JavaPropsMapper()
-  _props.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
-  _props.registerModule(DefaultScalaModule)
+    .asInstanceOf[XmlMapper]
+  protected val _props: JavaPropsMapper = new JavaPropsMapper()
+    .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+    .registerModule(DefaultScalaModule)
+    .asInstanceOf[JavaPropsMapper]
 
 }
 
-@JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
+sealed trait ProcedureCategory
+case object H1 extends ProcedureCategory
+case object H2 extends ProcedureCategory
+case object H3 extends ProcedureCategory
+case object H4 extends ProcedureCategory
+case object H5 extends ProcedureCategory
+case object I1 extends ProcedureCategory
+
+class ProcedureCategoryDeserializer extends StdDeserializer[ProcedureCategory](classOf[ProcedureCategory]) {
+
+  override def deserialize(p: JsonParser, ctx: DeserializationContext): ProcedureCategory = {
+    val n: JsonNode = p.getCodec.readTree(p)
+    n.asText() match {
+      case "H1" => H1
+      case "H2" => H2
+      case "H3" => H3
+      case "H4" => H4
+      case "H5" => H5
+      case "I1" => I1
+    }
+  }
+
+}
+
+case class ProcedureCategoryDerivation(@JsonProperty("Current Procedure Code")
+                                       currentCode: String,
+
+                                       @JsonProperty("Previous Procedure Code")
+                                       previousCode: String,
+
+                                       @JsonProperty("Declaration Type Code")
+                                       declarationTypeCode: String,
+
+                                       @JsonProperty("Procedure Category")
+                                       @JsonDeserialize(using = classOf[ProcedureCategoryDeserializer])
+                                       procedureCategory: ProcedureCategory,
+
+                                       @JsonProperty("Procedure Category Description")
+                                       description: Option[String] = None)
+
+object ProcedureCategoryDerivations {
+
+  lazy val derivations: Seq[ProcedureCategoryDerivation] = {
+    val mapper = new CsvMapper().registerModule(DefaultScalaModule)
+    val schema = CsvSchema.builder()
+      .setSkipFirstDataRow(true)
+      .addColumn("Current Procedure Code")
+      .addColumn("Previous Procedure Code")
+      .addColumn("Declaration Type Code")
+      .addColumn("Procedure Category")
+      .addColumn("Procedure Category Description")
+      .build()
+    mapper.readerFor(classOf[ProcedureCategoryDerivation])
+      .`with`(schema)
+      .readValues(getClass.getResourceAsStream("/uk/gov/hmrc/wco/dec/procedure-categories.csv"))
+      .readAll()
+      .asScala
+  }
+
+}
+
 @JacksonXmlRootElement(namespace = NS.dms, localName = "MetaData")
+@JsonIgnoreProperties(Array("_xml", "_schema", "_props", "procedureCategories"))
 case class MetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", namespace = NS.dms)
                     wcoDataModelVersionCode: Option[String] = None, // max 6 chars
 
@@ -94,6 +158,10 @@ case class MetaData(@JacksonXmlProperty(localName = "WCODataModelVersionCode", n
 
                     @JacksonXmlProperty(localName = "Response", namespace = NS.res)
                     response: Seq[Response] = Seq.empty) extends JacksonMapper {
+
+  // if more than 1 procedure category is returned, then that should be considered in invalid declaration state
+  // basically, under normal conditions, we should expect a set of exactly 1 element
+  lazy val procedureCategories: Set[ProcedureCategory] = declaration.map(_.procedureCategory).getOrElse(Set.empty)
 
   def toXml: String = {
     val sw = new StringWriter()
@@ -209,7 +277,11 @@ case class Declaration(@JacksonXmlProperty(localName = "AcceptanceDateTime", nam
                        presentationOffice: Option[Office] = None,
 
                        @JacksonXmlProperty(localName = "SupervisingOffice", namespace = NS.dec)
-                       supervisingOffice: Option[Office] = None)
+                       supervisingOffice: Option[Office] = None) {
+
+  def procedureCategory: Set[ProcedureCategory] = goodsShipment.map(_.procedureCategory(typeCode)).getOrElse(Set.empty)
+
+}
 
 case class Amendment(@JacksonXmlProperty(localName = "ChangeReasonCode", namespace = NS.dec)
                      changeReasonCode: Option[String] = None, // max 3 chars
@@ -340,7 +412,16 @@ case class GoodsShipment(@JacksonXmlProperty(localName = "ExitDateTime", namespa
                          ucr: Option[Ucr] = None,
 
                          @JacksonXmlProperty(localName = "Warehouse", namespace = NS.dec)
-                         warehouse: Option[Warehouse] = None)
+                         warehouse: Option[Warehouse] = None) {
+
+  def procedureCategory(typeCode: Option[String]): Set[ProcedureCategory] = {
+    val procedureCodes: Set[ProcedureCode] = governmentAgencyGoodsItems.flatMap(_.procedureCode(typeCode)).toSet
+    val derivations: Map[ProcedureCode, ProcedureCategoryDerivation] = ProcedureCategoryDerivations.derivations.map(derivation => ProcedureCode(derivation.currentCode, derivation.previousCode, derivation.declarationTypeCode) -> derivation).toMap
+    val filtered = derivations.filter(entry => procedureCodes.contains(entry._1))
+    filtered.values.map(_.procedureCategory).toSet
+  }
+
+}
 
 case class Invoice(@JacksonXmlProperty(localName = "ID", namespace = NS.dec)
                    id: Option[String] = None,
@@ -546,7 +627,15 @@ case class GovernmentAgencyGoodsItem(@JacksonXmlProperty(localName = "CustomsVal
                                      ucr: Option[Ucr] = None,
 
                                      @JacksonXmlProperty(localName = "ValuationAdjustment", namespace = NS.dec)
-                                     valuationAdjustment: Option[ValuationAdjustment] = None)
+                                     valuationAdjustment: Option[ValuationAdjustment] = None) {
+
+  def procedureCode(typeCode: Option[String]): Option[ProcedureCode] = typeCode.flatMap(code => governmentProcedures.find(procedure => procedure.currentCode.isDefined && procedure.previousCode.isDefined).map(proc => toProcedureCode(proc, code)))
+
+  private def toProcedureCode(procedure: GovernmentProcedure, typeCode: String): ProcedureCode = ProcedureCode(procedure.currentCode.get, procedure.previousCode.get, typeCode)
+
+}
+
+case class ProcedureCode(currentCode: String, previousCode: String, typeCode: String)
 
 case class GovernmentAgencyGoodsItemAdditionalDocument(@JacksonXmlProperty(localName = "CategoryCode", namespace = NS.dec)
                                                        categoryCode: Option[String] = None, // max 3 chars (reality: 1 char)
