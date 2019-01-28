@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -469,7 +469,7 @@ case class GovernmentAgencyGoodsItem(@JacksonXmlProperty(localName = "CustomsVal
                                      @JacksonXmlProperty(localName = "AdditionalDocument", namespace = NS.dec)
                                      additionalDocuments: Seq[GovernmentAgencyGoodsItemAdditionalDocument] = Seq.empty, // max 99
 
-                                     @JacksonXmlProperty(localName = "AdditionalInformation")
+                                     @JacksonXmlProperty(localName = "AdditionalInformation", namespace = NS.dec)
                                      additionalInformations: Seq[AdditionalInformation] = Seq.empty, // max 99
 
                                      @JacksonXmlProperty(localName = "AEOMutualRecognitionParty", namespace = NS.dec)
