@@ -27,7 +27,7 @@ object TypeCodeValues {
 
   def load(name: String): Seq[TypeCodeValue] = try {
     _mapper.readValue[Array[TypeCodeValue]](
-      getClass.getResourceAsStream(s"./$name.json"), classOf[Array[TypeCodeValue]]
+      getClass.getResourceAsStream(s"/uk/gov/hmrc/wco/dec/$name.json"), classOf[Array[TypeCodeValue]]
     )
   } catch {
     case e: MismatchedInputException => throw new IllegalArgumentException(s"Unknown type code value list name: $name", e)
