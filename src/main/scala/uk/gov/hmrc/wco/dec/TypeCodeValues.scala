@@ -17,6 +17,7 @@
 package uk.gov.hmrc.wco.dec
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.databind.exc.MismatchedInputException
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 
 object TypeCodeValues {
@@ -24,9 +25,13 @@ object TypeCodeValues {
   private val _mapper = new ObjectMapper()
   _mapper.registerModule(DefaultScalaModule)
 
-  def load(name: String): Seq[TypeCodeValue] = _mapper.readValue[Array[TypeCodeValue]](
-    getClass.getResourceAsStream(s"./$name.json"), classOf[Array[TypeCodeValue]]
-  )
+  def load(name: String): Seq[TypeCodeValue] = try {
+    _mapper.readValue[Array[TypeCodeValue]](
+      getClass.getResourceAsStream(s"./$name.json"), classOf[Array[TypeCodeValue]]
+    )
+  } catch {
+    case e: MismatchedInputException => throw new IllegalArgumentException(s"Unknown type code value list name: $name", e)
+  }
 
 }
 

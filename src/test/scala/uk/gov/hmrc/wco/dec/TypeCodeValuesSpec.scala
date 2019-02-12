@@ -20,6 +20,10 @@ class TypeCodeValuesSpec extends WcoSpec {
 
   "load" should {
 
+    "throw given non-existent type code list name" in {
+      an [IllegalArgumentException] must be thrownBy TypeCodeValues.load("this does not, nor could it ever, exist as a type code value list name")
+    }
+
     "parse airport-codes" in {
       TypeCodeValues.load("airport-codes").filter(_.value == "ABR").head.display must be("Aberdeen Regional");
       TypeCodeValues.load("airport-codes").filter(_.value == "ABR").head.additionalDisplay must be(Some("Aberdeen, United States"))
