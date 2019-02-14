@@ -46,7 +46,7 @@ case class ResponseAmendment(
 
 case class Response(
   @JacksonXmlProperty(localName = "FunctionCode", namespace = NS.res)
-  functionCode: Int, // numeric max 2
+  functionCode: String, // numeric max 2
 
   @JacksonXmlProperty(localName = "FunctionalReferenceID", namespace = NS.res)
   functionalReferenceId: Option[String] = None, // max 35 chars

@@ -26,7 +26,7 @@ object ResponseSpec extends WcoSpec {
   val agencyAssignedCustomizationCode: String = randomString(6)
   val agencyAssignedCustomizationVersionCode: String = randomString(3)
 
-  val functionCode: Int = randomDeclarationFunctionCode
+  val functionCode: String = randomResponseFunctionCode
   val functionalReferenceId: String = "functionalRefId1"
 
   val dateTimeFormatCode: String = randomDateTimeFormatCode
@@ -124,7 +124,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       ))
 
       hasExpectedOutput(meta, functionCode) { xml =>
-        (xml \ "Response" \ "FunctionCode").text.trim.toInt
+        (xml \ "Response" \ "FunctionCode").text.trim
       }
     }
 
