@@ -74,6 +74,8 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
 
   protected def randomDeclarationFunctionCode: Int = declarationFunctionCodes(randomInt(declarationFunctionCodes.length))
 
+  protected def randomResponseFunctionCode: String = responseFunctionCodes(randomInt(responseFunctionCodes.length))
+
   protected def randomDateTimeFormatCode: String = dateTimeFormatCodes(randomInt(dateTimeFormatCodes.length))
 
   protected def randomDateTimeString: String =
@@ -88,6 +90,8 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
   private lazy val z: Seq[String] = Seq("+", "-")
 
   private lazy val declarationFunctionCodes: Seq[Int] = Seq(9, 13, 14)
+
+  private lazy val responseFunctionCodes: Seq[String] = Seq("01", "02", "03", "05", "06", "07", "08", "09", "10", "11", "16", "17", "18")
 
   private lazy val dateTimeFormatCodes: Seq[String] = Seq("102", "304")
 
@@ -131,6 +135,6 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
     extractor(MetaData.fromXml(meta.toXml)) must be(expected)
 
   protected def randomValidResponse: Response =
-    Response(randomDeclarationFunctionCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
+    Response(randomResponseFunctionCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
 
 }
