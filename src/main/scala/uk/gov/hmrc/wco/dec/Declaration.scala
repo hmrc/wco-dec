@@ -582,7 +582,7 @@ case class Packaging(@JacksonXmlProperty(localName = "SequenceNumeric", namespac
                      @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                      sequenceNumeric: Option[Int] = None, // unsigned max 99999
 
-                     @JacksonXmlProperty(localName = "MarksNumberID", namespace = NS.dec)
+                     @JacksonXmlProperty(localName = "MarksNumbersID", namespace = NS.dec)
                      marksNumbersId: Option[String] = None, // max 512 chars
 
                      @JacksonXmlProperty(localName = "QuantityQuantity", namespace = NS.dec)
