@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -222,11 +222,11 @@ case class Authentication(@JacksonXmlProperty(localName = "Authentication", name
 case class Authenticator(@JacksonXmlProperty(localName = "Name", namespace = NS.dec)
                          name: Option[String] = None) // max 70 chars
 
-case class AdditionalDocument(@JacksonXmlProperty(localName = "ID", namespace = NS.dec)
-                              id: Option[String] = None, // max 70 chars (but numeric with precision of 7 when at header level according to tariff)
-
-                              @JacksonXmlProperty(localName = "CategoryCode", namespace = NS.dec)
+case class AdditionalDocument(@JacksonXmlProperty(localName = "CategoryCode", namespace = NS.dec)
                               categoryCode: Option[String] = None, // max 3 chars (but 1 char when at header level according to tariff)
+
+                              @JacksonXmlProperty(localName = "ID", namespace = NS.dec)
+                              id: Option[String] = None, // max 70 chars (but numeric with precision of 7 when at header level according to tariff)
 
                               @JacksonXmlProperty(localName = "TypeCode", namespace = NS.dec)
                               typeCode: Option[String] = None) // max 3 chars
@@ -582,7 +582,7 @@ case class Packaging(@JacksonXmlProperty(localName = "SequenceNumeric", namespac
                      @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                      sequenceNumeric: Option[Int] = None, // unsigned max 99999
 
-                     @JacksonXmlProperty(localName = "MarksNumberID", namespace = NS.dec)
+                     @JacksonXmlProperty(localName = "MarksNumbersID", namespace = NS.dec)
                      marksNumbersId: Option[String] = None, // max 512 chars
 
                      @JacksonXmlProperty(localName = "QuantityQuantity", namespace = NS.dec)
