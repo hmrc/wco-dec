@@ -17,6 +17,8 @@
 package uk.gov.hmrc.wco.dec
 
 import java.io.StringWriter
+import java.time.format.DateTimeFormatter
+import java.time.{LocalDate, ZoneId, ZonedDateTime}
 import java.util.Properties
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
@@ -816,7 +818,22 @@ case class DateTimeString(@JacksonXmlProperty(localName = "formatCode", isAttrib
                           formatCode: String, // either "102" or "304"
 
                           @JacksonXmlText
-                          value: String) // max 35 chars
+                          value: String) { // max 35 chars
+
+  def time(): ZonedDateTime = formatCode match {
+    case "102" =>
+      val pattern = "yyyyMMdd"
+      val formatter = DateTimeFormatter.ofPattern(pattern)
+      val localDate = LocalDate.parse(value, formatter)
+
+      localDate.atStartOfDay(ZoneId.systemDefault())
+    case "304" =>
+      val pattern = "yyyyMMddHHmmssX"
+      val formatter = DateTimeFormatter.ofPattern(pattern)
+
+      ZonedDateTime.parse(value, formatter)
+  }
+}
 
 class DateTimeStringDeserializer extends StdAttributeAndTextDeserializer[DateTimeString]("formatCode", classOf[DateTimeString]) {
 

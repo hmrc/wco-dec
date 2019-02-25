@@ -1699,4 +1699,69 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       }
     }
   }
+
+  val dateWithooutZoneFormat = "102"
+  val dateWithZoneFormat = "304"
+  val year = "2019"
+  val month = "02"
+  val day = "25"
+  val hour = "07"
+  val minute = "56"
+  val second = "23"
+
+  "Date Time Formatter" should {
+    "accept and recognize 102 date format" in {
+      val date = DateTimeString(dateWithooutZoneFormat, year + month + day)
+      val parsedDate = date.time
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+    }
+
+    "accept and recognize 304 date format with Z" in {
+      val zone = "Z"
+      val time = year + month + day + hour + minute + second + zone
+
+      val date = DateTimeString(dateWithZoneFormat, time)
+      val parsedDate = date.time
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+      parsedDate.getHour must be(hour.toInt)
+      parsedDate.getMinute must be(minute.toInt)
+      parsedDate.getSecond must be(second.toInt)
+    }
+
+    "accept and recognize 304 date format with zone (+)" in {
+      val zone = "+01"
+      val time = year + month + day + hour + minute + second + zone
+
+      val date = DateTimeString(dateWithZoneFormat, time)
+      val parsedDate = date.time
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+      parsedDate.getHour must be(hour.toInt)
+      parsedDate.getMinute must be(minute.toInt)
+      parsedDate.getSecond must be(second.toInt)
+    }
+
+    "accept and recognize 304 date format with zone (-)" in {
+      val zone = "-01"
+      val time = year + month + day + hour + minute + second + zone
+
+      val date = DateTimeString(dateWithZoneFormat, time)
+      val parsedDate = date.time
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+      parsedDate.getHour must be(hour.toInt)
+      parsedDate.getMinute must be(minute.toInt)
+      parsedDate.getSecond must be(second.toInt)
+    }
+  }
 }
