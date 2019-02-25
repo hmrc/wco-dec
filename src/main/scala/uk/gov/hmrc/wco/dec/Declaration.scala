@@ -224,11 +224,11 @@ case class Authentication(@JacksonXmlProperty(localName = "Authentication", name
 case class Authenticator(@JacksonXmlProperty(localName = "Name", namespace = NS.dec)
                          name: Option[String] = None) // max 70 chars
 
-case class AdditionalDocument(@JacksonXmlProperty(localName = "ID", namespace = NS.dec)
-                              id: Option[String] = None, // max 70 chars (but numeric with precision of 7 when at header level according to tariff)
-
-                              @JacksonXmlProperty(localName = "CategoryCode", namespace = NS.dec)
+case class AdditionalDocument(@JacksonXmlProperty(localName = "CategoryCode", namespace = NS.dec)
                               categoryCode: Option[String] = None, // max 3 chars (but 1 char when at header level according to tariff)
+
+                              @JacksonXmlProperty(localName = "ID", namespace = NS.dec)
+                              id: Option[String] = None, // max 70 chars (but numeric with precision of 7 when at header level according to tariff)
 
                               @JacksonXmlProperty(localName = "TypeCode", namespace = NS.dec)
                               typeCode: Option[String] = None) // max 3 chars
