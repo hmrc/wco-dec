@@ -1815,5 +1815,9 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       ProcedureCategoryDerivations.derivations.size must be(338)
     }
 
+    "show all dec type codes" in {
+      ProcedureCategoryDerivations.derivations.map(_.declarationTypeCode).toSet.foreach(println)
+    }
+
   }
 }

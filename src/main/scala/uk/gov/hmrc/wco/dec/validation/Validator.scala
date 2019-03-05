@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,10 +15,16 @@
  */
 
 package uk.gov.hmrc.wco.dec.validation
-import uk.gov.hmrc.wco.dec.MetaData
+import uk.gov.hmrc.wco.dec.{MetaData, ProcedureCategory}
 
 sealed trait ValidationScenario
+
 case object ImportDeclarationSubmission extends ValidationScenario
+case object ImportDeclarationCancellation extends ValidationScenario
+case object ImportDeclarationAmendment extends ValidationScenario
+case object ImportDeclarationArrival extends ValidationScenario
+
+case object ExportDeclarationSubmission extends ValidationScenario
 
 sealed trait ValidationFailure
 
@@ -29,6 +35,16 @@ trait ValidationRule {
   val applicableScenarios: Set[ValidationScenario]
 
   def applyTo(meta: MetaData): Seq[ValidationFailure]
+
+}
+
+abstract class ProcedureCategoryValidationRule(procedureCategory: ProcedureCategory) extends ValidationRule {
+
+  override def applyTo(meta: MetaData): Seq[ValidationFailure] =
+    if (meta.procedureCategories.contains(procedureCategory)) applyProcedureCategoryRule(meta)
+    else Seq.empty
+
+  def applyProcedureCategoryRule(meta: MetaData): Seq[ValidationFailure]
 
 }
 

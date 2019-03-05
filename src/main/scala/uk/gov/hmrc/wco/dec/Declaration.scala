@@ -21,7 +21,7 @@ import java.time.format.DateTimeFormatter
 import java.time.{LocalDate, ZoneId, ZonedDateTime}
 import java.util.Properties
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties
+import com.fasterxml.jackson.annotation.{JsonIgnoreProperties, JsonProperty}
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind._
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
@@ -32,6 +32,7 @@ import com.fasterxml.jackson.dataformat.javaprop.{JavaPropsMapper, JavaPropsPars
 import com.fasterxml.jackson.dataformat.javaprop.JavaPropsParser
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
 import com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser
+import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 import scala.collection.JavaConverters._
