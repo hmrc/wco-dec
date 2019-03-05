@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,23 +17,22 @@
 package uk.gov.hmrc.wco.dec
 
 import java.io.StringWriter
+import java.time.format.DateTimeFormatter
+import java.time.{LocalDate, ZoneId, ZonedDateTime}
 import java.util.Properties
 
-import com.fasterxml.jackson.annotation.{JsonIgnoreProperties, JsonInclude, JsonProperty}
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind._
-import com.fasterxml.jackson.databind.`type`.CollectionLikeType
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
-import com.fasterxml.jackson.databind.deser.{BeanDeserializerModifier, ContextualDeserializer}
-import com.fasterxml.jackson.databind.module.SimpleModule
 import com.fasterxml.jackson.databind.node.{ObjectNode, TextNode}
 import com.fasterxml.jackson.dataformat.csv.{CsvMapper, CsvSchema}
 import com.fasterxml.jackson.dataformat.javaprop.{JavaPropsMapper, JavaPropsParser, JavaPropsSchema}
+import com.fasterxml.jackson.dataformat.javaprop.JavaPropsParser
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
 import com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser
-import com.fasterxml.jackson.dataformat.xml.{JacksonXmlModule, XmlMapper}
-import com.fasterxml.jackson.module.scala.DefaultScalaModule
+import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 import scala.collection.JavaConverters._
 
@@ -50,26 +49,6 @@ private[wco] object NS {
   final val ds = "urn:wco:datamodel:WCO:Declaration_DS:DMS:2"
   final val res = "urn:wco:datamodel:WCO:RES-DMS:2"
   final val rs = "urn:wco:datamodel:WCO:Response_DS:DMS:2"
-}
-
-trait JacksonMapper {
-
-  private val _modxml = new JacksonXmlModule()
-  _modxml.setDefaultUseWrapper(false)
-  protected val _schema: JavaPropsSchema = JavaPropsSchema.emptySchema().withWriteIndexUsingMarkers(true).withFirstArrayOffset(0)
-  protected val _xml: XmlMapper = new XmlMapper(_modxml)
-    .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
-    .setSerializationInclusion(JsonInclude.Include.NON_EMPTY)
-    .setSerializationInclusion(JsonInclude.Include.NON_NULL)
-    .setSerializationInclusion(JsonInclude.Include.NON_ABSENT)
-    .registerModule(DefaultScalaModule)
-    .registerModule(CustomSeqModule)
-    .asInstanceOf[XmlMapper]
-  protected val _props: JavaPropsMapper = new JavaPropsMapper()
-    .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
-    .registerModule(DefaultScalaModule)
-    .asInstanceOf[JavaPropsMapper]
-
 }
 
 sealed trait ProcedureCategory
@@ -316,11 +295,11 @@ case class Authentication(@JacksonXmlProperty(localName = "Authentication", name
 case class Authenticator(@JacksonXmlProperty(localName = "Name", namespace = NS.dec)
                          name: Option[String] = None) // max 70 chars
 
-case class AdditionalDocument(@JacksonXmlProperty(localName = "ID", namespace = NS.dec)
-                              id: Option[String] = None, // max 70 chars (but numeric with precision of 7 when at header level according to tariff)
-
-                              @JacksonXmlProperty(localName = "CategoryCode", namespace = NS.dec)
+case class AdditionalDocument(@JacksonXmlProperty(localName = "CategoryCode", namespace = NS.dec)
                               categoryCode: Option[String] = None, // max 3 chars (but 1 char when at header level according to tariff)
+
+                              @JacksonXmlProperty(localName = "ID", namespace = NS.dec)
+                              id: Option[String] = None, // max 70 chars (but numeric with precision of 7 when at header level according to tariff)
 
                               @JacksonXmlProperty(localName = "TypeCode", namespace = NS.dec)
                               typeCode: Option[String] = None) // max 3 chars
@@ -572,7 +551,7 @@ case class GovernmentAgencyGoodsItem(@JacksonXmlProperty(localName = "CustomsVal
                                      @JacksonXmlProperty(localName = "AdditionalDocument", namespace = NS.dec)
                                      additionalDocuments: Seq[GovernmentAgencyGoodsItemAdditionalDocument] = Seq.empty, // max 99
 
-                                     @JacksonXmlProperty(localName = "AdditionalInformation")
+                                     @JacksonXmlProperty(localName = "AdditionalInformation", namespace = NS.dec)
                                      additionalInformations: Seq[AdditionalInformation] = Seq.empty, // max 99
 
                                      @JacksonXmlProperty(localName = "AEOMutualRecognitionParty", namespace = NS.dec)
@@ -693,7 +672,7 @@ case class Packaging(@JacksonXmlProperty(localName = "SequenceNumeric", namespac
                      @JsonDeserialize(contentAs = classOf[java.lang.Integer])
                      sequenceNumeric: Option[Int] = None, // unsigned max 99999
 
-                     @JacksonXmlProperty(localName = "MarksNumberID", namespace = NS.dec)
+                     @JacksonXmlProperty(localName = "MarksNumbersID", namespace = NS.dec)
                      marksNumbersId: Option[String] = None, // max 512 chars
 
                      @JacksonXmlProperty(localName = "QuantityQuantity", namespace = NS.dec)
@@ -927,7 +906,22 @@ case class DateTimeString(@JacksonXmlProperty(localName = "formatCode", isAttrib
                           formatCode: String, // either "102" or "304"
 
                           @JacksonXmlText
-                          value: String) // max 35 chars
+                          value: String) { // max 35 chars
+
+  def time(): ZonedDateTime = formatCode match {
+    case "102" =>
+      val pattern = "yyyyMMdd"
+      val formatter = DateTimeFormatter.ofPattern(pattern)
+      val localDate = LocalDate.parse(value, formatter)
+
+      localDate.atStartOfDay(ZoneId.systemDefault())
+    case "304" =>
+      val pattern = "yyyyMMddHHmmssX"
+      val formatter = DateTimeFormatter.ofPattern(pattern)
+
+      ZonedDateTime.parse(value, formatter)
+  }
+}
 
 class DateTimeStringDeserializer extends StdAttributeAndTextDeserializer[DateTimeString]("formatCode", classOf[DateTimeString]) {
 
@@ -1024,26 +1018,4 @@ abstract class StdAttributeAndTextDeserializer[T](attributeName: String, t: Clas
 
 }
 
-object CustomSeqModule extends SimpleModule {
-  setDeserializerModifier(SeqDeserializationModifier)
-}
 
-object SeqDeserializationModifier extends BeanDeserializerModifier {
-
-  override def modifyCollectionLikeDeserializer(
-    config: DeserializationConfig,
-    `type`: CollectionLikeType,
-    beanDesc: BeanDescription,
-    deserializer: JsonDeserializer[_]
-  ): JsonDeserializer[_] = new JsonDeserializer[Seq[_]] with ContextualDeserializer {
-
-    override def deserialize(p: JsonParser, ctx: DeserializationContext): Seq[_] =
-      deserializer.deserialize(p, ctx).asInstanceOf[Seq[_]]
-
-    override def createContextual(ctx: DeserializationContext, prop: BeanProperty): JsonDeserializer[_] =
-      modifyCollectionLikeDeserializer(config, `type`, beanDesc, deserializer.asInstanceOf[ContextualDeserializer].createContextual(ctx, prop))
-
-    override def getNullValue(ctx: DeserializationContext): Seq[_] = Seq.empty
-  }
-
-}

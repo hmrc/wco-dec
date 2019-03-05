@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ object ResponseSpec extends WcoSpec {
   val agencyAssignedCustomizationCode: String = randomString(6)
   val agencyAssignedCustomizationVersionCode: String = randomString(3)
 
-  val functionCode: Int = randomDeclarationFunctionCode
+  val functionCode: String = randomResponseFunctionCode
   val functionalReferenceId: String = "functionalRefId1"
 
   val dateTimeFormatCode: String = randomDateTimeFormatCode
@@ -124,7 +124,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       ))
 
       hasExpectedOutput(meta, functionCode) { xml =>
-        (xml \ "Response" \ "FunctionCode").text.trim.toInt
+        (xml \ "Response" \ "FunctionCode").text.trim
       }
     }
 
@@ -384,7 +384,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
   "fromXml" when {
     "no tag present" should {
       "fill optional field with None" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoTagForOptionalField)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestNoTagForOptionalField")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -392,7 +392,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill optional sequence field with empty sequence" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoTagForOptionalSequence)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestNoTagForOptionalSequence")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -400,7 +400,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill nested optional sequence field with empty sequence" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoTagForOptionalNestedSequence)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestNoTagForOptionalNestedSequence")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -414,7 +414,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "value is not provided" should {
       "fill optional field with None" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoValueForOptionalField)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestNoValueForOptionalField")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -422,7 +422,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill optional sequence field with empty sequence" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoValueForOptionalSequence)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestNoValueForOptionalSequence")
         val expectedAdditionalInformation = ResponseAdditionalInformation()
         val actualMetaData = MetaData.fromXml(inputXML)
 
@@ -432,7 +432,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill nested optional sequence field with empty sequence" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestNoValueForOptionalNestedSequence)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestNoValueForOptionalNestedSequence")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -447,7 +447,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
 
     "value is provided" should {
       "fill WCODataModelVersionCode" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestWCODataModelVersionCode)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestWCODataModelVersionCode")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.wcoDataModelVersionCode must be(defined)
@@ -455,7 +455,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill WCOTypeName" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestWCOTypeName)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestWCOTypeName")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.wcoTypeName must be(defined)
@@ -463,7 +463,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill ResponsibleCountryCode" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestResponsibleCountryCode)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestResponsibleCountryCode")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.responsibleCountryCode must be(defined)
@@ -472,7 +472,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill ResponsibleAgencyName" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestResponsibleAgencyName)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestResponsibleAgencyName")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.responsibleAgencyName must be(defined)
@@ -480,7 +480,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill AgencyAssignedCustomizationCode" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAgencyAssignedCustomizationCode)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestAgencyAssignedCustomizationCode")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.agencyAssignedCustomizationCode must be(defined)
@@ -488,7 +488,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill AgencyAssignedCustomizationVersionCode" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAgencyAssignedCustomizationVersionCode)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestAgencyAssignedCustomizationVersionCode")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.agencyAssignedCustomizationVersionCode must be(defined)
@@ -496,7 +496,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/FunctionCode" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestFunctionCode)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestFunctionCode")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -504,7 +504,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/FunctionalReferenceID" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestFunctionalReferenceID)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestFunctionalReferenceID")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -513,7 +513,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/IssueDateTime" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestIssueDateTime)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestIssueDateTime")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -522,7 +522,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/AdditionalInformation" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAdditionalInformation)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestAdditionalInformation")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -540,7 +540,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/Amendment" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAmendment)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestAmendment")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -553,7 +553,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/AppealOffice" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestAppealOffice)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestAppealOffice")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -563,7 +563,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/Bank" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestBank)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestBank")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         val expectedResponseBank = ResponseBank(Some(bankReferenceId), Some(bankId))
@@ -574,7 +574,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/ContactOffice" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestContactOffice)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestContactOffice")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         val expectedResponseContactOffice = ResponseContactOffice(
@@ -588,7 +588,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/Error" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestError)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestError")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -603,7 +603,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/Status" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestStatus)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestStatus")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
@@ -620,7 +620,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/Declaration without DutyTaxFee and GoodsShipment" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestRespDeclaration)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestRespDeclaration")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         val expectedResponseDeclaration = ResponseDeclaration(
@@ -638,7 +638,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/Declaration/DutyTaxFee" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestRespDeclarationDutyTaxFee)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestRespDeclarationDutyTaxFee")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         val expectedResponseDutyTaxFee = ResponseDutyTaxFee(
@@ -660,7 +660,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
       }
 
       "fill Response/Declaration/GoodsShipment" in {
-        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor(TestRespDeclarationGoodsShipment)
+        val inputXML = ResponseSpecInputXMLProvider.provideTestXMLFor("TestRespDeclarationGoodsShipment")
         val actualMetaData = MetaData.fromXml(inputXML)
 
         val expectedResponseGoodsShipment = ResponseGoodsShipment(

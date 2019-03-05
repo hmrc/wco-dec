@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1695,6 +1695,71 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
           map(entry._1) must be(entry._2)
         }
       }
+    }
+  }
+
+  val dateWithooutZoneFormat = "102"
+  val dateWithZoneFormat = "304"
+  val year = "2019"
+  val month = "02"
+  val day = "25"
+  val hour = "07"
+  val minute = "56"
+  val second = "23"
+
+  "Date Time Formatter" should {
+    "accept and recognize 102 date format" in {
+      val date = DateTimeString(dateWithooutZoneFormat, year + month + day)
+      val parsedDate = date.time
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+    }
+
+    "accept and recognize 304 date format with Z" in {
+      val zone = "Z"
+      val time = year + month + day + hour + minute + second + zone
+
+      val date = DateTimeString(dateWithZoneFormat, time)
+      val parsedDate = date.time
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+      parsedDate.getHour must be(hour.toInt)
+      parsedDate.getMinute must be(minute.toInt)
+      parsedDate.getSecond must be(second.toInt)
+    }
+
+    "accept and recognize 304 date format with zone (+)" in {
+      val zone = "+01"
+      val time = year + month + day + hour + minute + second + zone
+
+      val date = DateTimeString(dateWithZoneFormat, time)
+      val parsedDate = date.time
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+      parsedDate.getHour must be(hour.toInt)
+      parsedDate.getMinute must be(minute.toInt)
+      parsedDate.getSecond must be(second.toInt)
+    }
+
+    "accept and recognize 304 date format with zone (-)" in {
+      val zone = "-01"
+      val time = year + month + day + hour + minute + second + zone
+
+      val date = DateTimeString(dateWithZoneFormat, time)
+      val parsedDate = date.time
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+      parsedDate.getHour must be(hour.toInt)
+      parsedDate.getMinute must be(minute.toInt)
+      parsedDate.getSecond must be(second.toInt)
     }
   }
 

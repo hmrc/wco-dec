@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,6 +18,9 @@ package uk.gov.hmrc.wco.dec
 
 import org.scalatest.concurrent.ScalaFutures
 import org.scalatest.{MustMatchers, WordSpec}
+import uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request.InventoryLinkingConsolidationRequest
+import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequest
+import uk.gov.hmrc.wco.dec.inventorylinking.movement.response.InventoryLinkingMovementResponse
 
 import scala.util.Random
 import scala.xml.{Elem, XML}
@@ -71,6 +74,8 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
 
   protected def randomDeclarationFunctionCode: Int = declarationFunctionCodes(randomInt(declarationFunctionCodes.length))
 
+  protected def randomResponseFunctionCode: String = responseFunctionCodes(randomInt(responseFunctionCodes.length))
+
   protected def randomDateTimeFormatCode: String = dateTimeFormatCodes(randomInt(dateTimeFormatCodes.length))
 
   protected def randomDateTimeString: String =
@@ -85,6 +90,8 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
   private lazy val z: Seq[String] = Seq("+", "-")
 
   private lazy val declarationFunctionCodes: Seq[Int] = Seq(9, 13, 14)
+
+  private lazy val responseFunctionCodes: Seq[String] = Seq("01", "02", "03", "05", "06", "07", "08", "09", "10", "11", "16", "17", "18")
 
   private lazy val dateTimeFormatCodes: Seq[String] = Seq("102", "304")
 
@@ -102,6 +109,24 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
 
   def hasExpectedOutput[T](meta: MetaData, expected: T)(extractor: Elem => T): Elem = {
     val xml = XML.loadString(meta.toXml)
+    extractor(xml) must be (expected)
+    xml
+  }
+
+  def hasExpectedOutput[T](movementResponse: InventoryLinkingMovementResponse, expected: T)(extractor: Elem => T): Elem = {
+    val xml = XML.loadString(movementResponse.toXml)
+    extractor(xml) must be (expected)
+    xml
+  }
+
+  def hasExpectedOutput[T](movementRequest: InventoryLinkingMovementRequest, expected: T)(extractor: Elem => T): Elem = {
+    val xml = XML.loadString(movementRequest.toXml)
+    extractor(xml) must be(expected)
+    xml
+  }
+
+  def hasExpectedOutput[T](movementRequest: InventoryLinkingConsolidationRequest, expected: T)(extractor: Elem => T): Elem = {
+    val xml = XML.loadString(movementRequest.toXml)
     extractor(xml) must be(expected)
     xml
   }
@@ -110,6 +135,6 @@ trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
     extractor(MetaData.fromXml(meta.toXml)) must be(expected)
 
   protected def randomValidResponse: Response =
-    Response(randomDeclarationFunctionCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
+    Response(randomResponseFunctionCode, Some("functionalRefId1"), declaration = Some(ResponseDeclaration()))
 
 }

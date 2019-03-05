@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -46,7 +46,7 @@ case class ResponseAmendment(
 
 case class Response(
   @JacksonXmlProperty(localName = "FunctionCode", namespace = NS.res)
-  functionCode: Int, // numeric max 2
+  functionCode: String, // numeric max 2
 
   @JacksonXmlProperty(localName = "FunctionalReferenceID", namespace = NS.res)
   functionalReferenceId: Option[String] = None, // max 35 chars

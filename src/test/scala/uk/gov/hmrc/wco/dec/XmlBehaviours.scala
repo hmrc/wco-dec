@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,9 +35,11 @@ trait XmlBehaviours {
 
   val responseSchemaResources = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_RES_2_DMS.xsd")
 
+  val inventoryLinkingRequestResources = Seq(
+    "/inventory-linking-exports-schemas/request/inventoryLinkingRequestExternal.xsd")
 
-  def validXmlScenario(schemas: Seq[String] = Seq.empty)(test: => Elem): Unit =
-    validateAgainstSchemaResources(test.mkString, schemas)
+  val inventoryLinkingResponseResources = Seq(
+    "/inventory-linking-exports-schemas/notification/inventoryLinkingResponseExternal.xsd")
 
   def validDeclarationXmlScenario()(test: => Elem): Unit = validXmlScenario(importDeclarationSchemaResources)(test)
 
@@ -46,6 +48,12 @@ trait XmlBehaviours {
   def validCancellationDeclarationXml()(test: => Elem): Unit =
     validXmlScenario(importDeclarationCancellationSchemas)(test)
 
+  def validInventoryLinkingRequestXmlScenario()(test: => Elem): Unit =
+    validXmlScenario(inventoryLinkingRequestResources)(test)
+
+  def validInventoryLinkingResponseXmlScenario()(test: => Elem): Unit =
+    validXmlScenario(inventoryLinkingResponseResources)(test)
+
   protected def isValidImportDeclarationXml(xml: String): Boolean =
     try {
       validateAgainstSchemaResources(xml, importDeclarationSchemaResources)
@@ -53,6 +61,9 @@ trait XmlBehaviours {
     } catch {
       case _: SAXException => false
     }
+
+  private def validXmlScenario(schemas: Seq[String] = Seq.empty)(test: => Elem): Unit =
+    validateAgainstSchemaResources(test.mkString, schemas)
 
   private def validateAgainstSchemaResources(xml: String, schemas: Seq[String]): Unit = {
     val schema: Schema = {
@@ -63,5 +74,4 @@ trait XmlBehaviours {
 
     validator.validate(new StreamSource(new StringReader(xml)))
   }
-
 }

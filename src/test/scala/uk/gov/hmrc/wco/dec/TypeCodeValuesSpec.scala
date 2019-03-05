@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 HM Revenue & Customs
+ * Copyright 2019 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +19,10 @@ package uk.gov.hmrc.wco.dec
 class TypeCodeValuesSpec extends WcoSpec {
 
   "load" should {
+
+    "throw given non-existent type code list name" in {
+      an [IllegalArgumentException] must be thrownBy TypeCodeValues.load("this does not, nor could it ever, exist as a type code value list name")
+    }
 
     "parse airport-codes" in {
       TypeCodeValues.load("airport-codes").filter(_.value == "ABR").head.display must be("Aberdeen Regional");
