@@ -819,19 +819,11 @@ case class DateTimeString(@JacksonXmlProperty(localName = "formatCode", isAttrib
 
                           @JacksonXmlText
                           value: String) { // max 35 chars
+  import utilities.DateTimeFormats._
 
   def time(): ZonedDateTime = formatCode match {
-    case "102" =>
-      val pattern = "yyyyMMdd"
-      val formatter = DateTimeFormatter.ofPattern(pattern)
-      val localDate = LocalDate.parse(value, formatter)
-
-      localDate.atStartOfDay(ZoneId.systemDefault())
-    case "304" =>
-      val pattern = "yyyyMMddHHmmssX"
-      val formatter = DateTimeFormatter.ofPattern(pattern)
-
-      ZonedDateTime.parse(value, formatter)
+    case "102" => handle102Format(value)
+    case "304" => handle304Format(value)
   }
 }
 

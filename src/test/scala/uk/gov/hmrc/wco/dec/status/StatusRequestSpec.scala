@@ -97,7 +97,71 @@ class StatusRequestSpec extends WcoSpec {
     "read parties party identification number" in {
       resp.declaration.parties.head.partyIdentification.get.number.get must be("string")
     }
-
   }
 
+  val dateWithooutZoneFormat = "102"
+  val dateWithZoneFormat = "304"
+  val year = "2019"
+  val month = "03"
+  val day = "05"
+  val hour = "11"
+  val minute = "30"
+  val second = "23"
+
+  "Date Time Formatter" should {
+    "accept and recognize 102 date format" in {
+      val time = year + month + day
+      val date = DateTime(Some(dateWithooutZoneFormat), Some(time))
+      val parsedDate = date.timeOpt.get
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+    }
+
+    "accept and recognize 304 date format with Z" in {
+      val zone = "Z"
+      val time = year + month + day + hour + minute + second + zone
+
+      val date = DateTime(Some(dateWithZoneFormat), Some(time))
+      val parsedDate = date.timeOpt.get
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+      parsedDate.getHour must be(hour.toInt)
+      parsedDate.getMinute must be(minute.toInt)
+      parsedDate.getSecond must be(second.toInt)
+    }
+
+    "accept and recognize 304 date format with zone (+)" in {
+      val zone = "+01"
+      val time = year + month + day + hour + minute + second + zone
+
+      val date = DateTime(Some(dateWithZoneFormat), Some(time))
+      val parsedDate = date.timeOpt.get
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+      parsedDate.getHour must be(hour.toInt)
+      parsedDate.getMinute must be(minute.toInt)
+      parsedDate.getSecond must be(second.toInt)
+    }
+
+    "accept and recognize 304 date format with zone (-)" in {
+      val zone = "-01"
+      val time = year + month + day + hour + minute + second + zone
+
+      val date = DateTime(Some(dateWithZoneFormat), Some(time))
+      val parsedDate = date.timeOpt.get
+
+      parsedDate.getYear must be(year.toInt)
+      parsedDate.getMonthValue must be(month.toInt)
+      parsedDate.getDayOfMonth must be(day.toInt)
+      parsedDate.getHour must be(hour.toInt)
+      parsedDate.getMinute must be(minute.toInt)
+      parsedDate.getSecond must be(second.toInt)
+    }
+  }
 }
