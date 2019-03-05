@@ -16,22 +16,24 @@
 
 package uk.gov.hmrc.wco.dec.status
 
+import java.time.ZonedDateTime
+
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.node.{ObjectNode, TextNode}
 import com.fasterxml.jackson.databind.{DeserializationContext, JsonNode}
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
-import uk.gov.hmrc.wco.dec.StdAttributeAndTextDeserializer
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
+import uk.gov.hmrc.wco.dec.{StdAttributeAndTextDeserializer, utilities}
 
 @JacksonXmlRootElement(namespace = "", localName = "declarationManagementInformationResponse")
 case class DeclarationManagementInformationResponse(declaration: Declaration = Declaration())
 
 object DeclarationManagementInformationResponse extends JacksonMapper {
 
-  def fromXml(xml: String): DeclarationManagementInformationResponse = _xml.readValue(xml, classOf[DeclarationManagementInformationResponse])
-
+  def fromXml(xml: String): DeclarationManagementInformationResponse =
+    _xml.readValue(xml, classOf[DeclarationManagementInformationResponse])
 }
 
 case class Declaration(versionNumber: Option[Int] = None,
@@ -43,13 +45,20 @@ case class Declaration(versionNumber: Option[Int] = None,
                        acceptanceDate: Option[DateTime] = None,
                        parties: Seq[Parties] = Seq.empty)
 
-// TODO implement function in DateTime to retrieve value as actual Date when we understand "formatCode" better
 @JsonDeserialize(using = classOf[DateTimeDeserializer])
 case class DateTime(@JacksonXmlProperty(isAttribute = true)
                     formatCode: Option[String] = None,
 
                     @JacksonXmlText
-                    value: Option[String] = None)
+                    value: Option[String] = None) {
+  import utilities.DateTimeFormats._
+
+  def timeOpt(): Option[ZonedDateTime] = (formatCode, value) match {
+    case (Some(code), Some(timeValue)) if code == "102" => Some(handle102Format(timeValue))
+    case (Some(code), Some(timeValue)) if code == "304" => Some(handle304Format(timeValue))
+    case _ => None
+  }
+}
 
 class DateTimeDeserializer extends StdAttributeAndTextDeserializer[DateTime]("formatCode", classOf[DateTime]) {
 
@@ -85,8 +94,8 @@ case class CodeListElementField(@JacksonXmlProperty(isAttribute = true)
 
 class CodeListElementFieldDeserializer extends ExtendedAttributeAndTextDeserializer[CodeListElementField]("type", "responsibleAgent", classOf[CodeListElementField]) {
 
-  override def newInstanceFromTuple(values: (Option[String], Option[String], Option[String])): CodeListElementField = CodeListElementField(values._1, values._2, values._3)
-
+  override def newInstanceFromTuple(values: (Option[String], Option[String], Option[String])): CodeListElementField =
+    CodeListElementField(values._1, values._2, values._3)
 }
 
 case class Parties(partyIdentification: Option[PartyIdentification] = None)
@@ -95,18 +104,22 @@ case class PartyIdentification(number: Option[String] = None)
 
 // yes, I know this is crude and clumsy duplication but it will have to suffice for now
 // TODO create a more elegant solution which refactors StdAttributeAndTextDeserializer to handle more than 1 attribute
-abstract class ExtendedAttributeAndTextDeserializer[T](attributeOne: String, attributeTwo: String, t: Class[T]) extends StdDeserializer[T](t) {
+abstract class ExtendedAttributeAndTextDeserializer[T](attributeOne: String, attributeTwo: String, t: Class[T])
+  extends StdDeserializer[T](t) {
 
   def newInstanceFromTuple(values: (Option[String], Option[String], Option[String])): T
 
   override final def deserialize(p: JsonParser, ctx: DeserializationContext): T = {
     val n: JsonNode = p.getCodec.readTree(p)
     n match {
-      case o: ObjectNode => newInstanceFromTuple((nonEmptyOrNone(o.get(attributeOne)), nonEmptyOrNone(o.get(attributeTwo)), nonEmptyOrNone(o.get(""))))
+      case o: ObjectNode =>
+        newInstanceFromTuple(
+          (nonEmptyOrNone(o.get(attributeOne)), nonEmptyOrNone(o.get(attributeTwo)), nonEmptyOrNone(o.get("")))
+        )
       case t: TextNode => newInstanceFromTuple((None, None, nonEmptyOrNone(t)))
     }
   }
 
-  private def nonEmptyOrNone(n: JsonNode): Option[String] = if (n == null || n.asText() == null || n.asText().trim.isEmpty) None else Some(n.asText())
-
+  private def nonEmptyOrNone(n: JsonNode): Option[String] =
+    if (n == null || n.asText() == null || n.asText().trim.isEmpty) None else Some(n.asText())
 }

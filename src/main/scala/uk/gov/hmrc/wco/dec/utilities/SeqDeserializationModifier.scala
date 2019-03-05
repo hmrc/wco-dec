@@ -34,9 +34,13 @@ object SeqDeserializationModifier extends BeanDeserializerModifier {
       deserializer.deserialize(p, ctx).asInstanceOf[Seq[_]]
 
     override def createContextual(ctx: DeserializationContext, prop: BeanProperty): JsonDeserializer[_] =
-      modifyCollectionLikeDeserializer(config, `type`, beanDesc, deserializer.asInstanceOf[ContextualDeserializer].createContextual(ctx, prop))
+      modifyCollectionLikeDeserializer(
+        config,
+        `type`,
+        beanDesc,
+        deserializer.asInstanceOf[ContextualDeserializer].createContextual(ctx, prop)
+      )
 
     override def getNullValue(ctx: DeserializationContext): Seq[_] = Seq.empty
   }
-
 }

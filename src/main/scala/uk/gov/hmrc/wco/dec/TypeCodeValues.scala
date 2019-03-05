@@ -35,6 +35,4 @@ object TypeCodeValues {
 
 }
 
-case class TypeCodeValue(value: String,
-                         display: String,
-                         additionalDisplay: Option[String])
+case class TypeCodeValue(value: String, display: String, additionalDisplay: Option[String])
