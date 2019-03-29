@@ -17,8 +17,7 @@
 package uk.gov.hmrc.wco.dec
 
 import java.io.StringWriter
-import java.time.format.DateTimeFormatter
-import java.time.{LocalDate, ZoneId, ZonedDateTime}
+import java.time.ZonedDateTime
 import java.util.Properties
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
@@ -414,10 +413,10 @@ case class GoodsLocation(@JacksonXmlProperty(localName = "Name", namespace = NS.
                          name: Option[String] = None, // max 256 chars
 
                          @JacksonXmlProperty(localName = "ID", namespace = NS.dec)
-                         id: String, // max 17 chars
+                         id: Option[String] = None, // max 17 chars
 
                          @JacksonXmlProperty(localName = "TypeCode", namespace = NS.dec)
-                         typeCode: Option[String], // max 3 chars
+                         typeCode: Option[String] = None, // max 3 chars
 
                          @JacksonXmlProperty(localName = "Address", namespace = NS.dec)
                          address: Option[GoodsLocationAddress] = None)
