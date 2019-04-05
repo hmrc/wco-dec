@@ -630,7 +630,7 @@ case class Commodity(@JacksonXmlProperty(localName = "Description", namespace = 
                      @JacksonXmlProperty(localName = "Classification", namespace = NS.dec)
                      classifications: Seq[Classification] = Seq.empty, // max 1 with ID of CUS code type; required 1 with ID of nomenclature/commodity code type; max 99 with ID of TARIC code type; max 99 when ID of additional TARIC code type; max 99 when ID of national additional code type;
 
-                     @JacksonXmlProperty(localName = "DangerousGoods")
+                     @JacksonXmlProperty(localName = "DangerousGoods", namespace = NS.dec)
                      dangerousGoods: Seq[DangerousGoods] = Seq.empty,
 
                      @JacksonXmlProperty(localName = "DutyTaxFee", namespace = NS.dec)
