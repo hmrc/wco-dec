@@ -14,12 +14,12 @@ cd ..
 mkdir wco
 
 
-xjc -d wco ./customs-declarations/public/api/conf/1.0/schemas/wco/declaration/DocumentMetaData_2_DMS.xsd
-xjc -d wco ./customs-declarations/public/api/conf/1.0/schemas/wco/declaration/WCO_DEC_2_DMS.xsd
+xjc -d wco ./customs-declarations/public/api/conf/1.0/schemas/wco/declaration/DocumentMetaData_2_DMS.xsd -no-header
+xjc -d wco ./customs-declarations/public/api/conf/1.0/schemas/wco/declaration/WCO_DEC_2_DMS.xsd -no-header
 
 # move generated file to source folder
 
-mv  wco/* ../src/main/java/
+cp -R  wco/* ../src/main/java/
 
 
 rm -rf customs-declarations/
