@@ -1,0 +1,25 @@
+
+
+#######################################
+#####  WCO-DEC Schema Generator   #####
+#######################################
+
+DESCRIPTION:
+    This is a script to auto-generate the WCO-DEC schema based on an XSD file supplied by DMS.
+    This will generate a Java model representing the XSD schema.
+    CDS Exports/Imports internal model will then be mapped to this auto-generated Java model.
+
+OPTIONS:
+
+    -h | --help --usage
+       prints the usage of the script
+
+    -t | --tag
+       Clones github.com/hmrc/customs-declarations based on the git tag supplied
+
+
+COMMANDS:
+    ./generate.sh                        # generate new schema based on the latest customs-declarations
+    ./generate.sh --tag v0.245.0         # generate new schema based on a customs-declarations git tag
+    ./generate.sh --help                 # display usage
+

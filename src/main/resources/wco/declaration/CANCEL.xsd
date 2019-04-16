@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:DEC-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:ds="urn:wco:datamodel:WCO:Declaration_DS:DMS:2" targetNamespace="urn:wco:datamodel:WCO:DEC-DMS:2"
+	elementFormDefault="qualified" version="2.3">
+	<xs:import namespace="urn:wco:datamodel:WCO:Declaration_DS:DMS:2"
+		schemaLocation="WCO_DS/WCO_DEC_DS_2_DMS.xsd" />
+
+	<xs:simpleType name="CancelTypeCode">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="INV"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="FunctionCode">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="13"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="Declaration" type="Declaration">
+		<xs:annotation>
+			<xs:documentation xml:lang="EN">
+				<WCOID>42A</WCOID>
+				<WCOName>Declaration</WCOName>
+				<WCODescription>THIS IS FOR CANCELLATION</WCODescription>
+			</xs:documentation>
+			<xs:documentation>
+				<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+				<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+				<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+				<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+				<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+				<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="Declaration">
+		<xs:sequence>
+			<xs:element name="FunctionCode" type="FunctionCode" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">
+						<WCOCodeRemarks>EDIFACT codes (1225)</WCOCodeRemarks>
+						<WCOFormat>n..2</WCOFormat>
+					</xs:documentation>
+					<xs:documentation>
+						<TDEDUID>1225</TDEDUID>
+						<TDEDName>Document.Function.Code</TDEDName>
+					</xs:documentation>
+					<xs:documentation xml:lang="EN">
+						<WCOID>017</WCOID>
+						<WCOName>Message function, coded</WCOName>
+						<WCODescription>Code indicating the function of a document
+						</WCODescription>
+					</xs:documentation>
+					<xs:documentation>
+						<DictionaryEntryName>Declaration. Function. Code
+						</DictionaryEntryName>
+						<NamedComplexType>DeclarationFunctionCodeType</NamedComplexType>
+						<XMLTag>FunctionCode</XMLTag>
+						<UniquePositionID>341</UniquePositionID>
+						<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+						<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+						<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+						<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+						<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+						<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+						<WCOUsageUPU>X</WCOUsageUPU>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FunctionalReferenceID" type="ds:DeclarationFunctionalReferenceIDType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">
+						<WCOFormat>an..35</WCOFormat>
+					</xs:documentation>
+					<xs:documentation>
+						<TDEDUID>1154</TDEDUID>
+						<TDEDName>Reference. Identifier</TDEDName>
+					</xs:documentation>
+					<xs:documentation xml:lang="EN">
+						<WCOID>D026</WCOID>
+						<WCOName>Functional reference number</WCOName>
+						<WCODescription>Reference number identifying a specific
+							information exchange</WCODescription>
+					</xs:documentation>
+					<xs:documentation>
+						<DictionaryEntryName>Declaration. Functional Reference. Identifier
+						</DictionaryEntryName>
+						<NamedComplexType>DeclarationFunctionalReferenceIDType
+						</NamedComplexType>
+						<XMLTag>FunctionalReferenceID</XMLTag>
+						<UniquePositionID>338</UniquePositionID>
+						<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+						<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+						<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+						<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+						<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+						<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ID" type="ds:DeclarationIdentificationIDType" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">
+						<WCOFormat>an..70</WCOFormat>
+					</xs:documentation>
+					<xs:documentation>
+						<TDEDUID>1004</TDEDUID>
+						<TDEDName>Document. Identifier</TDEDName>
+					</xs:documentation>
+					<xs:documentation xml:lang="EN">
+						<WCOID>D014</WCOID>
+						<WCOName>Document reference number</WCOName>
+						<WCODescription>Reference number identifying a specific document
+						</WCODescription>
+					</xs:documentation>
+					<xs:documentation>
+						<DictionaryEntryName>Declaration. Identification. Identifier
+						</DictionaryEntryName>
+						<NamedComplexType>DeclarationIdentificationIDType
+						</NamedComplexType>
+						<XMLTag>ID</XMLTag>
+						<UniquePositionID>336</UniquePositionID>
+						<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+						<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+						<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+						<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+						<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+						<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+						<WCOUsageUPU>X</WCOUsageUPU>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TypeCode" type="CancelTypeCode" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">
+						<WCOCodeRemarks>EDIFACT codes (1001) or User codes
+						</WCOCodeRemarks>
+						<WCOFormat>an..3</WCOFormat>
+					</xs:documentation>
+					<xs:documentation>
+						<TDEDUID>1001</TDEDUID>
+						<TDEDName>Document. Type.Code</TDEDName>
+					</xs:documentation>
+					<xs:documentation xml:lang="EN">
+						<WCOID>D013</WCOID>
+						<WCOName>Document name, coded</WCOName>
+						<WCODescription>Code specifying the name of a document
+						</WCODescription>
+					</xs:documentation>
+					<xs:documentation>
+						<DictionaryEntryName>Declaration. Type. Code</DictionaryEntryName>
+						<NamedComplexType>DeclarationTypeCodeType</NamedComplexType>
+						<XMLTag>TypeCode</XMLTag>
+						<UniquePositionID>337</UniquePositionID>
+						<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+						<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+						<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+						<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+						<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+						<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Submitter" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">
+						<WCOID>17B</WCOID>
+						<WCOName>Submitter</WCOName>
+						<WCODescription>Details related to the submitter of written or
+							electronic documentation</WCODescription>
+					</xs:documentation>
+					<xs:documentation>
+						<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+						<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+						<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+						<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+						<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+						<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ID" type="ds:SubmitterIdentificationIDType" minOccurs="1">
+							<xs:annotation>
+								<xs:documentation xml:lang="EN">
+									<WCOFormat>an..17</WCOFormat>
+								</xs:documentation>
+								<xs:documentation>
+									<TDEDUID>3039</TDEDUID>
+									<TDEDName>Party. Identifier</TDEDName>
+								</xs:documentation>
+								<xs:documentation xml:lang="EN">
+									<WCOID>R059</WCOID>
+									<WCOName>Submitter, coded</WCOName>
+									<WCODescription>The identifier of the party who presents a
+										document or data for the approval, consideration, or decision
+										of another</WCODescription>
+									<WCOCodeRemarks>International codes (e.g. DUNS, EAN) or user
+										codes</WCOCodeRemarks>
+								</xs:documentation>
+								<xs:documentation>
+									<DictionaryEntryName>Submitter. Identification. Identifier
+									</DictionaryEntryName>
+									<NamedComplexType>SubmitterIdentificationIDType
+									</NamedComplexType>
+									<XMLTag>ID</XMLTag>
+									<UniquePositionID>55</UniquePositionID>
+									<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+									<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+									<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+									<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+									<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+									<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AdditionalInformation" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">
+						<WCOID>03A</WCOID>
+						<WCOName>AdditionalInformation</WCOName>
+						<WCODescription>Special request to government from declarant to
+							take or not to take action</WCODescription>
+					</xs:documentation>
+					<xs:documentation>
+						<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+						<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+						<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+						<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+						<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+						<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="StatementCode"
+									type="ds:AdditionalInformationStatementCodeType" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation xml:lang="EN">
+									<WCOCodeRemarks>User codes</WCOCodeRemarks>
+									<WCOID>226</WCOID>
+									<WCOName>Additional statement code</WCOName>
+									<WCODescription>Coded form of an additional statement
+									</WCODescription>
+									<WCOFormat>an..17</WCOFormat>
+								</xs:documentation>
+								<xs:documentation>
+									<TDEDUID>4441</TDEDUID>
+									<TDEDName>FreeText.Code</TDEDName>
+									<DictionaryEntryName>Additional Information. Statement. Code
+									</DictionaryEntryName>
+									<NamedComplexType>AdditionalInformationStatementCodeType
+									</NamedComplexType>
+									<XMLTag>StatementCode</XMLTag>
+									<UniquePositionID>421</UniquePositionID>
+									<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+									<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+									<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+									<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+									<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+									<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StatementDescription"
+							type="ds:AdditionalInformationStatementDescriptionTextType"
+							minOccurs="1">
+							<xs:annotation>
+								<xs:documentation xml:lang="EN">
+									<WCOID>225</WCOID>
+									<WCOName>Additional statement text</WCOName>
+									<WCODescription>Description of an additional statement
+									</WCODescription>
+									<WCOFormat>an..512</WCOFormat>
+								</xs:documentation>
+								<xs:documentation>
+									<TDEDUID>4440</TDEDUID>
+									<TDEDName>FreeText.Text</TDEDName>
+									<DictionaryEntryName>Additional Information. Statement
+										Description. Text</DictionaryEntryName>
+									<NamedComplexType>AdditionalInformationStatementDescriptionTextType
+									</NamedComplexType>
+									<XMLTag>StatementDescription</XMLTag>
+									<UniquePositionID>422</UniquePositionID>
+									<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+									<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+									<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+									<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+									<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+									<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="StatementTypeCode"
+									type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation xml:lang="EN">
+									<WCOCodeRemarks>EDIFACT codes (4451)</WCOCodeRemarks>
+									<WCOID>369</WCOID>
+									<WCOName>Additional statement type</WCOName>
+									<WCODescription>Code qualifying the subject of the additional
+										statement</WCODescription>
+									<WCOFormat>an..3</WCOFormat>
+								</xs:documentation>
+								<xs:documentation>
+									<TDEDUID>4451</TDEDUID>
+									<TDEDName>Free Text. Subject.Code</TDEDName>
+									<DictionaryEntryName>Additional Information. Statement Type.
+										Code</DictionaryEntryName>
+									<NamedComplexType>AdditionalInformationStatementTypeCodeType
+									</NamedComplexType>
+									<XMLTag>StatementTypeCode</XMLTag>
+									<UniquePositionID>423</UniquePositionID>
+									<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+									<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+									<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+									<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+									<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+									<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Pointer" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation xml:lang="EN">
+									<WCOID>97A</WCOID>
+									<WCOName>Pointer</WCOName>
+									<WCODescription>Details to refer to a functional attribute
+										within a declaration</WCODescription>
+								</xs:documentation>
+								<xs:documentation>
+									<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+									<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+									<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+									<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+									<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+									<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+								</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="SequenceNumeric" type="ds:PointerSequenceNumericType"
+												minOccurs="0">
+										<xs:annotation>
+											<xs:documentation xml:lang="EN">
+												<WCOFormat>n..5</WCOFormat>
+											</xs:documentation>
+											<xs:documentation>
+												<TDEDUID>1050</TDEDUID>
+												<TDEDName>Sequence. Position.Identifier</TDEDName>
+												<DictionaryEntryName>Pointer. Sequence. Numeric
+												</DictionaryEntryName>
+												<NamedComplexType>PointerSequenceNumericType
+												</NamedComplexType>
+												<XMLTag>SequenceNumeric</XMLTag>
+											</xs:documentation>
+											<xs:documentation xml:lang="EN">
+												<WCOID>006</WCOID>
+											</xs:documentation>
+											<xs:documentation>
+												<UniquePositionID>424</UniquePositionID>
+												<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+												<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+												<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+												<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+												<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+												<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+											</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="DocumentSectionCode" type="ds:PointerDocumentSectionCodeType"
+												minOccurs="0">
+										<xs:annotation>
+											<xs:documentation xml:lang="EN">
+												<WCOCodeRemarks>EDIFACT codes (1049)</WCOCodeRemarks>
+												<WCOID>375</WCOID>
+												<WCOName>Document/message section, coded</WCOName>
+												<WCODescription>Code specifying a section of a
+													document/message</WCODescription>
+												<WCOFormat>an..3</WCOFormat>
+											</xs:documentation>
+											<xs:documentation>
+												<TDEDUID>1049</TDEDUID>
+												<TDEDName>Document. Section.Code</TDEDName>
+												<DictionaryEntryName>Pointer. Document Section. Code
+												</DictionaryEntryName>
+												<NamedComplexType>PointerDocumentSectionCodeType
+												</NamedComplexType>
+												<XMLTag>DocumentSectionCode</XMLTag>
+												<UniquePositionID>429</UniquePositionID>
+												<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+												<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+												<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+												<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+												<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+												<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+											</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Amendment" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation xml:lang="EN">
+						<WCOID>06A</WCOID>
+						<WCOName>Amendment</WCOName>
+						<WCODescription>Details for updating declaration data. Can cover
+							the whole WCO Data Model</WCODescription>
+					</xs:documentation>
+					<xs:documentation>
+						<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+						<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+						<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+						<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+						<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+						<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ChangeReasonCode" type="ds:AmendmentChangeReasonCodeType">
+							<xs:annotation>
+								<xs:documentation xml:lang="EN">
+									<WCOCodeRemarks>User codes</WCOCodeRemarks>
+									<WCOID>099</WCOID>
+									<WCOName>Amendment code</WCOName>
+									<WCODescription>Code specifying the reason for a change
+									</WCODescription>
+									<WCOFormat>an..3</WCOFormat>
+								</xs:documentation>
+								<xs:documentation>
+									<TDEDUID>4295</TDEDUID>
+									<TDEDName>Change.Reason.Code</TDEDName>
+									<DictionaryEntryName>Amendment. Change Reason. Code
+									</DictionaryEntryName>
+									<NamedComplexType>AmendmentChangeReasonCodeType
+									</NamedComplexType>
+									<XMLTag>ChangeReasonCode</XMLTag>
+									<UniquePositionID>427</UniquePositionID>
+									<WCOUsageDeclarationIM>X</WCOUsageDeclarationIM>
+									<WCOUsageDeclarationEX>X</WCOUsageDeclarationEX>
+									<WCOUsageDeclarationCRI>X</WCOUsageDeclarationCRI>
+									<WCOUsageDeclarationCRE>X</WCOUsageDeclarationCRE>
+									<WCOUsageDeclarationCONV>X</WCOUsageDeclarationCONV>
+									<WCOUsageDeclarationTRT>X</WCOUsageDeclarationTRT>
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

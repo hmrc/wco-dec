@@ -30,6 +30,8 @@ import com.fasterxml.jackson.dataformat.javaprop.JavaPropsParser
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
 import com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
+import wco.datamodel.wco.dec_dms._2.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.{Buyer, Consignee}
+import wco.datamodel.wco.declaration_ds.dms._2._
 
 import scala.collection.JavaConverters._
 
@@ -784,6 +786,87 @@ case class Address(@JacksonXmlProperty(localName = "CityName", namespace = NS.de
 
                    @JacksonXmlProperty(localName = "PostcodeID", namespace = NS.dec)
                    postcodeId: Option[String] = None) // max 9 chars
+{
+  def as[T](implicit f: Address => T): T = f(this)
+}
+
+
+
+object Address {
+  implicit def mapBuyersAddress = (address: Address) => {
+    val buyersAddress = new Buyer.Address()
+
+    val city = new AddressCityNameTextType()
+    city.setValue(address.cityName.orNull)
+    buyersAddress.setCityName(city)
+
+    val country = new AddressCountryCodeType()
+    country.setValue(address.countryCode.orNull)
+    buyersAddress.setCountryCode(country)
+
+    val countrySubdivisionCode = new AddressCountrySubDivisionCodeType()
+    countrySubdivisionCode.setValue(address.countrySubDivisionCode.orNull)
+    buyersAddress.setCountrySubDivisionCode(countrySubdivisionCode)
+
+    val countrySubdivisionName = new AddressCountrySubDivisionNameTextType()
+    countrySubdivisionName.setValue(address.countrySubDivisionName.orNull)
+    buyersAddress.setCountrySubDivisionName(countrySubdivisionName)
+
+    val addressLine = new AddressLineTextType()
+    addressLine.setValue(address.line.orNull)
+    buyersAddress.setLine(addressLine)
+
+    val addressPostcode = new AddressPostcodeIDType()
+    addressPostcode.setValue(address.postcodeId.orNull)
+    buyersAddress.setPostcodeID(addressPostcode)
+
+    buyersAddress
+  }
+
+  implicit def mapConsigneeAddress = (address: Address) => {
+    val consigneeAddress = new Consignee.Address()
+
+    val city = new AddressCityNameTextType()
+    city.setValue(address.cityName.orNull)
+    consigneeAddress.setCityName(city)
+
+    val country = new AddressCountryCodeType()
+    country.setValue(address.countryCode.orNull)
+    consigneeAddress.setCountryCode(country)
+
+    val countrySubdivisionCode = new AddressCountrySubDivisionCodeType()
+    countrySubdivisionCode.setValue(address.countrySubDivisionCode.orNull)
+    consigneeAddress.setCountrySubDivisionCode(countrySubdivisionCode)
+
+    val countrySubdivisionName = new AddressCountrySubDivisionNameTextType()
+    countrySubdivisionName.setValue(address.countrySubDivisionName.orNull)
+    consigneeAddress.setCountrySubDivisionName(countrySubdivisionName)
+
+    val addressLine = new AddressLineTextType()
+    addressLine.setValue(address.line.orNull)
+    consigneeAddress.setLine(addressLine)
+
+    val addressPostcode = new AddressPostcodeIDType()
+    addressPostcode.setValue(address.postcodeId.orNull)
+    consigneeAddress.setPostcodeID(addressPostcode)
+
+    consigneeAddress
+  }
+
+  def test: Unit = {
+    val address = Address(
+      Some("Leeds"),
+      Some("GB"),
+      Some("GB"),
+      Some("UK"),
+      Some("GB"),
+      Some("LS1")
+    )
+    val consigneeAddress = address.as[Consignee.Address]
+    val buyersAddress = address.as[Buyer.Address]
+  }
+}
+
 
 @JsonDeserialize(using = classOf[AmountDeserializer])
 case class Amount(@JacksonXmlProperty(localName = "currencyID", isAttribute = true)
