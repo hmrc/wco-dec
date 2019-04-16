@@ -1166,6 +1166,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CarrierNameTextType }
+     * 
+     */
+    public CarrierNameTextType createCarrierNameTextType() {
+        return new CarrierNameTextType();
+    }
+
+    /**
      * Create an instance of {@link GovernmentProcedurePreviousCodeType }
      * 
      */
@@ -1315,6 +1323,14 @@ public class ObjectFactory {
      */
     public ObligationGuaranteeIdentificationIDType createObligationGuaranteeIdentificationIDType() {
         return new ObligationGuaranteeIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link CarrierIdentificationIDType }
+     * 
+     */
+    public CarrierIdentificationIDType createCarrierIdentificationIDType() {
+        return new CarrierIdentificationIDType();
     }
 
     /**

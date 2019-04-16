@@ -47,12 +47,12 @@ import wco.datamodel.wco.declaration_ds.dms._2.BorderTransportMeansRegistrationN
 import wco.datamodel.wco.declaration_ds.dms._2.BorderTransportMeansTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.BuyerIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.BuyerNameTextType;
+import wco.datamodel.wco.declaration_ds.dms._2.CarrierIdentificationIDType;
+import wco.datamodel.wco.declaration_ds.dms._2.CarrierNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.ChargeDeductionChargesTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ChargeDeductionOtherChargeDeductionAmountType;
-import wco.datamodel.wco.declaration_ds.dms._2.ClassificationBindingTariffReferenceIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ClassificationIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ClassificationIdentificationTypeCodeType;
-import wco.datamodel.wco.declaration_ds.dms._2.ClassificationNameCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.CommodityDescriptionTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.CommunicationIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.CommunicationTypeCodeType;
@@ -373,6 +373,147 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *             &lt;/complexContent>
  *           &lt;/complexType>
  *         &lt;/element>
+ *         &lt;element name="Consignment" minOccurs="0">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="Carrier" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                           &lt;sequence>
+ *                             &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CarrierNameTextType" minOccurs="0"/>
+ *                             &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CarrierIdentificationIDType" minOccurs="0"/>
+ *                             &lt;element name="Address" minOccurs="0">
+ *                               &lt;complexType>
+ *                                 &lt;complexContent>
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                                     &lt;sequence>
+ *                                       &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+ *                                       &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+ *                                       &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+ *                                       &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+ *                                       &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+ *                                       &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+ *                                     &lt;/sequence>
+ *                                   &lt;/restriction>
+ *                                 &lt;/complexContent>
+ *                               &lt;/complexType>
+ *                             &lt;/element>
+ *                           &lt;/sequence>
+ *                         &lt;/restriction>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                   &lt;element name="ConsignmentItem" maxOccurs="999" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                           &lt;sequence>
+ *                             &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignmentItemSequenceNumericType"/>
+ *                             &lt;element name="Consignor" minOccurs="0">
+ *                               &lt;complexType>
+ *                                 &lt;complexContent>
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                                     &lt;sequence>
+ *                                       &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorNameTextType" minOccurs="0"/>
+ *                                       &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorIdentificationIDType" minOccurs="0"/>
+ *                                       &lt;element name="Address" minOccurs="0">
+ *                                         &lt;complexType>
+ *                                           &lt;complexContent>
+ *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                                               &lt;sequence>
+ *                                                 &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressTypeCodeType" minOccurs="0"/>
+ *                                                 &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+ *                                                 &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+ *                                                 &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+ *                                                 &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+ *                                                 &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+ *                                                 &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+ *                                               &lt;/sequence>
+ *                                             &lt;/restriction>
+ *                                           &lt;/complexContent>
+ *                                         &lt;/complexType>
+ *                                       &lt;/element>
+ *                                     &lt;/sequence>
+ *                                   &lt;/restriction>
+ *                                 &lt;/complexContent>
+ *                               &lt;/complexType>
+ *                             &lt;/element>
+ *                             &lt;element name="Freight" minOccurs="0">
+ *                               &lt;complexType>
+ *                                 &lt;complexContent>
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                                     &lt;sequence>
+ *                                       &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
+ *                                     &lt;/sequence>
+ *                                   &lt;/restriction>
+ *                                 &lt;/complexContent>
+ *                               &lt;/complexType>
+ *                             &lt;/element>
+ *                           &lt;/sequence>
+ *                         &lt;/restriction>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                   &lt;element name="Consignor" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                           &lt;sequence>
+ *                             &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorNameTextType" minOccurs="0"/>
+ *                             &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorIdentificationIDType" minOccurs="0"/>
+ *                             &lt;element name="Address" minOccurs="0">
+ *                               &lt;complexType>
+ *                                 &lt;complexContent>
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                                     &lt;sequence>
+ *                                       &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressTypeCodeType" minOccurs="0"/>
+ *                                       &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+ *                                       &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+ *                                       &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+ *                                       &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+ *                                       &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+ *                                       &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+ *                                     &lt;/sequence>
+ *                                   &lt;/restriction>
+ *                                 &lt;/complexContent>
+ *                               &lt;/complexType>
+ *                             &lt;/element>
+ *                           &lt;/sequence>
+ *                         &lt;/restriction>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                   &lt;element name="Freight" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                           &lt;sequence>
+ *                             &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/restriction>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                   &lt;element name="Itinerary" maxOccurs="unbounded" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                           &lt;sequence>
+ *                             &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItinerarySequenceNumericType"/>
+ *                             &lt;element name="RoutingCountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItineraryRoutingCountryCodeType" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/restriction>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
  *         &lt;element name="CurrencyExchange" maxOccurs="unbounded" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
@@ -632,17 +773,6 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
  *                             &lt;/element>
- *                             &lt;element name="Freight" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
  *                             &lt;element name="GoodsLocation" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
@@ -666,18 +796,6 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                           &lt;/complexContent>
  *                                         &lt;/complexType>
  *                                       &lt;/element>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="Itinerary" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItinerarySequenceNumericType"/>
- *                                       &lt;element name="RoutingCountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItineraryRoutingCountryCodeType" minOccurs="0"/>
  *                                     &lt;/sequence>
  *                                   &lt;/restriction>
  *                                 &lt;/complexContent>
@@ -810,7 +928,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                       &lt;/complexContent>
  *                     &lt;/complexType>
  *                   &lt;/element>
- *                   &lt;element name="GovernmentAgencyGoodsItem" maxOccurs="unbounded" minOccurs="0">
+ *                   &lt;element name="GovernmentAgencyGoodsItem" maxOccurs="999" minOccurs="0">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -947,9 +1065,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                                               &lt;sequence>
  *                                                 &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationIDType" minOccurs="0"/>
- *                                                 &lt;element name="NameCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationNameCodeType" minOccurs="0"/>
  *                                                 &lt;element name="IdentificationTypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationTypeCodeType" minOccurs="0"/>
- *                                                 &lt;element name="BindingTariffReferenceID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationBindingTariffReferenceIDType" minOccurs="0"/>
  *                                               &lt;/sequence>
  *                                             &lt;/restriction>
  *                                           &lt;/complexContent>
@@ -1652,6 +1768,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
     "amendment",
     "authorisationHolder",
     "borderTransportMeans",
+    "consignment",
     "currencyExchange",
     "declarant",
     "exitOffice",
@@ -1707,6 +1824,8 @@ public class Declaration {
     protected List<Declaration.AuthorisationHolder> authorisationHolder;
     @XmlElement(name = "BorderTransportMeans")
     protected Declaration.BorderTransportMeans borderTransportMeans;
+    @XmlElement(name = "Consignment")
+    protected Declaration.Consignment consignment;
     @XmlElement(name = "CurrencyExchange")
     protected List<Declaration.CurrencyExchange> currencyExchange;
     @XmlElement(name = "Declarant")
@@ -2270,6 +2389,30 @@ public class Declaration {
      */
     public void setBorderTransportMeans(Declaration.BorderTransportMeans value) {
         this.borderTransportMeans = value;
+    }
+
+    /**
+     * Gets the value of the consignment property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Declaration.Consignment }
+     *     
+     */
+    public Declaration.Consignment getConsignment() {
+        return consignment;
+    }
+
+    /**
+     * Sets the value of the consignment property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Declaration.Consignment }
+     *     
+     */
+    public void setConsignment(Declaration.Consignment value) {
+        this.consignment = value;
     }
 
     /**
@@ -3849,6 +3992,1672 @@ public class Declaration {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
+     *         &lt;element name="Carrier" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                 &lt;sequence>
+     *                   &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CarrierNameTextType" minOccurs="0"/>
+     *                   &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CarrierIdentificationIDType" minOccurs="0"/>
+     *                   &lt;element name="Address" minOccurs="0">
+     *                     &lt;complexType>
+     *                       &lt;complexContent>
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                           &lt;sequence>
+     *                             &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+     *                             &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+     *                             &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+     *                             &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+     *                             &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+     *                             &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+     *                           &lt;/sequence>
+     *                         &lt;/restriction>
+     *                       &lt;/complexContent>
+     *                     &lt;/complexType>
+     *                   &lt;/element>
+     *                 &lt;/sequence>
+     *               &lt;/restriction>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *         &lt;element name="ConsignmentItem" maxOccurs="999" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                 &lt;sequence>
+     *                   &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignmentItemSequenceNumericType"/>
+     *                   &lt;element name="Consignor" minOccurs="0">
+     *                     &lt;complexType>
+     *                       &lt;complexContent>
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                           &lt;sequence>
+     *                             &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorNameTextType" minOccurs="0"/>
+     *                             &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorIdentificationIDType" minOccurs="0"/>
+     *                             &lt;element name="Address" minOccurs="0">
+     *                               &lt;complexType>
+     *                                 &lt;complexContent>
+     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                                     &lt;sequence>
+     *                                       &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressTypeCodeType" minOccurs="0"/>
+     *                                       &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+     *                                       &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+     *                                       &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+     *                                       &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+     *                                       &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+     *                                       &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+     *                                     &lt;/sequence>
+     *                                   &lt;/restriction>
+     *                                 &lt;/complexContent>
+     *                               &lt;/complexType>
+     *                             &lt;/element>
+     *                           &lt;/sequence>
+     *                         &lt;/restriction>
+     *                       &lt;/complexContent>
+     *                     &lt;/complexType>
+     *                   &lt;/element>
+     *                   &lt;element name="Freight" minOccurs="0">
+     *                     &lt;complexType>
+     *                       &lt;complexContent>
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                           &lt;sequence>
+     *                             &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
+     *                           &lt;/sequence>
+     *                         &lt;/restriction>
+     *                       &lt;/complexContent>
+     *                     &lt;/complexType>
+     *                   &lt;/element>
+     *                 &lt;/sequence>
+     *               &lt;/restriction>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *         &lt;element name="Consignor" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                 &lt;sequence>
+     *                   &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorNameTextType" minOccurs="0"/>
+     *                   &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorIdentificationIDType" minOccurs="0"/>
+     *                   &lt;element name="Address" minOccurs="0">
+     *                     &lt;complexType>
+     *                       &lt;complexContent>
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                           &lt;sequence>
+     *                             &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressTypeCodeType" minOccurs="0"/>
+     *                             &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+     *                             &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+     *                             &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+     *                             &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+     *                             &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+     *                             &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+     *                           &lt;/sequence>
+     *                         &lt;/restriction>
+     *                       &lt;/complexContent>
+     *                     &lt;/complexType>
+     *                   &lt;/element>
+     *                 &lt;/sequence>
+     *               &lt;/restriction>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *         &lt;element name="Freight" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                 &lt;sequence>
+     *                   &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/restriction>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *         &lt;element name="Itinerary" maxOccurs="unbounded" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                 &lt;sequence>
+     *                   &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItinerarySequenceNumericType"/>
+     *                   &lt;element name="RoutingCountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItineraryRoutingCountryCodeType" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/restriction>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
+     */
+    @XmlAccessorType(XmlAccessType.FIELD)
+    @XmlType(name = "", propOrder = {
+        "carrier",
+        "consignmentItem",
+        "consignor",
+        "freight",
+        "itinerary"
+    })
+    public static class Consignment {
+
+        @XmlElement(name = "Carrier")
+        protected Declaration.Consignment.Carrier carrier;
+        @XmlElement(name = "ConsignmentItem")
+        protected List<Declaration.Consignment.ConsignmentItem> consignmentItem;
+        @XmlElement(name = "Consignor")
+        protected Declaration.Consignment.Consignor consignor;
+        @XmlElement(name = "Freight")
+        protected Declaration.Consignment.Freight freight;
+        @XmlElement(name = "Itinerary")
+        protected List<Declaration.Consignment.Itinerary> itinerary;
+
+        /**
+         * Gets the value of the carrier property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link Declaration.Consignment.Carrier }
+         *     
+         */
+        public Declaration.Consignment.Carrier getCarrier() {
+            return carrier;
+        }
+
+        /**
+         * Sets the value of the carrier property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Declaration.Consignment.Carrier }
+         *     
+         */
+        public void setCarrier(Declaration.Consignment.Carrier value) {
+            this.carrier = value;
+        }
+
+        /**
+         * Gets the value of the consignmentItem property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the consignmentItem property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getConsignmentItem().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link Declaration.Consignment.ConsignmentItem }
+         * 
+         * 
+         */
+        public List<Declaration.Consignment.ConsignmentItem> getConsignmentItem() {
+            if (consignmentItem == null) {
+                consignmentItem = new ArrayList<Declaration.Consignment.ConsignmentItem>();
+            }
+            return this.consignmentItem;
+        }
+
+        /**
+         * Gets the value of the consignor property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link Declaration.Consignment.Consignor }
+         *     
+         */
+        public Declaration.Consignment.Consignor getConsignor() {
+            return consignor;
+        }
+
+        /**
+         * Sets the value of the consignor property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Declaration.Consignment.Consignor }
+         *     
+         */
+        public void setConsignor(Declaration.Consignment.Consignor value) {
+            this.consignor = value;
+        }
+
+        /**
+         * Gets the value of the freight property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link Declaration.Consignment.Freight }
+         *     
+         */
+        public Declaration.Consignment.Freight getFreight() {
+            return freight;
+        }
+
+        /**
+         * Sets the value of the freight property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Declaration.Consignment.Freight }
+         *     
+         */
+        public void setFreight(Declaration.Consignment.Freight value) {
+            this.freight = value;
+        }
+
+        /**
+         * Gets the value of the itinerary property.
+         * 
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the itinerary property.
+         * 
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getItinerary().add(newItem);
+         * </pre>
+         * 
+         * 
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link Declaration.Consignment.Itinerary }
+         * 
+         * 
+         */
+        public List<Declaration.Consignment.Itinerary> getItinerary() {
+            if (itinerary == null) {
+                itinerary = new ArrayList<Declaration.Consignment.Itinerary>();
+            }
+            return this.itinerary;
+        }
+
+
+        /**
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CarrierNameTextType" minOccurs="0"/>
+         *         &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CarrierIdentificationIDType" minOccurs="0"/>
+         *         &lt;element name="Address" minOccurs="0">
+         *           &lt;complexType>
+         *             &lt;complexContent>
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *                 &lt;sequence>
+         *                   &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+         *                   &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+         *                   &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+         *                   &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+         *                   &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+         *                   &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+         *                 &lt;/sequence>
+         *               &lt;/restriction>
+         *             &lt;/complexContent>
+         *           &lt;/complexType>
+         *         &lt;/element>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
+         */
+        @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "name",
+            "id",
+            "address"
+        })
+        public static class Carrier {
+
+            @XmlElement(name = "Name")
+            protected CarrierNameTextType name;
+            @XmlElement(name = "ID")
+            protected CarrierIdentificationIDType id;
+            @XmlElement(name = "Address")
+            protected Declaration.Consignment.Carrier.Address address;
+
+            /**
+             * Gets the value of the name property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link CarrierNameTextType }
+             *     
+             */
+            public CarrierNameTextType getName() {
+                return name;
+            }
+
+            /**
+             * Sets the value of the name property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link CarrierNameTextType }
+             *     
+             */
+            public void setName(CarrierNameTextType value) {
+                this.name = value;
+            }
+
+            /**
+             * Gets the value of the id property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link CarrierIdentificationIDType }
+             *     
+             */
+            public CarrierIdentificationIDType getID() {
+                return id;
+            }
+
+            /**
+             * Sets the value of the id property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link CarrierIdentificationIDType }
+             *     
+             */
+            public void setID(CarrierIdentificationIDType value) {
+                this.id = value;
+            }
+
+            /**
+             * Gets the value of the address property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.Consignment.Carrier.Address }
+             *     
+             */
+            public Declaration.Consignment.Carrier.Address getAddress() {
+                return address;
+            }
+
+            /**
+             * Sets the value of the address property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.Consignment.Carrier.Address }
+             *     
+             */
+            public void setAddress(Declaration.Consignment.Carrier.Address value) {
+                this.address = value;
+            }
+
+
+            /**
+             * <p>Java class for anonymous complex type.
+             * 
+             * <p>The following schema fragment specifies the expected content contained within this class.
+             * 
+             * <pre>
+             * &lt;complexType>
+             *   &lt;complexContent>
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+             *       &lt;sequence>
+             *         &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+             *         &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+             *         &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+             *         &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+             *         &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+             *         &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+             *       &lt;/sequence>
+             *     &lt;/restriction>
+             *   &lt;/complexContent>
+             * &lt;/complexType>
+             * </pre>
+             * 
+             * 
+             */
+            @XmlAccessorType(XmlAccessType.FIELD)
+            @XmlType(name = "", propOrder = {
+                "cityName",
+                "countryCode",
+                "countrySubDivisionCode",
+                "countrySubDivisionName",
+                "line",
+                "postcodeID"
+            })
+            public static class Address {
+
+                @XmlElement(name = "CityName")
+                protected AddressCityNameTextType cityName;
+                @XmlElement(name = "CountryCode")
+                protected AddressCountryCodeType countryCode;
+                @XmlElement(name = "CountrySubDivisionCode")
+                protected AddressCountrySubDivisionCodeType countrySubDivisionCode;
+                @XmlElement(name = "CountrySubDivisionName")
+                protected AddressCountrySubDivisionNameTextType countrySubDivisionName;
+                @XmlElement(name = "Line")
+                protected AddressLineTextType line;
+                @XmlElement(name = "PostcodeID")
+                protected AddressPostcodeIDType postcodeID;
+
+                /**
+                 * Gets the value of the cityName property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressCityNameTextType }
+                 *     
+                 */
+                public AddressCityNameTextType getCityName() {
+                    return cityName;
+                }
+
+                /**
+                 * Sets the value of the cityName property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressCityNameTextType }
+                 *     
+                 */
+                public void setCityName(AddressCityNameTextType value) {
+                    this.cityName = value;
+                }
+
+                /**
+                 * Gets the value of the countryCode property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressCountryCodeType }
+                 *     
+                 */
+                public AddressCountryCodeType getCountryCode() {
+                    return countryCode;
+                }
+
+                /**
+                 * Sets the value of the countryCode property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressCountryCodeType }
+                 *     
+                 */
+                public void setCountryCode(AddressCountryCodeType value) {
+                    this.countryCode = value;
+                }
+
+                /**
+                 * Gets the value of the countrySubDivisionCode property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressCountrySubDivisionCodeType }
+                 *     
+                 */
+                public AddressCountrySubDivisionCodeType getCountrySubDivisionCode() {
+                    return countrySubDivisionCode;
+                }
+
+                /**
+                 * Sets the value of the countrySubDivisionCode property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressCountrySubDivisionCodeType }
+                 *     
+                 */
+                public void setCountrySubDivisionCode(AddressCountrySubDivisionCodeType value) {
+                    this.countrySubDivisionCode = value;
+                }
+
+                /**
+                 * Gets the value of the countrySubDivisionName property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressCountrySubDivisionNameTextType }
+                 *     
+                 */
+                public AddressCountrySubDivisionNameTextType getCountrySubDivisionName() {
+                    return countrySubDivisionName;
+                }
+
+                /**
+                 * Sets the value of the countrySubDivisionName property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressCountrySubDivisionNameTextType }
+                 *     
+                 */
+                public void setCountrySubDivisionName(AddressCountrySubDivisionNameTextType value) {
+                    this.countrySubDivisionName = value;
+                }
+
+                /**
+                 * Gets the value of the line property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressLineTextType }
+                 *     
+                 */
+                public AddressLineTextType getLine() {
+                    return line;
+                }
+
+                /**
+                 * Sets the value of the line property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressLineTextType }
+                 *     
+                 */
+                public void setLine(AddressLineTextType value) {
+                    this.line = value;
+                }
+
+                /**
+                 * Gets the value of the postcodeID property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressPostcodeIDType }
+                 *     
+                 */
+                public AddressPostcodeIDType getPostcodeID() {
+                    return postcodeID;
+                }
+
+                /**
+                 * Sets the value of the postcodeID property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressPostcodeIDType }
+                 *     
+                 */
+                public void setPostcodeID(AddressPostcodeIDType value) {
+                    this.postcodeID = value;
+                }
+
+            }
+
+        }
+
+
+        /**
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignmentItemSequenceNumericType"/>
+         *         &lt;element name="Consignor" minOccurs="0">
+         *           &lt;complexType>
+         *             &lt;complexContent>
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *                 &lt;sequence>
+         *                   &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorNameTextType" minOccurs="0"/>
+         *                   &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorIdentificationIDType" minOccurs="0"/>
+         *                   &lt;element name="Address" minOccurs="0">
+         *                     &lt;complexType>
+         *                       &lt;complexContent>
+         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *                           &lt;sequence>
+         *                             &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressTypeCodeType" minOccurs="0"/>
+         *                             &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+         *                             &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+         *                             &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+         *                             &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+         *                             &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+         *                             &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+         *                           &lt;/sequence>
+         *                         &lt;/restriction>
+         *                       &lt;/complexContent>
+         *                     &lt;/complexType>
+         *                   &lt;/element>
+         *                 &lt;/sequence>
+         *               &lt;/restriction>
+         *             &lt;/complexContent>
+         *           &lt;/complexType>
+         *         &lt;/element>
+         *         &lt;element name="Freight" minOccurs="0">
+         *           &lt;complexType>
+         *             &lt;complexContent>
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *                 &lt;sequence>
+         *                   &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
+         *                 &lt;/sequence>
+         *               &lt;/restriction>
+         *             &lt;/complexContent>
+         *           &lt;/complexType>
+         *         &lt;/element>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
+         */
+        @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "sequenceNumeric",
+            "consignor",
+            "freight"
+        })
+        public static class ConsignmentItem {
+
+            @XmlElement(name = "SequenceNumeric", required = true)
+            protected BigDecimal sequenceNumeric;
+            @XmlElement(name = "Consignor")
+            protected Declaration.Consignment.ConsignmentItem.Consignor consignor;
+            @XmlElement(name = "Freight")
+            protected Declaration.Consignment.ConsignmentItem.Freight freight;
+
+            /**
+             * Gets the value of the sequenceNumeric property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link BigDecimal }
+             *     
+             */
+            public BigDecimal getSequenceNumeric() {
+                return sequenceNumeric;
+            }
+
+            /**
+             * Sets the value of the sequenceNumeric property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link BigDecimal }
+             *     
+             */
+            public void setSequenceNumeric(BigDecimal value) {
+                this.sequenceNumeric = value;
+            }
+
+            /**
+             * Gets the value of the consignor property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.Consignment.ConsignmentItem.Consignor }
+             *     
+             */
+            public Declaration.Consignment.ConsignmentItem.Consignor getConsignor() {
+                return consignor;
+            }
+
+            /**
+             * Sets the value of the consignor property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.Consignment.ConsignmentItem.Consignor }
+             *     
+             */
+            public void setConsignor(Declaration.Consignment.ConsignmentItem.Consignor value) {
+                this.consignor = value;
+            }
+
+            /**
+             * Gets the value of the freight property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.Consignment.ConsignmentItem.Freight }
+             *     
+             */
+            public Declaration.Consignment.ConsignmentItem.Freight getFreight() {
+                return freight;
+            }
+
+            /**
+             * Sets the value of the freight property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.Consignment.ConsignmentItem.Freight }
+             *     
+             */
+            public void setFreight(Declaration.Consignment.ConsignmentItem.Freight value) {
+                this.freight = value;
+            }
+
+
+            /**
+             * <p>Java class for anonymous complex type.
+             * 
+             * <p>The following schema fragment specifies the expected content contained within this class.
+             * 
+             * <pre>
+             * &lt;complexType>
+             *   &lt;complexContent>
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+             *       &lt;sequence>
+             *         &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorNameTextType" minOccurs="0"/>
+             *         &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorIdentificationIDType" minOccurs="0"/>
+             *         &lt;element name="Address" minOccurs="0">
+             *           &lt;complexType>
+             *             &lt;complexContent>
+             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+             *                 &lt;sequence>
+             *                   &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressTypeCodeType" minOccurs="0"/>
+             *                   &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+             *                   &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+             *                   &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+             *                   &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+             *                   &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+             *                   &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+             *                 &lt;/sequence>
+             *               &lt;/restriction>
+             *             &lt;/complexContent>
+             *           &lt;/complexType>
+             *         &lt;/element>
+             *       &lt;/sequence>
+             *     &lt;/restriction>
+             *   &lt;/complexContent>
+             * &lt;/complexType>
+             * </pre>
+             * 
+             * 
+             */
+            @XmlAccessorType(XmlAccessType.FIELD)
+            @XmlType(name = "", propOrder = {
+                "name",
+                "id",
+                "address"
+            })
+            public static class Consignor {
+
+                @XmlElement(name = "Name")
+                protected ConsignorNameTextType name;
+                @XmlElement(name = "ID")
+                protected ConsignorIdentificationIDType id;
+                @XmlElement(name = "Address")
+                protected Declaration.Consignment.ConsignmentItem.Consignor.Address address;
+
+                /**
+                 * Gets the value of the name property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link ConsignorNameTextType }
+                 *     
+                 */
+                public ConsignorNameTextType getName() {
+                    return name;
+                }
+
+                /**
+                 * Sets the value of the name property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link ConsignorNameTextType }
+                 *     
+                 */
+                public void setName(ConsignorNameTextType value) {
+                    this.name = value;
+                }
+
+                /**
+                 * Gets the value of the id property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link ConsignorIdentificationIDType }
+                 *     
+                 */
+                public ConsignorIdentificationIDType getID() {
+                    return id;
+                }
+
+                /**
+                 * Sets the value of the id property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link ConsignorIdentificationIDType }
+                 *     
+                 */
+                public void setID(ConsignorIdentificationIDType value) {
+                    this.id = value;
+                }
+
+                /**
+                 * Gets the value of the address property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link Declaration.Consignment.ConsignmentItem.Consignor.Address }
+                 *     
+                 */
+                public Declaration.Consignment.ConsignmentItem.Consignor.Address getAddress() {
+                    return address;
+                }
+
+                /**
+                 * Sets the value of the address property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link Declaration.Consignment.ConsignmentItem.Consignor.Address }
+                 *     
+                 */
+                public void setAddress(Declaration.Consignment.ConsignmentItem.Consignor.Address value) {
+                    this.address = value;
+                }
+
+
+                /**
+                 * <p>Java class for anonymous complex type.
+                 * 
+                 * <p>The following schema fragment specifies the expected content contained within this class.
+                 * 
+                 * <pre>
+                 * &lt;complexType>
+                 *   &lt;complexContent>
+                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+                 *       &lt;sequence>
+                 *         &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressTypeCodeType" minOccurs="0"/>
+                 *         &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+                 *         &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+                 *         &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                 *         &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+                 *         &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+                 *         &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+                 *       &lt;/sequence>
+                 *     &lt;/restriction>
+                 *   &lt;/complexContent>
+                 * &lt;/complexType>
+                 * </pre>
+                 * 
+                 * 
+                 */
+                @XmlAccessorType(XmlAccessType.FIELD)
+                @XmlType(name = "", propOrder = {
+                    "typeCode",
+                    "cityName",
+                    "countryCode",
+                    "countrySubDivisionCode",
+                    "countrySubDivisionName",
+                    "line",
+                    "postcodeID"
+                })
+                public static class Address {
+
+                    @XmlElement(name = "TypeCode")
+                    protected AddressTypeCodeType typeCode;
+                    @XmlElement(name = "CityName")
+                    protected AddressCityNameTextType cityName;
+                    @XmlElement(name = "CountryCode")
+                    protected AddressCountryCodeType countryCode;
+                    @XmlElement(name = "CountrySubDivisionCode")
+                    protected AddressCountrySubDivisionCodeType countrySubDivisionCode;
+                    @XmlElement(name = "CountrySubDivisionName")
+                    protected AddressCountrySubDivisionNameTextType countrySubDivisionName;
+                    @XmlElement(name = "Line")
+                    protected AddressLineTextType line;
+                    @XmlElement(name = "PostcodeID")
+                    protected AddressPostcodeIDType postcodeID;
+
+                    /**
+                     * Gets the value of the typeCode property.
+                     * 
+                     * @return
+                     *     possible object is
+                     *     {@link AddressTypeCodeType }
+                     *     
+                     */
+                    public AddressTypeCodeType getTypeCode() {
+                        return typeCode;
+                    }
+
+                    /**
+                     * Sets the value of the typeCode property.
+                     * 
+                     * @param value
+                     *     allowed object is
+                     *     {@link AddressTypeCodeType }
+                     *     
+                     */
+                    public void setTypeCode(AddressTypeCodeType value) {
+                        this.typeCode = value;
+                    }
+
+                    /**
+                     * Gets the value of the cityName property.
+                     * 
+                     * @return
+                     *     possible object is
+                     *     {@link AddressCityNameTextType }
+                     *     
+                     */
+                    public AddressCityNameTextType getCityName() {
+                        return cityName;
+                    }
+
+                    /**
+                     * Sets the value of the cityName property.
+                     * 
+                     * @param value
+                     *     allowed object is
+                     *     {@link AddressCityNameTextType }
+                     *     
+                     */
+                    public void setCityName(AddressCityNameTextType value) {
+                        this.cityName = value;
+                    }
+
+                    /**
+                     * Gets the value of the countryCode property.
+                     * 
+                     * @return
+                     *     possible object is
+                     *     {@link AddressCountryCodeType }
+                     *     
+                     */
+                    public AddressCountryCodeType getCountryCode() {
+                        return countryCode;
+                    }
+
+                    /**
+                     * Sets the value of the countryCode property.
+                     * 
+                     * @param value
+                     *     allowed object is
+                     *     {@link AddressCountryCodeType }
+                     *     
+                     */
+                    public void setCountryCode(AddressCountryCodeType value) {
+                        this.countryCode = value;
+                    }
+
+                    /**
+                     * Gets the value of the countrySubDivisionCode property.
+                     * 
+                     * @return
+                     *     possible object is
+                     *     {@link AddressCountrySubDivisionCodeType }
+                     *     
+                     */
+                    public AddressCountrySubDivisionCodeType getCountrySubDivisionCode() {
+                        return countrySubDivisionCode;
+                    }
+
+                    /**
+                     * Sets the value of the countrySubDivisionCode property.
+                     * 
+                     * @param value
+                     *     allowed object is
+                     *     {@link AddressCountrySubDivisionCodeType }
+                     *     
+                     */
+                    public void setCountrySubDivisionCode(AddressCountrySubDivisionCodeType value) {
+                        this.countrySubDivisionCode = value;
+                    }
+
+                    /**
+                     * Gets the value of the countrySubDivisionName property.
+                     * 
+                     * @return
+                     *     possible object is
+                     *     {@link AddressCountrySubDivisionNameTextType }
+                     *     
+                     */
+                    public AddressCountrySubDivisionNameTextType getCountrySubDivisionName() {
+                        return countrySubDivisionName;
+                    }
+
+                    /**
+                     * Sets the value of the countrySubDivisionName property.
+                     * 
+                     * @param value
+                     *     allowed object is
+                     *     {@link AddressCountrySubDivisionNameTextType }
+                     *     
+                     */
+                    public void setCountrySubDivisionName(AddressCountrySubDivisionNameTextType value) {
+                        this.countrySubDivisionName = value;
+                    }
+
+                    /**
+                     * Gets the value of the line property.
+                     * 
+                     * @return
+                     *     possible object is
+                     *     {@link AddressLineTextType }
+                     *     
+                     */
+                    public AddressLineTextType getLine() {
+                        return line;
+                    }
+
+                    /**
+                     * Sets the value of the line property.
+                     * 
+                     * @param value
+                     *     allowed object is
+                     *     {@link AddressLineTextType }
+                     *     
+                     */
+                    public void setLine(AddressLineTextType value) {
+                        this.line = value;
+                    }
+
+                    /**
+                     * Gets the value of the postcodeID property.
+                     * 
+                     * @return
+                     *     possible object is
+                     *     {@link AddressPostcodeIDType }
+                     *     
+                     */
+                    public AddressPostcodeIDType getPostcodeID() {
+                        return postcodeID;
+                    }
+
+                    /**
+                     * Sets the value of the postcodeID property.
+                     * 
+                     * @param value
+                     *     allowed object is
+                     *     {@link AddressPostcodeIDType }
+                     *     
+                     */
+                    public void setPostcodeID(AddressPostcodeIDType value) {
+                        this.postcodeID = value;
+                    }
+
+                }
+
+            }
+
+
+            /**
+             * <p>Java class for anonymous complex type.
+             * 
+             * <p>The following schema fragment specifies the expected content contained within this class.
+             * 
+             * <pre>
+             * &lt;complexType>
+             *   &lt;complexContent>
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+             *       &lt;sequence>
+             *         &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
+             *       &lt;/sequence>
+             *     &lt;/restriction>
+             *   &lt;/complexContent>
+             * &lt;/complexType>
+             * </pre>
+             * 
+             * 
+             */
+            @XmlAccessorType(XmlAccessType.FIELD)
+            @XmlType(name = "", propOrder = {
+                "paymentMethodCode"
+            })
+            public static class Freight {
+
+                @XmlElement(name = "PaymentMethodCode")
+                protected FreightPaymentMethodCodeType paymentMethodCode;
+
+                /**
+                 * Gets the value of the paymentMethodCode property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link FreightPaymentMethodCodeType }
+                 *     
+                 */
+                public FreightPaymentMethodCodeType getPaymentMethodCode() {
+                    return paymentMethodCode;
+                }
+
+                /**
+                 * Sets the value of the paymentMethodCode property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link FreightPaymentMethodCodeType }
+                 *     
+                 */
+                public void setPaymentMethodCode(FreightPaymentMethodCodeType value) {
+                    this.paymentMethodCode = value;
+                }
+
+            }
+
+        }
+
+
+        /**
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorNameTextType" minOccurs="0"/>
+         *         &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ConsignorIdentificationIDType" minOccurs="0"/>
+         *         &lt;element name="Address" minOccurs="0">
+         *           &lt;complexType>
+         *             &lt;complexContent>
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *                 &lt;sequence>
+         *                   &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressTypeCodeType" minOccurs="0"/>
+         *                   &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+         *                   &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+         *                   &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+         *                   &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+         *                   &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+         *                   &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+         *                 &lt;/sequence>
+         *               &lt;/restriction>
+         *             &lt;/complexContent>
+         *           &lt;/complexType>
+         *         &lt;/element>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
+         */
+        @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "name",
+            "id",
+            "address"
+        })
+        public static class Consignor {
+
+            @XmlElement(name = "Name")
+            protected ConsignorNameTextType name;
+            @XmlElement(name = "ID")
+            protected ConsignorIdentificationIDType id;
+            @XmlElement(name = "Address")
+            protected Declaration.Consignment.Consignor.Address address;
+
+            /**
+             * Gets the value of the name property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link ConsignorNameTextType }
+             *     
+             */
+            public ConsignorNameTextType getName() {
+                return name;
+            }
+
+            /**
+             * Sets the value of the name property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link ConsignorNameTextType }
+             *     
+             */
+            public void setName(ConsignorNameTextType value) {
+                this.name = value;
+            }
+
+            /**
+             * Gets the value of the id property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link ConsignorIdentificationIDType }
+             *     
+             */
+            public ConsignorIdentificationIDType getID() {
+                return id;
+            }
+
+            /**
+             * Sets the value of the id property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link ConsignorIdentificationIDType }
+             *     
+             */
+            public void setID(ConsignorIdentificationIDType value) {
+                this.id = value;
+            }
+
+            /**
+             * Gets the value of the address property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.Consignment.Consignor.Address }
+             *     
+             */
+            public Declaration.Consignment.Consignor.Address getAddress() {
+                return address;
+            }
+
+            /**
+             * Sets the value of the address property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.Consignment.Consignor.Address }
+             *     
+             */
+            public void setAddress(Declaration.Consignment.Consignor.Address value) {
+                this.address = value;
+            }
+
+
+            /**
+             * <p>Java class for anonymous complex type.
+             * 
+             * <p>The following schema fragment specifies the expected content contained within this class.
+             * 
+             * <pre>
+             * &lt;complexType>
+             *   &lt;complexContent>
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+             *       &lt;sequence>
+             *         &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressTypeCodeType" minOccurs="0"/>
+             *         &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
+             *         &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
+             *         &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
+             *         &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
+             *         &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
+             *         &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
+             *       &lt;/sequence>
+             *     &lt;/restriction>
+             *   &lt;/complexContent>
+             * &lt;/complexType>
+             * </pre>
+             * 
+             * 
+             */
+            @XmlAccessorType(XmlAccessType.FIELD)
+            @XmlType(name = "", propOrder = {
+                "typeCode",
+                "cityName",
+                "countryCode",
+                "countrySubDivisionCode",
+                "countrySubDivisionName",
+                "line",
+                "postcodeID"
+            })
+            public static class Address {
+
+                @XmlElement(name = "TypeCode")
+                protected AddressTypeCodeType typeCode;
+                @XmlElement(name = "CityName")
+                protected AddressCityNameTextType cityName;
+                @XmlElement(name = "CountryCode")
+                protected AddressCountryCodeType countryCode;
+                @XmlElement(name = "CountrySubDivisionCode")
+                protected AddressCountrySubDivisionCodeType countrySubDivisionCode;
+                @XmlElement(name = "CountrySubDivisionName")
+                protected AddressCountrySubDivisionNameTextType countrySubDivisionName;
+                @XmlElement(name = "Line")
+                protected AddressLineTextType line;
+                @XmlElement(name = "PostcodeID")
+                protected AddressPostcodeIDType postcodeID;
+
+                /**
+                 * Gets the value of the typeCode property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressTypeCodeType }
+                 *     
+                 */
+                public AddressTypeCodeType getTypeCode() {
+                    return typeCode;
+                }
+
+                /**
+                 * Sets the value of the typeCode property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressTypeCodeType }
+                 *     
+                 */
+                public void setTypeCode(AddressTypeCodeType value) {
+                    this.typeCode = value;
+                }
+
+                /**
+                 * Gets the value of the cityName property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressCityNameTextType }
+                 *     
+                 */
+                public AddressCityNameTextType getCityName() {
+                    return cityName;
+                }
+
+                /**
+                 * Sets the value of the cityName property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressCityNameTextType }
+                 *     
+                 */
+                public void setCityName(AddressCityNameTextType value) {
+                    this.cityName = value;
+                }
+
+                /**
+                 * Gets the value of the countryCode property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressCountryCodeType }
+                 *     
+                 */
+                public AddressCountryCodeType getCountryCode() {
+                    return countryCode;
+                }
+
+                /**
+                 * Sets the value of the countryCode property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressCountryCodeType }
+                 *     
+                 */
+                public void setCountryCode(AddressCountryCodeType value) {
+                    this.countryCode = value;
+                }
+
+                /**
+                 * Gets the value of the countrySubDivisionCode property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressCountrySubDivisionCodeType }
+                 *     
+                 */
+                public AddressCountrySubDivisionCodeType getCountrySubDivisionCode() {
+                    return countrySubDivisionCode;
+                }
+
+                /**
+                 * Sets the value of the countrySubDivisionCode property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressCountrySubDivisionCodeType }
+                 *     
+                 */
+                public void setCountrySubDivisionCode(AddressCountrySubDivisionCodeType value) {
+                    this.countrySubDivisionCode = value;
+                }
+
+                /**
+                 * Gets the value of the countrySubDivisionName property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressCountrySubDivisionNameTextType }
+                 *     
+                 */
+                public AddressCountrySubDivisionNameTextType getCountrySubDivisionName() {
+                    return countrySubDivisionName;
+                }
+
+                /**
+                 * Sets the value of the countrySubDivisionName property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressCountrySubDivisionNameTextType }
+                 *     
+                 */
+                public void setCountrySubDivisionName(AddressCountrySubDivisionNameTextType value) {
+                    this.countrySubDivisionName = value;
+                }
+
+                /**
+                 * Gets the value of the line property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressLineTextType }
+                 *     
+                 */
+                public AddressLineTextType getLine() {
+                    return line;
+                }
+
+                /**
+                 * Sets the value of the line property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressLineTextType }
+                 *     
+                 */
+                public void setLine(AddressLineTextType value) {
+                    this.line = value;
+                }
+
+                /**
+                 * Gets the value of the postcodeID property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link AddressPostcodeIDType }
+                 *     
+                 */
+                public AddressPostcodeIDType getPostcodeID() {
+                    return postcodeID;
+                }
+
+                /**
+                 * Sets the value of the postcodeID property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link AddressPostcodeIDType }
+                 *     
+                 */
+                public void setPostcodeID(AddressPostcodeIDType value) {
+                    this.postcodeID = value;
+                }
+
+            }
+
+        }
+
+
+        /**
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
+         */
+        @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "paymentMethodCode"
+        })
+        public static class Freight {
+
+            @XmlElement(name = "PaymentMethodCode")
+            protected FreightPaymentMethodCodeType paymentMethodCode;
+
+            /**
+             * Gets the value of the paymentMethodCode property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link FreightPaymentMethodCodeType }
+             *     
+             */
+            public FreightPaymentMethodCodeType getPaymentMethodCode() {
+                return paymentMethodCode;
+            }
+
+            /**
+             * Sets the value of the paymentMethodCode property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link FreightPaymentMethodCodeType }
+             *     
+             */
+            public void setPaymentMethodCode(FreightPaymentMethodCodeType value) {
+                this.paymentMethodCode = value;
+            }
+
+        }
+
+
+        /**
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItinerarySequenceNumericType"/>
+         *         &lt;element name="RoutingCountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItineraryRoutingCountryCodeType" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
+         */
+        @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "sequenceNumeric",
+            "routingCountryCode"
+        })
+        public static class Itinerary {
+
+            @XmlElement(name = "SequenceNumeric", required = true)
+            protected BigDecimal sequenceNumeric;
+            @XmlElement(name = "RoutingCountryCode")
+            protected ItineraryRoutingCountryCodeType routingCountryCode;
+
+            /**
+             * Gets the value of the sequenceNumeric property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link BigDecimal }
+             *     
+             */
+            public BigDecimal getSequenceNumeric() {
+                return sequenceNumeric;
+            }
+
+            /**
+             * Sets the value of the sequenceNumeric property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link BigDecimal }
+             *     
+             */
+            public void setSequenceNumeric(BigDecimal value) {
+                this.sequenceNumeric = value;
+            }
+
+            /**
+             * Gets the value of the routingCountryCode property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link ItineraryRoutingCountryCodeType }
+             *     
+             */
+            public ItineraryRoutingCountryCodeType getRoutingCountryCode() {
+                return routingCountryCode;
+            }
+
+            /**
+             * Sets the value of the routingCountryCode property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link ItineraryRoutingCountryCodeType }
+             *     
+             */
+            public void setRoutingCountryCode(ItineraryRoutingCountryCodeType value) {
+                this.routingCountryCode = value;
+            }
+
+        }
+
+    }
+
+
+    /**
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
      *         &lt;element name="CurrencyTypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CurrencyExchangeCurrencyTypeCodeType" minOccurs="0"/>
      *         &lt;element name="RateNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CurrencyExchangeRateNumericType" minOccurs="0"/>
      *       &lt;/sequence>
@@ -5208,17 +7017,6 @@ public class Declaration {
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
      *                   &lt;/element>
-     *                   &lt;element name="Freight" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
      *                   &lt;element name="GoodsLocation" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
@@ -5242,18 +7040,6 @@ public class Declaration {
      *                                 &lt;/complexContent>
      *                               &lt;/complexType>
      *                             &lt;/element>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="Itinerary" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItinerarySequenceNumericType"/>
-     *                             &lt;element name="RoutingCountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItineraryRoutingCountryCodeType" minOccurs="0"/>
      *                           &lt;/sequence>
      *                         &lt;/restriction>
      *                       &lt;/complexContent>
@@ -5386,7 +7172,7 @@ public class Declaration {
      *             &lt;/complexContent>
      *           &lt;/complexType>
      *         &lt;/element>
-     *         &lt;element name="GovernmentAgencyGoodsItem" maxOccurs="unbounded" minOccurs="0">
+     *         &lt;element name="GovernmentAgencyGoodsItem" maxOccurs="999" minOccurs="0">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -5523,9 +7309,7 @@ public class Declaration {
      *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                                     &lt;sequence>
      *                                       &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationIDType" minOccurs="0"/>
-     *                                       &lt;element name="NameCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationNameCodeType" minOccurs="0"/>
      *                                       &lt;element name="IdentificationTypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationTypeCodeType" minOccurs="0"/>
-     *                                       &lt;element name="BindingTariffReferenceID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationBindingTariffReferenceIDType" minOccurs="0"/>
      *                                     &lt;/sequence>
      *                                   &lt;/restriction>
      *                                 &lt;/complexContent>
@@ -7746,17 +9530,6 @@ public class Declaration {
          *             &lt;/complexContent>
          *           &lt;/complexType>
          *         &lt;/element>
-         *         &lt;element name="Freight" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
          *         &lt;element name="GoodsLocation" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
@@ -7780,18 +9553,6 @@ public class Declaration {
          *                       &lt;/complexContent>
          *                     &lt;/complexType>
          *                   &lt;/element>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="Itinerary" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItinerarySequenceNumericType"/>
-         *                   &lt;element name="RoutingCountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItineraryRoutingCountryCodeType" minOccurs="0"/>
          *                 &lt;/sequence>
          *               &lt;/restriction>
          *             &lt;/complexContent>
@@ -7846,9 +9607,7 @@ public class Declaration {
             "containerCode",
             "arrivalTransportMeans",
             "departureTransportMeans",
-            "freight",
             "goodsLocation",
-            "itinerary",
             "loadingLocation",
             "transportEquipment"
         })
@@ -7860,12 +9619,8 @@ public class Declaration {
             protected Declaration.GoodsShipment.Consignment.ArrivalTransportMeans arrivalTransportMeans;
             @XmlElement(name = "DepartureTransportMeans")
             protected Declaration.GoodsShipment.Consignment.DepartureTransportMeans departureTransportMeans;
-            @XmlElement(name = "Freight")
-            protected Declaration.GoodsShipment.Consignment.Freight freight;
             @XmlElement(name = "GoodsLocation")
             protected Declaration.GoodsShipment.Consignment.GoodsLocation goodsLocation;
-            @XmlElement(name = "Itinerary")
-            protected List<Declaration.GoodsShipment.Consignment.Itinerary> itinerary;
             @XmlElement(name = "LoadingLocation")
             protected Declaration.GoodsShipment.Consignment.LoadingLocation loadingLocation;
             @XmlElement(name = "TransportEquipment")
@@ -7944,30 +9699,6 @@ public class Declaration {
             }
 
             /**
-             * Gets the value of the freight property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link Declaration.GoodsShipment.Consignment.Freight }
-             *     
-             */
-            public Declaration.GoodsShipment.Consignment.Freight getFreight() {
-                return freight;
-            }
-
-            /**
-             * Sets the value of the freight property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link Declaration.GoodsShipment.Consignment.Freight }
-             *     
-             */
-            public void setFreight(Declaration.GoodsShipment.Consignment.Freight value) {
-                this.freight = value;
-            }
-
-            /**
              * Gets the value of the goodsLocation property.
              * 
              * @return
@@ -7989,35 +9720,6 @@ public class Declaration {
              */
             public void setGoodsLocation(Declaration.GoodsShipment.Consignment.GoodsLocation value) {
                 this.goodsLocation = value;
-            }
-
-            /**
-             * Gets the value of the itinerary property.
-             * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the itinerary property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getItinerary().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link Declaration.GoodsShipment.Consignment.Itinerary }
-             * 
-             * 
-             */
-            public List<Declaration.GoodsShipment.Consignment.Itinerary> getItinerary() {
-                if (itinerary == null) {
-                    itinerary = new ArrayList<Declaration.GoodsShipment.Consignment.Itinerary>();
-                }
-                return this.itinerary;
             }
 
             /**
@@ -8418,61 +10120,6 @@ public class Declaration {
              *   &lt;complexContent>
              *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
              *       &lt;sequence>
-             *         &lt;element name="PaymentMethodCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}FreightPaymentMethodCodeType" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
-             * </pre>
-             * 
-             * 
-             */
-            @XmlAccessorType(XmlAccessType.FIELD)
-            @XmlType(name = "", propOrder = {
-                "paymentMethodCode"
-            })
-            public static class Freight {
-
-                @XmlElement(name = "PaymentMethodCode")
-                protected FreightPaymentMethodCodeType paymentMethodCode;
-
-                /**
-                 * Gets the value of the paymentMethodCode property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link FreightPaymentMethodCodeType }
-                 *     
-                 */
-                public FreightPaymentMethodCodeType getPaymentMethodCode() {
-                    return paymentMethodCode;
-                }
-
-                /**
-                 * Sets the value of the paymentMethodCode property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link FreightPaymentMethodCodeType }
-                 *     
-                 */
-                public void setPaymentMethodCode(FreightPaymentMethodCodeType value) {
-                    this.paymentMethodCode = value;
-                }
-
-            }
-
-
-            /**
-             * <p>Java class for anonymous complex type.
-             * 
-             * <p>The following schema fragment specifies the expected content contained within this class.
-             * 
-             * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
              *         &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}GoodsLocationNameTextType" minOccurs="0"/>
              *         &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}GoodsLocationIdentificationIDType" minOccurs="0"/>
              *         &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}GoodsLocationTypeCodeType" minOccurs="0"/>
@@ -8778,89 +10425,6 @@ public class Declaration {
                         this.postcodeID = value;
                     }
 
-                }
-
-            }
-
-
-            /**
-             * <p>Java class for anonymous complex type.
-             * 
-             * <p>The following schema fragment specifies the expected content contained within this class.
-             * 
-             * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
-             *         &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItinerarySequenceNumericType"/>
-             *         &lt;element name="RoutingCountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ItineraryRoutingCountryCodeType" minOccurs="0"/>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
-             * </pre>
-             * 
-             * 
-             */
-            @XmlAccessorType(XmlAccessType.FIELD)
-            @XmlType(name = "", propOrder = {
-                "sequenceNumeric",
-                "routingCountryCode"
-            })
-            public static class Itinerary {
-
-                @XmlElement(name = "SequenceNumeric", required = true)
-                protected BigDecimal sequenceNumeric;
-                @XmlElement(name = "RoutingCountryCode")
-                protected ItineraryRoutingCountryCodeType routingCountryCode;
-
-                /**
-                 * Gets the value of the sequenceNumeric property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link BigDecimal }
-                 *     
-                 */
-                public BigDecimal getSequenceNumeric() {
-                    return sequenceNumeric;
-                }
-
-                /**
-                 * Sets the value of the sequenceNumeric property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link BigDecimal }
-                 *     
-                 */
-                public void setSequenceNumeric(BigDecimal value) {
-                    this.sequenceNumeric = value;
-                }
-
-                /**
-                 * Gets the value of the routingCountryCode property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link ItineraryRoutingCountryCodeType }
-                 *     
-                 */
-                public ItineraryRoutingCountryCodeType getRoutingCountryCode() {
-                    return routingCountryCode;
-                }
-
-                /**
-                 * Sets the value of the routingCountryCode property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link ItineraryRoutingCountryCodeType }
-                 *     
-                 */
-                public void setRoutingCountryCode(ItineraryRoutingCountryCodeType value) {
-                    this.routingCountryCode = value;
                 }
 
             }
@@ -10027,9 +11591,7 @@ public class Declaration {
          *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *                           &lt;sequence>
          *                             &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationIDType" minOccurs="0"/>
-         *                             &lt;element name="NameCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationNameCodeType" minOccurs="0"/>
          *                             &lt;element name="IdentificationTypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationTypeCodeType" minOccurs="0"/>
-         *                             &lt;element name="BindingTariffReferenceID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationBindingTariffReferenceIDType" minOccurs="0"/>
          *                           &lt;/sequence>
          *                         &lt;/restriction>
          *                       &lt;/complexContent>
@@ -12328,9 +13890,7 @@ public class Declaration {
              *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
              *                 &lt;sequence>
              *                   &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationIDType" minOccurs="0"/>
-             *                   &lt;element name="NameCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationNameCodeType" minOccurs="0"/>
              *                   &lt;element name="IdentificationTypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationTypeCodeType" minOccurs="0"/>
-             *                   &lt;element name="BindingTariffReferenceID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationBindingTariffReferenceIDType" minOccurs="0"/>
              *                 &lt;/sequence>
              *               &lt;/restriction>
              *             &lt;/complexContent>
@@ -12648,9 +14208,7 @@ public class Declaration {
                  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
                  *       &lt;sequence>
                  *         &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationIDType" minOccurs="0"/>
-                 *         &lt;element name="NameCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationNameCodeType" minOccurs="0"/>
                  *         &lt;element name="IdentificationTypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationIdentificationTypeCodeType" minOccurs="0"/>
-                 *         &lt;element name="BindingTariffReferenceID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ClassificationBindingTariffReferenceIDType" minOccurs="0"/>
                  *       &lt;/sequence>
                  *     &lt;/restriction>
                  *   &lt;/complexContent>
@@ -12662,20 +14220,14 @@ public class Declaration {
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "", propOrder = {
                     "id",
-                    "nameCode",
-                    "identificationTypeCode",
-                    "bindingTariffReferenceID"
+                    "identificationTypeCode"
                 })
                 public static class Classification {
 
                     @XmlElement(name = "ID")
                     protected ClassificationIdentificationIDType id;
-                    @XmlElement(name = "NameCode")
-                    protected ClassificationNameCodeType nameCode;
                     @XmlElement(name = "IdentificationTypeCode")
                     protected ClassificationIdentificationTypeCodeType identificationTypeCode;
-                    @XmlElement(name = "BindingTariffReferenceID")
-                    protected ClassificationBindingTariffReferenceIDType bindingTariffReferenceID;
 
                     /**
                      * Gets the value of the id property.
@@ -12702,30 +14254,6 @@ public class Declaration {
                     }
 
                     /**
-                     * Gets the value of the nameCode property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link ClassificationNameCodeType }
-                     *     
-                     */
-                    public ClassificationNameCodeType getNameCode() {
-                        return nameCode;
-                    }
-
-                    /**
-                     * Sets the value of the nameCode property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link ClassificationNameCodeType }
-                     *     
-                     */
-                    public void setNameCode(ClassificationNameCodeType value) {
-                        this.nameCode = value;
-                    }
-
-                    /**
                      * Gets the value of the identificationTypeCode property.
                      * 
                      * @return
@@ -12747,30 +14275,6 @@ public class Declaration {
                      */
                     public void setIdentificationTypeCode(ClassificationIdentificationTypeCodeType value) {
                         this.identificationTypeCode = value;
-                    }
-
-                    /**
-                     * Gets the value of the bindingTariffReferenceID property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link ClassificationBindingTariffReferenceIDType }
-                     *     
-                     */
-                    public ClassificationBindingTariffReferenceIDType getBindingTariffReferenceID() {
-                        return bindingTariffReferenceID;
-                    }
-
-                    /**
-                     * Sets the value of the bindingTariffReferenceID property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link ClassificationBindingTariffReferenceIDType }
-                     *     
-                     */
-                    public void setBindingTariffReferenceID(ClassificationBindingTariffReferenceIDType value) {
-                        this.bindingTariffReferenceID = value;
                     }
 
                 }

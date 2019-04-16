@@ -18,6 +18,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.ArrivalTransportMeansIdentificati
 import wco.datamodel.wco.declaration_ds.dms._2.AuthorisationHolderIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.BorderTransportMeansIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.BuyerIdentificationIDType;
+import wco.datamodel.wco.declaration_ds.dms._2.CarrierIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ClassificationBindingTariffReferenceIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ClassificationIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.CommunicationIdentificationIDType;
@@ -139,6 +140,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WarehouseIdentificationIDType;
     DomesticDutyTaxPartyIdentificationIDType.class,
     WarehouseIdentificationIDType.class,
     ObligationGuaranteeIdentificationIDType.class,
+    CarrierIdentificationIDType.class,
     DeclarantIdentificationIDType.class
 })
 public class IDType {

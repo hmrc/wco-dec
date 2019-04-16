@@ -250,6 +250,46 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Declaration.Consignment }
+     * 
+     */
+    public Declaration.Consignment createDeclarationConsignment() {
+        return new Declaration.Consignment();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.Consignor }
+     * 
+     */
+    public Declaration.Consignment.Consignor createDeclarationConsignmentConsignor() {
+        return new Declaration.Consignment.Consignor();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.ConsignmentItem }
+     * 
+     */
+    public Declaration.Consignment.ConsignmentItem createDeclarationConsignmentConsignmentItem() {
+        return new Declaration.Consignment.ConsignmentItem();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.ConsignmentItem.Consignor }
+     * 
+     */
+    public Declaration.Consignment.ConsignmentItem.Consignor createDeclarationConsignmentConsignmentItemConsignor() {
+        return new Declaration.Consignment.ConsignmentItem.Consignor();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.Carrier }
+     * 
+     */
+    public Declaration.Consignment.Carrier createDeclarationConsignmentCarrier() {
+        return new Declaration.Consignment.Carrier();
+    }
+
+    /**
      * Create an instance of {@link Declaration.Amendment }
      * 
      */
@@ -762,22 +802,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Declaration.GoodsShipment.Consignment.Freight }
-     * 
-     */
-    public Declaration.GoodsShipment.Consignment.Freight createDeclarationGoodsShipmentConsignmentFreight() {
-        return new Declaration.GoodsShipment.Consignment.Freight();
-    }
-
-    /**
-     * Create an instance of {@link Declaration.GoodsShipment.Consignment.Itinerary }
-     * 
-     */
-    public Declaration.GoodsShipment.Consignment.Itinerary createDeclarationGoodsShipmentConsignmentItinerary() {
-        return new Declaration.GoodsShipment.Consignment.Itinerary();
-    }
-
-    /**
      * Create an instance of {@link Declaration.GoodsShipment.Consignment.LoadingLocation }
      * 
      */
@@ -879,6 +903,54 @@ public class ObjectFactory {
      */
     public Declaration.Declarant.Communication createDeclarationDeclarantCommunication() {
         return new Declaration.Declarant.Communication();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.Freight }
+     * 
+     */
+    public Declaration.Consignment.Freight createDeclarationConsignmentFreight() {
+        return new Declaration.Consignment.Freight();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.Itinerary }
+     * 
+     */
+    public Declaration.Consignment.Itinerary createDeclarationConsignmentItinerary() {
+        return new Declaration.Consignment.Itinerary();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.Consignor.Address }
+     * 
+     */
+    public Declaration.Consignment.Consignor.Address createDeclarationConsignmentConsignorAddress() {
+        return new Declaration.Consignment.Consignor.Address();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.ConsignmentItem.Freight }
+     * 
+     */
+    public Declaration.Consignment.ConsignmentItem.Freight createDeclarationConsignmentConsignmentItemFreight() {
+        return new Declaration.Consignment.ConsignmentItem.Freight();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.ConsignmentItem.Consignor.Address }
+     * 
+     */
+    public Declaration.Consignment.ConsignmentItem.Consignor.Address createDeclarationConsignmentConsignmentItemConsignorAddress() {
+        return new Declaration.Consignment.ConsignmentItem.Consignor.Address();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.Carrier.Address }
+     * 
+     */
+    public Declaration.Consignment.Carrier.Address createDeclarationConsignmentCarrierAddress() {
+        return new Declaration.Consignment.Carrier.Address();
     }
 
     /**

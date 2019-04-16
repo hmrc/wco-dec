@@ -21,6 +21,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.AuthenticationAuthenticationTextT
 import wco.datamodel.wco.declaration_ds.dms._2.AuthenticatorNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.BorderTransportMeansNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.BuyerNameTextType;
+import wco.datamodel.wco.declaration_ds.dms._2.CarrierNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.CommodityDescriptionTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.ConsigneeNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.ConsignorNameTextType;
@@ -90,6 +91,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.TradeTermsLocationNameTextType;
     AddressLineTextType.class,
     SuretyNameTextType.class,
     DepartureTransportMeansNameTextType.class,
+    CarrierNameTextType.class,
     AddressCityNameTextType.class,
     AddressCountrySubDivisionNameTextType.class,
     RefundRecipientPartyNameTextType.class,
