@@ -37,4 +37,7 @@ public class ObjectFactory {
         return new MetaData();
     }
 
+    public wco.datamodel.wco.dec_dms._2.Declaration createDeclaration() {
+        return new wco.datamodel.wco.dec_dms._2.ObjectFactory().createDeclaration();
+    }
 }
