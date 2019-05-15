@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlValue;
 import wco.datamodel.wco.declaration_ds.dms._2.DeclarationGoodsItemQuantityType;
 import wco.datamodel.wco.declaration_ds.dms._2.DeclarationLoadingListQuantityType;
 import wco.datamodel.wco.declaration_ds.dms._2.DeclarationTotalPackageQuantityType;
-import wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeSpecificTaxBaseQuantityType;
 import wco.datamodel.wco.declaration_ds.dms._2.GoodsMeasureTariffQuantityType;
 import wco.datamodel.wco.declaration_ds.dms._2.PackagingQuantityQuantityType;
 import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
@@ -39,13 +38,14 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
     "value"
 })
 @XmlSeeAlso({
+    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeSpecificTaxBaseQuantityType.class,
     DeclarationTotalPackageQuantityType.class,
     PackagingQuantityQuantityType.class,
     GoodsMeasureTariffQuantityType.class,
     DeclarationLoadingListQuantityType.class,
     WriteOffQuantityQuantityType.class,
     DeclarationGoodsItemQuantityType.class,
-    DutyTaxFeeSpecificTaxBaseQuantityType.class
+    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeSpecificTaxBaseQuantityType.class
 })
 public class QuantityType {
 

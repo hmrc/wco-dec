@@ -1,0 +1,1 @@
+<xs:import namespace="urn:wco:datamodel:WCO:DEC-DMS:2" schemaLocation="../declaration/WCO_DEC_2_DMS.xsd"/>

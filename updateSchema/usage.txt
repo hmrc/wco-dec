@@ -23,3 +23,5 @@ COMMANDS:
     ./generate.sh --tag v0.245.0         # generate new schema based on a customs-declarations git tag
     ./generate.sh --help                 # display usage
 
+
+*NOTE on OSX / MAC 'SED' command works slightly different to LINUX so you will need to `brew install gnu-sed` as this is assumed to be installed

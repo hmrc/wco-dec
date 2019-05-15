@@ -11,14 +11,10 @@ import javax.xml.bind.annotation.XmlValue;
 import wco.datamodel.wco.declaration_ds.dms._2.ChargeDeductionOtherChargeDeductionAmountType;
 import wco.datamodel.wco.declaration_ds.dms._2.CustomsValuationFreightChargeAmountType;
 import wco.datamodel.wco.declaration_ds.dms._2.DeclarationInvoiceAmountType;
-import wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeAdValoremTaxBaseAmountType;
-import wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeDeductAmountType;
 import wco.datamodel.wco.declaration_ds.dms._2.GovernmentAgencyGoodsItemCustomsValueAmountType;
 import wco.datamodel.wco.declaration_ds.dms._2.GovernmentAgencyGoodsItemStatisticalValueAmountType;
 import wco.datamodel.wco.declaration_ds.dms._2.InvoiceLineItemChargeAmountType;
 import wco.datamodel.wco.declaration_ds.dms._2.ObligationGuaranteeAmountAmountType;
-import wco.datamodel.wco.declaration_ds.dms._2.PaymentPaymentAmountType;
-import wco.datamodel.wco.declaration_ds.dms._2.PaymentTaxAssessedAmountType;
 import wco.datamodel.wco.declaration_ds.dms._2.WriteOffAmountAmountType;
 
 
@@ -44,18 +40,22 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffAmountAmountType;
     "value"
 })
 @XmlSeeAlso({
+    wco.datamodel.wco.response_ds.dms._2.PaymentPaymentAmountType.class,
+    wco.datamodel.wco.response_ds.dms._2.PaymentTaxAssessedAmountType.class,
+    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeAdValoremTaxBaseAmountType.class,
+    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeDeductAmountType.class,
     DeclarationInvoiceAmountType.class,
     CustomsValuationFreightChargeAmountType.class,
     WriteOffAmountAmountType.class,
     GovernmentAgencyGoodsItemStatisticalValueAmountType.class,
     InvoiceLineItemChargeAmountType.class,
     ObligationGuaranteeAmountAmountType.class,
-    PaymentTaxAssessedAmountType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.PaymentTaxAssessedAmountType.class,
     ChargeDeductionOtherChargeDeductionAmountType.class,
-    DutyTaxFeeDeductAmountType.class,
-    PaymentPaymentAmountType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeDeductAmountType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.PaymentPaymentAmountType.class,
     GovernmentAgencyGoodsItemCustomsValueAmountType.class,
-    DutyTaxFeeAdValoremTaxBaseAmountType.class
+    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeAdValoremTaxBaseAmountType.class
 })
 public class AmountType {
 

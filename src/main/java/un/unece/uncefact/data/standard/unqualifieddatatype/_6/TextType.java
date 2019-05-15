@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlValue;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import wco.datamodel.wco.declaration_ds.dms._2.AdditionalDocumentNameTextType;
-import wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementDescriptionTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.AddressCityNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.AddressCountrySubDivisionNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.AddressLineTextType;
@@ -41,6 +40,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.SubmitterNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.SuretyNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.TradeTermsDescriptionTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.TradeTermsLocationNameTextType;
+import wco.datamodel.wco.response_ds.dms._2.ErrorDescriptionTextType;
 
 
 /**
@@ -65,6 +65,8 @@ import wco.datamodel.wco.declaration_ds.dms._2.TradeTermsLocationNameTextType;
     "value"
 })
 @XmlSeeAlso({
+    ErrorDescriptionTextType.class,
+    wco.datamodel.wco.response_ds.dms._2.AdditionalInformationStatementDescriptionTextType.class,
     TradeTermsDescriptionTextType.class,
     AuthenticatorNameTextType.class,
     CommodityDescriptionTextType.class,
@@ -85,7 +87,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.TradeTermsLocationNameTextType;
     AdditionalDocumentNameTextType.class,
     ExporterNameTextType.class,
     ContactNameTextType.class,
-    AdditionalInformationStatementDescriptionTextType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementDescriptionTextType.class,
     LoadingLocationNameTextType.class,
     SellerNameTextType.class,
     AddressLineTextType.class,

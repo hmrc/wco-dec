@@ -21,19 +21,15 @@ import wco.datamodel.wco.declaration_ds.dms._2.BuyerIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.CarrierIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ClassificationBindingTariffReferenceIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ClassificationIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.CommunicationIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ConsigneeIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ConsignorIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.DangerousGoodsUNDGIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.DeclarantIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.DeclarationDeclarationOfficeIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DeclarationFunctionalReferenceIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DeclarationIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.DeclarationIssueLocationIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.DepartureTransportMeansIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.DestinationRegionIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.DomesticDutyTaxPartyIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeQuotaOrderIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ExitOfficeIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ExporterIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.GoodsLocationIdentificationIDType;
@@ -43,11 +39,9 @@ import wco.datamodel.wco.declaration_ds.dms._2.InvoiceIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.LoadingLocationIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ManufacturerIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ObligationGuaranteeIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ObligationGuaranteeReferenceIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.OriginRegionIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.PackagingMarksNumbersIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.PayerIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.PointerTagIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.PresentationOfficeIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.PreviousDocumentIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.RefundRecipientPartyIdentificationIDType;
@@ -61,6 +55,13 @@ import wco.datamodel.wco.declaration_ds.dms._2.TransportEquipmentIdentificationI
 import wco.datamodel.wco.declaration_ds.dms._2.UCRIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.UCRTraderAssignedReferenceIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.WarehouseIdentificationIDType;
+import wco.datamodel.wco.response_ds.dms._2.AppealOfficeIdentificationIDType;
+import wco.datamodel.wco.response_ds.dms._2.BankAccountIdentificationIDType;
+import wco.datamodel.wco.response_ds.dms._2.BankReferenceIDType;
+import wco.datamodel.wco.response_ds.dms._2.ContactOfficeIdentificationIDType;
+import wco.datamodel.wco.response_ds.dms._2.DeclarationVersionIDType;
+import wco.datamodel.wco.response_ds.dms._2.PaymentReferenceIDType;
+import wco.datamodel.wco.response_ds.dms._2.ResponseFunctionalReferenceIDType;
 
 
 /**
@@ -91,6 +92,19 @@ import wco.datamodel.wco.declaration_ds.dms._2.WarehouseIdentificationIDType;
     "value"
 })
 @XmlSeeAlso({
+    ResponseFunctionalReferenceIDType.class,
+    BankAccountIdentificationIDType.class,
+    BankReferenceIDType.class,
+    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeQuotaOrderIDType.class,
+    wco.datamodel.wco.response_ds.dms._2.CommunicationIdentificationIDType.class,
+    wco.datamodel.wco.response_ds.dms._2.DeclarationIdentificationIDType.class,
+    AppealOfficeIdentificationIDType.class,
+    ContactOfficeIdentificationIDType.class,
+    PaymentReferenceIDType.class,
+    DeclarationVersionIDType.class,
+    wco.datamodel.wco.response_ds.dms._2.DeclarationFunctionalReferenceIDType.class,
+    wco.datamodel.wco.response_ds.dms._2.ObligationGuaranteeReferenceIDType.class,
+    wco.datamodel.wco.response_ds.dms._2.PointerTagIDType.class,
     AgentIdentificationIDType.class,
     DeclarationDeclarationOfficeIDType.class,
     ArrivalTransportMeansIdentificationIDType.class,
@@ -100,14 +114,14 @@ import wco.datamodel.wco.declaration_ds.dms._2.WarehouseIdentificationIDType;
     UCRIdentificationIDType.class,
     AddressPostcodeIDType.class,
     GuaranteeOfficeIdentificationIDType.class,
-    PointerTagIDType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.PointerTagIDType.class,
     ManufacturerIdentificationIDType.class,
     ConsignorIdentificationIDType.class,
     RefundRecipientPartyIdentificationIDType.class,
-    DutyTaxFeeQuotaOrderIDType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeQuotaOrderIDType.class,
     UCRTraderAssignedReferenceIDType.class,
     BorderTransportMeansIdentificationIDType.class,
-    CommunicationIdentificationIDType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.CommunicationIdentificationIDType.class,
     ClassificationIdentificationIDType.class,
     SubmitterIdentificationIDType.class,
     PackagingMarksNumbersIDType.class,
@@ -115,7 +129,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WarehouseIdentificationIDType;
     TradeTermsLocationIDType.class,
     ImporterIdentificationIDType.class,
     LoadingLocationIdentificationIDType.class,
-    DeclarationFunctionalReferenceIDType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DeclarationFunctionalReferenceIDType.class,
     ConsigneeIdentificationIDType.class,
     AdditionalDocumentIdentificationIDType.class,
     ExporterIdentificationIDType.class,
@@ -124,11 +138,11 @@ import wco.datamodel.wco.declaration_ds.dms._2.WarehouseIdentificationIDType;
     PreviousDocumentIdentificationIDType.class,
     InvoiceIdentificationIDType.class,
     PayerIdentificationIDType.class,
-    DeclarationIdentificationIDType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DeclarationIdentificationIDType.class,
     OriginRegionIDType.class,
     SuretyIdentificationIDType.class,
     DangerousGoodsUNDGIDType.class,
-    ObligationGuaranteeReferenceIDType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.ObligationGuaranteeReferenceIDType.class,
     TransportEquipmentIdentificationIDType.class,
     BuyerIdentificationIDType.class,
     PresentationOfficeIdentificationIDType.class,

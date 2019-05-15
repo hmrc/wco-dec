@@ -1,6 +1,8 @@
 
 package wco.datamodel.wco.documentmetadata_dms._2;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAnyElement;
@@ -31,7 +33,10 @@ import wco.datamodel.wco.metadata_ds_dms._2.MetaDataWCOTypeNameTextType;
  *         &lt;element name="ResponsibleAgencyName" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataResponsibleAgencyNameTextType" minOccurs="0"/>
  *         &lt;element name="AgencyAssignedCustomizationCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataAgencyAssignedCustomizationCodeType" minOccurs="0"/>
  *         &lt;element name="AgencyAssignedCustomizationVersionCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataAgencyAssignedCustomizationVersionCodeType" minOccurs="0"/>
- *         &lt;group ref="{urn:wco:datamodel:WCO:DocumentMetaData-DMS:2}Declaration"/>
+ *         &lt;choice>
+ *           &lt;group ref="{urn:wco:datamodel:WCO:DocumentMetaData-DMS:2}Declaration"/>
+ *           &lt;group ref="{urn:wco:datamodel:WCO:DocumentMetaData-DMS:2}Response" maxOccurs="unbounded"/>
+ *         &lt;/choice>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -48,7 +53,8 @@ import wco.datamodel.wco.metadata_ds_dms._2.MetaDataWCOTypeNameTextType;
     "responsibleAgencyName",
     "agencyAssignedCustomizationCode",
     "agencyAssignedCustomizationVersionCode",
-    "any"
+    "any",
+    "response"
 })
 @XmlRootElement(name = "MetaData")
 public class MetaData {
@@ -67,6 +73,8 @@ public class MetaData {
     protected MetaDataAgencyAssignedCustomizationVersionCodeType agencyAssignedCustomizationVersionCode;
     @XmlAnyElement(lax = true)
     protected Object any;
+    @XmlAnyElement(lax = true)
+    protected List<Object> response;
 
     /**
      * Gets the value of the wcoDataModelVersionCode property.
@@ -234,6 +242,35 @@ public class MetaData {
      */
     public void setAny(Object value) {
         this.any = value;
+    }
+
+    /**
+     * Gets the value of the response property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the response property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getResponse().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Object }
+     * 
+     * 
+     */
+    public List<Object> getResponse() {
+        if (response == null) {
+            response = new ArrayList<Object>();
+        }
+        return this.response;
     }
 
 }

@@ -14,13 +14,10 @@ import wco.datamodel.wco.declaration_ds.dms._2.AEOMutualRecognitionPartyRoleCode
 import wco.datamodel.wco.declaration_ds.dms._2.AdditionalDocumentCategoryCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.AdditionalDocumentLPCOExemptionCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.AdditionalDocumentTypeCodeType;
-import wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementCodeType;
-import wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.AddressCountryCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.AddressCountrySubDivisionCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.AddressTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.AgentFunctionCodeType;
-import wco.datamodel.wco.declaration_ds.dms._2.AmendmentChangeReasonCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ArrivalTransportMeansIdentificationTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ArrivalTransportMeansModeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ArrivalTransportMeansTypeCodeType;
@@ -32,7 +29,6 @@ import wco.datamodel.wco.declaration_ds.dms._2.BorderTransportMeansTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ChargeDeductionChargesTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ClassificationIdentificationTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ClassificationNameCodeType;
-import wco.datamodel.wco.declaration_ds.dms._2.CommunicationTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ConsignmentContainerCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.CurrencyExchangeCurrencyTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.CustomsValuationMethodCodeType;
@@ -44,8 +40,6 @@ import wco.datamodel.wco.declaration_ds.dms._2.DepartureTransportMeansModeCodeTy
 import wco.datamodel.wco.declaration_ds.dms._2.DepartureTransportMeansTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.DestinationCountryCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.DomesticDutyTaxPartyRoleCodeType;
-import wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeDutyRegimeCodeType;
-import wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ExportCountryCountryCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.FreightPaymentMethodCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.GoodsLocationTypeCodeType;
@@ -60,7 +54,6 @@ import wco.datamodel.wco.declaration_ds.dms._2.OriginCountryCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.OriginTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.PackagingTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.PaymentMethodCodeType;
-import wco.datamodel.wco.declaration_ds.dms._2.PointerDocumentSectionCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.PreviousDocumentCategoryCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.PreviousDocumentTypeCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.SubmitterRoleCodeType;
@@ -68,6 +61,9 @@ import wco.datamodel.wco.declaration_ds.dms._2.TradeTermsConditionCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.TradeTermsCountryRelationshipCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ValuationAdjustmentAdditionCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.WarehouseTypeCodeType;
+import wco.datamodel.wco.response_ds.dms._2.ErrorValidationCodeType;
+import wco.datamodel.wco.response_ds.dms._2.ResponseFunctionCodeType;
+import wco.datamodel.wco.response_ds.dms._2.StatusNameCodeType;
 
 
 /**
@@ -100,7 +96,17 @@ import wco.datamodel.wco.declaration_ds.dms._2.WarehouseTypeCodeType;
     "value"
 })
 @XmlSeeAlso({
-    DutyTaxFeeDutyRegimeCodeType.class,
+    ResponseFunctionCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.PointerDocumentSectionCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeDutyRegimeCodeType.class,
+    ErrorValidationCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.AmendmentChangeReasonCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeTypeCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.CommunicationTypeCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.AdditionalInformationStatementCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.AdditionalInformationStatementTypeCodeType.class,
+    StatusNameCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeDutyRegimeCodeType.class,
     BorderTransportMeansModeCodeType.class,
     GovernmentAgencyGoodsItemTransactionNatureCodeType.class,
     DeclarationFunctionCodeType.class,
@@ -110,10 +116,10 @@ import wco.datamodel.wco.declaration_ds.dms._2.WarehouseTypeCodeType;
     OriginTypeCodeType.class,
     PaymentMethodCodeType.class,
     GovernmentProcedureCurrentCodeType.class,
-    AmendmentChangeReasonCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.AmendmentChangeReasonCodeType.class,
     ClassificationNameCodeType.class,
     DeclarationSpecificCircumstancesCodeCodeType.class,
-    CommunicationTypeCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.CommunicationTypeCodeType.class,
     WarehouseTypeCodeType.class,
     AgentFunctionCodeType.class,
     PreviousDocumentCategoryCodeType.class,
@@ -123,25 +129,25 @@ import wco.datamodel.wco.declaration_ds.dms._2.WarehouseTypeCodeType;
     ItineraryRoutingCountryCodeType.class,
     AuthorisationHolderCategoryCodeType.class,
     DestinationCountryCodeType.class,
-    PointerDocumentSectionCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.PointerDocumentSectionCodeType.class,
     GoodsShipmentTransactionNatureCodeType.class,
     AddressCountrySubDivisionCodeType.class,
     PackagingTypeCodeType.class,
-    DutyTaxFeeTypeCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeTypeCodeType.class,
     ObligationGuaranteeAccessCodeType.class,
     AdditionalDocumentTypeCodeType.class,
     FreightPaymentMethodCodeType.class,
     OriginCountryCodeType.class,
     ArrivalTransportMeansModeCodeType.class,
     DomesticDutyTaxPartyRoleCodeType.class,
-    AdditionalInformationStatementCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementCodeType.class,
     GoodsLocationTypeCodeType.class,
     ExportCountryCountryCodeType.class,
     BorderTransportMeansTypeCodeType.class,
     AdditionalDocumentLPCOExemptionCodeType.class,
     DepartureTransportMeansModeCodeType.class,
     ArrivalTransportMeansIdentificationTypeCodeType.class,
-    AdditionalInformationStatementTypeCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementTypeCodeType.class,
     AddressCountryCodeType.class,
     CustomsValuationMethodCodeType.class,
     ObligationGuaranteeSecurityDetailsCodeType.class,
