@@ -31,6 +31,14 @@ import javax.xml.bind.annotation.XmlValue;
     "value"
 })
 @XmlSeeAlso({
+    wco.datamodel.wco.response_ds.dms._2.ResponseIssueDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.DeclarationAcceptanceDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.DeclarationCancellationDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.StatusEffectiveDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.AdditionalInformationLimitDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.PaymentDueDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.StatusReleaseDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.DeclarationRejectionDateTimeType.DateTimeString.class,
     wco.datamodel.wco.declaration_ds.dms._2.DeclarationAcceptanceDateTimeType.DateTimeString.class,
     wco.datamodel.wco.declaration_ds.dms._2.InvoiceIssueDateTimeType.DateTimeString.class,
     wco.datamodel.wco.declaration_ds.dms._2.AdditionalDocumentEffectiveDateTimeType.DateTimeString.class,

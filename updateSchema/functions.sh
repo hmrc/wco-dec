@@ -41,11 +41,18 @@ function git_clone {
     fi
 }
 
+function fix_notification_dec_namespace {
+  cp customs-declarations/public/api/conf/1.0/schemas/wco/declaration/WCO_DEC_2_DMS.xsd customs-declarations/public/api/conf/1.0/schemas/wco/notification
+  cp customs-declarations/public/api/conf/1.0/schemas/wco/declaration/WCO_DS/WCO_DEC_DS_2_DMS.xsd customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_DS
+}
+
 function generate {
     log "Generate the WCO-DEC model... ✔"
     mkdir wco
     xjc -d wco ./customs-declarations/public/api/conf/1.0/schemas/wco/declaration/DocumentMetaData_2_DMS.xsd -no-header
     xjc -d wco ./customs-declarations/public/api/conf/1.0/schemas/wco/declaration/WCO_DEC_2_DMS.xsd -no-header
+    xjc -d wco ./customs-declarations/public/api/conf/1.0/schemas/wco/notification/DocumentMetaData_2_DMS.xsd -no-header
+    xjc -d wco ./customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_RES_2_DMS.xsd -no-header
 }
 
 function clean {

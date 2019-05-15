@@ -16,6 +16,10 @@ rm -rf customs-declarations/
 # Download the latest Schema definitions
 git_clone $GIT_TAG
 
+#add declaration namespace to notifcation schema
+log "Fix notification schema... ✔"
+fix_notification_dec_namespace
+
 # Generate the WCO-DEC model
 generate
 
@@ -25,7 +29,11 @@ cp -R  wco/* ../src/main/java/
 
 # Add Declaration Object Mapper
 log "Add Declaration Object Mapper... ✔"
-sed -i '$e cat declaration_mapper.txt' ../src/main/java/wco/datamodel/wco/documentmetadata_dms/_2/ObjectFactory.java
+if [ "$(uname)" == "Darwin" ]; then
+    gsed -i '$e cat declaration_mapper.txt' ../src/main/java/wco/datamodel/wco/documentmetadata_dms/_2/ObjectFactory.java
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    sed -i '$e cat declaration_mapper.txt' ../src/main/java/wco/datamodel/wco/documentmetadata_dms/_2/ObjectFactory.java
+fi
 
 # Clean up temporary files/directories
 clean
