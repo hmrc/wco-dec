@@ -1,0 +1,4297 @@
+{
+  "pointers": [
+    {
+      "42A": {
+        "dms_field_name": "Declaration",
+        "dms_field_description": "Any statement or action, in any form prescribed or particulars required by the Governmental Agency",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/013": {
+        "dms_field_name": "LoadingListQuantity",
+        "dms_field_description": "The number of loading lists, manifests or similar documents",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/017": {
+        "dms_field_name": "FunctionCode",
+        "dms_field_description": "Code indicating the function of a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/023": {
+        "dms_field_name": "AcceptanceDateTime",
+        "dms_field_description": "Date on which a document has been or will be",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/02A": {
+        "dms_field_name": "AdditionalDocument",
+        "dms_field_description": "Details related to additional documents supplied",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/02A/D005": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of a document providing additional information",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/02A/D006": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Code specifying the name of an additional document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/02A/D031": {
+        "dms_field_name": "CategoryCode",
+        "dms_field_description": "Code specifying the category of a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/03A": {
+        "dms_field_name": "AdditionalInformation",
+        "dms_field_description": "Special request to government from declarant to take or not to take action",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/03A/225": {
+        "dms_field_name": "StatementDescription",
+        "dms_field_description": "Description of an additional statement",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/03A/226": {
+        "dms_field_name": "StatementCode",
+        "dms_field_description": "Coded form of an additional statement",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/03A/369": {
+        "dms_field_name": "StatementTypeCode",
+        "dms_field_description": "Code qualifying the subject of the additional statement",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/03A/97A": {
+        "dms_field_name": "Pointer",
+        "dms_field_description": "Details to refer to a functional attribute within a declaration",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/03A/97A/006": {
+        "dms_field_name": "SequenceNumeric",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/03A/97A/375": {
+        "dms_field_name": "DocumentSectionCode",
+        "dms_field_description": "Code specifying a section of a document/message",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/03A/97A/381": {
+        "dms_field_name": "TagID",
+        "dms_field_description": "Data element tag identifier",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A": {
+        "dms_field_name": "Agent",
+        "dms_field_description": "Person authorised to act on behalf of another party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/102": {
+        "dms_field_name": "FunctionCode",
+        "dms_field_description": "The capacity in which the agent is acting",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/R003": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of a party authorised to act on behalf of another party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/05A/R004": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identification of a party authorised to act on behalf of another party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/065": {
+        "dms_field_name": "DeclarationOfficeID",
+        "dms_field_description": "To identify a location at which a declaration is lodged",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/06A": {
+        "dms_field_name": "Amendment",
+        "dms_field_description": "Details for updating declaration data. Can cover the whole WCO Data Model",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/06A/099": {
+        "dms_field_name": "ChangeReasonCode",
+        "dms_field_description": "Code specifying the reason for a change",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/06A/97A": {
+        "dms_field_name": "Pointer",
+        "dms_field_description": "Details to refer to a functional attribute within a declaration",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/06A/97A/006": {
+        "dms_field_name": "SequenceNumeric",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/06A/97A/375": {
+        "dms_field_name": "DocumentSectionCode",
+        "dms_field_description": "Code specifying a section of a document/message",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/06A/97A/381": {
+        "dms_field_name": "TagID",
+        "dms_field_description": "Data element tag identifier",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/109": {
+        "dms_field_name": "InvoiceAmount",
+        "dms_field_description": "Total of all invoice amounts declared in a single declaration",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/131": {
+        "dms_field_name": "TotalGrossMassMeasure",
+        "dms_field_description": "Weight (mass) of goods including packaging but excluding the carrier's equipment for a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/146": {
+        "dms_field_name": "TotalPackageQuantity",
+        "dms_field_description": "Count of total number of packages of the entire document (e.g. declaration/ consignment)",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/15A": {
+        "dms_field_name": "BorderTransportMeans",
+        "dms_field_description": "Details of the means of transport crossing the border of the Customs territory",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/15A/T005": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name to identify the means of transport used in crossing the border",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/15A/T006": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier to identify the means of transport used in crossing the border",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/15A/T010": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Means of transport used for crossing the border, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/15A/T014": {
+        "dms_field_name": "RegistrationNationalityCode",
+        "dms_field_description": "Nationality of the active means of transport used in crossing the border, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/15A/T018": {
+        "dms_field_name": "IdentificationTypeCode",
+        "dms_field_description": "The type of identifier of the means of transport used in crossing the border, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/15A/T022": {
+        "dms_field_name": "ModeCode",
+        "dms_field_description": "Mode of transport used for crossing the border, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/15C": {
+        "dms_field_name": "PresentationOffice",
+        "dms_field_description": "Details identifying the government agency office of presentation",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/15C/G015": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B": {
+        "dms_field_name": "Submitter",
+        "dms_field_description": "Details related to the submitter of written or electronic documentation",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B/R058": {
+        "dms_field_name": "Name",
+        "dms_field_description": "The name of the party who presents a document another",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17B/R059": {
+        "dms_field_name": "ID",
+        "dms_field_description": "The identifier of the party who presents a of another",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17C": {
+        "dms_field_name": "AuthorisationHolder",
+        "dms_field_description": "Details related to the holder of the authorisation",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17C/R144": {
+        "dms_field_name": "ID",
+        "dms_field_description": "The identifer of the person being the holder of the authorisation",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/17C/R145": {
+        "dms_field_name": "CategoryCode",
+        "dms_field_description": "The type of person being the holder of the authorisation",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/228": {
+        "dms_field_name": "GoodsItemQuantity",
+        "dms_field_description": "Count of the total number of goods items within a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A": {
+        "dms_field_name": "Consignment",
+        "dms_field_description": "Details about the transport between a consignor and a consignee as specified in the transport contract document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A": {
+        "dms_field_name": "Carrier",
+        "dms_field_description": "Name and address details of the party undertaking or arranging transport of goods between named points",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A/R011": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of party providing the transport of goods between named points",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/18A/R012": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a party providing the transport of goods between named points",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A": {
+        "dms_field_name": "ConsignmentItem",
+        "dms_field_description": "Details of an item in a consignment",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/006": {
+        "dms_field_name": "SequenceNumeric",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A": {
+        "dms_field_name": "Consignor",
+        "dms_field_description": "Name and address details of the party which, by contract with a carrier, consigns or sends goods with the carrier, or has them conveyed by him",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/04A/410": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/R020": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of the party consigning goods as stipulated in the transport contract by the party ordering transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/30A/R021": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify the party consigning goods as stipulated in the transport contract by the party ordering transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/62A": {
+        "dms_field_name": "Freight",
+        "dms_field_description": "Details of freight payment, rate quantity, type, and amount",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/29A/62A/098": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A": {
+        "dms_field_name": "Consignor",
+        "dms_field_description": "Name and address details of the party which, by contract with a carrier, consigns or sends goods with the carrier, or has them conveyed by him",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/04A/410": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/R020": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of the party consigning goods as stipulated in the transport contract by the party ordering transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/30A/R021": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify the party consigning goods as stipulated in the transport contract by the party ordering transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/62A": {
+        "dms_field_name": "Freight",
+        "dms_field_description": "Details of freight payment, rate quantity, type, and amount",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/62A/098": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/81A": {
+        "dms_field_name": "Itinerary",
+        "dms_field_description": "Details of the itinerary of the means of transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/81A/006": {
+        "dms_field_name": "SequenceNumeric",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/28A/81A/064": {
+        "dms_field_name": "RoutingCountryCode",
+        "dms_field_description": "Identification of a country through which",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/40A": {
+        "dms_field_name": "CurrencyExchange",
+        "dms_field_description": "The rate at which one specified currency is expressed in another specified",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/40A/118": {
+        "dms_field_name": "RateNumeric",
+        "dms_field_description": "The rate at which one specified currency is expressed in another specified currency",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/40A/135": {
+        "dms_field_name": "CurrencyTypeCode",
+        "dms_field_description": "Code specifying a monetary unit or currency",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/42A": {
+        "dms_field_name": "Declaration",
+        "dms_field_description": "Any statement or action, in any form prescribed or particulars required by the Governmental Agency",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/504": {
+        "dms_field_name": "SpecificCircumstancesCodeCode",
+        "dms_field_description": "Code specifying circumstances for declarations",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/56A": {
+        "dms_field_name": "ExitOffice",
+        "dms_field_description": "Office of exit",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/56A/G005": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A": {
+        "dms_field_name": "Exporter",
+        "dms_field_description": "Person who makes or on whose behalf an export declaration is made",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/25A": {
+        "dms_field_name": "Communication",
+        "dms_field_description": "Details of communication including number and number type",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/25A/240": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/25A/253": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/34A": {
+        "dms_field_name": "Contact",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/34A/246": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/R031": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of the person who makes - or on whose the time when the declaration is accepted",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57A/R032": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify the party who makes , or on whose time when the declaration is accepted",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B": {
+        "dms_field_name": "Declarant",
+        "dms_field_description": "A party who makes a declaration to an official",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/25A": {
+        "dms_field_name": "Communication",
+        "dms_field_description": "Details of communication including number and number type",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/25A/240": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/25A/253": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/34A": {
+        "dms_field_name": "Contact",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/34A/246": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/R123": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identification of a party who makes a body is made",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/57B/R124": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of a party who makes a declaration to an",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/61B": {
+        "dms_field_name": "Authentication",
+        "dms_field_description": "Details for the authentication of a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/61B/104": {
+        "dms_field_name": "Authentication",
+        "dms_field_description": "Proof that a document has been authenticated",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/61B/12A": {
+        "dms_field_name": "Authenticator",
+        "dms_field_description": "Details relating to an authenticating party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/61B/12A/R007": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A": {
+        "dms_field_name": "GoodsShipment",
+        "dms_field_description": "Details about the movement and the handling of original consignor and final consignee",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/024": {
+        "dms_field_name": "ExitDateTime",
+        "dms_field_description": "Date when the goods depart from last port, (country of export)",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B": {
+        "dms_field_name": "Seller",
+        "dms_field_description": "Party selling merchandise to a buyer",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/25A": {
+        "dms_field_name": "Communication",
+        "dms_field_description": "Details of communication including number and number type",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/25A/240": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/25A/253": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/34A": {
+        "dms_field_name": "Contact",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/34A/246": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/R050": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of a party selling merchandise or services to a buyer",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/09B/R051": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of the party selling merchandise or services to a buyer",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/103": {
+        "dms_field_name": "TransactionNatureCode",
+        "dms_field_description": "Code specifying the nature of a transaction associated with a shipment",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A": {
+        "dms_field_name": "Buyer",
+        "dms_field_description": "Name and address details of the party to which merchandise or services are sold",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/25A": {
+        "dms_field_name": "Communication",
+        "dms_field_description": "Details of communication including number and number type",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/25A/240": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/25A/253": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/34A": {
+        "dms_field_name": "Contact",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/34A/246": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/R009": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of a party to which merchandise or services are sold",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16A/R010": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of a party to which merchandise or services are sold",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16C": {
+        "dms_field_name": "AEOMutualRecognitionParty",
+        "dms_field_description": "Details identifying the role of the further",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16C/R005": {
+        "dms_field_name": "RoleCode",
+        "dms_field_description": "Code giving specific meaning to a party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/16C/R143": {
+        "dms_field_name": "ID",
+        "dms_field_description": "The identifier of the AEO mutual recognition party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B": {
+        "dms_field_name": "Surety",
+        "dms_field_description": "Details related to a natural or legal person Customs (CCC)",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B/R054": {
+        "dms_field_name": "Name",
+        "dms_field_description": "The name of the party who agrees to be",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/19B/R055": {
+        "dms_field_name": "ID",
+        "dms_field_description": "The identifier of the party who agrees to be",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/22B": {
+        "dms_field_name": "TradeTerms",
+        "dms_field_description": "Details about the trade terms",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/22B/089": {
+        "dms_field_name": "Description",
+        "dms_field_description": "Free form description of delivery or transport terms",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/22B/090": {
+        "dms_field_name": "ConditionCode",
+        "dms_field_description": "Code specifying the delivery or transport terms",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/22B/106": {
+        "dms_field_name": "CountryRelationshipCode",
+        "dms_field_description": "Indication whether the place specified for a third country",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/22B/L001": {
+        "dms_field_name": "LocationName",
+        "dms_field_description": "Name of the point or port of departure, terms of delivery, e.g. Incoterm",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/22B/L002": {
+        "dms_field_name": "LocationID",
+        "dms_field_description": "Identifier of the point or port of applicable delivery term",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A": {
+        "dms_field_name": "Consignee",
+        "dms_field_description": "Name and address details of the party to which goods are consigned",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A/R014": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of party to which goods are consigned",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/27A/R015": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of party to which goods are consigned",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A": {
+        "dms_field_name": "Consignment",
+        "dms_field_description": "Details about the transport between a consignor and a consignee as specified in the transport contract document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/096": {
+        "dms_field_name": "ContainerCode",
+        "dms_field_description": "A code indicating whether or not goods are transported in a container",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/10A": {
+        "dms_field_name": "ArrivalTransportMeans",
+        "dms_field_description": "Arrival of goods in the context of import",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/10A/T001": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name to identify the means of transport used at the time of arrival",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/10A/T002": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier to identify the means of transport at the time of arrival",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/10A/T008": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Means of transport used for the carriage of the goods at arrival, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/10A/T020": {
+        "dms_field_name": "ModeCode",
+        "dms_field_description": "Mode of transport used for the carriage of the goods at arrival, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/10A/T034": {
+        "dms_field_name": "IdentificationTypeCode",
+        "dms_field_description": "The type of identifier of the means of transport at arrival, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/31B": {
+        "dms_field_name": "TransportEquipment",
+        "dms_field_description": "Details of Transport equipment used for the consignment",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/31B/006": {
+        "dms_field_name": "SequenceNumeric",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/31B/159": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Marks (letters and/or numbers) which",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/31B/44B": {
+        "dms_field_name": "Seal",
+        "dms_field_description": "A device used to secure an object and",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/31B/44B/006": {
+        "dms_field_name": "SequenceNumeric",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/31B/44B/165": {
+        "dms_field_name": "ID",
+        "dms_field_description": "The identification number of a seal",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/46A": {
+        "dms_field_name": "DepartureTransportMeans",
+        "dms_field_description": "Departure of goods in the context of export",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/46A/T003": {
+        "dms_field_name": "Name",
+        "dms_field_description": "To identify the means of transport used",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/46A/T004": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier to identify the means of transport at the time of departure",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/46A/T009": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Means of transport used for the carriage of the goods at departure, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/46A/T021": {
+        "dms_field_name": "ModeCode",
+        "dms_field_description": "Mode of transport used for the carriage of the goods at departure, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/46A/T029": {
+        "dms_field_name": "IdentificationTypeCode",
+        "dms_field_description": "The type of identifier of the means of transport at departure, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A": {
+        "dms_field_name": "GoodsLocation",
+        "dms_field_description": "Information about the place where the goods are located",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A/04A/410": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A/L016": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of the place where goods are located",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A/L017": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify the place where goods are located",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/64A/L110": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "The type of goods location",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/83A": {
+        "dms_field_name": "LoadingLocation",
+        "dms_field_description": "Place at which the goods (consignments) are loaded on to the active means of transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/83A/L009": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of a seaport, airport, freight carriage",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/28A/83A/L010": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a seaport, airport, freight carriage",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A": {
+        "dms_field_name": "Consignor",
+        "dms_field_description": "Name and address details of the party which, by contract with a carrier, consigns or sends goods with the carrier, or has them conveyed by him",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A/R020": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of the party consigning goods as stipulated in the transport contract by the party ordering transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/30A/R021": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify the party consigning goods as stipulated in the transport contract by the party ordering transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/35B": {
+        "dms_field_name": "UCR",
+        "dms_field_description": "Unique Trader Reference such as UCR",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/35B/009": {
+        "dms_field_name": "TraderAssignedReferenceID",
+        "dms_field_description": "A number assigned by a declarant such as",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/35B/016": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Unique number assigned to goods being subject to cross border transactions",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/41A": {
+        "dms_field_name": "CustomsValuation",
+        "dms_field_description": "Valuation details applying to the shipment",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/41A/117": {
+        "dms_field_name": "FreightChargeAmount",
+        "dms_field_description": "Costs incurred by the shipper in moving",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/41A/58B": {
+        "dms_field_name": "ChargeDeduction",
+        "dms_field_description": "Details of the charges and deductions erection, etc.",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/41A/58B/181": {
+        "dms_field_name": "OtherChargeDeductionAmount",
+        "dms_field_description": "An amount added or subtracted from the value",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/41A/58B/371": {
+        "dms_field_name": "ChargesTypeCode",
+        "dms_field_description": "Code identifying the type of charge or deduction",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/43B": {
+        "dms_field_name": "Warehouse",
+        "dms_field_description": "Warehouse where a particular goods shipment will be / is / has been stored",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/43B/L019": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a warehouse where a particular",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/43B/L112": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "The type of warehouse, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/55B": {
+        "dms_field_name": "DomesticDutyTaxParty",
+        "dms_field_description": "Party responsible for the national VAT or Goods & Services Tax",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/55B/R005": {
+        "dms_field_name": "RoleCode",
+        "dms_field_description": "Code giving specific meaning to a party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/55B/R119": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a party responsible forthe national VAT or Goods & Services Tax",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B": {
+        "dms_field_name": "Payer",
+        "dms_field_description": "Third person paying an amount of duty",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B/R120": {
+        "dms_field_name": "Name",
+        "dms_field_description": "The name of a third person paying an amount of duty",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/56B/R121": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a third person paying an amount of duty",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A": {
+        "dms_field_name": "GovernmentAgencyGoodsItem",
+        "dms_field_description": "Goods item as declared to Government Agency",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/006": {
+        "dms_field_name": "SequenceNumeric",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A": {
+        "dms_field_name": "AdditionalDocument",
+        "dms_field_description": "Details related to additional documents supplied",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/17B": {
+        "dms_field_name": "Submitter",
+        "dms_field_description": "Details related to the submitter of written or electronic documentation",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/17B/R005": {
+        "dms_field_name": "RoleCode",
+        "dms_field_description": "Code giving specific meaning to a party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/17B/R058": {
+        "dms_field_name": "Name",
+        "dms_field_description": "The name of the party who presents a document another",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/22C": {
+        "dms_field_name": "WriteOff",
+        "dms_field_description": "Details needed to write-off documents",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/22C/502": {
+        "dms_field_name": "QuantityQuantity",
+        "dms_field_description": "The quantity to be written of a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/22C/503": {
+        "dms_field_name": "AmountAmount",
+        "dms_field_description": "The amount to be written of a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/276": {
+        "dms_field_name": "EffectiveDateTime",
+        "dms_field_description": "The effective date of the document (e.g. license, visa, permit, certificate)",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/360": {
+        "dms_field_name": "LPCOExemptionCode",
+        "dms_field_description": "Type of exemption from a license, permit, certificate, or other document (LPCO) or indication that no LPCO is required",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/D005": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of a document providing additional information",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/D006": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Code specifying the name of an additional document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/D028": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Free text name of an additional document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/02A/D031": {
+        "dms_field_name": "CategoryCode",
+        "dms_field_description": "Code specifying the category of a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/03A": {
+        "dms_field_name": "AdditionalInformation",
+        "dms_field_description": "Special request to government from declarant to take or not to take action",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/03A/225": {
+        "dms_field_name": "StatementDescription",
+        "dms_field_description": "Description of an additional statement",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/03A/226": {
+        "dms_field_name": "StatementCode",
+        "dms_field_description": "Coded form of an additional statement",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/03A/369": {
+        "dms_field_name": "StatementTypeCode",
+        "dms_field_description": "Code qualifying the subject of the additional statement",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B": {
+        "dms_field_name": "Seller",
+        "dms_field_description": "Party selling merchandise to a buyer",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/25A": {
+        "dms_field_name": "Communication",
+        "dms_field_description": "Details of communication including number and number type",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/25A/240": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/25A/253": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/34A": {
+        "dms_field_name": "Contact",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/34A/246": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/R050": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of a party selling merchandise or services to a buyer",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/09B/R051": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of the party selling merchandise or services to a buyer",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/103": {
+        "dms_field_name": "TransactionNatureCode",
+        "dms_field_description": "Code specifying the nature of a transaction associated with a shipment",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/108": {
+        "dms_field_name": "CustomsValueAmount",
+        "dms_field_description": "Amount declared for Customs purposes of",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/114": {
+        "dms_field_name": "StatisticalValueAmount",
+        "dms_field_description": "Value declared for statistical purposes of statistical heading",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A": {
+        "dms_field_name": "Buyer",
+        "dms_field_description": "Name and address details of the party to which merchandise or services are sold",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/25A": {
+        "dms_field_name": "Communication",
+        "dms_field_description": "Details of communication including number and number type",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/25A/240": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/25A/253": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/34A": {
+        "dms_field_name": "Contact",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/34A/246": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/R009": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of a party to which merchandise or services are sold",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16A/R010": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of a party to which merchandise or services are sold",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16C": {
+        "dms_field_name": "AEOMutualRecognitionParty",
+        "dms_field_description": "Details identifying the role of the further",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16C/R005": {
+        "dms_field_name": "RoleCode",
+        "dms_field_description": "Code giving specific meaning to a party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/16C/R143": {
+        "dms_field_name": "ID",
+        "dms_field_description": "The identifier of the AEO mutual recognition party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A": {
+        "dms_field_name": "Commodity",
+        "dms_field_description": "Details about the properties of the goods",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/12C": {
+        "dms_field_name": "DangerousGoods",
+        "dms_field_description": "Details about the dangerous goods",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/12C/506": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/137": {
+        "dms_field_name": "Description",
+        "dms_field_description": "Plain language description of the nature statistical or transport.",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/21A": {
+        "dms_field_name": "Classification",
+        "dms_field_description": "Details about the non-commercial organization",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/21A/145": {
+        "dms_field_name": "ID",
+        "dms_field_description": "The non-commercial categorization of a",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/31B": {
+        "dms_field_name": "TransportEquipment",
+        "dms_field_description": "Details of Transport equipment used for the consignment",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/31B/006": {
+        "dms_field_name": "SequenceNumeric",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/31B/159": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Marks (letters and/or numbers) which",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A": {
+        "dms_field_name": "DutyTaxFee",
+        "dms_field_description": "Calculation one instance one duty, one",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/111": {
+        "dms_field_name": "DeductAmount",
+        "dms_field_description": "Amount of deduction from a duty or tax",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/113": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Code specifying a type of duty or tax applicable to services",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/115": {
+        "dms_field_name": "TaxRateNumeric",
+        "dms_field_description": "Rate of duty or tax or fee applicable",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/116": {
+        "dms_field_name": "AdValoremTaxBaseAmount",
+        "dms_field_description": "To specify the amount on which a duty or tax or fee will be assessed",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/129": {
+        "dms_field_name": "SpecificTaxBaseQuantity",
+        "dms_field_description": "To specify the quantity on which a duty or tax or fee will be assessed",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/164": {
+        "dms_field_name": "DutyRegimeCode",
+        "dms_field_description": "Code specifying a type of duty regime",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/401": {
+        "dms_field_name": "QuotaOrderID",
+        "dms_field_description": "Identifier of an order specifying a quota",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/94A": {
+        "dms_field_name": "Payment",
+        "dms_field_description": "Information about payment details",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/94A/107": {
+        "dms_field_name": "MethodCode",
+        "dms_field_description": "Code specifying a method of payment",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/94A/120": {
+        "dms_field_name": "TaxAssessedAmount",
+        "dms_field_description": "Assessed amount of duty/tax/fee",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/50A/94A/378": {
+        "dms_field_name": "PaymentAmount",
+        "dms_field_description": "The actual amount paid, or to be paid",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/65A": {
+        "dms_field_name": "GoodsMeasure",
+        "dms_field_description": "Details about the goods weight, quantities, and amounts",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/65A/126": {
+        "dms_field_name": "GrossMassMeasure",
+        "dms_field_description": "Weight of line item including",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/65A/128": {
+        "dms_field_name": "NetNetWeightMeasure",
+        "dms_field_description": "Weight (mass) of the goods themselves without any packing",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/65A/130": {
+        "dms_field_name": "TariffQuantity",
+        "dms_field_description": "Quantity of the goods in the unit as purposes",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/79A": {
+        "dms_field_name": "InvoiceLine",
+        "dms_field_description": "Information relating to the line item of an invoice",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/23A/79A/112": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A": {
+        "dms_field_name": "Consignee",
+        "dms_field_description": "Name and address details of the party to which goods are consigned",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A/R014": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of party to which goods are consigned",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/27A/R015": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of party to which goods are consigned",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A": {
+        "dms_field_name": "Consignor",
+        "dms_field_description": "Name and address details of the party which, by contract with a carrier, consigns or sends goods with the carrier, or has them conveyed by him",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A/R020": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of the party consigning goods as stipulated in the transport contract by the party ordering transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/30A/R021": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify the party consigning goods as stipulated in the transport contract by the party ordering transport",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/35B": {
+        "dms_field_name": "UCR",
+        "dms_field_description": "Unique Trader Reference such as UCR",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/35B/009": {
+        "dms_field_name": "TraderAssignedReferenceID",
+        "dms_field_description": "A number assigned by a declarant such as",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/35B/016": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Unique number assigned to goods being subject to cross border transactions",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/39B": {
+        "dms_field_name": "ValuationAdjustment",
+        "dms_field_description": "Details about valuation adjustments",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/39B/188": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/41A": {
+        "dms_field_name": "CustomsValuation",
+        "dms_field_description": "Valuation details applying to the shipment",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/41A/122": {
+        "dms_field_name": "MethodCode",
+        "dms_field_description": "Indicates the method on which the Customs value is determined",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/41A/58B": {
+        "dms_field_name": "ChargeDeduction",
+        "dms_field_description": "Details of the charges and deductions erection, etc.",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/41A/58B/181": {
+        "dms_field_name": "OtherChargeDeductionAmount",
+        "dms_field_description": "An amount added or subtracted from the value",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/41A/58B/371": {
+        "dms_field_name": "ChargesTypeCode",
+        "dms_field_description": "Code identifying the type of charge or deduction",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/55B": {
+        "dms_field_name": "DomesticDutyTaxParty",
+        "dms_field_description": "Party responsible for the national VAT or Goods & Services Tax",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/55B/R005": {
+        "dms_field_name": "RoleCode",
+        "dms_field_description": "Code giving specific meaning to a party",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/55B/R119": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a party responsible forthe national VAT or Goods & Services Tax",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B": {
+        "dms_field_name": "RefundRecipientParty",
+        "dms_field_description": "Party to receive refund",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B/R127": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of a party to receive refund",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/59B/R128": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identification of a party to receive refund",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/70A": {
+        "dms_field_name": "GovernmentProcedure",
+        "dms_field_description": "Details about the current and previous government procedure",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/70A/161": {
+        "dms_field_name": "PreviousCode",
+        "dms_field_description": "Code specifying the government procedure,",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/70A/166": {
+        "dms_field_name": "CurrentCode",
+        "dms_field_description": "Code specifying a procedure",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A": {
+        "dms_field_name": "Manufacturer",
+        "dms_field_description": "Name [and address] of party which manufactures goods",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A/R042": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of party which manufactures goods",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/86A/R043": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of party which manufactures goods",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/92A": {
+        "dms_field_name": "Origin",
+        "dms_field_description": "Details about the origin of the goods",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/92A/063": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "To identify the country in which the trade",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/92A/066": {
+        "dms_field_name": "RegionID",
+        "dms_field_description": "Region in which the goods have been",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/92A/501": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Code to differentiate between different Country of Origin codes",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A": {
+        "dms_field_name": "Packaging",
+        "dms_field_description": "Details related to packaging",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A/006": {
+        "dms_field_name": "SequenceNumeric",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A/141": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Code specifying the type of package of an item",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A/142": {
+        "dms_field_name": "MarksNumbersID",
+        "dms_field_description": "Free form description of the marks and numbers on a transport unit or package",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A/144": {
+        "dms_field_name": "QuantityQuantity",
+        "dms_field_description": "Number of individual items packaged in undoing the packing",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A/344": {
+        "dms_field_name": "PackingMaterialDescription",
+        "dms_field_description": "A further description of the type of",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A/367": {
+        "dms_field_name": "LengthMeasure",
+        "dms_field_description": "To specify the length of the package",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A/368": {
+        "dms_field_name": "WidthMeasure",
+        "dms_field_description": "To specify the width of the package",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A/395": {
+        "dms_field_name": "VolumeMeasure",
+        "dms_field_description": "Description of the volume of the package",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/93A/402": {
+        "dms_field_name": "HeightMeasure",
+        "dms_field_description": "To specify the value of the height dimension",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/95B": {
+        "dms_field_name": "ExportCountry",
+        "dms_field_description": "Details related to the export country",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/95B/062": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/99A": {
+        "dms_field_name": "PreviousDocument",
+        "dms_field_description": "Information relating to the previous document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/99A/171": {
+        "dms_field_name": "LineNumeric",
+        "dms_field_description": "Item number pertaining to the previous Customs filing",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/99A/D018": {
+        "dms_field_name": "ID",
+        "dms_field_description": "The number of a previous document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/99A/D019": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Type of document used for declaration previously presented, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/99A/D031": {
+        "dms_field_name": "CategoryCode",
+        "dms_field_description": "Code specifying the category of a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/99B": {
+        "dms_field_name": "Destination",
+        "dms_field_description": "Details related to the country of destination",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/99B/465": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "To identify the country of destination",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/68A/99B/477": {
+        "dms_field_name": "RegionID",
+        "dms_field_description": "Country subdivision of destination",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A": {
+        "dms_field_name": "Importer",
+        "dms_field_description": "Party who makes -or on whose behalf a Customs declaration",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/04A": {
+        "dms_field_name": "Address",
+        "dms_field_description": "Details relating to an address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/04A/239": {
+        "dms_field_name": "Line",
+        "dms_field_description": "Specification of the postal delivery point",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/04A/241": {
+        "dms_field_name": "CityName",
+        "dms_field_description": "Name of a city",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/04A/242": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "Identification of the name of the country or UN/ECE Rec 3",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/04A/243": {
+        "dms_field_name": "CountrySubDivisionName",
+        "dms_field_description": "Name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/04A/244": {
+        "dms_field_name": "CountrySubDivisionCode",
+        "dms_field_description": "Code specifying the name of a country subdivision",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/04A/245": {
+        "dms_field_name": "PostcodeID",
+        "dms_field_description": "Code specifying a postal zone or address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/25A": {
+        "dms_field_name": "Communication",
+        "dms_field_description": "Details of communication including number and number type",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/25A/240": {
+        "dms_field_name": "ID",
+        "dms_field_description": "To identify a communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/25A/253": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "To identify the type of communication address",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/34A": {
+        "dms_field_name": "Contact",
+        "dms_field_description": "null",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/34A/246": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/R037": {
+        "dms_field_name": "Name",
+        "dms_field_description": "Name of party who makes -or on whose behalf",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/74A/R038": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Identifier of party who makes - or on whose consigned",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/78A": {
+        "dms_field_name": "Invoice",
+        "dms_field_description": "Information of a commercial invoice",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/78A/D015": {
+        "dms_field_name": "IssueDateTime",
+        "dms_field_description": "Date of issue of an invoice",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/78A/D016": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Reference number to identify an invoice",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/95B": {
+        "dms_field_name": "ExportCountry",
+        "dms_field_description": "Details related to the export country",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/95B/062": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/99A": {
+        "dms_field_name": "PreviousDocument",
+        "dms_field_description": "Information relating to the previous document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/99A/171": {
+        "dms_field_name": "LineNumeric",
+        "dms_field_description": "Item number pertaining to the previous Customs filing",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/99A/D018": {
+        "dms_field_name": "ID",
+        "dms_field_description": "The number of a previous document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/99A/D019": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Type of document used for declaration previously presented, coded",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/99A/D031": {
+        "dms_field_name": "CategoryCode",
+        "dms_field_description": "Code specifying the category of a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/99B": {
+        "dms_field_name": "Destination",
+        "dms_field_description": "Details related to the country of destination",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/99B/465": {
+        "dms_field_name": "CountryCode",
+        "dms_field_description": "To identify the country of destination",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/67A/99B/477": {
+        "dms_field_name": "RegionID",
+        "dms_field_description": "Country subdivision of destination",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/90A": {
+        "dms_field_name": "ObligationGuarantee",
+        "dms_field_description": "Details regarding undertaking given in cash, bond fulfilled, e.g. under a transit procedure",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/90A/100": {
+        "dms_field_name": "ReferenceID",
+        "dms_field_description": "A reference number to identify the undertaking",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/90A/101": {
+        "dms_field_name": "SecurityDetailsCode",
+        "dms_field_description": "A code identifying the type of undertaking",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/90A/14C": {
+        "dms_field_name": "GuaranteeOffice",
+        "dms_field_description": "Details identifying the government agency office related to the guarantee",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/90A/14C/G014": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/90A/492": {
+        "dms_field_name": "AmountAmount",
+        "dms_field_description": "The recorded amount of security in case that security account",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/90A/499": {
+        "dms_field_name": "AccessCode",
+        "dms_field_description": "The access code as associated with a given guarantee reference number",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/90A/D014": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Reference number identifying a specific document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/97B": {
+        "dms_field_name": "SupervisingOffice",
+        "dms_field_description": "Details identifying the government agency office procedure",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/97B/G012": {
+        "dms_field_name": "",
+        "dms_field_description": "",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/D011": {
+        "dms_field_name": "IssueDateTime",
+        "dms_field_description": "Date at which a document was issued and when appropriate, signed or otherwise authenticated",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/D012": {
+        "dms_field_name": "IssueLocationID",
+        "dms_field_description": "Place at which a document was issued and when appropriate, signed or otherwise authenticated",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/D013": {
+        "dms_field_name": "TypeCode",
+        "dms_field_description": "Code specifying the name of a document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/D014": {
+        "dms_field_name": "ID",
+        "dms_field_description": "Reference number identifying a specific document",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    },
+    {
+      "42A/D026": {
+        "dms_field_name": "FunctionalReferenceID",
+        "dms_field_description": "Reference number identifying a specific information exchange",
+        "field": "",
+        "page": "",
+        "description": ""
+      }
+    }
+  ]
+}
