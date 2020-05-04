@@ -34,8 +34,8 @@ function git_clone {
     log "Download the latest Schema definitions... "
     git clone git@github.com:hmrc/customs-declarations.git
     echo ${1}
-    if [ -z $GIT_TAG ]; then
-        cd customs-declarations
+    if [ -z "$GIT_TAG" ]; then
+        cd customs-declarations || exit
         git checkout ${1}
         cd ..
     fi
