@@ -37,14 +37,12 @@ import wco.datamodel.wco.declaration_ds.dms._2.GuaranteeOfficeIdentificationIDTy
 import wco.datamodel.wco.declaration_ds.dms._2.ImporterIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.InvoiceIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.LoadingLocationIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ManufacturerIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.ObligationGuaranteeIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.OriginRegionIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.PackagingMarksNumbersIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.PayerIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.PresentationOfficeIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.PreviousDocumentIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.RefundRecipientPartyIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.SealIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.SellerIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.SubmitterIdentificationIDType;
@@ -115,9 +113,7 @@ import wco.datamodel.wco.response_ds.dms._2.ResponseFunctionalReferenceIDType;
     AddressPostcodeIDType.class,
     GuaranteeOfficeIdentificationIDType.class,
     wco.datamodel.wco.declaration_ds.dms._2.PointerTagIDType.class,
-    ManufacturerIdentificationIDType.class,
     ConsignorIdentificationIDType.class,
-    RefundRecipientPartyIdentificationIDType.class,
     wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeQuotaOrderIDType.class,
     UCRTraderAssignedReferenceIDType.class,
     BorderTransportMeansIdentificationIDType.class,
