@@ -31,10 +31,8 @@ import wco.datamodel.wco.declaration_ds.dms._2.ExporterNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.GoodsLocationNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.ImporterNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.LoadingLocationNameTextType;
-import wco.datamodel.wco.declaration_ds.dms._2.ManufacturerNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.PackagingPackingMaterialDescriptionTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.PayerNameTextType;
-import wco.datamodel.wco.declaration_ds.dms._2.RefundRecipientPartyNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.SellerNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.SubmitterNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.SuretyNameTextType;
@@ -71,7 +69,6 @@ import wco.datamodel.wco.response_ds.dms._2.ErrorDescriptionTextType;
     AuthenticatorNameTextType.class,
     CommodityDescriptionTextType.class,
     AgentNameTextType.class,
-    ManufacturerNameTextType.class,
     PackagingPackingMaterialDescriptionTextType.class,
     TradeTermsLocationNameTextType.class,
     ConsignorNameTextType.class,
@@ -96,7 +93,6 @@ import wco.datamodel.wco.response_ds.dms._2.ErrorDescriptionTextType;
     CarrierNameTextType.class,
     AddressCityNameTextType.class,
     AddressCountrySubDivisionNameTextType.class,
-    RefundRecipientPartyNameTextType.class,
     BuyerNameTextType.class
 })
 public class TextType {

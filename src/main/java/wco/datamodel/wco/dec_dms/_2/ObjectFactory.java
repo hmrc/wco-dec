@@ -106,22 +106,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty }
-     * 
-     */
-    public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty createDeclarationGoodsShipmentGovernmentAgencyGoodsItemRefundRecipientParty() {
-        return new Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty();
-    }
-
-    /**
-     * Create an instance of {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer }
-     * 
-     */
-    public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer createDeclarationGoodsShipmentGovernmentAgencyGoodsItemManufacturer() {
-        return new Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer();
-    }
-
-    /**
      * Create an instance of {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.CustomsValuation }
      * 
      */
@@ -642,22 +626,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty.Address }
-     * 
-     */
-    public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty.Address createDeclarationGoodsShipmentGovernmentAgencyGoodsItemRefundRecipientPartyAddress() {
-        return new Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty.Address();
-    }
-
-    /**
-     * Create an instance of {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer.Address }
-     * 
-     */
-    public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer.Address createDeclarationGoodsShipmentGovernmentAgencyGoodsItemManufacturerAddress() {
-        return new Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer.Address();
-    }
-
-    /**
      * Create an instance of {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.CustomsValuation.ChargeDeduction }
      * 
      */
@@ -951,6 +919,14 @@ public class ObjectFactory {
      */
     public Declaration.Consignment.Carrier.Address createDeclarationConsignmentCarrierAddress() {
         return new Declaration.Consignment.Carrier.Address();
+    }
+
+    /**
+     * Create an instance of {@link Declaration.Consignment.Carrier.Communication }
+     * 
+     */
+    public Declaration.Consignment.Carrier.Communication createDeclarationConsignmentCarrierCommunication() {
+        return new Declaration.Consignment.Carrier.Communication();
     }
 
     /**

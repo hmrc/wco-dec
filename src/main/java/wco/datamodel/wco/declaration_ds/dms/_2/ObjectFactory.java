@@ -222,14 +222,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ManufacturerNameTextType }
-     * 
-     */
-    public ManufacturerNameTextType createManufacturerNameTextType() {
-        return new ManufacturerNameTextType();
-    }
-
-    /**
      * Create an instance of {@link CurrencyExchangeCurrencyTypeCodeType }
      * 
      */
@@ -358,14 +350,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ManufacturerIdentificationIDType }
-     * 
-     */
-    public ManufacturerIdentificationIDType createManufacturerIdentificationIDType() {
-        return new ManufacturerIdentificationIDType();
-    }
-
-    /**
      * Create an instance of {@link PackagingHeightMeasureType }
      * 
      */
@@ -387,14 +371,6 @@ public class ObjectFactory {
      */
     public ConsignorIdentificationIDType createConsignorIdentificationIDType() {
         return new ConsignorIdentificationIDType();
-    }
-
-    /**
-     * Create an instance of {@link RefundRecipientPartyIdentificationIDType }
-     * 
-     */
-    public RefundRecipientPartyIdentificationIDType createRefundRecipientPartyIdentificationIDType() {
-        return new RefundRecipientPartyIdentificationIDType();
     }
 
     /**
@@ -1347,14 +1323,6 @@ public class ObjectFactory {
      */
     public AdditionalDocumentCategoryCodeType createAdditionalDocumentCategoryCodeType() {
         return new AdditionalDocumentCategoryCodeType();
-    }
-
-    /**
-     * Create an instance of {@link RefundRecipientPartyNameTextType }
-     * 
-     */
-    public RefundRecipientPartyNameTextType createRefundRecipientPartyNameTextType() {
-        return new RefundRecipientPartyNameTextType();
     }
 
     /**

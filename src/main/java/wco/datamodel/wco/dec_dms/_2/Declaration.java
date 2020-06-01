@@ -124,8 +124,6 @@ import wco.datamodel.wco.declaration_ds.dms._2.InvoiceLineItemChargeAmountType;
 import wco.datamodel.wco.declaration_ds.dms._2.ItineraryRoutingCountryCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.LoadingLocationIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.LoadingLocationNameTextType;
-import wco.datamodel.wco.declaration_ds.dms._2.ManufacturerIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ManufacturerNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.ObligationGuaranteeAccessCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.ObligationGuaranteeAmountAmountType;
 import wco.datamodel.wco.declaration_ds.dms._2.ObligationGuaranteeIdentificationIDType;
@@ -153,8 +151,6 @@ import wco.datamodel.wco.declaration_ds.dms._2.PresentationOfficeIdentificationI
 import wco.datamodel.wco.declaration_ds.dms._2.PreviousDocumentCategoryCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.PreviousDocumentIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.PreviousDocumentTypeCodeType;
-import wco.datamodel.wco.declaration_ds.dms._2.RefundRecipientPartyIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.RefundRecipientPartyNameTextType;
 import wco.datamodel.wco.declaration_ds.dms._2.SealIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.SellerIdentificationIDType;
 import wco.datamodel.wco.declaration_ds.dms._2.SellerNameTextType;
@@ -401,6 +397,18 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
  *                             &lt;/element>
+ *                             &lt;element name="Communication" minOccurs="0">
+ *                               &lt;complexType>
+ *                                 &lt;complexContent>
+ *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                                     &lt;sequence>
+ *                                       &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CommunicationIdentificationIDType" minOccurs="0"/>
+ *                                       &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CommunicationTypeCodeType" minOccurs="0"/>
+ *                                     &lt;/sequence>
+ *                                   &lt;/restriction>
+ *                                 &lt;/complexContent>
+ *                               &lt;/complexType>
+ *                             &lt;/element>
  *                           &lt;/sequence>
  *                         &lt;/restriction>
  *                       &lt;/complexContent>
@@ -549,7 +557,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                       &lt;/complexContent>
  *                     &lt;/complexType>
  *                   &lt;/element>
- *                   &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+ *                   &lt;element name="Contact" minOccurs="0">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -560,7 +568,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                       &lt;/complexContent>
  *                     &lt;/complexType>
  *                   &lt;/element>
- *                   &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+ *                   &lt;element name="Communication" minOccurs="0">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -611,7 +619,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                       &lt;/complexContent>
  *                     &lt;/complexType>
  *                   &lt;/element>
- *                   &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+ *                   &lt;element name="Contact" minOccurs="0">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -622,7 +630,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                       &lt;/complexContent>
  *                     &lt;/complexType>
  *                   &lt;/element>
- *                   &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+ *                   &lt;element name="Communication" minOccurs="0">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -681,7 +689,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
  *                             &lt;/element>
- *                             &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+ *                             &lt;element name="Contact" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -692,7 +700,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
  *                             &lt;/element>
- *                             &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+ *                             &lt;element name="Communication" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1025,7 +1033,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                           &lt;/complexContent>
  *                                         &lt;/complexType>
  *                                       &lt;/element>
- *                                       &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+ *                                       &lt;element name="Contact" minOccurs="0">
  *                                         &lt;complexType>
  *                                           &lt;complexContent>
  *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1036,7 +1044,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                           &lt;/complexContent>
  *                                         &lt;/complexType>
  *                                       &lt;/element>
- *                                       &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+ *                                       &lt;element name="Communication" minOccurs="0">
  *                                         &lt;complexType>
  *                                           &lt;complexContent>
  *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1279,34 +1287,6 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
  *                             &lt;/element>
- *                             &lt;element name="Manufacturer" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ManufacturerNameTextType" minOccurs="0"/>
- *                                       &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ManufacturerIdentificationIDType" minOccurs="0"/>
- *                                       &lt;element name="Address" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
- *                                                 &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
- *                                                 &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
- *                                                 &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
- *                                                 &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
- *                                                 &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
  *                             &lt;element name="Origin" maxOccurs="unbounded" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
@@ -1325,7 +1305,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                                     &lt;sequence>
- *                                       &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingSequenceNumericType" minOccurs="0"/>
+ *                                       &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingSequenceNumericType"/>
  *                                       &lt;element name="MarksNumbersID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingMarksNumbersIDType" minOccurs="0"/>
  *                                       &lt;element name="QuantityQuantity" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingQuantityQuantityType" minOccurs="0"/>
  *                                       &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingTypeCodeType" minOccurs="0"/>
@@ -1348,34 +1328,6 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                       &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PreviousDocumentIdentificationIDType" minOccurs="0"/>
  *                                       &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PreviousDocumentTypeCodeType" minOccurs="0"/>
  *                                       &lt;element name="LineNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PreviousDocumentLineNumericType" minOccurs="0"/>
- *                                     &lt;/sequence>
- *                                   &lt;/restriction>
- *                                 &lt;/complexContent>
- *                               &lt;/complexType>
- *                             &lt;/element>
- *                             &lt;element name="RefundRecipientParty" maxOccurs="unbounded" minOccurs="0">
- *                               &lt;complexType>
- *                                 &lt;complexContent>
- *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                     &lt;sequence>
- *                                       &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}RefundRecipientPartyNameTextType" minOccurs="0"/>
- *                                       &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}RefundRecipientPartyIdentificationIDType" minOccurs="0"/>
- *                                       &lt;element name="Address" minOccurs="0">
- *                                         &lt;complexType>
- *                                           &lt;complexContent>
- *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                                               &lt;sequence>
- *                                                 &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
- *                                                 &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
- *                                                 &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
- *                                                 &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
- *                                                 &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
- *                                                 &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
- *                                               &lt;/sequence>
- *                                             &lt;/restriction>
- *                                           &lt;/complexContent>
- *                                         &lt;/complexType>
- *                                       &lt;/element>
  *                                     &lt;/sequence>
  *                                   &lt;/restriction>
  *                                 &lt;/complexContent>
@@ -1404,7 +1356,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                           &lt;/complexContent>
  *                                         &lt;/complexType>
  *                                       &lt;/element>
- *                                       &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+ *                                       &lt;element name="Contact" minOccurs="0">
  *                                         &lt;complexType>
  *                                           &lt;complexContent>
  *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1415,7 +1367,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                           &lt;/complexContent>
  *                                         &lt;/complexType>
  *                                       &lt;/element>
- *                                       &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+ *                                       &lt;element name="Communication" minOccurs="0">
  *                                         &lt;complexType>
  *                                           &lt;complexContent>
  *                                             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1483,7 +1435,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
  *                             &lt;/element>
- *                             &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+ *                             &lt;element name="Contact" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1494,7 +1446,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
  *                             &lt;/element>
- *                             &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+ *                             &lt;element name="Communication" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1523,7 +1475,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                       &lt;/complexContent>
  *                     &lt;/complexType>
  *                   &lt;/element>
- *                   &lt;element name="Payer" maxOccurs="unbounded" minOccurs="0">
+ *                   &lt;element name="Payer" minOccurs="0">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1588,7 +1540,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
  *                             &lt;/element>
- *                             &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+ *                             &lt;element name="Contact" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1599,7 +1551,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
  *                             &lt;/element>
- *                             &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+ *                             &lt;element name="Communication" minOccurs="0">
  *                               &lt;complexType>
  *                                 &lt;complexContent>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -1616,7 +1568,7 @@ import wco.datamodel.wco.declaration_ds.dms._2.WriteOffQuantityQuantityType;
  *                       &lt;/complexContent>
  *                     &lt;/complexType>
  *                   &lt;/element>
- *                   &lt;element name="Surety" maxOccurs="unbounded" minOccurs="0">
+ *                   &lt;element name="Surety" minOccurs="0">
  *                     &lt;complexType>
  *                       &lt;complexContent>
  *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -4015,6 +3967,18 @@ public class Declaration {
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
      *                   &lt;/element>
+     *                   &lt;element name="Communication" minOccurs="0">
+     *                     &lt;complexType>
+     *                       &lt;complexContent>
+     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                           &lt;sequence>
+     *                             &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CommunicationIdentificationIDType" minOccurs="0"/>
+     *                             &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CommunicationTypeCodeType" minOccurs="0"/>
+     *                           &lt;/sequence>
+     *                         &lt;/restriction>
+     *                       &lt;/complexContent>
+     *                     &lt;/complexType>
+     *                   &lt;/element>
      *                 &lt;/sequence>
      *               &lt;/restriction>
      *             &lt;/complexContent>
@@ -4311,6 +4275,18 @@ public class Declaration {
          *             &lt;/complexContent>
          *           &lt;/complexType>
          *         &lt;/element>
+         *         &lt;element name="Communication" minOccurs="0">
+         *           &lt;complexType>
+         *             &lt;complexContent>
+         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *                 &lt;sequence>
+         *                   &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CommunicationIdentificationIDType" minOccurs="0"/>
+         *                   &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CommunicationTypeCodeType" minOccurs="0"/>
+         *                 &lt;/sequence>
+         *               &lt;/restriction>
+         *             &lt;/complexContent>
+         *           &lt;/complexType>
+         *         &lt;/element>
          *       &lt;/sequence>
          *     &lt;/restriction>
          *   &lt;/complexContent>
@@ -4323,7 +4299,8 @@ public class Declaration {
         @XmlType(name = "", propOrder = {
             "name",
             "id",
-            "address"
+            "address",
+            "communication"
         })
         public static class Carrier {
 
@@ -4333,6 +4310,8 @@ public class Declaration {
             protected CarrierIdentificationIDType id;
             @XmlElement(name = "Address")
             protected Declaration.Consignment.Carrier.Address address;
+            @XmlElement(name = "Communication")
+            protected Declaration.Consignment.Carrier.Communication communication;
 
             /**
              * Gets the value of the name property.
@@ -4404,6 +4383,30 @@ public class Declaration {
              */
             public void setAddress(Declaration.Consignment.Carrier.Address value) {
                 this.address = value;
+            }
+
+            /**
+             * Gets the value of the communication property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.Consignment.Carrier.Communication }
+             *     
+             */
+            public Declaration.Consignment.Carrier.Communication getCommunication() {
+                return communication;
+            }
+
+            /**
+             * Sets the value of the communication property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.Consignment.Carrier.Communication }
+             *     
+             */
+            public void setCommunication(Declaration.Consignment.Carrier.Communication value) {
+                this.communication = value;
             }
 
 
@@ -4597,6 +4600,89 @@ public class Declaration {
                  */
                 public void setPostcodeID(AddressPostcodeIDType value) {
                     this.postcodeID = value;
+                }
+
+            }
+
+
+            /**
+             * <p>Java class for anonymous complex type.
+             * 
+             * <p>The following schema fragment specifies the expected content contained within this class.
+             * 
+             * <pre>
+             * &lt;complexType>
+             *   &lt;complexContent>
+             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+             *       &lt;sequence>
+             *         &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CommunicationIdentificationIDType" minOccurs="0"/>
+             *         &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}CommunicationTypeCodeType" minOccurs="0"/>
+             *       &lt;/sequence>
+             *     &lt;/restriction>
+             *   &lt;/complexContent>
+             * &lt;/complexType>
+             * </pre>
+             * 
+             * 
+             */
+            @XmlAccessorType(XmlAccessType.FIELD)
+            @XmlType(name = "", propOrder = {
+                "id",
+                "typeCode"
+            })
+            public static class Communication {
+
+                @XmlElement(name = "ID")
+                protected CommunicationIdentificationIDType id;
+                @XmlElement(name = "TypeCode")
+                protected CommunicationTypeCodeType typeCode;
+
+                /**
+                 * Gets the value of the id property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link CommunicationIdentificationIDType }
+                 *     
+                 */
+                public CommunicationIdentificationIDType getID() {
+                    return id;
+                }
+
+                /**
+                 * Sets the value of the id property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link CommunicationIdentificationIDType }
+                 *     
+                 */
+                public void setID(CommunicationIdentificationIDType value) {
+                    this.id = value;
+                }
+
+                /**
+                 * Gets the value of the typeCode property.
+                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link CommunicationTypeCodeType }
+                 *     
+                 */
+                public CommunicationTypeCodeType getTypeCode() {
+                    return typeCode;
+                }
+
+                /**
+                 * Sets the value of the typeCode property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link CommunicationTypeCodeType }
+                 *     
+                 */
+                public void setTypeCode(CommunicationTypeCodeType value) {
+                    this.typeCode = value;
                 }
 
             }
@@ -5759,7 +5845,7 @@ public class Declaration {
      *             &lt;/complexContent>
      *           &lt;/complexType>
      *         &lt;/element>
-     *         &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+     *         &lt;element name="Contact" minOccurs="0">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -5770,7 +5856,7 @@ public class Declaration {
      *             &lt;/complexContent>
      *           &lt;/complexType>
      *         &lt;/element>
-     *         &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+     *         &lt;element name="Communication" minOccurs="0">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -5807,9 +5893,9 @@ public class Declaration {
         @XmlElement(name = "Address")
         protected Declaration.Declarant.Address address;
         @XmlElement(name = "Contact")
-        protected List<Declaration.Declarant.Contact> contact;
+        protected Declaration.Declarant.Contact contact;
         @XmlElement(name = "Communication")
-        protected List<Declaration.Declarant.Communication> communication;
+        protected Declaration.Declarant.Communication communication;
 
         /**
          * Gets the value of the name property.
@@ -5886,59 +5972,49 @@ public class Declaration {
         /**
          * Gets the value of the contact property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the contact property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getContact().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link Declaration.Declarant.Contact }
-         * 
-         * 
+         * @return
+         *     possible object is
+         *     {@link Declaration.Declarant.Contact }
+         *     
          */
-        public List<Declaration.Declarant.Contact> getContact() {
-            if (contact == null) {
-                contact = new ArrayList<Declaration.Declarant.Contact>();
-            }
-            return this.contact;
+        public Declaration.Declarant.Contact getContact() {
+            return contact;
+        }
+
+        /**
+         * Sets the value of the contact property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Declaration.Declarant.Contact }
+         *     
+         */
+        public void setContact(Declaration.Declarant.Contact value) {
+            this.contact = value;
         }
 
         /**
          * Gets the value of the communication property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the communication property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getCommunication().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link Declaration.Declarant.Communication }
-         * 
-         * 
+         * @return
+         *     possible object is
+         *     {@link Declaration.Declarant.Communication }
+         *     
          */
-        public List<Declaration.Declarant.Communication> getCommunication() {
-            if (communication == null) {
-                communication = new ArrayList<Declaration.Declarant.Communication>();
-            }
-            return this.communication;
+        public Declaration.Declarant.Communication getCommunication() {
+            return communication;
+        }
+
+        /**
+         * Sets the value of the communication property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Declaration.Declarant.Communication }
+         *     
+         */
+        public void setCommunication(Declaration.Declarant.Communication value) {
+            this.communication = value;
         }
 
 
@@ -6360,7 +6436,7 @@ public class Declaration {
      *             &lt;/complexContent>
      *           &lt;/complexType>
      *         &lt;/element>
-     *         &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+     *         &lt;element name="Contact" minOccurs="0">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -6371,7 +6447,7 @@ public class Declaration {
      *             &lt;/complexContent>
      *           &lt;/complexType>
      *         &lt;/element>
-     *         &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+     *         &lt;element name="Communication" minOccurs="0">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -6408,9 +6484,9 @@ public class Declaration {
         @XmlElement(name = "Address")
         protected Declaration.Exporter.Address address;
         @XmlElement(name = "Contact")
-        protected List<Declaration.Exporter.Contact> contact;
+        protected Declaration.Exporter.Contact contact;
         @XmlElement(name = "Communication")
-        protected List<Declaration.Exporter.Communication> communication;
+        protected Declaration.Exporter.Communication communication;
 
         /**
          * Gets the value of the name property.
@@ -6487,59 +6563,49 @@ public class Declaration {
         /**
          * Gets the value of the contact property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the contact property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getContact().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link Declaration.Exporter.Contact }
-         * 
-         * 
+         * @return
+         *     possible object is
+         *     {@link Declaration.Exporter.Contact }
+         *     
          */
-        public List<Declaration.Exporter.Contact> getContact() {
-            if (contact == null) {
-                contact = new ArrayList<Declaration.Exporter.Contact>();
-            }
-            return this.contact;
+        public Declaration.Exporter.Contact getContact() {
+            return contact;
+        }
+
+        /**
+         * Sets the value of the contact property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Declaration.Exporter.Contact }
+         *     
+         */
+        public void setContact(Declaration.Exporter.Contact value) {
+            this.contact = value;
         }
 
         /**
          * Gets the value of the communication property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the communication property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getCommunication().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link Declaration.Exporter.Communication }
-         * 
-         * 
+         * @return
+         *     possible object is
+         *     {@link Declaration.Exporter.Communication }
+         *     
          */
-        public List<Declaration.Exporter.Communication> getCommunication() {
-            if (communication == null) {
-                communication = new ArrayList<Declaration.Exporter.Communication>();
-            }
-            return this.communication;
+        public Declaration.Exporter.Communication getCommunication() {
+            return communication;
+        }
+
+        /**
+         * Sets the value of the communication property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Declaration.Exporter.Communication }
+         *     
+         */
+        public void setCommunication(Declaration.Exporter.Communication value) {
+            this.communication = value;
         }
 
 
@@ -6925,7 +6991,7 @@ public class Declaration {
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
      *                   &lt;/element>
-     *                   &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+     *                   &lt;element name="Contact" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -6936,7 +7002,7 @@ public class Declaration {
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
      *                   &lt;/element>
-     *                   &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+     *                   &lt;element name="Communication" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7269,7 +7335,7 @@ public class Declaration {
      *                                 &lt;/complexContent>
      *                               &lt;/complexType>
      *                             &lt;/element>
-     *                             &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+     *                             &lt;element name="Contact" minOccurs="0">
      *                               &lt;complexType>
      *                                 &lt;complexContent>
      *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7280,7 +7346,7 @@ public class Declaration {
      *                                 &lt;/complexContent>
      *                               &lt;/complexType>
      *                             &lt;/element>
-     *                             &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+     *                             &lt;element name="Communication" minOccurs="0">
      *                               &lt;complexType>
      *                                 &lt;complexContent>
      *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7523,34 +7589,6 @@ public class Declaration {
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
      *                   &lt;/element>
-     *                   &lt;element name="Manufacturer" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ManufacturerNameTextType" minOccurs="0"/>
-     *                             &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ManufacturerIdentificationIDType" minOccurs="0"/>
-     *                             &lt;element name="Address" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
-     *                                       &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
-     *                                       &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
-     *                                       &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
-     *                                       &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
-     *                                       &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
      *                   &lt;element name="Origin" maxOccurs="unbounded" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
@@ -7569,7 +7607,7 @@ public class Declaration {
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *                           &lt;sequence>
-     *                             &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingSequenceNumericType" minOccurs="0"/>
+     *                             &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingSequenceNumericType"/>
      *                             &lt;element name="MarksNumbersID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingMarksNumbersIDType" minOccurs="0"/>
      *                             &lt;element name="QuantityQuantity" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingQuantityQuantityType" minOccurs="0"/>
      *                             &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingTypeCodeType" minOccurs="0"/>
@@ -7592,34 +7630,6 @@ public class Declaration {
      *                             &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PreviousDocumentIdentificationIDType" minOccurs="0"/>
      *                             &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PreviousDocumentTypeCodeType" minOccurs="0"/>
      *                             &lt;element name="LineNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PreviousDocumentLineNumericType" minOccurs="0"/>
-     *                           &lt;/sequence>
-     *                         &lt;/restriction>
-     *                       &lt;/complexContent>
-     *                     &lt;/complexType>
-     *                   &lt;/element>
-     *                   &lt;element name="RefundRecipientParty" maxOccurs="unbounded" minOccurs="0">
-     *                     &lt;complexType>
-     *                       &lt;complexContent>
-     *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                           &lt;sequence>
-     *                             &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}RefundRecipientPartyNameTextType" minOccurs="0"/>
-     *                             &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}RefundRecipientPartyIdentificationIDType" minOccurs="0"/>
-     *                             &lt;element name="Address" minOccurs="0">
-     *                               &lt;complexType>
-     *                                 &lt;complexContent>
-     *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *                                     &lt;sequence>
-     *                                       &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
-     *                                       &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
-     *                                       &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
-     *                                       &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
-     *                                       &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
-     *                                       &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
-     *                                     &lt;/sequence>
-     *                                   &lt;/restriction>
-     *                                 &lt;/complexContent>
-     *                               &lt;/complexType>
-     *                             &lt;/element>
      *                           &lt;/sequence>
      *                         &lt;/restriction>
      *                       &lt;/complexContent>
@@ -7648,7 +7658,7 @@ public class Declaration {
      *                                 &lt;/complexContent>
      *                               &lt;/complexType>
      *                             &lt;/element>
-     *                             &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+     *                             &lt;element name="Contact" minOccurs="0">
      *                               &lt;complexType>
      *                                 &lt;complexContent>
      *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7659,7 +7669,7 @@ public class Declaration {
      *                                 &lt;/complexContent>
      *                               &lt;/complexType>
      *                             &lt;/element>
-     *                             &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+     *                             &lt;element name="Communication" minOccurs="0">
      *                               &lt;complexType>
      *                                 &lt;complexContent>
      *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7727,7 +7737,7 @@ public class Declaration {
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
      *                   &lt;/element>
-     *                   &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+     *                   &lt;element name="Contact" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7738,7 +7748,7 @@ public class Declaration {
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
      *                   &lt;/element>
-     *                   &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+     *                   &lt;element name="Communication" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7767,7 +7777,7 @@ public class Declaration {
      *             &lt;/complexContent>
      *           &lt;/complexType>
      *         &lt;/element>
-     *         &lt;element name="Payer" maxOccurs="unbounded" minOccurs="0">
+     *         &lt;element name="Payer" minOccurs="0">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7832,7 +7842,7 @@ public class Declaration {
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
      *                   &lt;/element>
-     *                   &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+     *                   &lt;element name="Contact" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7843,7 +7853,7 @@ public class Declaration {
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
      *                   &lt;/element>
-     *                   &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+     *                   &lt;element name="Communication" minOccurs="0">
      *                     &lt;complexType>
      *                       &lt;complexContent>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7860,7 +7870,7 @@ public class Declaration {
      *             &lt;/complexContent>
      *           &lt;/complexType>
      *         &lt;/element>
-     *         &lt;element name="Surety" maxOccurs="unbounded" minOccurs="0">
+     *         &lt;element name="Surety" minOccurs="0">
      *           &lt;complexType>
      *             &lt;complexContent>
      *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -7990,13 +8000,13 @@ public class Declaration {
         @XmlElement(name = "Invoice")
         protected Declaration.GoodsShipment.Invoice invoice;
         @XmlElement(name = "Payer")
-        protected List<Declaration.GoodsShipment.Payer> payer;
+        protected Declaration.GoodsShipment.Payer payer;
         @XmlElement(name = "PreviousDocument")
         protected List<Declaration.GoodsShipment.PreviousDocument> previousDocument;
         @XmlElement(name = "Seller")
         protected Declaration.GoodsShipment.Seller seller;
         @XmlElement(name = "Surety")
-        protected List<Declaration.GoodsShipment.Surety> surety;
+        protected Declaration.GoodsShipment.Surety surety;
         @XmlElement(name = "TradeTerms")
         protected Declaration.GoodsShipment.TradeTerms tradeTerms;
         @XmlElement(name = "UCR")
@@ -8358,30 +8368,25 @@ public class Declaration {
         /**
          * Gets the value of the payer property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the payer property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getPayer().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link Declaration.GoodsShipment.Payer }
-         * 
-         * 
+         * @return
+         *     possible object is
+         *     {@link Declaration.GoodsShipment.Payer }
+         *     
          */
-        public List<Declaration.GoodsShipment.Payer> getPayer() {
-            if (payer == null) {
-                payer = new ArrayList<Declaration.GoodsShipment.Payer>();
-            }
-            return this.payer;
+        public Declaration.GoodsShipment.Payer getPayer() {
+            return payer;
+        }
+
+        /**
+         * Sets the value of the payer property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Declaration.GoodsShipment.Payer }
+         *     
+         */
+        public void setPayer(Declaration.GoodsShipment.Payer value) {
+            this.payer = value;
         }
 
         /**
@@ -8440,30 +8445,25 @@ public class Declaration {
         /**
          * Gets the value of the surety property.
          * 
-         * <p>
-         * This accessor method returns a reference to the live list,
-         * not a snapshot. Therefore any modification you make to the
-         * returned list will be present inside the JAXB object.
-         * This is why there is not a <CODE>set</CODE> method for the surety property.
-         * 
-         * <p>
-         * For example, to add a new item, do as follows:
-         * <pre>
-         *    getSurety().add(newItem);
-         * </pre>
-         * 
-         * 
-         * <p>
-         * Objects of the following type(s) are allowed in the list
-         * {@link Declaration.GoodsShipment.Surety }
-         * 
-         * 
+         * @return
+         *     possible object is
+         *     {@link Declaration.GoodsShipment.Surety }
+         *     
          */
-        public List<Declaration.GoodsShipment.Surety> getSurety() {
-            if (surety == null) {
-                surety = new ArrayList<Declaration.GoodsShipment.Surety>();
-            }
-            return this.surety;
+        public Declaration.GoodsShipment.Surety getSurety() {
+            return surety;
+        }
+
+        /**
+         * Sets the value of the surety property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Declaration.GoodsShipment.Surety }
+         *     
+         */
+        public void setSurety(Declaration.GoodsShipment.Surety value) {
+            this.surety = value;
         }
 
         /**
@@ -8650,7 +8650,7 @@ public class Declaration {
          *             &lt;/complexContent>
          *           &lt;/complexType>
          *         &lt;/element>
-         *         &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+         *         &lt;element name="Contact" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -8661,7 +8661,7 @@ public class Declaration {
          *             &lt;/complexContent>
          *           &lt;/complexType>
          *         &lt;/element>
-         *         &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+         *         &lt;element name="Communication" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -8698,9 +8698,9 @@ public class Declaration {
             @XmlElement(name = "Address")
             protected Declaration.GoodsShipment.Buyer.Address address;
             @XmlElement(name = "Contact")
-            protected List<Declaration.GoodsShipment.Buyer.Contact> contact;
+            protected Declaration.GoodsShipment.Buyer.Contact contact;
             @XmlElement(name = "Communication")
-            protected List<Declaration.GoodsShipment.Buyer.Communication> communication;
+            protected Declaration.GoodsShipment.Buyer.Communication communication;
 
             /**
              * Gets the value of the name property.
@@ -8777,59 +8777,49 @@ public class Declaration {
             /**
              * Gets the value of the contact property.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the contact property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getContact().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link Declaration.GoodsShipment.Buyer.Contact }
-             * 
-             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.GoodsShipment.Buyer.Contact }
+             *     
              */
-            public List<Declaration.GoodsShipment.Buyer.Contact> getContact() {
-                if (contact == null) {
-                    contact = new ArrayList<Declaration.GoodsShipment.Buyer.Contact>();
-                }
-                return this.contact;
+            public Declaration.GoodsShipment.Buyer.Contact getContact() {
+                return contact;
+            }
+
+            /**
+             * Sets the value of the contact property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.GoodsShipment.Buyer.Contact }
+             *     
+             */
+            public void setContact(Declaration.GoodsShipment.Buyer.Contact value) {
+                this.contact = value;
             }
 
             /**
              * Gets the value of the communication property.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the communication property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getCommunication().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link Declaration.GoodsShipment.Buyer.Communication }
-             * 
-             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.GoodsShipment.Buyer.Communication }
+             *     
              */
-            public List<Declaration.GoodsShipment.Buyer.Communication> getCommunication() {
-                if (communication == null) {
-                    communication = new ArrayList<Declaration.GoodsShipment.Buyer.Communication>();
-                }
-                return this.communication;
+            public Declaration.GoodsShipment.Buyer.Communication getCommunication() {
+                return communication;
+            }
+
+            /**
+             * Sets the value of the communication property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.GoodsShipment.Buyer.Communication }
+             *     
+             */
+            public void setCommunication(Declaration.GoodsShipment.Buyer.Communication value) {
+                this.communication = value;
             }
 
 
@@ -11551,7 +11541,7 @@ public class Declaration {
          *                       &lt;/complexContent>
          *                     &lt;/complexType>
          *                   &lt;/element>
-         *                   &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+         *                   &lt;element name="Contact" minOccurs="0">
          *                     &lt;complexType>
          *                       &lt;complexContent>
          *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -11562,7 +11552,7 @@ public class Declaration {
          *                       &lt;/complexContent>
          *                     &lt;/complexType>
          *                   &lt;/element>
-         *                   &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+         *                   &lt;element name="Communication" minOccurs="0">
          *                     &lt;complexType>
          *                       &lt;complexContent>
          *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -11805,34 +11795,6 @@ public class Declaration {
          *             &lt;/complexContent>
          *           &lt;/complexType>
          *         &lt;/element>
-         *         &lt;element name="Manufacturer" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ManufacturerNameTextType" minOccurs="0"/>
-         *                   &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ManufacturerIdentificationIDType" minOccurs="0"/>
-         *                   &lt;element name="Address" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
-         *                             &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
-         *                             &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
-         *                             &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
-         *                             &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
-         *                             &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
          *         &lt;element name="Origin" maxOccurs="unbounded" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
@@ -11851,7 +11813,7 @@ public class Declaration {
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
          *                 &lt;sequence>
-         *                   &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingSequenceNumericType" minOccurs="0"/>
+         *                   &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingSequenceNumericType"/>
          *                   &lt;element name="MarksNumbersID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingMarksNumbersIDType" minOccurs="0"/>
          *                   &lt;element name="QuantityQuantity" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingQuantityQuantityType" minOccurs="0"/>
          *                   &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingTypeCodeType" minOccurs="0"/>
@@ -11874,34 +11836,6 @@ public class Declaration {
          *                   &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PreviousDocumentIdentificationIDType" minOccurs="0"/>
          *                   &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PreviousDocumentTypeCodeType" minOccurs="0"/>
          *                   &lt;element name="LineNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PreviousDocumentLineNumericType" minOccurs="0"/>
-         *                 &lt;/sequence>
-         *               &lt;/restriction>
-         *             &lt;/complexContent>
-         *           &lt;/complexType>
-         *         &lt;/element>
-         *         &lt;element name="RefundRecipientParty" maxOccurs="unbounded" minOccurs="0">
-         *           &lt;complexType>
-         *             &lt;complexContent>
-         *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                 &lt;sequence>
-         *                   &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}RefundRecipientPartyNameTextType" minOccurs="0"/>
-         *                   &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}RefundRecipientPartyIdentificationIDType" minOccurs="0"/>
-         *                   &lt;element name="Address" minOccurs="0">
-         *                     &lt;complexType>
-         *                       &lt;complexContent>
-         *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-         *                           &lt;sequence>
-         *                             &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
-         *                             &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
-         *                             &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
-         *                             &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
-         *                             &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
-         *                             &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
-         *                           &lt;/sequence>
-         *                         &lt;/restriction>
-         *                       &lt;/complexContent>
-         *                     &lt;/complexType>
-         *                   &lt;/element>
          *                 &lt;/sequence>
          *               &lt;/restriction>
          *             &lt;/complexContent>
@@ -11930,7 +11864,7 @@ public class Declaration {
          *                       &lt;/complexContent>
          *                     &lt;/complexType>
          *                   &lt;/element>
-         *                   &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+         *                   &lt;element name="Contact" minOccurs="0">
          *                     &lt;complexType>
          *                       &lt;complexContent>
          *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -11941,7 +11875,7 @@ public class Declaration {
          *                       &lt;/complexContent>
          *                     &lt;/complexType>
          *                   &lt;/element>
-         *                   &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+         *                   &lt;element name="Communication" minOccurs="0">
          *                     &lt;complexType>
          *                       &lt;complexContent>
          *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -12007,11 +11941,9 @@ public class Declaration {
             "domesticDutyTaxParty",
             "exportCountry",
             "governmentProcedure",
-            "manufacturer",
             "origin",
             "packaging",
             "previousDocument",
-            "refundRecipientParty",
             "seller",
             "ucr",
             "valuationAdjustment"
@@ -12050,16 +11982,12 @@ public class Declaration {
             protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.ExportCountry exportCountry;
             @XmlElement(name = "GovernmentProcedure")
             protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.GovernmentProcedure> governmentProcedure;
-            @XmlElement(name = "Manufacturer")
-            protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer> manufacturer;
             @XmlElement(name = "Origin")
             protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Origin> origin;
             @XmlElement(name = "Packaging")
             protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Packaging> packaging;
             @XmlElement(name = "PreviousDocument")
             protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.PreviousDocument> previousDocument;
-            @XmlElement(name = "RefundRecipientParty")
-            protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty> refundRecipientParty;
             @XmlElement(name = "Seller")
             protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller seller;
             @XmlElement(name = "UCR")
@@ -12477,35 +12405,6 @@ public class Declaration {
             }
 
             /**
-             * Gets the value of the manufacturer property.
-             * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the manufacturer property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getManufacturer().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer }
-             * 
-             * 
-             */
-            public List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer> getManufacturer() {
-                if (manufacturer == null) {
-                    manufacturer = new ArrayList<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer>();
-                }
-                return this.manufacturer;
-            }
-
-            /**
              * Gets the value of the origin property.
              * 
              * <p>
@@ -12590,35 +12489,6 @@ public class Declaration {
                     previousDocument = new ArrayList<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.PreviousDocument>();
                 }
                 return this.previousDocument;
-            }
-
-            /**
-             * Gets the value of the refundRecipientParty property.
-             * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the refundRecipientParty property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getRefundRecipientParty().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty }
-             * 
-             * 
-             */
-            public List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty> getRefundRecipientParty() {
-                if (refundRecipientParty == null) {
-                    refundRecipientParty = new ArrayList<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty>();
-                }
-                return this.refundRecipientParty;
             }
 
             /**
@@ -13355,7 +13225,7 @@ public class Declaration {
              *             &lt;/complexContent>
              *           &lt;/complexType>
              *         &lt;/element>
-             *         &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+             *         &lt;element name="Contact" minOccurs="0">
              *           &lt;complexType>
              *             &lt;complexContent>
              *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -13366,7 +13236,7 @@ public class Declaration {
              *             &lt;/complexContent>
              *           &lt;/complexType>
              *         &lt;/element>
-             *         &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+             *         &lt;element name="Communication" minOccurs="0">
              *           &lt;complexType>
              *             &lt;complexContent>
              *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -13403,9 +13273,9 @@ public class Declaration {
                 @XmlElement(name = "Address")
                 protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Address address;
                 @XmlElement(name = "Contact")
-                protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Contact> contact;
+                protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Contact contact;
                 @XmlElement(name = "Communication")
-                protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Communication> communication;
+                protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Communication communication;
 
                 /**
                  * Gets the value of the name property.
@@ -13482,59 +13352,49 @@ public class Declaration {
                 /**
                  * Gets the value of the contact property.
                  * 
-                 * <p>
-                 * This accessor method returns a reference to the live list,
-                 * not a snapshot. Therefore any modification you make to the
-                 * returned list will be present inside the JAXB object.
-                 * This is why there is not a <CODE>set</CODE> method for the contact property.
-                 * 
-                 * <p>
-                 * For example, to add a new item, do as follows:
-                 * <pre>
-                 *    getContact().add(newItem);
-                 * </pre>
-                 * 
-                 * 
-                 * <p>
-                 * Objects of the following type(s) are allowed in the list
-                 * {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Contact }
-                 * 
-                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Contact }
+                 *     
                  */
-                public List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Contact> getContact() {
-                    if (contact == null) {
-                        contact = new ArrayList<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Contact>();
-                    }
-                    return this.contact;
+                public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Contact getContact() {
+                    return contact;
+                }
+
+                /**
+                 * Sets the value of the contact property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Contact }
+                 *     
+                 */
+                public void setContact(Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Contact value) {
+                    this.contact = value;
                 }
 
                 /**
                  * Gets the value of the communication property.
                  * 
-                 * <p>
-                 * This accessor method returns a reference to the live list,
-                 * not a snapshot. Therefore any modification you make to the
-                 * returned list will be present inside the JAXB object.
-                 * This is why there is not a <CODE>set</CODE> method for the communication property.
-                 * 
-                 * <p>
-                 * For example, to add a new item, do as follows:
-                 * <pre>
-                 *    getCommunication().add(newItem);
-                 * </pre>
-                 * 
-                 * 
-                 * <p>
-                 * Objects of the following type(s) are allowed in the list
-                 * {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Communication }
-                 * 
-                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Communication }
+                 *     
                  */
-                public List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Communication> getCommunication() {
-                    if (communication == null) {
-                        communication = new ArrayList<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Communication>();
-                    }
-                    return this.communication;
+                public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Communication getCommunication() {
+                    return communication;
+                }
+
+                /**
+                 * Sets the value of the communication property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Communication }
+                 *     
+                 */
+                public void setCommunication(Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Buyer.Communication value) {
+                    this.communication = value;
                 }
 
 
@@ -16098,327 +15958,6 @@ public class Declaration {
              *   &lt;complexContent>
              *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
              *       &lt;sequence>
-             *         &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ManufacturerNameTextType" minOccurs="0"/>
-             *         &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}ManufacturerIdentificationIDType" minOccurs="0"/>
-             *         &lt;element name="Address" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
-             *                   &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
-             *                   &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
-             *                   &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
-             *                   &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
-             *                   &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
-             * </pre>
-             * 
-             * 
-             */
-            @XmlAccessorType(XmlAccessType.FIELD)
-            @XmlType(name = "", propOrder = {
-                "name",
-                "id",
-                "address"
-            })
-            public static class Manufacturer {
-
-                @XmlElement(name = "Name")
-                protected ManufacturerNameTextType name;
-                @XmlElement(name = "ID")
-                protected ManufacturerIdentificationIDType id;
-                @XmlElement(name = "Address")
-                protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer.Address address;
-
-                /**
-                 * Gets the value of the name property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link ManufacturerNameTextType }
-                 *     
-                 */
-                public ManufacturerNameTextType getName() {
-                    return name;
-                }
-
-                /**
-                 * Sets the value of the name property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link ManufacturerNameTextType }
-                 *     
-                 */
-                public void setName(ManufacturerNameTextType value) {
-                    this.name = value;
-                }
-
-                /**
-                 * Gets the value of the id property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link ManufacturerIdentificationIDType }
-                 *     
-                 */
-                public ManufacturerIdentificationIDType getID() {
-                    return id;
-                }
-
-                /**
-                 * Sets the value of the id property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link ManufacturerIdentificationIDType }
-                 *     
-                 */
-                public void setID(ManufacturerIdentificationIDType value) {
-                    this.id = value;
-                }
-
-                /**
-                 * Gets the value of the address property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer.Address }
-                 *     
-                 */
-                public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer.Address getAddress() {
-                    return address;
-                }
-
-                /**
-                 * Sets the value of the address property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer.Address }
-                 *     
-                 */
-                public void setAddress(Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Manufacturer.Address value) {
-                    this.address = value;
-                }
-
-
-                /**
-                 * <p>Java class for anonymous complex type.
-                 * 
-                 * <p>The following schema fragment specifies the expected content contained within this class.
-                 * 
-                 * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
-                 *         &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
-                 *         &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
-                 *         &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
-                 *         &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
-                 *         &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
-                 * </pre>
-                 * 
-                 * 
-                 */
-                @XmlAccessorType(XmlAccessType.FIELD)
-                @XmlType(name = "", propOrder = {
-                    "cityName",
-                    "countryCode",
-                    "countrySubDivisionCode",
-                    "countrySubDivisionName",
-                    "line",
-                    "postcodeID"
-                })
-                public static class Address {
-
-                    @XmlElement(name = "CityName")
-                    protected AddressCityNameTextType cityName;
-                    @XmlElement(name = "CountryCode")
-                    protected AddressCountryCodeType countryCode;
-                    @XmlElement(name = "CountrySubDivisionCode")
-                    protected AddressCountrySubDivisionCodeType countrySubDivisionCode;
-                    @XmlElement(name = "CountrySubDivisionName")
-                    protected AddressCountrySubDivisionNameTextType countrySubDivisionName;
-                    @XmlElement(name = "Line")
-                    protected AddressLineTextType line;
-                    @XmlElement(name = "PostcodeID")
-                    protected AddressPostcodeIDType postcodeID;
-
-                    /**
-                     * Gets the value of the cityName property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressCityNameTextType }
-                     *     
-                     */
-                    public AddressCityNameTextType getCityName() {
-                        return cityName;
-                    }
-
-                    /**
-                     * Sets the value of the cityName property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressCityNameTextType }
-                     *     
-                     */
-                    public void setCityName(AddressCityNameTextType value) {
-                        this.cityName = value;
-                    }
-
-                    /**
-                     * Gets the value of the countryCode property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressCountryCodeType }
-                     *     
-                     */
-                    public AddressCountryCodeType getCountryCode() {
-                        return countryCode;
-                    }
-
-                    /**
-                     * Sets the value of the countryCode property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressCountryCodeType }
-                     *     
-                     */
-                    public void setCountryCode(AddressCountryCodeType value) {
-                        this.countryCode = value;
-                    }
-
-                    /**
-                     * Gets the value of the countrySubDivisionCode property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressCountrySubDivisionCodeType }
-                     *     
-                     */
-                    public AddressCountrySubDivisionCodeType getCountrySubDivisionCode() {
-                        return countrySubDivisionCode;
-                    }
-
-                    /**
-                     * Sets the value of the countrySubDivisionCode property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressCountrySubDivisionCodeType }
-                     *     
-                     */
-                    public void setCountrySubDivisionCode(AddressCountrySubDivisionCodeType value) {
-                        this.countrySubDivisionCode = value;
-                    }
-
-                    /**
-                     * Gets the value of the countrySubDivisionName property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressCountrySubDivisionNameTextType }
-                     *     
-                     */
-                    public AddressCountrySubDivisionNameTextType getCountrySubDivisionName() {
-                        return countrySubDivisionName;
-                    }
-
-                    /**
-                     * Sets the value of the countrySubDivisionName property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressCountrySubDivisionNameTextType }
-                     *     
-                     */
-                    public void setCountrySubDivisionName(AddressCountrySubDivisionNameTextType value) {
-                        this.countrySubDivisionName = value;
-                    }
-
-                    /**
-                     * Gets the value of the line property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressLineTextType }
-                     *     
-                     */
-                    public AddressLineTextType getLine() {
-                        return line;
-                    }
-
-                    /**
-                     * Sets the value of the line property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressLineTextType }
-                     *     
-                     */
-                    public void setLine(AddressLineTextType value) {
-                        this.line = value;
-                    }
-
-                    /**
-                     * Gets the value of the postcodeID property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressPostcodeIDType }
-                     *     
-                     */
-                    public AddressPostcodeIDType getPostcodeID() {
-                        return postcodeID;
-                    }
-
-                    /**
-                     * Sets the value of the postcodeID property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressPostcodeIDType }
-                     *     
-                     */
-                    public void setPostcodeID(AddressPostcodeIDType value) {
-                        this.postcodeID = value;
-                    }
-
-                }
-
-            }
-
-
-            /**
-             * <p>Java class for anonymous complex type.
-             * 
-             * <p>The following schema fragment specifies the expected content contained within this class.
-             * 
-             * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
              *         &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}OriginCountryCodeType" minOccurs="0"/>
              *         &lt;element name="RegionID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}OriginRegionIDType" minOccurs="0"/>
              *         &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}OriginTypeCodeType" minOccurs="0"/>
@@ -16530,7 +16069,7 @@ public class Declaration {
              *   &lt;complexContent>
              *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
              *       &lt;sequence>
-             *         &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingSequenceNumericType" minOccurs="0"/>
+             *         &lt;element name="SequenceNumeric" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingSequenceNumericType"/>
              *         &lt;element name="MarksNumbersID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingMarksNumbersIDType" minOccurs="0"/>
              *         &lt;element name="QuantityQuantity" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingQuantityQuantityType" minOccurs="0"/>
              *         &lt;element name="TypeCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}PackagingTypeCodeType" minOccurs="0"/>
@@ -16561,7 +16100,7 @@ public class Declaration {
             })
             public static class Packaging {
 
-                @XmlElement(name = "SequenceNumeric")
+                @XmlElement(name = "SequenceNumeric", required = true)
                 protected BigDecimal sequenceNumeric;
                 @XmlElement(name = "MarksNumbersID")
                 protected PackagingMarksNumbersIDType marksNumbersID;
@@ -16948,327 +16487,6 @@ public class Declaration {
              *   &lt;complexContent>
              *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
              *       &lt;sequence>
-             *         &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}RefundRecipientPartyNameTextType" minOccurs="0"/>
-             *         &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}RefundRecipientPartyIdentificationIDType" minOccurs="0"/>
-             *         &lt;element name="Address" minOccurs="0">
-             *           &lt;complexType>
-             *             &lt;complexContent>
-             *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *                 &lt;sequence>
-             *                   &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
-             *                   &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
-             *                   &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
-             *                   &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
-             *                   &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
-             *                   &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
-             *                 &lt;/sequence>
-             *               &lt;/restriction>
-             *             &lt;/complexContent>
-             *           &lt;/complexType>
-             *         &lt;/element>
-             *       &lt;/sequence>
-             *     &lt;/restriction>
-             *   &lt;/complexContent>
-             * &lt;/complexType>
-             * </pre>
-             * 
-             * 
-             */
-            @XmlAccessorType(XmlAccessType.FIELD)
-            @XmlType(name = "", propOrder = {
-                "name",
-                "id",
-                "address"
-            })
-            public static class RefundRecipientParty {
-
-                @XmlElement(name = "Name")
-                protected RefundRecipientPartyNameTextType name;
-                @XmlElement(name = "ID")
-                protected RefundRecipientPartyIdentificationIDType id;
-                @XmlElement(name = "Address")
-                protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty.Address address;
-
-                /**
-                 * Gets the value of the name property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link RefundRecipientPartyNameTextType }
-                 *     
-                 */
-                public RefundRecipientPartyNameTextType getName() {
-                    return name;
-                }
-
-                /**
-                 * Sets the value of the name property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link RefundRecipientPartyNameTextType }
-                 *     
-                 */
-                public void setName(RefundRecipientPartyNameTextType value) {
-                    this.name = value;
-                }
-
-                /**
-                 * Gets the value of the id property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link RefundRecipientPartyIdentificationIDType }
-                 *     
-                 */
-                public RefundRecipientPartyIdentificationIDType getID() {
-                    return id;
-                }
-
-                /**
-                 * Sets the value of the id property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link RefundRecipientPartyIdentificationIDType }
-                 *     
-                 */
-                public void setID(RefundRecipientPartyIdentificationIDType value) {
-                    this.id = value;
-                }
-
-                /**
-                 * Gets the value of the address property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty.Address }
-                 *     
-                 */
-                public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty.Address getAddress() {
-                    return address;
-                }
-
-                /**
-                 * Sets the value of the address property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty.Address }
-                 *     
-                 */
-                public void setAddress(Declaration.GoodsShipment.GovernmentAgencyGoodsItem.RefundRecipientParty.Address value) {
-                    this.address = value;
-                }
-
-
-                /**
-                 * <p>Java class for anonymous complex type.
-                 * 
-                 * <p>The following schema fragment specifies the expected content contained within this class.
-                 * 
-                 * <pre>
-                 * &lt;complexType>
-                 *   &lt;complexContent>
-                 *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-                 *       &lt;sequence>
-                 *         &lt;element name="CityName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCityNameTextType" minOccurs="0"/>
-                 *         &lt;element name="CountryCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountryCodeType" minOccurs="0"/>
-                 *         &lt;element name="CountrySubDivisionCode" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionCodeType" minOccurs="0"/>
-                 *         &lt;element name="CountrySubDivisionName" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressCountrySubDivisionNameTextType" minOccurs="0"/>
-                 *         &lt;element name="Line" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressLineTextType" minOccurs="0"/>
-                 *         &lt;element name="PostcodeID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}AddressPostcodeIDType" minOccurs="0"/>
-                 *       &lt;/sequence>
-                 *     &lt;/restriction>
-                 *   &lt;/complexContent>
-                 * &lt;/complexType>
-                 * </pre>
-                 * 
-                 * 
-                 */
-                @XmlAccessorType(XmlAccessType.FIELD)
-                @XmlType(name = "", propOrder = {
-                    "cityName",
-                    "countryCode",
-                    "countrySubDivisionCode",
-                    "countrySubDivisionName",
-                    "line",
-                    "postcodeID"
-                })
-                public static class Address {
-
-                    @XmlElement(name = "CityName")
-                    protected AddressCityNameTextType cityName;
-                    @XmlElement(name = "CountryCode")
-                    protected AddressCountryCodeType countryCode;
-                    @XmlElement(name = "CountrySubDivisionCode")
-                    protected AddressCountrySubDivisionCodeType countrySubDivisionCode;
-                    @XmlElement(name = "CountrySubDivisionName")
-                    protected AddressCountrySubDivisionNameTextType countrySubDivisionName;
-                    @XmlElement(name = "Line")
-                    protected AddressLineTextType line;
-                    @XmlElement(name = "PostcodeID")
-                    protected AddressPostcodeIDType postcodeID;
-
-                    /**
-                     * Gets the value of the cityName property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressCityNameTextType }
-                     *     
-                     */
-                    public AddressCityNameTextType getCityName() {
-                        return cityName;
-                    }
-
-                    /**
-                     * Sets the value of the cityName property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressCityNameTextType }
-                     *     
-                     */
-                    public void setCityName(AddressCityNameTextType value) {
-                        this.cityName = value;
-                    }
-
-                    /**
-                     * Gets the value of the countryCode property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressCountryCodeType }
-                     *     
-                     */
-                    public AddressCountryCodeType getCountryCode() {
-                        return countryCode;
-                    }
-
-                    /**
-                     * Sets the value of the countryCode property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressCountryCodeType }
-                     *     
-                     */
-                    public void setCountryCode(AddressCountryCodeType value) {
-                        this.countryCode = value;
-                    }
-
-                    /**
-                     * Gets the value of the countrySubDivisionCode property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressCountrySubDivisionCodeType }
-                     *     
-                     */
-                    public AddressCountrySubDivisionCodeType getCountrySubDivisionCode() {
-                        return countrySubDivisionCode;
-                    }
-
-                    /**
-                     * Sets the value of the countrySubDivisionCode property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressCountrySubDivisionCodeType }
-                     *     
-                     */
-                    public void setCountrySubDivisionCode(AddressCountrySubDivisionCodeType value) {
-                        this.countrySubDivisionCode = value;
-                    }
-
-                    /**
-                     * Gets the value of the countrySubDivisionName property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressCountrySubDivisionNameTextType }
-                     *     
-                     */
-                    public AddressCountrySubDivisionNameTextType getCountrySubDivisionName() {
-                        return countrySubDivisionName;
-                    }
-
-                    /**
-                     * Sets the value of the countrySubDivisionName property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressCountrySubDivisionNameTextType }
-                     *     
-                     */
-                    public void setCountrySubDivisionName(AddressCountrySubDivisionNameTextType value) {
-                        this.countrySubDivisionName = value;
-                    }
-
-                    /**
-                     * Gets the value of the line property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressLineTextType }
-                     *     
-                     */
-                    public AddressLineTextType getLine() {
-                        return line;
-                    }
-
-                    /**
-                     * Sets the value of the line property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressLineTextType }
-                     *     
-                     */
-                    public void setLine(AddressLineTextType value) {
-                        this.line = value;
-                    }
-
-                    /**
-                     * Gets the value of the postcodeID property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link AddressPostcodeIDType }
-                     *     
-                     */
-                    public AddressPostcodeIDType getPostcodeID() {
-                        return postcodeID;
-                    }
-
-                    /**
-                     * Sets the value of the postcodeID property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link AddressPostcodeIDType }
-                     *     
-                     */
-                    public void setPostcodeID(AddressPostcodeIDType value) {
-                        this.postcodeID = value;
-                    }
-
-                }
-
-            }
-
-
-            /**
-             * <p>Java class for anonymous complex type.
-             * 
-             * <p>The following schema fragment specifies the expected content contained within this class.
-             * 
-             * <pre>
-             * &lt;complexType>
-             *   &lt;complexContent>
-             *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-             *       &lt;sequence>
              *         &lt;element name="Name" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}SellerNameTextType" minOccurs="0"/>
              *         &lt;element name="ID" type="{urn:wco:datamodel:WCO:Declaration_DS:DMS:2}SellerIdentificationIDType" minOccurs="0"/>
              *         &lt;element name="Address" minOccurs="0">
@@ -17287,7 +16505,7 @@ public class Declaration {
              *             &lt;/complexContent>
              *           &lt;/complexType>
              *         &lt;/element>
-             *         &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+             *         &lt;element name="Contact" minOccurs="0">
              *           &lt;complexType>
              *             &lt;complexContent>
              *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -17298,7 +16516,7 @@ public class Declaration {
              *             &lt;/complexContent>
              *           &lt;/complexType>
              *         &lt;/element>
-             *         &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+             *         &lt;element name="Communication" minOccurs="0">
              *           &lt;complexType>
              *             &lt;complexContent>
              *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -17335,9 +16553,9 @@ public class Declaration {
                 @XmlElement(name = "Address")
                 protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Address address;
                 @XmlElement(name = "Contact")
-                protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Contact> contact;
+                protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Contact contact;
                 @XmlElement(name = "Communication")
-                protected List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Communication> communication;
+                protected Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Communication communication;
 
                 /**
                  * Gets the value of the name property.
@@ -17414,59 +16632,49 @@ public class Declaration {
                 /**
                  * Gets the value of the contact property.
                  * 
-                 * <p>
-                 * This accessor method returns a reference to the live list,
-                 * not a snapshot. Therefore any modification you make to the
-                 * returned list will be present inside the JAXB object.
-                 * This is why there is not a <CODE>set</CODE> method for the contact property.
-                 * 
-                 * <p>
-                 * For example, to add a new item, do as follows:
-                 * <pre>
-                 *    getContact().add(newItem);
-                 * </pre>
-                 * 
-                 * 
-                 * <p>
-                 * Objects of the following type(s) are allowed in the list
-                 * {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Contact }
-                 * 
-                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Contact }
+                 *     
                  */
-                public List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Contact> getContact() {
-                    if (contact == null) {
-                        contact = new ArrayList<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Contact>();
-                    }
-                    return this.contact;
+                public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Contact getContact() {
+                    return contact;
+                }
+
+                /**
+                 * Sets the value of the contact property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Contact }
+                 *     
+                 */
+                public void setContact(Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Contact value) {
+                    this.contact = value;
                 }
 
                 /**
                  * Gets the value of the communication property.
                  * 
-                 * <p>
-                 * This accessor method returns a reference to the live list,
-                 * not a snapshot. Therefore any modification you make to the
-                 * returned list will be present inside the JAXB object.
-                 * This is why there is not a <CODE>set</CODE> method for the communication property.
-                 * 
-                 * <p>
-                 * For example, to add a new item, do as follows:
-                 * <pre>
-                 *    getCommunication().add(newItem);
-                 * </pre>
-                 * 
-                 * 
-                 * <p>
-                 * Objects of the following type(s) are allowed in the list
-                 * {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Communication }
-                 * 
-                 * 
+                 * @return
+                 *     possible object is
+                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Communication }
+                 *     
                  */
-                public List<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Communication> getCommunication() {
-                    if (communication == null) {
-                        communication = new ArrayList<Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Communication>();
-                    }
-                    return this.communication;
+                public Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Communication getCommunication() {
+                    return communication;
+                }
+
+                /**
+                 * Sets the value of the communication property.
+                 * 
+                 * @param value
+                 *     allowed object is
+                 *     {@link Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Communication }
+                 *     
+                 */
+                public void setCommunication(Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Seller.Communication value) {
+                    this.communication = value;
                 }
 
 
@@ -17973,7 +17181,7 @@ public class Declaration {
          *             &lt;/complexContent>
          *           &lt;/complexType>
          *         &lt;/element>
-         *         &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+         *         &lt;element name="Contact" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -17984,7 +17192,7 @@ public class Declaration {
          *             &lt;/complexContent>
          *           &lt;/complexType>
          *         &lt;/element>
-         *         &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+         *         &lt;element name="Communication" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -18021,9 +17229,9 @@ public class Declaration {
             @XmlElement(name = "Address")
             protected Declaration.GoodsShipment.Importer.Address address;
             @XmlElement(name = "Contact")
-            protected List<Declaration.GoodsShipment.Importer.Contact> contact;
+            protected Declaration.GoodsShipment.Importer.Contact contact;
             @XmlElement(name = "Communication")
-            protected List<Declaration.GoodsShipment.Importer.Communication> communication;
+            protected Declaration.GoodsShipment.Importer.Communication communication;
 
             /**
              * Gets the value of the name property.
@@ -18100,59 +17308,49 @@ public class Declaration {
             /**
              * Gets the value of the contact property.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the contact property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getContact().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link Declaration.GoodsShipment.Importer.Contact }
-             * 
-             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.GoodsShipment.Importer.Contact }
+             *     
              */
-            public List<Declaration.GoodsShipment.Importer.Contact> getContact() {
-                if (contact == null) {
-                    contact = new ArrayList<Declaration.GoodsShipment.Importer.Contact>();
-                }
-                return this.contact;
+            public Declaration.GoodsShipment.Importer.Contact getContact() {
+                return contact;
+            }
+
+            /**
+             * Sets the value of the contact property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.GoodsShipment.Importer.Contact }
+             *     
+             */
+            public void setContact(Declaration.GoodsShipment.Importer.Contact value) {
+                this.contact = value;
             }
 
             /**
              * Gets the value of the communication property.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the communication property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getCommunication().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link Declaration.GoodsShipment.Importer.Communication }
-             * 
-             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.GoodsShipment.Importer.Communication }
+             *     
              */
-            public List<Declaration.GoodsShipment.Importer.Communication> getCommunication() {
-                if (communication == null) {
-                    communication = new ArrayList<Declaration.GoodsShipment.Importer.Communication>();
-                }
-                return this.communication;
+            public Declaration.GoodsShipment.Importer.Communication getCommunication() {
+                return communication;
+            }
+
+            /**
+             * Sets the value of the communication property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.GoodsShipment.Importer.Communication }
+             *     
+             */
+            public void setCommunication(Declaration.GoodsShipment.Importer.Communication value) {
+                this.communication = value;
             }
 
 
@@ -19062,7 +18260,7 @@ public class Declaration {
          *             &lt;/complexContent>
          *           &lt;/complexType>
          *         &lt;/element>
-         *         &lt;element name="Contact" maxOccurs="unbounded" minOccurs="0">
+         *         &lt;element name="Contact" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -19073,7 +18271,7 @@ public class Declaration {
          *             &lt;/complexContent>
          *           &lt;/complexType>
          *         &lt;/element>
-         *         &lt;element name="Communication" maxOccurs="unbounded" minOccurs="0">
+         *         &lt;element name="Communication" minOccurs="0">
          *           &lt;complexType>
          *             &lt;complexContent>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
@@ -19110,9 +18308,9 @@ public class Declaration {
             @XmlElement(name = "Address")
             protected Declaration.GoodsShipment.Seller.Address address;
             @XmlElement(name = "Contact")
-            protected List<Declaration.GoodsShipment.Seller.Contact> contact;
+            protected Declaration.GoodsShipment.Seller.Contact contact;
             @XmlElement(name = "Communication")
-            protected List<Declaration.GoodsShipment.Seller.Communication> communication;
+            protected Declaration.GoodsShipment.Seller.Communication communication;
 
             /**
              * Gets the value of the name property.
@@ -19189,59 +18387,49 @@ public class Declaration {
             /**
              * Gets the value of the contact property.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the contact property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getContact().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link Declaration.GoodsShipment.Seller.Contact }
-             * 
-             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.GoodsShipment.Seller.Contact }
+             *     
              */
-            public List<Declaration.GoodsShipment.Seller.Contact> getContact() {
-                if (contact == null) {
-                    contact = new ArrayList<Declaration.GoodsShipment.Seller.Contact>();
-                }
-                return this.contact;
+            public Declaration.GoodsShipment.Seller.Contact getContact() {
+                return contact;
+            }
+
+            /**
+             * Sets the value of the contact property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.GoodsShipment.Seller.Contact }
+             *     
+             */
+            public void setContact(Declaration.GoodsShipment.Seller.Contact value) {
+                this.contact = value;
             }
 
             /**
              * Gets the value of the communication property.
              * 
-             * <p>
-             * This accessor method returns a reference to the live list,
-             * not a snapshot. Therefore any modification you make to the
-             * returned list will be present inside the JAXB object.
-             * This is why there is not a <CODE>set</CODE> method for the communication property.
-             * 
-             * <p>
-             * For example, to add a new item, do as follows:
-             * <pre>
-             *    getCommunication().add(newItem);
-             * </pre>
-             * 
-             * 
-             * <p>
-             * Objects of the following type(s) are allowed in the list
-             * {@link Declaration.GoodsShipment.Seller.Communication }
-             * 
-             * 
+             * @return
+             *     possible object is
+             *     {@link Declaration.GoodsShipment.Seller.Communication }
+             *     
              */
-            public List<Declaration.GoodsShipment.Seller.Communication> getCommunication() {
-                if (communication == null) {
-                    communication = new ArrayList<Declaration.GoodsShipment.Seller.Communication>();
-                }
-                return this.communication;
+            public Declaration.GoodsShipment.Seller.Communication getCommunication() {
+                return communication;
+            }
+
+            /**
+             * Sets the value of the communication property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link Declaration.GoodsShipment.Seller.Communication }
+             *     
+             */
+            public void setCommunication(Declaration.GoodsShipment.Seller.Communication value) {
+                this.communication = value;
             }
 
 
