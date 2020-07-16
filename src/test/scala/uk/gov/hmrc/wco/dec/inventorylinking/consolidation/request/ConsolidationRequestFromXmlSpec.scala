@@ -40,7 +40,6 @@ class ConsolidationRequestFromXmlSpec extends WcoSpec with XmlBehaviours {
 
         actualConsolidationRequest.ucrBlock mustNot be(defined)
       }
-
     }
 
     "value is provided" should {
@@ -50,15 +49,6 @@ class ConsolidationRequestFromXmlSpec extends WcoSpec with XmlBehaviours {
         val expectedMessageCode = messageCodeConsolidation
 
         actualConsolidationRequest.messageCode must be(expectedMessageCode)
-      }
-
-      "fill transactionType" in {
-        val inputXML = ConsolidationRequestSpecInputXMLProvider.provideTestXMLForConsolidationRequest("TestTransactionType")
-        val actualConsolidationRequest = InventoryLinkingConsolidationRequest.fromXml(inputXML)
-        val expectedTransactionType = transactionType
-
-        actualConsolidationRequest.transactionType must be(expectedTransactionType)
-
       }
 
       "fill masterUCR" in {

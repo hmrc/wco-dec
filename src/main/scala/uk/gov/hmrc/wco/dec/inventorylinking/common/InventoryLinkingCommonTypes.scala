@@ -71,6 +71,9 @@ case class UcrBlock(
   @JacksonXmlProperty(localName = "ucr", namespace = InventoryLinkingMovementRequest.namespace)
   ucr: String,  // max 35 chars
 
+  @JacksonXmlProperty(localName = "ucrPartNo", namespace = InventoryLinkingMovementRequest.namespace)
+  ucrPartNo: Option[String],  // 1-3 digits
+
   @JacksonXmlProperty(localName = "ucrType", namespace = InventoryLinkingMovementRequest.namespace)
   ucrType: String   // Enumeration values: D, M
 )

@@ -36,10 +36,10 @@ trait XmlBehaviours {
   val responseSchemaResources = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_RES_2_DMS.xsd")
 
   val inventoryLinkingRequestResources = Seq(
-    "/inventory-linking-exports-schemas/request/inventoryLinkingRequestExternal.xsd")
+    "/inventory-linking-exports-schemas/exports/inventoryLinkingRequestExternal.xsd")
 
   val inventoryLinkingResponseResources = Seq(
-    "/inventory-linking-exports-schemas/notification/inventoryLinkingResponseExternal.xsd")
+    "/inventory-linking-exports-schemas/exports/inventoryLinkingResponseExternal.xsd")
 
   def validDeclarationXmlScenario()(test: => Elem): Unit = validXmlScenario(importDeclarationSchemaResources)(test)
 

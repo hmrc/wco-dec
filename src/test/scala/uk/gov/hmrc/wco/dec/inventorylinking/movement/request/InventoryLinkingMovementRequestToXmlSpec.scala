@@ -62,11 +62,12 @@ class InventoryLinkingMovementRequestToXmlSpec extends WcoSpec with XmlBehaviour
         ucrBlock = ucrBlock,
         goodsLocation = goodsLocation
       )
-      val expectedUcrBlock: Seq[String] = Seq(ucrBlock.ucr, ucrBlock.ucrType)
+      val expectedUcrBlock: Seq[String] = Seq(ucrBlock.ucr, ucrBlock.ucrPartNo.get, ucrBlock.ucrType)
 
       hasExpectedOutput(inventoryLinkingMovementRequest, expectedUcrBlock) { xml =>
         Seq(
           (xml \ "ucrBlock" \ "ucr").text.trim,
+          (xml \ "ucrBlock" \ "ucrPartNo").text.trim,
           (xml \ "ucrBlock" \ "ucrType").text.trim
         )
       }

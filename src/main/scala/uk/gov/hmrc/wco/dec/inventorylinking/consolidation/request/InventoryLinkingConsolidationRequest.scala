@@ -45,9 +45,6 @@ case class InventoryLinkingConsolidationRequest(
   @JacksonXmlProperty(localName = "messageCode", namespace = InventoryLinkingMovementRequest.namespace)
   messageCode: String,
 
-  @JacksonXmlProperty(localName = "transactionType", namespace = InventoryLinkingMovementRequest.namespace)
-  transactionType: String,
-
   @JacksonXmlProperty(localName = "masterUCR", namespace = InventoryLinkingMovementRequest.namespace)
   masterUCR: Option[String] = None,
 

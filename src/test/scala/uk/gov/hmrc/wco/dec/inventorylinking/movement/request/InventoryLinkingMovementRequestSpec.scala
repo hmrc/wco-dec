@@ -32,7 +32,7 @@ object InventoryLinkingMovementRequestSpec extends WcoSpec {
     Some(randomString(12)),
     Some(randomString(3))
   )
-  val ucrBlock: UcrBlock = UcrBlock("GB/S48-FOLC5X3O", ucrTypeValues(randomInt(ucrTypeValues.length)))
+  val ucrBlock: UcrBlock = UcrBlock("GB/S48-FOLC5X3O", Some("123"), ucrTypeValues(randomInt(ucrTypeValues.length)))
   val goodsLocation: String = randomString(17)
   val goodsArrivalDateTime: String = LocalDateTime.now.withNano(0).toString
   val goodsDepartureDateTime: String = LocalDateTime.now.withNano(0).toString

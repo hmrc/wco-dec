@@ -101,11 +101,12 @@ class InventoryLinkingMovementResponseToXmlSpec extends WcoSpec with XmlBehaviou
       val inventoryLinkingMovementResponse =
         InventoryLinkingMovementResponse(messageCodeMovement, ucrBlock = Some(ucrBlock))
 
-      val expectedOutput = Seq(movementUcr, movementUcrType)
+      val expectedOutput = Seq(movementUcr, movementUcrPartNo, movementUcrType)
 
       hasExpectedOutput(inventoryLinkingMovementResponse, expectedOutput) { xml =>
         Seq(
           (xml \ "ucrBlock" \ "ucr").text.trim,
+          (xml \ "ucrBlock" \ "ucrPartNo").text.trim,
           (xml \ "ucrBlock" \ "ucrType").text.trim
         )
       }
