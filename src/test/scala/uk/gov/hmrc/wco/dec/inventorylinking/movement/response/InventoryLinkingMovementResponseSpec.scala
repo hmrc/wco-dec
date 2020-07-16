@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 HM Revenue & Customs
+ * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,8 @@ object InventoryLinkingMovementResponseSpec extends WcoSpec {
   val submitRole = randomString(35)
   val movementUcr = "GB/OHR5CMXY6LOV-CIK1TLGPXT2WFGP42"
   val movementUcrType = "D"
-  val ucrBlock = UcrBlock(movementUcr, movementUcrType)
+  val movementUcrPartNo = "123"
+  val ucrBlock = UcrBlock(movementUcr, Some(movementUcrPartNo), movementUcrType)
   val commodityCode = randomInt(99999999)
   val totalPackages = randomInt(99999999)
   val totalNetMass = randomBigDecimal

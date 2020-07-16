@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 HM Revenue & Customs
+ * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ object InventoryLinkingMovementRequestSpec extends WcoSpec {
     Some(randomString(12)),
     Some(randomString(3))
   )
-  val ucrBlock: UcrBlock = UcrBlock("GB/S48-FOLC5X3O", ucrTypeValues(randomInt(ucrTypeValues.length)))
+  val ucrBlock: UcrBlock = UcrBlock("GB/S48-FOLC5X3O", Some("123"), ucrTypeValues(randomInt(ucrTypeValues.length)))
   val goodsLocation: String = randomString(17)
   val goodsArrivalDateTime: String = LocalDateTime.now.withNano(0).toString
   val goodsDepartureDateTime: String = LocalDateTime.now.withNano(0).toString

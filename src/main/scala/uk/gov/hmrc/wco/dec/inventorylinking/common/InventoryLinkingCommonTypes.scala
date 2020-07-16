@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 HM Revenue & Customs
+ * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -70,6 +70,9 @@ case class TransportDetails(
 case class UcrBlock(
   @JacksonXmlProperty(localName = "ucr", namespace = InventoryLinkingMovementRequest.namespace)
   ucr: String,  // max 35 chars
+
+  @JacksonXmlProperty(localName = "ucrPartNo", namespace = InventoryLinkingMovementRequest.namespace)
+  ucrPartNo: Option[String],  // 1-3 digits
 
   @JacksonXmlProperty(localName = "ucrType", namespace = InventoryLinkingMovementRequest.namespace)
   ucrType: String   // Enumeration values: D, M

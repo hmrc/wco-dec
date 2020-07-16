@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 HM Revenue & Customs
+ * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -62,11 +62,12 @@ class InventoryLinkingMovementRequestToXmlSpec extends WcoSpec with XmlBehaviour
         ucrBlock = ucrBlock,
         goodsLocation = goodsLocation
       )
-      val expectedUcrBlock: Seq[String] = Seq(ucrBlock.ucr, ucrBlock.ucrType)
+      val expectedUcrBlock: Seq[String] = Seq(ucrBlock.ucr, ucrBlock.ucrPartNo.get, ucrBlock.ucrType)
 
       hasExpectedOutput(inventoryLinkingMovementRequest, expectedUcrBlock) { xml =>
         Seq(
           (xml \ "ucrBlock" \ "ucr").text.trim,
+          (xml \ "ucrBlock" \ "ucrPartNo").text.trim,
           (xml \ "ucrBlock" \ "ucrType").text.trim
         )
       }

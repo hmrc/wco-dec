@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 HM Revenue & Customs
+ * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,5 +27,6 @@ object ConsolidationRequestSpec extends WcoSpec {
   val messageCodeConsolidation : String = messageCodeConsolidationValues(randomInt(messageCodeConsolidationValues.length))
   val transactionType: String = transactionTypeValues(randomInt(transactionTypeValues.length))
   val masterUCR: String = "GB/ESH-JL2EBNT2CXR2HU9OZ1WMMQYPP7"
-  val ucrBlock: UcrBlock = UcrBlock("GB/S48-FOLC5X3O", ucrTypeValues(randomInt(ucrTypeValues.length)))
+  val ucrPartNo: String = "123"
+  val ucrBlock: UcrBlock = UcrBlock("GB/S48-FOLC5X3O", Some(ucrPartNo), ucrTypeValues(randomInt(ucrTypeValues.length)))
 }

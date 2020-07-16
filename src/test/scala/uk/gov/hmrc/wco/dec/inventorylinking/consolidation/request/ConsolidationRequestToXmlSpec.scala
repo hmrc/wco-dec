@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 HM Revenue & Customs
+ * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,8 +26,7 @@ class ConsolidationRequestToXmlSpec extends WcoSpec with XmlBehaviours{
 
     "contain MessageCode" in validInventoryLinkingRequestXmlScenario() {
       val inventoryLinkingConsolidationRequest = InventoryLinkingConsolidationRequest(
-        messageCode = messageCodeConsolidation,
-        transactionType = transactionType
+        messageCode = messageCodeConsolidation
       )
       val expectedMessageCode = messageCodeConsolidation
 
@@ -37,23 +36,9 @@ class ConsolidationRequestToXmlSpec extends WcoSpec with XmlBehaviours{
 
     }
 
-    "contain transactionType" in validInventoryLinkingRequestXmlScenario(){
-      val inventoryLinkingConsolidationRequest = InventoryLinkingConsolidationRequest(
-        messageCode = messageCodeConsolidation,
-        transactionType = transactionType
-      )
-      val expectedTransactionType = transactionType
-
-      hasExpectedOutput(inventoryLinkingConsolidationRequest, expectedTransactionType) { xml =>
-        (xml \ "transactionType").text.trim
-      }
-
-    }
-
     "contain masterUcr" in validInventoryLinkingRequestXmlScenario(){
       val inventoryLinkingConsolidationRequest = InventoryLinkingConsolidationRequest(
         messageCode = messageCodeConsolidation,
-        transactionType = transactionType,
         masterUCR = Some(masterUCR)
       )
       val expectedMasterUCR = masterUCR
@@ -67,14 +52,14 @@ class ConsolidationRequestToXmlSpec extends WcoSpec with XmlBehaviours{
     "contain ucrBlock" in validInventoryLinkingRequestXmlScenario(){
       val inventoryLinkingConsolidationRequest = InventoryLinkingConsolidationRequest(
         messageCode = messageCodeConsolidation,
-        transactionType = transactionType,
         ucrBlock = Some(ucrBlock)
       )
-      val expectedUcrBlock = Seq(ucrBlock.ucr, ucrBlock.ucrType)
+      val expectedUcrBlock = Seq(ucrBlock.ucr, ucrBlock.ucrPartNo.get, ucrBlock.ucrType)
 
       hasExpectedOutput(inventoryLinkingConsolidationRequest, expectedUcrBlock) { xml =>
         Seq(
           (xml \ "ucrBlock" \ "ucr").text.trim,
+          (xml \ "ucrBlock" \ "ucrPartNo").text.trim,
           (xml \ "ucrBlock" \ "ucrType").text.trim
         )
       }

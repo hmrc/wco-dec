@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 HM Revenue & Customs
+ * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,9 +44,6 @@ object InventoryLinkingConsolidationRequest extends JacksonMapper {
 case class InventoryLinkingConsolidationRequest(
   @JacksonXmlProperty(localName = "messageCode", namespace = InventoryLinkingMovementRequest.namespace)
   messageCode: String,
-
-  @JacksonXmlProperty(localName = "transactionType", namespace = InventoryLinkingMovementRequest.namespace)
-  transactionType: String,
 
   @JacksonXmlProperty(localName = "masterUCR", namespace = InventoryLinkingMovementRequest.namespace)
   masterUCR: Option[String] = None,

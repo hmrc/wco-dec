@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 HM Revenue & Customs
+ * Copyright 2020 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,10 +36,10 @@ trait XmlBehaviours {
   val responseSchemaResources = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_RES_2_DMS.xsd")
 
   val inventoryLinkingRequestResources = Seq(
-    "/inventory-linking-exports-schemas/request/inventoryLinkingRequestExternal.xsd")
+    "/inventory-linking-exports-schemas/exports/inventoryLinkingRequestExternal.xsd")
 
   val inventoryLinkingResponseResources = Seq(
-    "/inventory-linking-exports-schemas/notification/inventoryLinkingResponseExternal.xsd")
+    "/inventory-linking-exports-schemas/exports/inventoryLinkingResponseExternal.xsd")
 
   def validDeclarationXmlScenario()(test: => Elem): Unit = validXmlScenario(importDeclarationSchemaResources)(test)
 
