@@ -339,17 +339,17 @@ import wco.datamodel.wco.response_ds.dms._2.StatusReleaseDateTimeType;
 public class Response {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "IssueDateTime", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "FunctionCode", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "AdditionalInformation", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "Declaration", namespace = "urn:wco:datamodel:WCO:DEC-DMS:2", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "Bank", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "ContactOffice", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "Declaration", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "Amendment", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "AppealOffice", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "Error", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "Declaration", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "FunctionalReferenceID", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "Amendment", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "Error", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "Declaration", namespace = "urn:wco:datamodel:WCO:DEC-DMS:2", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "FunctionCode", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "IssueDateTime", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "Bank", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "Status", namespace = "urn:wco:datamodel:WCO:RES-DMS:2", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> content;
@@ -360,8 +360,8 @@ public class Response {
      * <p>
      * You are getting this "catch-all" property because of the following reason: 
      * The field name "Declaration" is used by two different parts of a schema. See: 
-     * line 1426 of file:/wco-dec/updateSchema/customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_RES_2_DMS.xsd
-     * line 832 of file:/wco-dec/updateSchema/customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_RES_2_DMS.xsd
+     * line 1426 of file:/home/tim/Development/hmrc/wco-dec/updateSchema/customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_RES_2_DMS.xsd
+     * line 832 of file:/home/tim/Development/hmrc/wco-dec/updateSchema/customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_RES_2_DMS.xsd
      * <p>
      * To get rid of this property, apply a property customization to one 
      * of both of the following declarations to change their names: 
@@ -382,17 +382,17 @@ public class Response {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link ResponseIssueDateTimeType }{@code >}
-     * {@link JAXBElement }{@code <}{@link ResponseFunctionCodeType }{@code >}
      * {@link JAXBElement }{@code <}{@link Response.AdditionalInformation }{@code >}
-     * {@link JAXBElement }{@code <}{@link wco.datamodel.wco.dec_dms._2.Declaration }{@code >}
-     * {@link JAXBElement }{@code <}{@link Response.Bank }{@code >}
      * {@link JAXBElement }{@code <}{@link Response.ContactOffice }{@code >}
-     * {@link JAXBElement }{@code <}{@link Response.Declaration }{@code >}
-     * {@link JAXBElement }{@code <}{@link Response.Amendment }{@code >}
      * {@link JAXBElement }{@code <}{@link Response.AppealOffice }{@code >}
-     * {@link JAXBElement }{@code <}{@link Response.Error }{@code >}
+     * {@link JAXBElement }{@code <}{@link Response.Declaration }{@code >}
      * {@link JAXBElement }{@code <}{@link ResponseFunctionalReferenceIDType }{@code >}
+     * {@link JAXBElement }{@code <}{@link Response.Amendment }{@code >}
+     * {@link JAXBElement }{@code <}{@link Response.Error }{@code >}
+     * {@link JAXBElement }{@code <}{@link wco.datamodel.wco.dec_dms._2.Declaration }{@code >}
+     * {@link JAXBElement }{@code <}{@link ResponseFunctionCodeType }{@code >}
+     * {@link JAXBElement }{@code <}{@link ResponseIssueDateTimeType }{@code >}
+     * {@link JAXBElement }{@code <}{@link Response.Bank }{@code >}
      * {@link JAXBElement }{@code <}{@link Response.Status }{@code >}
      * 
      * 
