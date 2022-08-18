@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -92,7 +92,7 @@ object MetaData extends JacksonMapper {
 
   def fromProperties(props: Map[String, String]): MetaData = {
     val p = new Properties()
-    p.putAll(props.asJava)
+    props.foreach(prop => p.put(prop._1, prop._2))
     _props.readPropertiesAs(p, _schema, classOf[MetaData])
   }
 
