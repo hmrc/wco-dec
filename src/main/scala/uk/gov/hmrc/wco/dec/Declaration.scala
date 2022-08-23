@@ -16,10 +16,6 @@
 
 package uk.gov.hmrc.wco.dec
 
-import java.io.StringWriter
-import java.time.ZonedDateTime
-import java.util.Properties
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind._
@@ -33,7 +29,10 @@ import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 import wco.datamodel.wco.dec_dms._2.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.{Buyer, Consignee}
 import wco.datamodel.wco.declaration_ds.dms._2._
 
-import scala.collection.JavaConverters._
+import java.io.StringWriter
+import java.time.ZonedDateTime
+import java.util.Properties
+import scala.collection.JavaConverters.propertiesAsScalaMapConverter
 
 /*
 MetaData and Declaration schema generally consists of xsd:sequence definitions the order of which is reflected in the
@@ -92,7 +91,7 @@ object MetaData extends JacksonMapper {
 
   def fromProperties(props: Map[String, String]): MetaData = {
     val p = new Properties()
-    props.foreach(prop => p.put(prop._1, prop._2))
+    props.foreach(v => p.put(v._1, v._2))
     _props.readPropertiesAs(p, _schema, classOf[MetaData])
   }
 
@@ -851,19 +850,6 @@ object Address {
     consigneeAddress.setPostcodeID(addressPostcode)
 
     consigneeAddress
-  }
-
-  def test: Unit = {
-    val address = Address(
-      Some("Leeds"),
-      Some("GB"),
-      Some("GB"),
-      Some("UK"),
-      Some("GB"),
-      Some("LS1")
-    )
-    val consigneeAddress = address.as[Consignee.Address]
-    val buyersAddress = address.as[Buyer.Address]
   }
 }
 

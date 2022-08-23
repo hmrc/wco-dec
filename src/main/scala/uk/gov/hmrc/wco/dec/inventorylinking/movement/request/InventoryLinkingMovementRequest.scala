@@ -18,13 +18,12 @@ package uk.gov.hmrc.wco.dec.inventorylinking.movement.request
 
 import java.io.StringWriter
 import java.util.Properties
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement}
 import uk.gov.hmrc.wco.dec.inventorylinking.common.{AgentDetails, TransportDetails, UcrBlock}
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
-import scala.collection.JavaConverters._
+import scala.collection.JavaConverters.propertiesAsScalaMapConverter
 
 
 object InventoryLinkingMovementRequest extends JacksonMapper {
@@ -35,7 +34,7 @@ object InventoryLinkingMovementRequest extends JacksonMapper {
 
   def fromProperties(props: Map[String, String]): InventoryLinkingMovementRequest = {
     val p = new Properties()
-    p.putAll(props.asJava)
+    props.foreach(v => p.put(v._1, v._2))
     _props.readPropertiesAs(p, _schema, classOf[InventoryLinkingMovementRequest])
   }
 }

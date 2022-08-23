@@ -112,7 +112,7 @@ class StatusRequestSpec extends WcoSpec {
     "accept and recognize 102 date format" in {
       val time = year + month + day
       val date = DateTime(Some(dateWithooutZoneFormat), Some(time))
-      val parsedDate = date.timeOpt.get
+      val parsedDate = date.timeOpt().get
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
@@ -124,7 +124,7 @@ class StatusRequestSpec extends WcoSpec {
       val time = year + month + day + hour + minute + second + zone
 
       val date = DateTime(Some(dateWithZoneFormat), Some(time))
-      val parsedDate = date.timeOpt.get
+      val parsedDate = date.timeOpt().get
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
@@ -139,7 +139,7 @@ class StatusRequestSpec extends WcoSpec {
       val time = year + month + day + hour + minute + second + zone
 
       val date = DateTime(Some(dateWithZoneFormat), Some(time))
-      val parsedDate = date.timeOpt.get
+      val parsedDate = date.timeOpt().get
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
@@ -154,7 +154,7 @@ class StatusRequestSpec extends WcoSpec {
       val time = year + month + day + hour + minute + second + zone
 
       val date = DateTime(Some(dateWithZoneFormat), Some(time))
-      val parsedDate = date.timeOpt.get
+      val parsedDate = date.timeOpt().get
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)

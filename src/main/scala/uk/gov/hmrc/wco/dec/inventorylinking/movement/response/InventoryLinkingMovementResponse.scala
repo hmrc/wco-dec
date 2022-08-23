@@ -18,13 +18,13 @@ package uk.gov.hmrc.wco.dec.inventorylinking.movement.response
 
 import java.io.StringWriter
 import java.util.Properties
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement}
 import uk.gov.hmrc.wco.dec.inventorylinking.common.{EntryStatus, GoodsItem, UcrBlock}
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
-import scala.collection.JavaConverters._
+import scala.collection.JavaConverters.propertiesAsScalaMapConverter
+
 
 @JsonIgnoreProperties(Array("_xml", "_schema", "_props"))
 @JacksonXmlRootElement(namespace = InventoryLinkingMovementResponse.namespace, localName = "inventoryLinkingMovementResponse")
@@ -78,7 +78,7 @@ object InventoryLinkingMovementResponse extends JacksonMapper {
 
   def fromProperties(props: Map[String, String]): InventoryLinkingMovementResponse = {
     val p = new Properties()
-    p.putAll(props.asJava)
+    props.foreach(v => p.put(v._1, v._2))
     _props.readPropertiesAs(p, _schema, classOf[InventoryLinkingMovementResponse])
   }
 }

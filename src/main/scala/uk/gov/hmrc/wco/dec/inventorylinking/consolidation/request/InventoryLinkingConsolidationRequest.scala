@@ -24,7 +24,7 @@ import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 import java.io.StringWriter
 import java.util.Properties
-import scala.collection.JavaConverters._
+import scala.collection.JavaConverters.propertiesAsScalaMapConverter
 
 object InventoryLinkingConsolidationRequest extends JacksonMapper {
   final val inventoryLinking = "http://gov.uk/customs/inventoryLinking/v1"
@@ -33,7 +33,7 @@ object InventoryLinkingConsolidationRequest extends JacksonMapper {
 
   def fromProperties(props: Map[String, String]): InventoryLinkingConsolidationRequest = {
     val p = new Properties()
-    p.putAll(props.asJava)
+    props.foreach(v => p.put(v._1, v._2))
     _props.readPropertiesAs(p, _schema, classOf[InventoryLinkingConsolidationRequest])
   }
 }

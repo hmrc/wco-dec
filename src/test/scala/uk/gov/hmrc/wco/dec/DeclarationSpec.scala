@@ -1711,7 +1711,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
   "Date Time Formatter" should {
     "accept and recognize 102 date format" in {
       val date = DateTimeString(dateWithooutZoneFormat, year + month + day)
-      val parsedDate = date.time
+      val parsedDate = date.time()
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
@@ -1723,7 +1723,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val time = year + month + day + hour + minute + second + zone
 
       val date = DateTimeString(dateWithZoneFormat, time)
-      val parsedDate = date.time
+      val parsedDate = date.time()
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
@@ -1738,7 +1738,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val time = year + month + day + hour + minute + second + zone
 
       val date = DateTimeString(dateWithZoneFormat, time)
-      val parsedDate = date.time
+      val parsedDate = date.time()
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
@@ -1753,7 +1753,7 @@ class DeclarationSpec extends WcoSpec with XmlBehaviours {
       val time = year + month + day + hour + minute + second + zone
 
       val date = DateTimeString(dateWithZoneFormat, time)
-      val parsedDate = date.time
+      val parsedDate = date.time()
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
