@@ -3,7 +3,7 @@ import sbt._
 val nameApp = "wco-dec"
 
 lazy val simpleReactiveMongo = Project(nameApp, file("."))
-  .enablePlugins(SbtAutoBuildPlugin, SbtGitVersioning)
+  .enablePlugins(SbtAutoBuildPlugin)
   .settings(
     scalaVersion        := "2.13.8",
     libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
