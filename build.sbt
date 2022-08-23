@@ -8,7 +8,8 @@ lazy val simpleReactiveMongo = Project(nameApp, file("."))
     scalaVersion        := "2.13.8",
     libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
     crossScalaVersions  := Seq("2.11.12", "2.12.6", "2.13.8"),
-    majorVersion := 0
+    majorVersion := 0,
+    isPublicArtefact := true
   )
   .settings(scoverageSettings)
 
