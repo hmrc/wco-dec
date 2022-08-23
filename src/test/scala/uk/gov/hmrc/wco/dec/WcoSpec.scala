@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,8 @@
 package uk.gov.hmrc.wco.dec
 
 import org.scalatest.concurrent.ScalaFutures
-import org.scalatest.{MustMatchers, WordSpec}
+import org.scalatest.matchers.must.Matchers
+import org.scalatest.wordspec.AnyWordSpec
 import uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request.InventoryLinkingConsolidationRequest
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequest
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.response.InventoryLinkingMovementResponse
@@ -25,7 +26,7 @@ import uk.gov.hmrc.wco.dec.inventorylinking.movement.response.InventoryLinkingMo
 import scala.util.Random
 import scala.xml.{Elem, XML}
 
-trait WcoSpec extends WordSpec with MustMatchers with ScalaFutures {
+trait WcoSpec extends AnyWordSpec with Matchers with ScalaFutures {
 
   protected def randomCancelDeclaration: MetaData = MetaData(
     wcoDataModelVersionCode = Some(randomString(6)),

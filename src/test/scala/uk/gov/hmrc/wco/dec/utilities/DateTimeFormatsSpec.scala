@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
  */
 
 package uk.gov.hmrc.wco.dec.utilities
-import org.scalatest.{MustMatchers, WordSpec}
+import uk.gov.hmrc.wco.dec.WcoSpec
 
-class DateTimeFormatsSpec extends WordSpec with MustMatchers {
+class DateTimeFormatsSpec extends WcoSpec {
   import DateTimeFormatsSpec._
 
   "DateTimeFormats" should {

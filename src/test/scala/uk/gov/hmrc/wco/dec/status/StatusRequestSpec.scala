@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -112,7 +112,7 @@ class StatusRequestSpec extends WcoSpec {
     "accept and recognize 102 date format" in {
       val time = year + month + day
       val date = DateTime(Some(dateWithooutZoneFormat), Some(time))
-      val parsedDate = date.timeOpt.get
+      val parsedDate = date.timeOpt().get
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
@@ -124,7 +124,7 @@ class StatusRequestSpec extends WcoSpec {
       val time = year + month + day + hour + minute + second + zone
 
       val date = DateTime(Some(dateWithZoneFormat), Some(time))
-      val parsedDate = date.timeOpt.get
+      val parsedDate = date.timeOpt().get
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
@@ -139,7 +139,7 @@ class StatusRequestSpec extends WcoSpec {
       val time = year + month + day + hour + minute + second + zone
 
       val date = DateTime(Some(dateWithZoneFormat), Some(time))
-      val parsedDate = date.timeOpt.get
+      val parsedDate = date.timeOpt().get
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)
@@ -154,7 +154,7 @@ class StatusRequestSpec extends WcoSpec {
       val time = year + month + day + hour + minute + second + zone
 
       val date = DateTime(Some(dateWithZoneFormat), Some(time))
-      val parsedDate = date.timeOpt.get
+      val parsedDate = date.timeOpt().get
 
       parsedDate.getYear must be(year.toInt)
       parsedDate.getMonthValue must be(month.toInt)

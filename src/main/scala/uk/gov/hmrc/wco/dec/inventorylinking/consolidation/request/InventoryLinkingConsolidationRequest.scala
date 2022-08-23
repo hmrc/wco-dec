@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 HM Revenue & Customs
+ * Copyright 2022 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,16 +16,15 @@
 
 package uk.gov.hmrc.wco.dec.inventorylinking.consolidation.request
 
-import java.io.StringWriter
-import java.util.Properties
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement}
 import uk.gov.hmrc.wco.dec.inventorylinking.common.UcrBlock
 import uk.gov.hmrc.wco.dec.inventorylinking.movement.request.InventoryLinkingMovementRequest
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
-import scala.collection.JavaConverters._
+import java.io.StringWriter
+import java.util.Properties
+import scala.collection.JavaConverters.propertiesAsScalaMapConverter
 
 object InventoryLinkingConsolidationRequest extends JacksonMapper {
   final val inventoryLinking = "http://gov.uk/customs/inventoryLinking/v1"
@@ -34,7 +33,7 @@ object InventoryLinkingConsolidationRequest extends JacksonMapper {
 
   def fromProperties(props: Map[String, String]): InventoryLinkingConsolidationRequest = {
     val p = new Properties()
-    p.putAll(props.asJava)
+    props.foreach(v => p.put(v._1, v._2))
     _props.readPropertiesAs(p, _schema, classOf[InventoryLinkingConsolidationRequest])
   }
 }
