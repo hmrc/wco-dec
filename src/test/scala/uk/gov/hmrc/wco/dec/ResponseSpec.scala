@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 HM Revenue & Customs
+ * Copyright 2023 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -418,7 +418,7 @@ class ResponseSpec extends WcoSpec with XmlBehaviours {
         val actualMetaData = MetaData.fromXml(inputXML)
 
         actualMetaData.response mustNot be(empty)
-        actualMetaData.response.head.issueDateTime must be(None)
+        actualMetaData.response.head.issueDateTime must be(Some(ResponseDateTimeElement(null)))
       }
 
       "fill optional sequence field with empty sequence" in {
