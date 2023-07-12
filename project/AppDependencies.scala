@@ -2,9 +2,10 @@ import sbt._
 
 object AppDependencies {
 
-  val jacksonVersion = "2.11.3" // Pinned at 2.11.3 due to open issue https://github.com/FasterXML/jackson-dataformat-xml/issues/491
+  val jacksonVersion = "2.15.1"
 
   val compile = Seq(
+    "jakarta.xml.bind" % "jakarta.xml.bind-api" % "2.3.2",
     "com.fasterxml.jackson.core" % "jackson-core" % jacksonVersion,
     "com.fasterxml.jackson.core" % "jackson-databind" % jacksonVersion,
     "com.fasterxml.jackson.core" % "jackson-annotations" % jacksonVersion,
