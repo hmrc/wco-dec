@@ -1,19 +1,18 @@
-import sbt._
+import sbt.*
 
-val nameApp = "wco-dec"
+val appName = "wco-dec"
 
-lazy val simpleReactiveMongo = Project(nameApp, file("."))
+lazy val app = Project(appName, file("."))
   .enablePlugins(SbtAutoBuildPlugin)
   .settings(
-    scalaVersion        := "2.13.8",
-    libraryDependencies ++= AppDependencies.compile ++ AppDependencies.test,
-    crossScalaVersions  := Seq("2.11.12", "2.12.6", "2.13.8"),
     majorVersion := 0,
+    scalaVersion := "2.13.12",
+    libraryDependencies ++= Dependencies(),
     isPublicArtefact := true
   )
   .settings(scoverageSettings)
 
-lazy val scoverageSettings: Seq[Setting[_]] = Seq(
+lazy val scoverageSettings: Seq[Setting[?]] = Seq(
     coverageExcludedPackages := List("<empty>").mkString(";"),
     coverageMinimumStmtTotal := 50,
     coverageFailOnMinimum := true,
