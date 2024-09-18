@@ -16,7 +16,7 @@
 
 package wco.datamodel.wco.response_ds.dms._2;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**

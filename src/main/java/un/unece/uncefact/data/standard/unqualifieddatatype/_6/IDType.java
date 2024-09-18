@@ -16,66 +16,11 @@
 
 package un.unece.uncefact.data.standard.unqualifieddatatype._6;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlValue;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import wco.datamodel.wco.declaration_ds.dms._2.AEOMutualRecognitionPartyIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.AdditionalDocumentIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.AddressPostcodeIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.AgentIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ArrivalTransportMeansIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.AuthorisationHolderIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.BorderTransportMeansIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.BuyerIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.CarrierIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ClassificationBindingTariffReferenceIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ClassificationIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ConsigneeIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ConsignorIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DangerousGoodsUNDGIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DeclarantIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DeclarationDeclarationOfficeIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DeclarationIssueLocationIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DepartureTransportMeansIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DestinationRegionIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.DomesticDutyTaxPartyIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ExitOfficeIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ExporterIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.GoodsLocationIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.GuaranteeOfficeIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ImporterIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.InvoiceIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.LoadingLocationIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.ObligationGuaranteeIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.OriginRegionIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.PackagingMarksNumbersIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.PayerIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.PresentationOfficeIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.PreviousDocumentIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.SealIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.SellerIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.SubmitterIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.SupervisingOfficeIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.SuretyIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.TradeTermsLocationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.TransportEquipmentIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.UCRIdentificationIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.UCRTraderAssignedReferenceIDType;
-import wco.datamodel.wco.declaration_ds.dms._2.WarehouseIdentificationIDType;
-import wco.datamodel.wco.response_ds.dms._2.AppealOfficeIdentificationIDType;
-import wco.datamodel.wco.response_ds.dms._2.BankAccountIdentificationIDType;
-import wco.datamodel.wco.response_ds.dms._2.BankReferenceIDType;
-import wco.datamodel.wco.response_ds.dms._2.ContactOfficeIdentificationIDType;
-import wco.datamodel.wco.response_ds.dms._2.DeclarationVersionIDType;
-import wco.datamodel.wco.response_ds.dms._2.PaymentReferenceIDType;
-import wco.datamodel.wco.response_ds.dms._2.ResponseFunctionalReferenceIDType;
-
+import jakarta.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import wco.datamodel.wco.declaration_ds.dms._2.*;
+import wco.datamodel.wco.response_ds.dms._2.*;
 
 /**
  * <p>Java class for IDType complex type.

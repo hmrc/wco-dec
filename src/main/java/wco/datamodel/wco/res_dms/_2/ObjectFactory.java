@@ -16,9 +16,9 @@
 
 package wco.datamodel.wco.res_dms._2;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
+import jakarta.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 import wco.datamodel.wco.response_ds.dms._2.ResponseFunctionCodeType;
 import wco.datamodel.wco.response_ds.dms._2.ResponseFunctionalReferenceIDType;

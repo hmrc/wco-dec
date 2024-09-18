@@ -2,10 +2,10 @@ import sbt._
 
 object Dependencies {
 
-  val jacksonVersion = "2.15.1"
+  val jacksonVersion = "2.17.2"
 
   val compile : Seq[ModuleID] = List(
-    "jakarta.xml.bind"                 %  "jakarta.xml.bind-api"          % "2.3.2",
+    "jakarta.xml.bind"                 %  "jakarta.xml.bind-api"          % "4.0.2",
     "com.fasterxml.jackson.core"       %  "jackson-core"                  % jacksonVersion,
     "com.fasterxml.jackson.core"       %  "jackson-databind"              % jacksonVersion,
     "com.fasterxml.jackson.core"       %  "jackson-annotations"           % jacksonVersion,

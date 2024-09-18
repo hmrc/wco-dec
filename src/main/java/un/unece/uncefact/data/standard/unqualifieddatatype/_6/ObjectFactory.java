@@ -16,7 +16,7 @@
 
 package un.unece.uncefact.data.standard.unqualifieddatatype._6;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**

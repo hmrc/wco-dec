@@ -16,9 +16,9 @@
 
 package wco.datamodel.wco.response_ds.dms._2;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlType;
 import un.unece.uncefact.data.standard.unqualifieddatatype._6.TextType;
 
 

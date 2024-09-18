@@ -16,8 +16,7 @@
 
 package wco.datamodel.wco.declaration_ds.dms._2;
 
-import javax.xml.bind.annotation.XmlRegistry;
-
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 /**
  * This object contains factory methods for each 
@@ -35,7 +34,6 @@ import javax.xml.bind.annotation.XmlRegistry;
  */
 @XmlRegistry
 public class ObjectFactory {
-
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: wco.datamodel.wco.declaration_ds.dms._2

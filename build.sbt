@@ -6,7 +6,7 @@ lazy val app = Project(appName, file("."))
   .enablePlugins(SbtAutoBuildPlugin)
   .settings(
     majorVersion := 0,
-    scalaVersion := "2.13.12",
+    scalaVersion := "2.13.14",
     libraryDependencies ++= Dependencies(),
     isPublicArtefact := true
   )

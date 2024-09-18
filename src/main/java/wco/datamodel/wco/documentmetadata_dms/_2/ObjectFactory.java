@@ -16,8 +16,7 @@
 
 package wco.datamodel.wco.documentmetadata_dms._2;
 
-import javax.xml.bind.annotation.XmlRegistry;
-
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 /**
  * This object contains factory methods for each 
