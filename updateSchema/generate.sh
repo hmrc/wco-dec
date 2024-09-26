@@ -11,12 +11,13 @@ process_input "$@"
 
 # Delete previous schemas
 log "Delete previous generated schemas... ✔"
-rm -rf customs-declarations/
+rm -fr customs-declarations classes
 
 # Download the latest Schema definitions
-git_clone $GIT_TAG
+git_clone "$GIT_TAG"
+[ -d "customs-declarations" ] || exiting "Cloning 'customs-declarations' was not successful, exiting..."
 
-#add declaration namespace to notifcation schema
+#add declaration namespace to notification schema
 log "Fix notification schema... ✔"
 fix_notification_dec_namespace
 
@@ -25,7 +26,8 @@ generate
 
 # Move generated schema to source folder
 log "Move generated schema to source folder... ✔"
-cp -R  wco/* ../src/main/java/
+rm -fr ../src/main/java/*
+cp -R classes/* ../src/main/java/
 
 # Add Declaration Object Mapper
 log "Add Declaration Object Mapper... ✔"
