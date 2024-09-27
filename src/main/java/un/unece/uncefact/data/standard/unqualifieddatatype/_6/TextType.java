@@ -57,19 +57,19 @@ import wco.datamodel.wco.response_ds.dms._2.ErrorDescriptionTextType;
 
 
 /**
- * <p>Java class for TextType complex type.
+ * <p>Java class for TextType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="TextType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="languageID" type="{http://www.w3.org/2001/XMLSchema}language" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="TextType">
+ *   <simpleContent>
+ *     <extension base="<http://www.w3.org/2001/XMLSchema>string">
+ *       <attribute name="languageID" type="{http://www.w3.org/2001/XMLSchema}language" />
+ *     </extension>
+ *   </simpleContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -78,37 +78,37 @@ import wco.datamodel.wco.response_ds.dms._2.ErrorDescriptionTextType;
     "value"
 })
 @XmlSeeAlso({
-    ErrorDescriptionTextType.class,
     wco.datamodel.wco.response_ds.dms._2.AdditionalInformationStatementDescriptionTextType.class,
-    TradeTermsDescriptionTextType.class,
-    AuthenticatorNameTextType.class,
-    CommodityDescriptionTextType.class,
-    AgentNameTextType.class,
-    PackagingPackingMaterialDescriptionTextType.class,
-    TradeTermsLocationNameTextType.class,
-    ConsignorNameTextType.class,
-    SubmitterNameTextType.class,
-    AuthenticationAuthenticationTextType.class,
-    ArrivalTransportMeansNameTextType.class,
-    PayerNameTextType.class,
-    DeclarantNameTextType.class,
-    ImporterNameTextType.class,
-    GoodsLocationNameTextType.class,
-    BorderTransportMeansNameTextType.class,
-    ConsigneeNameTextType.class,
+    ErrorDescriptionTextType.class,
     AdditionalDocumentNameTextType.class,
-    ExporterNameTextType.class,
-    ContactNameTextType.class,
     wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementDescriptionTextType.class,
-    LoadingLocationNameTextType.class,
-    SellerNameTextType.class,
-    AddressLineTextType.class,
-    SuretyNameTextType.class,
-    DepartureTransportMeansNameTextType.class,
-    CarrierNameTextType.class,
     AddressCityNameTextType.class,
     AddressCountrySubDivisionNameTextType.class,
-    BuyerNameTextType.class
+    AddressLineTextType.class,
+    AgentNameTextType.class,
+    ArrivalTransportMeansNameTextType.class,
+    AuthenticationAuthenticationTextType.class,
+    AuthenticatorNameTextType.class,
+    BorderTransportMeansNameTextType.class,
+    BuyerNameTextType.class,
+    CarrierNameTextType.class,
+    CommodityDescriptionTextType.class,
+    ConsigneeNameTextType.class,
+    ConsignorNameTextType.class,
+    ContactNameTextType.class,
+    DeclarantNameTextType.class,
+    DepartureTransportMeansNameTextType.class,
+    ExporterNameTextType.class,
+    GoodsLocationNameTextType.class,
+    ImporterNameTextType.class,
+    LoadingLocationNameTextType.class,
+    PackagingPackingMaterialDescriptionTextType.class,
+    PayerNameTextType.class,
+    SellerNameTextType.class,
+    SubmitterNameTextType.class,
+    SuretyNameTextType.class,
+    TradeTermsDescriptionTextType.class,
+    TradeTermsLocationNameTextType.class
 })
 public class TextType {
 

@@ -23,7 +23,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, Jack
 import uk.gov.hmrc.wco.dec.inventorylinking.common.{EntryStatus, GoodsItem, UcrBlock}
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
-import scala.collection.JavaConverters.propertiesAsScalaMapConverter
+import scala.jdk.CollectionConverters._
 
 
 @JsonIgnoreProperties(Array("_xml", "_schema", "_props"))

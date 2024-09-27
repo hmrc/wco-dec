@@ -2,7 +2,7 @@ import sbt._
 
 object Dependencies {
 
-  val jacksonVersion = "2.17.2"
+  val jacksonVersion = "2.18.0"
 
   val compile : Seq[ModuleID] = List(
     "jakarta.xml.bind"                 %  "jakarta.xml.bind-api"          % "4.0.2",

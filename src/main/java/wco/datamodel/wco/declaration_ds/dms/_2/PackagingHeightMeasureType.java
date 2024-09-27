@@ -23,8 +23,6 @@ import un.unece.uncefact.data.standard.unqualifieddatatype._6.MeasureType;
 
 
 /**
- * 
- *         
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOID xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;402&lt;/WCOID&gt;
  * </pre>
@@ -34,20 +32,18 @@ import un.unece.uncefact.data.standard.unqualifieddatatype._6.MeasureType;
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;n..15&lt;/WCOFormat&gt;
  * </pre>
  * 
- *       
+ * <p>Java class for PackagingHeightMeasureType complex type</p>.
  * 
- * <p>Java class for PackagingHeightMeasureType complex type.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="PackagingHeightMeasureType">
- *   &lt;simpleContent>
- *     &lt;restriction base="&lt;urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>MeasureType">
- *     &lt;/restriction>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="PackagingHeightMeasureType">
+ *   <simpleContent>
+ *     <restriction base="<urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>MeasureType">
+ *     </restriction>
+ *   </simpleContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

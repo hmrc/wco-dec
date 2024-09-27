@@ -23,8 +23,6 @@ import un.unece.uncefact.data.standard.unqualifieddatatype._6.IDType;
 
 
 /**
- * 
- *         
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOID xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;145&lt;/WCOID&gt;
  * </pre>
@@ -34,20 +32,18 @@ import un.unece.uncefact.data.standard.unqualifieddatatype._6.IDType;
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..18&lt;/WCOFormat&gt;
  * </pre>
  * 
- *       
+ * <p>Java class for ClassificationIdentificationIDType complex type</p>.
  * 
- * <p>Java class for ClassificationIdentificationIDType complex type.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ClassificationIdentificationIDType">
- *   &lt;simpleContent>
- *     &lt;restriction base="&lt;urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>IDType">
- *     &lt;/restriction>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="ClassificationIdentificationIDType">
+ *   <simpleContent>
+ *     <restriction base="<urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>IDType">
+ *     </restriction>
+ *   </simpleContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

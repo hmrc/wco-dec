@@ -18,11 +18,12 @@ package wco.datamodel.wco.documentmetadata_dms._2;
 
 import jakarta.xml.bind.annotation.XmlRegistry;
 
+
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the wco.datamodel.wco.documentmetadata_dms._2 package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -46,6 +47,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MetaData }
      * 
+     * @return
+     *     the new instance of {@link MetaData }
      */
     public MetaData createMetaData() {
         return new MetaData();

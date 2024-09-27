@@ -24,8 +24,6 @@ import un.unece.uncefact.data.standard.unqualifieddatatype._6.DateTimeType;
 
 
 /**
- * 
- *         
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOID xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;D029&lt;/WCOID&gt;
  * </pre>
@@ -35,30 +33,28 @@ import un.unece.uncefact.data.standard.unqualifieddatatype._6.DateTimeType;
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..35&lt;/WCOFormat&gt;
  * </pre>
  * 
- *       
+ * <p>Java class for ResponseIssueDateTimeType complex type</p>.
  * 
- * <p>Java class for ResponseIssueDateTimeType complex type.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="ResponseIssueDateTimeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;element name="DateTimeString">
- *           &lt;complexType>
- *             &lt;simpleContent>
- *               &lt;restriction base="&lt;urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimeType">
- *               &lt;/restriction>
- *             &lt;/simpleContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="ResponseIssueDateTimeType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <choice>
+ *         <element name="DateTimeString">
+ *           <complexType>
+ *             <simpleContent>
+ *               <restriction base="<urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimeType">
+ *               </restriction>
+ *             </simpleContent>
+ *           </complexType>
+ *         </element>
+ *       </choice>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -97,18 +93,18 @@ public class ResponseIssueDateTimeType {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;simpleContent>
-     *     &lt;restriction base="&lt;urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimeType">
-     *     &lt;/restriction>
-     *   &lt;/simpleContent>
-     * &lt;/complexType>
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <simpleContent>
+     *     <restriction base="<urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimeType">
+     *     </restriction>
+     *   </simpleContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */

@@ -32,7 +32,6 @@ object TypeCodeValues {
   } catch {
     case e: MismatchedInputException => throw new IllegalArgumentException(s"Unknown type code value list name: $name", e)
   }
-
 }
 
 case class TypeCodeValue(value: String, display: String, additionalDisplay: Option[String])

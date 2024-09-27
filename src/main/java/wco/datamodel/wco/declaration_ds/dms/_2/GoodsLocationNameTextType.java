@@ -23,8 +23,6 @@ import un.unece.uncefact.data.standard.unqualifieddatatype._6.TextType;
 
 
 /**
- * 
- *         
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOID xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;L016&lt;/WCOID&gt;
  * </pre>
@@ -34,20 +32,18 @@ import un.unece.uncefact.data.standard.unqualifieddatatype._6.TextType;
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..256&lt;/WCOFormat&gt;
  * </pre>
  * 
- *       
+ * <p>Java class for GoodsLocationNameTextType complex type</p>.
  * 
- * <p>Java class for GoodsLocationNameTextType complex type.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="GoodsLocationNameTextType">
- *   &lt;simpleContent>
- *     &lt;restriction base="&lt;urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>TextType">
- *     &lt;/restriction>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="GoodsLocationNameTextType">
+ *   <simpleContent>
+ *     <restriction base="<urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>TextType">
+ *     </restriction>
+ *   </simpleContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

@@ -24,10 +24,9 @@ import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
 import java.io.StringWriter
 import java.util.Properties
-import scala.collection.JavaConverters.propertiesAsScalaMapConverter
+import scala.jdk.CollectionConverters._
 
 object InventoryLinkingConsolidationRequest extends JacksonMapper {
-  final val inventoryLinking = "http://gov.uk/customs/inventoryLinking/v1"
 
   def fromXml(xml: String): InventoryLinkingConsolidationRequest = _xml.readValue(xml, classOf[InventoryLinkingConsolidationRequest])
 
@@ -59,5 +58,4 @@ case class InventoryLinkingConsolidationRequest(
   }
 
   def toProperties: Map[String, String] = _props.writeValueAsProperties(this, _schema).asScala.toMap
-
 }

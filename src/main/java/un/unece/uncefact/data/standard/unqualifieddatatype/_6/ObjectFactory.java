@@ -23,7 +23,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the un.unece.uncefact.data.standard.unqualifieddatatype._6 package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -45,48 +45,10 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MeasureType }
-     * 
-     */
-    public MeasureType createMeasureType() {
-        return new MeasureType();
-    }
-
-    /**
-     * Create an instance of {@link IDType }
-     * 
-     */
-    public IDType createIDType() {
-        return new IDType();
-    }
-
-    /**
-     * Create an instance of {@link TextType }
-     * 
-     */
-    public TextType createTextType() {
-        return new TextType();
-    }
-
-    /**
-     * Create an instance of {@link DateTimeType }
-     * 
-     */
-    public DateTimeType createDateTimeType() {
-        return new DateTimeType();
-    }
-
-    /**
-     * Create an instance of {@link QuantityType }
-     * 
-     */
-    public QuantityType createQuantityType() {
-        return new QuantityType();
-    }
-
-    /**
      * Create an instance of {@link AmountType }
      * 
+     * @return
+     *     the new instance of {@link AmountType }
      */
     public AmountType createAmountType() {
         return new AmountType();
@@ -95,9 +57,61 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link CodeType }
      * 
+     * @return
+     *     the new instance of {@link CodeType }
      */
     public CodeType createCodeType() {
         return new CodeType();
+    }
+
+    /**
+     * Create an instance of {@link DateTimeType }
+     * 
+     * @return
+     *     the new instance of {@link DateTimeType }
+     */
+    public DateTimeType createDateTimeType() {
+        return new DateTimeType();
+    }
+
+    /**
+     * Create an instance of {@link IDType }
+     * 
+     * @return
+     *     the new instance of {@link IDType }
+     */
+    public IDType createIDType() {
+        return new IDType();
+    }
+
+    /**
+     * Create an instance of {@link MeasureType }
+     * 
+     * @return
+     *     the new instance of {@link MeasureType }
+     */
+    public MeasureType createMeasureType() {
+        return new MeasureType();
+    }
+
+    /**
+     * Create an instance of {@link QuantityType }
+     * 
+     * @return
+     *     the new instance of {@link QuantityType }
+     */
+    public QuantityType createQuantityType() {
+        return new QuantityType();
+    }
+
+    /**
+     * Create an instance of {@link TextType }
+     * 
+     * @return
+     *     the new instance of {@link TextType }
+     */
+    public TextType createTextType() {
+        return new TextType();
     }
 
 }

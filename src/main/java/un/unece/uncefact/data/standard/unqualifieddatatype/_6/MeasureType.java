@@ -33,19 +33,19 @@ import wco.datamodel.wco.declaration_ds.dms._2.PackagingWidthMeasureType;
 
 
 /**
- * <p>Java class for MeasureType complex type.
+ * <p>Java class for MeasureType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="MeasureType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>decimal">
- *       &lt;attribute name="unitCode" type="{urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6}MeasurementUnitCommonCodeContentType" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="MeasureType">
+ *   <simpleContent>
+ *     <extension base="<http://www.w3.org/2001/XMLSchema>decimal">
+ *       <attribute name="unitCode" type="{urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6}MeasurementUnitCommonCodeContentType" />
+ *     </extension>
+ *   </simpleContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -55,12 +55,12 @@ import wco.datamodel.wco.declaration_ds.dms._2.PackagingWidthMeasureType;
 })
 @XmlSeeAlso({
     DeclarationTotalGrossMassMeasureType.class,
-    PackagingHeightMeasureType.class,
-    PackagingWidthMeasureType.class,
-    PackagingVolumeMeasureType.class,
-    GoodsMeasureNetNetWeightMeasureType.class,
     GoodsMeasureGrossMassMeasureType.class,
-    PackagingLengthMeasureType.class
+    GoodsMeasureNetNetWeightMeasureType.class,
+    PackagingHeightMeasureType.class,
+    PackagingLengthMeasureType.class,
+    PackagingVolumeMeasureType.class,
+    PackagingWidthMeasureType.class
 })
 public class MeasureType {
 

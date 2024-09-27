@@ -23,7 +23,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the wco.datamodel.wco.metadata_ds_dms._2 package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -47,6 +47,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MetaDataWCODataModelVersionCodeType }
      * 
+     * @return
+     *     the new instance of {@link MetaDataWCODataModelVersionCodeType }
      */
     public MetaDataWCODataModelVersionCodeType createMetaDataWCODataModelVersionCodeType() {
         return new MetaDataWCODataModelVersionCodeType();
@@ -55,6 +57,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MetaDataWCOTypeNameTextType }
      * 
+     * @return
+     *     the new instance of {@link MetaDataWCOTypeNameTextType }
      */
     public MetaDataWCOTypeNameTextType createMetaDataWCOTypeNameTextType() {
         return new MetaDataWCOTypeNameTextType();
@@ -63,6 +67,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MetaDataResponsibleCountryCodeType }
      * 
+     * @return
+     *     the new instance of {@link MetaDataResponsibleCountryCodeType }
      */
     public MetaDataResponsibleCountryCodeType createMetaDataResponsibleCountryCodeType() {
         return new MetaDataResponsibleCountryCodeType();
@@ -71,6 +77,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MetaDataResponsibleAgencyNameTextType }
      * 
+     * @return
+     *     the new instance of {@link MetaDataResponsibleAgencyNameTextType }
      */
     public MetaDataResponsibleAgencyNameTextType createMetaDataResponsibleAgencyNameTextType() {
         return new MetaDataResponsibleAgencyNameTextType();
@@ -79,6 +87,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MetaDataAgencyAssignedCustomizationCodeType }
      * 
+     * @return
+     *     the new instance of {@link MetaDataAgencyAssignedCustomizationCodeType }
      */
     public MetaDataAgencyAssignedCustomizationCodeType createMetaDataAgencyAssignedCustomizationCodeType() {
         return new MetaDataAgencyAssignedCustomizationCodeType();
@@ -87,6 +97,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link MetaDataAgencyAssignedCustomizationVersionCodeType }
      * 
+     * @return
+     *     the new instance of {@link MetaDataAgencyAssignedCustomizationVersionCodeType }
      */
     public MetaDataAgencyAssignedCustomizationVersionCodeType createMetaDataAgencyAssignedCustomizationVersionCodeType() {
         return new MetaDataAgencyAssignedCustomizationVersionCodeType();

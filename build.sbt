@@ -3,12 +3,11 @@ import sbt.*
 val appName = "wco-dec"
 
 lazy val app = Project(appName, file("."))
-  .enablePlugins(SbtAutoBuildPlugin)
+  .enablePlugins()
   .settings(
     majorVersion := 0,
-    scalaVersion := "2.13.14",
-    libraryDependencies ++= Dependencies(),
-    isPublicArtefact := true
+    scalaVersion := "2.13.15",
+    libraryDependencies ++= Dependencies()
   )
   .settings(scoverageSettings)
 
@@ -19,3 +18,6 @@ lazy val scoverageSettings: Seq[Setting[?]] = Seq(
     coverageHighlighting := true,
     Test / parallelExecution := false
 )
+
+addCommandAlias("ucomp", "Test/compile")
+addCommandAlias("precommit", ";clean;coverage;test;coverageReport")

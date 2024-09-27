@@ -68,11 +68,11 @@ function xsd2java {
   
   local classpath="$codemodel:$dtdParser:$istackRuntime:$istackTools:$activation:$jakarta:$jaxbCore:$jaxbRuntime:$xjc:$relaxng:$rngom:$xsom"
   
+  log "Generate the WCO-DEC model from $1 ... ✔"
   java -cp $classpath com.sun.tools.xjc.XJCFacade "$1" -d classes -no-header
 }
 
 function generate {
-    log "Generate the WCO-DEC model... ✔"
     mkdir classes
     xsd2java customs-declarations/public/api/conf/1.0/schemas/wco/declaration/DocumentMetaData_2_DMS.xsd
     xsd2java customs-declarations/public/api/conf/1.0/schemas/wco/declaration/WCO_DEC_2_DMS.xsd

@@ -33,30 +33,30 @@ import wco.datamodel.wco.metadata_ds_dms._2.MetaDataWCOTypeNameTextType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="WCODataModelVersionCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataWCODataModelVersionCodeType" minOccurs="0"/>
- *         &lt;element name="WCOTypeName" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataWCOTypeNameTextType" minOccurs="0"/>
- *         &lt;element name="ResponsibleCountryCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataResponsibleCountryCodeType" minOccurs="0"/>
- *         &lt;element name="ResponsibleAgencyName" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataResponsibleAgencyNameTextType" minOccurs="0"/>
- *         &lt;element name="AgencyAssignedCustomizationCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataAgencyAssignedCustomizationCodeType" minOccurs="0"/>
- *         &lt;element name="AgencyAssignedCustomizationVersionCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataAgencyAssignedCustomizationVersionCodeType" minOccurs="0"/>
- *         &lt;choice>
- *           &lt;group ref="{urn:wco:datamodel:WCO:DocumentMetaData-DMS:2}Declaration"/>
- *           &lt;group ref="{urn:wco:datamodel:WCO:DocumentMetaData-DMS:2}Response" maxOccurs="unbounded"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType>
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="WCODataModelVersionCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataWCODataModelVersionCodeType" minOccurs="0"/>
+ *         <element name="WCOTypeName" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataWCOTypeNameTextType" minOccurs="0"/>
+ *         <element name="ResponsibleCountryCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataResponsibleCountryCodeType" minOccurs="0"/>
+ *         <element name="ResponsibleAgencyName" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataResponsibleAgencyNameTextType" minOccurs="0"/>
+ *         <element name="AgencyAssignedCustomizationCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataAgencyAssignedCustomizationCodeType" minOccurs="0"/>
+ *         <element name="AgencyAssignedCustomizationVersionCode" type="{urn:wco:datamodel:WCO:MetaData_DS-DMS:2}MetaDataAgencyAssignedCustomizationVersionCodeType" minOccurs="0"/>
+ *         <choice>
+ *           <group ref="{urn:wco:datamodel:WCO:DocumentMetaData-DMS:2}Declaration"/>
+ *           <group ref="{urn:wco:datamodel:WCO:DocumentMetaData-DMS:2}Response" maxOccurs="unbounded"/>
+ *         </choice>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -74,16 +74,212 @@ import wco.datamodel.wco.metadata_ds_dms._2.MetaDataWCOTypeNameTextType;
 @XmlRootElement(name = "MetaData")
 public class MetaData {
 
+    /**
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..6&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOCodeRemarks xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCO code list&lt;/WCOCodeRemarks&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. WCO Data Model Version. Code&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataWCODataModelVersionCodeType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCODataModelVersionCode&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCO Data Model Version&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9010&lt;/UniquePositionID&gt;
+     * </pre>
+     * 
+     */
     @XmlElement(name = "WCODataModelVersionCode")
     protected MetaDataWCODataModelVersionCodeType wcoDataModelVersionCode;
+    /**
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. WCO Type Name. Text&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataWCOTypeNameTextType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCOTypeName&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCO Type Name&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9013&lt;/UniquePositionID&gt;
+     * </pre>
+     * 
+     */
     @XmlElement(name = "WCOTypeName")
     protected MetaDataWCOTypeNameTextType wcoTypeName;
+    /**
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;a2&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. Responsible Country. Code&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataResponsibleCountryCodeType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;ResponsibleCountryCode&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Responsible Country&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9014&lt;/UniquePositionID&gt;
+     * </pre>
+     * 
+     */
     @XmlElement(name = "ResponsibleCountryCode")
     protected MetaDataResponsibleCountryCodeType responsibleCountryCode;
+    /**
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..70&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. ResponsibleAgencyName. Text&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataResponsibleAgencyNameTextType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;ResponsibleAgencyName&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Responsible Agency Name&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9016&lt;/UniquePositionID&gt;
+     * </pre>
+     * 
+     */
     @XmlElement(name = "ResponsibleAgencyName")
     protected MetaDataResponsibleAgencyNameTextType responsibleAgencyName;
+    /**
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..6&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOCodeRemarks xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;User codes&lt;/WCOCodeRemarks&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. Agency Assigned Customization. Code&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataAgencyAssignedCustomizationCodeType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;AgencyAssignedCustomizationCode&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Agency Assigned Customization&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9000&lt;/UniquePositionID&gt;
+     * </pre>
+     * 
+     */
     @XmlElement(name = "AgencyAssignedCustomizationCode")
     protected MetaDataAgencyAssignedCustomizationCodeType agencyAssignedCustomizationCode;
+    /**
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..3&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOCodeRemarks xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;User codes&lt;/WCOCodeRemarks&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. Agency Assigned Customization Version. Code&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataAgencyAssignedCustomizationVersionCodeType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;AgencyAssignedCustomizationVersionCode&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Agency Assigned Customization Version&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9017&lt;/UniquePositionID&gt;
+     * </pre>
+     * 
+     */
     @XmlElement(name = "AgencyAssignedCustomizationVersionCode")
     protected MetaDataAgencyAssignedCustomizationVersionCodeType agencyAssignedCustomizationVersionCode;
     @XmlAnyElement(lax = true)
@@ -92,7 +288,39 @@ public class MetaData {
     protected List<Object> response;
 
     /**
-     * Gets the value of the wcoDataModelVersionCode property.
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..6&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOCodeRemarks xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCO code list&lt;/WCOCodeRemarks&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. WCO Data Model Version. Code&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataWCODataModelVersionCodeType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCODataModelVersionCode&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCO Data Model Version&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9010&lt;/UniquePositionID&gt;
+     * </pre>
      * 
      * @return
      *     possible object is
@@ -110,13 +338,36 @@ public class MetaData {
      *     allowed object is
      *     {@link MetaDataWCODataModelVersionCodeType }
      *     
+     * @see #getWCODataModelVersionCode()
      */
     public void setWCODataModelVersionCode(MetaDataWCODataModelVersionCodeType value) {
         this.wcoDataModelVersionCode = value;
     }
 
     /**
-     * Gets the value of the wcoTypeName property.
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. WCO Type Name. Text&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataWCOTypeNameTextType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCOTypeName&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;WCO Type Name&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9013&lt;/UniquePositionID&gt;
+     * </pre>
      * 
      * @return
      *     possible object is
@@ -134,13 +385,41 @@ public class MetaData {
      *     allowed object is
      *     {@link MetaDataWCOTypeNameTextType }
      *     
+     * @see #getWCOTypeName()
      */
     public void setWCOTypeName(MetaDataWCOTypeNameTextType value) {
         this.wcoTypeName = value;
     }
 
     /**
-     * Gets the value of the responsibleCountryCode property.
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;a2&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. Responsible Country. Code&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataResponsibleCountryCodeType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;ResponsibleCountryCode&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Responsible Country&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9014&lt;/UniquePositionID&gt;
+     * </pre>
      * 
      * @return
      *     possible object is
@@ -158,13 +437,41 @@ public class MetaData {
      *     allowed object is
      *     {@link MetaDataResponsibleCountryCodeType }
      *     
+     * @see #getResponsibleCountryCode()
      */
     public void setResponsibleCountryCode(MetaDataResponsibleCountryCodeType value) {
         this.responsibleCountryCode = value;
     }
 
     /**
-     * Gets the value of the responsibleAgencyName property.
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..70&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. ResponsibleAgencyName. Text&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataResponsibleAgencyNameTextType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;ResponsibleAgencyName&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Responsible Agency Name&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9016&lt;/UniquePositionID&gt;
+     * </pre>
      * 
      * @return
      *     possible object is
@@ -182,13 +489,46 @@ public class MetaData {
      *     allowed object is
      *     {@link MetaDataResponsibleAgencyNameTextType }
      *     
+     * @see #getResponsibleAgencyName()
      */
     public void setResponsibleAgencyName(MetaDataResponsibleAgencyNameTextType value) {
         this.responsibleAgencyName = value;
     }
 
     /**
-     * Gets the value of the agencyAssignedCustomizationCode property.
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..6&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOCodeRemarks xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;User codes&lt;/WCOCodeRemarks&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. Agency Assigned Customization. Code&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataAgencyAssignedCustomizationCodeType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;AgencyAssignedCustomizationCode&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Agency Assigned Customization&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9000&lt;/UniquePositionID&gt;
+     * </pre>
      * 
      * @return
      *     possible object is
@@ -206,13 +546,46 @@ public class MetaData {
      *     allowed object is
      *     {@link MetaDataAgencyAssignedCustomizationCodeType }
      *     
+     * @see #getAgencyAssignedCustomizationCode()
      */
     public void setAgencyAssignedCustomizationCode(MetaDataAgencyAssignedCustomizationCodeType value) {
         this.agencyAssignedCustomizationCode = value;
     }
 
     /**
-     * Gets the value of the agencyAssignedCustomizationVersionCode property.
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..3&lt;/WCOFormat&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOCodeRemarks xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;User codes&lt;/WCOCodeRemarks&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;DictionaryEntryName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Document Meta Data. Agency Assigned Customization Version. Code&lt;/DictionaryEntryName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;NamedComplexType xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;DocumentMetaDataAgencyAssignedCustomizationVersionCodeType&lt;/NamedComplexType&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XMLTag xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;AgencyAssignedCustomizationVersionCode&lt;/XMLTag&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOName xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;Agency Assigned Customization Version&lt;/WCOName&gt;
+     * </pre>
+     * 
+     *               
+     * <pre>
+     * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;UniquePositionID xmlns="urn:wco:datamodel:WCO:DocumentMetaData-DMS:2" xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS-DMS:2" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;9017&lt;/UniquePositionID&gt;
+     * </pre>
      * 
      * @return
      *     possible object is
@@ -230,6 +603,7 @@ public class MetaData {
      *     allowed object is
      *     {@link MetaDataAgencyAssignedCustomizationVersionCodeType }
      *     
+     * @see #getAgencyAssignedCustomizationVersionCode()
      */
     public void setAgencyAssignedCustomizationVersionCode(MetaDataAgencyAssignedCustomizationVersionCodeType value) {
         this.agencyAssignedCustomizationVersionCode = value;
@@ -262,28 +636,31 @@ public class MetaData {
     /**
      * Gets the value of the response property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the response property.
+     * This is why there is not a <CODE>set</CODE> method for the response property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getResponse().add(newItem);
+     * getResponse().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Object }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the response property.
      */
     public List<Object> getResponse() {
         if (response == null) {
-            response = new ArrayList<Object>();
+            response = new ArrayList<>();
         }
         return this.response;
     }

@@ -27,27 +27,27 @@ import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for MetaDataAgencyAssignedCustomizationVersionCodeType complex type.
+ * <p>Java class for MetaDataAgencyAssignedCustomizationVersionCodeType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="MetaDataAgencyAssignedCustomizationVersionCodeType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>token">
- *       &lt;attribute name="listID" type="{http://www.w3.org/2001/XMLSchema}token" />
- *       &lt;attribute name="listAgencyID" type="{urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B}AgencyIdentificationCodeContentType" />
- *       &lt;attribute name="listAgencyName" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="listName" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="listVersionID" type="{http://www.w3.org/2001/XMLSchema}token" />
- *       &lt;attribute name="name" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="languageID" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="listURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="listSchemeURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="MetaDataAgencyAssignedCustomizationVersionCodeType">
+ *   <simpleContent>
+ *     <extension base="<http://www.w3.org/2001/XMLSchema>token">
+ *       <attribute name="listID" type="{http://www.w3.org/2001/XMLSchema}token" />
+ *       <attribute name="listAgencyID" type="{urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B}AgencyIdentificationCodeContentType" />
+ *       <attribute name="listAgencyName" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="listName" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="listVersionID" type="{http://www.w3.org/2001/XMLSchema}token" />
+ *       <attribute name="name" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="languageID" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="listURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+ *       <attribute name="listSchemeURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+ *     </extension>
+ *   </simpleContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

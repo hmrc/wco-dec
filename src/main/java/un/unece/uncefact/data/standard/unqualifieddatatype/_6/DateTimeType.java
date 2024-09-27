@@ -25,19 +25,19 @@ import jakarta.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java class for DateTimeType complex type.
+ * <p>Java class for DateTimeType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="DateTimeType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimePatternType">
- *       &lt;attribute name="formatCode" use="required" type="{urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6}FormatCodeType" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="DateTimeType">
+ *   <simpleContent>
+ *     <extension base="<urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimePatternType">
+ *       <attribute name="formatCode" use="required" type="{urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6}FormatCodeType" />
+ *     </extension>
+ *   </simpleContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -47,18 +47,18 @@ import jakarta.xml.bind.annotation.XmlValue;
 })
 @XmlSeeAlso({
     wco.datamodel.wco.response_ds.dms._2.ResponseIssueDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.AdditionalInformationLimitDateTimeType.DateTimeString.class,
     wco.datamodel.wco.response_ds.dms._2.DeclarationAcceptanceDateTimeType.DateTimeString.class,
     wco.datamodel.wco.response_ds.dms._2.DeclarationCancellationDateTimeType.DateTimeString.class,
-    wco.datamodel.wco.response_ds.dms._2.StatusEffectiveDateTimeType.DateTimeString.class,
-    wco.datamodel.wco.response_ds.dms._2.AdditionalInformationLimitDateTimeType.DateTimeString.class,
-    wco.datamodel.wco.response_ds.dms._2.PaymentDueDateTimeType.DateTimeString.class,
-    wco.datamodel.wco.response_ds.dms._2.StatusReleaseDateTimeType.DateTimeString.class,
     wco.datamodel.wco.response_ds.dms._2.DeclarationRejectionDateTimeType.DateTimeString.class,
-    wco.datamodel.wco.declaration_ds.dms._2.DeclarationAcceptanceDateTimeType.DateTimeString.class,
-    wco.datamodel.wco.declaration_ds.dms._2.InvoiceIssueDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.PaymentDueDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.StatusEffectiveDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.response_ds.dms._2.StatusReleaseDateTimeType.DateTimeString.class,
     wco.datamodel.wco.declaration_ds.dms._2.AdditionalDocumentEffectiveDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DeclarationAcceptanceDateTimeType.DateTimeString.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DeclarationIssueDateTimeType.DateTimeString.class,
     wco.datamodel.wco.declaration_ds.dms._2.GoodsShipmentExitDateTimeType.DateTimeString.class,
-    wco.datamodel.wco.declaration_ds.dms._2.DeclarationIssueDateTimeType.DateTimeString.class
+    wco.datamodel.wco.declaration_ds.dms._2.InvoiceIssueDateTimeType.DateTimeString.class
 })
 public class DateTimeType {
 

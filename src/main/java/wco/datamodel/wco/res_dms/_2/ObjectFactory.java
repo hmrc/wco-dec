@@ -16,10 +16,10 @@
 
 package wco.datamodel.wco.res_dms._2;
 
+import javax.xml.namespace.QName;
 import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.annotation.XmlElementDecl;
 import jakarta.xml.bind.annotation.XmlRegistry;
-import javax.xml.namespace.QName;
 import wco.datamodel.wco.response_ds.dms._2.ResponseFunctionCodeType;
 import wco.datamodel.wco.response_ds.dms._2.ResponseFunctionalReferenceIDType;
 import wco.datamodel.wco.response_ds.dms._2.ResponseIssueDateTimeType;
@@ -29,7 +29,7 @@ import wco.datamodel.wco.response_ds.dms._2.ResponseIssueDateTimeType;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the wco.datamodel.wco.res_dms._2 package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -42,17 +42,17 @@ import wco.datamodel.wco.response_ds.dms._2.ResponseIssueDateTimeType;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _ResponseDeclaration_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Declaration");
-    private final static QName _ResponseFunctionCode_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "FunctionCode");
-    private final static QName _ResponseIssueDateTime_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "IssueDateTime");
-    private final static QName _ResponseError_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Error");
-    private final static QName _ResponseAmendment_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Amendment");
-    private final static QName _ResponseAppealOffice_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "AppealOffice");
-    private final static QName _ResponseContactOffice_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "ContactOffice");
-    private final static QName _ResponseFunctionalReferenceID_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "FunctionalReferenceID");
-    private final static QName _ResponseBank_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Bank");
-    private final static QName _ResponseAdditionalInformation_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "AdditionalInformation");
-    private final static QName _ResponseStatus_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Status");
+    private static final QName _ResponseFunctionCode_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "FunctionCode");
+    private static final QName _ResponseFunctionalReferenceID_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "FunctionalReferenceID");
+    private static final QName _ResponseIssueDateTime_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "IssueDateTime");
+    private static final QName _ResponseAdditionalInformation_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "AdditionalInformation");
+    private static final QName _ResponseAmendment_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Amendment");
+    private static final QName _ResponseAppealOffice_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "AppealOffice");
+    private static final QName _ResponseBank_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Bank");
+    private static final QName _ResponseContactOffice_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "ContactOffice");
+    private static final QName _ResponseError_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Error");
+    private static final QName _ResponseStatus_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Status");
+    private static final QName _ResponseDeclaration_QNAME = new QName("urn:wco:datamodel:WCO:RES-DMS:2", "Declaration");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: wco.datamodel.wco.res_dms._2
@@ -64,6 +64,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response }
      * 
+     * @return
+     *     the new instance of {@link Response }
      */
     public Response createResponse() {
         return new Response();
@@ -72,6 +74,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Declaration }
      * 
+     * @return
+     *     the new instance of {@link Response.Declaration }
      */
     public Response.Declaration createResponseDeclaration() {
         return new Response.Declaration();
@@ -80,6 +84,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Declaration.GoodsShipment }
      * 
+     * @return
+     *     the new instance of {@link Response.Declaration.GoodsShipment }
      */
     public Response.Declaration.GoodsShipment createResponseDeclarationGoodsShipment() {
         return new Response.Declaration.GoodsShipment();
@@ -88,6 +94,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem }
      * 
+     * @return
+     *     the new instance of {@link Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem }
      */
     public Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem createResponseDeclarationGoodsShipmentGovernmentAgencyGoodsItem() {
         return new Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem();
@@ -96,6 +104,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity }
      * 
+     * @return
+     *     the new instance of {@link Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity }
      */
     public Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity createResponseDeclarationGoodsShipmentGovernmentAgencyGoodsItemCommodity() {
         return new Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity();
@@ -104,6 +114,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity.DutyTaxFee }
      * 
+     * @return
+     *     the new instance of {@link Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity.DutyTaxFee }
      */
     public Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity.DutyTaxFee createResponseDeclarationGoodsShipmentGovernmentAgencyGoodsItemCommodityDutyTaxFee() {
         return new Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity.DutyTaxFee();
@@ -112,6 +124,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Declaration.DutyTaxFee }
      * 
+     * @return
+     *     the new instance of {@link Response.Declaration.DutyTaxFee }
      */
     public Response.Declaration.DutyTaxFee createResponseDeclarationDutyTaxFee() {
         return new Response.Declaration.DutyTaxFee();
@@ -120,6 +134,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Declaration.DutyTaxFee.Payment }
      * 
+     * @return
+     *     the new instance of {@link Response.Declaration.DutyTaxFee.Payment }
      */
     public Response.Declaration.DutyTaxFee.Payment createResponseDeclarationDutyTaxFeePayment() {
         return new Response.Declaration.DutyTaxFee.Payment();
@@ -128,6 +144,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Status }
      * 
+     * @return
+     *     the new instance of {@link Response.Status }
      */
     public Response.Status createResponseStatus() {
         return new Response.Status();
@@ -136,6 +154,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Error }
      * 
+     * @return
+     *     the new instance of {@link Response.Error }
      */
     public Response.Error createResponseError() {
         return new Response.Error();
@@ -144,6 +164,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.ContactOffice }
      * 
+     * @return
+     *     the new instance of {@link Response.ContactOffice }
      */
     public Response.ContactOffice createResponseContactOffice() {
         return new Response.ContactOffice();
@@ -152,6 +174,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Amendment }
      * 
+     * @return
+     *     the new instance of {@link Response.Amendment }
      */
     public Response.Amendment createResponseAmendment() {
         return new Response.Amendment();
@@ -160,6 +184,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.AdditionalInformation }
      * 
+     * @return
+     *     the new instance of {@link Response.AdditionalInformation }
      */
     public Response.AdditionalInformation createResponseAdditionalInformation() {
         return new Response.AdditionalInformation();
@@ -168,6 +194,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.AppealOffice }
      * 
+     * @return
+     *     the new instance of {@link Response.AppealOffice }
      */
     public Response.AppealOffice createResponseAppealOffice() {
         return new Response.AppealOffice();
@@ -176,6 +204,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Bank }
      * 
+     * @return
+     *     the new instance of {@link Response.Bank }
      */
     public Response.Bank createResponseBank() {
         return new Response.Bank();
@@ -184,6 +214,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity.DutyTaxFee.Payment }
      * 
+     * @return
+     *     the new instance of {@link Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity.DutyTaxFee.Payment }
      */
     public Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity.DutyTaxFee.Payment createResponseDeclarationGoodsShipmentGovernmentAgencyGoodsItemCommodityDutyTaxFeePayment() {
         return new Response.Declaration.GoodsShipment.GovernmentAgencyGoodsItem.Commodity.DutyTaxFee.Payment();
@@ -192,6 +224,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Declaration.DutyTaxFee.Payment.ObligationGuarantee }
      * 
+     * @return
+     *     the new instance of {@link Response.Declaration.DutyTaxFee.Payment.ObligationGuarantee }
      */
     public Response.Declaration.DutyTaxFee.Payment.ObligationGuarantee createResponseDeclarationDutyTaxFeePaymentObligationGuarantee() {
         return new Response.Declaration.DutyTaxFee.Payment.ObligationGuarantee();
@@ -200,6 +234,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Status.Pointer }
      * 
+     * @return
+     *     the new instance of {@link Response.Status.Pointer }
      */
     public Response.Status.Pointer createResponseStatusPointer() {
         return new Response.Status.Pointer();
@@ -208,6 +244,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Error.Pointer }
      * 
+     * @return
+     *     the new instance of {@link Response.Error.Pointer }
      */
     public Response.Error.Pointer createResponseErrorPointer() {
         return new Response.Error.Pointer();
@@ -216,6 +254,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.ContactOffice.Communication }
      * 
+     * @return
+     *     the new instance of {@link Response.ContactOffice.Communication }
      */
     public Response.ContactOffice.Communication createResponseContactOfficeCommunication() {
         return new Response.ContactOffice.Communication();
@@ -224,6 +264,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.Amendment.Pointer }
      * 
+     * @return
+     *     the new instance of {@link Response.Amendment.Pointer }
      */
     public Response.Amendment.Pointer createResponseAmendmentPointer() {
         return new Response.Amendment.Pointer();
@@ -232,108 +274,154 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Response.AdditionalInformation.Pointer }
      * 
+     * @return
+     *     the new instance of {@link Response.AdditionalInformation.Pointer }
      */
     public Response.AdditionalInformation.Pointer createResponseAdditionalInformationPointer() {
         return new Response.AdditionalInformation.Pointer();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Declaration }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseFunctionCodeType }{@code >}
      * 
-     */
-    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "Declaration", scope = Response.class)
-    public JAXBElement<Response.Declaration> createResponseDeclaration(Response.Declaration value) {
-        return new JAXBElement<Response.Declaration>(_ResponseDeclaration_QNAME, Response.Declaration.class, Response.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseFunctionCodeType }{@code >}}
-     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ResponseFunctionCodeType }{@code >}
      */
     @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "FunctionCode", scope = Response.class)
     public JAXBElement<ResponseFunctionCodeType> createResponseFunctionCode(ResponseFunctionCodeType value) {
-        return new JAXBElement<ResponseFunctionCodeType>(_ResponseFunctionCode_QNAME, ResponseFunctionCodeType.class, Response.class, value);
+        return new JAXBElement<>(_ResponseFunctionCode_QNAME, ResponseFunctionCodeType.class, Response.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseIssueDateTimeType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseFunctionalReferenceIDType }{@code >}
      * 
-     */
-    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "IssueDateTime", scope = Response.class)
-    public JAXBElement<ResponseIssueDateTimeType> createResponseIssueDateTime(ResponseIssueDateTimeType value) {
-        return new JAXBElement<ResponseIssueDateTimeType>(_ResponseIssueDateTime_QNAME, ResponseIssueDateTimeType.class, Response.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Error }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "Error", scope = Response.class)
-    public JAXBElement<Response.Error> createResponseError(Response.Error value) {
-        return new JAXBElement<Response.Error>(_ResponseError_QNAME, Response.Error.class, Response.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Amendment }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "Amendment", scope = Response.class)
-    public JAXBElement<Response.Amendment> createResponseAmendment(Response.Amendment value) {
-        return new JAXBElement<Response.Amendment>(_ResponseAmendment_QNAME, Response.Amendment.class, Response.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Response.AppealOffice }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "AppealOffice", scope = Response.class)
-    public JAXBElement<Response.AppealOffice> createResponseAppealOffice(Response.AppealOffice value) {
-        return new JAXBElement<Response.AppealOffice>(_ResponseAppealOffice_QNAME, Response.AppealOffice.class, Response.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Response.ContactOffice }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "ContactOffice", scope = Response.class)
-    public JAXBElement<Response.ContactOffice> createResponseContactOffice(Response.ContactOffice value) {
-        return new JAXBElement<Response.ContactOffice>(_ResponseContactOffice_QNAME, Response.ContactOffice.class, Response.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseFunctionalReferenceIDType }{@code >}}
-     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ResponseFunctionalReferenceIDType }{@code >}
      */
     @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "FunctionalReferenceID", scope = Response.class)
     public JAXBElement<ResponseFunctionalReferenceIDType> createResponseFunctionalReferenceID(ResponseFunctionalReferenceIDType value) {
-        return new JAXBElement<ResponseFunctionalReferenceIDType>(_ResponseFunctionalReferenceID_QNAME, ResponseFunctionalReferenceIDType.class, Response.class, value);
+        return new JAXBElement<>(_ResponseFunctionalReferenceID_QNAME, ResponseFunctionalReferenceIDType.class, Response.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Bank }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseIssueDateTimeType }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ResponseIssueDateTimeType }{@code >}
      */
-    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "Bank", scope = Response.class)
-    public JAXBElement<Response.Bank> createResponseBank(Response.Bank value) {
-        return new JAXBElement<Response.Bank>(_ResponseBank_QNAME, Response.Bank.class, Response.class, value);
+    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "IssueDateTime", scope = Response.class)
+    public JAXBElement<ResponseIssueDateTimeType> createResponseIssueDateTime(ResponseIssueDateTimeType value) {
+        return new JAXBElement<>(_ResponseIssueDateTime_QNAME, ResponseIssueDateTimeType.class, Response.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Response.AdditionalInformation }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Response.AdditionalInformation }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Response.AdditionalInformation }{@code >}
      */
     @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "AdditionalInformation", scope = Response.class)
     public JAXBElement<Response.AdditionalInformation> createResponseAdditionalInformation(Response.AdditionalInformation value) {
-        return new JAXBElement<Response.AdditionalInformation>(_ResponseAdditionalInformation_QNAME, Response.AdditionalInformation.class, Response.class, value);
+        return new JAXBElement<>(_ResponseAdditionalInformation_QNAME, Response.AdditionalInformation.class, Response.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Status }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Amendment }{@code >}
      * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Response.Amendment }{@code >}
+     */
+    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "Amendment", scope = Response.class)
+    public JAXBElement<Response.Amendment> createResponseAmendment(Response.Amendment value) {
+        return new JAXBElement<>(_ResponseAmendment_QNAME, Response.Amendment.class, Response.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Response.AppealOffice }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Response.AppealOffice }{@code >}
+     */
+    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "AppealOffice", scope = Response.class)
+    public JAXBElement<Response.AppealOffice> createResponseAppealOffice(Response.AppealOffice value) {
+        return new JAXBElement<>(_ResponseAppealOffice_QNAME, Response.AppealOffice.class, Response.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Bank }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Response.Bank }{@code >}
+     */
+    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "Bank", scope = Response.class)
+    public JAXBElement<Response.Bank> createResponseBank(Response.Bank value) {
+        return new JAXBElement<>(_ResponseBank_QNAME, Response.Bank.class, Response.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Response.ContactOffice }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Response.ContactOffice }{@code >}
+     */
+    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "ContactOffice", scope = Response.class)
+    public JAXBElement<Response.ContactOffice> createResponseContactOffice(Response.ContactOffice value) {
+        return new JAXBElement<>(_ResponseContactOffice_QNAME, Response.ContactOffice.class, Response.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Error }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Response.Error }{@code >}
+     */
+    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "Error", scope = Response.class)
+    public JAXBElement<Response.Error> createResponseError(Response.Error value) {
+        return new JAXBElement<>(_ResponseError_QNAME, Response.Error.class, Response.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Status }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Response.Status }{@code >}
      */
     @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "Status", scope = Response.class)
     public JAXBElement<Response.Status> createResponseStatus(Response.Status value) {
-        return new JAXBElement<Response.Status>(_ResponseStatus_QNAME, Response.Status.class, Response.class, value);
+        return new JAXBElement<>(_ResponseStatus_QNAME, Response.Status.class, Response.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Response.Declaration }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Response.Declaration }{@code >}
+     */
+    @XmlElementDecl(namespace = "urn:wco:datamodel:WCO:RES-DMS:2", name = "Declaration", scope = Response.class)
+    public JAXBElement<Response.Declaration> createResponseDeclaration(Response.Declaration value) {
+        return new JAXBElement<>(_ResponseDeclaration_QNAME, Response.Declaration.class, Response.class, value);
     }
 
 }
