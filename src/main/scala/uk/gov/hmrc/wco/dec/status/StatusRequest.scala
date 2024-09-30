@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import java.time.ZonedDateTime
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
-import com.fasterxml.jackson.databind.node.{ObjectNode, TextNode}
+import com.fasterxml.jackson.databind.node.ObjectNode
 import com.fasterxml.jackson.databind.{DeserializationContext, JsonNode}
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
@@ -112,11 +112,10 @@ abstract class ExtendedAttributeAndTextDeserializer[T](attributeOne: String, att
   override final def deserialize(p: JsonParser, ctx: DeserializationContext): T = {
     val n: JsonNode = p.getCodec.readTree(p)
     n match {
-      case o: ObjectNode =>
-        newInstanceFromTuple(
-          (nonEmptyOrNone(o.get(attributeOne)), nonEmptyOrNone(o.get(attributeTwo)), nonEmptyOrNone(o.get("")))
-        )
-      case t: TextNode => newInstanceFromTuple((None, None, nonEmptyOrNone(t)))
+      case on: ObjectNode =>
+        newInstanceFromTuple((nonEmptyOrNone(on.get(attributeOne)), nonEmptyOrNone(on.get(attributeTwo)), nonEmptyOrNone(on.get(""))))
+
+      case _ => newInstanceFromTuple((None, None, nonEmptyOrNone(n)))
     }
   }
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,38 +16,38 @@
 
 package wco.datamodel.wco.metadata_ds_dms._2;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlValue;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlValue;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java class for MetaDataAgencyAssignedCustomizationCodeType complex type.
+ * <p>Java class for MetaDataAgencyAssignedCustomizationCodeType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="MetaDataAgencyAssignedCustomizationCodeType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>token">
- *       &lt;attribute name="listID" type="{http://www.w3.org/2001/XMLSchema}token" />
- *       &lt;attribute name="listAgencyID" type="{urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B}AgencyIdentificationCodeContentType" />
- *       &lt;attribute name="listAgencyName" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="listName" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="listVersionID" type="{http://www.w3.org/2001/XMLSchema}token" />
- *       &lt;attribute name="name" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="languageID" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="listURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="listSchemeURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="MetaDataAgencyAssignedCustomizationCodeType">
+ *   <simpleContent>
+ *     <extension base="<http://www.w3.org/2001/XMLSchema>token">
+ *       <attribute name="listID" type="{http://www.w3.org/2001/XMLSchema}token" />
+ *       <attribute name="listAgencyID" type="{urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B}AgencyIdentificationCodeContentType" />
+ *       <attribute name="listAgencyName" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="listName" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="listVersionID" type="{http://www.w3.org/2001/XMLSchema}token" />
+ *       <attribute name="name" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="languageID" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="listURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+ *       <attribute name="listSchemeURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+ *     </extension>
+ *   </simpleContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

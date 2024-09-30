@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:wco:datamodel:WCO:MetaData_DS-DMS:2")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:wco:datamodel:WCO:MetaData_DS-DMS:2")
 package wco.datamodel.wco.metadata_ds_dms._2;

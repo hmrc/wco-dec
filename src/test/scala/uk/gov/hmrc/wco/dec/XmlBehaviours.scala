@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,16 +29,16 @@ import scala.xml.{Elem, SAXException}
 trait XmlBehaviours {
   this: AnyWordSpec =>
 
-  val importDeclarationSchemaResources = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_DEC_2_DMS.xsd")
+  val importDeclarationSchemaResources: Seq[String] = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_DEC_2_DMS.xsd")
 
-  val importDeclarationCancellationSchemas = Seq("/CANCEL_METADATA.xsd","/CANCEL.xsd")
+  val importDeclarationCancellationSchemas: Seq[String] = Seq("/CANCEL_METADATA.xsd","/CANCEL.xsd")
 
-  val responseSchemaResources = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_RES_2_DMS.xsd")
+  val responseSchemaResources: Seq[String] = Seq("/DocumentMetaData_2_DMS.xsd", "/WCO_RES_2_DMS.xsd")
 
-  val inventoryLinkingRequestResources = Seq(
+  val inventoryLinkingRequestResources: Seq[String] = Seq(
     "/inventory-linking-exports-schemas/exports/inventoryLinkingRequestExternal.xsd")
 
-  val inventoryLinkingResponseResources = Seq(
+  val inventoryLinkingResponseResources: Seq[String] = Seq(
     "/inventory-linking-exports-schemas/exports/inventoryLinkingResponseExternal.xsd")
 
   def validDeclarationXmlScenario()(test: => Elem): Unit = validXmlScenario(importDeclarationSchemaResources)(test)
@@ -62,7 +62,7 @@ trait XmlBehaviours {
       case _: SAXException => false
     }
 
-  private def validXmlScenario(schemas: Seq[String] = Seq.empty)(test: => Elem): Unit =
+  private def validXmlScenario(schemas: Seq[String])(test: => Elem): Unit =
     validateAgainstSchemaResources(test.mkString, schemas)
 
   private def validateAgainstSchemaResources(xml: String, schemas: Seq[String]): Unit = {

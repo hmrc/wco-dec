@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,8 +23,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, Jack
 import uk.gov.hmrc.wco.dec.inventorylinking.common.{AgentDetails, TransportDetails, UcrBlock}
 import uk.gov.hmrc.wco.dec.utilities.JacksonMapper
 
-import scala.collection.JavaConverters.propertiesAsScalaMapConverter
-
+import scala.jdk.CollectionConverters._
 
 object InventoryLinkingMovementRequest extends JacksonMapper {
   final val namespace = "http://gov.uk/customs/inventoryLinking/v1"

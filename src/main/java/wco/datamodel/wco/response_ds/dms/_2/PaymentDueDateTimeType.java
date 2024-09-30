@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,16 +16,14 @@
 
 package wco.datamodel.wco.response_ds.dms._2;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 import un.unece.uncefact.data.standard.unqualifieddatatype._6.DateTimeType;
 
 
 /**
- * 
- *         
  * <pre>
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOID xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;376&lt;/WCOID&gt;
  * </pre>
@@ -35,30 +33,28 @@ import un.unece.uncefact.data.standard.unqualifieddatatype._6.DateTimeType;
  * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WCOFormat xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;an..35&lt;/WCOFormat&gt;
  * </pre>
  * 
- *       
+ * <p>Java class for PaymentDueDateTimeType complex type</p>.
  * 
- * <p>Java class for PaymentDueDateTimeType complex type.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="PaymentDueDateTimeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;element name="DateTimeString">
- *           &lt;complexType>
- *             &lt;simpleContent>
- *               &lt;restriction base="&lt;urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimeType">
- *               &lt;/restriction>
- *             &lt;/simpleContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="PaymentDueDateTimeType">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <choice>
+ *         <element name="DateTimeString">
+ *           <complexType>
+ *             <simpleContent>
+ *               <restriction base="<urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimeType">
+ *               </restriction>
+ *             </simpleContent>
+ *           </complexType>
+ *         </element>
+ *       </choice>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -97,18 +93,18 @@ public class PaymentDueDateTimeType {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType>
-     *   &lt;simpleContent>
-     *     &lt;restriction base="&lt;urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimeType">
-     *     &lt;/restriction>
-     *   &lt;/simpleContent>
-     * &lt;/complexType>
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <simpleContent>
+     *     <restriction base="<urn:un:unece:uncefact:data:standard:UnqualifiedDataType:6>DateTimeType">
+     *     </restriction>
+     *   </simpleContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */

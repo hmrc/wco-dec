@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,6 @@ object TypeCodeValues {
   } catch {
     case e: MismatchedInputException => throw new IllegalArgumentException(s"Unknown type code value list name: $name", e)
   }
-
 }
 
 case class TypeCodeValue(value: String, display: String, additionalDisplay: Option[String])

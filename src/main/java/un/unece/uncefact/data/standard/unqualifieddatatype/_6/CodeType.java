@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,15 +16,15 @@
 
 package un.unece.uncefact.data.standard.unqualifieddatatype._6;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlValue;
-import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlSeeAlso;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlValue;
+import jakarta.xml.bind.annotation.adapters.CollapsedStringAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import wco.datamodel.wco.declaration_ds.dms._2.AEOMutualRecognitionPartyRoleCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.AdditionalDocumentCategoryCodeType;
 import wco.datamodel.wco.declaration_ds.dms._2.AdditionalDocumentLPCOExemptionCodeType;
@@ -82,27 +82,27 @@ import wco.datamodel.wco.response_ds.dms._2.StatusNameCodeType;
 
 
 /**
- * <p>Java class for CodeType complex type.
+ * <p>Java class for CodeType complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="CodeType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>token">
- *       &lt;attribute name="listID" type="{http://www.w3.org/2001/XMLSchema}token" />
- *       &lt;attribute name="listAgencyID" type="{urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B}AgencyIdentificationCodeContentType" />
- *       &lt;attribute name="listAgencyName" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="listName" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="listVersionID" type="{http://www.w3.org/2001/XMLSchema}token" />
- *       &lt;attribute name="name" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="languageID" type="{http://www.w3.org/2001/XMLSchema}language" />
- *       &lt;attribute name="listURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *       &lt;attribute name="listSchemeURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
- * </pre>
+ * <pre>{@code
+ * <complexType name="CodeType">
+ *   <simpleContent>
+ *     <extension base="<http://www.w3.org/2001/XMLSchema>token">
+ *       <attribute name="listID" type="{http://www.w3.org/2001/XMLSchema}token" />
+ *       <attribute name="listAgencyID" type="{urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B}AgencyIdentificationCodeContentType" />
+ *       <attribute name="listAgencyName" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="listName" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="listVersionID" type="{http://www.w3.org/2001/XMLSchema}token" />
+ *       <attribute name="name" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       <attribute name="languageID" type="{http://www.w3.org/2001/XMLSchema}language" />
+ *       <attribute name="listURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+ *       <attribute name="listSchemeURI" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+ *     </extension>
+ *   </simpleContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -112,73 +112,73 @@ import wco.datamodel.wco.response_ds.dms._2.StatusNameCodeType;
 })
 @XmlSeeAlso({
     ResponseFunctionCodeType.class,
-    wco.datamodel.wco.response_ds.dms._2.PointerDocumentSectionCodeType.class,
-    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeDutyRegimeCodeType.class,
-    ErrorValidationCodeType.class,
-    wco.datamodel.wco.response_ds.dms._2.AmendmentChangeReasonCodeType.class,
-    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeTypeCodeType.class,
-    wco.datamodel.wco.response_ds.dms._2.CommunicationTypeCodeType.class,
     wco.datamodel.wco.response_ds.dms._2.AdditionalInformationStatementCodeType.class,
     wco.datamodel.wco.response_ds.dms._2.AdditionalInformationStatementTypeCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.AmendmentChangeReasonCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.CommunicationTypeCodeType.class,
+    ErrorValidationCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.PointerDocumentSectionCodeType.class,
     StatusNameCodeType.class,
-    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeDutyRegimeCodeType.class,
-    BorderTransportMeansModeCodeType.class,
-    GovernmentAgencyGoodsItemTransactionNatureCodeType.class,
-    DeclarationFunctionCodeType.class,
-    AEOMutualRecognitionPartyRoleCodeType.class,
-    CurrencyExchangeCurrencyTypeCodeType.class,
-    AddressTypeCodeType.class,
-    OriginTypeCodeType.class,
-    PaymentMethodCodeType.class,
-    GovernmentProcedureCurrentCodeType.class,
-    wco.datamodel.wco.declaration_ds.dms._2.AmendmentChangeReasonCodeType.class,
-    ClassificationNameCodeType.class,
-    DeclarationSpecificCircumstancesCodeCodeType.class,
-    wco.datamodel.wco.declaration_ds.dms._2.CommunicationTypeCodeType.class,
-    WarehouseTypeCodeType.class,
-    AgentFunctionCodeType.class,
-    PreviousDocumentCategoryCodeType.class,
-    ClassificationIdentificationTypeCodeType.class,
-    TradeTermsCountryRelationshipCodeType.class,
-    ArrivalTransportMeansTypeCodeType.class,
-    ItineraryRoutingCountryCodeType.class,
-    AuthorisationHolderCategoryCodeType.class,
-    DestinationCountryCodeType.class,
-    wco.datamodel.wco.declaration_ds.dms._2.PointerDocumentSectionCodeType.class,
-    GoodsShipmentTransactionNatureCodeType.class,
-    AddressCountrySubDivisionCodeType.class,
-    PackagingTypeCodeType.class,
-    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeTypeCodeType.class,
-    ObligationGuaranteeAccessCodeType.class,
-    AdditionalDocumentTypeCodeType.class,
-    FreightPaymentMethodCodeType.class,
-    OriginCountryCodeType.class,
-    ArrivalTransportMeansModeCodeType.class,
-    DomesticDutyTaxPartyRoleCodeType.class,
-    wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementCodeType.class,
-    GoodsLocationTypeCodeType.class,
-    ExportCountryCountryCodeType.class,
-    BorderTransportMeansTypeCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeDutyRegimeCodeType.class,
+    wco.datamodel.wco.response_ds.dms._2.DutyTaxFeeTypeCodeType.class,
+    AdditionalDocumentCategoryCodeType.class,
     AdditionalDocumentLPCOExemptionCodeType.class,
-    DepartureTransportMeansModeCodeType.class,
-    ArrivalTransportMeansIdentificationTypeCodeType.class,
+    AdditionalDocumentTypeCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementCodeType.class,
     wco.datamodel.wco.declaration_ds.dms._2.AdditionalInformationStatementTypeCodeType.class,
     AddressCountryCodeType.class,
-    CustomsValuationMethodCodeType.class,
-    ObligationGuaranteeSecurityDetailsCodeType.class,
-    GovernmentProcedurePreviousCodeType.class,
-    ChargeDeductionChargesTypeCodeType.class,
-    PreviousDocumentTypeCodeType.class,
-    ValuationAdjustmentAdditionCodeType.class,
-    TradeTermsConditionCodeType.class,
-    DepartureTransportMeansIdentificationTypeCodeType.class,
-    DepartureTransportMeansTypeCodeType.class,
-    DeclarationTypeCodeType.class,
+    AddressCountrySubDivisionCodeType.class,
+    AddressTypeCodeType.class,
+    AEOMutualRecognitionPartyRoleCodeType.class,
+    AgentFunctionCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.AmendmentChangeReasonCodeType.class,
+    ArrivalTransportMeansIdentificationTypeCodeType.class,
+    ArrivalTransportMeansModeCodeType.class,
+    ArrivalTransportMeansTypeCodeType.class,
+    AuthorisationHolderCategoryCodeType.class,
     BorderTransportMeansIdentificationTypeCodeType.class,
-    ConsignmentContainerCodeType.class,
-    AdditionalDocumentCategoryCodeType.class,
+    BorderTransportMeansModeCodeType.class,
     BorderTransportMeansRegistrationNationalityCodeType.class,
-    SubmitterRoleCodeType.class
+    BorderTransportMeansTypeCodeType.class,
+    ChargeDeductionChargesTypeCodeType.class,
+    ClassificationIdentificationTypeCodeType.class,
+    ClassificationNameCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.CommunicationTypeCodeType.class,
+    ConsignmentContainerCodeType.class,
+    CurrencyExchangeCurrencyTypeCodeType.class,
+    CustomsValuationMethodCodeType.class,
+    DeclarationFunctionCodeType.class,
+    DeclarationSpecificCircumstancesCodeCodeType.class,
+    DeclarationTypeCodeType.class,
+    DepartureTransportMeansIdentificationTypeCodeType.class,
+    DepartureTransportMeansModeCodeType.class,
+    DepartureTransportMeansTypeCodeType.class,
+    DestinationCountryCodeType.class,
+    DomesticDutyTaxPartyRoleCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeDutyRegimeCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.DutyTaxFeeTypeCodeType.class,
+    ExportCountryCountryCodeType.class,
+    FreightPaymentMethodCodeType.class,
+    GoodsLocationTypeCodeType.class,
+    GoodsShipmentTransactionNatureCodeType.class,
+    GovernmentAgencyGoodsItemTransactionNatureCodeType.class,
+    GovernmentProcedureCurrentCodeType.class,
+    GovernmentProcedurePreviousCodeType.class,
+    ItineraryRoutingCountryCodeType.class,
+    ObligationGuaranteeAccessCodeType.class,
+    ObligationGuaranteeSecurityDetailsCodeType.class,
+    OriginCountryCodeType.class,
+    OriginTypeCodeType.class,
+    PackagingTypeCodeType.class,
+    PaymentMethodCodeType.class,
+    wco.datamodel.wco.declaration_ds.dms._2.PointerDocumentSectionCodeType.class,
+    PreviousDocumentCategoryCodeType.class,
+    PreviousDocumentTypeCodeType.class,
+    SubmitterRoleCodeType.class,
+    TradeTermsConditionCodeType.class,
+    TradeTermsCountryRelationshipCodeType.class,
+    ValuationAdjustmentAdditionCodeType.class,
+    WarehouseTypeCodeType.class
 })
 public class CodeType {
 

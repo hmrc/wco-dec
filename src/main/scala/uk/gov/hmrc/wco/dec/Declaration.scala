@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.databind._
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
-import com.fasterxml.jackson.databind.node.{ObjectNode, TextNode}
+import com.fasterxml.jackson.databind.node.ObjectNode
 import com.fasterxml.jackson.dataformat.javaprop.JavaPropsParser
 import com.fasterxml.jackson.dataformat.xml.annotation.{JacksonXmlProperty, JacksonXmlRootElement, JacksonXmlText}
 import com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser
@@ -32,7 +32,7 @@ import wco.datamodel.wco.declaration_ds.dms._2._
 import java.io.StringWriter
 import java.time.ZonedDateTime
 import java.util.Properties
-import scala.collection.JavaConverters.propertiesAsScalaMapConverter
+import scala.jdk.CollectionConverters._
 
 /*
 MetaData and Declaration schema generally consists of xsd:sequence definitions the order of which is reflected in the
@@ -792,7 +792,7 @@ case class Address(@JacksonXmlProperty(localName = "CityName", namespace = NS.de
 
 
 object Address {
-  implicit def mapBuyersAddress = (address: Address) => {
+  implicit def mapBuyersAddress: Address => Any = (address: Address) => {
     val buyersAddress = new Buyer.Address()
 
     val city = new AddressCityNameTextType()
@@ -822,7 +822,7 @@ object Address {
     buyersAddress
   }
 
-  implicit def mapConsigneeAddress = (address: Address) => {
+  implicit def mapConsigneeAddress: Address => Any = (address: Address) => {
     val consigneeAddress = new Consignee.Address()
 
     val city = new AddressCityNameTextType()
@@ -965,29 +965,30 @@ abstract class StdAttributeAndTextDeserializer[T](attributeName: String, t: Clas
 
   def newInstanceFromTuple(values: (Option[String], Option[String])): T
 
-  override final def deserialize(p: JsonParser, ctx: DeserializationContext): T = p match {
-    case xml: FromXmlParser => deserializeFromXml(xml, ctx)
-    case props: JavaPropsParser => deserializeFromProps(props, ctx)
-  }
+  override final def deserialize(p: JsonParser, ctx: DeserializationContext): T =
+   p match {
+     case xml: FromXmlParser => deserializeFromXml(xml)
+     case props: JavaPropsParser => deserializeFromProps(props)
+   }
 
-  private def deserializeFromXml(p: FromXmlParser, ctx: DeserializationContext): T = {
+  private def deserializeFromXml(p: FromXmlParser): T = {
     val n: JsonNode = p.getCodec.readTree(p)
     n match {
-      case o: ObjectNode => newInstanceFromTuple((nonEmptyOrNone(o.get(attributeName)), nonEmptyOrNone(o.get(""))))
-      case t: TextNode => newInstanceFromTuple((None, nonEmptyOrNone(t)))
+      case on: ObjectNode => newInstanceFromTuple((nonEmptyOrNone(on.get(attributeName)), nonEmptyOrNone(on.get(""))))
+      case _ => newInstanceFromTuple((None, nonEmptyOrNone(n)))
     }
   }
 
-  private def deserializeFromProps(p: JavaPropsParser, ctx: DeserializationContext): T = {
+  private def deserializeFromProps(p: JavaPropsParser): T = {
     val n: JsonNode = p.getCodec.readTree(p)
     n match {
-      case o: ObjectNode => newInstanceFromTuple((nonEmptyOrNone(o.get(propsAttributeName)), nonEmptyOrNone(o.get(valueAttributeName))))
-      case t: TextNode => newInstanceFromTuple((None, nonEmptyOrNone(t)))
+      case on: ObjectNode => newInstanceFromTuple((nonEmptyOrNone(on.get(propsAttributeName)), nonEmptyOrNone(on.get(valueAttributeName))))
+      case _ => newInstanceFromTuple((None, nonEmptyOrNone(n)))
     }
   }
 
-  private def nonEmptyOrNone(n: JsonNode): Option[String] = if (n == null || n.asText() == null || n.asText().trim.isEmpty) None else Some(n.asText())
-
+  private def nonEmptyOrNone(n: JsonNode): Option[String] =
+    if (n == null || n.asText() == null || n.asText().trim.isEmpty) None else Some(n.asText())
 }
 
 

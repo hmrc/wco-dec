@@ -1,10 +1,6 @@
 
 # WCO Declarations Domain
 
- [ ![Download](https://api.bintray.com/packages/hmrc/releases/wco-dec/images/download.svg) ](https://bintray.com/hmrc/releases/wco-dec/_latestVersion)
-
-This is a placeholder README.md for a new repository
-
 ## Resources
 Under the "resources" folder, a series of json files have been added which are based on various sources including the "https://www.gov.uk/guidance/import-declaration-completion-guide" and "CDS Codelists and WCO Reference".  
 
