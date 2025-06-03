@@ -48,6 +48,13 @@ function git_clone {
 function fix_notification_dec_namespace {
   cp customs-declarations/public/api/conf/1.0/schemas/wco/declaration/WCO_DEC_2_DMS.xsd customs-declarations/public/api/conf/1.0/schemas/wco/notification
   cp customs-declarations/public/api/conf/1.0/schemas/wco/declaration/WCO_DS/WCO_DEC_DS_2_DMS.xsd customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_DS
+
+  cp customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_DEC_2_DMS.xsd customs-declarations/public/api/conf/1.0/schemas/wco/declaration
+  cp customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_DS/WCO_DEC_DS_2_DMS.xsd customs-declarations/public/api/conf/1.0/schemas/wco/declaration/WCO_DS
+
+  OLD_STRING="../declaration/WCO_DEC_2_DMS.xsd"
+  NEW_STRING="WCO_DEC_2_DMS.xsd"
+  sed -i "s|$OLD_STRING|$NEW_STRING|g"  "customs-declarations/public/api/conf/1.0/schemas/wco/notification/WCO_RES_2_DMS.xsd"
 }
 
 function xsd2java {
