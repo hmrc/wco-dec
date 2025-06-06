@@ -16,7 +16,6 @@ object Dependencies {
 
   val test: Seq[ModuleID] = List(
     "org.scalatest"        %% "scalatest"    % "3.2.19" % "test",
-    "org.pegdown"          %  "pegdown"      % "1.6.0"  % "test",
     "com.vladsch.flexmark" %  "flexmark-all" % "0.64.8" % "test"
   )
 
