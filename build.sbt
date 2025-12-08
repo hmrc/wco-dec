@@ -6,7 +6,7 @@ lazy val app = Project(appName, file("."))
   .enablePlugins()
   .settings(
     majorVersion := 0,
-    scalaVersion := "2.13.16",
+    scalaVersion := "3.3.7",
     libraryDependencies ++= Dependencies()
   )
   .settings(scoverageSettings)

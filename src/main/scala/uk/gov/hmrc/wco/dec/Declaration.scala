@@ -854,7 +854,7 @@ object Address {
 }
 
 
-@JsonDeserialize(using = classOf[AmountDeserializer])
+@JsonDeserialize(classOf[AmountDeserializer])
 case class Amount(@JacksonXmlProperty(localName = "currencyID", isAttribute = true)
                   currencyId: Option[String] = None, // and ISO 4217 3 char currency code (i.e. "GBP")
 
@@ -881,7 +881,7 @@ case class Contact(@JacksonXmlProperty(localName = "Name", namespace = NS.dec)
 case class DateTimeElement(@JacksonXmlProperty(localName = "DateTimeString", namespace = NS.ds)
                            dateTimeString: DateTimeString)
 
-@JsonDeserialize(using = classOf[DateTimeStringDeserializer])
+@JsonDeserialize(classOf[DateTimeStringDeserializer])
 case class DateTimeString(@JacksonXmlProperty(localName = "formatCode", isAttribute = true)
                           formatCode: String, // either "102" or "304"
 
@@ -917,7 +917,7 @@ case class ImportExportParty(@JacksonXmlProperty(localName = "Name", namespace =
                              communications: Seq[Communication] = Seq.empty)
 
 // TODO should probably make "value" non-optional as I think it is required whenever you spit out measure element - check schema
-@JsonDeserialize(using = classOf[MeasureDeserializer])
+@JsonDeserialize(classOf[MeasureDeserializer])
 case class Measure(@JacksonXmlProperty(localName = "unitCode", isAttribute = true)
                    unitCode: Option[String] = None, // min 1 max 5 chars when specified
 
