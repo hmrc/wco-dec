@@ -45,7 +45,7 @@ case class Declaration(versionNumber: Option[Int] = None,
                        acceptanceDate: Option[DateTime] = None,
                        parties: Seq[Parties] = Seq.empty)
 
-@JsonDeserialize(using = classOf[DateTimeDeserializer])
+@JsonDeserialize(classOf[DateTimeDeserializer])
 case class DateTime(@JacksonXmlProperty(isAttribute = true)
                     formatCode: Option[String] = None,
 
@@ -66,7 +66,7 @@ class DateTimeDeserializer extends StdAttributeAndTextDeserializer[DateTime]("fo
 
 }
 
-@JsonDeserialize(using = classOf[QuantityDeserializer])
+@JsonDeserialize(classOf[QuantityDeserializer])
 case class Quantity(@JacksonXmlProperty(isAttribute = true)
                     unitType: Option[String] = None,
 
@@ -82,7 +82,7 @@ class QuantityDeserializer extends ExtendedAttributeAndTextDeserializer[Quantity
 
 }
 
-@JsonDeserialize(using = classOf[CodeListElementFieldDeserializer])
+@JsonDeserialize(classOf[CodeListElementFieldDeserializer])
 case class CodeListElementField(@JacksonXmlProperty(isAttribute = true)
                                 `type`: Option[String] = None,
 
