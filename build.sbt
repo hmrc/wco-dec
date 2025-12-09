@@ -4,6 +4,7 @@ val appName = "wco-dec"
 
 lazy val app = Project(appName, file("."))
   .enablePlugins()
+  .disablePlugins(JUnitXmlReportPlugin)
   .settings(
     majorVersion := 0,
     scalaVersion := "3.3.7",
